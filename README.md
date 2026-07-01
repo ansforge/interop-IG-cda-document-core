@@ -1,13 +1,6 @@
-[A MODIFIER : remplacer avec votre logo s'il ne s'agit pas d'un projet CI-SIS]
-
 ![Logo_LEF_CI-SIS](https://user-images.githubusercontent.com/48218773/227532484-eff82649-4e42-49c6-966a-dc3ea78cf59c.png)
 
-[A MODIFIER : adapter au lien du projet]
-
 [![Workflow Init](https://github.com/ansforge/interop-IG-cda-document-core/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/ansforge/interop-IG-cda-document-core/actions/workflows/fhir-workflows.yml)
-
-Cet exemple d'Implementation Guide (IG) très simplifié sert de base pour le développement de nouveaux guides d'implémentation. La démarche d'élaboration d'un nouvel IG est expliquée dans le [wiki de ce repo](https://github.com/ansforge/IG-modele/wiki).
-Le README ci-dessous constitue un template à adapter et compléter pour chaque projet.
 
 # Contexte
 
@@ -30,8 +23,6 @@ Les workflows associés à ce repository (.github/workflows) permettent :
 Exemple - https://ansforge.github.io/interop-IG-cda-document-core/main/ig
 
 # Notes
-
-Ce repo "IG-modele" a été créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
 
 [A COMPLETER: notes supplémentaires pour le lecteur de la spec]
 Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github.com/fr/issues) pour indiquer vos propositions d'amélioration et de correction.
