@@ -18,4 +18,4 @@
 
 ## Preview
 
-https://ansforge.github.io/interop-ig-fhir-[nom repo]/[ajouter_nom_de_la_branche]/ig
+https://ansforge.github.io/interop-IG-cda-document-core/[ajouter_nom_de_la_branche]/ig
