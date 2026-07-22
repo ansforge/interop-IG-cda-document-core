@@ -282,5 +282,14 @@ groups:
       - StructureDefinition/fr-cda-prescription
       - StructureDefinition/fr-cda-probleme
       - StructureDefinition/fr-cda-produit-de-sante
+      - StructureDefinition/fr-cda-material-pharm
       - StructureDefinition/fr-cda-quantite-de-produit
       - StructureDefinition/fr-cda-dicom-objectifs-de-reference
+
+
+resources:
+  Binary/patient-summary:
+    name: Patient_Summary
+    description: Exemple de document CDA Patient Summary utilisé pour tester les profils CDA français.
+    exampleBoolean: true
+    profile: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
