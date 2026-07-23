@@ -1,6 +1,7 @@
 Alias: $CDAMaterial = http://hl7.org/cda/stds/core/StructureDefinition/Material
 Alias: $CE = http://hl7.org/cda/stds/core/StructureDefinition/CE
 Alias: $EN = http://hl7.org/cda/stds/core/StructureDefinition/EN
+Alias: $TEL = http://hl7.org/cda/stds/core/StructureDefinition/TEL
 Alias: $RTO_PQ_PQ = http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ
 Alias: $XmlNamespace = http://hl7.org/fhir/tools/StructureDefinition/xml-namespace
 
@@ -16,6 +17,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ^status = #draft
 
 // Forme pharmaceutique
+
 * formCode 0..1 $CE
     "Forme pharmaceutique"
     "Code représentant la forme pharmaceutique du produit de santé."
@@ -24,6 +26,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * formCode ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
 // Classification du produit
+
 * asSpecializedKind 0..1 BackboneElement
     "Classification du produit"
     "Relation entre le produit de santé et une classe générique ou thérapeutique."
@@ -67,6 +70,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * asSpecializedKind.generalizedMedicineClass.name ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
 // Ingrédients actifs
+
 * ingredient 0..* BackboneElement
     "Ingrédient actif"
     "Ingrédient actif entrant dans la composition du produit de santé."
@@ -89,6 +93,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ingredient.quantity ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
 // Substance active
+
 * ingredient.ingredient 1..1 BackboneElement
     "Substance active"
     "Substance pharmaceutique jouant le rôle d'ingrédient actif."
@@ -118,11 +123,18 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ingredient.ingredient.code ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
 * ingredient.ingredient.code.originalText 0..1
+* ingredient.ingredient.code.originalText ^short = "Texte original de la substance active"
+* ingredient.ingredient.code.originalText ^definition = """
+Texte original associé au code de la substance active, pouvant contenir
+une référence vers le texte narratif du document CDA.
+"""
 
 * ingredient.ingredient.code.originalText ^extension[0].url = $XmlNamespace
 * ingredient.ingredient.code.originalText ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* ingredient.ingredient.code.originalText.reference 0..1
+* ingredient.ingredient.code.originalText.reference 0..1 $TEL
+    "Référence au texte narratif"
+    "Référence interne vers le texte narratif décrivant la substance active."
 
 * ingredient.ingredient.code.originalText.reference ^extension[0].url = $XmlNamespace
 * ingredient.ingredient.code.originalText.reference ^extension[0].valueUri = "urn:ihe:pharm:medication"
