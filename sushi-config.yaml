@@ -289,7 +289,11 @@ groups:
 
 resources:
   Binary/patient-summary:
-    name: Patient_Summary
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/xml
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical
+        valueUrl: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
+    name: Patient Summary
     description: Exemple de document CDA Patient Summary utilisé pour tester les profils CDA français.
-    exampleBoolean: true
-    profile: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
+    exampleCanonical: https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document
