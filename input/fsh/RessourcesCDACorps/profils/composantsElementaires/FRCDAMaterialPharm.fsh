@@ -34,28 +34,28 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * asSpecializedKind ^extension[0].url = $XmlNamespace
 * asSpecializedKind ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* asSpecializedKind.classCode 0..1 code
+* asSpecializedKind.classCode 1..1 code
     "Classe de la relation"
     "Code indiquant qu'il s'agit d'une relation vers une classe générique ou thérapeutique."
 
 * asSpecializedKind.classCode = #GRIC
 * asSpecializedKind.classCode ^representation = #xmlAttr
 
-* asSpecializedKind.generalizedMedicineClass 0..1 BackboneElement
+* asSpecializedKind.generalizedMedicineClass 1..1 BackboneElement
     "Classe générique du médicament"
     "Classe générique ou thérapeutique à laquelle appartient le produit de santé."
 
 * asSpecializedKind.generalizedMedicineClass ^extension[0].url = $XmlNamespace
 * asSpecializedKind.generalizedMedicineClass ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* asSpecializedKind.generalizedMedicineClass.classCode 0..1 code
+* asSpecializedKind.generalizedMedicineClass.classCode 1..1 code
     "Classe du matériau"
     "Code indiquant que la classe représente un matériau pharmaceutique."
 
 * asSpecializedKind.generalizedMedicineClass.classCode = #MMAT
 * asSpecializedKind.generalizedMedicineClass.classCode ^representation = #xmlAttr
 
-* asSpecializedKind.generalizedMedicineClass.code 0..1 $CE
+* asSpecializedKind.generalizedMedicineClass.code 1..1 $CE
     "Code de classification"
     "Code représentant la classe générique ou thérapeutique du produit de santé selon le système de codage utilisé."
 
@@ -78,7 +78,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ingredient ^extension[0].url = $XmlNamespace
 * ingredient ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* ingredient.classCode 0..1 code
+* ingredient.classCode 1..1 code
     "Classe de l'ingrédient"
     "Code indiquant qu'il s'agit d'un ingrédient actif."
 
@@ -94,21 +94,21 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 
 // Substance active
 
-* ingredient.ingredient 0..1 BackboneElement
+* ingredient.ingredient 1..1 BackboneElement
     "Substance active"
     "Substance pharmaceutique jouant le rôle d'ingrédient actif."
 
 * ingredient.ingredient ^extension[0].url = $XmlNamespace
 * ingredient.ingredient ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* ingredient.ingredient.classCode 0..1 code
+* ingredient.ingredient.classCode 1..1 code
     "Classe de la substance"
     "Code indiquant que la substance est un matériau pharmaceutique."
 
 * ingredient.ingredient.classCode = #MMAT
 * ingredient.ingredient.classCode ^representation = #xmlAttr
 
-* ingredient.ingredient.determinerCode 0..1 code
+* ingredient.ingredient.determinerCode 1..1 code
     "Déterminant de la substance"
     "Code indiquant que l'élément représente un type de substance."
 
@@ -139,7 +139,7 @@ une référence vers le texte narratif du document CDA.
 * ingredient.ingredient.code.originalText.reference ^extension[0].url = $XmlNamespace
 * ingredient.ingredient.code.originalText.reference ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* ingredient.ingredient.name 0..1 $EN
+* ingredient.ingredient.name 1..1 $EN
     "Nom de la substance"
     "Nom de la substance active."
 
