@@ -1,0 +1,2927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ans.cda.fr.document-core"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.cda.fr.document-core</b></p><a name="ans.cda.fr.document-core"> </a><a name="hcans.cda.fr.document-core"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>CDAFRDocumentCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/cda/document-core/ImplementationGuide/ans.cda.fr.document-core</pre><div><p>Volet CDA du guide d'implémentation Document Core.</p>
+</div></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.cda.fr.document-core</b></p><a name="en-ans.cda.fr.document-core"> </a><a name="en-hcans.cda.fr.document-core"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr</p></div><h2>CDAFRDocumentCore</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/cda/document-core/ImplementationGuide/ans.cda.fr.document-core</pre><div><p>Volet CDA du guide d'implémentation Document Core.</p>
+</div></div></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/cda/document-core/ImplementationGuide/ans.cda.fr.document-core"/>
+  <version value="0.1.0"/>
+  <name value="CDAFRDocumentCore"/>
+  <title value="FR Document Core (CDA)"/>
+  <status value="draft"/>
+  <date value="2026-07-28T20:38:51+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Volet CDA du guide d'implémentation Document Core."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="ans.cda.fr.document-core"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="7.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_cda_uv_core">
+    <uri value="http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core"/>
+    <packageId value="hl7.cda.uv.core"/>
+    <version value="2.0.3-sd"/>
+  </dependsOn>
+  <dependsOn id="ans_fr_terminologies">
+    <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
+    <packageId value="ans.fr.terminologies"/>
+    <version value="1.11.1"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r5#1.1.2"/>
+    </extension>
+    <grouping id="ressources-cda-entete">
+      <name value="Eléments CDA de l'entête"/>
+    </grouping>
+    <grouping id="ressources-cda-corps-sections">
+      <name value="Eléments CDA du corps des sections"/>
+    </grouping>
+    <grouping id="ressources-cda-corps-composants-elementaires">
+      <name value="Eléments CDA corps des composants élémentaires"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-assigned-author"/>
+      </reference>
+      <name value="CDA - assignedAuthor"/>
+      <description value="L'élément de l'en-tête du CDA assignedAuthor contient les éléments permettant de décrire l’auteur."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-assigned-custodian"/>
+      </reference>
+      <name value="CDA - assignedCustodian"/>
+      <description value="L'élément de l'en-tête du CDA assignedCustodian contient l’élément representedCustodianOrganization caractérisant la structure conservant le document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-assigned-entity"/>
+      </reference>
+      <name value="CDA - assignedEntity"/>
+      <description value="L'élément de l'en-tête du CDA assignedEntity est utilisé dans les éléments suivants : dataEnterer, informant, legalAuthenticator, authenticator, performer, responsibleParty et encounterParticipant."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-assigned-person"/>
+      </reference>
+      <name value="CDA - assignedPerson"/>
+      <description value="L'élément de l'en-tête du CDA assignedPerson permet de décrire une personne physique."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-associated-entity"/>
+      </reference>
+      <name value="CDA - associatedEntity"/>
+      <description value="L'élément de l'en-tête du CDA associatedEntity permet de représenter les caractéristiques du professionnel et/ou de l'établissement participant."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-authenticator"/>
+      </reference>
+      <name value="CDA - authenticator"/>
+      <description value="L'élément de l'en-tête du CDA authenticator permet de représenter le professionnel (personne physique) attestant la validité du contenu du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-author"/>
+      </reference>
+      <name value="CDA - author"/>
+      <description value="L'élément de l'en-tête du CDA author permet d’enregistrer un auteur du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-authoring-device"/>
+      </reference>
+      <name value="CDA - authoringDevice"/>
+      <description value="L'élément de l'en-tête du CDA authoringDevice contient les informations complémentaires si l’auteur est un système."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-authorization"/>
+      </reference>
+      <name value="CDA - authorization"/>
+      <description value="L'élément de l'en-tête du CDA authorization permet de documenter qu'un consentement éclairé a été obtenu et d'indiquer quel type de consentement a été fourni."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-clinical-document"/>
+      </reference>
+      <name value="CDA - clinicalDocument"/>
+      <description value="L'élément de l'en-tête CDA 'ClinicalDocument' est l’élément racine d’un document médical."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-component-of"/>
+      </reference>
+      <name value="CDA - componentOf"/>
+      <description value="L'élément de l'en-tête du CDA componentOf permet d'associer le document à une prise en charge du patient/usager."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-custodian"/>
+      </reference>
+      <name value="CDA - custodian"/>
+      <description value="L'élément de l'en-tête du CDA custodian permet de représenter la structure chargée de la conservation du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-data-enterer"/>
+      </reference>
+      <name value="CDA - dataEnterer"/>
+      <description value="L'élément de l'en-tête du CDA dataEnterer contient les informations relatives à l’opérateur de saisie de tout ou partie du contenu du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-documentation-of"/>
+      </reference>
+      <name value="CDA - documentationOf"/>
+      <description value="L'élément de l'en-tête du CDA documentationOf permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. Il y a au minimum une occurrence de cet élément pour décrire l'évènement principal avec obligatoirement une date de début et un exécutant."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-encompassing-encounter"/>
+      </reference>
+      <name value="CDA - encompassingEncounter"/>
+      <description value="L'élément de l'en-tête du CDA encompassingEncounter permet de décrire la prise en charge du patient/usager par un professionnel ou par une structure."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-encounter-participant"/>
+      </reference>
+      <name value="CDA - encounterParticipant"/>
+      <description value="L'élément de l'en-tête du CDA encounterParticipant permet de représenter la personne impliquée dans la prise en charge du patient/usager, comme par exemple, le professionnel co-responsable, le professionnel ayant fait l'admission ou encore le professionnel ayant donné son avis quant à la prise en charge."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-accidents-transfusionnels"/>
+      </reference>
+      <name value="CDA - FR Accidents transfusionnels"/>
+      <description value="Entrée FR-Accidents-transfusionnels: Cette entrée permet de décrire sous forme textuelle un accident transfusionnel."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-acte"/>
+      </reference>
+      <name value="CDA - FR Acte"/>
+      <description value="Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une entrée de type 'procedure' décrivant un acte planifié ou réalisé."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-acte-substitution"/>
+      </reference>
+      <name value="CDA - FR Acte substitution"/>
+      <description value="Entrée FR-Acte-substitution: IHE PHARM DIS - Substitution actCette observation permet d'indiquer si le traitement a été substitué."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-administration-de-derives-du-sang"/>
+      </reference>
+      <name value="CDA - FR Administration de derives du sang"/>
+      <description value="Entrée FR-Administration-de-derives-du-sang: IHE-PCC - Simple-Observation Cette entrée permet d'indiquer s'il y a eu ou pas une administration de dérivés du sang."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-allergie-ou-hypersensibilite"/>
+      </reference>
+      <name value="CDA - FR Allergie ou hypersensibilite"/>
+      <description value="Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intolerance Cette entrée permet de décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie, en précisant :Le type : allergie médicamenteuse, hypersensibilité non allergique alimentaire, etc.La date de début et de finL'agent responsable : médicament, agent environnemental, …Le statut clinique : Actif, Inactif, RésoluLa criticité : Bas, Elevé, Impossible à évaluerLa certitude : Confirmé, Non confirmé, RéfutéLa (les) réaction(s) observée(s) : urticaire, nausée, … etLa sévérité de la réaction : Potentiellement mortel, Elevé, Modéré, Bas, …un commentaire sur la réactionCette entrée est basée sur l'entrée Problème (1.3.6.1.4.1.19376.1.5.3.1.4.5) qu'elle spécialise."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-allergies-et-hypersensibilites"/>
+      </reference>
+      <name value="CDA - FR Allergies et hypersensibilites"/>
+      <description value="IHE-PCC - Allergies-And-Other-Adverse-Reactions &#xA; - La section 'Allergies et hypersensibilités' permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l'agent et les réactions observées."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-antecedent-familial-observe"/>
+      </reference>
+      <name value="CDA - FR Antecedent familial observe"/>
+      <description value="Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-antecedents-familiaux"/>
+      </reference>
+      <name value="CDA - FR Antecedents familiaux"/>
+      <description value="Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-section-antecedents-familiaux"/>
+      </reference>
+      <name value="CDA - FR Antecedents familiaux"/>
+      <description value="IHE-PCC Coded-Family-Medical-History&#xA; - Liste codée des antécédents familiaux"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-antecedents-medicaux"/>
+      </reference>
+      <name value="CDA - FR Antecedents medicaux"/>
+      <description value="IHE-PCC - History-Of-Past-Illness &#xA; - La section 'Antécédents médicaux' doit contenir une liste codée des antécédents médicaux du patient. Il s'agit d'épisodes résolus, c'est à dire de maladies que l'on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-autorisation-substitution"/>
+      </reference>
+      <name value="CDA - FR Autorisation Substitution"/>
+      <description value="Entrée FR-Autorisation-Substitution: IHE-PRE - Substitution-Permission. Cette observation permet d'indiquer si le traitement auquel elle est associée peut être substitué."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale"/>
+      </reference>
+      <name value="CDA - FR Batterie examens de biologie medicale"/>
+      <description value="Entrée FR-Batterie-examens-de-biologie-medicale: IHE-PCC - Laboratory Battery Organizer. L'entrée Batterie d'examens de biologie médicale est une entrée de type 'organizer' qui permet de décrire des examens de biologie médicale comprenant un ou plusieurs éléments porteurs de résultats et d'éventuels commentaires interprétant cet ensemble de résultats. L'examen de biologie médicale peut préciser des participants qui lui sont propres (validateur, auteur, responsable, laboratoire sous-traitant, automate …) et peut aussi décrire son échantillon biologique."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-certitude"/>
+      </reference>
+      <name value="CDA - FR Certitude"/>
+      <description value="Entrée FR-Certitude: Cette entrée permet de fournir la certitude d'une observation (problème ou allergie/hypersensibilité). Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cisis-addr"/>
+      </reference>
+      <name value="CDA - FR CISIS Addr"/>
+      <description value="Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d'adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d'Interopérabilité (RGI).&#xA;Les partenaires de l'échange doivent s'accorder sur la structure de addr à échanger.&#xA;En effet, addr peut convoyer une adresse géopostale formée :&#xA; - soit de composants élémentaires de l'adresse c'est-à-dire un élément XML pour le numéro dans la voie, un pour le type de voie, un pour le nom de la voie, etc.;&#xA; - soit de lignes obtenues par assemblage des composants élémentaires de l'adresse, chaque ligne étant un élément XML."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cisis-telecom"/>
+      </reference>
+      <name value="CDA - FR CISIS Telecom"/>
+      <description value="Coordonnées télécom : &#xA; - Exemples :&#xA;&lt;telecom value='tel:0147150000' use='H'/&gt;&#xA;&lt;telecom value='mailto:adam.homme@fournisseur.fr'/&gt;&#xA;&lt;telecom value='ftp://serveur/dossierdesante/exemple/'/&gt;"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-code-a-barres"/>
+      </reference>
+      <name value="CDA - FR Code a barres"/>
+      <description value="Cette section permet d'enregistrer des codes à barres"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-commentaire-er"/>
+      </reference>
+      <name value="CDA - FR Commentaire ER"/>
+      <description value="Entrée FR-Commentaire-ER: IHE-PCC - Comments L’entrée FR-Commentaire-ER est un élément qui permet de joindre un commentaire à une entrée ou à une section.  Note : IHE PCC a limité l’utilisation de l’élément « Comments » (1.3.6.1.4.1.19376.1.5.3.1.4.2) aux entrées de type observation et organizer. Ce n’est pas le cas dans CDD pour l’élément « Comment » (2.16.840.1.113883.10.20.1.40). Dans le CI-SIS, le choix a été fait de ne pas limiter l’utilisation de l’entrée FR-Commentaire-ER (1.3.6.1.4.1.19376.1.5.3.1.4.2) comme dans CCD. Lorsque l’entrée FR-Commentaire-ER est utilisée dans une entrée : de type organizer : l’utiliser dans un élément component avec l’attribut type-Code='COMP'.de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode='SUBJ' et inversionInd='true'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-commentaire-non-code"/>
+      </reference>
+      <name value="CDA - FR Commentaire non code"/>
+      <description value="IHE-PCC - Document-Summary &#xA; - Cette section permet d'indiquer un commentaire sous forme textuelle."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-cr-bio-chapitre"/>
+      </reference>
+      <name value="CDA - FR CR BIO Chapitre"/>
+      <description value="IHE-PaLM - Laboratory Specialty Section&#xA; - Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :&#xA;  - soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément &lt;text&gt; (présentation du contenu pour le lecteur) et un unique élément &lt;entry&gt; (données codées pour les SIS dont procède le contenu de l'élément &lt;text&gt;)&#xA;  - soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-cr-bio-sous-chapitre"/>
+      </reference>
+      <name value="CDA - FR CR BIO Sous Chapitre"/>
+      <description value="IHE-PaLM - Laboratory Report Item Section&#xA; - Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale. Elle est comporte un élément 'text' qui porte les résultats présentés et interprétés pour le lecteur et d'une entrée contenant les données codées dont procède le contenu de l'élément 'text'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-criticite"/>
+      </reference>
+      <name value="CDA - FR Criticite"/>
+      <description value="Entrée FR-Criticite: Cette entrée permet de fournir la criticité d'une l’allergie ou hypersensibilité. Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi"/>
+      </reference>
+      <name value="CDA - FR Demande d examen ou de suivi"/>
+      <description value="Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L'entrée Demande d'examen / de suivi est une observation qui permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins. Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-acte-imagerie"/>
+      </reference>
+      <name value="CDA - FR DICOM Acte imagerie"/>
+      <description value="DICOM Part 20 - Imaging Procedure Description Section&#xA; - Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-addendum"/>
+      </reference>
+      <name value="CDA - FR DICOM Addendum"/>
+      <description value="DICOM Part 20 - Addendum Section&#xA; - La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-administration-produit-de-sante"/>
+      </reference>
+      <name value="CDA - FR DICOM Administration produit de sante"/>
+      <description value="Entrée FR-DICOM-Administration-produit-de-sante: DICOM Part 20 - Procedural Medication. Cette entrée permet d'enregistrer l’administration de produits (hors radiopharmaceutiques) :&#xA; - produit administré &#xA; - dose administréevoie d’administration&#xA; - numéro de lot&#xA; - autres informations liées à l’administration d’un produit"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique"/>
+      </reference>
+      <name value="CDA - FR DICOM Administration radiopharmaceutique"/>
+      <description value="Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée permet d'enregistrer l’administration de produits radiopharmaceutiques :&#xA; - produit administré &#xA; - dose administrée &#xA; - voie d’administration&#xA; - numéro de lot&#xA; - autres informations liées à l’administration d’un produit"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-cadres-references"/>
+      </reference>
+      <name value="CDA - FR DICOM Cadres de références"/>
+      <description value="Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observation d’images référencées contient une liste de valeurs de type entiers pour les images référencées d’une instance SOP d’images."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-cadres-a-afficher"/>
+      </reference>
+      <name value="CDA - FR DICOM Cadres à afficher"/>
+      <description value="Entrée FR-DICOM-Cadres-a-afficher: DICOM Part 20 - Cadres à afficher pour les images référencées"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-complications"/>
+      </reference>
+      <name value="CDA - FR DICOM Complications"/>
+      <description value="DICOM Part 20 - Complications&#xA; - Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-conclusion"/>
+      </reference>
+      <name value="CDA - FR DICOM Conclusion"/>
+      <description value="DICOM Part 20 - Impression Section&#xA;- Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-demande-examen"/>
+      </reference>
+      <name value="CDA - FR DICOM Demande examen"/>
+      <description value="DICOM Part 20 - Request Section&#xA;- Justification de la demande d’examen / Finalité de l'examen."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-examen-comparatif"/>
+      </reference>
+      <name value="CDA - FR DICOM Examen comparatif"/>
+      <description value="DICOM Part 20 - Comparison Study Section&#xA; - Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-examen-imagerie"/>
+      </reference>
+      <name value="CDA - FR DICOM Examen imagerie"/>
+      <description value="Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 - Study Act. Cette entrée contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d'une ou de plusieurs séries d’images médicales."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-exposition-aux-radiations"/>
+      </reference>
+      <name value="CDA - FR DICOM Exposition aux radiations"/>
+      <description value="DICOM Part 20 - Radiation Exposure and Protection Information &#xA; - Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-exposition-patient"/>
+      </reference>
+      <name value="CDA - FR DICOM Exposition patient"/>
+      <description value="Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l'entrée FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l'identité du professionnel de santé ayant donné l'autorisation de l'exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-historique-medical"/>
+      </reference>
+      <name value="CDA - FR DICOM Historique medical"/>
+      <description value="DICOM Part 20 - Medical (General) History Section&#xA; - Cette sous-section permet d'enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-informations-cliniques"/>
+      </reference>
+      <name value="CDA - FR DICOM Informations cliniques"/>
+      <description value="DICOM Part 20 - Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que : &#xA; - Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1] &#xA; - Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1] &#xA; - Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]&#xA; - Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1] &#xA; - Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-object-catalog"/>
+      </reference>
+      <name value="CDA - FR DICOM Object Catalog"/>
+      <description value="DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :&#xA; - [0..*] Examen &#xA;  - [1..*] Série (avec la modalité d'acquisition)&#xA;   - [1..*] Objet référencé (avec la classe d'objet)"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-objectifs-de-reference"/>
+      </reference>
+      <name value="CDA - FR DICOM Objectifs de référence"/>
+      <description value="Entrée FR-DICOM-Objectifs-de-reference: DICOM Part 20. Cette entrée permet d’enregistrer les objectifs de référence d’imagerie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-observation"/>
+      </reference>
+      <name value="CDA - FR DICOM Observation"/>
+      <description value="Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. Cette entrée permet d’enregistrer une observation avec une valeur codée ou textuelle."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-observation-subordonnee"/>
+      </reference>
+      <name value="CDA - FR DICOM Observation subordonnee"/>
+      <description value="Entrée FR-DICOM-Observation-subordonnee: DICOM PART 20 - Observation codée"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-quantite"/>
+      </reference>
+      <name value="CDA - FR DICOM Quantite"/>
+      <description value="Entrée FR-DICOM-Quantite: DICOM Part 20 - Quantity Measurement. Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie, La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-quantite-subordonnee"/>
+      </reference>
+      <name value="CDA - FR DICOM Quantite subordonnee"/>
+      <description value="Entrée FR-DICOM-Quantite-subordonnee: Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant :  Le type de la mesure, La localisation anatomique / latéralité / topographie,   La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-resultats"/>
+      </reference>
+      <name value="CDA - FR DICOM Resultats"/>
+      <description value="DICOM Part 20 - Findings&#xA; - Cette section permet d'enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-serie-imagerie"/>
+      </reference>
+      <name value="CDA - FR DICOM Serie imagerie"/>
+      <description value="Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-sop-instance-observation"/>
+      </reference>
+      <name value="CDA - FR DICOM SOP instance observation"/>
+      <description value="Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee"/>
+      </reference>
+      <name value="CDA - FR DICOM SOP instance observation subordonnee"/>
+      <description value="Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dicom-technique-imagerie"/>
+      </reference>
+      <name value="CDA - FR DICOM Technique imagerie"/>
+      <description value="Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-directive-anticipee"/>
+      </reference>
+      <name value="CDA - FR Directive anticipee"/>
+      <description value="Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette entrée permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d'état d'exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l'arrêt ou du refus de traitement ou d'acte médicaux.»."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dispensation-medicaments"/>
+      </reference>
+      <name value="CDA - FR Dispensation medicaments"/>
+      <description value="IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dispositif-medical"/>
+      </reference>
+      <name value="CDA - FR Dispositif medical"/>
+      <description value="Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-dispositifs-medicaux"/>
+      </reference>
+      <name value="CDA - FR Dispositifs medicaux"/>
+      <description value="IHE-PCC - Medical Devices SectionCette section 'Dispositifs médicaux' contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-document-attache"/>
+      </reference>
+      <name value="CDA - FR Document attache"/>
+      <description value="Entrée FR-Document-attache: L'entrée Document Attaché est une entrée de type organiser qui permet de regrouper dans une même entrée les éléments qui contiennent :  &#xA; - un élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant la nature du document attaché,  &#xA; - un élément de type ObservationMedia acceptant tout type d'objets prévus par CDA et qui porte le document attaché. Son contenu est un élément codé en Base 64. Le charset par défaut est le charset ISO-8859-1. L'avantage de cette entrée est qu'elle permet de porter pratiquement tous types de média (pdf, image, etc…), contrairement à l'élément Image illustrative qui ne peut porter que des images au format gif, jpeg, png ou bm."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-document-pdf-copie"/>
+      </reference>
+      <name value="CDA - FR Document PDF copie"/>
+      <description value="Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-documents-ajoutes"/>
+      </reference>
+      <name value="CDA - FR Documents ajoutes"/>
+      <description value="Liste de documents ajoutés"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-dose-antigene"/>
+      </reference>
+      <name value="CDA - FR Dose antigene"/>
+      <description value="Entrée FR-Dose-antigene: IHE-PCC – Antigene-Dose. L'entrée Dose d'antigène permet de décrire des informations complémentaires sur la vaccination, et plus précisément, la dose spécifique d'un antigène."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-education-du-patient"/>
+      </reference>
+      <name value="CDA - FR Education du patient"/>
+      <description value="IHE-PCC - Patient Education Section&#xA; - Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-effet-indesirable"/>
+      </reference>
+      <name value="CDA - FR Effet indesirable"/>
+      <description value="Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésirable prévisible lié à un médicament."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-effets-indesirables"/>
+      </reference>
+      <name value="CDA - FR Effets indesirables"/>
+      <description value="Liste des effets indésirables prévisibles liés aux médicaments."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-en-rapport-avec-accident-travail"/>
+      </reference>
+      <name value="CDA - FR En rapport avec accident travail"/>
+      <description value="Entrée FR-En-rapport-avec-accident-travail: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec un accident du travail."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-en-rapport-avec-ald"/>
+      </reference>
+      <name value="CDA - FR En rapport avec ALD"/>
+      <description value="Entrée FR-En-rapport-avec-ALD: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une ALD."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-en-rapport-avec-la-prevention"/>
+      </reference>
+      <name value="CDA - FR En rapport avec la prevention"/>
+      <description value="Entrée FR-En-rapport-avec-la-prevention: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une prévention."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evaluation"/>
+      </reference>
+      <name value="CDA - FR Evaluation"/>
+      <description value="Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Evaluation permet de rapporter un résultat (score) répondant à une question faisant partie d'une évaluation (questionnaire d'enquête par exemple).Cette entrée est basée sur l’entrée FR-Simple-Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evaluation-composant"/>
+      </reference>
+      <name value="CDA - FR Evaluation Composant"/>
+      <description value="Entrée FR-Evaluation-Composant: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evaluation-composant-n2"/>
+      </reference>
+      <name value="CDA - FR Evaluation Composant N2"/>
+      <description value="Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evenement"/>
+      </reference>
+      <name value="CDA - FR Evenement"/>
+      <description value="Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type 'encounter' permettant de conserver les données d’activités liées à un patient / usager. Il peut s'agir d'un évènement passé ou à venir."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation"/>
+      </reference>
+      <name value="CDA - FR Evenement indesirable pendant hospitalisation"/>
+      <description value="Entrée FR-Evenement-indesirable-pendant-hospitalisation: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus pendant l'hospitalisation."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang"/>
+      </reference>
+      <name value="CDA - FR Evenement indesirable suite administration derives sang"/>
+      <description value="Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l'administration de dérivés du sang."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-evolution-effet-indesirable"/>
+      </reference>
+      <name value="CDA - FR Evolution effet indesirable"/>
+      <description value="Entrée FR-Evolution-effet-indesirable: Cette entrée permet de préciser l'évolution d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code"/>
+      </reference>
+      <name value="CDA - FR Facteurs de risque professionnels non code"/>
+      <description value="IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-fonctions-physiques"/>
+      </reference>
+      <name value="CDA - FR Fonctions physiques"/>
+      <description value="IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-gravite-effet-indesirable"/>
+      </reference>
+      <name value="CDA - FR Gravite effet indesirable"/>
+      <description value="Entrée FR-Gravite-effet-indesirable&#xA; - Cette entrée permet de préciser la gravité d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l’élément qu’il qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation"/>
+      </reference>
+      <name value="CDA - FR Groupe de questionnaires d evaluation"/>
+      <description value="Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel&#xA; - L'entrée 'Groupe de questionnaires d’évaluation' est une entrée de type 'organizer' qui permet de rassembler des observations de questionnaires."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-habitus-mode-de-vie"/>
+      </reference>
+      <name value="CDA - FR Habitus Mode de vie"/>
+      <description value="Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observation&#xA; - L'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient &#xA; - Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-section-habitus-mode-de-vie"/>
+      </reference>
+      <name value="CDA - FR Habitus mode de vie"/>
+      <description value="IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-historique-de-la-grossesse"/>
+      </reference>
+      <name value="CDA - FR Historique de la grossesse"/>
+      <description value="Entrée FR-Historique-de-la-grossesse: IHE-PCC - Pregnancy History Organizer. &#xA; - Cette entrée permet de regrouper les observations relatives à un épisode de grossesse."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-historique-des-actes"/>
+      </reference>
+      <name value="CDA - FR Historique des actes"/>
+      <description value="IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-historique-des-grossesses"/>
+      </reference>
+      <name value="CDA - FR Historique des grossesses"/>
+      <description value="IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-hors-amm"/>
+      </reference>
+      <name value="CDA - FR Hors AMM"/>
+      <description value="Entrée FR-Hors-AMM: IHE-PCC - Simple-Observation. Cette observation permet d'indiquer si le traitement auquel elle est associée est hors AMM."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-identification-micro-organismes-multiresistants"/>
+      </reference>
+      <name value="CDA - FR Identification micro organismes multiresistants"/>
+      <description value="Entrée FR-Identification-micro-organismes-multiresistants: Cette entrée permet de décrire sous forme textuelle les micro-organismes identifiés."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-image-illustrative"/>
+      </reference>
+      <name value="CDA - FR Image illustrative"/>
+      <description value="Entrée FR-Image-illustrative: Image illustrative. Cette entrée, utilisable dans toute entrée, permet de positionner une image, référencée dans le texte de la section par l’attribut renderMultimedia.referencedObject. &#xA; - L’image doit toujours être de type gif, jpeg, png ou bm. Elle est encodée en base 64 et encapsulée dans un élément de type observationMedia.&#xA; - Cet élément observationMedia peut-être seul ou encapsulé dans un élément Région d’intérêt sur image illustrative qui permet de repérer une zone particulière de l’image.&#xA; - Note : Cette entrée ne peut porter que des images au format gif, jpeg, png ou bm, contrairement à l’entrée FR-Document-attache qui permet de porter pratiquement tous types de média (pdf, image, etc…), et qui utilise également un élément de type ObservationMedia."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-imputabilite-effet-indesirable"/>
+      </reference>
+      <name value="CDA - FR Imputabilite effet indesirable"/>
+      <description value="Entrée FR-Imputabilite-effet-indesirable: Cette entrée permet de préciser l'imputabilité d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-informant-apsr"/>
+      </reference>
+      <name value="CDA - FR Informant APSR"/>
+      <description value="FR-Informant-APSR : IHE-PCC Informant. Il permet de fournir le nom et les coordonnées :&#xA;d'une personne ayant fourni des informations concernant le document (rôle d'informateur); ce peut être un PS/un ES/le patient lui-même/une autre personne non PS ;&#xA;d'une personne de confiance désignée par le patient ;&#xA;d'une personne à prévenir en cas d'urgence ;&#xA;du ou des aidant(s) du patient ;de la ou des personne(s) aidée(s)"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-instruction-au-patient"/>
+      </reference>
+      <name value="CDA - FR Instruction au patient"/>
+      <description value="Entrée FR-Instruction-au-patient: IHE-PCC - Simple-Observation. Cette entrée permet d’enregistrer une instruction au patient sous forme codée (c’est notamment le cas pour les prescriptions d’examens de biologie médicale)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-instructions-au-dispensateur"/>
+      </reference>
+      <name value="CDA - FR Instructions au dispensateur"/>
+      <description value="Entrée FR-Instructions-au-dispensateur: IHE-PCC - Medication Fulfillment Instructions. &#xA; - Toute prescription peut faire l'objet d'instructions au dispensateur (pharmacien), par exemple pour indiquer que le traitement doit être étiqueté dans une langue étrangère, etc …  &#xA; - Cette entrée est incluse dans une entrée Prescription à l'aide d'un élément entryRelationship ."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-instructions-au-patient"/>
+      </reference>
+      <name value="CDA - FR Instructions au patient"/>
+      <description value="Entrée FR-Instructions-au-patient: IHE-PCC - Patient-Medication-Instructions. Cette entrée permet d’enregistrer des instructions au patient : &#xA; - sous forme textuelle uniquement (c’est notamment le cas pour les prescriptions de médica-ments) ; &#xA; - sous forme codée : chaque instruction est alors codée dans une sous-entrée FR-Instruction-au-patient (c’est notamment le cas pour les prescriptions d’examens de biologie médicale)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-isolat-microbiologique"/>
+      </reference>
+      <name value="CDA - FR Isolat microbiologique"/>
+      <description value="Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate organizer. &#xA; - L'entrée Isolat microbiologique est une entrée de type 'organizer' qui est utilisée pour les comptes rendus comprenant des résultats de microbiologie. &#xA; - Elle décrit un isolat (milieu de culture sur lequel a poussé un microorganisme) et les résultats d'examens obtenus sur cet isolat (antibiogramme, antifongigramme, sérotype, génotype …)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-item-plan-traitement"/>
+      </reference>
+      <name value="CDA - FR Item plan traitement"/>
+      <description value="Entrée FR-Item-plan-traitement: IHE-MTP Medication Treatment Plan Item. Cette entrée permet de fournir une copie du plan de traitement médicamenteux."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-laboratoire-executant"/>
+      </reference>
+      <name value="CDA - FR Laboratoire executant"/>
+      <description value="FR-Laboratoire-executant: IHE-PCC - Laboratory performer. Laboratoire exécutant"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites"/>
+      </reference>
+      <name value="CDA - FR Liste des allergies et hypersensibilites"/>
+      <description value="Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - Allergy-And-Intolerance-Concern. &#xA; - L'entrée Liste des allergies et hypersensibilités est une entrée qui permet de regrouper des informations relatives aux pathologies allergiques du patient. Cette entrée est basée sur l'élément Etat clinique (Concern Entry - 1.3.6.1.4.1.19376.1.5.3.1.4.5.1) qu'elle spécialise. Elle regroupe des entrées Allergie ou hypersensibilité (1.3.6.1.4.1.19376.1.5.3.1.4.6) qui décrivent chacune une allergie ou une hypersensibilité."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-liste-des-problemes"/>
+      </reference>
+      <name value="CDA - FR Liste des problemes"/>
+      <description value="Entrée FR-Liste-des-problemes: IHE-PCC - Problem-Concern. Cette entrée permet de regrouper des informations relatives aux pathologies non-allergiques du patient. Elle regroupe des entrées FR-Probleme qui décrivent chacun une pathologie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-modalite-entree"/>
+      </reference>
+      <name value="CDA - FR Modalite entree"/>
+      <description value="Entrée FR-Modalite-entree: Cette entrée permet d'indiquer la modalité d'entrée d'un patient en ES (urgence, programmée, etc...)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-modalite-sortie"/>
+      </reference>
+      <name value="CDA - FR Modalite sortie"/>
+      <description value="Entrée FR-Modalite-sortie: Cette entrée permet de préciser la modalité de sortie du patient d'un ES (retour à domicile, EHPAD, HAD, etc...)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-naissance"/>
+      </reference>
+      <name value="CDA - FR Naissance"/>
+      <description value="Entrée FR-Naissance: IHE-PCC - Birth event organizer. &#xA; - Cette entrée rassemble les observations relatives à une naissance. Elle peut-être utilisée comme 'component'; d'une entrée FR-Historique-de-la-grossesse (1.3.6.1.4.1.19376.1.5.3.1.4.13.5.1)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-non-remboursable"/>
+      </reference>
+      <name value="CDA - FR Non remboursable"/>
+      <description value="Entrée FR-Non-remboursable: Cette observation permet d'indiquer si le traitement auquel elle est associée est non remboursable."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-notes-du-dispensateur"/>
+      </reference>
+      <name value="CDA - FR Notes du dispensateur"/>
+      <description value="Entrée FR-Notes-du-dispensateur: IHE PHARM DIS - fulfillment notes. &#xA; - Une dispensation peut contenir une note du dispensateur (pharmacien).Cette entrée est incluse dans une entrée FR-Traitement-dispense à l’aide d’un élément 'entryRelationship'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-observation-sur-echelle-douleur"/>
+      </reference>
+      <name value="CDA - FR Observation sur echelle douleur"/>
+      <description value="Entrée FR-Observation-sur-echelle-douleur: IHE-PCC - Pain Score Observation. Cette entrée permet d'enregistrer l'évaluation du patient de sa douleur sur une échelle de 1 à 10."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-observation-sur-la-grossesse"/>
+      </reference>
+      <name value="CDA - FR Observation sur la grossesse"/>
+      <description value="Entrée FR-Observation-sur-la-grossesse: IHE-PCC - Pregnancy Observation. Cette entrée permet d'apporter des informations relatives aux grossesses actuelle ou passées."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-organisme-assurance-maladie"/>
+      </reference>
+      <name value="CDA - FR Organisme assurance maladie"/>
+      <description value="Entrée FR-Organisme-assurance-maladie: IHE-PCC - Payers-entry. L'entrée Organisme d'assurance maladie est une entrée permettant de décrire un organisme d'assurance maladie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-participant-apsr"/>
+      </reference>
+      <name value="CDA - FR Participant APSR"/>
+      <description value="FR-Participant-APSR: IHE-APSR - AdditionalParticipantAPSR. Cet élément est un élément de type 'participant' utilisable dans les entrées du corps du document et pas dans l'entête. Il permet de décrire un participant à l'élaboration du contenu du document produit par un laboratoire ou par une structure d'anatomopathologie. Le rôle du participant (valideur, responsable, automate ou système, transcripteur) est précisé."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-participant-corps"/>
+      </reference>
+      <name value="CDA - FR Participant corps"/>
+      <description value="FR-Participant: CDA - participant. Participant du corps"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-participant-role"/>
+      </reference>
+      <name value="CDA - FR participantRole"/>
+      <description value="Le participantRole permet de représenter le rôle d’un participant dans un acte clinique."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-patient-avec-sujet-non-humain"/>
+      </reference>
+      <name value="CDA - FR Patient avec sujet non humain"/>
+      <description value="Entrée FR-Patient-avec-sujet-non-humain: Cet élément doit être présent lorsque le sujet des observations de cette partie du compte rendu est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental), tandis que les autres parties du rapport sont liés au patient humain. Le sujet non humain doit aussi être décrit dans l'en-tête du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-performer-corps"/>
+      </reference>
+      <name value="CDA - FR Performer corps"/>
+      <description value="FR-Performer. Élément performer utilisable dans les entrées du corps d'un document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-periode-de-renouvellement"/>
+      </reference>
+      <name value="CDA - FR Periode de renouvellement"/>
+      <description value="Entrée FR-Periode-de-renouvellement: IHE-PRE - Renewal Period. Cette observation permet d'indiquer la période de renouvellement."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-plan-de-soins"/>
+      </reference>
+      <name value="CDA - FR Plan de soins"/>
+      <description value="IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-points-de-vigilances-non-code"/>
+      </reference>
+      <name value="CDA - FR Points de vigilances non code"/>
+      <description value="Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-prelevement"/>
+      </reference>
+      <name value="CDA - FR Prelevement"/>
+      <description value="Entrée FR-Prelevement: IHE-PCC - Specimen collection. L'élément 'Prélèvement' est un élément de type 'procedure' qui permet de décrire le prélèvement et l'échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée 'Résultats d'examens de biologie médicale' (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-prescription"/>
+      </reference>
+      <name value="CDA - FR Prescription"/>
+      <description value="Entrée FR-Prescription: IHE-PCC - Supply - Cette entrée permet de décrire l’acte de prescription lié à un élément substanceAdministration par l’intermédiaire d’un élément entryRelationship dans les entrées suivantes : FR-Traitement, FR-Traitement-maladie-rare, FR-Vaccination, FR-Vaccin-recommande, FR-Fluide-intraveineux"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-prescription-dispositifs-medicaux"/>
+      </reference>
+      <name value="CDA - FR Prescription dispositifs medicaux"/>
+      <description value="IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-prescription-medicaments"/>
+      </reference>
+      <name value="CDA - FR Prescription medicaments"/>
+      <description value="IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-probleme"/>
+      </reference>
+      <name value="CDA - FR Probleme"/>
+      <description value="Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant :  Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-problemes-actifs"/>
+      </reference>
+      <name value="CDA - FR Problemes actifs"/>
+      <description value="IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-produit-de-sante"/>
+      </reference>
+      <name value="CDA - FR Produit de sante"/>
+      <description value="Entrée FR-Produit-de-sante: IHE-PCC - Product-Entry. L'entrée Produit de santé permet de décrire un médicament ou un vaccin."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-quantite-de-produit"/>
+      </reference>
+      <name value="CDA - FR Quantite de produit"/>
+      <description value="Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (&lt;consumable&gt;)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-raison-de-la-recommandation"/>
+      </reference>
+      <name value="CDA - FR Raison de la recommandation"/>
+      <description value="IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-raison-de-la-recommandation-non-code"/>
+      </reference>
+      <name value="CDA - FR Raison de la recommandation non code"/>
+      <description value="IHE-PCC Reason-For-Referral. Cette section permet d'indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-rang-de-la-vaccination"/>
+      </reference>
+      <name value="CDA - FR Rang de la vaccination"/>
+      <description value="Entrée FR-Rang-de-la-vaccination: CDA - Medication series number observation. Cette entrée permet de préciser le rang de la vaccination dans une série d'injections vaccinantes."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-recherche-de-micro-organismes"/>
+      </reference>
+      <name value="CDA - FR Recherche de micro organismes"/>
+      <description value="Entrée FR-Recherche-de-micro-organismes: IHE PCC – Simple Observation. Cette entrée permet d'indiquer si une recherche de micro-organismes multirésistants ou émergents a été effectuée ou pas."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-reference-interne"/>
+      </reference>
+      <name value="CDA - FR Reference interne"/>
+      <description value="Entrée FR-Reference-interne: IHE-PCC - Internal-Reference. L'élément Référence interne est un élément de type 'act' à l'intérieur d'un 'entryRelationship' qui permet de relier un élément à un autre élément du même document par l'intermédiaire son identifiant 'id'. Tous les types d'éléments du document (act, procedure, observation, substanceAdministration, etc) peuvent être pointés par un élément 'Référence interne'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-reference-item-plan-traitement"/>
+      </reference>
+      <name value="CDA - FR Reference item plan traitement"/>
+      <description value="Entrée FR-Reference-item-plan-traitement: IHE-Pharm - Cette entrée permet d’enregistrer une référence à un traitement dans un plan de traitement."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-reference-item-prescription"/>
+      </reference>
+      <name value="CDA - FR Reference item prescription"/>
+      <description value="Entrée FR-Reference-item-prescription: IHE-PRE - Reference-Prescription-Item. Cette entrée permet d’enregistrer la référence à un item de prescription."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-references-externes"/>
+      </reference>
+      <name value="CDA - FR References externes"/>
+      <description value="Entrée FR-References-externes: IHE-PCC - External-References. Cette entrée de type act permet de relier un élément à un (ou des) document(s) externe(s) par l’intermédiaire d’une adresse URL."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-rencontre"/>
+      </reference>
+      <name value="CDA - FR Rencontre"/>
+      <description value="Entrée FR-Rencontre: IHE-PCC - Encounter. &#xA; - L'entrée 'Rencontre' est un élément de type 'encounter' permettant de conserver les modalités d'une rencontre du patient. Il peut s'agir d'une rencontre passée ou à venir."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultat"/>
+      </reference>
+      <name value="CDA - FR Resultat"/>
+      <description value="Entrée FR-Resultat: Cette entrée permet d'indiquer le résultat observé."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent"/>
+      </reference>
+      <name value="CDA - FR Resultat examens de biologie element clinique pertinent"/>
+      <description value="Entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent: IHE-PALM - Laboratory Observation. &#xA; - L'entrée Résultat d'examen / élément clinique pertinent est une entrée de type 'observation' qui permet de décrire un résultat d'un élément d'un examen de biologie médicale ou un élément clinique pertinent fourni par le prescripteur ou le préleveur dans le contexte clinique de la demande d'examens biologiques."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultats"/>
+      </reference>
+      <name value="CDA - FR resultats"/>
+      <description value="Entrée FR-resultats: L'entrée 'FR-Resultats' est une entrée de type 'organizer' regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-section-resultats"/>
+      </reference>
+      <name value="CDA - FR Resultats"/>
+      <description value="Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention"/>
+      </reference>
+      <name value="CDA - FR Resultats de biologie de seconde intention"/>
+      <description value="Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultats-evenements"/>
+      </reference>
+      <name value="CDA - FR Resultats evenements"/>
+      <description value="IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultats-examens"/>
+      </reference>
+      <name value="CDA - FR Resultats examens"/>
+      <description value="IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale"/>
+      </reference>
+      <name value="CDA - FR Resultats examens de biologie medicale"/>
+      <description value="Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report Data Processing. &#xA; - Le modèle de l'entrée Résultats d'examens de biologie médicale est identique quelle que soit la discipline de biologie. Cette entrée de type act peut comporter une liste d'éléments fils entryRelationship de typeCode='COMP'. Les éléments ci-dessous ne sont utilisables que dans l'entrée Résultats d'examens de biologie médicale : &#xA;  - Prélèvement (Specimen Collection – 1.3.6.1.4.1.19376.1.3.1.2) &#xA;  - Batterie d'examens de biologie médicale (Laboratory Battery Organizer – 1.3.6.1.4.1.19376.1.3.1.4)&#xA;  - Isolats microbiologiques (Laboratory Isolate Organizer – 1.3.6.1.4.1.19376.1.3.1.5) &#xA;  - Résultat d'examen / élément clinique pertinent (Laboratory Observation – 1.3.6.1.4.1.19376.1.3.1.6)"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-resultats-examens-non-code"/>
+      </reference>
+      <name value="CDA - FR Resultats examens non code"/>
+      <description value="IHE-PCC - Results. Résultats d’examens sous forme narrative non codée."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-severite"/>
+      </reference>
+      <name value="CDA - FR Severite"/>
+      <description value="Entrée FR-Severite: IHE-PCC - Severity. &#xA; - Cette entrée permet de donner le niveau de sévérité d’un problème : bas, modéré, élevé, etc... Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-signe-vital-observe"/>
+      </reference>
+      <name value="CDA - FR Signe vital observe"/>
+      <description value="Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique. Cette entrée est utilisée dans un élément component d'un élément Signes vitaux (1.3.6.1.4.1.19376.1.5.3.1.4.13.1). Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-signes-vitaux"/>
+      </reference>
+      <name value="CDA - FR Signes vitaux"/>
+      <description value="Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-section-signes-vitaux"/>
+      </reference>
+      <name value="CDA - FR Signes vitaux"/>
+      <description value="IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-simple-observation"/>
+      </reference>
+      <name value="CDA - FR Simple Observation"/>
+      <description value="Entrée FR-Simple-Observation: IHE-PCC - Simple-Observation. Cette entrée est une entrée de base très peu contrainte sur lequel des contraintes spécifiques peuvent être appliquées sur les éléments ou les vocabulaires pour constituer d'autres types d'observations."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-statut"/>
+      </reference>
+      <name value="CDA - FR Statut"/>
+      <description value="Entrée FR-Statut: Cette entrée de type observation permet de décrire et de suivre le statut métier d’un objet."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-statut-clinique-du-patient"/>
+      </reference>
+      <name value="CDA - FR Statut clinique du patient"/>
+      <description value="Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Observation. L'entrée Statut clinique du patient permet de donner une évaluation de l'état clinique du patient. L'entrée Statut clinique du patient est un élément observation qui est inséré dans un autre élément à l'aide d'un lien entryRelationship."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-statut-document"/>
+      </reference>
+      <name value="CDA - FR Statut document"/>
+      <description value="Entrée FR-Statut-document: Cette entrée permet d'indiquer le statut du document (son état d'avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal (élément 'legalAuthenticator' de l'en-tête) ainsi que la date de ce statut."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-statut-du-document"/>
+      </reference>
+      <name value="CDA - FR Statut du document"/>
+      <description value="Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-statut-du-probleme"/>
+      </reference>
+      <name value="CDA - FR Statut du probleme"/>
+      <description value="Entrée FR-Statut-du-probleme: IHE-PCC - Problem-Status-Observation. L'élément 'Statut du problème' est un élément de type 'observation' qui permet de fournir le statut du problème ou de l'allergie. Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l'élément qu'il qualifie."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-statut-fonctionnel"/>
+      </reference>
+      <name value="CDA - FR Statut fonctionnel"/>
+      <description value="Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-sujet"/>
+      </reference>
+      <name value="CDA - FR Sujet"/>
+      <description value="Entrée FR-Sujet: IHE-PCC - Subject participation. Cet élément peut être utilisé lorsqu'il est nécessaire de distinguer qu'une section ou une entrée s'applique à une personne autre que le patient concerné par le document. Par exemple, cet élément est utilisé pour identifier les membres de la famille dans les antécédents familiaux, les nouveaux-nés dans l'historique d'une grossesse."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-sujet-non-humain"/>
+      </reference>
+      <name value="CDA - FR Sujet non humain"/>
+      <description value="Entrée FR-Sujet-non-humain: IHE-PCC - Non-Human Subject &#xA; - Cet élément doit être présent lorsque le sujet des observations du compte rendu est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental) analysé par un laboratoire de biologie médicale dans le cadre d'une investigation sur un patient. Le sujet non humain doit aussi être décrit dans l'en-tête du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-sujet-personne"/>
+      </reference>
+      <name value="CDA - FR Sujet personne"/>
+      <description value="élément utilisé dans FR-Sujet/relatedSubject pour identifier une personne physique."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-synthese-medicale-sejour"/>
+      </reference>
+      <name value="CDA - FR Synthese medicale sejour"/>
+      <description value="Entrée FR-Synthese-medicale-sejour: Cette entrée permet de fournir, sous forme textuelle, une synthèse médicale du séjour."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitement"/>
+      </reference>
+      <name value="CDA - FR Traitement"/>
+      <description value="Entrée FR-Traitement: IHE-PCC - Medications. L'entrée 'Traitement' est une entrée de type 'substanceAdministration' décrivant les modalités d'administration d'un médicament au patient. Elle permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitement-dispense"/>
+      </reference>
+      <name value="CDA - FR Traitement dispense"/>
+      <description value="Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry. Cette entrée de type supply permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitement-prescrit"/>
+      </reference>
+      <name value="CDA - FR Traitement prescrit"/>
+      <description value="Entrée FR-Traitement-prescrit: IHE-PRE Prescription Item. Cette entrée de type substanceAdministration permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d'administration."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitement-prescrit-subordonne"/>
+      </reference>
+      <name value="CDA - FR Traitement prescrit subordonne"/>
+      <description value="Entrée FR-Traitement-prescrit-subordonne: IHE-PRE - Prescription Item. Une entrée FR-Traitement-prescrit de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-prescrit-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-prescrit-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-prescrit-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement-prescrit de premier niveau sous forme de texte libre.&#xA;Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-prescrit-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés. Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-prescrit-subordonne doit avoir un élément precondition pour indiquer les conditions préalables à l’utilisation du médicament."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitement-subordonne"/>
+      </reference>
+      <name value="CDA - FR Traitement subordonne"/>
+      <description value="Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément 'precondition' pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitements"/>
+      </reference>
+      <name value="CDA - FR Traitements"/>
+      <description value="IHE-PCC - Medications. Liste des principales prises médicamenteuses."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitements-administres"/>
+      </reference>
+      <name value="CDA - FR Traitements administres"/>
+      <description value="IHE-PCC - Medications-Administered. La section 'Traitements administrés' contient une description narrative des médicaments administrés au patient et doit inclure des entrées 'Traitement'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-traitements-a-la-sortie"/>
+      </reference>
+      <name value="CDA - FR Traitements à la sortie"/>
+      <description value="IHE-PCC - Hospital-Discharge-Medications. La section 'Traitements à la sortie' contient une description narrative des médicaments à administrer au patient après sa sortie de l'hospitalisation et doit inclure des entrées 'Traitement'."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-transfusion-de-produits-sanguins"/>
+      </reference>
+      <name value="CDA - FR Transfusion de produits sanguins"/>
+      <description value="Entrée FR-Transfusion-de-produits-sanguins: Cette entrée permet d'indiquer s'il a eu ou pas transfusion de produit sanguin."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-transport-du-patient"/>
+      </reference>
+      <name value="CDA - FR Transport du patient"/>
+      <description value="Entrée FR-Transport-du-patient: IHE-PCC - Transport. Cette entrée de type act permet de décrire le transport d'un patient/usager lors d'un déplacement (entrée ou sortie d'hôpital, ...)"/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-transport-du-professionnel"/>
+      </reference>
+      <name value="CDA - FR Transport du professionnel"/>
+      <description value="Entrée FR-Transport-du-professionnel: Cette entrée de type act permet de décrire le transport d'un professionnel lors d’un déplacement."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-type-document-attache"/>
+      </reference>
+      <name value="CDA - FR Type document attache"/>
+      <description value="Entrée FR-Type-document-attache: Élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant le type de document attaché."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-vaccin-recommande"/>
+      </reference>
+      <name value="CDA - FR Vaccin recommande"/>
+      <description value="Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique). &#xA;Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée 'Immunization' (1.3.6.1.4.1.19376.1.5.3.1.4.12)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-vaccination"/>
+      </reference>
+      <name value="CDA - FR Vaccination"/>
+      <description value="Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccination est une entrée de type 'substanceAdministration' pour décrire l'administration d'un vaccin. Elle permet également de décrire pourquoi un vaccin n'a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-composants-elementaires"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-vaccinations"/>
+      </reference>
+      <name value="CDA - FR Vaccinations"/>
+      <description value="IHE-PCC - Immunizations Section. Liste des vaccinations effectuées."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-corps-sections"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-health-care-facility"/>
+      </reference>
+      <name value="CDA - healthCareFacility"/>
+      <description value="L'élément de l'en-tête du CDA healthCareFacility permet de représenter la structure de prise en charge (cabinet du médecin, hôpital ou clinique, etc.)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-informant"/>
+      </reference>
+      <name value="CDA - informant"/>
+      <description value="L'élément de l'en-tête du CDA informant permet d'identifier un informateur, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-information-recipient"/>
+      </reference>
+      <name value="CDA - informationRecipient"/>
+      <description value="L'élément de l'en-tête du CDA informationRecipient permet d'enregistrer une personne déclarée comme destinataire prévu du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-inFulfillment-of"/>
+      </reference>
+      <name value="CDA - inFulfillmentOf"/>
+      <description value="L'élément de l'en-tête du CDA inFulfillmentOf permet d'associer un document à une prescription."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-intended-recipient"/>
+      </reference>
+      <name value="CDA - intendedRecipient"/>
+      <description value="L'élément de l'en-tête du CDA intendedRecipient permet d'enregistrer le destinataire prévu du document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-legal-authenticator"/>
+      </reference>
+      <name value="CDA - legalAuthenticator"/>
+      <description value="L'élément de l'en-tête du CDA legalAuthenticator permet de représenter les caractéristiques du professionnel et/ou de l'établissement participant."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-name"/>
+      </reference>
+      <name value="CDA - Name"/>
+      <description value="L'élément de l'en-tête du CDA  correspond au nom d'une personne physique."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-order"/>
+      </reference>
+      <name value="CDA - order"/>
+      <description value="L'élément de l'en-tête du CDA order permet de représenter la prescription à l’origine de l’acte dont résulte le document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-parent-document"/>
+      </reference>
+      <name value="CDA - parentDocument"/>
+      <description value="L'élément de l'en-tête du CDA parentDocument permet de représenter le document de référence."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-participant-entete"/>
+      </reference>
+      <name value="CDA - participant"/>
+      <description value="L'élément de l'en-tête du CDA participant permet de représenter toute personne/structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-patient"/>
+      </reference>
+      <name value="CDA - patient"/>
+      <description value="L'élément de l'en-tête du CDA patient permet de représenter une personne physique."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-patient-role"/>
+      </reference>
+      <name value="CDA - patientRole"/>
+      <description value="L'élément de l'en-tête du CDA patientRole permet de décrire le patient/usager."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-performer"/>
+      </reference>
+      <name value="CDA - performer"/>
+      <description value="L'élément de l'en-tête du CDA performer permet de représenter l'exécutant de l’évènement documenté. Il est obligatoire et son attribut nullFlavor interdit pour l’évènement documenté principal."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-record-target"/>
+      </reference>
+      <name value="CDA - recordTarget"/>
+      <description value="L'élément de l'en-tête du CDA recordTarget permet de représenter le patient/usager concerné par le document."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-related-document"/>
+      </reference>
+      <name value="CDA - relatedDocument"/>
+      <description value="L'élément de l'en-tête du CDA relatedDocument permet de référencer un document existant (à remplacer ou transformé)."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-related-entity"/>
+      </reference>
+      <name value="CDA - relatedEntity"/>
+      <description value="L'élément de l'en-tête du CDA relatedEntity permet de décrire : un informateur non professionnel, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-represented-custodian-organization"/>
+      </reference>
+      <name value="CDA - representedCustodianOrganization"/>
+      <description value="L'élément de l'en-tête du CDA representedCustodianOrganization contient les éléments caractérisant la structure conservant le document, à savoir l'identifiant, le nom, les adresses géopostales et de télécommunication."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-represented-organization"/>
+      </reference>
+      <name value="CDA - representedOrganization"/>
+      <description value="L'élément de l'en-tête du CDA representedOrganization permet de représenter la structure pour le compte de laquelle intervient le professionnel."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-cda-service-event"/>
+      </reference>
+      <name value="CDA - serviceEvent"/>
+      <description value="L'élément de l'en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. &#xA;L'occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l'attribut nullFlavor."/>
+      <isExample value="false"/>
+      <groupingId value="ressources-cda-entete"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-code-traitement"/>
+      </reference>
+      <name value="ValueSet - FR ValueSet Code Traitement"/>
+      <description value="Jeu de valeurs regroupant les codes de traitement"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-reference-externe"/>
+      </reference>
+      <name value="ValueSet - FR ValueSet Reference externe"/>
+      <description value="Jeu de valeurs regroupant les typeCode du document référencé"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-status-code"/>
+      </reference>
+      <name value="ValueSet - FR ValueSet StatusCode"/>
+      <description value="Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).&#xA; - 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.&#xA; - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.&#xA; - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-statut-du-probleme"/>
+      </reference>
+      <name value="ValueSet - FR ValueSet Statut du problème"/>
+      <description value="Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-type-vaccination"/>
+      </reference>
+      <name value="ValueSet - FR ValueSet Type Vaccination"/>
+      <description value="Jeu de valeurs regroupant les codes de type de vaccination"/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Accueil"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="ressourcesCDA-struc-gen.html"/>
+        <name value="ressourcesCDA-struc-gen.html"/>
+        <title value="Structure générale document"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="ressourcesCDA-entete.html"/>
+        <name value="ressourcesCDA-entete.html"/>
+        <title value="Entête document"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="ressourcesCDA-corps.html"/>
+        <name value="ressourcesCDA-corps.html"/>
+        <title value="Corps d'un document"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="autres_ressources.html"/>
+        <name value="autres_ressources.html"/>
+        <title value="Autres Ressources"/>
+        <generation value="markdown"/>
+        <page>
+          <sourceUrl value="securite.html"/>
+          <name value="securite.html"/>
+          <title value="Sécurité"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="downloads.html"/>
+          <name value="downloads.html"/>
+          <title value="Téléchargements et usages"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <sourceUrl value="translationinfo.html"/>
+        <name value="translationinfo.html"/>
+        <title value="Informations sur la traduction"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2020+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="ci-build"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="shownav"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-expansion-params"/>
+      </code>
+      <value value="../../expansion-params.json"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="pin-canonicals"/>
+      </code>
+      <value value="pin-all"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="logging"/>
+      </code>
+      <value value="tx"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="logging"/>
+      </code>
+      <value value="html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="logging"/>
+      </code>
+      <value value="generate"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="logging"/>
+      </code>
+      <value value="init"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="logging"/>
+      </code>
+      <value value="progress"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="i18n-default-lang"/>
+      </code>
+      <value value="fr"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="i18n-lang"/>
+      </code>
+      <value value="en"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="translation-sources"/>
+      </code>
+      <value value="input/translations/en"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/assets"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="https://interop.esante.gouv.fr/ig/cda/document-core/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-valueset-code-traitement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ValueSet fr-valueset-code-traitement</b></p><a name=\"fr-valueset-code-traitement\"> </a><a name=\"hcfr-valueset-code-traitement\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationCode-cisis.html\">ActSubstanceAdministrationCode</a></li><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-absent-or-unknown-medication-cisis.html\">JDV Absent Or Unknown Medication CISIS</a></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-valueset-code-traitement</b></p><a name=\"en-fr-valueset-code-traitement\"> </a><a name=\"en-hcfr-valueset-code-traitement\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationCode-cisis.html\">ActSubstanceAdministrationCode</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-absent-or-unknown-medication-cisis.html\">JDV Absent Or Unknown Medication CISIS</a></li></ul></div></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FRValueSetCodeTraitement"] ; # 
+  fhir:title [ fhir:v "ValueSet - FR ValueSet Code Traitement"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-07-28T20:38:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Jeu de valeurs regroupant les codes de traitement"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France (la)" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260619134043"^^xsd:anyURI ;
+         fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260619134043>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260619134042"^^xsd:anyURI ;
+         fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260619134042>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
