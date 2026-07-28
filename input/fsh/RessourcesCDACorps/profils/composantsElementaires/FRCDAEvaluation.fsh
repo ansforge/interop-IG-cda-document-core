@@ -70,7 +70,7 @@ and frEvaluation 1..1
 * performer ^definition = "Evaluateur"
 * author 0..1
 * author only FRCDAAuthor
-* author ^short = "Auteur de l'évaluation - @typeCode ='RESP' "
+* author ^short = "Auteur de l'évaluation - @typeCode ='RESP'"
 * author ^definition = "Auteur de l'évaluation"
 * participant 0..1
 * participant only FRCDAParticipantCorps

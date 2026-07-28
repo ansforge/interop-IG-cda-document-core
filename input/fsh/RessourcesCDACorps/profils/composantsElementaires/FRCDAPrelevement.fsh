@@ -28,7 +28,7 @@ and frPrelevement 1..1
 * code.codeSystem 1..1 MS
 * effectiveTime MS
 * effectiveTime 1..1
-* effectiveTime ^short = "Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement. "
+* effectiveTime ^short = "Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement."
 * effectiveTime ^definition = "Date du prélèvement"
 * targetSiteCode 0..1
 * targetSiteCode ^short = "Localisation du prélèvement SNOMED CT (2.16.840.1.113883.6.96)"
@@ -67,7 +67,7 @@ ProduitUtilise 0..* MS
   * participantRole 1..1
     * classCode = #SPEC
     * id 1..1 MS
-    * id ^short = "Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal). "
+    * id ^short = "Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal)."
     * id ^definition = "Identifiant de l'échantillon"
     * playingEntity 1..1
       * code 1..1
@@ -84,7 +84,7 @@ ProduitUtilise 0..* MS
     * playingDevice 1..1
       * code MS
       * code 1..1
-      * code ^short = "Code du dispositif - Par exemple 'Trousse de détection HPV' "
+      * code ^short = "Code du dispositif - Par exemple 'Trousse de détection HPV'"
       * code ^definition = "Code du dispositif"
 * participant[ProduitUtilise] 0..* MS
 * participant[ProduitUtilise] ^short = "Produit utilisé"
@@ -95,7 +95,7 @@ ProduitUtilise 0..* MS
     * playingDevice 1..1
       * code MS
       * code 1..1
-      * code ^short = "Code du produit - Par exemple 'Milieu' pour le test HPV "
+      * code ^short = "Code du produit - Par exemple 'Milieu' pour le test HPV"
       * code ^definition = "Code du produit"
 * performer 0..1
 * performer only FRCDAPerformerCorps

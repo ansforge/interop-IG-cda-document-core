@@ -11,7 +11,7 @@ Description: "IHE-PCC - Medications. Liste des principales prises médicamenteus
 and ccdSectionMedications 1..1
 and frSectionTraitements 1..1
 * templateId[iheSectionMedications].root = "1.3.6.1.4.1.19376.1.5.3.1.3.19"
-* templateId[iheSectionMedications] ^short = "	Déclaration de conformité de la section aux spécifications (IHE PCC)"
+* templateId[iheSectionMedications] ^short = "Déclaration de conformité de la section aux spécifications (IHE PCC)"
 * templateId[ccdSectionMedications].root = "2.16.840.1.113883.10.20.1.8"
 * templateId[ccdSectionMedications] ^short = "Déclaration de conformité de la section au parent (CCD)"
 * templateId[frSectionTraitements].root = "1.2.250.1.213.1.1.2.143"

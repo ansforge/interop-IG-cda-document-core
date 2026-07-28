@@ -61,7 +61,7 @@ Souvent, en particulier lorsque l'arrêt brusque du traitement peut avoir des co
 Les doses peuvent être ajustées en modifiant la fréquence de la dose, la quantité de la dose, ou les deux. 
 Lorsque la fréquence de la dose est simplement ajustée (par ex. 5 mg de prednisone deux fois par jour pendant trois jours, puis 5 mg par jour pendant trois jours, puis 5 mg tous les deux jours), une seule entrée
 Traitement est nécessaire et les différentes fréquences sont enregistrées dans l'élement . 
-Lorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose. "
+Lorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose."
 * templateId[iheModeAdministrationDosesProgressives] ^definition = "Mode d'administration : doses progressives"
 * templateId[iheModeAdministrationDosesFractionnees].root 1..1
 * templateId[iheModeAdministrationDosesFractionnees].root = "1.3.6.1.4.1.19376.1.5.3.1.4.9"
@@ -155,8 +155,7 @@ Dans le cas où la posologie est structurée, si la région anatomique d'adminis
 S'il n'y a pas de traitement, utiliser une valeur nullFlavor.
 S'il y a un traitement, les sous-éléments 'low' et 'high' permettent de fournir les doses minimales et maximales à administrer. Dans le cas où la dose est fixe, ces deux sous-éléments prendront les mêmes valeurs. Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit être transmise. Les unités sont exprimées selon le système de codage UCUM.
-Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
-"""
+Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information."""
 * doseQuantity ^definition = "Dose à administrer"
   * low 1..1 MS
   * low.translation 0..1 MS
@@ -172,8 +171,7 @@ Le rythme d'administration permet d'indiquer la quantité de produit à administ
 Les sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et maximal de l'administration. Dans le cas où le rythme est fixe, ces deux sous-éléments prendront les mêmes valeurs.
 L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
-Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
-"""
+Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information."""
   * low 1..1 MS
   * low.translation 0..1 MS
   * low.translation.originalText 1..1 MS
@@ -189,8 +187,7 @@ Plusieurs occurrences de 'maxDoseQuantity' peuvent être utilisées pour indique
 Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
 - numerator : la quantité maximale à administrer,
 - denominator : la plage de temps sur laquelle s'applique ce maximum.
-Les unités sont exprimées selon le système de codage UCUM.
-"""
+Les unités sont exprimées selon le système de codage UCUM."""
   * numerator 1..1 MS
   * denominator 1..1 MS
 * consumable only FRCDAProduitDeSante
@@ -208,8 +205,7 @@ Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre do
 * author[prescripteur] only FRCDAAuthor
 * author[auteurDuPrescription] ^short = "Auteur du document Prescription : \r\n
 Dans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.
-Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription.
-"
+Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription."
 * author[auteurDuPrescription] only FRCDAAuthor
 * precondition MS
 * precondition 0..1
@@ -251,8 +247,7 @@ Dans l'élément 'act' de l'entryRelationship :
 * entryRelationship[frTraitementPrescritSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementPrescritSubordonne] ^short = """Entrée Traitement prescrit subordonné : \r\n
 Une entrée FR-Traitement-prescrit de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-prescrit-subordonnee pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
-L'utilisation de sous-entrées FR-Traitement-prescrit-subordonnee pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement-prescrit de premier niveau sous forme de texte libre.
-"""
+L'utilisation de sous-entrées FR-Traitement-prescrit-subordonnee pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement-prescrit de premier niveau sous forme de texte libre."""
 
 * entryRelationship[frReferenceItemPlanTraitement].substanceAdministration only FRCDAReferenceItemPlanTraitement
 * entryRelationship[frReferenceItemPlanTraitement].typeCode = #REFR

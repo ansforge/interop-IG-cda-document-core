@@ -52,7 +52,7 @@ and frDicomQuantite 1..1
 * interpretationCode ^definition = "non utilisé"
 * methodCode MS
 * methodCode 0..1
-* methodCode ^short = "non utilisé "
+* methodCode ^short = "non utilisé"
 * methodCode ^definition = "non utilisé"
 * targetSiteCode 1..1
 * targetSiteCode ^short = "Localisation anatomique : SNOMED CT (2.16.840.1.113883.6.96)"

@@ -5,7 +5,7 @@ Title: "CDA - FR Prescription"
 Description: "Entrée FR-Prescription: IHE-PCC - Supply - Cette entrée permet de décrire l’acte de prescription lié à un élément substanceAdministration par l’intermédiaire d’un élément entryRelationship dans les entrées suivantes : FR-Traitement, FR-Traitement-maladie-rare, FR-Vaccination, FR-Vaccin-recommande, FR-Fluide-intraveineux"
 * classCode MS
 * moodCode MS
-* moodCode ^short = " Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT' "
+* moodCode ^short = "Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT'"
 * moodCode ^definition = "Si la prescription a déjà été dispensée:"
 * id 1..1 MS
 * id ^short = "Identifiant de l'entrée"
@@ -30,7 +30,7 @@ and frPrescription 1..1
 * templateId[frPrescription] ^short = "Conformité FR-Prescription (CI-SIS)"
 * templateId[frPrescription] ^definition = "Conformité FR-Prescription (CI-SIS)"
 * repeatNumber ^short = "Nombre de renouvellements possibles"
-* quantity ^short = "Quantité - L'unité est exprimée selon le système de codage UCUM. "
+* quantity ^short = "Quantité - L'unité est exprimée selon le système de codage UCUM."
 * quantity ^definition = "Quantité"
 * performer MS
 * performer ^short = "Dispensateur"

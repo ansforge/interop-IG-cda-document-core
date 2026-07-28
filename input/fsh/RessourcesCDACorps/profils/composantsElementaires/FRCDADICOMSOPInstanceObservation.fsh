@@ -18,11 +18,11 @@ Description: "Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP In
 and dicomSOPInstanceObservation 1..1
 * templateId[frDicomSOPInstanceObservation].root 1..1
 * templateId[frDicomSOPInstanceObservation].root = "1.2.250.1.213.1.1.3.157"
-* templateId[frDicomSOPInstanceObservation] ^short = "Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) "
+* templateId[frDicomSOPInstanceObservation] ^short = "Conformité FR-DICOM-SOP-instrance-observation (CI-SIS)"
 * templateId[frDicomSOPInstanceObservation] ^definition = "Conformité FR-DICOM-SOP-instrance-observation (CI-SIS)"
 * templateId[dicomSOPInstanceObservation].root 1..1
 * templateId[dicomSOPInstanceObservation].root = "1.2.840.10008.9.18"
-* templateId[dicomSOPInstanceObservation] ^short = "Conformité SOP Instance Observation (DICOM Part 20) "
+* templateId[dicomSOPInstanceObservation] ^short = "Conformité SOP Instance Observation (DICOM Part 20)"
 * templateId[dicomSOPInstanceObservation] ^definition = "Conformité SOP Instance Observation (DICOM Part 20)"
 * code MS
 * code ^short = "Classe SOP - valeur issue du JDV-SOPClass_CISIS (1.2.250.1.213.1.1.5.689)."
@@ -32,7 +32,7 @@ and dicomSOPInstanceObservation 1..1
 * code.displayName MS
 * code.codeSystem 1..1 MS
 * text MS
-* text ^short = " url permettant d’accéder aux images sur la Drim box source. Cette url, basée sur le profil IHE Invoke Image Display , est construite de la manière suivante :https://<location>/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID=<StudyInstanceUID>&amp;Accessionnumber=<Accessionnumber>&amp;idCDA=<idCDA> avec les paramètres :<location> : Racine de l’URL par laquelle on accède au PACS qui met à disposition de l’examen (cf volet CI-SIS_SPEC_TECH_Objet ref d'examens d'imagerie)<StudyInstanceUID> : Identifiant de l’examen attribué par le RIS<Accessionnumber> : Identifiant de la demande attribué par le RIS (concaténer root.extension)<idCDA> : Identifiant du document CDA IMG-CR-IMG (élément <id root>)"
+* text ^short = "url permettant d’accéder aux images sur la Drim box source. Cette url, basée sur le profil IHE Invoke Image Display , est construite de la manière suivante :https://<location>/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID=<StudyInstanceUID>&amp;Accessionnumber=<Accessionnumber>&amp;idCDA=<idCDA> avec les paramètres :<location> : Racine de l’URL par laquelle on accède au PACS qui met à disposition de l’examen (cf volet CI-SIS_SPEC_TECH_Objet ref d'examens d'imagerie)<StudyInstanceUID> : Identifiant de l’examen attribué par le RIS<Accessionnumber> : Identifiant de la demande attribué par le RIS (concaténer root.extension)<idCDA> : Identifiant du document CDA IMG-CR-IMG (élément <id root>)"
 * text ^definition = "Url permettant d’accéder aux images sur la Drim box source"
   * mediaType = #application/dicom
   * reference 1..1
