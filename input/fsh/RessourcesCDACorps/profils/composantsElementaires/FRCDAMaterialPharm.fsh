@@ -2,11 +2,11 @@ Alias: $CDAMaterial = http://hl7.org/cda/stds/core/StructureDefinition/Material
 Alias: $CE = http://hl7.org/cda/stds/core/StructureDefinition/CE
 Alias: $EN = http://hl7.org/cda/stds/core/StructureDefinition/EN
 Alias: $RTO_PQ_PQ = http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ
+Alias: $TEL = http://hl7.org/cda/stds/core/StructureDefinition/TEL
 Alias: $XmlNamespace = http://hl7.org/fhir/tools/StructureDefinition/xml-namespace
 
 Logical: FRCDAMaterialPharm
 Parent: $CDAMaterial
-Id: fr-cda-material-pharm
 Title: "CDA - Matériau pharmaceutique enrichi"
 Description: """
 Modèle logique dérivé du Material CDA officiel et enrichi avec les
@@ -122,7 +122,9 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ingredient.ingredient.code.originalText ^extension[0].url = $XmlNamespace
 * ingredient.ingredient.code.originalText ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
-* ingredient.ingredient.code.originalText.reference 0..1
+* ingredient.ingredient.code.originalText.reference 0..1 $TEL
+    "Référence du texte original"
+    "Référence (ancre) vers le texte original décrivant la substance active."
 
 * ingredient.ingredient.code.originalText.reference ^extension[0].url = $XmlNamespace
 * ingredient.ingredient.code.originalText.reference ^extension[0].valueUri = "urn:ihe:pharm:medication"
