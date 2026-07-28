@@ -5,8 +5,7 @@ Title: "CDA - FR Acte"
 Description: "Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une entrée de type 'procedure' décrivant un acte planifié ou réalisé."
 * classCode MS
 * moodCode MS
-* moodCode ^short = """
- - Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) 
+* moodCode ^short = """- Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) 
  - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
      - si l'acte n'a pas eu lieu : negationInd='false' 
      - si l'acte a eu lieu (valeur par défaut)"""
@@ -27,11 +26,11 @@ and frActe 1..1
 * templateId[iheProcedureEntry] ^definition = "Conformité Procedure Entry (IHE PCC)"
 * templateId[ccdPlanOfCareActivityPlanned].root 1..1
 * templateId[ccdPlanOfCareActivityPlanned].root = "2.16.840.1.113883.10.20.1.29"
-* templateId[ccdPlanOfCareActivityPlanned] ^short = "Conformité Plan of care activity (CCD) si acte prévu "
+* templateId[ccdPlanOfCareActivityPlanned] ^short = "Conformité Plan of care activity (CCD) si acte prévu"
 * templateId[ccdPlanOfCareActivityPlanned] ^definition = "Conformité Plan of care activity (CCD) si acte prévu"
 * templateId[ccdPlanOfCareActivityPlannedRealised].root 1..1
 * templateId[ccdPlanOfCareActivityPlannedRealised].root = "2.16.840.1.113883.10.20.1.25"
-* templateId[ccdPlanOfCareActivityPlannedRealised] ^short = "Conformité Procedure activity (CCD) si acte réalisée "
+* templateId[ccdPlanOfCareActivityPlannedRealised] ^short = "Conformité Procedure activity (CCD) si acte réalisée"
 * templateId[ccdPlanOfCareActivityPlannedRealised] ^definition = "Conformité Procedure activity (CCD) si acte réalisée"
 * templateId[frActe] 1..1
 * templateId[frActe].root = "1.2.250.1.213.1.1.3.62"
@@ -78,7 +77,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)"""
 * approachSiteCode ^definition = "Voie d’abord"
   * qualifier MS
   * qualifier 0..1
-  * qualifier ^short = "Latéralité SNOMED CT (2.16.840.1.113883.6.96) "
+  * qualifier ^short = "Latéralité SNOMED CT (2.16.840.1.113883.6.96)"
   * qualifier ^definition = "Latéralité"
 * targetSiteCode ^short = "Localisation anatomique SNOMED CT (2.16.840.1.113883.6.96)"
 * targetSiteCode ^definition = "Localisation anatomique"

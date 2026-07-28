@@ -45,7 +45,7 @@ and frSimpleObservation 1..1
  L'élément  doit être présent dans une observation autonome (c'est-à-dire une observation qui n'apparait pas dans un organizer qui contient déjà un effectiveTime) et doit contenir la date de l'observation clinique. 
  Cet élément doit être précis à la date du jour. 
  Si la date et l'heure sont inconnues, cet élément doit l'indiquer à l'aide d'un attribut nullFlavor. 
- La date doit être enregistrée à l'aide du type de données approprié (pour une date précise ou pour un intervalle contenant un élément low et un élément high). """
+ La date doit être enregistrée à l'aide du type de données approprié (pour une date précise ou pour un intervalle contenant un élément low et un élément high)."""
 * effectiveTime ^definition = "Date de l'observation"
 * repeatNumber MS
 * value MS
@@ -61,7 +61,7 @@ and frSimpleObservation 1..1
 * methodCode ^short = "Méthode"
 * methodCode ^definition = "Méthode"
 * targetSiteCode 0..1
-* targetSiteCode ^short = "Localisation anatomique : Terminologie : SNOMED CT (2.16.840.1.113883.6.96) "
+* targetSiteCode ^short = "Localisation anatomique : Terminologie : SNOMED CT (2.16.840.1.113883.6.96)"
 * targetSiteCode ^definition = "Localisation anatomique"
 * author 0..1
 * author ^short = """Auteur de l'observation :\r\n

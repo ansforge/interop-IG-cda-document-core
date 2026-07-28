@@ -57,7 +57,7 @@ and frEvaluationComposant 1..1
 * value.originalText.reference 1..1
 * interpretationCode MS
 * interpretationCode 0..1
-* interpretationCode ^short = " Interprétation "
+* interpretationCode ^short = "Interprétation"
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
 * entryRelationship ^slicing.discriminator.type = #value

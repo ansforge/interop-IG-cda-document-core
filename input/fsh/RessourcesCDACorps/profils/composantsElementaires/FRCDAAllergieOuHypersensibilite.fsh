@@ -25,7 +25,7 @@ and frAllergieOuHypersensibilite 1..1
 * templateId[ccdAlertObservation] ^definition = "Conformité Alert observation (CCD)"
 * templateId[iheProblemEntry].root 1..1
 * templateId[iheProblemEntry].root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"
-* templateId[iheProblemEntry] ^short = "Conformité Problem Entry (IHE PCC) "
+* templateId[iheProblemEntry] ^short = "Conformité Problem Entry (IHE PCC)"
 * templateId[iheProblemEntry] ^definition = "Conformité Problem Entry (IHE PCC)"
 * templateId[ccdProblemObservation].root 1..1
 * templateId[ccdProblemObservation].root = "2.16.840.1.113883.10.20.1.28"

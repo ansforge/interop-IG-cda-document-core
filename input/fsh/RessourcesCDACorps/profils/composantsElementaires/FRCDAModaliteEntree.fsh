@@ -32,13 +32,13 @@ Description: "Entrée FR-Modalite-entree: Cette entrée permet d'indiquer la mod
 * code.codeSystem 1..1 MS
 * text MS
 * text 1..1
-* text ^short = " Description narrative de l'observation."
+* text ^short = "Description narrative de l'observation."
 * text.reference 1..1 MS
 * text.reference ^short = "Référence à la partie narrative de la section qui contiend la modalité d'entrée sous forme textuelle si la réponse est 'autre'."
 * text.reference ^definition = "Référence à la partie narrative de la section"
 * statusCode MS
 * statusCode 1..1
-* statusCode ^short = " Statut de l'entrée"
+* statusCode ^short = "Statut de l'entrée"
 * statusCode ^definition = "Statut de l'entrée"
 * statusCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis (required)
 * effectiveTime MS

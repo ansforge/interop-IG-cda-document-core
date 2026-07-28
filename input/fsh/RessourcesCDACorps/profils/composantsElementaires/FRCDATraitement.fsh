@@ -132,8 +132,7 @@ Dans le cas d'un mélange préparé, la description du mélange doit être fourn
 S'il n'y a pas de traitement, utiliser une valeur nullFlavor.
 S'il y a un traitement, les sous-éléments 'low' et 'high' permettent de fournir les doses minimales et maximales à administrer. Dans le cas où la dose est fixe, ces deux sous-éléments prendront les mêmes valeurs. Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
 Dans le cas où l'on s'exprime en quantités indénombrables, l'unité doit être transmise. Les unités sont exprimées selon le système de codage UCUM.
-Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information.
-"""
+Dans le cas où l'on s'exprime en quantités dénombrables (capsules, comprimés, gélules, etc.) l'unité ne doit pas être renseignée. A la place, on ajoute un champ 'translation' qui permet de pointer sur l'élément de la partie narrative relative à cette information."""
 * doseQuantity ^definition = "Dose à administrer"
   * low MS
   * low.translation 0..1 MS
@@ -148,8 +147,7 @@ Le rythme d'administration permet d'indiquer la quantité de produit à administ
 Les sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et maximal de l'administration. Dans le cas où le rythme est fixe, ces deux sous-éléments prendront les mêmes valeurs.
 L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
-Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.
-"""
+Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information."""
 * rateQuantity MS
   * low 1..1 MS
   * low.translation 0..1 MS
@@ -167,8 +165,7 @@ Plusieurs occurrences de 'maxDoseQuantity' peuvent être utilisées pour indique
 Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
 - numerator : la quantité maximale à administrer,
 - denominator : la plage de temps sur laquelle s'applique ce maximum.
-Les unités sont exprimées selon le système de codage UCUM.
-"""
+Les unités sont exprimées selon le système de codage UCUM."""
   * numerator 1..1 MS
     * unit MS
     * value MS
@@ -181,7 +178,7 @@ Les unités sont exprimées selon le système de codage UCUM.
 * precondition MS
 * precondition 0..1
 * precondition ^short = """Précondition : \r\n
-Permet de décrire les conditions préalables à l'utilisation du médicament.      L'attribut @value de l'élément 'reference' est une URI qui pointe vers la partie narrative du document CDA décrivant ces conditions préalables. """
+Permet de décrire les conditions préalables à l'utilisation du médicament.      L'attribut @value de l'élément 'reference' est une URI qui pointe vers la partie narrative du document CDA décrivant ces conditions préalables."""
 * precondition ^definition = "Précondition"
   * criterion MS
   * criterion.text 1..1
@@ -199,32 +196,26 @@ frPrescription 0..*
 * entryRelationship[frPrescription] ^definition = "Prescription"
 * entryRelationship[frPrescription].typeCode = #REFR
 * entryRelationship[frTraitementSubordonne].substanceAdministration only FRCDATraitementSubordonne
-* entryRelationship[frTraitementSubordonne].substanceAdministration ^short = """
-Traitement subordonné : \r\n
+* entryRelationship[frTraitementSubordonne].substanceAdministration ^short = """Traitement subordonné : \r\n
 Une entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées 'Traitement' subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
-L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre.
-"""
+L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre."""
 * entryRelationship[frTraitementSubordonne].substanceAdministration ^definition = "Traitement subordonné"
 * entryRelationship[frTraitementSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementSubordonne].sequenceNumber MS
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
-* entryRelationship[frInstructionsAuPatient].act ^short = """
-Instruction au patient : \r\n
-Les instructions au patient peuvent être transmises, sous forme textuelle, dans une entrée Instructions au patient (Patient Medication Instructions – 1.3.6.1.4.1.19376.1.5.3.1.4.3) portée par un élément "entryRelationship".
-"""
+* entryRelationship[frInstructionsAuPatient].act ^short = """Instruction au patient : \r\n
+Les instructions au patient peuvent être transmises, sous forme textuelle, dans une entrée Instructions au patient (Patient Medication Instructions – 1.3.6.1.4.1.19376.1.5.3.1.4.3) portée par un élément "entryRelationship"."""
 * entryRelationship[frInstructionsAuPatient].act ^definition = "Instructions au patient"
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient].inversionInd = true
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
-* entryRelationship[frReferenceInterne].act ^short = """
-Motif du traitement : \r\n
+* entryRelationship[frReferenceInterne].act ^short = """Motif du traitement : \r\n
 Le motif du traitement (ou raison de l'administration) peut être indiqué en faisant référence à autre entrée du document CDA constituant ce motif (par exemple une entrée Problème).
 Dans l'élément 'act' de l'entryRelationship :
 - L'attribut @actCode='ACT'
 - L'attribut @moodCode='EVN'
 - L'élément 'id' de l'élément référencé est repris à l'identique dans les entrées à lier
-- L'élément 'code' doit concorder avec celui utilisé par l'élément de référence.
-""" 
+- L'élément 'code' doit concorder avec celui utilisé par l'élément de référence.""" 
 * entryRelationship[frReferenceInterne].act ^definition = "Motif du traitement"
 * entryRelationship[frReferenceInterne].typeCode = #RSON
 

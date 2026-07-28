@@ -19,7 +19,7 @@ and frSimpleObservation 1..1
 and frStatut 1..1
 * templateId[iheSimpleObservation].root 1..1
 * templateId[iheSimpleObservation].root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"
-* templateId[iheSimpleObservation] ^short = " Conformité Simple observation (IHE PCC)"
+* templateId[iheSimpleObservation] ^short = "Conformité Simple observation (IHE PCC)"
 * templateId[iheSimpleObservation] ^definition = "Conformité Simple observation (IHE PCC)"
 * templateId[frSimpleObservation].root 1..1
 * templateId[frSimpleObservation].root = "1.2.250.1.213.1.1.3.48"
@@ -74,11 +74,9 @@ and frStatut 1..1
 * interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis (required)
 * author 0..1
 * author only FRCDAAuthor
-* author ^short = """
-Auteur de l'observation : \r\n
+* author ^short = """Auteur de l'observation : \r\n
 Une entrée SimpleObservation est supposée être rédigée par l'auteur du document (par reconduction de contexte). 
 Toutefois, l'auteur spécifique d'une observation peut être fourni en enregistrant l'auteur dans l'en-tête et en faisant référence à cet auteur dans une l'élément <author> de l'entrée. 
 Si les auteurs sont explicitement répertoriés dans le document, un élément <id> permet de faire référence à l'ID de l'auteur dans l'en-tête. 
-Si l'auteur de l'observation n'est pas l'auteur du document, l'élément <person> doit comporter son nom et son identifiant.
-"""
+Si l'auteur de l'observation n'est pas l'auteur du document, l'élément <person> doit comporter son nom et son identifiant."""
 * author ^definition = "Auteur de l'observation"

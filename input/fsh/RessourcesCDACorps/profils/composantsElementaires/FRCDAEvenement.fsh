@@ -19,11 +19,11 @@ and ccdPlanOfCareActivityPlannedRealised 0..1
 and frEvenement 1..1
 * templateId[ccdEncounterActivity].root 0..1
 * templateId[ccdEncounterActivity].root = "2.16.840.1.113883.10.20.1.21"
-* templateId[ccdEncounterActivity] ^short = "Conformité Encounter activity (CCD) si évènement réalisée (EVN) "
+* templateId[ccdEncounterActivity] ^short = "Conformité Encounter activity (CCD) si évènement réalisée (EVN)"
 * templateId[ccdEncounterActivity] ^definition = "Conformité Encounter activity (CCD) si évènement réalisée (EVN)"
 * templateId[ccdPlanOfCareActivityPlannedRealised].root 0..1
 * templateId[ccdPlanOfCareActivityPlannedRealised].root = "2.16.840.1.113883.10.20.1.25"
-* templateId[ccdPlanOfCareActivityPlannedRealised] ^short = "Conformité Plan of care activity (CCD) si évènement planifiée (INT) "
+* templateId[ccdPlanOfCareActivityPlannedRealised] ^short = "Conformité Plan of care activity (CCD) si évènement planifiée (INT)"
 * templateId[ccdPlanOfCareActivityPlannedRealised] ^definition = "Conformité Plan of care activity (CCD) si évènement planifiée (INT)"
 * templateId[frEvenement].root 1..1
 * templateId[frEvenement].root = "1.2.250.1.213.1.1.3.215"

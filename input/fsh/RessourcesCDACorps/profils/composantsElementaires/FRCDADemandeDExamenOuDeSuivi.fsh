@@ -6,8 +6,7 @@ Description: "Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Req
 * classCode MS
 * classCode = #OBS
 * moodCode MS
-* moodCode ^short = "
- - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
+* moodCode ^short = "- Si la demande fait partie d'un plan de soins : @moodCode='INT'  
  - Si la demande est une proposition : @moodCode='PRP'  
  - Si la demande est un objectif à atteindre : @moodCode='GOL'"
 * moodCode ^definition = " 
@@ -43,7 +42,7 @@ and frDemandeDexamenOuDeSuivi 1..1
  @displayName='Autre demande d’examen ou de suivi'
  @codeSystem='1.2.250.1.213.1.1.4.322' 
  @codeSystemName='TerminologieCISIS'  
- et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. "
+ et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante."
 * code ^definition = "Type de la demande"
 * code.code 1..1 MS
 * code.displayName MS
