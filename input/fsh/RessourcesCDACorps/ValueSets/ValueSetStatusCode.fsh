@@ -6,6 +6,6 @@ Description: "Jeu de valeurs permet d'indique le niveau de complétude des résu
  - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.
  - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."
 
-* include https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis#completed
-* include https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis#active
-* include https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis#aborted
+* include http://terminology.hl7.org/CodeSystem/v3-ActStatus#completed
+* include http://terminology.hl7.org/CodeSystem/v3-ActStatus#active
+* include http://terminology.hl7.org/CodeSystem/v3-ActStatus#aborted
