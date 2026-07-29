@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
   "name" : "FRCDASectionResultatsExamens",
   "title" : "CDA - FR Resultats examens",
   "status" : "draft",
-  "date" : "2026-07-29T08:04:35+00:00",
+  "date" : "2026-07-29T08:58:09+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
