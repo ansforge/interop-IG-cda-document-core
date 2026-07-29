@@ -18,11 +18,11 @@ Description: "Entrée FR-Dose-antigene: IHE-PCC – Antigene-Dose. L'entrée Dos
 and frDoseAntigene 1..1
 * templateId[iheAntigenDose].root 1..1
 * templateId[iheAntigenDose].root = "1.3.6.1.4.1.19376.1.5.3.1.4.12.1"
-* templateId[iheAntigenDose] ^short = "Conformité Antigen Dose (IHE PCC) "
+* templateId[iheAntigenDose] ^short = "Conformité Antigen Dose (IHE PCC)"
 * templateId[iheAntigenDose] ^definition = "Conformité Antigen Dose (IHE PCC)"
 * templateId[frDoseAntigene].root 1..1
 * templateId[frDoseAntigene].root = "1.2.250.1.213.1.1.3.46"
-* templateId[frDoseAntigene] ^short = "Conformité FR-Dose-antigene (CI-SIS) "
+* templateId[frDoseAntigene] ^short = "Conformité FR-Dose-antigene (CI-SIS)"
 * templateId[frDoseAntigene] ^definition = "Conformité FR-Dose-antigene (CI-SIS)"
 * doseQuantity 1..1
 * doseQuantity ^short = "Dose d'antigène"

@@ -5,8 +5,7 @@ Title: "CDA - FR Dispositif medical"
 Description: "Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical."
 * classCode MS
 * moodCode MS
-* moodCode ^short = "
- - Si le DM a été dispensé : @moodCode='EVN'  
+* moodCode ^short = "- Si le DM a été dispensé : @moodCode='EVN'  
  - Si le DM n’a pas encore été dispensé : @moodCode='INT'"
 * moodCode ^definition = "
  - Si le DM a été dispensé : @moodCode='EVN'  

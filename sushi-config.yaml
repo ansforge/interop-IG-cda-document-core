@@ -10,7 +10,7 @@ publisher:
   url: https://esante.gouv.fr
 status: draft
 version: 0.1.0 # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 copyrightYear: 2020+
 license: CC0-1.0
 releaseLabel: ci-build # le release label doit être conforme au cycle de vie de la doctrine du ci-sis. Cf. https://interop.esante.gouv.fr/ig/documentation/mod_bonnes_pratiques.html#release-dun-ig-fhir colonne "label de publication"
@@ -21,6 +21,7 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
     shownav: 'true'
     path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
     pin-canonicals: pin-all
+    path-suppressed-warnings: input/ignoreWarnings.txt
     apply-contact: true
     logging:
       - tx #tx: Messages describing the use of the terminology server (for debugging)
@@ -78,7 +79,7 @@ menu:
         Téléchargements et usage: downloads.html
 
 groups:
-  Ressources CDA entête:
+  ressources-cda-entete:
     name: Eléments CDA de l'entête
     resources:
       - StructureDefinition/fr-cda-clinical-document
@@ -117,7 +118,7 @@ groups:
       - StructureDefinition/fr-cda-encounter-participant
       - StructureDefinition/fr-cda-health-care-facility
 
-  Ressources CDA corps des sections:
+  ressources-cda-corps-sections:
     name: Eléments CDA du corps des sections
     resources:
       - StructureDefinition/fr-cda-allergies-et-hypersensibilites
@@ -168,7 +169,7 @@ groups:
       - StructureDefinition/fr-cda-traitements-a-la-sortie
       - StructureDefinition/fr-cda-vaccinations
 
-  Ressources CDA corps des composants élémentaires:
+  ressources-cda-corps-composants-elementaires:
     name: Eléments CDA corps des composants élémentaires
     resources:
       - StructureDefinition/cisis-telecom

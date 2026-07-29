@@ -16,7 +16,7 @@ and iheCommentEntry 1..1
 and frCommentaireER 1..1
 * templateId[ccdComment].root 1..1
 * templateId[ccdComment].root = "2.16.840.1.113883.10.20.1.40"
-* templateId[ccdComment] ^short = "Conformité Comment (CCD) "
+* templateId[ccdComment] ^short = "Conformité Comment (CCD)"
 * templateId[ccdComment] ^definition = "Conformité Comment (CCD)"
 * templateId[iheCommentEntry].root 1..1
 * templateId[iheCommentEntry].root = "1.3.6.1.4.1.19376.1.5.3.1.4.2"

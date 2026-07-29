@@ -36,13 +36,13 @@ Description: "Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter
 * value MS
 * value 1..1
 * value only CD
-* value ^short = "Résultat de l'évaluation - Le type et la valeur du résultat de l'évaluation (value) dépendent du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant). "
+* value ^short = "Résultat de l'évaluation - Le type et la valeur du résultat de l'évaluation (value) dépendent du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant)."
 * value ^definition = "Résultat de l'évaluation"
 * value.originalText MS
 * value.originalText 0..1
 * value.originalText.reference 1..1
 * interpretationCode MS
-* interpretationCode ^short = " Interprétation "
+* interpretationCode ^short = "Interprétation"
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
 * entryRelationship.act only FRCDACommentaireER

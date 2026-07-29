@@ -24,6 +24,6 @@ and frReferenceInterne 1..1
 * templateId[frReferenceInterne] ^definition = "Conformité FR-Reference-interne (CI-SIS)"
 * code MS
 * code ^short = "Code de l'élément référencé. Le 'code' est obligatoire et doit être identique au code de l'élément référencé.  
-Si l'élément référencé n'a pas codé, alors le 'code' doit être nullFlavor='NA'. "
+Si l'élément référencé n'a pas codé, alors le 'code' doit être nullFlavor='NA'."
 * code ^definition = "Code de l'élément référencé"
 * code.nullFlavor = #NA
