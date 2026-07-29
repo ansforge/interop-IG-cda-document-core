@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fr-valueset-status-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : EnsembleValeurs fr-valueset-status-code</b></p><a name="fr-valueset-status-code"> </a><a name="hcfr-valueset-status-code"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis</code><span title="La version est explicitement indiquée comme étant 20260619134042"> version &#x1F4CD;20260619134042</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td>completed</td><td/></tr><tr><td>active</td><td/></tr><tr><td>aborted</td><td/></tr></table></li></ul></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet fr-valueset-status-code</b></p><a name="en-fr-valueset-status-code"> </a><a name="en-hcfr-valueset-status-code"> </a><ul><li>Include these codes as defined in <code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis</code><span title="Version is explicitly stated to be 20260619134042"> version &#x1F4CD;20260619134042</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>completed</td><td/></tr><tr><td>active</td><td/></tr><tr><td>aborted</td><td/></tr></table></li></ul></div></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-status-code"/>
+  <version value="0.1.0"/>
+  <name value="FRValueSetStatusCode"/>
+  <title value="ValueSet - FR ValueSet StatusCode"/>
+  <status value="draft"/>
+  <date value="2026-07-29T05:36:05+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).&#xA; - 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.&#xA; - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.&#xA; - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis"/>
+      <version value="20260619134042"/>
+      <concept>
+        <code value="completed"/>
+      </concept>
+      <concept>
+        <code value="active"/>
+      </concept>
+      <concept>
+        <code value="aborted"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
