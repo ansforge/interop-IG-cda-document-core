@@ -7,3 +7,10 @@
 # pin-canonicals: pin-all épingle intentionnellement toutes les références canoniques non
 # versionnées ; ce message purement informatif ne signale aucun problème
 PIN_VERSION
+
+# eld-24 (pattern[x] vs fixed[x]) est hérité des StructureDefinitions de base du package
+# hl7.cda.uv.core (ex: classCode, typeId.root fixés structurellement dans le modèle CDA/RIM) ;
+# ces fixed[x] ne sont pas définis dans le FSH de cet IG et ne peuvent pas être changés sans
+# modifier le package CDA core amont (hors périmètre de ce dépôt). HL7 supprime lui-même ce
+# même warning dans le QA du CDA core (https://hl7.org/cda/stds/core/qa.html) pour la même raison
+eld-24
