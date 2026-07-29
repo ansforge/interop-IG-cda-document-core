@@ -60,8 +60,7 @@
 "Observation.classCode","Observation.classCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OBS""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAActClassObservation|2.0.3-sd","",,,,"Observation.classCode",1,1,"",""
 "Observation.moodCode","Observation.moodCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","
- - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
+","- Si la demande fait partie d'un plan de soins : @moodCode='INT'  
  - Si la demande est une proposition : @moodCode='PRP'  
  - Si la demande est un objectif à atteindre : @moodCode='GOL'"," 
  - Si la demande fait partie d'un plan de soins : @moodCode='INT'  
@@ -80,7 +79,7 @@
  @displayName='Autre demande d’examen ou de suivi'
  @codeSystem='1.2.250.1.213.1.1.4.322' 
  @codeSystemName='TerminologieCISIS'  
- et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. ","Type de la demande","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ObservationType|3.0.0","",,,,"Observation.code",1,1,"",""
+ et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante.","Type de la demande","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ObservationType|3.0.0","",,,,"Observation.code",1,1,"",""
 "Observation.code.nullFlavor","Observation.code.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "Observation.code.code","Observation.code.code","","","Code",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -137,7 +136,7 @@
 "Observation.repeatNumber","Observation.repeatNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Observation.repeatNumber",0,1,"",""
 "Observation.languageCode","Observation.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"Observation.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Observation.languageCode",0,1,"",""
 "Observation.value","Observation.value","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 http://hl7.org/cda/stds/core/StructureDefinition/PQ {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/ST {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/CO {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/CV {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EN {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/INT-POS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/MO {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/ON {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PN {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/REAL {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/TN {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ {[]} {[]}","Résultat de la demande","","","","","","","","","","",,,,,"",,,,"Observation.value",0,*,"",""
 "Observation.interpretationCode","Observation.interpretationCode","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}

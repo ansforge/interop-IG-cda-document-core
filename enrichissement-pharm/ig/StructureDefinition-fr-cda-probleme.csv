@@ -159,7 +159,7 @@
 "Observation.repeatNumber","Observation.repeatNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Observation.repeatNumber",0,1,"",""
 "Observation.languageCode","Observation.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"Observation.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Observation.languageCode",0,1,"",""
 "Observation.value","Observation.value","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","Problème observé. La valeur de l'élément value peut être: CIM-10 pour les pathologie  et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' displayName='Causes inconnues et non précisées de morbidité' codeSystem='2.16.840.1.113883.6.3' codeSystemName='CIM-10' et décrire le problème sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante ; Réaction allergique: CIM-11 (2.16.840.1.113883.6.347) provenant du JDV_AllergieReaction_CISIS (1.2.250.1.213.1.1.5.674)/ Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité ; >Si pas de problème ou pas d'information </b>: JDV_AbsentOrUnknownProblem_CISIS (1.2.250.1.213.1.1.5.662)","","","","","","","","","","",,,,,"",,,,"Observation.value",0,*,"",""
 "Observation.value.nullFlavor","Observation.value.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -540,7 +540,7 @@
 "Observation.reference.externalDocument.id","Observation.reference.externalDocument.id","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant du document","","","","","","","","","","",,,,,"",,,,"ExternalDocument.id",0,*,"",""
 "Observation.reference.externalDocument.code","Observation.reference.externalDocument.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
-","","","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1","",,,,"ExternalDocument.code",0,1,"",""
+","","","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|5.0.0","",,,,"ExternalDocument.code",0,1,"",""
 "Observation.reference.externalDocument.text","Observation.reference.externalDocument.text","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ExternalDocument.text",0,1,"",""
 "Observation.reference.externalDocument.text.nullFlavor","Observation.reference.externalDocument.text.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}

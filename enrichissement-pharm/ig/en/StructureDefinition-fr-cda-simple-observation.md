@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-simple-obs
   "name" : "FRCDASimpleObservation",
   "title" : "CDA - FR Simple Observation",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-simple-obs
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -203,7 +203,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-simple-obs
     {
       "id" : "Observation.effectiveTime",
       "path" : "Observation.effectiveTime",
-      "short" : "Date de l'observation :\r\n\n L'élément  doit être présent dans une observation autonome (c'est-à-dire une observation qui n'apparait pas dans un organizer qui contient déjà un effectiveTime) et doit contenir la date de l'observation clinique. \n Cet élément doit être précis à la date du jour. \n Si la date et l'heure sont inconnues, cet élément doit l'indiquer à l'aide d'un attribut nullFlavor. \n La date doit être enregistrée à l'aide du type de données approprié (pour une date précise ou pour un intervalle contenant un élément low et un élément high). ",
+      "short" : "Date de l'observation :\r\n\n L'élément  doit être présent dans une observation autonome (c'est-à-dire une observation qui n'apparait pas dans un organizer qui contient déjà un effectiveTime) et doit contenir la date de l'observation clinique. \n Cet élément doit être précis à la date du jour. \n Si la date et l'heure sont inconnues, cet élément doit l'indiquer à l'aide d'un attribut nullFlavor. \n La date doit être enregistrée à l'aide du type de données approprié (pour une date précise ou pour un intervalle contenant un élément low et un élément high).",
       "definition" : "Date de l'observation",
       "mustSupport" : true
     },
@@ -242,7 +242,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-simple-obs
     {
       "id" : "Observation.targetSiteCode",
       "path" : "Observation.targetSiteCode",
-      "short" : "Localisation anatomique : Terminologie : SNOMED CT (2.16.840.1.113883.6.96) ",
+      "short" : "Localisation anatomique : Terminologie : SNOMED CT (2.16.840.1.113883.6.96)",
       "definition" : "Localisation anatomique",
       "max" : "1"
     },

@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -7,60 +8,47 @@
 
 <https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-status-code> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:Resource.id [ fhir:value "fr-valueset-status-code"] ;
-  fhir:Resource.language [ fhir:value "en"] ;
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-valueset-status-code</b></p><a name=\"en-fr-valueset-status-code\"> </a><a name=\"en-hcfr-valueset-status-code\"> </a><ul><li>Include these codes as defined in <code>https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis</code><span title=\"Version is explicitly stated to be 20260619134042\"> version ?20260619134042</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>completed</td><td/></tr><tr><td>active</td><td/></tr><tr><td>aborted</td><td/></tr></table></li></ul></div>"
-  ] ;
-  fhir:ValueSet.url [ fhir:value "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-status-code"] ;
-  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
-  fhir:ValueSet.name [ fhir:value "FRValueSetStatusCode"] ;
-  fhir:ValueSet.title [ fhir:value "ValueSet - FR ValueSet StatusCode"] ;
-  fhir:ValueSet.status [ fhir:value "draft"] ;
-  fhir:ValueSet.date [ fhir:value "2026-07-29T05:36:05+00:00"^^xsd:dateTime] ;
-  fhir:ValueSet.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
-  fhir:ValueSet.contact [
-     fhir:index -1 ;
-     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index -1 ;
-       fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
-     ]
-  ] ;
-  fhir:ValueSet.description [ fhir:value "Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).\n - 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.\n - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.\n - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."] ;
-  fhir:ValueSet.jurisdiction [
-     fhir:index -1 ;
-     fhir:CodeableConcept.coding [
-       fhir:index -1 ;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
-       fhir:Coding.code [ fhir:value "FR" ] ;
-       fhir:Coding.display [ fhir:value "France (la)" ]
-     ]
-  ] ;
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index -1 ;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" ] ;
-       fhir:ValueSet.compose.include.version [ fhir:value "20260619134042" ] ;
-       fhir:ValueSet.compose.include.concept [
-         fhir:index -1 ;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "completed" ]
-       ], [
-         fhir:index -1 ;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "active" ]
-       ], [
-         fhir:index -1 ;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "aborted" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-status-code.ttl> a owl:Ontology ;
-  owl:imports fhir:fhir.ttl .
+  fhir:id [ fhir:v "fr-valueset-status-code"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-valueset-status-code</b></p><a name=\"en-fr-valueset-status-code\"> </a><a name=\"en-hcfr-valueset-status-code\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActStatus.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActStatus</code></a><span title=\"Version is explicitly stated to be 5.0.0\"> version ?5.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><code>completed</code></td><td style=\"color: #cccccc\">completed</td><td>An Act that has terminated normally after all of its constituents have been performed.</td></tr><tr><td><code>active</code></td><td style=\"color: #cccccc\">active</td><td>The Act can be performed or is being performed</td></tr><tr><td><code>aborted</code></td><td style=\"color: #cccccc\">aborted</td><td>The Act has been terminated prior to the originally intended completion.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-status-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FRValueSetStatusCode"] ; # 
+  fhir:title [ fhir:v "ValueSet - FR ValueSet StatusCode"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-07-29T08:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).\n - 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.\n - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.\n - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France (la)" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActStatus"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "5.0.0" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "completed" ]
+       ] [
+         fhir:code [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "aborted" ]
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -20,8 +20,6 @@ Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un e
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -39,7 +37,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRValueSetStatusCode",
   "title" : "ValueSet - FR ValueSet StatusCode",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -58,8 +56,8 @@ No Expansion for this valueset (Unknown Code System)
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis",
-      "version" : "20260619134042",
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActStatus",
+      "version" : "5.0.0",
       "concept" : [{
         "code" : "completed"
       },

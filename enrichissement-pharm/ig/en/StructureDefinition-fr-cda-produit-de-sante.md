@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-produit-de
   "name" : "FRCDAProduitDeSante",
   "title" : "CDA - FR Produit de sante",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-produit-de
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-produit-de
     {
       "id" : "ManufacturedProduct.manufacturedMaterial.code.translation",
       "path" : "ManufacturedProduct.manufacturedMaterial.code.translation",
-      "short" : "Autre codification - CIP : Code Identifiant de Présentation (1.2.250.1.213.2.3.2) de l'ANSM (13 chiffres) - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) du Club Inter Pharmaceutique - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)  - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase (MV+ 8 chiffres) "
+      "short" : "Autre codification - CIP : Code Identifiant de Présentation (1.2.250.1.213.2.3.2) de l'ANSM (13 chiffres) - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) du Club Inter Pharmaceutique - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)  - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase (MV+ 8 chiffres)"
     },
     {
       "id" : "ManufacturedProduct.manufacturedMaterial.name",

@@ -42,7 +42,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Supply.templateId
 
@@ -72,7 +72,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Supply.templateId
 
@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prescrip
   "name" : "FRCDAPrescription",
   "title" : "CDA - FR Prescription",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -135,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prescrip
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -213,7 +213,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prescrip
     {
       "id" : "Supply.moodCode",
       "path" : "Supply.moodCode",
-      "short" : " Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT' ",
+      "short" : "Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT'",
       "definition" : "Si la prescription a déjà été dispensée:",
       "mustSupport" : true
     },
@@ -234,7 +234,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prescrip
     {
       "id" : "Supply.quantity",
       "path" : "Supply.quantity",
-      "short" : "Quantité - L'unité est exprimée selon le système de codage UCUM. ",
+      "short" : "Quantité - L'unité est exprimée selon le système de codage UCUM.",
       "definition" : "Quantité"
     },
     {

@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dose-antig
   "name" : "FRCDADoseAntigene",
   "title" : "CDA - FR Dose antigene",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dose-antig
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dose-antig
       "id" : "SubstanceAdministration.templateId:iheAntigenDose",
       "path" : "SubstanceAdministration.templateId",
       "sliceName" : "iheAntigenDose",
-      "short" : "Conformité Antigen Dose (IHE PCC) ",
+      "short" : "Conformité Antigen Dose (IHE PCC)",
       "definition" : "Conformité Antigen Dose (IHE PCC)",
       "min" : 1,
       "max" : "1"
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dose-antig
       "id" : "SubstanceAdministration.templateId:frDoseAntigene",
       "path" : "SubstanceAdministration.templateId",
       "sliceName" : "frDoseAntigene",
-      "short" : "Conformité FR-Dose-antigene (CI-SIS) ",
+      "short" : "Conformité FR-Dose-antigene (CI-SIS)",
       "definition" : "Conformité FR-Dose-antigene (CI-SIS)",
       "min" : 1,
       "max" : "1"

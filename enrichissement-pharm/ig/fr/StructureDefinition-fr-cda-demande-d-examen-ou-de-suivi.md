@@ -43,7 +43,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
 
@@ -74,7 +74,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
 
@@ -120,7 +120,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-demande-
   "name" : "FRCDADemandeDExamenOuDeSuivi",
   "title" : "CDA - FR Demande d examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -137,7 +137,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-demande-
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -220,7 +220,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-demande-
     {
       "id" : "Observation.moodCode",
       "path" : "Observation.moodCode",
-      "short" : "\n - Si la demande fait partie d'un plan de soins : @moodCode='INT'  \n - Si la demande est une proposition : @moodCode='PRP'  \n - Si la demande est un objectif à atteindre : @moodCode='GOL'",
+      "short" : "- Si la demande fait partie d'un plan de soins : @moodCode='INT'  \n - Si la demande est une proposition : @moodCode='PRP'  \n - Si la demande est un objectif à atteindre : @moodCode='GOL'",
       "definition" : " \n - Si la demande fait partie d'un plan de soins : @moodCode='INT'  \n - Si la demande est une proposition : @moodCode='PRP'  \n - Si la demande est un objectif à atteindre : @moodCode='GO",
       "mustSupport" : true
     },
@@ -236,7 +236,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-demande-
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
-      "short" : "Type de la demande.\n -  Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : \n @code='GEN-092.04.20'\n @displayName='Autre demande d’examen ou de suivi'\n @codeSystem='1.2.250.1.213.1.1.4.322' \n @codeSystemName='TerminologieCISIS'  \n et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante. ",
+      "short" : "Type de la demande.\n -  Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : \n @code='GEN-092.04.20'\n @displayName='Autre demande d’examen ou de suivi'\n @codeSystem='1.2.250.1.213.1.1.4.322' \n @codeSystemName='TerminologieCISIS'  \n et décrire le type de la demande sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante.",
       "definition" : "Type de la demande",
       "mustSupport" : true
     },

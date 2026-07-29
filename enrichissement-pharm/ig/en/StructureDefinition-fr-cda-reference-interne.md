@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-reference-
   "name" : "FRCDAReferenceInterne",
   "title" : "CDA - FR Reference interne",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-reference-
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -151,7 +151,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-reference-
     {
       "id" : "Act.code",
       "path" : "Act.code",
-      "short" : "Code de l'élément référencé. Le 'code' est obligatoire et doit être identique au code de l'élément référencé.  \nSi l'élément référencé n'a pas codé, alors le 'code' doit être nullFlavor='NA'. ",
+      "short" : "Code de l'élément référencé. Le 'code' est obligatoire et doit être identique au code de l'élément référencé.  \nSi l'élément référencé n'a pas codé, alors le 'code' doit être nullFlavor='NA'.",
       "definition" : "Code de l'élément référencé",
       "mustSupport" : true
     },

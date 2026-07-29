@@ -45,7 +45,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
 * The element 1 is sliced based on the value of Observation.entryRelationship
@@ -79,7 +79,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
 * The element 1 is sliced based on the value of Observation.entryRelationship
@@ -126,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
   "name" : "FRCDADICOMSOPInstanceObservation",
   "title" : "CDA - FR DICOM SOP instance observation",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -143,7 +143,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -172,7 +172,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
       "id" : "Observation.templateId:frDicomSOPInstanceObservation",
       "path" : "Observation.templateId",
       "sliceName" : "frDicomSOPInstanceObservation",
-      "short" : "Conformité FR-DICOM-SOP-instrance-observation (CI-SIS) ",
+      "short" : "Conformité FR-DICOM-SOP-instrance-observation (CI-SIS)",
       "definition" : "Conformité FR-DICOM-SOP-instrance-observation (CI-SIS)",
       "min" : 1,
       "max" : "1"
@@ -187,7 +187,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
       "id" : "Observation.templateId:dicomSOPInstanceObservation",
       "path" : "Observation.templateId",
       "sliceName" : "dicomSOPInstanceObservation",
-      "short" : "Conformité SOP Instance Observation (DICOM Part 20) ",
+      "short" : "Conformité SOP Instance Observation (DICOM Part 20)",
       "definition" : "Conformité SOP Instance Observation (DICOM Part 20)",
       "min" : 1,
       "max" : "1"
@@ -249,7 +249,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
     {
       "id" : "Observation.text",
       "path" : "Observation.text",
-      "short" : " url permettant d’accéder aux images sur la Drim box source. Cette url, basée sur le profil IHE Invoke Image Display , est construite de la manière suivante :https://<location>/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID=<StudyInstanceUID>&amp;Accessionnumber=<Accessionnumber>&amp;idCDA=<idCDA> avec les paramètres :<location> : Racine de l’URL par laquelle on accède au PACS qui met à disposition de l’examen (cf volet CI-SIS_SPEC_TECH_Objet ref d'examens d'imagerie)<StudyInstanceUID> : Identifiant de l’examen attribué par le RIS<Accessionnumber> : Identifiant de la demande attribué par le RIS (concaténer root.extension)<idCDA> : Identifiant du document CDA IMG-CR-IMG (élément <id root>)",
+      "short" : "url permettant d’accéder aux images sur la Drim box source. Cette url, basée sur le profil IHE Invoke Image Display , est construite de la manière suivante :https://<location>/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID=<StudyInstanceUID>&amp;Accessionnumber=<Accessionnumber>&amp;idCDA=<idCDA> avec les paramètres :<location> : Racine de l’URL par laquelle on accède au PACS qui met à disposition de l’examen (cf volet CI-SIS_SPEC_TECH_Objet ref d'examens d'imagerie)<StudyInstanceUID> : Identifiant de l’examen attribué par le RIS<Accessionnumber> : Identifiant de la demande attribué par le RIS (concaténer root.extension)<idCDA> : Identifiant du document CDA IMG-CR-IMG (élément <id root>)",
       "definition" : "Url permettant d’accéder aux images sur la Drim box source",
       "mustSupport" : true
     },

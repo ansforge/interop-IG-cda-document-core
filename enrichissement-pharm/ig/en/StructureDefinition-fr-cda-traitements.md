@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
   "name" : "FRCDASectionTraitements",
   "title" : "CDA - FR Traitements",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "id" : "Section.templateId:iheSectionMedications",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionMedications",
-      "short" : "\tDéclaration de conformité de la section aux spécifications (IHE PCC)",
+      "short" : "Déclaration de conformité de la section aux spécifications (IHE PCC)",
       "min" : 1,
       "max" : "1"
     },

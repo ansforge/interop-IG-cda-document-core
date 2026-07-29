@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-allergie-o
   "name" : "FRCDAAllergieOuHypersensibilite",
   "title" : "CDA - FR Allergie ou hypersensibilite",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-allergie-o
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-allergie-o
       "id" : "Observation.templateId:iheProblemEntry",
       "path" : "Observation.templateId",
       "sliceName" : "iheProblemEntry",
-      "short" : "Conformité Problem Entry (IHE PCC) ",
+      "short" : "Conformité Problem Entry (IHE PCC)",
       "definition" : "Conformité Problem Entry (IHE PCC)",
       "min" : 1,
       "max" : "1"

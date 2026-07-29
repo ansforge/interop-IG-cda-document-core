@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-modalite-e
   "name" : "FRCDAModaliteEntree",
   "title" : "CDA - FR Modalite entree",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-modalite-e
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -175,7 +175,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-modalite-e
     {
       "id" : "Observation.text",
       "path" : "Observation.text",
-      "short" : " Description narrative de l'observation.",
+      "short" : "Description narrative de l'observation.",
       "min" : 1,
       "mustSupport" : true
     },
@@ -190,7 +190,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-modalite-e
     {
       "id" : "Observation.statusCode",
       "path" : "Observation.statusCode",
-      "short" : " Statut de l'entrée",
+      "short" : "Statut de l'entrée",
       "definition" : "Statut de l'entrée",
       "min" : 1,
       "mustSupport" : true,

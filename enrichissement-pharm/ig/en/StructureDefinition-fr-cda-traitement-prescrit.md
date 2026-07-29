@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
   "name" : "FRCDATraitementPrescrit",
   "title" : "CDA - FR Traitement prescrit",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -193,7 +193,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "id" : "SubstanceAdministration.templateId:iheModeAdministrationDosesProgressives",
       "path" : "SubstanceAdministration.templateId",
       "sliceName" : "iheModeAdministrationDosesProgressives",
-      "short" : "Mode d'administration : doses progressives.\n Administration pour les médicamments dont la posologie optimale (ou l'arrêt) n'est obtenue que progressivement, par paliers. \nPar exemple : \n - 0.5 mg par jour pendant 3 jours ;\n - puis 1 mg par jour les 5 jours suivants ;\n - puis 2 mg par jour. \nSouvent, en particulier lorsque l'arrêt brusque du traitement peut avoir des conséquences négatives, les doses sont réduites progressivement. \nLes doses peuvent être ajustées en modifiant la fréquence de la dose, la quantité de la dose, ou les deux. \nLorsque la fréquence de la dose est simplement ajustée (par ex. 5 mg de prednisone deux fois par jour pendant trois jours, puis 5 mg par jour pendant trois jours, puis 5 mg tous les deux jours), une seule entrée\nTraitement est nécessaire et les différentes fréquences sont enregistrées dans l'élement . \nLorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose. ",
+      "short" : "Mode d'administration : doses progressives.\n Administration pour les médicamments dont la posologie optimale (ou l'arrêt) n'est obtenue que progressivement, par paliers. \nPar exemple : \n - 0.5 mg par jour pendant 3 jours ;\n - puis 1 mg par jour les 5 jours suivants ;\n - puis 2 mg par jour. \nSouvent, en particulier lorsque l'arrêt brusque du traitement peut avoir des conséquences négatives, les doses sont réduites progressivement. \nLes doses peuvent être ajustées en modifiant la fréquence de la dose, la quantité de la dose, ou les deux. \nLorsque la fréquence de la dose est simplement ajustée (par ex. 5 mg de prednisone deux fois par jour pendant trois jours, puis 5 mg par jour pendant trois jours, puis 5 mg tous les deux jours), une seule entrée\nTraitement est nécessaire et les différentes fréquences sont enregistrées dans l'élement . \nLorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose.",
       "definition" : "Mode d'administration : doses progressives",
       "min" : 0,
       "max" : "1"
@@ -610,7 +610,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "id" : "SubstanceAdministration.author:auteurDuPrescription",
       "path" : "SubstanceAdministration.author",
       "sliceName" : "auteurDuPrescription",
-      "short" : "Auteur du document Prescription : \r\n\nDans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.\nDans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription.\n",
+      "short" : "Auteur du document Prescription : \r\n\nDans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.\nDans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription.",
       "min" : 0,
       "max" : "1",
       "type" : [{

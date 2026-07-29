@@ -34,7 +34,7 @@
 "Procedure.templateId:iheProcedureEntry.extension","Procedure.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Procedure.templateId:ccdPlanOfCareActivityPlanned","Procedure.templateId","ccdPlanOfCareActivityPlanned","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Conformité Plan of care activity (CCD) si acte prévu ","Conformité Plan of care activity (CCD) si acte prévu","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+","Conformité Plan of care activity (CCD) si acte prévu","Conformité Plan of care activity (CCD) si acte prévu","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "Procedure.templateId:ccdPlanOfCareActivityPlanned.nullFlavor","Procedure.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "Procedure.templateId:ccdPlanOfCareActivityPlanned.assigningAuthorityName","Procedure.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
@@ -46,7 +46,7 @@
 "Procedure.templateId:ccdPlanOfCareActivityPlanned.extension","Procedure.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Procedure.templateId:ccdPlanOfCareActivityPlannedRealised","Procedure.templateId","ccdPlanOfCareActivityPlannedRealised","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Conformité Procedure activity (CCD) si acte réalisée ","Conformité Procedure activity (CCD) si acte réalisée","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+","Conformité Procedure activity (CCD) si acte réalisée","Conformité Procedure activity (CCD) si acte réalisée","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "Procedure.templateId:ccdPlanOfCareActivityPlannedRealised.nullFlavor","Procedure.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "Procedure.templateId:ccdPlanOfCareActivityPlannedRealised.assigningAuthorityName","Procedure.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
@@ -73,9 +73,9 @@
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PROC""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActClassProcedure|3.0.0","",,,,"Procedure.classCode",1,1,"",""
 "Procedure.moodCode","Procedure.moodCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","- Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) 
-- Si acte réalisé : moodCode='EVN' ; negationInd='true' 
-    - si l'acte n'a pas eu lieu : negationInd='false' 
-    - si l'acte a eu lieu (valeur par défaut)","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood|3.0.0","",,,,"Procedure.moodCode",1,1,"",""
+ - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
+     - si l'acte n'a pas eu lieu : negationInd='false' 
+     - si l'acte a eu lieu (valeur par défaut)","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood|3.0.0","",,,,"Procedure.moodCode",1,1,"",""
 "Procedure.id","Procedure.id","","","",1,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant de l'entrée","Identifiant de l'entrée","","","","","","","","","",,,,,"",,,,"Procedure.id",0,*,"",""
 "Procedure.sdtcCategory","Procedure.sdtcCategory","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
@@ -153,7 +153,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
  
 utiliser le jdv-hl7-v3-ActPriority-cisis (2.16.840.1.113883.1.11.16866) ou autre.","Priorité","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Procedure.priorityCode",0,1,"",""
 "Procedure.languageCode","Procedure.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"Procedure.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Procedure.languageCode",0,1,"",""
 "Procedure.methodCode","Procedure.methodCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","Drawn from concept domain ProcedureMethod","","","","","","","","","",,,,,"",,,,"Procedure.methodCode",0,*,"",""
 "Procedure.approachSiteCode","Procedure.approachSiteCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
@@ -180,7 +180,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)","Voie d’ab
 "Procedure.approachSiteCode.originalText","Procedure.approachSiteCode.originalText","","","Original Text",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
 ","","The text or phrase used as the basis for the coding.","","","","","","","","","",,,,,"",,,,"CD.originalText",0,1,"",""
 "Procedure.approachSiteCode.qualifier","Procedure.approachSiteCode.qualifier","","","Qualifier",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
-","Latéralité SNOMED CT (2.16.840.1.113883.6.96) ","Latéralité","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
+","Latéralité SNOMED CT (2.16.840.1.113883.6.96)","Latéralité","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
 "Procedure.approachSiteCode.translation","Procedure.approachSiteCode.translation","","","Translation",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
 "Procedure.targetSiteCode","Procedure.targetSiteCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}

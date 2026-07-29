@@ -105,7 +105,7 @@ Souvent, en particulier lorsque l'arrêt brusque du traitement peut avoir des co
 Les doses peuvent être ajustées en modifiant la fréquence de la dose, la quantité de la dose, ou les deux. 
 Lorsque la fréquence de la dose est simplement ajustée (par ex. 5 mg de prednisone deux fois par jour pendant trois jours, puis 5 mg par jour pendant trois jours, puis 5 mg tous les deux jours), une seule entrée
 Traitement est nécessaire et les différentes fréquences sont enregistrées dans l'élement . 
-Lorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose. ","Mode d'administration : doses progressives","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+Lorsque la dose varie (par ex. 15 mg de prednisone par jour pendant trois jours, puis 10 mg par jour pendant trois jours, puis 5 mg par jour pendant trois jours), un composant subordonné doit être créé pour chaque dose.","Mode d'administration : doses progressives","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "SubstanceAdministration.templateId:iheModeAdministrationDosesProgressives.nullFlavor","SubstanceAdministration.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "SubstanceAdministration.templateId:iheModeAdministrationDosesProgressives.assigningAuthorityName","SubstanceAdministration.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
@@ -704,8 +704,7 @@ Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre do
 ","Auteur du document Prescription : 
 
 Dans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.
-Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription.
-","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.author",0,*,"",""
+Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription.","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.author",0,*,"",""
 "SubstanceAdministration.informant","SubstanceAdministration.informant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.informant",0,*,"",""
 "SubstanceAdministration.participant","SubstanceAdministration.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
@@ -1449,7 +1448,7 @@ Non utilisé dans une prescription.","","","","","","","","","","",,,,,"",,,,"Re
 "SubstanceAdministration.reference.externalDocument.id","SubstanceAdministration.reference.externalDocument.id","","","",1,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ExternalDocument.id",0,*,"",""
 "SubstanceAdministration.reference.externalDocument.code","SubstanceAdministration.reference.externalDocument.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
-","","","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1","",,,,"ExternalDocument.code",0,1,"",""
+","","","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|5.0.0","",,,,"ExternalDocument.code",0,1,"",""
 "SubstanceAdministration.reference.externalDocument.text","SubstanceAdministration.reference.externalDocument.text","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ExternalDocument.text",0,1,"",""
 "SubstanceAdministration.reference.externalDocument.setId","SubstanceAdministration.reference.externalDocument.setId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}

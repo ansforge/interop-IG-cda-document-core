@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       "id" : "Encounter.templateId:ccdEncounterActivity",
       "path" : "Encounter.templateId",
       "sliceName" : "ccdEncounterActivity",
-      "short" : "Conformité Encounter activity (CCD) si évènement réalisée (EVN) ",
+      "short" : "Conformité Encounter activity (CCD) si évènement réalisée (EVN)",
       "definition" : "Conformité Encounter activity (CCD) si évènement réalisée (EVN)",
       "min" : 0,
       "max" : "1"
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       "id" : "Encounter.templateId:ccdPlanOfCareActivityPlannedRealised",
       "path" : "Encounter.templateId",
       "sliceName" : "ccdPlanOfCareActivityPlannedRealised",
-      "short" : "Conformité Plan of care activity (CCD) si évènement planifiée (INT) ",
+      "short" : "Conformité Plan of care activity (CCD) si évènement planifiée (INT)",
       "definition" : "Conformité Plan of care activity (CCD) si évènement planifiée (INT)",
       "min" : 0,
       "max" : "1"

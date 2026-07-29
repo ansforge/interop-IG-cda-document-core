@@ -104,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
   "name" : "FRCDAEvaluationComposantN2",
   "title" : "CDA - FR Evaluation Composant N2",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -121,7 +121,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -231,7 +231,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
     {
       "id" : "Observation.value",
       "path" : "Observation.value",
-      "short" : "Résultat de l'évaluation - Le type et la valeur du résultat de l'évaluation (value) dépendent du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant). ",
+      "short" : "Résultat de l'évaluation - Le type et la valeur du résultat de l'évaluation (value) dépendent du volet utilisant cette entrée (les précisions sont alors fournies dans le volet correspondant).",
       "definition" : "Résultat de l'évaluation",
       "min" : 1,
       "max" : "1",
@@ -253,7 +253,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
     {
       "id" : "Observation.interpretationCode",
       "path" : "Observation.interpretationCode",
-      "short" : " Interprétation ",
+      "short" : "Interprétation",
       "definition" : "Interprétation",
       "mustSupport" : true
     },

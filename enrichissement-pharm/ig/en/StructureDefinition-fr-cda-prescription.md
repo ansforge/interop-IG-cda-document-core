@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-prescripti
   "name" : "FRCDAPrescription",
   "title" : "CDA - FR Prescription",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-prescripti
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-prescripti
     {
       "id" : "Supply.moodCode",
       "path" : "Supply.moodCode",
-      "short" : " Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT' ",
+      "short" : "Si la prescription a déjà été dispensée : moodCode='EVN' - Si la prescription est en attente de dispensation : moodCode='INT'",
       "definition" : "Si la prescription a déjà été dispensée:",
       "mustSupport" : true
     },
@@ -173,7 +173,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-prescripti
     {
       "id" : "Supply.quantity",
       "path" : "Supply.quantity",
-      "short" : "Quantité - L'unité est exprimée selon le système de codage UCUM. ",
+      "short" : "Quantité - L'unité est exprimée selon le système de codage UCUM.",
       "definition" : "Quantité"
     },
     {

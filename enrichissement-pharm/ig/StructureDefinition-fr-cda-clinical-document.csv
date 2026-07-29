@@ -30,7 +30,7 @@
 "ClinicalDocument.sdtcCategory","ClinicalDocument.sdtcCategory","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ClinicalDocument.sdtcCategory",0,*,"",""
 "ClinicalDocument.code","ClinicalDocument.code","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
-","Type de document.","The code specifying the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note).","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1","",,,,"ClinicalDocument.code",1,1,"",""
+","Type de document.","The code specifying the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note).","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|5.0.0","",,,,"ClinicalDocument.code",1,1,"",""
 "ClinicalDocument.title","ClinicalDocument.title","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ST {[]} {[]}
 ","Titre du document.","","It's commonly the case that clinical documents do not have a title, and are collectively referred to by the display name of ClinicalDocument.code (e.g. a 'consultation' or 'progress note'). Where these display names are rendered to the clinician, or where the document has a unique title, the ClinicalDocument.title component should be used.","","","","","","","","",,,,,"",,,,"ClinicalDocument.title",0,1,"",""
 "ClinicalDocument.sdtcStatusCode","ClinicalDocument.sdtcStatusCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
@@ -40,7 +40,7 @@
 "ClinicalDocument.confidentialityCode","ClinicalDocument.confidentialityCode","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","Niveau de confidentialité du document.","","Confidentiality is a required contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value.","","","","","","","","",,,,,"",,,,"ClinicalDocument.confidentialityCode",1,1,"",""
 "ClinicalDocument.languageCode","ClinicalDocument.languageCode","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","Langue principale du document.","Specifies the human language of character data (whether they be in contents or attribute values).","Language is a contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value.","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"ClinicalDocument.languageCode",0,1,"",""
+","Langue principale du document.","Specifies the human language of character data (whether they be in contents or attribute values).","Language is a contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value.","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"ClinicalDocument.languageCode",0,1,"",""
 "ClinicalDocument.setId","ClinicalDocument.setId","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant du lot de versions du même document.","","","","","","","","","","",,,,,"",,,,"ClinicalDocument.setId",0,1,"",""
 "ClinicalDocument.versionNumber","ClinicalDocument.versionNumber","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}

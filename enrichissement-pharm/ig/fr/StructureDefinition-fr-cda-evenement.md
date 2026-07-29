@@ -52,7 +52,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Encounter.templateId
 * The element 1 is sliced based on the value of Encounter.entryRelationship
@@ -93,7 +93,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Encounter.templateId
 * The element 1 is sliced based on the value of Encounter.entryRelationship
@@ -140,7 +140,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -157,7 +157,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -190,7 +190,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       "id" : "Encounter.templateId:ccdEncounterActivity",
       "path" : "Encounter.templateId",
       "sliceName" : "ccdEncounterActivity",
-      "short" : "Conformité Encounter activity (CCD) si évènement réalisée (EVN) ",
+      "short" : "Conformité Encounter activity (CCD) si évènement réalisée (EVN)",
       "definition" : "Conformité Encounter activity (CCD) si évènement réalisée (EVN)",
       "min" : 0,
       "max" : "1"
@@ -205,7 +205,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       "id" : "Encounter.templateId:ccdPlanOfCareActivityPlannedRealised",
       "path" : "Encounter.templateId",
       "sliceName" : "ccdPlanOfCareActivityPlannedRealised",
-      "short" : "Conformité Plan of care activity (CCD) si évènement planifiée (INT) ",
+      "short" : "Conformité Plan of care activity (CCD) si évènement planifiée (INT)",
       "definition" : "Conformité Plan of care activity (CCD) si évènement planifiée (INT)",
       "min" : 0,
       "max" : "1"

@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
       "id" : "Procedure.templateId:ccdPlanOfCareActivityPlanned",
       "path" : "Procedure.templateId",
       "sliceName" : "ccdPlanOfCareActivityPlanned",
-      "short" : "Conformité Plan of care activity (CCD) si acte prévu ",
+      "short" : "Conformité Plan of care activity (CCD) si acte prévu",
       "definition" : "Conformité Plan of care activity (CCD) si acte prévu",
       "min" : 0,
       "max" : "1"
@@ -137,7 +137,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
       "id" : "Procedure.templateId:ccdPlanOfCareActivityPlannedRealised",
       "path" : "Procedure.templateId",
       "sliceName" : "ccdPlanOfCareActivityPlannedRealised",
-      "short" : "Conformité Procedure activity (CCD) si acte réalisée ",
+      "short" : "Conformité Procedure activity (CCD) si acte réalisée",
       "definition" : "Conformité Procedure activity (CCD) si acte réalisée",
       "min" : 0,
       "max" : "1"
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
     {
       "id" : "Procedure.moodCode",
       "path" : "Procedure.moodCode",
-      "short" : "- Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) \n- Si acte réalisé : moodCode='EVN' ; negationInd='true' \n    - si l'acte n'a pas eu lieu : negationInd='false' \n    - si l'acte a eu lieu (valeur par défaut)",
+      "short" : "- Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) \n - Si acte réalisé : moodCode='EVN' ; negationInd='true' \n     - si l'acte n'a pas eu lieu : negationInd='false' \n     - si l'acte a eu lieu (valeur par défaut)",
       "mustSupport" : true
     },
     {
@@ -255,7 +255,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
     {
       "id" : "Procedure.approachSiteCode.qualifier",
       "path" : "Procedure.approachSiteCode.qualifier",
-      "short" : "Latéralité SNOMED CT (2.16.840.1.113883.6.96) ",
+      "short" : "Latéralité SNOMED CT (2.16.840.1.113883.6.96)",
       "definition" : "Latéralité",
       "max" : "1",
       "mustSupport" : true

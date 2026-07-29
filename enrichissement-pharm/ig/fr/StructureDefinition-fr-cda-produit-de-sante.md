@@ -35,7 +35,7 @@ Obligatoire : 9 éléments(1 élément obligatoire(s) imbriqué(s))
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of ManufacturedProduct.templateId
 
@@ -58,7 +58,7 @@ Obligatoire : 9 éléments(1 élément obligatoire(s) imbriqué(s))
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of ManufacturedProduct.templateId
 
@@ -104,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-produit-
   "name" : "FRCDAProduitDeSante",
   "title" : "CDA - FR Produit de sante",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -121,7 +121,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-produit-
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -217,7 +217,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-produit-
     {
       "id" : "ManufacturedProduct.manufacturedMaterial.code.translation",
       "path" : "ManufacturedProduct.manufacturedMaterial.code.translation",
-      "short" : "Autre codification - CIP : Code Identifiant de Présentation (1.2.250.1.213.2.3.2) de l'ANSM (13 chiffres) - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) du Club Inter Pharmaceutique - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)  - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase (MV+ 8 chiffres) "
+      "short" : "Autre codification - CIP : Code Identifiant de Présentation (1.2.250.1.213.2.3.2) de l'ANSM (13 chiffres) - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) du Club Inter Pharmaceutique - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)  - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase (MV+ 8 chiffres)"
     },
     {
       "id" : "ManufacturedProduct.manufacturedMaterial.name",

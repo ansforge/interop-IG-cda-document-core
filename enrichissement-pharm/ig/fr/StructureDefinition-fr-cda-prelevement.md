@@ -43,7 +43,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Procedure.templateId
 * The element 1 is sliced based on the value of Procedure.participant
@@ -76,7 +76,7 @@ Cette structure fait référence à ces autres structures:
 
 **Slices**
 
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Procedure.templateId
 * The element 1 is sliced based on the value of Procedure.participant
@@ -124,7 +124,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prelevem
   "name" : "FRCDAPrelevement",
   "title" : "CDA - FR Prelevement",
   "status" : "draft",
-  "date" : "2026-07-29T05:36:05+00:00",
+  "date" : "2026-07-29T08:04:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -141,7 +141,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prelevem
       "display" : "France (la)"
     }]
   }],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
@@ -234,7 +234,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prelevem
     {
       "id" : "Procedure.effectiveTime",
       "path" : "Procedure.effectiveTime",
-      "short" : "Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement. ",
+      "short" : "Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement.",
       "definition" : "Date du prélèvement",
       "min" : 1,
       "mustSupport" : true
@@ -353,7 +353,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prelevem
     {
       "id" : "Procedure.participant:EchantillonPreleve.participantRole.id",
       "path" : "Procedure.participant.participantRole.id",
-      "short" : "Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal). ",
+      "short" : "Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal).",
       "definition" : "Identifiant de l'échantillon",
       "min" : 1,
       "max" : "1",
@@ -408,7 +408,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prelevem
     {
       "id" : "Procedure.participant:DispositifUtilise.participantRole.playingDevice.code",
       "path" : "Procedure.participant.participantRole.playingDevice.code",
-      "short" : "Code du dispositif - Par exemple 'Trousse de détection HPV' ",
+      "short" : "Code du dispositif - Par exemple 'Trousse de détection HPV'",
       "definition" : "Code du dispositif",
       "min" : 1,
       "mustSupport" : true
@@ -441,7 +441,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prelevem
     {
       "id" : "Procedure.participant:ProduitUtilise.participantRole.playingDevice.code",
       "path" : "Procedure.participant.participantRole.playingDevice.code",
-      "short" : "Code du produit - Par exemple 'Milieu' pour le test HPV ",
+      "short" : "Code du produit - Par exemple 'Milieu' pour le test HPV",
       "definition" : "Code du produit",
       "min" : 1,
       "mustSupport" : true

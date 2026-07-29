@@ -84,11 +84,11 @@
 "Procedure.statusCode","Procedure.statusCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
 ","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActStatus|3.0.0","",,,,"Procedure.statusCode",0,1,"",""
 "Procedure.effectiveTime","Procedure.effectiveTime","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}
-","Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement. ","Date du prélèvement","","","","","","","","","",,,,,"",,,,"Procedure.effectiveTime",0,1,"",""
+","Date du prélèvement: La date et heure de prélèvement doit être renseignée si elle est connue. En cas d'acte ponctuel, c'est la date et heure de fin (élément high) qui horodate le prélèvement.","Date du prélèvement","","","","","","","","","",,,,,"",,,,"Procedure.effectiveTime",0,1,"",""
 "Procedure.priorityCode","Procedure.priorityCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Procedure.priorityCode",0,1,"",""
 "Procedure.languageCode","Procedure.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"Procedure.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Procedure.languageCode",0,1,"",""
 "Procedure.methodCode","Procedure.methodCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","Drawn from concept domain ProcedureMethod","","","","","","","","","",,,,,"",,,,"Procedure.methodCode",0,*,"",""
 "Procedure.approachSiteCode","Procedure.approachSiteCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
@@ -244,7 +244,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.participant:EchantillonPreleve.participantRole.classCode","Procedure.participant.participantRole.classCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ROL""/>","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPEC""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDARoleClassRoot|2.0.3-sd","",,,,"ParticipantRole.classCode",0,1,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.id","Procedure.participant.participantRole.id","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal). ","Identifiant de l'échantillon","","","","","","","","","",,,,,"",,,,"ParticipantRole.id",0,*,"",""
+","Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal).","Identifiant de l'échantillon","","","","","","","","","",,,,,"",,,,"ParticipantRole.id",0,*,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.sdtcIdentifiedBy","Procedure.participant.participantRole.sdtcIdentifiedBy","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.code","Procedure.participant.participantRole.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
@@ -386,7 +386,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.participant:DispositifUtilise.participantRole.playingDevice.determinerCode","Procedure.participant.participantRole.playingDevice.determinerCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INSTANCE""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-EntityDeterminer|3.0.0","",,,,"Device.determinerCode",0,1,"",""
 "Procedure.participant:DispositifUtilise.participantRole.playingDevice.code","Procedure.participant.participantRole.playingDevice.code","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
-","Code du dispositif - Par exemple 'Trousse de détection HPV' ","Code du dispositif","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDAEntityCode|2.0.3-sd","",,,,"Device.code",0,1,"",""
+","Code du dispositif - Par exemple 'Trousse de détection HPV'","Code du dispositif","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDAEntityCode|2.0.3-sd","",,,,"Device.code",0,1,"",""
 "Procedure.participant:DispositifUtilise.participantRole.playingDevice.manufacturerModelName","Procedure.participant.participantRole.playingDevice.manufacturerModelName","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ManufacturerModelNameExample|2.0.0","",,,,"Device.manufacturerModelName",0,1,"",""
 "Procedure.participant:DispositifUtilise.participantRole.playingDevice.softwareName","Procedure.participant.participantRole.playingDevice.softwareName","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}
@@ -487,7 +487,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.participant:ProduitUtilise.participantRole.playingDevice.determinerCode","Procedure.participant.participantRole.playingDevice.determinerCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INSTANCE""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-EntityDeterminer|3.0.0","",,,,"Device.determinerCode",0,1,"",""
 "Procedure.participant:ProduitUtilise.participantRole.playingDevice.code","Procedure.participant.participantRole.playingDevice.code","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
-","Code du produit - Par exemple 'Milieu' pour le test HPV ","Code du produit","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDAEntityCode|2.0.3-sd","",,,,"Device.code",0,1,"",""
+","Code du produit - Par exemple 'Milieu' pour le test HPV","Code du produit","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDAEntityCode|2.0.3-sd","",,,,"Device.code",0,1,"",""
 "Procedure.participant:ProduitUtilise.participantRole.playingDevice.manufacturerModelName","Procedure.participant.participantRole.playingDevice.manufacturerModelName","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ManufacturerModelNameExample|2.0.0","",,,,"Device.manufacturerModelName",0,1,"",""
 "Procedure.participant:ProduitUtilise.participantRole.playingDevice.softwareName","Procedure.participant.participantRole.playingDevice.softwareName","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SC {[]} {[]}
@@ -596,7 +596,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.entryRelationship.act.priorityCode","Procedure.entryRelationship.act.priorityCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Act.priorityCode",0,1,"",""
 "Procedure.entryRelationship.act.languageCode","Procedure.entryRelationship.act.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"Act.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Act.languageCode",0,1,"",""
 "Procedure.entryRelationship.act.subject","Procedure.entryRelationship.act.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Act.subject",0,1,"",""
 "Procedure.entryRelationship.act.specimen","Procedure.entryRelationship.act.specimen","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Specimen {[]} {[]}

@@ -159,7 +159,7 @@
 "Observation.repeatNumber","Observation.repeatNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Observation.repeatNumber",0,1,"",""
 "Observation.languageCode","Observation.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"Observation.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Observation.languageCode",0,1,"",""
 "Observation.value","Observation.value","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","Procédure autorisée ou pas - La valeur de la directive identifiée est un élément booléen (xsi:type='BL') qui permet d’indiquer l’autorisation ou la non autorisation, sauf :- si l’élément 'code' est 'Autre directive' : dans ce cas, l'élément 'value' n'est pas présent et la précision est fournie dans la partie narrative (via l'élément: text/reference), - si l’élément 'code' est 'Directives anticipées' : dans ce cas, l'élément 'value' n'est pas présent et un document encodé en B64 est encapsulé dans l'élément 'component/observationMedia'.","Procédure autorisée ou pas","","","","","","","","","",,,,,"",,,,"Observation.value",0,*,"",""
 "Observation.interpretationCode","Observation.interpretationCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
@@ -249,7 +249,7 @@
 "Observation.entryRelationship.observationMedia.id","Observation.entryRelationship.observationMedia.id","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant observationMedia","Identifiant observationMedia","","","","","","","","","",,,,,"",,,,"ObservationMedia.id",0,*,"",""
 "Observation.entryRelationship.observationMedia.languageCode","Observation.entryRelationship.observationMedia.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|4.0.1","",,,,"ObservationMedia.languageCode",0,1,"",""
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"ObservationMedia.languageCode",0,1,"",""
 "Observation.entryRelationship.observationMedia.value","Observation.entryRelationship.observationMedia.value","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
 ","Document encapsulé encodée en Base64","","","","","","","","","","",,,,,"",,,,"ObservationMedia.value",1,1,"",""
 "Observation.entryRelationship.observationMedia.value.nullFlavor","Observation.entryRelationship.observationMedia.value.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -372,7 +372,7 @@
 "Observation.reference.externalDocument.id","Observation.reference.externalDocument.id","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant du document externe","Identifiant du document externe","","","","","","","","","",,,,,"",,,,"ExternalDocument.id",0,*,"",""
 "Observation.reference.externalDocument.code","Observation.reference.externalDocument.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
-","","","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1","",,,,"ExternalDocument.code",0,1,"",""
+","","","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/doc-typecodes|5.0.0","",,,,"ExternalDocument.code",0,1,"",""
 "Observation.reference.externalDocument.text","Observation.reference.externalDocument.text","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
 ","Lien vers le document externe","","","","","","","","","","",,,,,"",,,,"ExternalDocument.text",0,1,"",""
 "Observation.reference.externalDocument.text.nullFlavor","Observation.reference.externalDocument.text.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}

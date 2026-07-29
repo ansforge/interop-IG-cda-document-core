@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -7,60 +8,47 @@
 
 <https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:Resource.id [ fhir:value "fr-valueset-code-traitement"] ;
-  fhir:Resource.language [ fhir:value "en"] ;
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-valueset-code-traitement</b></p><a name=\"en-fr-valueset-code-traitement\"> </a><a name=\"en-hcfr-valueset-code-traitement\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationCode-cisis.html\">ActSubstanceAdministrationCode</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-absent-or-unknown-medication-cisis.html\">JDV Absent Or Unknown Medication CISIS</a></li></ul></div>"
-  ] ;
-  fhir:ValueSet.url [ fhir:value "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement"] ;
-  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
-  fhir:ValueSet.name [ fhir:value "FRValueSetCodeTraitement"] ;
-  fhir:ValueSet.title [ fhir:value "ValueSet - FR ValueSet Code Traitement"] ;
-  fhir:ValueSet.status [ fhir:value "draft"] ;
-  fhir:ValueSet.date [ fhir:value "2026-07-29T05:36:05+00:00"^^xsd:dateTime] ;
-  fhir:ValueSet.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
-  fhir:ValueSet.contact [
-     fhir:index -1 ;
-     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index -1 ;
-       fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
-     ]
-  ] ;
-  fhir:ValueSet.description [ fhir:value "Jeu de valeurs regroupant les codes de traitement"] ;
-  fhir:ValueSet.jurisdiction [
-     fhir:index -1 ;
-     fhir:CodeableConcept.coding [
-       fhir:index -1 ;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
-       fhir:Coding.code [ fhir:value "FR" ] ;
-       fhir:Coding.display [ fhir:value "France (la)" ]
-     ]
-  ] ;
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index -1 ;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260619134043" ;
-         fhir:index -1 ;
+  fhir:id [ fhir:v "fr-valueset-code-traitement"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-valueset-code-traitement</b></p><a name=\"en-fr-valueset-code-traitement\"> </a><a name=\"en-hcfr-valueset-code-traitement\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActSubstanceAdministrationCode-cisis.html\">ActSubstanceAdministrationCode</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-absent-or-unknown-medication-cisis.html\">JDV Absent Or Unknown Medication CISIS</a></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FRValueSetCodeTraitement"] ; # 
+  fhir:title [ fhir:v "ValueSet - FR ValueSet Code Traitement"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-07-29T08:04:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Jeu de valeurs regroupant les codes de traitement"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France (la)" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260619134043"^^xsd:anyURI ;
          fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis|20260619134043>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260619134042" ;
-         fhir:index -1 ;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260619134042"^^xsd:anyURI ;
          fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis|20260619134042>
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement.ttl> a owl:Ontology ;
-  owl:imports fhir:fhir.ttl .
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 
