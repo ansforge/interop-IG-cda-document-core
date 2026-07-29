@@ -1,0 +1,1046 @@
+{
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-code-traitement",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FRValueSetCodeTraitement",
+    "title" : "ValueSet - FR ValueSet Code Traitement",
+    "description" : "Jeu de valeurs regroupant les codes de traitement",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+    "http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-traitement.html" : "CDA - FR Traitement"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-reference-externe",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FRValueSetReferenceExterne",
+    "title" : "ValueSet - FR ValueSet Reference externe",
+    "description" : "Jeu de valeurs regroupant les typeCode du document référencé",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-references-externes.html" : "CDA - FR References externes"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-status-code",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FRValueSetStatusCode",
+    "title" : "ValueSet - FR ValueSet StatusCode",
+    "description" : "Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).\n - 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.\n - 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.\n - 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActStatus"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.html" : "CDA - FR Resultats examens de biologie medicale",
+    "StructureDefinition-fr-cda-isolat-microbiologique.html" : "CDA - FR Isolat microbiologique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-statut-du-probleme",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FRValueSetStatutDuProbleme",
+    "title" : "ValueSet - FR ValueSet Statut du problème",
+    "description" : "Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-statut-du-probleme.html" : "CDA - FR Statut du probleme"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-type-vaccination",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FRValueSetTypeVaccination",
+    "title" : "ValueSet - FR ValueSet Type Vaccination",
+    "description" : "Jeu de valeurs regroupant les codes de type de vaccination",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+    "http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-vaccination.html" : "CDA - FR Vaccination"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
+    "version" : "20260505120000",
+    "status" : "active",
+    "name" : "JDV_J01_XdsAuthorSpecialty_CISIS",
+    "title" : null,
+    "description" : "XDS authorSpecialty CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+    "https://mos.esante.gouv.fr/NOS/TRE_A02-ProfessionSavFaire-CISIS/FHIR/TRE-A02-ProfessionSavFaire-CISIS",
+    "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+    "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+    "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"],
+    "oids" : ["1.2.250.1.213.1.1.5.461"],
+    "sources" : ["1.2.250.1.213.1.1.5.461"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-legal-authenticator.html" : "CDA - legalAuthenticator",
+    "StructureDefinition-fr-cda-assigned-author.html" : "CDA - assignedAuthor",
+    "StructureDefinition-fr-cda-performer.html" : "CDA - performer",
+    "StructureDefinition-fr-cda-service-event.html" : "CDA - serviceEvent",
+    "StructureDefinition-fr-cda-associated-entity.html" : "CDA - associatedEntity"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
+    "version" : "20260223120000",
+    "status" : "active",
+    "name" : "JDV_J02_XdsHealthcareFacilityTypeCode_CISIS",
+    "title" : null,
+    "description" : "XDS healthcareFacilityTypeCode CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS",
+    "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"],
+    "oids" : ["1.2.250.1.213.1.1.5.466"],
+    "sources" : ["1.2.250.1.213.1.1.5.466"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-health-care-facility.html" : "CDA - healthCareFacility"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS",
+    "version" : "20240927120000",
+    "status" : "active",
+    "name" : "JDV_J04_XdsPracticeSettingCode_CISIS",
+    "title" : null,
+    "description" : "XDS practiceSettingCode CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A01-CadreExercice/FHIR/TRE-A01-CadreExercice",
+    "https://mos.esante.gouv.fr/NOS/TRE_A00-ProducteurDocNonPS/FHIR/TRE-A00-ProducteurDocNonPS"],
+    "oids" : ["1.2.250.1.213.1.1.5.467"],
+    "sources" : ["1.2.250.1.213.1.1.5.467"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-represented-organization.html" : "CDA - representedOrganization",
+    "StructureDefinition-fr-cda-intended-recipient.html" : "CDA - intendedRecipient"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J11-RelationPatient-CISIS/FHIR/JDV-J11-RelationPatient-CISIS",
+    "version" : "20200424120000",
+    "status" : "active",
+    "name" : "JDV_J11_RelationPatient_CISIS",
+    "title" : null,
+    "description" : "Relation par rapport au patient - CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+    "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"],
+    "oids" : ["1.2.250.1.213.3.3.16"],
+    "sources" : ["1.2.250.1.213.3.3.16"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-related-entity.html" : "CDA - relatedEntity"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J140-EncounterParticipationType-CISIS/FHIR/JDV-J140-EncounterParticipationType-CISIS",
+    "version" : "20210326120000",
+    "status" : "active",
+    "name" : "JDV_J140_EncounterParticipationType_CISIS",
+    "title" : null,
+    "description" : "JDV_J140-EncounterParticipationType-CISIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"],
+    "oids" : ["1.2.250.1.213.1.1.5.528"],
+    "sources" : ["1.2.250.1.213.1.1.5.528"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-encounter-participant.html" : "CDA - encounterParticipant"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J141-RoleClass-CISIS/FHIR/JDV-J141-RoleClass-CISIS",
+    "version" : "20210326120000",
+    "status" : "active",
+    "name" : "JDV_J141_RoleClass_CISIS",
+    "title" : null,
+    "description" : "RoleClassAssociative CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"],
+    "oids" : ["1.2.250.1.213.1.1.5.588"],
+    "sources" : ["1.2.250.1.213.1.1.5.588"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-associated-entity.html" : "CDA - associatedEntity"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J142-TypeRencontre-CISIS/FHIR/JDV-J142-TypeRencontre-CISIS",
+    "version" : "20210326120000",
+    "status" : "active",
+    "name" : "JDV_J142_TypeRencontre_CISIS",
+    "title" : null,
+    "description" : "Type de prise en charge CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R304-HL7v3ActCode/FHIR/TRE-R304-HL7v3ActCode",
+    "https://mos.esante.gouv.fr/NOS/TRE_R305-TypeRencontre/FHIR/TRE-R305-TypeRencontre"],
+    "oids" : ["1.2.250.1.213.1.1.5.589"],
+    "sources" : ["1.2.250.1.213.1.1.5.589"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-encompassing-encounter.html" : "CDA - encompassingEncounter"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J143-AdministrativeGender-CISIS/FHIR/JDV-J143-AdministrativeGender-CISIS",
+    "version" : "20210326120000",
+    "status" : "active",
+    "name" : "JDV_J143_AdministrativeGender_CISIS",
+    "title" : null,
+    "description" : "Sexe administratif CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender"],
+    "oids" : ["1.2.250.1.213.1.1.5.590"],
+    "sources" : ["1.2.250.1.213.1.1.5.590"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-patient.html" : "CDA - patient"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS",
+    "version" : "20230331120000",
+    "status" : "active",
+    "name" : "JDV_J245_Civilite_CISIS",
+    "title" : null,
+    "description" : "Civilités CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"],
+    "oids" : ["1.2.250.1.213.1.1.5.718"],
+    "sources" : ["1.2.250.1.213.1.1.5.718"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-name.html" : "CDA - Name"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J246-Titre-CISIS/FHIR/JDV-J246-Titre-CISIS",
+    "version" : "20240126120000",
+    "status" : "active",
+    "name" : "JDV_J246_Titre_CISIS",
+    "title" : null,
+    "description" : "Civilités CI-SIS",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"],
+    "oids" : ["1.2.250.1.213.1.1.5.719"],
+    "sources" : ["1.2.250.1.213.1.1.5.719"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-name.html" : "CDA - Name"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "JDV_J47_FunctionCode_CISIS",
+    "title" : null,
+    "description" : "Rôles fonctionnels",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+    "https://mos.esante.gouv.fr/NOS/TRE_R258-RelationPriseCharge/FHIR/TRE-R258-RelationPriseCharge",
+    "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"],
+    "oids" : ["1.2.250.1.213.1.1.5.124"],
+    "sources" : ["1.2.250.1.213.1.1.5.124"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-author.html" : "CDA - author",
+    "StructureDefinition-fr-cda-performer-corps.html" : "CDA - FR Performer corps",
+    "StructureDefinition-fr-cda-laboratoire-executant.html" : "CDA - FR Laboratoire executant",
+    "StructureDefinition-fr-cda-participant-entete.html" : "CDA - participant"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-allergy-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvAbsentOrUnknownAllergyCisis",
+    "title" : "JDV Absent Or Unknown Allergy CISIS",
+    "description" : "JDV Absent Or Unknown Allergy CISIS",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"],
+    "oids" : ["1.2.250.1.213.1.1.5.661"],
+    "sources" : ["1.2.250.1.213.1.1.5.661"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-allergie-ou-hypersensibilite.html" : "CDA - FR Allergie ou hypersensibilite"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-immunization-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvAbsentOrUnknownImmunizationCisis",
+    "title" : "JDV Absent Or Unknown Immunization CISIS",
+    "description" : "JDV Absent Or Unknown Immunization CISIS",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"],
+    "oids" : ["1.2.250.1.213.1.1.5.666"],
+    "sources" : ["1.2.250.1.213.1.1.5.666"],
+    "uses" : {
+    },
+    "ValueSet-fr-valueset-type-vaccination.html" : "ValueSet - FR ValueSet Type Vaccination"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-medication-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvAbsentOrUnknownMedicationCisis",
+    "title" : "JDV Absent Or Unknown Medication CISIS",
+    "description" : "JDV Absent Or Unknown Medication CISIS",
+    "systems" : ["http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"],
+    "oids" : ["1.2.250.1.213.1.1.5.664"],
+    "sources" : ["1.2.250.1.213.1.1.5.664"],
+    "uses" : {
+    },
+    "ValueSet-fr-valueset-code-traitement.html" : "ValueSet - FR ValueSet Code Traitement"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "JdvCodeDocumentImagerieCisis",
+    "title" : "JDV Code Document Imagerie CISIS",
+    "description" : "JDV Code Document Imagerie CISIS",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.2.250.1.213.1.1.5.687"],
+    "sources" : ["1.2.250.1.213.1.1.5.687"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-technique-imagerie.html" : "CDA - FR DICOM Technique imagerie"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvCodeProblemeCisis",
+    "title" : "JDV Code Probleme CISIS",
+    "description" : "JDV Code Probleme CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.172"],
+    "sources" : ["1.2.250.1.213.1.1.5.172"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-probleme.html" : "CDA - FR Probleme",
+    "StructureDefinition-fr-cda-antecedent-familial-observe.html" : "CDA - FR Antecedent familial observe"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "JdvCompletudeDispensationCisis",
+    "title" : "JDV Completude Dispensation CISIS",
+    "description" : "JDV Completude Dispensation CISIS",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "oids" : ["1.2.250.1.213.1.1.5.765"],
+    "sources" : ["1.2.250.1.213.1.1.5.765"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-traitement-dispense.html" : "CDA - FR Traitement dispense"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-couverture-sociale-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvCouvertureSocialeCisis",
+    "title" : "JDV Couverture Sociale CISIS",
+    "description" : "JDV Couverture Sociale CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"],
+    "oids" : ["1.2.250.1.213.1.1.5.125"],
+    "sources" : ["1.2.250.1.213.1.1.5.125"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-organisme-assurance-maladie.html" : "CDA - FR Organisme assurance maladie"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evaluation-douleur-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvEvaluationDouleurCisis",
+    "title" : "JDV Evaluation Douleur CISIS",
+    "description" : "JDV Evaluation Douleur CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.499"],
+    "sources" : ["1.2.250.1.213.1.1.5.499"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-observation-sur-echelle-douleur.html" : "CDA - FR Observation sur echelle douleur"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvEvolutionCisis",
+    "title" : "JDV Evolution CISIS",
+    "description" : "JDV Evolution CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.788"],
+    "sources" : ["1.2.250.1.213.1.1.5.788"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-evolution-effet-indesirable.html" : "CDA - FR Evolution effet indesirable"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvGraviteCisis",
+    "title" : "JDV Gravite CISIS",
+    "description" : "JDV Gravite CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.787"],
+    "sources" : ["1.2.250.1.213.1.1.5.787"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-gravite-effet-indesirable.html" : "CDA - FR Gravite effet indesirable"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvHealthStatusCodeCisis",
+    "title" : "JDV Health Status Code CISIS",
+    "description" : "JDV Health Status Code CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.4.2.283.1"],
+    "sources" : ["1.2.250.1.213.1.1.4.2.283.1"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-statut-clinique-du-patient.html" : "CDA - FR Statut clinique du patient"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergy-intolerance-criticality-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "AllergyIntoleranceCriticality",
+    "title" : "Allergy Intolerance Criticality",
+    "description" : "Allergy Intolerance Criticality",
+    "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+    "oids" : ["2.16.840.1.113883.4.642.3.129"],
+    "sources" : ["2.16.840.1.113883.4.642.3.129"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-criticite.html" : "CDA - FR Criticite"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "AllergyIntoleranceClinicalStatusCodes",
+    "title" : "AllergyIntolerance Clinical Status Codes",
+    "description" : "AllergyIntolerance Clinical Status Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+    "uses" : {
+    },
+    "ValueSet-fr-valueset-statut-du-probleme.html" : "ValueSet - FR ValueSet Statut du problème"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Condition Clinical Status Codes",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.164"],
+    "sources" : ["2.16.840.1.113883.4.642.3.164"],
+    "uses" : {
+    },
+    "ValueSet-fr-valueset-statut-du-probleme.html" : "ValueSet - FR ValueSet Statut du problème"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-ver-status-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ConditionVerificationStatus",
+    "title" : "Condition Verification Status",
+    "description" : "Condition Verification Status",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.166"],
+    "sources" : ["2.16.840.1.113883.4.642.3.166"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-certitude.html" : "CDA - FR Certitude"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ActMood",
+    "title" : "ActMood",
+    "description" : "ActMood",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActMood"],
+    "oids" : ["2.16.840.1.113883.1.11.10196"],
+    "sources" : ["2.16.840.1.113883.1.11.10196"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-rencontre.html" : "CDA - FR Rencontre"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActPriority-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ActPriority",
+    "title" : "ActPriority",
+    "description" : "ActPriority",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+    "oids" : ["2.16.840.1.113883.1.11.16866"],
+    "sources" : ["2.16.840.1.113883.1.11.16866"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-rang-de-la-vaccination.html" : "CDA - FR Rang de la vaccination"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ActStatus",
+    "title" : "ActStatus",
+    "description" : "ActStatus",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActStatus"],
+    "oids" : ["2.16.840.1.113883.1.11.15933"],
+    "sources" : ["2.16.840.1.113883.1.11.15933"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-observation.html" : "CDA - FR DICOM Observation",
+    "StructureDefinition-fr-cda-identification-micro-organismes-multiresistants.html" : "CDA - FR Identification micro organismes multiresistants",
+    "StructureDefinition-fr-cda-modalite-sortie.html" : "CDA - FR Modalite sortie",
+    "StructureDefinition-fr-cda-rang-de-la-vaccination.html" : "CDA - FR Rang de la vaccination",
+    "StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.html" : "CDA - FR Resultat examens de biologie element clinique pertinent",
+    "StructureDefinition-fr-cda-acte.html" : "CDA - FR Acte",
+    "StructureDefinition-fr-cda-dispositif-medical.html" : "CDA - FR Dispositif medical",
+    "StructureDefinition-fr-cda-liste-des-allergies-et-hypersensibilites.html" : "CDA - FR Liste des allergies et hypersensibilites",
+    "StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.html" : "CDA - FR Batterie examens de biologie medicale",
+    "StructureDefinition-fr-cda-dicom-quantite.html" : "CDA - FR DICOM Quantite",
+    "StructureDefinition-fr-cda-demande-d-examen-ou-de-suivi.html" : "CDA - FR Demande d examen ou de suivi",
+    "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
+    "StructureDefinition-fr-cda-liste-des-problemes.html" : "CDA - FR Liste des problemes",
+    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee",
+    "StructureDefinition-fr-cda-modalite-entree.html" : "CDA - FR Modalite entree",
+    "StructureDefinition-fr-cda-evenement.html" : "CDA - FR Evenement"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ActSubstanceAdminSubstitutionCode",
+    "title" : "ActSubstanceAdminSubstitutionCode",
+    "description" : "ActSubstanceAdminSubstitutionCode",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"],
+    "oids" : ["2.16.840.1.113883.1.11.16621"],
+    "sources" : ["2.16.840.1.113883.1.11.16621"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-autorisation-substitution.html" : "CDA - FR Autorisation Substitution"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "ActSubstanceAdministrationCode",
+    "title" : "ActSubstanceAdministrationCode",
+    "description" : "ActSubstanceAdministrationCode",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "oids" : ["2.16.840.1.113883.1.11.19708"],
+    "sources" : ["2.16.840.1.113883.1.11.19708"],
+    "uses" : {
+    },
+    "ValueSet-fr-valueset-code-traitement.html" : "ValueSet - FR ValueSet Code Traitement"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "ActSubstanceAdministrationImmunizationCode",
+    "title" : "ActSubstanceAdministrationImmunizationCode",
+    "description" : "ActSubstanceAdministrationImmunizationCode",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "oids" : ["2.16.840.1.113883.1.11.19709"],
+    "sources" : ["2.16.840.1.113883.1.11.19709"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-vaccin-recommande.html" : "CDA - FR Vaccin recommande",
+    "ValueSet-fr-valueset-type-vaccination.html" : "ValueSet - FR ValueSet Type Vaccination"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-AdministrativeGender-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "AdministrativeGender",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"],
+    "oids" : ["2.16.840.1.113883.1.11.1"],
+    "sources" : ["2.16.840.1.113883.1.11.1"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-sujet-personne.html" : "CDA - FR Sujet personne"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis",
+    "version" : "20251216141839",
+    "status" : "active",
+    "name" : "MediaType",
+    "title" : "MediaType",
+    "description" : "MediaType",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-mediaType"],
+    "oids" : ["2.16.840.1.113883.1.11.14824"],
+    "sources" : ["2.16.840.1.113883.1.11.14824"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-directive-anticipee.html" : "CDA - FR Directive anticipee"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "ObservationInterpretation",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
+    "oids" : ["2.16.840.1.113883.1.11.78"],
+    "sources" : ["2.16.840.1.113883.1.11.78"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-demande-d-examen-ou-de-suivi.html" : "CDA - FR Demande d examen ou de suivi",
+    "StructureDefinition-fr-cda-signe-vital-observe.html" : "CDA - FR Signe vital observe",
+    "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
+    "StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.html" : "CDA - FR Resultat examens de biologie element clinique pertinent",
+    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee",
+    "StructureDefinition-fr-cda-simple-observation.html" : "CDA - FR Simple Observation",
+    "StructureDefinition-fr-cda-statut.html" : "CDA - FR Statut",
+    "StructureDefinition-fr-cda-resultat.html" : "CDA - FR Resultat"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "ObservationMethod",
+    "title" : "ObservationMethod",
+    "description" : "ObservationMethod",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationMethod"],
+    "oids" : ["2.16.840.1.113883.1.11.14079"],
+    "sources" : ["2.16.840.1.113883.1.11.14079"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
+    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-PersonalRelationshipRoleType-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "PersonalRelationshipRoleType",
+    "title" : "PersonalRelationshipRoleType",
+    "description" : "PersonalRelationshipRoleType",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+    "oids" : ["2.16.840.1.113883.1.11.19563"],
+    "sources" : ["2.16.840.1.113883.1.11.19563"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-antecedents-familiaux.html" : "CDA - FR Antecedents familiaux",
+    "StructureDefinition-fr-cda-sujet.html" : "CDA - FR Sujet"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-xActMoodDocumentObservation",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "XActMoodDocumentObservation",
+    "title" : "x_ActMoodDocumentObservation",
+    "description" : "x_ActMoodDocumentObservation",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActMood"],
+    "oids" : ["2.16.840.1.113883.1.11.18943"],
+    "sources" : ["2.16.840.1.113883.1.11.18943"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.html" : "CDA - FR DICOM SOP instance observation subordonnee",
+    "StructureDefinition-fr-cda-dicom-cadres-references.html" : "CDA - FR DICOM Cadres de références",
+    "StructureDefinition-fr-cda-dicom-objectifs-de-reference.html" : "CDA - FR DICOM Objectifs de référence"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "JdvHumanSubstanceAdministrationSiteCisis",
+    "title" : "JDV Human Substance Administration Site CISIS",
+    "description" : "JDV Human Substance Administration Site CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.686"],
+    "sources" : ["1.2.250.1.213.1.1.5.686"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-traitement-prescrit.html" : "CDA - FR Traitement prescrit",
+    "StructureDefinition-fr-cda-traitement.html" : "CDA - FR Traitement",
+    "StructureDefinition-fr-cda-item-plan-traitement.html" : "CDA - FR Item plan traitement"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imagerie-objectif-reference-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvImagerieObjectifReferenceCisis",
+    "title" : "JDV Imagerie Objectif Reference CISIS",
+    "description" : "JDV Imagerie Objectif Reference CISIS",
+    "systems" : ["http://dicom.nema.org/resources/ontology/DCM"],
+    "oids" : ["1.2.250.1.213.1.1.5.672"],
+    "sources" : ["1.2.250.1.213.1.1.5.672"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-objectifs-de-reference.html" : "CDA - FR DICOM Objectifs de référence"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "JdvImmunizationApproachSiteCodeCisis",
+    "title" : "JDV Immunization Approach Site Code CISIS",
+    "description" : "JDV Immunization Approach Site Code CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.621"],
+    "sources" : ["1.2.250.1.213.1.1.5.621"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-vaccin-recommande.html" : "CDA - FR Vaccin recommande",
+    "StructureDefinition-fr-cda-vaccination.html" : "CDA - FR Vaccination"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvImmunizationRouteCodeCisis",
+    "title" : "JDV Immunization Route Code CISIS",
+    "description" : "JDV Immunization Route Code CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/terminologie-standardterms"],
+    "oids" : ["1.2.250.1.213.1.1.5.676"],
+    "sources" : ["1.2.250.1.213.1.1.5.676"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-vaccin-recommande.html" : "CDA - FR Vaccin recommande",
+    "StructureDefinition-fr-cda-vaccination.html" : "CDA - FR Vaccination"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvImputabiliteCisis",
+    "title" : "JDV Imputabilite CISIS",
+    "description" : "JDV Imputabilite CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.786"],
+    "sources" : ["1.2.250.1.213.1.1.5.786"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-imputabilite-effet-indesirable.html" : "CDA - FR Imputabilite effet indesirable"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-j368-categorie-etablissement-cisis",
+    "version" : "20260505120000",
+    "status" : "active",
+    "name" : "JdvJ368CategorieEtablissementCisis",
+    "title" : "Jdv J368 Categorie Etablissement Cisis",
+    "description" : "JDV pour le CISIS reprenant l'ensemble des valeurs actives et obsolètes de niveau 4 dans la TreR397CategorieEntiteGeographiqueExercice",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r397-categorie-entite-geographique-exercice"],
+    "oids" : ["1.2.250.1.213.1.1.5.823"],
+    "sources" : ["1.2.250.1.213.1.1.5.823"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-health-care-facility.html" : "CDA - healthCareFacility"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-lien-assure-beneficiaire-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvLienAssureBeneficiaireCisis",
+    "title" : "JDV Lien Assure Beneficiaire CISIS",
+    "description" : "JDV Lien Assure Beneficiaire CISIS",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+    "oids" : ["1.2.250.1.213.1.1.5.126"],
+    "sources" : ["1.2.250.1.213.1.1.5.126"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-organisme-assurance-maladie.html" : "CDA - FR Organisme assurance maladie"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-acquisition-cisis",
+    "version" : "20260420150250",
+    "status" : "active",
+    "name" : "JdvModaliteAcquisitionCisis",
+    "title" : "JDV Modalite Acquisition CISIS",
+    "description" : "JDV Modalite Acquisition CISIS",
+    "systems" : ["http://dicom.nema.org/resources/ontology/DCM"],
+    "oids" : ["1.2.250.1.213.1.1.5.618"],
+    "sources" : ["1.2.250.1.213.1.1.5.618"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-serie-imagerie.html" : "CDA - FR DICOM Serie imagerie",
+    "StructureDefinition-fr-cda-dicom-technique-imagerie.html" : "CDA - FR DICOM Technique imagerie"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvModaliteEntreeCisis",
+    "title" : "JDV Modalite Entree CISIS",
+    "description" : "JDV Modalite Entree CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.73"],
+    "sources" : ["1.2.250.1.213.1.1.5.73"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-modalite-entree.html" : "CDA - FR Modalite entree"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvModaliteSortieCisis",
+    "title" : "JDV Modalite Sortie CISIS",
+    "description" : "JDV Modalite Sortie CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r397-categorie-entite-geographique-exercice",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.74"],
+    "sources" : ["1.2.250.1.213.1.1.5.74"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-modalite-sortie.html" : "CDA - FR Modalite sortie"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvModeDeTransportCisis",
+    "title" : "JDV Mode De Transport CISIS",
+    "description" : "JDV Mode De Transport CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"],
+    "oids" : ["1.2.250.1.213.1.1.5.140"],
+    "sources" : ["1.2.250.1.213.1.1.5.140"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-transport-du-professionnel.html" : "CDA - FR Transport du professionnel",
+    "StructureDefinition-fr-cda-transport-du-patient.html" : "CDA - FR Transport du patient"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvModificateurTopographiqueCisis",
+    "title" : "JDV Modificateur Topographique CISIS",
+    "description" : "JDV Modificateur Topographique CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.688"],
+    "sources" : ["1.2.250.1.213.1.1.5.688"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-observation.html" : "CDA - FR DICOM Observation",
+    "StructureDefinition-fr-cda-dicom-quantite.html" : "CDA - FR DICOM Quantite",
+    "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
+    "StructureDefinition-fr-cda-dicom-technique-imagerie.html" : "CDA - FR DICOM Technique imagerie",
+    "StructureDefinition-fr-cda-prelevement.html" : "CDA - FR Prelevement",
+    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvOrigineEffetIndesirableCisis",
+    "title" : "JDV Origine Effet Indesirable CISIS",
+    "description" : "JDV Origine Effet Indesirable CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.785"],
+    "sources" : ["1.2.250.1.213.1.1.5.785"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-effet-indesirable.html" : "CDA - FR Effet indesirable"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-participant-additionnel-resultat-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvParticipantAdditionnelResultatCisis",
+    "title" : "JDV Participant Additionnel Resultat CISIS",
+    "description" : "JDV Participant Additionnel Resultat CISIS",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+    "oids" : ["1.2.250.1.213.1.1.5.138"],
+    "sources" : ["1.2.250.1.213.1.1.5.138"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-participant-apsr.html" : "CDA - FR Participant APSR"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis",
+    "version" : "20260619134041",
+    "status" : "active",
+    "name" : "JdvQuantiteExpositionRayonnementsCisis",
+    "title" : "JDV Quantite Exposition Rayonnements CISIS",
+    "description" : "JDV Quantite Exposition Rayonnements CISIS",
+    "systems" : ["http://dicom.nema.org/resources/ontology/DCM"],
+    "oids" : ["1.2.250.1.213.1.1.5.620"],
+    "sources" : ["1.2.250.1.213.1.1.5.620"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-quantite.html" : "CDA - FR DICOM Quantite",
+    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-resultat-type-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvResultatTypeCisis",
+    "title" : "Jdv Type Resultat Type CISIS",
+    "description" : "Jdv Type Resultat Type CISIS",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.2.250.1.213.1.1.5.828"],
+    "sources" : ["1.2.250.1.213.1.1.5.828"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-resultats.html" : "CDA - FR resultats"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-role-informateur-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvRoleInformateurCisis",
+    "title" : "Jdv Role Informateur CISIS",
+    "description" : "Jdv Role Informateur CISIS",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleClass"],
+    "oids" : ["1.2.250.1.213.1.1.5.824"],
+    "sources" : ["1.2.250.1.213.1.1.5.824"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-related-entity.html" : "CDA - relatedEntity"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-route-of-administration-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvRouteOfAdministrationCisis",
+    "title" : "JDV Route Of Administration CISIS",
+    "description" : "JDV Route Of Administration CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/terminologie-standardterms"],
+    "oids" : ["1.2.250.1.213.1.1.5.677"],
+    "sources" : ["1.2.250.1.213.1.1.5.677"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-item-plan-traitement.html" : "CDA - FR Item plan traitement"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvSigneVitalCisis",
+    "title" : "JDV Signe Vital CISIS",
+    "description" : "JDV Signe Vital CISIS",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.2.250.1.213.1.1.5.171"],
+    "sources" : ["1.2.250.1.213.1.1.5.171"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-signe-vital-observe.html" : "CDA - FR Signe vital observe"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-social-history-code-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvSocialHistoryCodeCisis",
+    "title" : "JDV Social History Code CISIS",
+    "description" : "JDV Social History Code CISIS",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["1.2.250.1.213.1.1.4.2.283.4"],
+    "sources" : ["1.2.250.1.213.1.1.4.2.283.4"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-habitus-mode-de-vie.html" : "CDA - FR Habitus Mode de vie"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvSopClassCisis",
+    "title" : "JDV Sop Class CISIS",
+    "description" : "JDV Sop Class CISIS",
+    "systems" : ["https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_a.html"],
+    "oids" : ["1.2.250.1.213.1.1.5.689"],
+    "sources" : ["1.2.250.1.213.1.1.5.689"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-dicom-sop-instance-observation.html" : "CDA - FR DICOM SOP instance observation",
+    "StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.html" : "CDA - FR DICOM SOP instance observation subordonnee"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvSpecimenTypeCisis",
+    "title" : "JDV Specimen Type CISIS",
+    "description" : "JDV Specimen Type CISIS",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-SpecimenType",
+    "http://terminology.hl7.org/CodeSystem/v2-0487"],
+    "oids" : ["1.2.250.1.213.1.1.5.819"],
+    "sources" : ["1.2.250.1.213.1.1.5.819"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-prelevement.html" : "CDA - FR Prelevement"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-statut-document-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvStatutDocumentCisis",
+    "title" : "JDV Statut Document CISIS",
+    "description" : "JDV Statut Document CISIS",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.93"],
+    "sources" : ["1.2.250.1.213.1.1.5.93"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-statut-document.html" : "CDA - FR Statut document"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-technique-biologie-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvTechniqueBiologieCisis",
+    "title" : "JDV Technique Biologie CISIS",
+    "description" : "JDV Technique Biologie CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/terminologie-tccr"],
+    "oids" : ["1.2.250.1.213.1.1.5.789"],
+    "sources" : ["1.2.250.1.213.1.1.5.789"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.html" : "CDA - FR Resultat examens de biologie element clinique pertinent"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis",
+    "version" : "20260619134043",
+    "status" : "active",
+    "name" : "JdvTypeDirectiveAnticipeeCisis",
+    "title" : "JDV Type Directive Anticipee CISIS",
+    "description" : "JDV Type Directive Anticipee CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://loinc.org",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.136"],
+    "sources" : ["1.2.250.1.213.1.1.5.136"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-directive-anticipee.html" : "CDA - FR Directive anticipee"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-evenement-indesirable-previsible-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvTypeEvenementIndesirablePrevisibleCisis",
+    "title" : "JDV Type Evenement Indesirable Previsible CISIS",
+    "description" : "JDV Type Evenement Indesirable Previsible CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+    "http://snomed.info/sct"],
+    "oids" : ["1.2.250.1.213.1.1.5.794"],
+    "sources" : ["1.2.250.1.213.1.1.5.794"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-allergie-ou-hypersensibilite.html" : "CDA - FR Allergie ou hypersensibilite"
+  },
+  {
+    "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis",
+    "version" : "20260619134042",
+    "status" : "active",
+    "name" : "JdvTypeMotorisationCisis",
+    "title" : "JDV Type Motorisation CISIS",
+    "description" : "JDV Type Motorisation CISIS",
+    "systems" : ["https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"],
+    "oids" : ["1.2.250.1.213.1.1.5.801"],
+    "sources" : ["1.2.250.1.213.1.1.5.801"],
+    "uses" : {
+    },
+    "StructureDefinition-fr-cda-transport-du-professionnel.html" : "CDA - FR Transport du professionnel"
+  }]
+}

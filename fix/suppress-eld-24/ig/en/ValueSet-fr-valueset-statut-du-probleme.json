@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-valueset-statut-du-probleme",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-valueset-statut-du-probleme</b></p><a name=\"en-fr-valueset-statut-du-probleme\"> </a><a name=\"en-hcfr-valueset-statut-du-probleme\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-allergyintolerance-clinical-cisis.html\">AllergyIntolerance Clinical Status Codes</a></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-condition-clinical-cisis.html\">Condition Clinical Status Codes</a></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/ValueSet/fr-valueset-statut-du-probleme",
+  "version" : "0.1.0",
+  "name" : "FRValueSetStatutDuProbleme",
+  "title" : "ValueSet - FR ValueSet Statut du problème",
+  "status" : "draft",
+  "date" : "2026-07-29T13:04:38+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis|20260619134042"]
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis|20260619134042"]
+    }]
+  }
+}

@@ -1,0 +1,3081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Résumé des artefacts - FR Document Core (CDA) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">FR Document Core (CDA)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+
+
+  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="ressourcesCDA-struc-gen.html">Structure générale document</a>
+  </li>
+  <li>
+    <a href="ressourcesCDA-entete.html">Entête document</a>
+  </li>
+  <li>
+    <a href="ressourcesCDA-corps.html">Corps d&apos;un document</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/document-core/index.html">IG FHIR</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/document-core/index.html">IG Modèle métier</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Espace de publication du CI-SIS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr/">Serveur Multi-terminologies</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr/fhir">Serveur Multi-terminologies / FHIR</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html">IG terminologies et jeux de valeurs du CI-SIS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/">Espace de tests du CI-SIS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/ansforge/TestContenuCDA-3-0">testContenuCDA</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://hl7.org/cda/stds/online-navigation/index.html">Standard CDA</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/index.html">Documentation des guides d&apos;implémentation de l&apos;ANS</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-fr.png"/>Français</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag fr" src="assets/images/lang-fr.png"/>Français</div>
+
+    <div><a href="../en/artifacts.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Résumé des artefacts</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="translationinfo.html">&lt; précédent</a> | 
+
+            <a href="#bottom">bas de page</a>
+
+          | <a href="StructureDefinition-fr-cda-assigned-author.html">suivant &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FR Document Core (CDA) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/cda/document-core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Résumé des artefacts</h2>
+  
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc"
+     data-fhir="generated">
+   <p>Contenu:</p>
+   <ul>
+      <li>
+         <a href="#1"></a>
+      </li>
+      <li>
+         <a href="#2">Eléments CDA du corps des sections</a>
+      </li>
+      <li>
+         <a href="#3">Eléments CDA corps des composants élémentaires</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Modèles logiques</a>
+      </li>
+      <li>
+         <a href="#5">Terminologie: Jeux de valeurs (ValueSets)</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     data-fhir="generated">
+   <p>Cette page fournit une liste des artefacts FHIR définis dans le cadre de ce guide de mise en œuvre.</p>
+   <a name="1"> </a>
+   <h3> </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-assigned-author.html"
+                  title="StructureDefinition/fr-cda-assigned-author">
+                  <span title="StructureDefinition/fr-cda-assigned-author">CDA - assignedAuthor
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA assignedAuthor contient les éléments permettant de décrire l’auteur.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-assigned-custodian.html"
+                  title="StructureDefinition/fr-cda-assigned-custodian">
+                  <span title="StructureDefinition/fr-cda-assigned-custodian">CDA - assignedCustodian
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA assignedCustodian contient l’élément representedCustodianOrganization caractérisant la structure conservant le document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-assigned-entity.html"
+                  title="StructureDefinition/fr-cda-assigned-entity">
+                  <span title="StructureDefinition/fr-cda-assigned-entity">CDA - assignedEntity
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA assignedEntity est utilisé dans les éléments suivants : dataEnterer, informant, legalAuthenticator, authenticator, performer, responsibleParty et encounterParticipant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-assigned-person.html"
+                  title="StructureDefinition/fr-cda-assigned-person">
+                  <span title="StructureDefinition/fr-cda-assigned-person">CDA - assignedPerson
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA assignedPerson permet de décrire une personne physique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-associated-entity.html"
+                  title="StructureDefinition/fr-cda-associated-entity">
+                  <span title="StructureDefinition/fr-cda-associated-entity">CDA - associatedEntity
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA associatedEntity permet de représenter les caractéristiques du professionnel et/ou de l'établissement participant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-authenticator.html"
+                  title="StructureDefinition/fr-cda-authenticator">
+                  <span title="StructureDefinition/fr-cda-authenticator">CDA - authenticator
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA authenticator permet de représenter le professionnel (personne physique) attestant la validité du contenu du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-author.html"
+                  title="StructureDefinition/fr-cda-author">
+                  <span title="StructureDefinition/fr-cda-author">CDA - author
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA author permet d’enregistrer un auteur du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-authoring-device.html"
+                  title="StructureDefinition/fr-cda-authoring-device">
+                  <span title="StructureDefinition/fr-cda-authoring-device">CDA - authoringDevice
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA authoringDevice contient les informations complémentaires si l’auteur est un système.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-authorization.html"
+                  title="StructureDefinition/fr-cda-authorization">
+                  <span title="StructureDefinition/fr-cda-authorization">CDA - authorization
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA authorization permet de documenter qu'un consentement éclairé a été obtenu et d'indiquer quel type de consentement a été fourni.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-clinical-document.html"
+                  title="StructureDefinition/fr-cda-clinical-document">
+                  <span title="StructureDefinition/fr-cda-clinical-document">CDA - clinicalDocument
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête CDA 'ClinicalDocument' est l’élément racine d’un document médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-component-of.html"
+                  title="StructureDefinition/fr-cda-component-of">
+                  <span title="StructureDefinition/fr-cda-component-of">CDA - componentOf
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA componentOf permet d'associer le document à une prise en charge du patient/usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-custodian.html"
+                  title="StructureDefinition/fr-cda-custodian">
+                  <span title="StructureDefinition/fr-cda-custodian">CDA - custodian
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA custodian permet de représenter la structure chargée de la conservation du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-data-enterer.html"
+                  title="StructureDefinition/fr-cda-data-enterer">
+                  <span title="StructureDefinition/fr-cda-data-enterer">CDA - dataEnterer
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA dataEnterer contient les informations relatives à l’opérateur de saisie de tout ou partie du contenu du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-documentation-of.html"
+                  title="StructureDefinition/fr-cda-documentation-of">
+                  <span title="StructureDefinition/fr-cda-documentation-of">CDA - documentationOf
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA documentationOf permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. Il y a au minimum une occurrence de cet élément pour décrire l'évènement principal avec obligatoirement une date de début et un exécutant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-encompassing-encounter.html"
+                  title="StructureDefinition/fr-cda-encompassing-encounter">
+                  <span title="StructureDefinition/fr-cda-encompassing-encounter">CDA - encompassingEncounter
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA encompassingEncounter permet de décrire la prise en charge du patient/usager par un professionnel ou par une structure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-encounter-participant.html"
+                  title="StructureDefinition/fr-cda-encounter-participant">
+                  <span title="StructureDefinition/fr-cda-encounter-participant">CDA - encounterParticipant
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA encounterParticipant permet de représenter la personne impliquée dans la prise en charge du patient/usager, comme par exemple, le professionnel co-responsable, le professionnel ayant fait l'admission ou encore le professionnel ayant donné son avis quant à la prise en charge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-health-care-facility.html"
+                  title="StructureDefinition/fr-cda-health-care-facility">
+                  <span title="StructureDefinition/fr-cda-health-care-facility">CDA - healthCareFacility
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA healthCareFacility permet de représenter la structure de prise en charge (cabinet du médecin, hôpital ou clinique, etc.).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-informant.html"
+                  title="StructureDefinition/fr-cda-informant">
+                  <span title="StructureDefinition/fr-cda-informant">CDA - informant
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA informant permet d'identifier un informateur, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-information-recipient.html"
+                  title="StructureDefinition/fr-cda-information-recipient">
+                  <span title="StructureDefinition/fr-cda-information-recipient">CDA - informationRecipient
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA informationRecipient permet d'enregistrer une personne déclarée comme destinataire prévu du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-inFulfillment-of.html"
+                  title="StructureDefinition/fr-cda-inFulfillment-of">
+                  <span title="StructureDefinition/fr-cda-inFulfillment-of">CDA - inFulfillmentOf
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA inFulfillmentOf permet d'associer un document à une prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-intended-recipient.html"
+                  title="StructureDefinition/fr-cda-intended-recipient">
+                  <span title="StructureDefinition/fr-cda-intended-recipient">CDA - intendedRecipient
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA intendedRecipient permet d'enregistrer le destinataire prévu du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-legal-authenticator.html"
+                  title="StructureDefinition/fr-cda-legal-authenticator">
+                  <span title="StructureDefinition/fr-cda-legal-authenticator">CDA - legalAuthenticator
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA legalAuthenticator permet de représenter les caractéristiques du professionnel et/ou de l'établissement participant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-name.html"
+                  title="StructureDefinition/fr-cda-name">
+                  <span title="StructureDefinition/fr-cda-name">CDA - Name
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA  correspond au nom d'une personne physique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-order.html"
+                  title="StructureDefinition/fr-cda-order">
+                  <span title="StructureDefinition/fr-cda-order">CDA - order
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA order permet de représenter la prescription à l’origine de l’acte dont résulte le document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-parent-document.html"
+                  title="StructureDefinition/fr-cda-parent-document">
+                  <span title="StructureDefinition/fr-cda-parent-document">CDA - parentDocument
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA parentDocument permet de représenter le document de référence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-participant-entete.html"
+                  title="StructureDefinition/fr-cda-participant-entete">
+                  <span title="StructureDefinition/fr-cda-participant-entete">CDA - participant
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA participant permet de représenter toute personne/structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-patient.html"
+                  title="StructureDefinition/fr-cda-patient">
+                  <span title="StructureDefinition/fr-cda-patient">CDA - patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA patient permet de représenter une personne physique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-patient-role.html"
+                  title="StructureDefinition/fr-cda-patient-role">
+                  <span title="StructureDefinition/fr-cda-patient-role">CDA - patientRole
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA patientRole permet de décrire le patient/usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-performer.html"
+                  title="StructureDefinition/fr-cda-performer">
+                  <span title="StructureDefinition/fr-cda-performer">CDA - performer
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA performer permet de représenter l'exécutant de l’évènement documenté. Il est obligatoire et son attribut nullFlavor interdit pour l’évènement documenté principal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-record-target.html"
+                  title="StructureDefinition/fr-cda-record-target">
+                  <span title="StructureDefinition/fr-cda-record-target">CDA - recordTarget
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA recordTarget permet de représenter le patient/usager concerné par le document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-related-document.html"
+                  title="StructureDefinition/fr-cda-related-document">
+                  <span title="StructureDefinition/fr-cda-related-document">CDA - relatedDocument
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA relatedDocument permet de référencer un document existant (à remplacer ou transformé).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-related-entity.html"
+                  title="StructureDefinition/fr-cda-related-entity">
+                  <span title="StructureDefinition/fr-cda-related-entity">CDA - relatedEntity
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA relatedEntity permet de décrire : un informateur non professionnel, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-represented-custodian-organization.html"
+                  title="StructureDefinition/fr-cda-represented-custodian-organization">
+                  <span title="StructureDefinition/fr-cda-represented-custodian-organization">CDA - representedCustodianOrganization
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA representedCustodianOrganization contient les éléments caractérisant la structure conservant le document, à savoir l'identifiant, le nom, les adresses géopostales et de télécommunication.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-represented-organization.html"
+                  title="StructureDefinition/fr-cda-represented-organization">
+                  <span title="StructureDefinition/fr-cda-represented-organization">CDA - representedOrganization
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA representedOrganization permet de représenter la structure pour le compte de laquelle intervient le professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-service-event.html"
+                  title="StructureDefinition/fr-cda-service-event">
+                  <span title="StructureDefinition/fr-cda-service-event">CDA - serviceEvent
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'élément de l'en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. 
+L'occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l'attribut nullFlavor.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Eléments CDA du corps des sections </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-allergies-et-hypersensibilites.html"
+                  title="StructureDefinition/fr-cda-allergies-et-hypersensibilites">
+                  <span title="StructureDefinition/fr-cda-allergies-et-hypersensibilites">CDA - FR Allergies et hypersensibilites
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Allergies-And-Other-Adverse-Reactions</p>
+<ul>
+  <li>La section 'Allergies et hypersensibilités' permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l'agent et les réactions observées.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-antecedents-familiaux.html"
+                  title="StructureDefinition/fr-cda-section-antecedents-familiaux">
+                  <span title="StructureDefinition/fr-cda-section-antecedents-familiaux">CDA - FR Antecedents familiaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC Coded-Family-Medical-History</p>
+<ul>
+  <li>Liste codée des antécédents familiaux</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-antecedents-medicaux.html"
+                  title="StructureDefinition/fr-cda-antecedents-medicaux">
+                  <span title="StructureDefinition/fr-cda-antecedents-medicaux">CDA - FR Antecedents medicaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - History-Of-Past-Illness</p>
+<ul>
+  <li>La section 'Antécédents médicaux' doit contenir une liste codée des antécédents médicaux du patient. Il s'agit d'épisodes résolus, c'est à dire de maladies que l'on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-code-a-barres.html"
+                  title="StructureDefinition/fr-cda-code-a-barres">
+                  <span title="StructureDefinition/fr-cda-code-a-barres">CDA - FR Code a barres
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette section permet d'enregistrer des codes à barres</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-commentaire-non-code.html"
+                  title="StructureDefinition/fr-cda-commentaire-non-code">
+                  <span title="StructureDefinition/fr-cda-commentaire-non-code">CDA - FR Commentaire non code
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Document-Summary</p>
+<ul>
+  <li>Cette section permet d'indiquer un commentaire sous forme textuelle.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-cr-bio-chapitre.html"
+                  title="StructureDefinition/fr-cda-cr-bio-chapitre">
+                  <span title="StructureDefinition/fr-cda-cr-bio-chapitre">CDA - FR CR BIO Chapitre
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PaLM - Laboratory Specialty Section</p>
+<ul>
+  <li>Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :</li>
+  <li>soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément &lt;text&gt; (présentation du contenu pour le lecteur) et un unique élément &lt;entry&gt; (données codées pour les SIS dont procède le contenu de l'élément &lt;text&gt;)</li>
+  <li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html"
+                  title="StructureDefinition/fr-cda-cr-bio-sous-chapitre">
+                  <span title="StructureDefinition/fr-cda-cr-bio-sous-chapitre">CDA - FR CR BIO Sous Chapitre
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PaLM - Laboratory Report Item Section</p>
+<ul>
+  <li>Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale. Elle est comporte un élément 'text' qui porte les résultats présentés et interprétés pour le lecteur et d'une entrée contenant les données codées dont procède le contenu de l'élément 'text'.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-acte-imagerie.html"
+                  title="StructureDefinition/fr-cda-dicom-acte-imagerie">
+                  <span title="StructureDefinition/fr-cda-dicom-acte-imagerie">CDA - FR DICOM Acte imagerie
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Imaging Procedure Description Section</p>
+<ul>
+  <li>Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-addendum.html"
+                  title="StructureDefinition/fr-cda-dicom-addendum">
+                  <span title="StructureDefinition/fr-cda-dicom-addendum">CDA - FR DICOM Addendum
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Addendum Section</p>
+<ul>
+  <li>La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-complications.html"
+                  title="StructureDefinition/fr-cda-dicom-complications">
+                  <span title="StructureDefinition/fr-cda-dicom-complications">CDA - FR DICOM Complications
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Complications</p>
+<ul>
+  <li>Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-conclusion.html"
+                  title="StructureDefinition/fr-cda-dicom-conclusion">
+                  <span title="StructureDefinition/fr-cda-dicom-conclusion">CDA - FR DICOM Conclusion
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Impression Section</p>
+<ul>
+  <li>Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-demande-examen.html"
+                  title="StructureDefinition/fr-cda-dicom-demande-examen">
+                  <span title="StructureDefinition/fr-cda-dicom-demande-examen">CDA - FR DICOM Demande examen
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Request Section</p>
+<ul>
+  <li>Justification de la demande d’examen / Finalité de l'examen.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-examen-comparatif.html"
+                  title="StructureDefinition/fr-cda-dicom-examen-comparatif">
+                  <span title="StructureDefinition/fr-cda-dicom-examen-comparatif">CDA - FR DICOM Examen comparatif
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Comparison Study Section</p>
+<ul>
+  <li>Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-exposition-aux-radiations.html"
+                  title="StructureDefinition/fr-cda-dicom-exposition-aux-radiations">
+                  <span title="StructureDefinition/fr-cda-dicom-exposition-aux-radiations">CDA - FR DICOM Exposition aux radiations
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Radiation Exposure and Protection Information </p>
+<ul>
+  <li>Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-historique-medical.html"
+                  title="StructureDefinition/fr-cda-dicom-historique-medical">
+                  <span title="StructureDefinition/fr-cda-dicom-historique-medical">CDA - FR DICOM Historique medical
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Medical (General) History Section</p>
+<ul>
+  <li>Cette sous-section permet d'enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-informations-cliniques.html"
+                  title="StructureDefinition/fr-cda-dicom-informations-cliniques">
+                  <span title="StructureDefinition/fr-cda-dicom-informations-cliniques">CDA - FR DICOM Informations cliniques
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que :</p>
+<ul>
+  <li>Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]</li>
+  <li>Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1]</li>
+  <li>Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+  <li>Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+  <li>Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-object-catalog.html"
+                  title="StructureDefinition/fr-cda-dicom-object-catalog">
+                  <span title="StructureDefinition/fr-cda-dicom-object-catalog">CDA - FR DICOM Object Catalog
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :</p>
+<ul>
+  <li>[0..*] Examen</li>
+  <li>[1..*] Série (avec la modalité d'acquisition)</li>
+  <li>[1..*] Objet référencé (avec la classe d'objet)</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-resultats.html"
+                  title="StructureDefinition/fr-cda-dicom-resultats">
+                  <span title="StructureDefinition/fr-cda-dicom-resultats">CDA - FR DICOM Resultats
+</span>
+               </a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Findings</p>
+<ul>
+  <li>Cette section permet d'enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dispensation-medicaments.html"
+                  title="StructureDefinition/fr-cda-dispensation-medicaments">
+                  <span title="StructureDefinition/fr-cda-dispensation-medicaments">CDA - FR Dispensation medicaments
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-document-pdf-copie.html"
+                  title="StructureDefinition/fr-cda-document-pdf-copie">
+                  <span title="StructureDefinition/fr-cda-document-pdf-copie">CDA - FR Document PDF copie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-documents-ajoutes.html"
+                  title="StructureDefinition/fr-cda-documents-ajoutes">
+                  <span title="StructureDefinition/fr-cda-documents-ajoutes">CDA - FR Documents ajoutes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Liste de documents ajoutés</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-education-du-patient.html"
+                  title="StructureDefinition/fr-cda-education-du-patient">
+                  <span title="StructureDefinition/fr-cda-education-du-patient">CDA - FR Education du patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Patient Education Section</p>
+<ul>
+  <li>Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-effets-indesirables.html"
+                  title="StructureDefinition/fr-cda-effets-indesirables">
+                  <span title="StructureDefinition/fr-cda-effets-indesirables">CDA - FR Effets indesirables
+</span>
+               </a>
+            </td>
+            <td>
+<p>Liste des effets indésirables prévisibles liés aux médicaments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html"
+                  title="StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code">
+                  <span title="StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code">CDA - FR Facteurs de risque professionnels non code
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-fonctions-physiques.html"
+                  title="StructureDefinition/fr-cda-fonctions-physiques">
+                  <span title="StructureDefinition/fr-cda-fonctions-physiques">CDA - FR Fonctions physiques
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-habitus-mode-de-vie.html"
+                  title="StructureDefinition/fr-cda-section-habitus-mode-de-vie">
+                  <span title="StructureDefinition/fr-cda-section-habitus-mode-de-vie">CDA - FR Habitus mode de vie
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-des-actes.html"
+                  title="StructureDefinition/fr-cda-historique-des-actes">
+                  <span title="StructureDefinition/fr-cda-historique-des-actes">CDA - FR Historique des actes
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-des-grossesses.html"
+                  title="StructureDefinition/fr-cda-historique-des-grossesses">
+                  <span title="StructureDefinition/fr-cda-historique-des-grossesses">CDA - FR Historique des grossesses
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-plan-de-soins.html"
+                  title="StructureDefinition/fr-cda-plan-de-soins">
+                  <span title="StructureDefinition/fr-cda-plan-de-soins">CDA - FR Plan de soins
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-points-de-vigilances-non-code.html"
+                  title="StructureDefinition/fr-cda-points-de-vigilances-non-code">
+                  <span title="StructureDefinition/fr-cda-points-de-vigilances-non-code">CDA - FR Points de vigilances non code
+</span>
+               </a>
+            </td>
+            <td>
+<p>Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription-dispositifs-medicaux.html"
+                  title="StructureDefinition/fr-cda-prescription-dispositifs-medicaux">
+                  <span title="StructureDefinition/fr-cda-prescription-dispositifs-medicaux">CDA - FR Prescription dispositifs medicaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription-medicaments.html"
+                  title="StructureDefinition/fr-cda-prescription-medicaments">
+                  <span title="StructureDefinition/fr-cda-prescription-medicaments">CDA - FR Prescription medicaments
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-problemes-actifs.html"
+                  title="StructureDefinition/fr-cda-problemes-actifs">
+                  <span title="StructureDefinition/fr-cda-problemes-actifs">CDA - FR Problemes actifs
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-raison-de-la-recommandation.html"
+                  title="StructureDefinition/fr-cda-raison-de-la-recommandation">
+                  <span title="StructureDefinition/fr-cda-raison-de-la-recommandation">CDA - FR Raison de la recommandation
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-raison-de-la-recommandation-non-code.html"
+                  title="StructureDefinition/fr-cda-raison-de-la-recommandation-non-code">
+                  <span title="StructureDefinition/fr-cda-raison-de-la-recommandation-non-code">CDA - FR Raison de la recommandation non code
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC Reason-For-Referral. Cette section permet d'indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-resultats.html"
+                  title="StructureDefinition/fr-cda-section-resultats">
+                  <span title="StructureDefinition/fr-cda-section-resultats">CDA - FR Resultats
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.html"
+                  title="StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention">
+                  <span title="StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention">CDA - FR Resultats de biologie de seconde intention
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-evenements.html"
+                  title="StructureDefinition/fr-cda-resultats-evenements">
+                  <span title="StructureDefinition/fr-cda-resultats-evenements">CDA - FR Resultats evenements
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens.html"
+                  title="StructureDefinition/fr-cda-resultats-examens">
+                  <span title="StructureDefinition/fr-cda-resultats-examens">CDA - FR Resultats examens
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens-non-code.html"
+                  title="StructureDefinition/fr-cda-resultats-examens-non-code">
+                  <span title="StructureDefinition/fr-cda-resultats-examens-non-code">CDA - FR Resultats examens non code
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Results. Résultats d’examens sous forme narrative non codée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-signes-vitaux.html"
+                  title="StructureDefinition/fr-cda-section-signes-vitaux">
+                  <span title="StructureDefinition/fr-cda-section-signes-vitaux">CDA - FR Signes vitaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-du-document.html"
+                  title="StructureDefinition/fr-cda-statut-du-document">
+                  <span title="StructureDefinition/fr-cda-statut-du-document">CDA - FR Statut du document
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-fonctionnel.html"
+                  title="StructureDefinition/fr-cda-statut-fonctionnel">
+                  <span title="StructureDefinition/fr-cda-statut-fonctionnel">CDA - FR Statut fonctionnel
+</span>
+               </a>
+            </td>
+            <td>
+<p>Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements.html"
+                  title="StructureDefinition/fr-cda-traitements">
+                  <span title="StructureDefinition/fr-cda-traitements">CDA - FR Traitements
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Medications. Liste des principales prises médicamenteuses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements-administres.html"
+                  title="StructureDefinition/fr-cda-traitements-administres">
+                  <span title="StructureDefinition/fr-cda-traitements-administres">CDA - FR Traitements administres
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Medications-Administered. La section 'Traitements administrés' contient une description narrative des médicaments administrés au patient et doit inclure des entrées 'Traitement'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements-a-la-sortie.html"
+                  title="StructureDefinition/fr-cda-traitements-a-la-sortie">
+                  <span title="StructureDefinition/fr-cda-traitements-a-la-sortie">CDA - FR Traitements à la sortie
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Hospital-Discharge-Medications. La section 'Traitements à la sortie' contient une description narrative des médicaments à administrer au patient après sa sortie de l'hospitalisation et doit inclure des entrées 'Traitement'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-vaccinations.html"
+                  title="StructureDefinition/fr-cda-vaccinations">
+                  <span title="StructureDefinition/fr-cda-vaccinations">CDA - FR Vaccinations
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Immunizations Section. Liste des vaccinations effectuées.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Eléments CDA corps des composants élémentaires </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-accidents-transfusionnels.html"
+                  title="StructureDefinition/fr-cda-accidents-transfusionnels">
+                  <span title="StructureDefinition/fr-cda-accidents-transfusionnels">CDA - FR Accidents transfusionnels
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Accidents-transfusionnels: Cette entrée permet de décrire sous forme textuelle un accident transfusionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-acte.html"
+                  title="StructureDefinition/fr-cda-acte">
+                  <span title="StructureDefinition/fr-cda-acte">CDA - FR Acte
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une entrée de type 'procedure' décrivant un acte planifié ou réalisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-acte-substitution.html"
+                  title="StructureDefinition/fr-cda-acte-substitution">
+                  <span title="StructureDefinition/fr-cda-acte-substitution">CDA - FR Acte substitution
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Acte-substitution: IHE PHARM DIS - Substitution actCette observation permet d'indiquer si le traitement a été substitué.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-administration-de-derives-du-sang.html"
+                  title="StructureDefinition/fr-cda-administration-de-derives-du-sang">
+                  <span title="StructureDefinition/fr-cda-administration-de-derives-du-sang">CDA - FR Administration de derives du sang
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Administration-de-derives-du-sang: IHE-PCC - Simple-Observation Cette entrée permet d'indiquer s'il y a eu ou pas une administration de dérivés du sang.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-allergie-ou-hypersensibilite.html"
+                  title="StructureDefinition/fr-cda-allergie-ou-hypersensibilite">
+                  <span title="StructureDefinition/fr-cda-allergie-ou-hypersensibilite">CDA - FR Allergie ou hypersensibilite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intolerance Cette entrée permet de décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie, en précisant :Le type : allergie médicamenteuse, hypersensibilité non allergique alimentaire, etc.La date de début et de finL'agent responsable : médicament, agent environnemental, …Le statut clinique : Actif, Inactif, RésoluLa criticité : Bas, Elevé, Impossible à évaluerLa certitude : Confirmé, Non confirmé, RéfutéLa (les) réaction(s) observée(s) : urticaire, nausée, … etLa sévérité de la réaction : Potentiellement mortel, Elevé, Modéré, Bas, …un commentaire sur la réactionCette entrée est basée sur l'entrée Problème (1.3.6.1.4.1.19376.1.5.3.1.4.5) qu'elle spécialise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-antecedent-familial-observe.html"
+                  title="StructureDefinition/fr-cda-antecedent-familial-observe">
+                  <span title="StructureDefinition/fr-cda-antecedent-familial-observe">CDA - FR Antecedent familial observe
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-antecedents-familiaux.html"
+                  title="StructureDefinition/fr-cda-antecedents-familiaux">
+                  <span title="StructureDefinition/fr-cda-antecedents-familiaux">CDA - FR Antecedents familiaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-autorisation-substitution.html"
+                  title="StructureDefinition/fr-cda-autorisation-substitution">
+                  <span title="StructureDefinition/fr-cda-autorisation-substitution">CDA - FR Autorisation Substitution
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Autorisation-Substitution: IHE-PRE - Substitution-Permission. Cette observation permet d'indiquer si le traitement auquel elle est associée peut être substitué.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.html"
+                  title="StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale">
+                  <span title="StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale">CDA - FR Batterie examens de biologie medicale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Batterie-examens-de-biologie-medicale: IHE-PCC - Laboratory Battery Organizer. L'entrée Batterie d'examens de biologie médicale est une entrée de type 'organizer' qui permet de décrire des examens de biologie médicale comprenant un ou plusieurs éléments porteurs de résultats et d'éventuels commentaires interprétant cet ensemble de résultats. L'examen de biologie médicale peut préciser des participants qui lui sont propres (validateur, auteur, responsable, laboratoire sous-traitant, automate …) et peut aussi décrire son échantillon biologique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-certitude.html"
+                  title="StructureDefinition/fr-cda-certitude">
+                  <span title="StructureDefinition/fr-cda-certitude">CDA - FR Certitude
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Certitude: Cette entrée permet de fournir la certitude d'une observation (problème ou allergie/hypersensibilité). Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cisis-addr.html"
+                  title="StructureDefinition/cisis-addr">
+                  <span title="StructureDefinition/cisis-addr">CDA - FR CISIS Addr
+</span>
+               </a>
+            </td>
+            <td>
+<p>Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d'adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d'Interopérabilité (RGI).
+Les partenaires de l'échange doivent s'accorder sur la structure de addr à échanger.
+En effet, addr peut convoyer une adresse géopostale formée :</p>
+<ul>
+  <li>soit de composants élémentaires de l'adresse c'est-à-dire un élément XML pour le numéro dans la voie, un pour le type de voie, un pour le nom de la voie, etc.;</li>
+  <li>soit de lignes obtenues par assemblage des composants élémentaires de l'adresse, chaque ligne étant un élément XML.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cisis-telecom.html"
+                  title="StructureDefinition/cisis-telecom">
+                  <span title="StructureDefinition/cisis-telecom">CDA - FR CISIS Telecom
+</span>
+               </a>
+            </td>
+            <td>
+<p>Coordonnées télécom :</p>
+<ul>
+  <li>Exemples :
+&lt;telecom value='tel:0147150000' use='H'/&gt;
+&lt;telecom value='mailto:adam.homme@fournisseur.fr'/&gt;
+&lt;telecom value='ftp://serveur/dossierdesante/exemple/'/&gt;</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-commentaire-er.html"
+                  title="StructureDefinition/fr-cda-commentaire-er">
+                  <span title="StructureDefinition/fr-cda-commentaire-er">CDA - FR Commentaire ER
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Commentaire-ER: IHE-PCC - Comments L’entrée FR-Commentaire-ER est un élément qui permet de joindre un commentaire à une entrée ou à une section.  Note : IHE PCC a limité l’utilisation de l’élément « Comments » (1.3.6.1.4.1.19376.1.5.3.1.4.2) aux entrées de type observation et organizer. Ce n’est pas le cas dans CDD pour l’élément « Comment » (2.16.840.1.113883.10.20.1.40). Dans le CI-SIS, le choix a été fait de ne pas limiter l’utilisation de l’entrée FR-Commentaire-ER (1.3.6.1.4.1.19376.1.5.3.1.4.2) comme dans CCD. Lorsque l’entrée FR-Commentaire-ER est utilisée dans une entrée : de type organizer : l’utiliser dans un élément component avec l’attribut type-Code='COMP'.de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode='SUBJ' et inversionInd='true'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-criticite.html"
+                  title="StructureDefinition/fr-cda-criticite">
+                  <span title="StructureDefinition/fr-cda-criticite">CDA - FR Criticite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Criticite: Cette entrée permet de fournir la criticité d'une l’allergie ou hypersensibilité. Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-demande-d-examen-ou-de-suivi.html"
+                  title="StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi">
+                  <span title="StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi">CDA - FR Demande d examen ou de suivi
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L'entrée Demande d'examen / de suivi est une observation qui permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins. Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-administration-produit-de-sante.html"
+                  title="StructureDefinition/fr-cda-dicom-administration-produit-de-sante">
+                  <span title="StructureDefinition/fr-cda-dicom-administration-produit-de-sante">CDA - FR DICOM Administration produit de sante
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Administration-produit-de-sante: DICOM Part 20 - Procedural Medication. Cette entrée permet d'enregistrer l’administration de produits (hors radiopharmaceutiques) :</p>
+<ul>
+  <li>produit administré</li>
+  <li>dose administréevoie d’administration</li>
+  <li>numéro de lot</li>
+  <li>autres informations liées à l’administration d’un produit</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-administration-radiopharmaceutique.html"
+                  title="StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique">
+                  <span title="StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique">CDA - FR DICOM Administration radiopharmaceutique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée permet d'enregistrer l’administration de produits radiopharmaceutiques :</p>
+<ul>
+  <li>produit administré</li>
+  <li>dose administrée</li>
+  <li>voie d’administration</li>
+  <li>numéro de lot</li>
+  <li>autres informations liées à l’administration d’un produit</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-cadres-references.html"
+                  title="StructureDefinition/fr-cda-dicom-cadres-references">
+                  <span title="StructureDefinition/fr-cda-dicom-cadres-references">CDA - FR DICOM Cadres de références
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observation d’images référencées contient une liste de valeurs de type entiers pour les images référencées d’une instance SOP d’images.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-cadres-a-afficher.html"
+                  title="StructureDefinition/fr-cda-dicom-cadres-a-afficher">
+                  <span title="StructureDefinition/fr-cda-dicom-cadres-a-afficher">CDA - FR DICOM Cadres à afficher
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Cadres-a-afficher: DICOM Part 20 - Cadres à afficher pour les images référencées</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-examen-imagerie.html"
+                  title="StructureDefinition/fr-cda-dicom-examen-imagerie">
+                  <span title="StructureDefinition/fr-cda-dicom-examen-imagerie">CDA - FR DICOM Examen imagerie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 - Study Act. Cette entrée contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d'une ou de plusieurs séries d’images médicales.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-exposition-patient.html"
+                  title="StructureDefinition/fr-cda-dicom-exposition-patient">
+                  <span title="StructureDefinition/fr-cda-dicom-exposition-patient">CDA - FR DICOM Exposition patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l'entrée FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l'identité du professionnel de santé ayant donné l'autorisation de l'exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-objectifs-de-reference.html"
+                  title="StructureDefinition/fr-cda-dicom-objectifs-de-reference">
+                  <span title="StructureDefinition/fr-cda-dicom-objectifs-de-reference">CDA - FR DICOM Objectifs de référence
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Objectifs-de-reference: DICOM Part 20. Cette entrée permet d’enregistrer les objectifs de référence d’imagerie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-observation.html"
+                  title="StructureDefinition/fr-cda-dicom-observation">
+                  <span title="StructureDefinition/fr-cda-dicom-observation">CDA - FR DICOM Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. Cette entrée permet d’enregistrer une observation avec une valeur codée ou textuelle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-observation-subordonnee.html"
+                  title="StructureDefinition/fr-cda-dicom-observation-subordonnee">
+                  <span title="StructureDefinition/fr-cda-dicom-observation-subordonnee">CDA - FR DICOM Observation subordonnee
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Observation-subordonnee: DICOM PART 20 - Observation codée</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-quantite.html"
+                  title="StructureDefinition/fr-cda-dicom-quantite">
+                  <span title="StructureDefinition/fr-cda-dicom-quantite">CDA - FR DICOM Quantite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Quantite: DICOM Part 20 - Quantity Measurement. Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie, La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-quantite-subordonnee.html"
+                  title="StructureDefinition/fr-cda-dicom-quantite-subordonnee">
+                  <span title="StructureDefinition/fr-cda-dicom-quantite-subordonnee">CDA - FR DICOM Quantite subordonnee
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Quantite-subordonnee: Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant :  Le type de la mesure, La localisation anatomique / latéralité / topographie,   La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-serie-imagerie.html"
+                  title="StructureDefinition/fr-cda-dicom-serie-imagerie">
+                  <span title="StructureDefinition/fr-cda-dicom-serie-imagerie">CDA - FR DICOM Serie imagerie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-sop-instance-observation.html"
+                  title="StructureDefinition/fr-cda-dicom-sop-instance-observation">
+                  <span title="StructureDefinition/fr-cda-dicom-sop-instance-observation">CDA - FR DICOM SOP instance observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.html"
+                  title="StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee">
+                  <span title="StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee">CDA - FR DICOM SOP instance observation subordonnee
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-technique-imagerie.html"
+                  title="StructureDefinition/fr-cda-dicom-technique-imagerie">
+                  <span title="StructureDefinition/fr-cda-dicom-technique-imagerie">CDA - FR DICOM Technique imagerie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-directive-anticipee.html"
+                  title="StructureDefinition/fr-cda-directive-anticipee">
+                  <span title="StructureDefinition/fr-cda-directive-anticipee">CDA - FR Directive anticipee
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette entrée permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d'état d'exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l'arrêt ou du refus de traitement ou d'acte médicaux.».</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dispositif-medical.html"
+                  title="StructureDefinition/fr-cda-dispositif-medical">
+                  <span title="StructureDefinition/fr-cda-dispositif-medical">CDA - FR Dispositif medical
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-document-attache.html"
+                  title="StructureDefinition/fr-cda-document-attache">
+                  <span title="StructureDefinition/fr-cda-document-attache">CDA - FR Document attache
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Document-attache: L'entrée Document Attaché est une entrée de type organiser qui permet de regrouper dans une même entrée les éléments qui contiennent :</p>
+<ul>
+  <li>un élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant la nature du document attaché,</li>
+  <li>un élément de type ObservationMedia acceptant tout type d'objets prévus par CDA et qui porte le document attaché. Son contenu est un élément codé en Base 64. Le charset par défaut est le charset ISO-8859-1. L'avantage de cette entrée est qu'elle permet de porter pratiquement tous types de média (pdf, image, etc…), contrairement à l'élément Image illustrative qui ne peut porter que des images au format gif, jpeg, png ou bm.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dose-antigene.html"
+                  title="StructureDefinition/fr-cda-dose-antigene">
+                  <span title="StructureDefinition/fr-cda-dose-antigene">CDA - FR Dose antigene
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Dose-antigene: IHE-PCC – Antigene-Dose. L'entrée Dose d'antigène permet de décrire des informations complémentaires sur la vaccination, et plus précisément, la dose spécifique d'un antigène.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-effet-indesirable.html"
+                  title="StructureDefinition/fr-cda-effet-indesirable">
+                  <span title="StructureDefinition/fr-cda-effet-indesirable">CDA - FR Effet indesirable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésirable prévisible lié à un médicament.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-en-rapport-avec-accident-travail.html"
+                  title="StructureDefinition/fr-cda-en-rapport-avec-accident-travail">
+                  <span title="StructureDefinition/fr-cda-en-rapport-avec-accident-travail">CDA - FR En rapport avec accident travail
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-En-rapport-avec-accident-travail: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec un accident du travail.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-en-rapport-avec-ald.html"
+                  title="StructureDefinition/fr-cda-en-rapport-avec-ald">
+                  <span title="StructureDefinition/fr-cda-en-rapport-avec-ald">CDA - FR En rapport avec ALD
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-En-rapport-avec-ALD: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une ALD.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-en-rapport-avec-la-prevention.html"
+                  title="StructureDefinition/fr-cda-en-rapport-avec-la-prevention">
+                  <span title="StructureDefinition/fr-cda-en-rapport-avec-la-prevention">CDA - FR En rapport avec la prevention
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-En-rapport-avec-la-prevention: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une prévention.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evaluation.html"
+                  title="StructureDefinition/fr-cda-evaluation">
+                  <span title="StructureDefinition/fr-cda-evaluation">CDA - FR Evaluation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Evaluation permet de rapporter un résultat (score) répondant à une question faisant partie d'une évaluation (questionnaire d'enquête par exemple).Cette entrée est basée sur l’entrée FR-Simple-Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evaluation-composant.html"
+                  title="StructureDefinition/fr-cda-evaluation-composant">
+                  <span title="StructureDefinition/fr-cda-evaluation-composant">CDA - FR Evaluation Composant
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evaluation-Composant: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evaluation-composant-n2.html"
+                  title="StructureDefinition/fr-cda-evaluation-composant-n2">
+                  <span title="StructureDefinition/fr-cda-evaluation-composant-n2">CDA - FR Evaluation Composant N2
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evenement.html"
+                  title="StructureDefinition/fr-cda-evenement">
+                  <span title="StructureDefinition/fr-cda-evenement">CDA - FR Evenement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type 'encounter' permettant de conserver les données d’activités liées à un patient / usager. Il peut s'agir d'un évènement passé ou à venir.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evenement-indesirable-pendant-hospitalisation.html"
+                  title="StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation">
+                  <span title="StructureDefinition/fr-cda-evenement-indesirable-pendant-hospitalisation">CDA - FR Evenement indesirable pendant hospitalisation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evenement-indesirable-pendant-hospitalisation: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus pendant l'hospitalisation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evenement-indesirable-suite-administration-derives-sang.html"
+                  title="StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang">
+                  <span title="StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang">CDA - FR Evenement indesirable suite administration derives sang
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l'administration de dérivés du sang.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-evolution-effet-indesirable.html"
+                  title="StructureDefinition/fr-cda-evolution-effet-indesirable">
+                  <span title="StructureDefinition/fr-cda-evolution-effet-indesirable">CDA - FR Evolution effet indesirable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Evolution-effet-indesirable: Cette entrée permet de préciser l'évolution d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-gravite-effet-indesirable.html"
+                  title="StructureDefinition/fr-cda-gravite-effet-indesirable">
+                  <span title="StructureDefinition/fr-cda-gravite-effet-indesirable">CDA - FR Gravite effet indesirable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Gravite-effet-indesirable</p>
+<ul>
+  <li>Cette entrée permet de préciser la gravité d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l’élément qu’il qualifie.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.html"
+                  title="StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation">
+                  <span title="StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation">CDA - FR Groupe de questionnaires d evaluation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel</p>
+<ul>
+  <li>L'entrée 'Groupe de questionnaires d’évaluation' est une entrée de type 'organizer' qui permet de rassembler des observations de questionnaires.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-habitus-mode-de-vie.html"
+                  title="StructureDefinition/fr-cda-habitus-mode-de-vie">
+                  <span title="StructureDefinition/fr-cda-habitus-mode-de-vie">CDA - FR Habitus Mode de vie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observation</p>
+<ul>
+  <li>L'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient</li>
+  <li>Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-de-la-grossesse.html"
+                  title="StructureDefinition/fr-cda-historique-de-la-grossesse">
+                  <span title="StructureDefinition/fr-cda-historique-de-la-grossesse">CDA - FR Historique de la grossesse
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Historique-de-la-grossesse: IHE-PCC - Pregnancy History Organizer.</p>
+<ul>
+  <li>Cette entrée permet de regrouper les observations relatives à un épisode de grossesse.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-hors-amm.html"
+                  title="StructureDefinition/fr-cda-hors-amm">
+                  <span title="StructureDefinition/fr-cda-hors-amm">CDA - FR Hors AMM
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Hors-AMM: IHE-PCC - Simple-Observation. Cette observation permet d'indiquer si le traitement auquel elle est associée est hors AMM.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-identification-micro-organismes-multiresistants.html"
+                  title="StructureDefinition/fr-cda-identification-micro-organismes-multiresistants">
+                  <span title="StructureDefinition/fr-cda-identification-micro-organismes-multiresistants">CDA - FR Identification micro organismes multiresistants
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Identification-micro-organismes-multiresistants: Cette entrée permet de décrire sous forme textuelle les micro-organismes identifiés.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-image-illustrative.html"
+                  title="StructureDefinition/fr-cda-image-illustrative">
+                  <span title="StructureDefinition/fr-cda-image-illustrative">CDA - FR Image illustrative
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Image-illustrative: Image illustrative. Cette entrée, utilisable dans toute entrée, permet de positionner une image, référencée dans le texte de la section par l’attribut renderMultimedia.referencedObject.</p>
+<ul>
+  <li>L’image doit toujours être de type gif, jpeg, png ou bm. Elle est encodée en base 64 et encapsulée dans un élément de type observationMedia.</li>
+  <li>Cet élément observationMedia peut-être seul ou encapsulé dans un élément Région d’intérêt sur image illustrative qui permet de repérer une zone particulière de l’image.</li>
+  <li>Note : Cette entrée ne peut porter que des images au format gif, jpeg, png ou bm, contrairement à l’entrée FR-Document-attache qui permet de porter pratiquement tous types de média (pdf, image, etc…), et qui utilise également un élément de type ObservationMedia.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-imputabilite-effet-indesirable.html"
+                  title="StructureDefinition/fr-cda-imputabilite-effet-indesirable">
+                  <span title="StructureDefinition/fr-cda-imputabilite-effet-indesirable">CDA - FR Imputabilite effet indesirable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Imputabilite-effet-indesirable: Cette entrée permet de préciser l'imputabilité d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-informant-apsr.html"
+                  title="StructureDefinition/fr-cda-informant-apsr">
+                  <span title="StructureDefinition/fr-cda-informant-apsr">CDA - FR Informant APSR
+</span>
+               </a>
+            </td>
+            <td>
+<p>FR-Informant-APSR : IHE-PCC Informant. Il permet de fournir le nom et les coordonnées :
+d'une personne ayant fourni des informations concernant le document (rôle d'informateur); ce peut être un PS/un ES/le patient lui-même/une autre personne non PS ;
+d'une personne de confiance désignée par le patient ;
+d'une personne à prévenir en cas d'urgence ;
+du ou des aidant(s) du patient ;de la ou des personne(s) aidée(s)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-instruction-au-patient.html"
+                  title="StructureDefinition/fr-cda-instruction-au-patient">
+                  <span title="StructureDefinition/fr-cda-instruction-au-patient">CDA - FR Instruction au patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Instruction-au-patient: IHE-PCC - Simple-Observation. Cette entrée permet d’enregistrer une instruction au patient sous forme codée (c’est notamment le cas pour les prescriptions d’examens de biologie médicale).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-instructions-au-dispensateur.html"
+                  title="StructureDefinition/fr-cda-instructions-au-dispensateur">
+                  <span title="StructureDefinition/fr-cda-instructions-au-dispensateur">CDA - FR Instructions au dispensateur
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Instructions-au-dispensateur: IHE-PCC - Medication Fulfillment Instructions.</p>
+<ul>
+  <li>Toute prescription peut faire l'objet d'instructions au dispensateur (pharmacien), par exemple pour indiquer que le traitement doit être étiqueté dans une langue étrangère, etc …</li>
+  <li>Cette entrée est incluse dans une entrée Prescription à l'aide d'un élément entryRelationship .</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-instructions-au-patient.html"
+                  title="StructureDefinition/fr-cda-instructions-au-patient">
+                  <span title="StructureDefinition/fr-cda-instructions-au-patient">CDA - FR Instructions au patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Instructions-au-patient: IHE-PCC - Patient-Medication-Instructions. Cette entrée permet d’enregistrer des instructions au patient :</p>
+<ul>
+  <li>sous forme textuelle uniquement (c’est notamment le cas pour les prescriptions de médica-ments) ;</li>
+  <li>sous forme codée : chaque instruction est alors codée dans une sous-entrée FR-Instruction-au-patient (c’est notamment le cas pour les prescriptions d’examens de biologie médicale).</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-isolat-microbiologique.html"
+                  title="StructureDefinition/fr-cda-isolat-microbiologique">
+                  <span title="StructureDefinition/fr-cda-isolat-microbiologique">CDA - FR Isolat microbiologique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate organizer.</p>
+<ul>
+  <li>L'entrée Isolat microbiologique est une entrée de type 'organizer' qui est utilisée pour les comptes rendus comprenant des résultats de microbiologie.</li>
+  <li>Elle décrit un isolat (milieu de culture sur lequel a poussé un microorganisme) et les résultats d'examens obtenus sur cet isolat (antibiogramme, antifongigramme, sérotype, génotype …).</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-item-plan-traitement.html"
+                  title="StructureDefinition/fr-cda-item-plan-traitement">
+                  <span title="StructureDefinition/fr-cda-item-plan-traitement">CDA - FR Item plan traitement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Item-plan-traitement: IHE-MTP Medication Treatment Plan Item. Cette entrée permet de fournir une copie du plan de traitement médicamenteux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-laboratoire-executant.html"
+                  title="StructureDefinition/fr-cda-laboratoire-executant">
+                  <span title="StructureDefinition/fr-cda-laboratoire-executant">CDA - FR Laboratoire executant
+</span>
+               </a>
+            </td>
+            <td>
+<p>FR-Laboratoire-executant: IHE-PCC - Laboratory performer. Laboratoire exécutant</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-liste-des-allergies-et-hypersensibilites.html"
+                  title="StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites">
+                  <span title="StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites">CDA - FR Liste des allergies et hypersensibilites
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - Allergy-And-Intolerance-Concern.</p>
+<ul>
+  <li>L'entrée Liste des allergies et hypersensibilités est une entrée qui permet de regrouper des informations relatives aux pathologies allergiques du patient. Cette entrée est basée sur l'élément Etat clinique (Concern Entry - 1.3.6.1.4.1.19376.1.5.3.1.4.5.1) qu'elle spécialise. Elle regroupe des entrées Allergie ou hypersensibilité (1.3.6.1.4.1.19376.1.5.3.1.4.6) qui décrivent chacune une allergie ou une hypersensibilité.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-liste-des-problemes.html"
+                  title="StructureDefinition/fr-cda-liste-des-problemes">
+                  <span title="StructureDefinition/fr-cda-liste-des-problemes">CDA - FR Liste des problemes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Liste-des-problemes: IHE-PCC - Problem-Concern. Cette entrée permet de regrouper des informations relatives aux pathologies non-allergiques du patient. Elle regroupe des entrées FR-Probleme qui décrivent chacun une pathologie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-modalite-entree.html"
+                  title="StructureDefinition/fr-cda-modalite-entree">
+                  <span title="StructureDefinition/fr-cda-modalite-entree">CDA - FR Modalite entree
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Modalite-entree: Cette entrée permet d'indiquer la modalité d'entrée d'un patient en ES (urgence, programmée, etc…).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-modalite-sortie.html"
+                  title="StructureDefinition/fr-cda-modalite-sortie">
+                  <span title="StructureDefinition/fr-cda-modalite-sortie">CDA - FR Modalite sortie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Modalite-sortie: Cette entrée permet de préciser la modalité de sortie du patient d'un ES (retour à domicile, EHPAD, HAD, etc…).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-naissance.html"
+                  title="StructureDefinition/fr-cda-naissance">
+                  <span title="StructureDefinition/fr-cda-naissance">CDA - FR Naissance
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Naissance: IHE-PCC - Birth event organizer.</p>
+<ul>
+  <li>Cette entrée rassemble les observations relatives à une naissance. Elle peut-être utilisée comme 'component'; d'une entrée FR-Historique-de-la-grossesse (1.3.6.1.4.1.19376.1.5.3.1.4.13.5.1).</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-non-remboursable.html"
+                  title="StructureDefinition/fr-cda-non-remboursable">
+                  <span title="StructureDefinition/fr-cda-non-remboursable">CDA - FR Non remboursable
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Non-remboursable: Cette observation permet d'indiquer si le traitement auquel elle est associée est non remboursable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-notes-du-dispensateur.html"
+                  title="StructureDefinition/fr-cda-notes-du-dispensateur">
+                  <span title="StructureDefinition/fr-cda-notes-du-dispensateur">CDA - FR Notes du dispensateur
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Notes-du-dispensateur: IHE PHARM DIS - fulfillment notes.</p>
+<ul>
+  <li>Une dispensation peut contenir une note du dispensateur (pharmacien).Cette entrée est incluse dans une entrée FR-Traitement-dispense à l’aide d’un élément 'entryRelationship'.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-observation-sur-echelle-douleur.html"
+                  title="StructureDefinition/fr-cda-observation-sur-echelle-douleur">
+                  <span title="StructureDefinition/fr-cda-observation-sur-echelle-douleur">CDA - FR Observation sur echelle douleur
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Observation-sur-echelle-douleur: IHE-PCC - Pain Score Observation. Cette entrée permet d'enregistrer l'évaluation du patient de sa douleur sur une échelle de 1 à 10.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-observation-sur-la-grossesse.html"
+                  title="StructureDefinition/fr-cda-observation-sur-la-grossesse">
+                  <span title="StructureDefinition/fr-cda-observation-sur-la-grossesse">CDA - FR Observation sur la grossesse
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Observation-sur-la-grossesse: IHE-PCC - Pregnancy Observation. Cette entrée permet d'apporter des informations relatives aux grossesses actuelle ou passées.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-organisme-assurance-maladie.html"
+                  title="StructureDefinition/fr-cda-organisme-assurance-maladie">
+                  <span title="StructureDefinition/fr-cda-organisme-assurance-maladie">CDA - FR Organisme assurance maladie
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Organisme-assurance-maladie: IHE-PCC - Payers-entry. L'entrée Organisme d'assurance maladie est une entrée permettant de décrire un organisme d'assurance maladie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-participant-apsr.html"
+                  title="StructureDefinition/fr-cda-participant-apsr">
+                  <span title="StructureDefinition/fr-cda-participant-apsr">CDA - FR Participant APSR
+</span>
+               </a>
+            </td>
+            <td>
+<p>FR-Participant-APSR: IHE-APSR - AdditionalParticipantAPSR. Cet élément est un élément de type 'participant' utilisable dans les entrées du corps du document et pas dans l'entête. Il permet de décrire un participant à l'élaboration du contenu du document produit par un laboratoire ou par une structure d'anatomopathologie. Le rôle du participant (valideur, responsable, automate ou système, transcripteur) est précisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-participant-corps.html"
+                  title="StructureDefinition/fr-cda-participant-corps">
+                  <span title="StructureDefinition/fr-cda-participant-corps">CDA - FR Participant corps
+</span>
+               </a>
+            </td>
+            <td>
+<p>FR-Participant: CDA - participant. Participant du corps</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-participant-role.html"
+                  title="StructureDefinition/fr-cda-participant-role">
+                  <span title="StructureDefinition/fr-cda-participant-role">CDA - FR participantRole
+</span>
+               </a>
+            </td>
+            <td>
+<p>Le participantRole permet de représenter le rôle d’un participant dans un acte clinique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-patient-avec-sujet-non-humain.html"
+                  title="StructureDefinition/fr-cda-patient-avec-sujet-non-humain">
+                  <span title="StructureDefinition/fr-cda-patient-avec-sujet-non-humain">CDA - FR Patient avec sujet non humain
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Patient-avec-sujet-non-humain: Cet élément doit être présent lorsque le sujet des observations de cette partie du compte rendu est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental), tandis que les autres parties du rapport sont liés au patient humain. Le sujet non humain doit aussi être décrit dans l'en-tête du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-performer-corps.html"
+                  title="StructureDefinition/fr-cda-performer-corps">
+                  <span title="StructureDefinition/fr-cda-performer-corps">CDA - FR Performer corps
+</span>
+               </a>
+            </td>
+            <td>
+<p>FR-Performer. Élément performer utilisable dans les entrées du corps d'un document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-periode-de-renouvellement.html"
+                  title="StructureDefinition/fr-cda-periode-de-renouvellement">
+                  <span title="StructureDefinition/fr-cda-periode-de-renouvellement">CDA - FR Periode de renouvellement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Periode-de-renouvellement: IHE-PRE - Renewal Period. Cette observation permet d'indiquer la période de renouvellement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prelevement.html"
+                  title="StructureDefinition/fr-cda-prelevement">
+                  <span title="StructureDefinition/fr-cda-prelevement">CDA - FR Prelevement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Prelevement: IHE-PCC - Specimen collection. L'élément 'Prélèvement' est un élément de type 'procedure' qui permet de décrire le prélèvement et l'échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée 'Résultats d'examens de biologie médicale' (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription.html"
+                  title="StructureDefinition/fr-cda-prescription">
+                  <span title="StructureDefinition/fr-cda-prescription">CDA - FR Prescription
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Prescription: IHE-PCC - Supply - Cette entrée permet de décrire l’acte de prescription lié à un élément substanceAdministration par l’intermédiaire d’un élément entryRelationship dans les entrées suivantes : FR-Traitement, FR-Traitement-maladie-rare, FR-Vaccination, FR-Vaccin-recommande, FR-Fluide-intraveineux</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-probleme.html"
+                  title="StructureDefinition/fr-cda-probleme">
+                  <span title="StructureDefinition/fr-cda-probleme">CDA - FR Probleme
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant :  Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-produit-de-sante.html"
+                  title="StructureDefinition/fr-cda-produit-de-sante">
+                  <span title="StructureDefinition/fr-cda-produit-de-sante">CDA - FR Produit de sante
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Produit-de-sante: IHE-PCC - Product-Entry. L'entrée Produit de santé permet de décrire un médicament ou un vaccin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-quantite-de-produit.html"
+                  title="StructureDefinition/fr-cda-quantite-de-produit">
+                  <span title="StructureDefinition/fr-cda-quantite-de-produit">CDA - FR Quantite de produit
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (&lt;consumable&gt;).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-rang-de-la-vaccination.html"
+                  title="StructureDefinition/fr-cda-rang-de-la-vaccination">
+                  <span title="StructureDefinition/fr-cda-rang-de-la-vaccination">CDA - FR Rang de la vaccination
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Rang-de-la-vaccination: CDA - Medication series number observation. Cette entrée permet de préciser le rang de la vaccination dans une série d'injections vaccinantes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-recherche-de-micro-organismes.html"
+                  title="StructureDefinition/fr-cda-recherche-de-micro-organismes">
+                  <span title="StructureDefinition/fr-cda-recherche-de-micro-organismes">CDA - FR Recherche de micro organismes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Recherche-de-micro-organismes: IHE PCC – Simple Observation. Cette entrée permet d'indiquer si une recherche de micro-organismes multirésistants ou émergents a été effectuée ou pas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-reference-interne.html"
+                  title="StructureDefinition/fr-cda-reference-interne">
+                  <span title="StructureDefinition/fr-cda-reference-interne">CDA - FR Reference interne
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Reference-interne: IHE-PCC - Internal-Reference. L'élément Référence interne est un élément de type 'act' à l'intérieur d'un 'entryRelationship' qui permet de relier un élément à un autre élément du même document par l'intermédiaire son identifiant 'id'. Tous les types d'éléments du document (act, procedure, observation, substanceAdministration, etc) peuvent être pointés par un élément 'Référence interne'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-reference-item-plan-traitement.html"
+                  title="StructureDefinition/fr-cda-reference-item-plan-traitement">
+                  <span title="StructureDefinition/fr-cda-reference-item-plan-traitement">CDA - FR Reference item plan traitement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Reference-item-plan-traitement: IHE-Pharm - Cette entrée permet d’enregistrer une référence à un traitement dans un plan de traitement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-reference-item-prescription.html"
+                  title="StructureDefinition/fr-cda-reference-item-prescription">
+                  <span title="StructureDefinition/fr-cda-reference-item-prescription">CDA - FR Reference item prescription
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Reference-item-prescription: IHE-PRE - Reference-Prescription-Item. Cette entrée permet d’enregistrer la référence à un item de prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-references-externes.html"
+                  title="StructureDefinition/fr-cda-references-externes">
+                  <span title="StructureDefinition/fr-cda-references-externes">CDA - FR References externes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-References-externes: IHE-PCC - External-References. Cette entrée de type act permet de relier un élément à un (ou des) document(s) externe(s) par l’intermédiaire d’une adresse URL.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-rencontre.html"
+                  title="StructureDefinition/fr-cda-rencontre">
+                  <span title="StructureDefinition/fr-cda-rencontre">CDA - FR Rencontre
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Rencontre: IHE-PCC - Encounter.</p>
+<ul>
+  <li>L'entrée 'Rencontre' est un élément de type 'encounter' permettant de conserver les modalités d'une rencontre du patient. Il peut s'agir d'une rencontre passée ou à venir.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultat.html"
+                  title="StructureDefinition/fr-cda-resultat">
+                  <span title="StructureDefinition/fr-cda-resultat">CDA - FR Resultat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Resultat: Cette entrée permet d'indiquer le résultat observé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.html"
+                  title="StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent">
+                  <span title="StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent">CDA - FR Resultat examens de biologie element clinique pertinent
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent: IHE-PALM - Laboratory Observation.</p>
+<ul>
+  <li>L'entrée Résultat d'examen / élément clinique pertinent est une entrée de type 'observation' qui permet de décrire un résultat d'un élément d'un examen de biologie médicale ou un élément clinique pertinent fourni par le prescripteur ou le préleveur dans le contexte clinique de la demande d'examens biologiques.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.html"
+                  title="StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale">
+                  <span title="StructureDefinition/fr-cda-resultats-examens-de-biologie-medicale">CDA - FR Resultats examens de biologie medicale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report Data Processing.</p>
+<ul>
+  <li>Le modèle de l'entrée Résultats d'examens de biologie médicale est identique quelle que soit la discipline de biologie. Cette entrée de type act peut comporter une liste d'éléments fils entryRelationship de typeCode='COMP'. Les éléments ci-dessous ne sont utilisables que dans l'entrée Résultats d'examens de biologie médicale :</li>
+  <li>Prélèvement (Specimen Collection – 1.3.6.1.4.1.19376.1.3.1.2)</li>
+  <li>Batterie d'examens de biologie médicale (Laboratory Battery Organizer – 1.3.6.1.4.1.19376.1.3.1.4)</li>
+  <li>Isolats microbiologiques (Laboratory Isolate Organizer – 1.3.6.1.4.1.19376.1.3.1.5)</li>
+  <li>Résultat d'examen / élément clinique pertinent (Laboratory Observation – 1.3.6.1.4.1.19376.1.3.1.6)</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-severite.html"
+                  title="StructureDefinition/fr-cda-severite">
+                  <span title="StructureDefinition/fr-cda-severite">CDA - FR Severite
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Severite: IHE-PCC - Severity.</p>
+<ul>
+  <li>Cette entrée permet de donner le niveau de sévérité d’un problème : bas, modéré, élevé, etc… Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-signe-vital-observe.html"
+                  title="StructureDefinition/fr-cda-signe-vital-observe">
+                  <span title="StructureDefinition/fr-cda-signe-vital-observe">CDA - FR Signe vital observe
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique. Cette entrée est utilisée dans un élément component d'un élément Signes vitaux (1.3.6.1.4.1.19376.1.5.3.1.4.13.1). Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-signes-vitaux.html"
+                  title="StructureDefinition/fr-cda-signes-vitaux">
+                  <span title="StructureDefinition/fr-cda-signes-vitaux">CDA - FR Signes vitaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-simple-observation.html"
+                  title="StructureDefinition/fr-cda-simple-observation">
+                  <span title="StructureDefinition/fr-cda-simple-observation">CDA - FR Simple Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Simple-Observation: IHE-PCC - Simple-Observation. Cette entrée est une entrée de base très peu contrainte sur lequel des contraintes spécifiques peuvent être appliquées sur les éléments ou les vocabulaires pour constituer d'autres types d'observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut.html"
+                  title="StructureDefinition/fr-cda-statut">
+                  <span title="StructureDefinition/fr-cda-statut">CDA - FR Statut
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Statut: Cette entrée de type observation permet de décrire et de suivre le statut métier d’un objet.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-clinique-du-patient.html"
+                  title="StructureDefinition/fr-cda-statut-clinique-du-patient">
+                  <span title="StructureDefinition/fr-cda-statut-clinique-du-patient">CDA - FR Statut clinique du patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Observation. L'entrée Statut clinique du patient permet de donner une évaluation de l'état clinique du patient. L'entrée Statut clinique du patient est un élément observation qui est inséré dans un autre élément à l'aide d'un lien entryRelationship.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-document.html"
+                  title="StructureDefinition/fr-cda-statut-document">
+                  <span title="StructureDefinition/fr-cda-statut-document">CDA - FR Statut document
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Statut-document: Cette entrée permet d'indiquer le statut du document (son état d'avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal (élément 'legalAuthenticator' de l'en-tête) ainsi que la date de ce statut.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-du-probleme.html"
+                  title="StructureDefinition/fr-cda-statut-du-probleme">
+                  <span title="StructureDefinition/fr-cda-statut-du-probleme">CDA - FR Statut du probleme
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Statut-du-probleme: IHE-PCC - Problem-Status-Observation. L'élément 'Statut du problème' est un élément de type 'observation' qui permet de fournir le statut du problème ou de l'allergie. Il est utilisé exclusivement dans un lien 'entryRelationship' grâce auquel il est lié à l'élément qu'il qualifie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-sujet.html"
+                  title="StructureDefinition/fr-cda-sujet">
+                  <span title="StructureDefinition/fr-cda-sujet">CDA - FR Sujet
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Sujet: IHE-PCC - Subject participation. Cet élément peut être utilisé lorsqu'il est nécessaire de distinguer qu'une section ou une entrée s'applique à une personne autre que le patient concerné par le document. Par exemple, cet élément est utilisé pour identifier les membres de la famille dans les antécédents familiaux, les nouveaux-nés dans l'historique d'une grossesse.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-sujet-non-humain.html"
+                  title="StructureDefinition/fr-cda-sujet-non-humain">
+                  <span title="StructureDefinition/fr-cda-sujet-non-humain">CDA - FR Sujet non humain
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Sujet-non-humain: IHE-PCC - Non-Human Subject</p>
+<ul>
+  <li>Cet élément doit être présent lorsque le sujet des observations du compte rendu est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental) analysé par un laboratoire de biologie médicale dans le cadre d'une investigation sur un patient. Le sujet non humain doit aussi être décrit dans l'en-tête du document.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-sujet-personne.html"
+                  title="StructureDefinition/fr-cda-sujet-personne">
+                  <span title="StructureDefinition/fr-cda-sujet-personne">CDA - FR Sujet personne
+</span>
+               </a>
+            </td>
+            <td>
+<p>élément utilisé dans FR-Sujet/relatedSubject pour identifier une personne physique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-synthese-medicale-sejour.html"
+                  title="StructureDefinition/fr-cda-synthese-medicale-sejour">
+                  <span title="StructureDefinition/fr-cda-synthese-medicale-sejour">CDA - FR Synthese medicale sejour
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Synthese-medicale-sejour: Cette entrée permet de fournir, sous forme textuelle, une synthèse médicale du séjour.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitement.html"
+                  title="StructureDefinition/fr-cda-traitement">
+                  <span title="StructureDefinition/fr-cda-traitement">CDA - FR Traitement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Traitement: IHE-PCC - Medications. L'entrée 'Traitement' est une entrée de type 'substanceAdministration' décrivant les modalités d'administration d'un médicament au patient. Elle permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitement-dispense.html"
+                  title="StructureDefinition/fr-cda-traitement-dispense">
+                  <span title="StructureDefinition/fr-cda-traitement-dispense">CDA - FR Traitement dispense
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry. Cette entrée de type supply permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitement-prescrit.html"
+                  title="StructureDefinition/fr-cda-traitement-prescrit">
+                  <span title="StructureDefinition/fr-cda-traitement-prescrit">CDA - FR Traitement prescrit
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Traitement-prescrit: IHE-PRE Prescription Item. Cette entrée de type substanceAdministration permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d'administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitement-prescrit-subordonne.html"
+                  title="StructureDefinition/fr-cda-traitement-prescrit-subordonne">
+                  <span title="StructureDefinition/fr-cda-traitement-prescrit-subordonne">CDA - FR Traitement prescrit subordonne
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Traitement-prescrit-subordonne: IHE-PRE - Prescription Item. Une entrée FR-Traitement-prescrit de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-prescrit-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-prescrit-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-prescrit-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement-prescrit de premier niveau sous forme de texte libre.
+Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-prescrit-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés. Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-prescrit-subordonne doit avoir un élément precondition pour indiquer les conditions préalables à l’utilisation du médicament.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-transfusion-de-produits-sanguins.html"
+                  title="StructureDefinition/fr-cda-transfusion-de-produits-sanguins">
+                  <span title="StructureDefinition/fr-cda-transfusion-de-produits-sanguins">CDA - FR Transfusion de produits sanguins
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Transfusion-de-produits-sanguins: Cette entrée permet d'indiquer s'il a eu ou pas transfusion de produit sanguin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-transport-du-patient.html"
+                  title="StructureDefinition/fr-cda-transport-du-patient">
+                  <span title="StructureDefinition/fr-cda-transport-du-patient">CDA - FR Transport du patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Transport-du-patient: IHE-PCC - Transport. Cette entrée de type act permet de décrire le transport d'un patient/usager lors d'un déplacement (entrée ou sortie d'hôpital, …)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-transport-du-professionnel.html"
+                  title="StructureDefinition/fr-cda-transport-du-professionnel">
+                  <span title="StructureDefinition/fr-cda-transport-du-professionnel">CDA - FR Transport du professionnel
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Transport-du-professionnel: Cette entrée de type act permet de décrire le transport d'un professionnel lors d’un déplacement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-type-document-attache.html"
+                  title="StructureDefinition/fr-cda-type-document-attache">
+                  <span title="StructureDefinition/fr-cda-type-document-attache">CDA - FR Type document attache
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Type-document-attache: Élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant le type de document attaché.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-vaccin-recommande.html"
+                  title="StructureDefinition/fr-cda-vaccin-recommande">
+                  <span title="StructureDefinition/fr-cda-vaccin-recommande">CDA - FR Vaccin recommande
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique). 
+Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée 'Immunization' (1.3.6.1.4.1.19376.1.5.3.1.4.12).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-vaccination.html"
+                  title="StructureDefinition/fr-cda-vaccination">
+                  <span title="StructureDefinition/fr-cda-vaccination">CDA - FR Vaccination
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccination est une entrée de type 'substanceAdministration' pour décrire l'administration d'un vaccin. Elle permet également de décrire pourquoi un vaccin n'a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Modèles logiques </h3>
+    <p>Ils définissent des modèles de données qui représentent le domaine couvert par ce guide d'implémentation en termes plus conviviaux que les ressources FHIR sous-jacentes.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-dispositifs-medicaux.html"
+                  title="StructureDefinition/fr-dispositifs-medicaux">
+                  <span title="StructureDefinition/fr-dispositifs-medicaux">CDA - FR Dispositifs medicaux
+</span>
+               </a>
+            </td>
+            <td>
+<p>IHE-PCC - Medical Devices SectionCette section 'Dispositifs médicaux' contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitement-subordonne.html"
+                  title="StructureDefinition/fr-cda-traitement-subordonne">
+                  <span title="StructureDefinition/fr-cda-traitement-subordonne">CDA - FR Traitement subordonne
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément 'precondition' pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats.html"
+                  title="StructureDefinition/fr-cda-resultats">
+                  <span title="StructureDefinition/fr-cda-resultats">CDA - FR resultats
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrée FR-resultats: L'entrée 'FR-Resultats' est une entrée de type 'organizer' regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminologie: Jeux de valeurs (ValueSets) </h3>
+    <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-valueset-code-traitement.html"
+                  title="ValueSet/fr-valueset-code-traitement">
+                  <span title="ValueSet/fr-valueset-code-traitement">ValueSet - FR ValueSet Code Traitement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs regroupant les codes de traitement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-valueset-reference-externe.html"
+                  title="ValueSet/fr-valueset-reference-externe">
+                  <span title="ValueSet/fr-valueset-reference-externe">ValueSet - FR ValueSet Reference externe
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs regroupant les typeCode du document référencé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-valueset-status-code.html"
+                  title="ValueSet/fr-valueset-status-code">
+                  <span title="ValueSet/fr-valueset-status-code">ValueSet - FR ValueSet StatusCode
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).</p>
+<ul>
+  <li>'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.</li>
+  <li>'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.</li>
+  <li>'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-valueset-statut-du-probleme.html"
+                  title="ValueSet/fr-valueset-statut-du-probleme">
+                  <span title="ValueSet/fr-valueset-statut-du-probleme">ValueSet - FR ValueSet Statut du problème
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-valueset-type-vaccination.html"
+                  title="ValueSet/fr-valueset-type-vaccination">
+                  <span title="ValueSet/fr-valueset-type-vaccination">ValueSet - FR ValueSet Type Vaccination
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs regroupant les codes de type de vaccination</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="translationinfo.html">&lt; précédent</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">haut</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="StructureDefinition-fr-cda-assigned-author.html">suivant ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
+          Le package ans.cda.fr.document-core#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Date de génération : 
+  <span title="2026-07-29 13:04:00 +0000">
+    2026-07-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/cda/document-core/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+
