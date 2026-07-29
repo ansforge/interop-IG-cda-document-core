@@ -16,7 +16,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ^status = #draft
 
 // Forme pharmaceutique
-* formCode 0..1 $CEAWATIF
+* formCode 0..1 $CE
     "Forme pharmaceutique"
     "Code représentant la forme pharmaceutique du produit de santé."
 
@@ -35,7 +35,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
     "Classe de la relation"
     "Code indiquant qu'il s'agit d'une relation vers une classe générique ou thérapeutique."
 
-* asSpecializedKind.classCode = #GRICAWATIF
+* asSpecializedKind.classCode = GRIC
 * asSpecializedKind.classCode ^representation = #xmlAttr
 
 * asSpecializedKind.generalizedMedicineClass 1..1 BackboneElement
