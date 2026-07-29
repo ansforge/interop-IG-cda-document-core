@@ -16,7 +16,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 * ^status = #draft
 
 // Forme pharmaceutique
-* formCode 0..1 $CE
+* formCode 0..1 $CEAWATIF
     "Forme pharmaceutique"
     "Code représentant la forme pharmaceutique du produit de santé."
 
