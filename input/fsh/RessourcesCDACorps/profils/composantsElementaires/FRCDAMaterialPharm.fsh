@@ -35,7 +35,7 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
     "Classe de la relation"
     "Code indiquant qu'il s'agit d'une relation vers une classe générique ou thérapeutique."
 
-* asSpecializedKind.classCode = GRIC
+* asSpecializedKind.classCode = #GRIC
 * asSpecializedKind.classCode ^representation = #xmlAttr
 
 * asSpecializedKind.generalizedMedicineClass 1..1 BackboneElement
