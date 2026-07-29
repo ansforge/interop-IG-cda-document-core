@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="fr-cda-statut-clinique-du-patient"/>
+  <language value="fr"/>
+  <text>
+    <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : StructureDefinition fr-cda-statut-clinique-du-patient</b></p><a name="fr-cda-statut-clinique-du-patient"> </a><a name="hcfr-cda-statut-clinique-du-patient"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation">Observation</a><a name="Observation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html">Observation(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Espace de noms (namespace) XML: </span>urn:hl7-org:v3<br/><span style="font-weight:bold">Les instances de ce type sont validées par templateId</span><br/><span style="font-weight:bold" title="La classe racine qui contient les instances de cette classe">Conteneur logique: </span><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html">ClinicalDocument (CDA Class)</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Définition de Slice" class="hierarchy"/> <a style="font-style: italic; font-style: italic" href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId">Slices pour templateId</a><a name="Observation.templateId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"/><span style="font-style: italic">3</span><span style="font-style: italic">..</span><span style="font-style: italic">3</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Non ordonné, Ouvert par value:root</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Élément de Slice" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId:ccdProblemHealthStatusObservation" title="Slice ccdProblemHealthStatusObservation: Conformité Problem healthstatus observation (CCD)">templateId:ccdProblemHealthStatusObservation</a><a name="Observation.templateId:ccdProblemHealthStatusObservation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Conformité Problem healthstatus observation (CCD)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId:ccdProblemHealthStatusObservation.root">@root</a><a name="Observation.templateId:ccdProblemHealthStatusObservation.root"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html" title="string">oid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html" title="string">uuid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html" title="string">ruid(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">2.16.840.1.113883.10.20.1.51</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Élément de Slice" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId:iheHealthStatusObservation" title="Slice iheHealthStatusObservation: Conformité Health Status Observation (IHE PCC)">templateId:iheHealthStatusObservation</a><a name="Observation.templateId:iheHealthStatusObservation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Conformité Health Status Observation (IHE PCC)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId:iheHealthStatusObservation.root">@root</a><a name="Observation.templateId:iheHealthStatusObservation.root"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html" title="string">oid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html" title="string">uuid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html" title="string">ruid(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">1.3.6.1.4.1.19376.1.5.3.1.4.1.2</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Élément de Slice" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId:frStatutCliniqueDuPatient" title="Slice frStatutCliniqueDuPatient: Conformité FR-Statut-clinique-du-patient (CI-SIS)">templateId:frStatutCliniqueDuPatient</a><a name="Observation.templateId:frStatutCliniqueDuPatient"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Conformité FR-Statut-clinique-du-patient (CI-SIS)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.templateId:frStatutCliniqueDuPatient.root">@root</a><a name="Observation.templateId:frStatutCliniqueDuPatient.root"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html" title="string">oid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html" title="string">uuid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html" title="string">ruid(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">1.2.250.1.213.1.1.3.31</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.classCode">@classCode</a><a name="Observation.classCode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">OBS</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.moodCode">@moodCode</a><a name="Observation.moodCode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">EVN</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.code" title="Code de l’entrée">code</a><a name="Observation.code"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code de l’entrée</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.code.code">@code</a><a name="Observation.code.code"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">11323-3</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.code.codeSystem">@codeSystem</a><a name="Observation.code.codeSystem"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html" title="string">oid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html" title="string">uuid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html" title="string">ruid(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">2.16.840.1.113883.6.1</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.code.codeSystemName">@codeSystemName</a><a name="Observation.code.codeSystemName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html" title="string">st(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">LOINC</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.code.displayName">@displayName</a><a name="Observation.code.displayName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html" title="string">st(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">Statut clinique du patient</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.text" title="Description narrative">text</a><a name="Observation.text"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ED.html">ED</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Description narrative</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.text.reference">reference</a><a name="Observation.text.reference"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-TEL.html">TEL</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.statusCode" title="Statut de l’entrée">statusCode</a><a name="Observation.statusCode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html">CS</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Statut de l’entrée</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.statusCode.code">@code</a><a name="Observation.statusCode.code"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Motif requis: </span><span style="color: darkgreen">completed</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-cda-statut-clinique-du-patient-definitions.html#Observation.value" title="Statut clinique du patient">value</a><a name="Observation.value"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Statut clinique du patient<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-health-status-code-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis" class="binding">JdvHealthStatusCodeCisis (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+    <valueString value="observation"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-container">
+    <valueUri value="http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/type-profile-style">
+    <valueCode value="cda"/>
+  </extension>
+  <url value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-statut-clinique-du-patient"/>
+  <version value="0.1.0"/>
+  <name value="FRCDAStatutCliniqueDuPatient"/>
+  <title value="CDA - FR Statut clinique du patient"/>
+  <status value="draft"/>
+  <date value="2026-07-29T12:20:36+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Observation. L'entrée Statut clinique du patient permet de donner une évaluation de l'état clinique du patient. L'entrée Statut clinique du patient est un élément observation qui est inséré dans un autre élément à l'aide d'un lien entryRelationship."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/Observation|2.0.3-sd"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="2.0.3-sd"/>
+    </extension>
+    <element id="Observation">
+      <path value="Observation"/>
+      <short value="Base for all types and resources"/>
+      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Observation.nullFlavor">
+      <path value="Observation.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.realmCode">
+      <path value="Observation.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="InfrastructureRoot.realmCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Observation.typeId">
+      <path value="Observation.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="InfrastructureRoot.typeId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+      <constraint>
+        <key value="II-1"/>
+        <severity value="error"/>
+        <human value="An II instance must have either a root or an nullFlavor."/>
+        <expression value="root.exists() or nullFlavor.exists()"/>
+        <source value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"/>
+      </constraint>
+    </element>
+    <element id="Observation.typeId.nullFlavor">
+      <path value="Observation.typeId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.typeId.assigningAuthorityName">
+      <path value="Observation.typeId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.typeId.displayable">
+      <path value="Observation.typeId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.typeId.root">
+      <path value="Observation.typeId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="Identifies the type as an HL7 Registered model"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <fixedString value="2.16.840.1.113883.1.3"/>
+    </element>
+    <element id="Observation.typeId.extension">
+      <path value="Observation.typeId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId">
+      <path value="Observation.templateId"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="root"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="3"/>
+      <max value="3"/>
+      <base>
+        <path value="InfrastructureRoot.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation">
+      <path value="Observation.templateId"/>
+      <sliceName value="ccdProblemHealthStatusObservation"/>
+      <short value="Conformité Problem healthstatus observation (CCD)"/>
+      <definition value="Conformité Problem healthstatus observation (CCD)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="InfrastructureRoot.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation.nullFlavor">
+      <path value="Observation.templateId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation.assigningAuthorityName">
+      <path value="Observation.templateId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation.displayable">
+      <path value="Observation.templateId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation.root">
+      <path value="Observation.templateId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <patternString value="2.16.840.1.113883.10.20.1.51"/>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation.extension">
+      <path value="Observation.templateId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation">
+      <path value="Observation.templateId"/>
+      <sliceName value="iheHealthStatusObservation"/>
+      <short value="Conformité Health Status Observation (IHE PCC)"/>
+      <definition value="Conformité Health Status Observation (IHE PCC)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="InfrastructureRoot.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation.nullFlavor">
+      <path value="Observation.templateId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation.assigningAuthorityName">
+      <path value="Observation.templateId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation.displayable">
+      <path value="Observation.templateId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation.root">
+      <path value="Observation.templateId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <patternString value="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation.extension">
+      <path value="Observation.templateId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient">
+      <path value="Observation.templateId"/>
+      <sliceName value="frStatutCliniqueDuPatient"/>
+      <short value="Conformité FR-Statut-clinique-du-patient (CI-SIS)"/>
+      <definition value="Conformité FR-Statut-clinique-du-patient (CI-SIS)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="InfrastructureRoot.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient.nullFlavor">
+      <path value="Observation.templateId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient.assigningAuthorityName">
+      <path value="Observation.templateId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient.displayable">
+      <path value="Observation.templateId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient.root">
+      <path value="Observation.templateId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <patternString value="1.2.250.1.213.1.1.3.31"/>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient.extension">
+      <path value="Observation.templateId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.classCode">
+      <path value="Observation.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.classCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <patternCode value="OBS"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDAActClassObservation|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.moodCode">
+      <path value="Observation.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.moodCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <patternCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-xActMoodDocumentObservation|2.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.negationInd">
+      <path value="Observation.negationInd"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.negationInd"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.id">
+      <path value="Observation.id"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Observation.sdtcCategory">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="category"/>
+      </extension>
+      <path value="Observation.sdtcCategory"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.sdtcCategory"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <representation value="typeAttr"/>
+      <short value="Code de l’entrée"/>
+      <definition value="Code de l’entrée"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.code"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ObservationType|3.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.code.nullFlavor">
+      <path value="Observation.code.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.code.code">
+      <path value="Observation.code.code"/>
+      <representation value="xmlAttr"/>
+      <label value="Code"/>
+      <definition value="The plain code symbol defined by the code system. For example, &quot;784.0&quot; is the code symbol of the ICD-9 code &quot;784.0&quot; for headache."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <patternCode value="11323-3"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code.codeSystem">
+      <path value="Observation.code.codeSystem"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System"/>
+      <definition value="Specifies the code system that defines the code."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.codeSystem"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <patternString value="2.16.840.1.113883.6.1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code.codeSystemName">
+      <path value="Observation.code.codeSystemName"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System Name"/>
+      <definition value="The common name of the coding system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.codeSystemName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+      <patternString value="LOINC"/>
+    </element>
+    <element id="Observation.code.codeSystemVersion">
+      <path value="Observation.code.codeSystemVersion"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System Version"/>
+      <definition value="If applicable, a version descriptor defined specifically for the given code system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.codeSystemVersion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.code.displayName">
+      <path value="Observation.code.displayName"/>
+      <representation value="xmlAttr"/>
+      <label value="Display Name"/>
+      <definition value="A name or title for the code, under which the sending system shows the code value to its users."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.displayName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+      <patternString value="Statut clinique du patient"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code.sdtcValueSet">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="valueSet"/>
+      </extension>
+      <path value="Observation.code.sdtcValueSet"/>
+      <representation value="xmlAttr"/>
+      <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.valueSet"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.code.sdtcValueSetVersion">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="valueSetVersion"/>
+      </extension>
+      <path value="Observation.code.sdtcValueSetVersion"/>
+      <representation value="xmlAttr"/>
+      <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.sdtcValueSetVersion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.code.originalText">
+      <path value="Observation.code.originalText"/>
+      <label value="Original Text"/>
+      <definition value="The text or phrase used as the basis for the coding."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.originalText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="Observation.code.qualifier">
+      <path value="Observation.code.qualifier"/>
+      <label value="Qualifier"/>
+      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="CD.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="Observation.code.translation">
+      <path value="Observation.code.translation"/>
+      <representation value="typeAttr"/>
+      <label value="Translation"/>
+      <definition value="A set of other concept descriptors that translate this concept descriptor into other code systems."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="CD.translation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="Observation.derivationExpr">
+      <path value="Observation.derivationExpr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.derivationExpr"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="Observation.text">
+      <path value="Observation.text"/>
+      <representation value="typeAttr"/>
+      <short value="Description narrative"/>
+      <definition value="Description narrative"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.text.nullFlavor">
+      <path value="Observation.text.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.text.compression">
+      <path value="Observation.text.compression"/>
+      <representation value="xmlAttr"/>
+      <label value="Compression"/>
+      <definition value="Indicates whether the raw byte data is compressed, and what compression algorithm was used."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.compression"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDACompressionAlgorithm|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.text.integrityCheck">
+      <path value="Observation.text.integrityCheck"/>
+      <representation value="xmlAttr"/>
+      <label value="Integrity Check"/>
+      <definition value="The integrity check is a short binary value representing a cryptographically strong checksum that is calculated over the binary data. The purpose of this property, when communicated with a reference is for anyone to validate later whether the reference still resolved to the same data that the reference resolved to when the encapsulated data value with reference was created."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.integrityCheck"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.text.integrityCheckAlgorithm">
+      <path value="Observation.text.integrityCheckAlgorithm"/>
+      <representation value="xmlAttr"/>
+      <label value="Integrity Check Algorithm"/>
+      <definition value="Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.integrityCheckAlgorithm"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm|2.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.text.language">
+      <path value="Observation.text.language"/>
+      <representation value="xmlAttr"/>
+      <label value="Language"/>
+      <definition value="For character based information the language property specifies the human language of the text."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.text.mediaType">
+      <path value="Observation.text.mediaType"/>
+      <representation value="xmlAttr"/>
+      <label value="Media Type"/>
+      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.mediaType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-MediaType|3.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.text.representation">
+      <path value="Observation.text.representation"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.representation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/BinaryDataEncoding|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.text.xmlText">
+      <path value="Observation.text.xmlText"/>
+      <representation value="xmlText"/>
+      <short value="Allows for mixed text content. If @representation='B64', this SHALL be a base64binary string."/>
+      <definition value="Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)"/>
+      <comment value="This element is represented in XML as textual content. The actual name &quot;xmlText&quot; will not appear in a CDA instance."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.xmlText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.text.reference">
+      <path value="Observation.text.reference"/>
+      <label value="Reference"/>
+      <definition value="A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.reference"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.text.thumbnail">
+      <path value="Observation.text.thumbnail"/>
+      <label value="Thumbnail"/>
+      <definition value="An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.thumbnail"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+      </type>
+      <constraint>
+        <key value="ED-1"/>
+        <severity value="error"/>
+        <human value="Thumbnails cannot contain their own thumbnails"/>
+        <expression value="thumbnail.empty()"/>
+        <source value="http://hl7.org/cda/stds/core/StructureDefinition/Observation|2.0.3-sd"/>
+      </constraint>
+    </element>
+    <element id="Observation.statusCode">
+      <path value="Observation.statusCode"/>
+      <short value="Statut de l’entrée"/>
+      <definition value="Statut de l’entrée"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.statusCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActStatus|3.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.statusCode.nullFlavor">
+      <path value="Observation.statusCode.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.statusCode.code">
+      <path value="Observation.statusCode.code"/>
+      <representation value="xmlAttr"/>
+      <label value="Code"/>
+      <definition value="The plain code symbol defined by the code system. For example, &quot;784.0&quot; is the code symbol of the ICD-9 code &quot;784.0&quot; for headache."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <patternCode value="completed"/>
+    </element>
+    <element id="Observation.statusCode.codeSystem">
+      <path value="Observation.statusCode.codeSystem"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System"/>
+      <definition value="Specifies the code system that defines the code."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.codeSystem"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.codeSystemName">
+      <path value="Observation.statusCode.codeSystemName"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System Name"/>
+      <definition value="The common name of the coding system."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.codeSystemName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.codeSystemVersion">
+      <path value="Observation.statusCode.codeSystemVersion"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System Version"/>
+      <definition value="If applicable, a version descriptor defined specifically for the given code system."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.codeSystemVersion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.displayName">
+      <path value="Observation.statusCode.displayName"/>
+      <representation value="xmlAttr"/>
+      <label value="Display Name"/>
+      <definition value="A name or title for the code, under which the sending system shows the code value to its users."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.displayName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.sdtcValueSet">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="valueSet"/>
+      </extension>
+      <path value="Observation.statusCode.sdtcValueSet"/>
+      <representation value="xmlAttr"/>
+      <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.valueSet"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.sdtcValueSetVersion">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="valueSetVersion"/>
+      </extension>
+      <path value="Observation.statusCode.sdtcValueSetVersion"/>
+      <representation value="xmlAttr"/>
+      <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.sdtcValueSetVersion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.originalText">
+      <path value="Observation.statusCode.originalText"/>
+      <label value="Original Text"/>
+      <definition value="The text or phrase used as the basis for the coding."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.originalText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.qualifier">
+      <path value="Observation.statusCode.qualifier"/>
+      <label value="Qualifier"/>
+      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="Observation.statusCode.translation">
+      <path value="Observation.statusCode.translation"/>
+      <representation value="typeAttr"/>
+      <label value="Translation"/>
+      <definition value="A set of other concept descriptors that translate this concept descriptor into other code systems."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.translation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="Observation.effectiveTime">
+      <path value="Observation.effectiveTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.effectiveTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
+      </type>
+    </element>
+    <element id="Observation.priorityCode">
+      <path value="Observation.priorityCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.priorityCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.repeatNumber">
+      <path value="Observation.repeatNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.repeatNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"/>
+      </type>
+    </element>
+    <element id="Observation.languageCode">
+      <path value="Observation.languageCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.languageCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.value">
+      <path value="Observation.value"/>
+      <representation value="typeAttr"/>
+      <short value="Statut clinique du patient"/>
+      <definition value="Statut clinique du patient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.value"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260619134042"/>
+      </binding>
+    </element>
+    <element id="Observation.interpretationCode">
+      <path value="Observation.interpretationCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.interpretationCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDAObservationInterpretation|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.methodCode">
+      <path value="Observation.methodCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.methodCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ObservationMethod|3.0.0"/>
+      </binding>
+    </element>
+    <element id="Observation.targetSiteCode">
+      <path value="Observation.targetSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.targetSiteCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.subject"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Subject"/>
+      </type>
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.specimen"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Specimen"/>
+      </type>
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.performer"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer2"/>
+      </type>
+    </element>
+    <element id="Observation.author">
+      <path value="Observation.author"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.author"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
+      </type>
+    </element>
+    <element id="Observation.informant">
+      <path value="Observation.informant"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.informant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Informant"/>
+      </type>
+    </element>
+    <element id="Observation.participant">
+      <path value="Observation.participant"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.participant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Participant2"/>
+      </type>
+    </element>
+    <element id="Observation.entryRelationship">
+      <path value="Observation.entryRelationship"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.entryRelationship"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"/>
+      </type>
+    </element>
+    <element id="Observation.reference">
+      <path value="Observation.reference"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.reference"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
+      </type>
+    </element>
+    <element id="Observation.precondition">
+      <path value="Observation.precondition"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.precondition"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition"/>
+      </type>
+    </element>
+    <element id="Observation.sdtcPrecondition2">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="precondition2"/>
+      </extension>
+      <path value="Observation.sdtcPrecondition2"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.sdtcPrecondition2"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition2"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange"/>
+      <definition value="Relates an Observation to the ObservationRange class, where the expected range of values for a particular observation can be specified."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.referenceRange"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.nullFlavor">
+      <path value="Observation.referenceRange.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.referenceRange.realmCode">
+      <path value="Observation.referenceRange.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="InfrastructureRoot.realmCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.typeId">
+      <path value="Observation.referenceRange.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="InfrastructureRoot.typeId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+      <constraint>
+        <key value="II-1"/>
+        <severity value="error"/>
+        <human value="An II instance must have either a root or an nullFlavor."/>
+        <expression value="root.exists() or nullFlavor.exists()"/>
+        <source value="http://hl7.org/cda/stds/core/StructureDefinition/Observation|2.0.3-sd"/>
+      </constraint>
+    </element>
+    <element id="Observation.referenceRange.typeId.nullFlavor">
+      <path value="Observation.referenceRange.typeId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.referenceRange.typeId.assigningAuthorityName">
+      <path value="Observation.referenceRange.typeId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.typeId.displayable">
+      <path value="Observation.referenceRange.typeId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.typeId.root">
+      <path value="Observation.referenceRange.typeId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="Identifies the type as an HL7 Registered model"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <fixedString value="2.16.840.1.113883.1.3"/>
+    </element>
+    <element id="Observation.referenceRange.typeId.extension">
+      <path value="Observation.referenceRange.typeId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.templateId">
+      <path value="Observation.referenceRange.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="InfrastructureRoot.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.typeCode">
+      <path value="Observation.referenceRange.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.referenceRange.typeCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <fixedCode value="REFV"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDAActRelationshipType|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.referenceRange.observationRange">
+      <path value="Observation.referenceRange.observationRange"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Observation.referenceRange.observationRange"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationRange"/>
+      </type>
+    </element>
+    <element id="Observation.sdtcInFulfillmentOf1">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="inFulfillmentOf1"/>
+      </extension>
+      <path value="Observation.sdtcInFulfillmentOf1"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Observation.sdtcInFulfillmentOf1"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Observation.templateId">
+      <path value="Observation.templateId"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="root"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="3"/>
+      <max value="3"/>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation">
+      <path value="Observation.templateId"/>
+      <sliceName value="ccdProblemHealthStatusObservation"/>
+      <short value="Conformité Problem healthstatus observation (CCD)"/>
+      <definition value="Conformité Problem healthstatus observation (CCD)"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Observation.templateId:ccdProblemHealthStatusObservation.root">
+      <path value="Observation.templateId.root"/>
+      <min value="1"/>
+      <patternString value="2.16.840.1.113883.10.20.1.51"/>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation">
+      <path value="Observation.templateId"/>
+      <sliceName value="iheHealthStatusObservation"/>
+      <short value="Conformité Health Status Observation (IHE PCC)"/>
+      <definition value="Conformité Health Status Observation (IHE PCC)"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Observation.templateId:iheHealthStatusObservation.root">
+      <path value="Observation.templateId.root"/>
+      <min value="1"/>
+      <patternString value="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient">
+      <path value="Observation.templateId"/>
+      <sliceName value="frStatutCliniqueDuPatient"/>
+      <short value="Conformité FR-Statut-clinique-du-patient (CI-SIS)"/>
+      <definition value="Conformité FR-Statut-clinique-du-patient (CI-SIS)"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Observation.templateId:frStatutCliniqueDuPatient.root">
+      <path value="Observation.templateId.root"/>
+      <min value="1"/>
+      <patternString value="1.2.250.1.213.1.1.3.31"/>
+    </element>
+    <element id="Observation.classCode">
+      <path value="Observation.classCode"/>
+      <patternCode value="OBS"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.moodCode">
+      <path value="Observation.moodCode"/>
+      <patternCode value="EVN"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <short value="Code de l’entrée"/>
+      <definition value="Code de l’entrée"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code.code">
+      <path value="Observation.code.code"/>
+      <min value="1"/>
+      <patternCode value="11323-3"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code.codeSystem">
+      <path value="Observation.code.codeSystem"/>
+      <min value="1"/>
+      <patternString value="2.16.840.1.113883.6.1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code.codeSystemName">
+      <path value="Observation.code.codeSystemName"/>
+      <patternString value="LOINC"/>
+    </element>
+    <element id="Observation.code.displayName">
+      <path value="Observation.code.displayName"/>
+      <patternString value="Statut clinique du patient"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.text">
+      <path value="Observation.text"/>
+      <short value="Description narrative"/>
+      <definition value="Description narrative"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.text.reference">
+      <path value="Observation.text.reference"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.statusCode">
+      <path value="Observation.statusCode"/>
+      <short value="Statut de l’entrée"/>
+      <definition value="Statut de l’entrée"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.statusCode.code">
+      <path value="Observation.statusCode.code"/>
+      <patternCode value="completed"/>
+    </element>
+    <element id="Observation.value">
+      <path value="Observation.value"/>
+      <short value="Statut clinique du patient"/>
+      <definition value="Statut clinique du patient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260619134042"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
