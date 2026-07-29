@@ -7,7 +7,7 @@ Entrée FR-Sujet: IHE-PCC - Subject participation. Cet élément peut être util
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Antecedents familiaux](StructureDefinition-fr-cda-antecedents-familiaux.md) and [CDA - FR Naissance](StructureDefinition-fr-cda-naissance.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Entrée Antecedents familiaux](StructureDefinition-fr-cda-antecedents-familiaux.md) and [CDA - FR Naissance](StructureDefinition-fr-cda-naissance.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-sujet)
 
@@ -124,7 +124,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-sujet.cs
   "name" : "FRCDASujet",
   "title" : "CDA - FR Sujet",
   "status" : "draft",
-  "date" : "2026-07-28T20:38:51+00:00",
+  "date" : "2026-07-29T12:58:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

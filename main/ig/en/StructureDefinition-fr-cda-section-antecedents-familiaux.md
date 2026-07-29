@@ -1,6 +1,6 @@
-# CDA - FR Antecedents familiaux - FR Document Core (CDA) v0.1.0
+# CDA - FR Section Antecedents familiaux - FR Document Core (CDA) v0.1.0
 
-## Logical Model: CDA - FR Antecedents familiaux 
+## Logical Model: CDA - FR Section Antecedents familiaux 
 
  
 IHE-PCC Coded-Family-Medical-History 
@@ -57,9 +57,9 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-an
   "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-section-antecedents-familiaux",
   "version" : "0.1.0",
   "name" : "FRCDASectionAntecedentsFamiliaux",
-  "title" : "CDA - FR Antecedents familiaux",
+  "title" : "CDA - FR Section Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-07-28T20:38:51+00:00",
+  "date" : "2026-07-29T12:58:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

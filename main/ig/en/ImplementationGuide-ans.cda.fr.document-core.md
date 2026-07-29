@@ -14,7 +14,7 @@
   "name" : "CDAFRDocumentCore",
   "title" : "FR Document Core (CDA)",
   "status" : "draft",
-  "date" : "2026-07-28T20:38:51+00:00",
+  "date" : "2026-07-29T12:58:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -479,40 +479,6 @@
       "description" : "Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15).",
       "isExample" : false,
       "groupingId" : "ressources-cda-corps-composants-elementaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-fr-cda-antecedents-familiaux.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-antecedents-familiaux"
-      },
-      "name" : "CDA - FR Antecedents familiaux",
-      "description" : "Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3).",
-      "isExample" : false,
-      "groupingId" : "ressources-cda-corps-composants-elementaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-fr-cda-section-antecedents-familiaux.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-section-antecedents-familiaux"
-      },
-      "name" : "CDA - FR Antecedents familiaux",
-      "description" : "IHE-PCC Coded-Family-Medical-History\n - Liste codée des antécédents familiaux",
-      "isExample" : false,
-      "groupingId" : "ressources-cda-corps-sections"
     },
     {
       "extension" : [{
@@ -1411,6 +1377,40 @@
       },
       "name" : "CDA - FR En rapport avec la prevention",
       "description" : "Entrée FR-En-rapport-avec-la-prevention: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une prévention.",
+      "isExample" : false,
+      "groupingId" : "ressources-cda-corps-composants-elementaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-cda-antecedents-familiaux.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-antecedents-familiaux"
+      },
+      "name" : "CDA - FR Entrée Antecedents familiaux",
+      "description" : "Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3).",
+      "isExample" : false,
+      "groupingId" : "ressources-cda-corps-composants-elementaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-cda-signes-vitaux.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-signes-vitaux"
+      },
+      "name" : "CDA - FR Entrée Signes vitaux",
+      "description" : "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient.",
       "isExample" : false,
       "groupingId" : "ressources-cda-corps-composants-elementaires"
     },
@@ -2627,6 +2627,40 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-cda-section-antecedents-familiaux.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-section-antecedents-familiaux"
+      },
+      "name" : "CDA - FR Section Antecedents familiaux",
+      "description" : "IHE-PCC Coded-Family-Medical-History\n - Liste codée des antécédents familiaux",
+      "isExample" : false,
+      "groupingId" : "ressources-cda-corps-sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-cda-section-signes-vitaux.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-section-signes-vitaux"
+      },
+      "name" : "CDA - FR Section Signes vitaux",
+      "description" : "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.",
+      "isExample" : false,
+      "groupingId" : "ressources-cda-corps-sections"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-fr-cda-severite.html"
       }],
       "reference" : {
@@ -2653,40 +2687,6 @@
       "description" : "Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique. Cette entrée est utilisée dans un élément component d'un élément Signes vitaux (1.3.6.1.4.1.19376.1.5.3.1.4.13.1). Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.",
       "isExample" : false,
       "groupingId" : "ressources-cda-corps-composants-elementaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-fr-cda-signes-vitaux.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-signes-vitaux"
-      },
-      "name" : "CDA - FR Signes vitaux",
-      "description" : "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient.",
-      "isExample" : false,
-      "groupingId" : "ressources-cda-corps-composants-elementaires"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-fr-cda-section-signes-vitaux.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-cda-section-signes-vitaux"
-      },
-      "name" : "CDA - FR Signes vitaux",
-      "description" : "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.",
-      "isExample" : false,
-      "groupingId" : "ressources-cda-corps-sections"
     },
     {
       "extension" : [{

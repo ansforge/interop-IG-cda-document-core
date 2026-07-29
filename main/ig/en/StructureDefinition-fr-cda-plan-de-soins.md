@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-plan-de-so
   "name" : "FRCDASectionPlanDeSoins",
   "title" : "CDA - FR Plan de soins",
   "status" : "draft",
-  "date" : "2026-07-28T20:38:51+00:00",
+  "date" : "2026-07-29T12:58:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -7,7 +7,7 @@ Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'e
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Antecedents familiaux](StructureDefinition-fr-cda-antecedents-familiaux.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Entrée Antecedents familiaux](StructureDefinition-fr-cda-antecedents-familiaux.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-antecedent-familial-observe)
 
@@ -120,7 +120,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-antecede
   "name" : "FRCDAAntecedentFamilialObserve",
   "title" : "CDA - FR Antecedent familial observe",
   "status" : "draft",
-  "date" : "2026-07-28T20:38:51+00:00",
+  "date" : "2026-07-29T12:58:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

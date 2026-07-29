@@ -1,13 +1,13 @@
-# CDA - FR Antecedents familiaux - FR Document Core (CDA) v0.1.0
+# CDA - FR Entrée Antecedents familiaux - FR Document Core (CDA) v0.1.0
 
-## Logical Model: CDA - FR Antecedents familiaux 
+## Logical Model: CDA - FR Entrée Antecedents familiaux 
 
  
 Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3). 
 
 **Usages:**
 
-* Use this Logical Model Profile: [CDA - FR Antecedents familiaux](StructureDefinition-fr-cda-section-antecedents-familiaux.md)
+* Use this Logical Model Profile: [CDA - FR Section Antecedents familiaux](StructureDefinition-fr-cda-section-antecedents-familiaux.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.cda.fr.document-core|current/StructureDefinition/StructureDefinition-fr-cda-antecedents-familiaux.json)
 
@@ -55,9 +55,9 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-antecedent
   "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux",
   "version" : "0.1.0",
   "name" : "FRCDAAntecedentsFamiliaux",
-  "title" : "CDA - FR Antecedents familiaux",
+  "title" : "CDA - FR Entrée Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-07-28T20:38:51+00:00",
+  "date" : "2026-07-29T12:58:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
