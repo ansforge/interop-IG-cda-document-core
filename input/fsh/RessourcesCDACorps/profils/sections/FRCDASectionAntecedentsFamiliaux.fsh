@@ -1,7 +1,7 @@
 Profile: FRCDASectionAntecedentsFamiliaux
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
 Id: fr-cda-section-antecedents-familiaux
-Title: "CDA - FR Antecedents familiaux"
+Title: "CDA - FR Section Antecedents familiaux"
 Description: "IHE-PCC Coded-Family-Medical-History
  - Liste codée des antécédents familiaux"
 * templateId 1..4

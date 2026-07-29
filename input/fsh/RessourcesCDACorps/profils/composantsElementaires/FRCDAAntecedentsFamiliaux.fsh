@@ -1,7 +1,7 @@
 Profile: FRCDAAntecedentsFamiliaux
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Organizer
 Id: fr-cda-antecedents-familiaux
-Title: "CDA - FR Antecedents familiaux"
+Title: "CDA - FR Entrée Antecedents familiaux"
 Description: "Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3)."
 * classCode MS
 * classCode = #CLUSTER

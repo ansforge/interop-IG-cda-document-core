@@ -1,7 +1,7 @@
 Profile: FRCDASignesVitaux
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Organizer
 Id: fr-cda-signes-vitaux
-Title: "CDA - FR Signes vitaux"
+Title: "CDA - FR Entrée Signes vitaux"
 Description: "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient."
 * classCode MS
 * classCode = #CLUSTER
