@@ -3,7 +3,9 @@ Alias: $CE = http://hl7.org/cda/stds/core/StructureDefinition/CE
 Alias: $EN = http://hl7.org/cda/stds/core/StructureDefinition/EN
 Alias: $RTO_PQ_PQ = http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ
 Alias: $TEL = http://hl7.org/cda/stds/core/StructureDefinition/TEL
+Alias: $IVL_TS = http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS
 Alias: $XmlNamespace = http://hl7.org/fhir/tools/StructureDefinition/xml-namespace
+Alias: $PQ = http://hl7.org/cda/stds/core/StructureDefinition/PQ
 
 Logical: FRCDAMaterialPharm
 Parent: $CDAMaterial
@@ -14,6 +16,106 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 """
 
 * ^status = #draft
+
+* sdtcExpirationTime 0..0
+
+// ExpirationTime pharmaceutique
+* expirationTime 0..1 $IVL_TS
+    "Date d'expiration du produit"
+
+* expirationTime ^extension[0].url = $XmlNamespace
+* expirationTime ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+// Présentation / conditionnement
+* asContent 0..1 BackboneElement
+    "Présentation / conditionnement"
+    "Description du conditionnement du produit de santé."
+
+* asContent ^extension[0].url = $XmlNamespace
+* asContent ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+* asContent.classCode 1..1 code
+    "Classe de la relation contenu"
+
+* asContent.classCode = #CONT
+* asContent.classCode ^representation = #xmlAttr
+
+// Conditionnement primaire
+* asContent.containerPackagedMedicine 1..1 BackboneElement
+    "Conditionnement primaire"
+    "Description du conditionnement primaire du produit."
+
+* asContent.containerPackagedMedicine ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+* asContent.containerPackagedMedicine.classCode 1..1 code
+    "Classe du conditionnement"
+
+* asContent.containerPackagedMedicine.classCode = #CONT
+* asContent.containerPackagedMedicine.classCode ^representation = #xmlAttr
+
+* asContent.containerPackagedMedicine.determinerCode 1..1 code
+    "Type du conditionnement"
+
+* asContent.containerPackagedMedicine.determinerCode = #INSTANCE
+* asContent.containerPackagedMedicine.determinerCode ^representation = #xmlAttr
+
+// Code présentation médicament (CIP)
+* asContent.containerPackagedMedicine.code 0..1 $CE
+    "Code du produit de santé prescrit"
+
+* asContent.containerPackagedMedicine.code ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine.code ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+// Nom de marque du conditionnement
+* asContent.containerPackagedMedicine.name 0..1 $EN
+    "Nom de marque du conditionnement"
+
+* asContent.containerPackagedMedicine.name ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine.name ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+// Conditionnement pharmaceutique
+* asContent.containerPackagedMedicine.formCode 0..1 $CE
+    "Conditionnement"
+
+* asContent.containerPackagedMedicine.formCode ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine.formCode ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+// Capacité du conditionnement primaire
+* asContent.containerPackagedMedicine.capacityQuantity 1..1 $PQ
+    "Capacité du conditionnement primaire"
+
+* asContent.containerPackagedMedicine.capacityQuantity ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine.capacityQuantity ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+// Conditionnement supérieur
+* asContent.containerPackagedMedicine.asSuperContent 0..1 BackboneElement
+    "Conditionnement supérieur"
+
+* asContent.containerPackagedMedicine.asSuperContent ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine.asSuperContent ^extension[0].valueUri = "urn:ihe:pharm:medication"
+
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine 1..1 BackboneElement
+    "Conditionnement supérieur"
+
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode 1..1 code
+    "Classe du conditionnement supérieur"
+
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode = #CONT
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode ^representation = #xmlAttr
+
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode 1..1 code
+    "Type du conditionnement supérieur"
+
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode = #INSTANCE
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode ^representation = #xmlAttr
+
+// Capacité du conditionnement supérieur
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity 1..1 $PQ
+    "Capacité du conditionnement supérieur"
+
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity ^extension[0].url = $XmlNamespace
+* asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity ^extension[0].valueUri = "urn:ihe:pharm:medication"
 
 // Forme pharmaceutique
 * formCode 0..1 $CE
@@ -135,4 +237,3 @@ Modèle logique dérivé du Material CDA officiel et enrichi avec les
 
 * ingredient.ingredient.name ^extension[0].url = $XmlNamespace
 * ingredient.ingredient.name ^extension[0].valueUri = "urn:ihe:pharm:medication"
-
