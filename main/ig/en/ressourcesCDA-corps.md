@@ -94,6 +94,7 @@ Cette page contient la liste des profils CDA définis dans le guide **ANS IG Doc
 | | |
 | :--- | :--- |
 | Titre du profil | Description |
+| [CDA - Matériau pharmaceutique enrichi](StructureDefinition-FRCDAMaterialPharm.md) | Modèle logique dérivé du Material CDA officiel et enrichi avec les éléments pharmaceutiques utilisés dans les documents CDA IPS français. |
 | [CDA - FR CISIS Addr](StructureDefinition-cisis-addr.md) | Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d'adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d'Interopérabilité (RGI). Les partenaires de l'échange doivent s'accorder sur la structure de addr à échanger. En effet, addr peut convoyer une adresse géopostale formée :* soit de composants élémentaires de l'adresse c'est-à-dire un élément XML pour le numéro dans la voie, un pour le type de voie, un pour le nom de la voie, etc.;
 * soit de lignes obtenues par assemblage des composants élémentaires de l'adresse, chaque ligne étant un élément XML.
  |

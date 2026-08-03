@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "CDAFRDocumentCore"] ; # 
   fhir:title [ fhir:v "FR Document Core (CDA)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-07-29T12:58:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-08-03T13:35:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -3077,6 +3077,22 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/FRCDAMaterialPharm> ;
+         fhir:reference [ fhir:v "StructureDefinition/FRCDAMaterialPharm" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - Matériau pharmaceutique enrichi" ] ;
+       fhir:description [ fhir:v "Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français." ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-name> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-name" ]
        ] ;
@@ -3276,6 +3292,37 @@
        fhir:description [ fhir:v "L'élément de l'en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. \nL'occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l'attribut nullFlavor." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-entete" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "application/xml"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:url ;
+           fhir:v "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document"^^xsd:anyURI
+         ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Binary"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/Binary/patient-summary> ;
+         fhir:reference [ fhir:v "Binary/patient-summary" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Summary" ] ;
+       fhir:description [ fhir:v "Exemple de document CDA Patient Summary utilisé pour tester les profils CDA français." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document|0.1.0"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document|0.1.0>
+       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

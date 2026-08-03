@@ -104,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-produit-
   "name" : "FRCDAProduitDeSante",
   "title" : "CDA - FR Produit de sante",
   "status" : "draft",
-  "date" : "2026-07-29T12:58:51+00:00",
+  "date" : "2026-08-03T13:35:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -189,6 +189,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-produit-
       "id" : "ManufacturedProduct.manufacturedMaterial",
       "path" : "ManufacturedProduct.manufacturedMaterial",
       "min" : 1,
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/FRCDAMaterialPharm"
+      }],
       "mustSupport" : true
     },
     {

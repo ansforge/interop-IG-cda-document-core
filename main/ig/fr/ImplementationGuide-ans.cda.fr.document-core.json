@@ -11,7 +11,7 @@
   "name" : "CDAFRDocumentCore",
   "title" : "FR Document Core (CDA)",
   "status" : "draft",
-  "date" : "2026-07-29T12:58:51+00:00",
+  "date" : "2026-08-03T13:35:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -2494,6 +2494,19 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/FRCDAMaterialPharm"
+      },
+      "name" : "CDA - Matériau pharmaceutique enrichi",
+      "description" : "Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français.",
+      "isExample" : false,
+      "groupingId" : "ressources-cda-corps-composants-elementaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-cda-name"
       },
       "name" : "CDA - Name",
@@ -2656,6 +2669,27 @@
       "description" : "L'élément de l'en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. \nL'occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l'attribut nullFlavor.",
       "isExample" : false,
       "groupingId" : "ressources-cda-entete"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/xml"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical",
+        "valueUrl" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/patient-summary"
+      },
+      "name" : "Patient Summary",
+      "description" : "Exemple de document CDA Patient Summary utilisé pour tester les profils CDA français.",
+      "isExample" : true,
+      "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document|0.1.0"]
     },
     {
       "extension" : [{
