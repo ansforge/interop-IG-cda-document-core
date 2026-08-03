@@ -54,8 +54,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.162"}
-    h3,h4,h5,h6{--heading-prefix:"7.162"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.163"}
+    h3,h4,h5,h6{--heading-prefix:"7.163"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -302,7 +302,7 @@ Profil TTL
           
 
             à partir de 
-2026-07-29
+2026-08-03
 
           
         
@@ -381,7 +381,7 @@ Profil TTL
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAProduitDeSante&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CDA - FR Produit de sante&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-07-29T09:37:21+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-08-03T10:14:27+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.contact">fhir:contact</a> ( [
      <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris&quot; ] ;
@@ -2058,7 +2058,7 @@ Profil TTL
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;The date and time the manufacturer no longer ensures the safety, quality, and/or proper functioning of the material.&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.requirements">fhir:requirements</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There is a need in many situations that the materials used are of a specific quality or potency or functional status. The ending date for this guarantee is specified by the manufacturer. After that date, while the material may still provide the same characteristics, the manufacturer no longer takes responsibility that the product will perform as specified and denies responsibility for failure of the material after that date.&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
-       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
          <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Material.sdtcExpirationTime&quot; ] ;
          <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
@@ -2066,6 +2066,859 @@ Profil TTL
        ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
          <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS&quot;^^xsd:anyURI ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.expirationTime&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.expirationTime&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Date d'expiration du produit&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Date d'expiration du produit&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.expirationTime&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/IVL_TS&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd&gt;
+         ] )
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Présentation / conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Description du conditionnement du produit de santé.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;BackboneElement&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unique id for inter-element referencing&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.id&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.type.extension">fhir:extension</a> ( [
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">a</a> fhir:url ;
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">fhir:v</a> &quot;id&quot;^^xsd:anyURI
+           ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.condition">fhir:condition</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing">fhir:slicing</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator">fhir:discriminator</a> ( [
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;value&quot; ] ;
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;url&quot; ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions are always sliced by (at least) url&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.rules">fhir:rules</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;open&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Additional content defined by implementations&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.extension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions that cannot be ignored even if unrecognized&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.requirements">fhir:requirements</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;modifiers&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;BackboneElement.modifierExtension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.classCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.classCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Classe de la relation contenu&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Classe de la relation contenu&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.classCode&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.pattern_x_">fhir:pattern</a> [
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:code ;
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;CONT&quot;
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Conditionnement primaire&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Description du conditionnement primaire du produit.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;BackboneElement&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unique id for inter-element referencing&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.id&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.type.extension">fhir:extension</a> ( [
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">a</a> fhir:url ;
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">fhir:v</a> &quot;id&quot;^^xsd:anyURI
+           ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.condition">fhir:condition</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing">fhir:slicing</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator">fhir:discriminator</a> ( [
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;value&quot; ] ;
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;url&quot; ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions are always sliced by (at least) url&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.rules">fhir:rules</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;open&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Additional content defined by implementations&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.extension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions that cannot be ignored even if unrecognized&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.requirements">fhir:requirements</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;modifiers&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;BackboneElement.modifierExtension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.classCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.classCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Classe du conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Classe du conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.pattern_x_">fhir:pattern</a> [
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:code ;
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;CONT&quot;
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.determinerCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.determinerCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Type du conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Type du conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.pattern_x_">fhir:pattern</a> [
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:code ;
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;INSTANCE&quot;
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.code&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.code&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Code du produit de santé prescrit&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Code du produit de santé prescrit&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.code&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/CE&quot;^^xsd:anyURI ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.name&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.name&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Nom de marque du conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Nom de marque du conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.name&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/EN&quot;^^xsd:anyURI ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.formCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.formCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Conditionnement&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/CE&quot;^^xsd:anyURI ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.capacityQuantity&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.capacityQuantity&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Capacité du conditionnement primaire&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Capacité du conditionnement primaire&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/PQ&quot;^^xsd:anyURI ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;BackboneElement&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unique id for inter-element referencing&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.id&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.type.extension">fhir:extension</a> ( [
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">a</a> fhir:url ;
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">fhir:v</a> &quot;id&quot;^^xsd:anyURI
+           ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.condition">fhir:condition</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing">fhir:slicing</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator">fhir:discriminator</a> ( [
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;value&quot; ] ;
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;url&quot; ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions are always sliced by (at least) url&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.rules">fhir:rules</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;open&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Additional content defined by implementations&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.extension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions that cannot be ignored even if unrecognized&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.requirements">fhir:requirements</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;modifiers&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;BackboneElement.modifierExtension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;BackboneElement&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.id&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unique id for inter-element referencing&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.id&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.type.extension">fhir:extension</a> ( [
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
+           <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">a</a> fhir:url ;
+             <a href="http://hl7.org/fhir/R5/datatypes.html#url">fhir:v</a> &quot;id&quot;^^xsd:anyURI
+           ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.condition">fhir:condition</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing">fhir:slicing</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator">fhir:discriminator</a> ( [
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;value&quot; ] ;
+           <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.discriminator.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;url&quot; ]
+         ] ) ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions are always sliced by (at least) url&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.slicing.rules">fhir:rules</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;open&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Additional content defined by implementations&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Element.extension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.modifierExtension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extensions that cannot be ignored even if unrecognized&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.requirements">fhir:requirements</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.alias">fhir:alias</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extensions&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;user content&quot; ] [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;modifiers&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;BackboneElement.modifierExtension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;Extension&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint">fhir:constraint</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element|5.0.0&gt;
+         ]
+       ] [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ext-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Must have either extensions or value[x], not both&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;extension.exists() != value.exists()&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.constraint.source">fhir:source</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension|5.0.0&gt;
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping">fhir:mapping</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Classe du conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Classe du conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.pattern_x_">fhir:pattern</a> [
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:code ;
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;CONT&quot;
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Type du conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Type du conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.pattern_x_">fhir:pattern</a> [
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:code ;
+         <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;INSTANCE&quot;
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.extension">fhir:extension</a> ( [
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/xml-namespace&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/extensibility.html#Extension#XExtension.value_x_">fhir:value</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">a</a> fhir:uri ;
+           <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ihe:pharm:medication&quot;^^xsd:anyURI
+         ]
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Capacité du conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Capacité du conditionnement supérieur&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/PQ&quot;^^xsd:anyURI ]
        ] )
      ] [
        <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;ManufacturedProduct.manufacturedMaterial.formCode&quot; ] ;
@@ -3371,8 +4224,8 @@ Profil TTL
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.cda.fr.document-core#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Date de génération : 
-  <span title="2026-07-29 09:37:00 +0000">
-    2026-07-29
+  <span title="2026-08-03 10:14:00 +0000">
+    2026-08-03
   </span>
 
           <br/>

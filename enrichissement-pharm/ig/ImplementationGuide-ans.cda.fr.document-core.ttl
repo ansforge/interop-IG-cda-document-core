@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "CDAFRDocumentCore"] ; # 
   fhir:title [ fhir:v "FR Document Core (CDA)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-07-29T09:37:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-08-03T10:14:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -479,38 +479,6 @@
        fhir:description [ fhir:v "Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15)." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-antecedents-familiaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Antecedents familiaux" ] ;
-       fhir:description [ fhir:v "Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3)." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-section-antecedents-familiaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-antecedents-familiaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Antecedents familiaux" ] ;
-       fhir:description [ fhir:v "IHE-PCC Coded-Family-Medical-History\n - Liste codée des antécédents familiaux" ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "ressources-cda-corps-sections" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1356,6 +1324,38 @@
        ] ;
        fhir:name [ fhir:v "CDA - FR En rapport avec la prevention" ] ;
        fhir:description [ fhir:v "Entrée FR-En-rapport-avec-la-prevention: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une prévention." ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-antecedents-familiaux" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Entrée Antecedents familiaux" ] ;
+       fhir:description [ fhir:v "Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3)." ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-signes-vitaux> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-signes-vitaux" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Entrée Signes vitaux" ] ;
+       fhir:description [ fhir:v "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
      ] [
@@ -2502,6 +2502,38 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-section-antecedents-familiaux> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-antecedents-familiaux" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Section Antecedents familiaux" ] ;
+       fhir:description [ fhir:v "IHE-PCC Coded-Family-Medical-History\n - Liste codée des antécédents familiaux" ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "ressources-cda-corps-sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-section-signes-vitaux> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-signes-vitaux" ]
+       ] ;
+       fhir:name [ fhir:v "CDA - FR Section Signes vitaux" ] ;
+       fhir:description [ fhir:v "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux." ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "ressources-cda-corps-sections" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-severite> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-severite" ]
        ] ;
@@ -2525,38 +2557,6 @@
        fhir:description [ fhir:v "Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique. Cette entrée est utilisée dans un élément component d'un élément Signes vitaux (1.3.6.1.4.1.19376.1.5.3.1.4.13.1). Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-signes-vitaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-signes-vitaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Signes vitaux" ] ;
-       fhir:description [ fhir:v "Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:logical"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-section-signes-vitaux> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-cda-section-signes-vitaux" ]
-       ] ;
-       fhir:name [ fhir:v "CDA - FR Signes vitaux" ] ;
-       fhir:description [ fhir:v "IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "ressources-cda-corps-sections" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

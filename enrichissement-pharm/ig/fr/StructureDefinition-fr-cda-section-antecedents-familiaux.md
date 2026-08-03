@@ -1,6 +1,6 @@
-# CDA - FR Antecedents familiaux - FR Document Core (CDA) v0.1.0
+# CDA - FR Section Antecedents familiaux - FR Document Core (CDA) v0.1.0
 
-## Modèle logique: CDA - FR Antecedents familiaux 
+## Modèle logique: CDA - FR Section Antecedents familiaux 
 
  
 IHE-PCC Coded-Family-Medical-History 
@@ -39,7 +39,7 @@ Obligatoire : 14 éléments
 
 Cette structure fait référence à ces autres structures:
 
-* [CDA - FR Antecedents familiaux (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux|0.1.0)](StructureDefinition-fr-cda-antecedents-familiaux.md)
+* [CDA - FR Entrée Antecedents familiaux (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux|0.1.0)](StructureDefinition-fr-cda-antecedents-familiaux.md)
 
 **Slices**
 
@@ -68,7 +68,7 @@ Obligatoire : 14 éléments
 
 Cette structure fait référence à ces autres structures:
 
-* [CDA - FR Antecedents familiaux (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux|0.1.0)](StructureDefinition-fr-cda-antecedents-familiaux.md)
+* [CDA - FR Entrée Antecedents familiaux (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux|0.1.0)](StructureDefinition-fr-cda-antecedents-familiaux.md)
 
 **Slices**
 
@@ -116,9 +116,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
   "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-section-antecedents-familiaux",
   "version" : "0.1.0",
   "name" : "FRCDASectionAntecedentsFamiliaux",
-  "title" : "CDA - FR Antecedents familiaux",
+  "title" : "CDA - FR Section Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-07-29T09:37:21+00:00",
+  "date" : "2026-08-03T10:14:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

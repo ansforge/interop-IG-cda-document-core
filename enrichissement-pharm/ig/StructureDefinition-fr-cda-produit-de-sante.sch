@@ -51,7 +51,9 @@
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:name) &lt;= 1">name: maximum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:lotNumberText) &lt;= 1">lotNumberText: maximum cardinality of 'lotNumberText' is 1</sch:assert>
-      <sch:assert test="count(f:sdtcExpirationTime) &lt;= 1">sdtcExpirationTime: maximum cardinality of 'sdtcExpirationTime' is 1</sch:assert>
+      <sch:assert test="count(f:sdtcExpirationTime) &lt;= 0">sdtcExpirationTime: maximum cardinality of 'sdtcExpirationTime' is 0</sch:assert>
+      <sch:assert test="count(f:expirationTime) &lt;= 1">expirationTime: maximum cardinality of 'expirationTime' is 1</sch:assert>
+      <sch:assert test="count(f:asContent) &lt;= 1">asContent: maximum cardinality of 'asContent' is 1</sch:assert>
       <sch:assert test="count(f:formCode) &lt;= 1">formCode: maximum cardinality of 'formCode' is 1</sch:assert>
       <sch:assert test="count(f:asSpecializedKind) &lt;= 1">asSpecializedKind: maximum cardinality of 'asSpecializedKind' is 1</sch:assert>
     </sch:rule>
@@ -107,6 +109,52 @@
       <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
       <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
       <sch:assert test="count(f:thumbnail) &lt;= 1">thumbnail: maximum cardinality of 'thumbnail' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ManufacturedProduct/f:manufacturedMaterial/f:asContent</sch:title>
+    <sch:rule context="f:ManufacturedProduct/f:manufacturedMaterial/f:asContent">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &gt;= 1">classCode: minimum cardinality of 'classCode' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &lt;= 1">classCode: maximum cardinality of 'classCode' is 1</sch:assert>
+      <sch:assert test="count(f:containerPackagedMedicine) &gt;= 1">containerPackagedMedicine: minimum cardinality of 'containerPackagedMedicine' is 1</sch:assert>
+      <sch:assert test="count(f:containerPackagedMedicine) &lt;= 1">containerPackagedMedicine: maximum cardinality of 'containerPackagedMedicine' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ManufacturedProduct/f:manufacturedMaterial/f:asContent/f:containerPackagedMedicine</sch:title>
+    <sch:rule context="f:ManufacturedProduct/f:manufacturedMaterial/f:asContent/f:containerPackagedMedicine">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &gt;= 1">classCode: minimum cardinality of 'classCode' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &lt;= 1">classCode: maximum cardinality of 'classCode' is 1</sch:assert>
+      <sch:assert test="count(f:determinerCode) &gt;= 1">determinerCode: minimum cardinality of 'determinerCode' is 1</sch:assert>
+      <sch:assert test="count(f:determinerCode) &lt;= 1">determinerCode: maximum cardinality of 'determinerCode' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:name) &lt;= 1">name: maximum cardinality of 'name' is 1</sch:assert>
+      <sch:assert test="count(f:formCode) &lt;= 1">formCode: maximum cardinality of 'formCode' is 1</sch:assert>
+      <sch:assert test="count(f:capacityQuantity) &gt;= 1">capacityQuantity: minimum cardinality of 'capacityQuantity' is 1</sch:assert>
+      <sch:assert test="count(f:capacityQuantity) &lt;= 1">capacityQuantity: maximum cardinality of 'capacityQuantity' is 1</sch:assert>
+      <sch:assert test="count(f:asSuperContent) &lt;= 1">asSuperContent: maximum cardinality of 'asSuperContent' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ManufacturedProduct/f:manufacturedMaterial/f:asContent/f:containerPackagedMedicine/f:asSuperContent</sch:title>
+    <sch:rule context="f:ManufacturedProduct/f:manufacturedMaterial/f:asContent/f:containerPackagedMedicine/f:asSuperContent">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:containerPackagedMedicine) &gt;= 1">containerPackagedMedicine: minimum cardinality of 'containerPackagedMedicine' is 1</sch:assert>
+      <sch:assert test="count(f:containerPackagedMedicine) &lt;= 1">containerPackagedMedicine: maximum cardinality of 'containerPackagedMedicine' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ManufacturedProduct/f:manufacturedMaterial/f:asContent/f:containerPackagedMedicine/f:asSuperContent/f:containerPackagedMedicine</sch:title>
+    <sch:rule context="f:ManufacturedProduct/f:manufacturedMaterial/f:asContent/f:containerPackagedMedicine/f:asSuperContent/f:containerPackagedMedicine">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &gt;= 1">classCode: minimum cardinality of 'classCode' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &lt;= 1">classCode: maximum cardinality of 'classCode' is 1</sch:assert>
+      <sch:assert test="count(f:determinerCode) &gt;= 1">determinerCode: minimum cardinality of 'determinerCode' is 1</sch:assert>
+      <sch:assert test="count(f:determinerCode) &lt;= 1">determinerCode: maximum cardinality of 'determinerCode' is 1</sch:assert>
+      <sch:assert test="count(f:capacityQuantity) &gt;= 1">capacityQuantity: minimum cardinality of 'capacityQuantity' is 1</sch:assert>
+      <sch:assert test="count(f:capacityQuantity) &lt;= 1">capacityQuantity: maximum cardinality of 'capacityQuantity' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -7,7 +7,7 @@ Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil de modèle logique: [CDA - FR Signes vitaux](StructureDefinition-fr-cda-signes-vitaux.md)
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Entrée Signes vitaux](StructureDefinition-fr-cda-signes-vitaux.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-signe-vital-observe)
 
@@ -120,7 +120,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-signe-vi
   "name" : "FRCDASigneVitalObserve",
   "title" : "CDA - FR Signe vital observe",
   "status" : "draft",
-  "date" : "2026-07-29T09:37:21+00:00",
+  "date" : "2026-08-03T10:14:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

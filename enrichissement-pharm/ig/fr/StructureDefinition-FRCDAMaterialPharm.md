@@ -30,12 +30,14 @@ Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-s
 
 ** Résumé **
 
-Obligatoire : 0 élément(9 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(18 éléments obligatoire(s) imbriqué(s))
+ Interdit : 1 élément
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [IVL_TS: Interval (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-IVL-TS.html)
 * [RTO_PQ_PQ: Ratio (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RTO-PQ-PQ.html)
 
  **Vue différentielle** 
@@ -52,12 +54,14 @@ Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-s
 
 ** Résumé **
 
-Obligatoire : 0 élément(9 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(18 éléments obligatoire(s) imbriqué(s))
+ Interdit : 1 élément
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
+* [IVL_TS: Interval (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-IVL-TS.html)
 * [RTO_PQ_PQ: Ratio (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RTO-PQ-PQ.html)
 
  
@@ -102,7 +106,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-FRCDAMaterialPh
   "name" : "FRCDAMaterialPharm",
   "title" : "CDA - Matériau pharmaceutique enrichi",
   "status" : "draft",
-  "date" : "2026-07-29T09:37:21+00:00",
+  "date" : "2026-08-03T10:14:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -136,6 +140,223 @@ Autres représentations du profil : [CSV](../StructureDefinition-FRCDAMaterialPh
       "path" : "FRCDAMaterialPharm",
       "short" : "CDA - Matériau pharmaceutique enrichi",
       "definition" : "Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français."
+    },
+    {
+      "id" : "FRCDAMaterialPharm.sdtcExpirationTime",
+      "path" : "FRCDAMaterialPharm.sdtcExpirationTime",
+      "max" : "0"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.expirationTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.expirationTime",
+      "short" : "Date d'expiration du produit",
+      "definition" : "Date d'expiration du produit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL_TS",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent",
+      "short" : "Présentation / conditionnement",
+      "definition" : "Description du conditionnement du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la relation contenu",
+      "definition" : "Classe de la relation contenu",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+      "short" : "Conditionnement primaire",
+      "definition" : "Description du conditionnement primaire du produit.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du conditionnement",
+      "definition" : "Classe du conditionnement",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Type du conditionnement",
+      "definition" : "Type du conditionnement",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "INSTANCE"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+      "short" : "Code du produit de santé prescrit",
+      "definition" : "Code du produit de santé prescrit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+      "short" : "Nom de marque du conditionnement",
+      "definition" : "Nom de marque du conditionnement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+      "short" : "Conditionnement",
+      "definition" : "Conditionnement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+      "short" : "Capacité du conditionnement primaire",
+      "definition" : "Capacité du conditionnement primaire",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+      "short" : "Conditionnement supérieur",
+      "definition" : "Conditionnement supérieur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+      "short" : "Conditionnement supérieur",
+      "definition" : "Conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du conditionnement supérieur",
+      "definition" : "Classe du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Type du conditionnement supérieur",
+      "definition" : "Type du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "INSTANCE"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+      "short" : "Capacité du conditionnement supérieur",
+      "definition" : "Capacité du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }]
     },
     {
       "id" : "FRCDAMaterialPharm.formCode",
