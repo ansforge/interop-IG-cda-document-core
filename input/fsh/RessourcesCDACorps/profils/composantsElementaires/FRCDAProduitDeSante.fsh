@@ -15,6 +15,7 @@ and ccdProductEntry 1..1
 * templateId[ccdProductEntry].root = "2.16.840.1.113883.10.20.1.53"
 * manufacturedMaterial MS
 * manufacturedMaterial 1..1
+* manufacturedMaterial only FRCDAMaterialPharm
   * templateId 0..1
   * templateId.root = "1.3.6.1.4.1.19376.1.9.1.3.1"
   * code 1..1
@@ -25,8 +26,3 @@ and ccdProductEntry 1..1
   * name 1..1
   * name ^short = "Nom de marque du produit"
   * lotNumberText ^short = "Numéro de lot"
-//  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:formCode
-//  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:expirationTime
-//  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:asContent
-//  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:asSpecializedKind
-//  hl7:manufacturedProduct.hl7:manufacturedMaterial.pharm:ingredient
