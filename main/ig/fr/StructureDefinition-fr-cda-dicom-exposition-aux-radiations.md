@@ -128,7 +128,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ex
   "name" : "FRCDASectionDICOMExpositionAuxRadiations",
   "title" : "CDA - FR DICOM Exposition aux radiations",
   "status" : "draft",
-  "date" : "2026-08-03T13:35:26+00:00",
+  "date" : "2026-08-11T08:10:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

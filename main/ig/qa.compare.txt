@@ -1,7 +1,7 @@
 CDAFRDocumentCore : Validation Results
 =========================================
 
-err = 1059, warn = 1708, info = 1132
+err = 1058, warn = 1709, info = 1132
 $--
 Generated $--. FHIR version $-- for ans.cda.fr.document-core#$-- (canonical = https://interop.esante.gouv.fr/ig/cda/document-core)
  Build Errors : 1027 / 10 / 0
@@ -123,7 +123,7 @@ Generated $--. FHIR version $-- for ans.cda.fr.document-core#$-- (canonical = ht
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-name : 0 / 0 / 15
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-non-remboursable : 0 / 3 / 99
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-notes-du-dispensateur : 0 / 1 / 81
- /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-observation-sur-echelle-douleur : 1 / 3 / 109
+ /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-observation-sur-echelle-douleur : 0 / 4 / 109
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-observation-sur-la-grossesse : 0 / 3 / 84
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-order : 0 / 2 / 29
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/StructureDefinition-fr-cda-organisme-assurance-maladie : 0 / 20 / 250
@@ -2645,7 +2645,7 @@ INFORMATION: StructureDefinition/fr-cda-notes-du-dispensateur: StructureDefiniti
 WARNING: StructureDefinition/fr-cda-notes-du-dispensateur: StructureDefinition.snapshot.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
 INFORMATION: Resource: The resource StructureDefinition/fr-cda-notes-du-dispensateur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-fr-cda-observation-sur-echelle-douleur.json ==
-ERROR: CDA - FR Observation sur echelle douleur.Observation.interpretationCode: Binding https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evaluation-douleur-cisis is not a subset of binding http://hl7.org/cda/stds/core/ValueSet/CDAObservationInterpretation because The codes '81765008,50415004,MED-659,76948002,67849003,40196000' are not in the base valueset
+WARNING: CDA - FR Observation sur echelle douleur.Observation.interpretationCode: Binding https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evaluation-douleur-cisis could not be expanded
 INFORMATION: StructureDefinition/fr-cda-observation-sur-echelle-douleur: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 WARNING: StructureDefinition/fr-cda-observation-sur-echelle-douleur: StructureDefinition.snapshot.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
 WARNING: StructureDefinition/fr-cda-observation-sur-echelle-douleur: StructureDefinition.snapshot.element[105]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
