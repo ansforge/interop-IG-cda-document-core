@@ -63,7 +63,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-admi
   "name" : "FRCDADICOMAdministrationRadiopharmaceutique",
   "title" : "CDA - FR DICOM Administration radiopharmaceutique",
   "status" : "draft",
-  "date" : "2026-08-11T08:10:28+00:00",
+  "date" : "2026-08-11T09:29:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
