@@ -1,0 +1,2136 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-cda-dicom-quantite",
+  "language" : "fr",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : StructureDefinition fr-cda-dicom-quantite</b></p><a name=\"fr-cda-dicom-quantite\"> </a><a name=\"hcfr-cda-dicom-quantite\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html\">Observation(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Espace de noms (namespace) XML: </span>urn:hl7-org:v3<br/><span style=\"font-weight:bold\">Les instances de ce type sont validées par templateId</span><br/><span style=\"font-weight:bold\" title=\"La classe racine qui contient les instances de cette classe\">Conteneur logique: </span><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Définition de Slice\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.templateId\">Slices pour templateId</a><a name=\"Observation.templateId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">2</span><span style=\"font-style: italic\">..</span><span style=\"font-style: italic\">2</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Non ordonné, Ouvert par value:root</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.templateId:dicomQuantityMeasurement\" title=\"Slice dicomQuantityMeasurement: Conformité Quantity Measurement (DICOM Part 20)\">templateId:dicomQuantityMeasurement</a><a name=\"Observation.templateId:dicomQuantityMeasurement\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Conformité Quantity Measurement (DICOM Part 20)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.templateId:dicomQuantityMeasurement.root\">@root</a><a name=\"Observation.templateId:dicomQuantityMeasurement.root\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">2.16.840.1.113883.10.20.6.2.14</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.templateId:frDicomQuantite\" title=\"Slice frDicomQuantite: Conformité FR-DICOM-Quantite (CI-SIS)\">templateId:frDicomQuantite</a><a name=\"Observation.templateId:frDicomQuantite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Conformité FR-DICOM-Quantite (CI-SIS)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.templateId:frDicomQuantite.root\">@root</a><a name=\"Observation.templateId:frDicomQuantite.root\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">1.2.250.1.213.1.1.3.154</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.classCode\">@classCode</a><a name=\"Observation.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">OBS</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.moodCode\">@moodCode</a><a name=\"Observation.moodCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">EVN</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.negationInd\">@negationInd</a><a name=\"Observation.negationInd\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-bl-simple.html\" title=\"boolean\">bl(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.id\" title=\"Identifiant de l'entrée\">id</a><a name=\"Observation.id\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifiant de l'entrée</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.code\" title=\"Code de l'observation\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code de l'observation<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-quantite-exposition-rayonnements-cisis.html\" title=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis\" class=\"binding\">JdvQuantiteExpositionRayonnementsCisis (20260716085851)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.code.code\">@code</a><a name=\"Observation.code.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.code.codeSystem\">@codeSystem</a><a name=\"Observation.code.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.code.displayName\">@displayName</a><a name=\"Observation.code.displayName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html\" title=\"string\">st(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.text\" title=\"Partie narrative de l'entrée\">text</a><a name=\"Observation.text\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ED.html\">ED</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partie narrative de l'entrée</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.statusCode\" title=\"Status de l'entrée\">statusCode</a><a name=\"Observation.statusCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html\">CS</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Status de l'entrée<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html\" title=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis\" class=\"binding\">ActStatus (20260716085852)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.effectiveTime\" title=\"Date de l'entrée\">effectiveTime</a><a name=\"Observation.effectiveTime\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-IVL-TS.html\">IVL_TS</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date de l'entrée</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.value\">value</a><a name=\"Observation.value\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-PQ.html\">PQ</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.interpretationCode\" title=\"non utilisé\">interpretationCode</a><a name=\"Observation.interpretationCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">non utilisé</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.methodCode\" title=\"non utilisé\">methodCode</a><a name=\"Observation.methodCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">non utilisé</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode\" title=\"Localisation anatomique\">targetSiteCode</a><a name=\"Observation.targetSiteCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Localisation anatomique : SNOMED CT (2.16.840.1.113883.6.96)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier\" title=\"Précision topographique\">qualifier</a><a name=\"Observation.targetSiteCode.qualifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CR.html\">CR</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Précision topographique</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier.name\">name</a><a name=\"Observation.targetSiteCode.qualifier.name\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CV.html\">CV</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier.name.code\">@code</a><a name=\"Observation.targetSiteCode.qualifier.name.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">106233006</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier.name.codeSystem\">@codeSystem</a><a name=\"Observation.targetSiteCode.qualifier.name.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">2.16.840.1.113883.6.96</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier.name.codeSystemName\">@codeSystemName</a><a name=\"Observation.targetSiteCode.qualifier.name.codeSystemName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html\" title=\"string\">st(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">SNOMED-CT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier.name.displayName\">@displayName</a><a name=\"Observation.targetSiteCode.qualifier.name.displayName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html\" title=\"string\">st(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Motif requis: </span><span style=\"color: darkgreen\">modificateur topographique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-dicom-quantite-definitions.html#Observation.targetSiteCode.qualifier.value\" title=\"Valeur de la topographie\">value</a><a name=\"Observation.targetSiteCode.qualifier.value\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"Cet élément doit être pris en charge\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Valeur de la topographie<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html\" title=\"https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis\" class=\"binding\">JdvModificateurTopographiqueCisis (20260716085851)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "not-applicable"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri" : "urn:hl7-org:v3"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString" : "observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueCode" : "cda"
+  }],
+  "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-quantite",
+  "version" : "0.1.0",
+  "name" : "FRCDADICOMQuantite",
+  "title" : "CDA - FR DICOM Quantite",
+  "status" : "draft",
+  "date" : "2026-08-27T12:53:16+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Entrée FR-DICOM-Quantite: DICOM Part 20 -\u00a0Quantity Measurement. Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie, La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
+  "baseDefinition" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation|2.0.3-sd",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "2.0.3-sd"
+    }],
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "short" : "Base for all types and resources",
+      "definition" : "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Observation.nullFlavor",
+      "path" : "Observation.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.realmCode",
+      "path" : "Observation.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "Observation.typeId",
+      "path" : "Observation.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "Observation.typeId.nullFlavor",
+      "path" : "Observation.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.typeId.assigningAuthorityName",
+      "path" : "Observation.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.typeId.displayable",
+      "path" : "Observation.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.typeId.root",
+      "path" : "Observation.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "Observation.typeId.extension",
+      "path" : "Observation.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.templateId",
+      "path" : "Observation.templateId",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "root"
+        }],
+        "rules" : "open"
+      },
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 2,
+      "max" : "2",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement",
+      "path" : "Observation.templateId",
+      "sliceName" : "dicomQuantityMeasurement",
+      "short" : "Conformité Quantity Measurement (DICOM Part 20)",
+      "definition" : "Conformité Quantity Measurement (DICOM Part 20)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement.nullFlavor",
+      "path" : "Observation.templateId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement.assigningAuthorityName",
+      "path" : "Observation.templateId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement.displayable",
+      "path" : "Observation.templateId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement.root",
+      "path" : "Observation.templateId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "patternString" : "2.16.840.1.113883.10.20.6.2.14"
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement.extension",
+      "path" : "Observation.templateId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite",
+      "path" : "Observation.templateId",
+      "sliceName" : "frDicomQuantite",
+      "short" : "Conformité FR-DICOM-Quantite (CI-SIS)",
+      "definition" : "Conformité FR-DICOM-Quantite (CI-SIS)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite.nullFlavor",
+      "path" : "Observation.templateId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite.assigningAuthorityName",
+      "path" : "Observation.templateId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite.displayable",
+      "path" : "Observation.templateId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite.root",
+      "path" : "Observation.templateId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "patternString" : "1.2.250.1.213.1.1.3.154"
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite.extension",
+      "path" : "Observation.templateId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.classCode",
+      "path" : "Observation.classCode",
+      "representation" : ["xmlAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "OBS",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAActClassObservation|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.moodCode",
+      "path" : "Observation.moodCode",
+      "representation" : ["xmlAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.moodCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "EVN",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-xActMoodDocumentObservation|2.0.0"
+      }
+    },
+    {
+      "id" : "Observation.negationInd",
+      "path" : "Observation.negationInd",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.negationInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.id",
+      "path" : "Observation.id",
+      "short" : "Identifiant de l'entrée",
+      "definition" : "Identifiant de l'entrée",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.id",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.sdtcCategory",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "category"
+      }],
+      "path" : "Observation.sdtcCategory",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.sdtcCategory",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "representation" : ["typeAttr"],
+      "short" : "Code de l'observation",
+      "definition" : "Code de l'observation",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.code",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis|20260716085851"
+      }
+    },
+    {
+      "id" : "Observation.code.nullFlavor",
+      "path" : "Observation.code.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "representation" : ["xmlAttr"],
+      "label" : "Code",
+      "definition" : "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System",
+      "definition" : "Specifies the code system that defines the code.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystem",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystemName",
+      "path" : "Observation.code.codeSystemName",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Name",
+      "definition" : "The common name of the coding system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.code.codeSystemVersion",
+      "path" : "Observation.code.codeSystemVersion",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Version",
+      "definition" : "If applicable, a version descriptor defined specifically for the given code system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "representation" : ["xmlAttr"],
+      "label" : "Display Name",
+      "definition" : "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.displayName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.sdtcValueSet",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSet"
+      }],
+      "path" : "Observation.code.sdtcValueSet",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.valueSet",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.code.sdtcValueSetVersion",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSetVersion"
+      }],
+      "path" : "Observation.code.sdtcValueSetVersion",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.sdtcValueSetVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.code.originalText",
+      "path" : "Observation.code.originalText",
+      "label" : "Original Text",
+      "definition" : "The text or phrase used as the basis for the coding.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.originalText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }]
+    },
+    {
+      "id" : "Observation.code.qualifier",
+      "path" : "Observation.code.qualifier",
+      "label" : "Qualifier",
+      "definition" : "Specifies additional codes that increase the specificity of the the primary code.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CD.qualifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      }]
+    },
+    {
+      "id" : "Observation.code.translation",
+      "path" : "Observation.code.translation",
+      "representation" : ["typeAttr"],
+      "label" : "Translation",
+      "definition" : "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CD.translation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "Observation.derivationExpr",
+      "path" : "Observation.derivationExpr",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.derivationExpr",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ST"
+      }]
+    },
+    {
+      "id" : "Observation.text",
+      "path" : "Observation.text",
+      "representation" : ["typeAttr"],
+      "short" : "Partie narrative de l'entrée",
+      "definition" : "Partie narrative de l'entrée",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.statusCode",
+      "path" : "Observation.statusCode",
+      "short" : "Status de l'entrée",
+      "definition" : "Status de l'entrée",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.statusCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852"
+      }
+    },
+    {
+      "id" : "Observation.effectiveTime",
+      "path" : "Observation.effectiveTime",
+      "short" : "Date de l'entrée",
+      "definition" : "Date de l'entrée",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.effectiveTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.priorityCode",
+      "path" : "Observation.priorityCode",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.priorityCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0"
+      }
+    },
+    {
+      "id" : "Observation.repeatNumber",
+      "path" : "Observation.repeatNumber",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.repeatNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"
+      }]
+    },
+    {
+      "id" : "Observation.languageCode",
+      "path" : "Observation.languageCode",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.languageCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+      }
+    },
+    {
+      "id" : "Observation.value",
+      "path" : "Observation.value",
+      "representation" : ["typeAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.value",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretationCode",
+      "path" : "Observation.interpretationCode",
+      "short" : "non utilisé",
+      "definition" : "non utilisé",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.interpretationCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAObservationInterpretation|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.methodCode",
+      "path" : "Observation.methodCode",
+      "short" : "non utilisé",
+      "definition" : "non utilisé",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.methodCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ObservationMethod|3.0.0"
+      }
+    },
+    {
+      "id" : "Observation.targetSiteCode",
+      "path" : "Observation.targetSiteCode",
+      "short" : "Localisation anatomique : SNOMED CT (2.16.840.1.113883.6.96)",
+      "definition" : "Localisation anatomique",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.targetSiteCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.nullFlavor",
+      "path" : "Observation.targetSiteCode.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.targetSiteCode.code",
+      "path" : "Observation.targetSiteCode.code",
+      "representation" : ["xmlAttr"],
+      "label" : "Code",
+      "definition" : "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.codeSystem",
+      "path" : "Observation.targetSiteCode.codeSystem",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System",
+      "definition" : "Specifies the code system that defines the code.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystem",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.codeSystemName",
+      "path" : "Observation.targetSiteCode.codeSystemName",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Name",
+      "definition" : "The common name of the coding system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.codeSystemVersion",
+      "path" : "Observation.targetSiteCode.codeSystemVersion",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Version",
+      "definition" : "If applicable, a version descriptor defined specifically for the given code system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.displayName",
+      "path" : "Observation.targetSiteCode.displayName",
+      "representation" : ["xmlAttr"],
+      "label" : "Display Name",
+      "definition" : "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.displayName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.sdtcValueSet",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSet"
+      }],
+      "path" : "Observation.targetSiteCode.sdtcValueSet",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.valueSet",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.sdtcValueSetVersion",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSetVersion"
+      }],
+      "path" : "Observation.targetSiteCode.sdtcValueSetVersion",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.sdtcValueSetVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.originalText",
+      "path" : "Observation.targetSiteCode.originalText",
+      "label" : "Original Text",
+      "definition" : "The text or phrase used as the basis for the coding.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.originalText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier",
+      "path" : "Observation.targetSiteCode.qualifier",
+      "label" : "Qualifier",
+      "short" : "Précision topographique",
+      "definition" : "Précision topographique",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.qualifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.nullFlavor",
+      "path" : "Observation.targetSiteCode.qualifier.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.inverted",
+      "path" : "Observation.targetSiteCode.qualifier.inverted",
+      "representation" : ["xmlAttr"],
+      "label" : "Inversion Indicator",
+      "definition" : "Indicates if the sense of the role name is inverted. This can be used in cases where the underlying code system defines inversion but does not provide reciprocal pairs of role names. By default, inverted is false.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CR.inverted",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bn|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name",
+      "path" : "Observation.targetSiteCode.qualifier.name",
+      "label" : "Name",
+      "definition" : "Specifies the manner in which the concept role value contributes to the meaning of a code phrase. For example, if SNOMED RT defines a concept \"leg\", a role relation \"has-laterality\", and another concept \"left\", the concept role relation allows to add the qualifier \"has-laterality: left\" to a primary code \"leg\" to construct the meaning \"left leg\". In this example \"has-laterality\" is the CR.name.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "CR.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CV"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.nullFlavor",
+      "path" : "Observation.targetSiteCode.qualifier.name.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.code",
+      "path" : "Observation.targetSiteCode.qualifier.name.code",
+      "representation" : ["xmlAttr"],
+      "label" : "Code",
+      "definition" : "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "106233006"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.codeSystem",
+      "path" : "Observation.targetSiteCode.qualifier.name.codeSystem",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System",
+      "definition" : "Specifies the code system that defines the code.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystem",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "patternString" : "2.16.840.1.113883.6.96"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.codeSystemName",
+      "path" : "Observation.targetSiteCode.qualifier.name.codeSystemName",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Name",
+      "definition" : "The common name of the coding system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }],
+      "patternString" : "SNOMED-CT"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.codeSystemVersion",
+      "path" : "Observation.targetSiteCode.qualifier.name.codeSystemVersion",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Version",
+      "definition" : "If applicable, a version descriptor defined specifically for the given code system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.displayName",
+      "path" : "Observation.targetSiteCode.qualifier.name.displayName",
+      "representation" : ["xmlAttr"],
+      "label" : "Display Name",
+      "definition" : "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.displayName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }],
+      "patternString" : "modificateur topographique"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.sdtcValueSet",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSet"
+      }],
+      "path" : "Observation.targetSiteCode.qualifier.name.sdtcValueSet",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.valueSet",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.sdtcValueSetVersion",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSetVersion"
+      }],
+      "path" : "Observation.targetSiteCode.qualifier.name.sdtcValueSetVersion",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.sdtcValueSetVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.originalText",
+      "path" : "Observation.targetSiteCode.qualifier.name.originalText",
+      "label" : "Original Text",
+      "definition" : "The text or phrase used as the basis for the coding.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.originalText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.qualifier",
+      "path" : "Observation.targetSiteCode.qualifier.name.qualifier",
+      "label" : "Qualifier",
+      "definition" : "Specifies additional codes that increase the specificity of the the primary code.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "CD.qualifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.translation",
+      "path" : "Observation.targetSiteCode.qualifier.name.translation",
+      "representation" : ["typeAttr"],
+      "label" : "Translation",
+      "definition" : "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "CD.translation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.value",
+      "path" : "Observation.targetSiteCode.qualifier.value",
+      "label" : "Value",
+      "short" : "Valeur de la topographie",
+      "definition" : "Valeur de la topographie",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "CR.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851"
+      }
+    },
+    {
+      "id" : "Observation.targetSiteCode.translation",
+      "path" : "Observation.targetSiteCode.translation",
+      "representation" : ["typeAttr"],
+      "label" : "Translation",
+      "definition" : "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CD.translation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.subject",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Subject"
+      }]
+    },
+    {
+      "id" : "Observation.specimen",
+      "path" : "Observation.specimen",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.specimen",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Specimen"
+      }]
+    },
+    {
+      "id" : "Observation.performer",
+      "path" : "Observation.performer",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.performer",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Performer2"
+      }]
+    },
+    {
+      "id" : "Observation.author",
+      "path" : "Observation.author",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.author",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author"
+      }]
+    },
+    {
+      "id" : "Observation.informant",
+      "path" : "Observation.informant",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.informant",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant"
+      }]
+    },
+    {
+      "id" : "Observation.participant",
+      "path" : "Observation.participant",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.participant",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2"
+      }]
+    },
+    {
+      "id" : "Observation.entryRelationship",
+      "path" : "Observation.entryRelationship",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.entryRelationship",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      }]
+    },
+    {
+      "id" : "Observation.reference",
+      "path" : "Observation.reference",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.reference",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+      }]
+    },
+    {
+      "id" : "Observation.precondition",
+      "path" : "Observation.precondition",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.precondition",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Precondition"
+      }]
+    },
+    {
+      "id" : "Observation.sdtcPrecondition2",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "precondition2"
+      }],
+      "path" : "Observation.sdtcPrecondition2",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.sdtcPrecondition2",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Precondition2"
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange",
+      "path" : "Observation.referenceRange",
+      "definition" : "Relates an Observation to the ObservationRange class, where the expected range of values for a particular observation can be specified.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.referenceRange",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.nullFlavor",
+      "path" : "Observation.referenceRange.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.referenceRange.realmCode",
+      "path" : "Observation.referenceRange.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.typeId",
+      "path" : "Observation.referenceRange.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.typeId.nullFlavor",
+      "path" : "Observation.referenceRange.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.referenceRange.typeId.assigningAuthorityName",
+      "path" : "Observation.referenceRange.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.typeId.displayable",
+      "path" : "Observation.referenceRange.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.typeId.root",
+      "path" : "Observation.referenceRange.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "Observation.referenceRange.typeId.extension",
+      "path" : "Observation.referenceRange.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.templateId",
+      "path" : "Observation.referenceRange.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "Observation.referenceRange.typeCode",
+      "path" : "Observation.referenceRange.typeCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.referenceRange.typeCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "REFV",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAActRelationshipType|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "Observation.referenceRange.observationRange",
+      "path" : "Observation.referenceRange.observationRange",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.referenceRange.observationRange",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ObservationRange"
+      }]
+    },
+    {
+      "id" : "Observation.sdtcInFulfillmentOf1",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "inFulfillmentOf1"
+      }],
+      "path" : "Observation.sdtcInFulfillmentOf1",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Observation.sdtcInFulfillmentOf1",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "Observation.templateId",
+      "path" : "Observation.templateId",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "root"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement",
+      "path" : "Observation.templateId",
+      "sliceName" : "dicomQuantityMeasurement",
+      "short" : "Conformité Quantity Measurement (DICOM Part 20)",
+      "definition" : "Conformité Quantity Measurement (DICOM Part 20)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.templateId:dicomQuantityMeasurement.root",
+      "path" : "Observation.templateId.root",
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.10.20.6.2.14"
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite",
+      "path" : "Observation.templateId",
+      "sliceName" : "frDicomQuantite",
+      "short" : "Conformité FR-DICOM-Quantite (CI-SIS)",
+      "definition" : "Conformité FR-DICOM-Quantite (CI-SIS)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.templateId:frDicomQuantite.root",
+      "path" : "Observation.templateId.root",
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.3.154"
+    },
+    {
+      "id" : "Observation.classCode",
+      "path" : "Observation.classCode",
+      "patternCode" : "OBS",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.moodCode",
+      "path" : "Observation.moodCode",
+      "patternCode" : "EVN",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.negationInd",
+      "path" : "Observation.negationInd",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.id",
+      "path" : "Observation.id",
+      "short" : "Identifiant de l'entrée",
+      "definition" : "Identifiant de l'entrée",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "short" : "Code de l'observation",
+      "definition" : "Code de l'observation",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-quantite-exposition-rayonnements-cisis|20260716085851"
+      }
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.text",
+      "path" : "Observation.text",
+      "short" : "Partie narrative de l'entrée",
+      "definition" : "Partie narrative de l'entrée",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.statusCode",
+      "path" : "Observation.statusCode",
+      "short" : "Status de l'entrée",
+      "definition" : "Status de l'entrée",
+      "min" : 1,
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852"
+      }
+    },
+    {
+      "id" : "Observation.effectiveTime",
+      "path" : "Observation.effectiveTime",
+      "short" : "Date de l'entrée",
+      "definition" : "Date de l'entrée",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value",
+      "path" : "Observation.value",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretationCode",
+      "path" : "Observation.interpretationCode",
+      "short" : "non utilisé",
+      "definition" : "non utilisé",
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.methodCode",
+      "path" : "Observation.methodCode",
+      "short" : "non utilisé",
+      "definition" : "non utilisé",
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.targetSiteCode",
+      "path" : "Observation.targetSiteCode",
+      "short" : "Localisation anatomique : SNOMED CT (2.16.840.1.113883.6.96)",
+      "definition" : "Localisation anatomique",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier",
+      "path" : "Observation.targetSiteCode.qualifier",
+      "short" : "Précision topographique",
+      "definition" : "Précision topographique",
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name",
+      "path" : "Observation.targetSiteCode.qualifier.name",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.code",
+      "path" : "Observation.targetSiteCode.qualifier.name.code",
+      "patternCode" : "106233006"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.codeSystem",
+      "path" : "Observation.targetSiteCode.qualifier.name.codeSystem",
+      "patternString" : "2.16.840.1.113883.6.96"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.codeSystemName",
+      "path" : "Observation.targetSiteCode.qualifier.name.codeSystemName",
+      "patternString" : "SNOMED-CT"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.name.displayName",
+      "path" : "Observation.targetSiteCode.qualifier.name.displayName",
+      "patternString" : "modificateur topographique"
+    },
+    {
+      "id" : "Observation.targetSiteCode.qualifier.value",
+      "path" : "Observation.targetSiteCode.qualifier.value",
+      "short" : "Valeur de la topographie",
+      "definition" : "Valeur de la topographie",
+      "min" : 1,
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851"
+      }
+    }]
+  }
+}
