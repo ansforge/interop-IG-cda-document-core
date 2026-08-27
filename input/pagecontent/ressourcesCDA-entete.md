@@ -35,7 +35,7 @@ ClinicalDocument hérite de : [https://hl7.org/cda/stds/core/2.0.1-sd/StructureD
 |                     | [informationRecipient](StructureDefinition-fr-cda-information-recipient.html#tabs-snap) | [0..*]  | Destinataire prévu du document                     |                   |
 |                     | [legalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.html#tabs-snap) | [1..1]   | Professionnel ou patient/usager ou système responsable du document | nullFlavor interdit |
 |                     | [authenticator](StructureDefinition-fr-cda-authenticator.html#tabs-snap)     | [0..*]     | Professionnel attestant la validité du document** | nullFlavor interdit |
-|                     | [participant](StructureDefinition-fr-cda-participant.html#tabs-snap)   | [0..*]     | Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire |                   |
+|                     | [participant](StructureDefinition-fr-cda-participant-entete.html#tabs-snap)   | [0..*]     | Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire |                   |
 |                     | [inFulfillmentOf](StructureDefinition-fr-cda-inFulfillment-of.html#tabs-snap)   | [0..*]     | Prescription                                        |                   |
 |                     | [documentationOf](StructureDefinition-fr-cda-documentation-of.html#tabs-snap)  | [1..*]     | Événement documenté et notamment le cadre d’exercice | nullFlavor interdit |
 |                     | [relatedDocument](StructureDefinition-fr-cda-related-document.html#tabs-snap)   | [0..1]     | Document de référence (à remplacer, transformé, …)  |                   |
