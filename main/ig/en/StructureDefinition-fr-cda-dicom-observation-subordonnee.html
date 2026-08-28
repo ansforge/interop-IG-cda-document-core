@@ -50,15 +50,20 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.105"}
-    h3,h4,h5,h6{--heading-prefix:"7.105"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.106"}
+    h3,h4,h5,h6{--heading-prefix:"7.106"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/>
+  </a>
+  <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/>
+  </a>
+</div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
     <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
@@ -324,7 +329,7 @@ CDA - FR DICOM Observation subordonnee
           
 
             as of 
-2026-08-11
+2026-08-28
 
           
         
@@ -484,7 +489,7 @@ CDA - FR DICOM Observation subordonnee
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html">CS</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.effectiveTime" title="Date de l'observation" data-no-external="true">effectiveTime</a><a name="Observation.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -499,12 +504,12 @@ CDA - FR DICOM Observation subordonnee
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ak" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.methodCode" title="Méthode code de l'observation" data-no-external="true">methodCode</a><a name="Observation.methodCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="al" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.targetSiteCode" title="Latéralité et topographie" data-no-external="true">targetSiteCode</a><a name="Observation.targetSiteCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -544,8 +549,8 @@ CDA - FR DICOM Observation subordonnee
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-dicom-observation-subordonneeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'binding', document.getElementById('cbfr-cda-dicom-observation-subordonneeD-binding').checked, document.getElementById('ppfr-cda-dicom-observation-subordonneeD'));
 document.getElementById('cbfr-cda-dicom-observation-subordonneeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -587,12 +592,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -602,12 +607,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -617,12 +622,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -632,12 +637,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
 </table>
@@ -913,7 +918,7 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html">CS</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a13." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.effectiveTime" title="Date de l'observation" data-no-external="true">effectiveTime</a><a name="s-Observation.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1088,12 +1093,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a19." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.methodCode" title="Méthode code de l'observation" data-no-external="true">methodCode</a><a name="s-Observation.methodCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a20." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.targetSiteCode" title="Latéralité et topographie" data-no-external="true">targetSiteCode</a><a name="s-Observation.targetSiteCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -1213,7 +1218,7 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a20.k" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.targetSiteCode.translation" title="A set of other concept descriptors that translate this concept descriptor into other code systems." data-no-external="true">translation</a><a name="s-Observation.targetSiteCode.translation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1334,7 +1339,7 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeD'), 'ob
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">XML Namespace: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-dicom-observation-subordonneeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeS'), 'binding', document.getElementById('cbfr-cda-dicom-observation-subordonneeS-binding').checked, document.getElementById('ppfr-cda-dicom-observation-subordonneeS'));
 document.getElementById('cbfr-cda-dicom-observation-subordonneeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1570,12 +1575,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeS'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -1615,12 +1620,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeS'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -1630,12 +1635,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeS'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -1690,12 +1695,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeS'), 'ob
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2089,7 +2094,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html">CS</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.effectiveTime" title="Date de l'observation" data-no-external="true">effectiveTime</a><a name="a-Observation.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -2104,12 +2109,12 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ak" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.methodCode" title="Méthode code de l'observation" data-no-external="true">methodCode</a><a name="a-Observation.methodCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="al" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.targetSiteCode" title="Latéralité et topographie" data-no-external="true">targetSiteCode</a><a name="a-Observation.targetSiteCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -2149,8 +2154,8 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-dicom-observation-subordonneeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'binding', document.getElementById('cbfr-cda-dicom-observation-subordonneeDA-binding').checked, document.getElementById('ppfr-cda-dicom-observation-subordonneeDA'));
 document.getElementById('cbfr-cda-dicom-observation-subordonneeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2189,12 +2194,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2204,12 +2209,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2219,12 +2224,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2234,12 +2239,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
 </table>
@@ -2515,7 +2520,7 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html">CS</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">status de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a13." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.effectiveTime" title="Date de l'observation" data-no-external="true">effectiveTime</a><a name="sa-Observation.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -2690,12 +2695,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Interprétation code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis" class="binding">ObservationInterpretation (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a19." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.methodCode" title="Méthode code de l'observation" data-no-external="true">methodCode</a><a name="sa-Observation.methodCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Méthode code de l'observation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis" class="binding">ObservationMethod (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a20." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.targetSiteCode" title="Latéralité et topographie" data-no-external="true">targetSiteCode</a><a name="sa-Observation.targetSiteCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -2815,7 +2820,7 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de la topographie<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis" class="binding">JdvModificateurTopographiqueCisis (20260716085851)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a20.k" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-dicom-observation-subordonnee-definitions.html#Observation.targetSiteCode.translation" title="A set of other concept descriptors that translate this concept descriptor into other code systems." data-no-external="true">translation</a><a name="sa-Observation.targetSiteCode.translation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -2936,7 +2941,7 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeDA'), 'o
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">XML Namespace: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-dicom-observation-subordonneeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeSA'), 'binding', document.getElementById('cbfr-cda-dicom-observation-subordonneeSA-binding').checked, document.getElementById('ppfr-cda-dicom-observation-subordonneeSA'));
 document.getElementById('cbfr-cda-dicom-observation-subordonneeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3170,12 +3175,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeSA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -3215,12 +3220,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeSA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationInterpretation-cisis.html">ObservationInterpretation</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -3230,12 +3235,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeSA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ObservationMethod-cisis.html">ObservationMethod</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -3290,12 +3295,12 @@ filterDesc(document.getElementById('fr-cda-dicom-observation-subordonneeSA'), 'o
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-modificateur-topographique-cisis.html">JDV Modificateur Topographique CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="Version is explicitly stated to be 20260716085851">&#x1F4CD;20260716085851</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -3658,8 +3663,8 @@ Summary
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.cda.fr.document-core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-08-11 09:29:00 +0000">
-    2026-08-11
+  <span title="2026-08-28 09:43:00 +0000">
+    2026-08-28
   </span>
 
           <br/>

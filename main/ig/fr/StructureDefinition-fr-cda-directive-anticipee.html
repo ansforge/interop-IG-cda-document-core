@@ -50,15 +50,20 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.112"}
-    h3,h4,h5,h6{--heading-prefix:"7.112"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.113"}
+    h3,h4,h5,h6{--heading-prefix:"7.113"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/>
+  </a>
+  <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/>
+  </a>
+</div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
     <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
@@ -324,7 +329,7 @@ CDA - FR Directive anticipee
           
 
             à partir de 
-2026-08-11
+2026-08-28
 
           
         
@@ -353,7 +358,7 @@ CDA - FR Directive anticipee
 
 <p><b>Utilisations:</b></p>
 <ul>
- <li>Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation</li>
+ <li>Utilise ce/t/te Profil de modèle logique: <a href="StructureDefinition-fr-cda-section-directives-anticipees.html">CDA - FR Directives anticipees</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-directive-anticipee">les usages dans le FHIR IG Statistics</a></p>
 
@@ -476,7 +481,7 @@ CDA - FR Directive anticipee
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260716085853)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aea" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.code.code" data-no-external="true">@code</a><a name="Observation.code.code"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
@@ -551,7 +556,7 @@ CDA - FR Directive anticipee
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ajbbb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.entryRelationship.observationMedia.value.representation" data-no-external="true">@representation</a><a name="Observation.entryRelationship.observationMedia.value.representation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
@@ -602,7 +607,7 @@ CDA - FR Directive anticipee
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-TEL.html">TEL</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-directive-anticipeeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-directive-anticipeeD'), 'binding', document.getElementById('cbfr-cda-directive-anticipeeD-binding').checked, document.getElementById('ppfr-cda-directive-anticipeeD'));
 document.getElementById('cbfr-cda-directive-anticipeeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -644,12 +649,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeD'), 'obligation',
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260716085853" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085853">&#x1F4CD;20260716085853</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -659,12 +664,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeD'), 'obligation',
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
       <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis|20251216141839" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
     <td title="La version est explicitement indiquée comme étant 20251216141839">&#x1F4CD;20251216141839</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
 </table>
@@ -880,7 +885,7 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeD'), 'obligation',
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260716085853)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a9.a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.code.nullFlavor" title="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing." data-no-external="true">@nullFlavor</a><a name="s-Observation.code.nullFlavor"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1295,7 +1300,7 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeD'), 'obligation',
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a27.njg" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.entryRelationship.observationMedia.value.representation" data-no-external="true">@representation</a><a name="s-Observation.entryRelationship.observationMedia.value.representation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -1706,7 +1711,7 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeD'), 'obligation',
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Espace de noms (namespace) XML: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-directive-anticipeeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-directive-anticipeeS'), 'binding', document.getElementById('cbfr-cda-directive-anticipeeS-binding').checked, document.getElementById('ppfr-cda-directive-anticipeeS'));
 document.getElementById('cbfr-cda-directive-anticipeeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1867,12 +1872,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeS'), 'obligation',
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260716085853" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085853">&#x1F4CD;20260716085853</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2227,12 +2232,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeS'), 'obligation',
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
       <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis|20251216141839" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
     <td title="La version est explicitement indiquée comme étant 20251216141839">&#x1F4CD;20251216141839</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2926,7 +2931,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260716085853)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aea" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.code.code" data-no-external="true">@code</a><a name="a-Observation.code.code"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
@@ -3001,7 +3006,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ajbbb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.entryRelationship.observationMedia.value.representation" data-no-external="true">@representation</a><a name="a-Observation.entryRelationship.observationMedia.value.representation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
@@ -3052,7 +3057,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-TEL.html">TEL</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-directive-anticipeeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-directive-anticipeeDA'), 'binding', document.getElementById('cbfr-cda-directive-anticipeeDA-binding').checked, document.getElementById('ppfr-cda-directive-anticipeeDA'));
 document.getElementById('cbfr-cda-directive-anticipeeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3091,12 +3096,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeDA'), 'obligation'
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260716085853" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085853">&#x1F4CD;20260716085853</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -3106,12 +3111,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeDA'), 'obligation'
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
       <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis|20251216141839" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
     <td title="La version est explicitement indiquée comme étant 20251216141839">&#x1F4CD;20251216141839</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
 </table>
@@ -3327,7 +3332,7 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeDA'), 'obligation'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html">CD</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de la directive anticipée&nbsp;- La valeur est issue du jeu de valeurs JDV_TypeDirectiveAnticipee_CISIS (1.2.250.1.213.1.1.5.136).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis" class="binding">JdvTypeDirectiveAnticipeeCisis (20260716085853)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a9.a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.code.nullFlavor" title="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing." data-no-external="true">@nullFlavor</a><a name="sa-Observation.code.nullFlavor"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -3742,7 +3747,7 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeDA'), 'obligation'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis" class="binding">MediaType (20251216141839)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a27.njg" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-directive-anticipee-definitions.html#Observation.entryRelationship.observationMedia.value.representation" data-no-external="true">@representation</a><a name="sa-Observation.entryRelationship.observationMedia.value.representation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -4153,7 +4158,7 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeDA'), 'obligation'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Espace de noms (namespace) XML: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-directive-anticipeeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-directive-anticipeeSA'), 'binding', document.getElementById('cbfr-cda-directive-anticipeeSA-binding').checked, document.getElementById('ppfr-cda-directive-anticipeeSA'));
 document.getElementById('cbfr-cda-directive-anticipeeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4312,12 +4317,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeSA'), 'obligation'
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-type-directive-anticipee-cisis.html">JDV Type Directive Anticipee CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260716085853" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085853">&#x1F4CD;20260716085853</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -4672,12 +4677,12 @@ filterDesc(document.getElementById('fr-cda-directive-anticipeeSA'), 'obligation'
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-MediaType-cisis.html">MediaType</a>
       <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis|20251216141839" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
     <td title="La version est explicitement indiquée comme étant 20251216141839">&#x1F4CD;20251216141839</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -5348,8 +5353,8 @@ Résumé
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.cda.fr.document-core#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Date de génération : 
-  <span title="2026-08-11 09:29:00 +0000">
-    2026-08-11
+  <span title="2026-08-28 09:43:00 +0000">
+    2026-08-28
   </span>
 
           <br/>

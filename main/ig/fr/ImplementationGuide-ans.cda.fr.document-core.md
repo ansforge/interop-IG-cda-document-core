@@ -14,7 +14,7 @@
   "name" : "CDAFRDocumentCore",
   "title" : "FR Document Core (CDA)",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -64,7 +64,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.11.1"
+    "version" : "1.12.0"
   }],
   "definition" : {
     "extension" : [{
@@ -1159,6 +1159,23 @@
       "description" : "Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette entrée permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d'état d'exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l'arrêt ou du refus de traitement ou d'acte médicaux.».",
       "isExample" : false,
       "groupingId" : "ressources-cda-corps-composants-elementaires"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-cda-section-directives-anticipees.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-cda-section-directives-anticipees"
+      },
+      "name" : "CDA - FR Directives anticipees",
+      "description" : "IHE-PCC - Coded-Advance-Directives-Section\n - Cette section permet de décrire les directives anticipées du patient.",
+      "isExample" : false,
+      "groupingId" : "ressources-cda-corps-sections"
     },
     {
       "extension" : [{
@@ -3855,14 +3872,14 @@
     {
       "code" : {
         "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-liquid"
+        "code" : "path-liquid-template"
       },
       "value" : "template/liquid"
     },
     {
       "code" : {
         "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-liquid"
+        "code" : "path-liquid-template"
       },
       "value" : "input/liquid"
     },

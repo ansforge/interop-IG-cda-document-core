@@ -66,7 +66,7 @@ Si la vaccination est proposée :@moodCode='PRP'","","","","","","","","","",,"r
 "SubstanceAdministration.id","SubstanceAdministration.id","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant de l'entrée","Identifiant de l'entrée","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.id",0,*,"",""
 "SubstanceAdministration.code","SubstanceAdministration.code","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
-","Type d'acte : vaccination","Type d'acte","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260619134043","",,,,"SubstanceAdministration.code",0,1,"",""
+","Type d'acte : vaccination","Type d'acte","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260716085853","",,,,"SubstanceAdministration.code",0,1,"",""
 "SubstanceAdministration.code.nullFlavor","SubstanceAdministration.code.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "SubstanceAdministration.code.code","SubstanceAdministration.code.code","","","Code",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -145,9 +145,9 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 "SubstanceAdministration.repeatNumber","SubstanceAdministration.repeatNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.repeatNumber",0,1,"",""
 "SubstanceAdministration.routeCode","SubstanceAdministration.routeCode","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
-","Voie d'administration","Voie d'administration","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260619134042","",,,,"SubstanceAdministration.routeCode",0,1,"",""
+","Voie d'administration","Voie d'administration","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260716085852","",,,,"SubstanceAdministration.routeCode",0,1,"",""
 "SubstanceAdministration.approachSiteCode","SubstanceAdministration.approachSiteCode","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
-","Région anatomique d'administration : Terminologie SNOMED CT (2.16.840.1.113883.6.96)","Région anatomique d'administration","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260619134041","",,,,"SubstanceAdministration.approachSiteCode",0,*,"",""
+","Région anatomique d'administration : Terminologie SNOMED CT (2.16.840.1.113883.6.96)","Région anatomique d'administration","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260716085851","",,,,"SubstanceAdministration.approachSiteCode",0,*,"",""
 "SubstanceAdministration.doseQuantity","SubstanceAdministration.doseQuantity","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ {[]} {[]}
 ","Dose administrée","Dose administrée","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.doseQuantity",0,1,"",""
 "SubstanceAdministration.rateQuantity","SubstanceAdministration.rateQuantity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ {[]} {[]}

@@ -50,15 +50,20 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.171"}
-    h3,h4,h5,h6{--heading-prefix:"7.171"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.172"}
+    h3,h4,h5,h6{--heading-prefix:"7.172"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/>
+  </a>
+  <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/>
+  </a>
+</div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
     <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
@@ -324,7 +329,7 @@ CDA - FR Rencontre
           
 
             à partir de 
-2026-08-11
+2026-08-28
 
           
         
@@ -471,7 +476,7 @@ CDA - FR Rencontre
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Si rencontre réalisée : moodCode='EVN'.
 - Si rencontre planifiée&nbsp;: moodCode='PRMS'. 
-- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-rencontre-definitions.html#Encounter.id" title="Identifiant de l'entrée" data-no-external="true">id</a><a name="Encounter.id"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td>
@@ -612,7 +617,7 @@ Sinon, l'élément  n'est pas fourni.</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-participant-corps.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Participant2">FRCDAParticipantCorps(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-rencontreD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-rencontreD'), 'binding', document.getElementById('cbfr-cda-rencontreD-binding').checked, document.getElementById('ppfr-cda-rencontreD'));
 document.getElementById('cbfr-cda-rencontreD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -654,12 +659,12 @@ filterDesc(document.getElementById('fr-cda-rencontreD'), 'obligation', document.
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260619134042" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260716085852" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
 </table>
@@ -857,7 +862,7 @@ filterDesc(document.getElementById('fr-cda-rencontreD'), 'obligation', document.
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Si rencontre réalisée : moodCode='EVN'.
 - Si rencontre planifiée&nbsp;: moodCode='PRMS'. 
-- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-rencontre-definitions.html#Encounter.id" title="Identifiant de l'entrée" data-no-external="true">id</a><a name="s-Encounter.id"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
@@ -1388,7 +1393,7 @@ Sinon, l'élément  n'est pas fourni.<br class="binding"/><span style="font-weig
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Espace de noms (namespace) XML: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-rencontreS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-rencontreS'), 'binding', document.getElementById('cbfr-cda-rencontreS-binding').checked, document.getElementById('ppfr-cda-rencontreS'));
 document.getElementById('cbfr-cda-rencontreS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1534,12 +1539,12 @@ filterDesc(document.getElementById('fr-cda-rencontreS'), 'obligation', document.
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260619134042" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260716085852" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -2281,7 +2286,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Si rencontre réalisée : moodCode='EVN'.
 - Si rencontre planifiée&nbsp;: moodCode='PRMS'. 
-- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-rencontre-definitions.html#Encounter.id" title="Identifiant de l'entrée" data-no-external="true">id</a><a name="a-Encounter.id"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td>
@@ -2422,7 +2427,7 @@ Sinon, l'élément  n'est pas fourni.</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-participant-corps.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Participant2">FRCDAParticipantCorps(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-rencontreDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-rencontreDA'), 'binding', document.getElementById('cbfr-cda-rencontreDA-binding').checked, document.getElementById('ppfr-cda-rencontreDA'));
 document.getElementById('cbfr-cda-rencontreDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2461,12 +2466,12 @@ filterDesc(document.getElementById('fr-cda-rencontreDA'), 'obligation', document
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260619134042" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260716085852" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
 </table>
@@ -2664,7 +2669,7 @@ filterDesc(document.getElementById('fr-cda-rencontreDA'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Si rencontre réalisée : moodCode='EVN'.
 - Si rencontre planifiée&nbsp;: moodCode='PRMS'. 
-- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260619134042)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si rencontre prévue mais non confirmée : moodCode='ARQ'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis" class="binding">ActMood (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-rencontre-definitions.html#Encounter.id" title="Identifiant de l'entrée" data-no-external="true">id</a><a name="sa-Encounter.id"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="Cet élément doit être pris en charge">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
@@ -3195,7 +3200,7 @@ Sinon, l'élément  n'est pas fourni.<br class="binding"/><span style="font-weig
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Espace de noms (namespace) XML: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e91273cd-49f0-4d1a-9e22-6ad48cdb4808
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3e100a73-3c3c-47af-9e3a-ccda346e35da
 document.getElementById('cbfr-cda-rencontreSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-rencontreSA'), 'binding', document.getElementById('cbfr-cda-rencontreSA-binding').checked, document.getElementById('ppfr-cda-rencontreSA'));
 document.getElementById('cbfr-cda-rencontreSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3339,12 +3344,12 @@ filterDesc(document.getElementById('fr-cda-rencontreSA'), 'obligation', document
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260619134042" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.12.0/ValueSet-jdv-hl7-v3-ActMood-cisis.html">ActMood</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260716085852" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260619134042">&#x1F4CD;20260619134042</td>
+    <td title="La version est explicitement indiquée comme étant 20260716085852">&#x1F4CD;20260716085852</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.12.0">Terminologies  de Santé v1.12</a>
     </td>
   </tr>
   <tr>
@@ -4071,8 +4076,8 @@ Résumé
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.cda.fr.document-core#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Date de génération : 
-  <span title="2026-08-11 09:29:00 +0000">
-    2026-08-11
+  <span title="2026-08-28 09:43:00 +0000">
+    2026-08-28
   </span>
 
           <br/>

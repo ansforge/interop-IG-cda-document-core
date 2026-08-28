@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-obje
   "name" : "FRCDADICOMObjectifsDeReference",
   "title" : "CDA - FR DICOM Objectifs de référence",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-obje
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-xActMoodDocumentObservation|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-xActMoodDocumentObservation|20260716085852"
       }
     },
     {
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-obje
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imagerie-objectif-reference-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imagerie-objectif-reference-cisis|20260716085852"
       }
     }]
   }

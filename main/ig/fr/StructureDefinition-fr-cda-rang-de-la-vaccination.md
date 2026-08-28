@@ -108,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rang-de-
   "name" : "FRCDARangDeLaVaccination",
   "title" : "CDA - FR Rang de la vaccination",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -256,7 +256,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rang-de-
       "path" : "Observation.statusCode.code",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852"
       }
     },
     {
@@ -274,7 +274,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rang-de-
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActPriority-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActPriority-cisis|20260716085852"
       }
     },
     {

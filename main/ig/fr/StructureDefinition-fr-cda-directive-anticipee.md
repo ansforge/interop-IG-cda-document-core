@@ -7,7 +7,7 @@ Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette e
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Directives anticipees](StructureDefinition-fr-cda-section-directives-anticipees.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-directive-anticipee)
 
@@ -108,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-directiv
   "name" : "FRCDADirectiveAnticipee",
   "title" : "CDA - FR Directive anticipee",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -243,7 +243,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-directiv
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-directive-anticipee-cisis|20260716085853"
       }
     },
     {

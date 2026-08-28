@@ -173,7 +173,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.targetSiteCode.qualifier.name.translation","Procedure.targetSiteCode.qualifier.name.translation","","","Translation",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
 "Procedure.targetSiteCode.qualifier.value","Procedure.targetSiteCode.qualifier.value","","","Value",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
-","Valeur de la topographie","Valeur de la topographie","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042","",,,,"CR.value",0,1,"",""
+","Valeur de la topographie","Valeur de la topographie","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851","",,,,"CR.value",0,1,"",""
 "Procedure.targetSiteCode.translation","Procedure.targetSiteCode.translation","","","Translation",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
 "Procedure.subject","Procedure.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
@@ -283,7 +283,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org
 "Procedure.participant:EchantillonPreleve.participantRole.playingEntity.determinerCode","Procedure.participant.participantRole.playingEntity.determinerCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INSTANCE""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-EntityDeterminer|3.0.0","",,,,"PlayingEntity.determinerCode",0,1,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.playingEntity.code","Procedure.participant.participantRole.playingEntity.code","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
-","Nature de l'échantillon","","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis|20260619134042","",,,,"PlayingEntity.code",0,1,"",""
+","Nature de l'échantillon","","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-specimen-type-cisis|20260716085852","",,,,"PlayingEntity.code",0,1,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.playingEntity.quantity","Procedure.participant.participantRole.playingEntity.quantity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PQ {[]} {[]}
 ","La quantité est exprimée en valeur (@value) et unité de mesure (@unit). Si le volume est renseigné alors les deux attributs value et unit doivent être valorisés.","","","","","","","","","","",,,,,"",,,,"PlayingEntity.quantity",0,*,"",""
 "Procedure.participant:EchantillonPreleve.participantRole.playingEntity.name","Procedure.participant.participantRole.playingEntity.name","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PN {[]} {[]}

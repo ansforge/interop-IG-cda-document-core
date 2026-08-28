@@ -124,7 +124,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-transpor
   "name" : "FRCDATransportDuProfessionnel",
   "title" : "CDA - FR Transport du professionnel",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -210,7 +210,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-transpor
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20260716085853"
       }
     },
     {
@@ -275,7 +275,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-transpor
       "path" : "Act.code.qualifier.value.code",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20260716085852"
       }
     },
     {

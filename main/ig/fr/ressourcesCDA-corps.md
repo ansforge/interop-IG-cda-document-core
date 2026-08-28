@@ -75,6 +75,8 @@ Cette page contient la liste des profils CDA définis dans le guide **ANS IG Doc
 | [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md) | IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient. |
 | [CDA - FR Section Antecedents familiaux](StructureDefinition-fr-cda-section-antecedents-familiaux.md) | IHE-PCC Coded-Family-Medical-History* Liste codée des antécédents familiaux
  |
+| [CDA - FR Directives anticipees](StructureDefinition-fr-cda-section-directives-anticipees.md) | IHE-PCC - Coded-Advance-Directives-Section* Cette section permet de décrire les directives anticipées du patient.
+ |
 | [CDA - FR Habitus mode de vie](StructureDefinition-fr-cda-section-habitus-mode-de-vie.md) | IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient. |
 | [CDA - FR Resultats](StructureDefinition-fr-cda-section-resultats.md) | Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...) |
 | [CDA - FR Section Signes vitaux](StructureDefinition-fr-cda-section-signes-vitaux.md) | IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux. |

@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-organisme-
   "name" : "FRCDAOrganismeAssuranceMaladie",
   "title" : "CDA - FR Organisme assurance maladie",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -176,7 +176,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-organisme-
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-couverture-sociale-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-couverture-sociale-cisis|20260716085852"
       }
     },
     {
@@ -330,7 +330,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-organisme-
       "short" : "Lien Bénéficiaire - Assuré",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-lien-assure-beneficiaire-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-lien-assure-beneficiaire-cisis|20260716085852"
       }
     },
     {

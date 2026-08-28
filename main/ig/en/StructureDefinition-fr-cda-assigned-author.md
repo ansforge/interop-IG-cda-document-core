@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-assigned-a
   "name" : "FRCDAAssignedAuthor",
   "title" : "CDA - assignedAuthor",
   "status" : "draft",
-  "date" : "2026-08-11T09:29:02+00:00",
+  "date" : "2026-08-28T09:43:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -149,7 +149,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-assigned-a
       "short" : "Profession / savoir-faire ou rôle : \n- Obligatoire pour un professionnel \n- Ne pas utiliser pour le patient/usager \n- Obligatoire pour un système de structure \n- Obligatoire pour un SNR \n- Obligatoire pour le DP",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260505120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260730120000"
       }
     },
     {
