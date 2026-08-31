@@ -62,7 +62,9 @@ précise ou pour un intervalle contenant un élément <low> et un élément <hig
 * interpretationCode 0..1
 * interpretationCode ^short = "Interprétation"
 * interpretationCode ^definition = "Interprétation"
-* interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis (required)
+* interpretationCode ^binding.additional[+].purpose = #required
+* interpretationCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis"
+* interpretationCode ^binding.additional[=].documentation = "Value set CI-SIS (jdv-hl7-v3-ObservationInterpretation-cisis), complémentaire au binding required hérité de CDA."
 * methodCode MS
 * methodCode 0..1
 * methodCode ^short = "Méthode utilisée pour l'observation"

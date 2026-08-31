@@ -9,7 +9,9 @@ Description: "Entrée FR-Rencontre: IHE-PCC - Encounter.
 * moodCode ^short = "Si rencontre réalisée : moodCode='EVN'.
 - Si rencontre planifiée : moodCode='PRMS'. 
 - Si rencontre prévue mais non confirmée : moodCode='ARQ'."
-* moodCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis (required)
+* moodCode ^binding.additional[+].purpose = #required
+* moodCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis"
+* moodCode ^binding.additional[=].documentation = "Value set CI-SIS (jdv-hl7-v3-ActMood-cisis), complémentaire au binding required hérité de CDA."
 * id 1..* MS
 * id ^short = "Identifiant de l'entrée"
 * id ^definition = "Identifiant de l'entrée"

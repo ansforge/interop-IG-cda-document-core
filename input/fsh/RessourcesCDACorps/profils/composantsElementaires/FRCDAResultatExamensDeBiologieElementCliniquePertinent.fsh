@@ -58,7 +58,9 @@ and frResultatExamensDeBiologieElementCliniquePertinent 1..1
 * interpretationCode 0..1
 * interpretationCode ^short = "Code d'interprétation"
 * interpretationCode ^definition = "Code d'interprétation"
-* interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis (required)
+* interpretationCode ^binding.additional[+].purpose = #required
+* interpretationCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis"
+* interpretationCode ^binding.additional[=].documentation = "Value set CI-SIS (jdv-hl7-v3-ObservationInterpretation-cisis), complémentaire au binding required hérité de CDA."
 * methodCode MS
 * methodCode 0..1
 * methodCode ^short = "Méthode ou technique employée"
@@ -112,7 +114,9 @@ frCommentaireER 0..*
 * entryRelationship[frResultatsAnterieurs].observation.value 1..1 MS 
 * entryRelationship[frResultatsAnterieurs].observation.value ^short = "Valeur de ce résultat antérieur"
 * entryRelationship[frResultatsAnterieurs].observation.interpretationCode 0..1 MS
-* entryRelationship[frResultatsAnterieurs].observation.interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis (required)
+* entryRelationship[frResultatsAnterieurs].observation.interpretationCode ^binding.additional[+].purpose = #required
+* entryRelationship[frResultatsAnterieurs].observation.interpretationCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis"
+* entryRelationship[frResultatsAnterieurs].observation.interpretationCode ^binding.additional[=].documentation = "Value set CI-SIS (jdv-hl7-v3-ObservationInterpretation-cisis), complémentaire au binding required hérité de CDA."
 * entryRelationship[frResultatsAnterieurs].observation.methodCode 0..1 MS
 * entryRelationship[frResultatsAnterieurs].observation.referenceRange 0..1 MS
 * entryRelationship[frResultatsAnterieurs].observation.referenceRange.observationRange.classCode = #OBS

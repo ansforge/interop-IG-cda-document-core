@@ -67,8 +67,8 @@ frParticipantValideurResultats 0..1 MS and frParticipantResponsableExamen 0..1 M
 * participant[frParticipantValideurResultats] ^short = "Valideur de ces résultats"
 * participant[frParticipantValideurResultats] ^definition = "Valideur de ces résultats"
 * participant[frParticipantValideurResultats].typeCode = #AUTHEN
-* participant[frParticipantValideurResultats].templateId.root = "1.3.6.1.4.1.19376.1.3.3.1.5"
 * participant[frParticipantValideurResultats] only FRCDAParticipantCorps
+* participant[frParticipantValideurResultats].templateId.root = "1.3.6.1.4.1.19376.1.3.3.1.5"
 * participant[frParticipantResponsableExamen] ^short = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen] ^definition = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen].typeCode = #RESP
