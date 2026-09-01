@@ -1,0 +1,2645 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "FRCDAMaterialPharm",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition FRCDAMaterialPharm</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm\" title=\"Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français.\">FRCDAMaterialPharm</a><a name=\"en-FRCDAMaterialPharm\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">Material(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:hl7-org:v3<br/>CDA - Matériau pharmaceutique enrichi<br/><br/>Elements defined in Ancestors:<a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ANY.html\" title=\"If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.\">@nullFlavor</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question\">realmCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.\">typeId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InfrastructureRoot.html\" title=\"When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question\">templateId</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">@classCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">@determinerCode</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">code</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">name</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">lotNumberText</a>, <a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\" title=\"The date and time the manufacturer no longer ensures the safety, quality, and/or proper functioning of the material.\">sdtcExpirationTime</a><br/><span style=\"font-weight:bold\">Instance of this type are validated by templateId</span><br/><span style=\"font-weight:bold\" title=\"The root class that contains instances of this class\">Logical Container: </span><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a style=\"text-decoration:line-through; text-decoration:line-through\" href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.sdtcExpirationTime\">sdtcExpirationTime</a><a name=\"en-FRCDAMaterialPharm.sdtcExpirationTime\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.expirationTime\" title=\"Date d'expiration du produit\">expirationTime</a><a name=\"en-FRCDAMaterialPharm.expirationTime\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-IVL-TS.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/IVL_TS\">IVL_TS(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Date d'expiration du produit<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent\" title=\"Description du conditionnement du produit de santé.\">asContent</a><a name=\"en-FRCDAMaterialPharm.asContent\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Présentation / conditionnement<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.classCode\" title=\"Classe de la relation contenu\">@classCode</a><a name=\"en-FRCDAMaterialPharm.asContent.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe de la relation contenu<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">CONT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine\" title=\"Description du conditionnement primaire du produit.\">containerPackagedMedicine</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Conditionnement primaire<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode\" title=\"Classe du conditionnement\">@classCode</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe du conditionnement<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">CONT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode\" title=\"Type du conditionnement\">@determinerCode</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type du conditionnement<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">INSTANCE</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.code\" title=\"Code du produit de santé prescrit\">code</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Code du produit de santé prescrit<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.name\" title=\"Nom de marque du conditionnement\">name</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.name\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-EN.html\">EN</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Nom de marque du conditionnement<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode\" title=\"Conditionnement\">formCode</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Conditionnement<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity\" title=\"Capacité du conditionnement primaire\">capacityQuantity</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-PQ.html\">PQ</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Capacité du conditionnement primaire<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent\" title=\"Conditionnement supérieur\">asSuperContent</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Conditionnement supérieur<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine\" title=\"Conditionnement supérieur\">containerPackagedMedicine</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Conditionnement supérieur</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode\" title=\"Classe du conditionnement supérieur\">@classCode</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe du conditionnement supérieur<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">CONT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode\" title=\"Type du conditionnement supérieur\">@determinerCode</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type du conditionnement supérieur<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">INSTANCE</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity\" title=\"Capacité du conditionnement supérieur\">capacityQuantity</a><a name=\"en-FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-PQ.html\">PQ</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Capacité du conditionnement supérieur<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.formCode\" title=\"Code représentant la forme pharmaceutique du produit de santé.\">formCode</a><a name=\"en-FRCDAMaterialPharm.formCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Forme pharmaceutique<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asSpecializedKind\" title=\"Relation entre le produit de santé et une classe générique ou thérapeutique.\">asSpecializedKind</a><a name=\"en-FRCDAMaterialPharm.asSpecializedKind\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Classification du produit<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asSpecializedKind.classCode\" title=\"Code indiquant qu'il s'agit d'une relation vers une classe générique ou thérapeutique.\">@classCode</a><a name=\"en-FRCDAMaterialPharm.asSpecializedKind.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe de la relation<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">GRIC</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass\" title=\"Classe générique ou thérapeutique à laquelle appartient le produit de santé.\">generalizedMedicineClass</a><a name=\"en-FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Classe générique du médicament<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode\" title=\"Code indiquant que la classe représente un matériau pharmaceutique.\">@classCode</a><a name=\"en-FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe du matériau<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">MMAT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code\" title=\"Code représentant la classe générique ou thérapeutique du produit de santé selon le système de codage utilisé.\">code</a><a name=\"en-FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Code de classification<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name\" title=\"Nom de la classe générique ou thérapeutique du produit de santé.\">name</a><a name=\"en-FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-EN.html\">EN</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Nom de la classification<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient\" title=\"Ingrédient actif entrant dans la composition du produit de santé.\">ingredient</a><a name=\"en-FRCDAMaterialPharm.ingredient\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Ingrédient actif<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.classCode\" title=\"Code indiquant qu'il s'agit d'un ingrédient actif.\">@classCode</a><a name=\"en-FRCDAMaterialPharm.ingredient.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe de l'ingrédient<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">ACTI</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.quantity\" title=\"Ratio représentant la quantité ou la concentration de l'ingrédient actif.\">quantity</a><a name=\"en-FRCDAMaterialPharm.ingredient.quantity\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RTO-PQ-PQ.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/RTO_PQ_PQ\">RTO_PQ_PQ(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Dosage de l'ingrédient<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient\" title=\"Substance pharmaceutique jouant le rôle d'ingrédient actif.\">ingredient</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Substance active<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient.classCode\" title=\"Code indiquant que la substance est un matériau pharmaceutique.\">@classCode</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classe de la substance<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">MMAT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient.determinerCode\" title=\"Code indiquant que l'élément représente un type de substance.\">@determinerCode</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient.determinerCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Déterminant de la substance<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">KIND</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient.code\" title=\"Code identifiant la substance active.\">code</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Code de la substance<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient.code.originalText\">originalText</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient.code.originalText\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ED.html\">ED</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference\" title=\"Référence (ancre) vers le texte original décrivant la substance active.\">reference</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-TEL.html\">TEL</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Référence du texte original<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FRCDAMaterialPharm-definitions.html#FRCDAMaterialPharm.ingredient.ingredient.name\" title=\"Nom de la substance active.\">name</a><a name=\"en-FRCDAMaterialPharm.ingredient.ingredient.name\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-EN.html\">EN</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication<br/>Nom de la substance<br/><span style=\"font-weight:bold\">XML Namespace: </span>urn:ihe:pharm:medication</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "not-applicable"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri" : "urn:hl7-org:v3"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString" : "material"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueCode" : "cda"
+  }],
+  "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/FRCDAMaterialPharm",
+  "version" : "0.1.0",
+  "name" : "FRCDAMaterialPharm",
+  "title" : "CDA - Matériau pharmaceutique enrichi",
+  "status" : "draft",
+  "date" : "2026-09-01T12:39:31+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/FRCDAMaterialPharm",
+  "baseDefinition" : "http://hl7.org/cda/stds/core/StructureDefinition/Material|2.0.3-sd",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "2.0.3-sd"
+    }],
+    "element" : [{
+      "id" : "FRCDAMaterialPharm",
+      "path" : "FRCDAMaterialPharm",
+      "short" : "CDA - Matériau pharmaceutique enrichi",
+      "definition" : "Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.nullFlavor",
+      "path" : "FRCDAMaterialPharm.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "FRCDAMaterialPharm.realmCode",
+      "path" : "FRCDAMaterialPharm.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.typeId",
+      "path" : "FRCDAMaterialPharm.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.typeId.nullFlavor",
+      "path" : "FRCDAMaterialPharm.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "FRCDAMaterialPharm.typeId.assigningAuthorityName",
+      "path" : "FRCDAMaterialPharm.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.typeId.displayable",
+      "path" : "FRCDAMaterialPharm.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.typeId.root",
+      "path" : "FRCDAMaterialPharm.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.typeId.extension",
+      "path" : "FRCDAMaterialPharm.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.templateId",
+      "path" : "FRCDAMaterialPharm.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.classCode",
+      "path" : "FRCDAMaterialPharm.classCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.classCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "MMAT",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-EntityClassManufacturedMaterial|3.0.0"
+      }
+    },
+    {
+      "id" : "FRCDAMaterialPharm.determinerCode",
+      "path" : "FRCDAMaterialPharm.determinerCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.determinerCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "KIND",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-EntityDeterminerDetermined|3.0.0"
+      }
+    },
+    {
+      "id" : "FRCDAMaterialPharm.code",
+      "path" : "FRCDAMaterialPharm.code",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAMaterialEntityClassType|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "FRCDAMaterialPharm.name",
+      "path" : "FRCDAMaterialPharm.name",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.lotNumberText",
+      "path" : "FRCDAMaterialPharm.lotNumberText",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.lotNumberText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ST"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.sdtcExpirationTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "expirationTime"
+      }],
+      "path" : "FRCDAMaterialPharm.sdtcExpirationTime",
+      "definition" : "The date and time the manufacturer no longer ensures the safety, quality, and/or proper functioning of the material.",
+      "requirements" : "There is a need in many situations that the materials used are of a specific quality or potency or functional status. The ending date for this guarantee is specified by the manufacturer. After that date, while the material may still provide the same characteristics, the manufacturer no longer takes responsibility that the product will perform as specified and denies responsibility for failure of the material after that date.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "Material.sdtcExpirationTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.expirationTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.expirationTime",
+      "short" : "Date d'expiration du produit",
+      "definition" : "Date d'expiration du produit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.expirationTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL_TS",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent",
+      "short" : "Présentation / conditionnement",
+      "definition" : "Description du conditionnement du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.id",
+      "path" : "FRCDAMaterialPharm.asContent.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.extension",
+      "path" : "FRCDAMaterialPharm.asContent.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.modifierExtension",
+      "path" : "FRCDAMaterialPharm.asContent.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la relation contenu",
+      "definition" : "Classe de la relation contenu",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+      "short" : "Conditionnement primaire",
+      "definition" : "Description du conditionnement primaire du produit.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.id",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.extension",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.modifierExtension",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du conditionnement",
+      "definition" : "Classe du conditionnement",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Type du conditionnement",
+      "definition" : "Type du conditionnement",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "INSTANCE"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+      "short" : "Code du produit de santé prescrit",
+      "definition" : "Code du produit de santé prescrit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+      "short" : "Nom de marque du conditionnement",
+      "definition" : "Nom de marque du conditionnement",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+      "short" : "Conditionnement",
+      "definition" : "Conditionnement",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+      "short" : "Capacité du conditionnement primaire",
+      "definition" : "Capacité du conditionnement primaire",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+      "short" : "Conditionnement supérieur",
+      "definition" : "Conditionnement supérieur",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.id",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.extension",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.modifierExtension",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+      "short" : "Conditionnement supérieur",
+      "definition" : "Conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.id",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.extension",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.modifierExtension",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du conditionnement supérieur",
+      "definition" : "Classe du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Type du conditionnement supérieur",
+      "definition" : "Type du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "INSTANCE"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+      "short" : "Capacité du conditionnement supérieur",
+      "definition" : "Capacité du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.formCode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.formCode",
+      "short" : "Forme pharmaceutique",
+      "definition" : "Code représentant la forme pharmaceutique du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.formCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind",
+      "short" : "Classification du produit",
+      "definition" : "Relation entre le produit de santé et une classe générique ou thérapeutique.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asSpecializedKind",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.id",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.extension",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.modifierExtension",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.classCode",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la relation",
+      "definition" : "Code indiquant qu'il s'agit d'une relation vers une classe générique ou thérapeutique.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asSpecializedKind.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "GRIC"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass",
+      "short" : "Classe générique du médicament",
+      "definition" : "Classe générique ou thérapeutique à laquelle appartient le produit de santé.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.id",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.extension",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.modifierExtension",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du matériau",
+      "definition" : "Code indiquant que la classe représente un matériau pharmaceutique.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "MMAT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code",
+      "short" : "Code de classification",
+      "definition" : "Code représentant la classe générique ou thérapeutique du produit de santé selon le système de codage utilisé.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name",
+      "short" : "Nom de la classification",
+      "definition" : "Nom de la classe générique ou thérapeutique du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient",
+      "short" : "Ingrédient actif",
+      "definition" : "Ingrédient actif entrant dans la composition du produit de santé.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.id",
+      "path" : "FRCDAMaterialPharm.ingredient.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.extension",
+      "path" : "FRCDAMaterialPharm.ingredient.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.modifierExtension",
+      "path" : "FRCDAMaterialPharm.ingredient.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.classCode",
+      "path" : "FRCDAMaterialPharm.ingredient.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de l'ingrédient",
+      "definition" : "Code indiquant qu'il s'agit d'un ingrédient actif.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "ACTI"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.quantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.quantity",
+      "short" : "Dosage de l'ingrédient",
+      "definition" : "Ratio représentant la quantité ou la concentration de l'ingrédient actif.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.quantity",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RTO_PQ_PQ",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient",
+      "short" : "Substance active",
+      "definition" : "Substance pharmaceutique jouant le rôle d'ingrédient actif.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.ingredient",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.id",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "condition" : ["ele-1"],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.extension",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.modifierExtension",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element|5.0.0"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|5.0.0"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.classCode",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la substance",
+      "definition" : "Code indiquant que la substance est un matériau pharmaceutique.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.ingredient.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "MMAT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.determinerCode",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Déterminant de la substance",
+      "definition" : "Code indiquant que l'élément représente un type de substance.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.ingredient.determinerCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "KIND"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code",
+      "short" : "Code de la substance",
+      "definition" : "Code identifiant la substance active.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.ingredient.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.nullFlavor",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.code",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.code",
+      "representation" : ["xmlAttr"],
+      "label" : "Code",
+      "definition" : "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.codeSystem",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.codeSystem",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System",
+      "definition" : "Specifies the code system that defines the code.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystem",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.codeSystemName",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.codeSystemName",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Name",
+      "definition" : "The common name of the coding system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.codeSystemVersion",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.codeSystemVersion",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Version",
+      "definition" : "If applicable, a version descriptor defined specifically for the given code system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.displayName",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.displayName",
+      "representation" : ["xmlAttr"],
+      "label" : "Display Name",
+      "definition" : "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.displayName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.sdtcValueSet",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSet"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.sdtcValueSet",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.valueSet",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.sdtcValueSetVersion",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSetVersion"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.sdtcValueSetVersion",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.sdtcValueSetVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText",
+      "label" : "Original Text",
+      "definition" : "The text or phrase used as the basis for the coding.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.originalText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference",
+      "short" : "Référence du texte original",
+      "definition" : "Référence (ancre) vers le texte original décrivant la substance active.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/TEL"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.qualifier",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.qualifier",
+      "label" : "Qualifier",
+      "definition" : "Specifies additional codes that increase the specificity of the the primary code.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "CD.qualifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.translation",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.translation",
+      "representation" : ["typeAttr"],
+      "label" : "Translation",
+      "definition" : "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CD.translation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.name",
+      "short" : "Nom de la substance",
+      "definition" : "Nom de la substance active.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "FRCDAMaterialPharm.ingredient.ingredient.name",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "FRCDAMaterialPharm",
+      "path" : "FRCDAMaterialPharm",
+      "short" : "CDA - Matériau pharmaceutique enrichi",
+      "definition" : "Modèle logique dérivé du Material CDA officiel et enrichi avec les\néléments pharmaceutiques utilisés dans les documents CDA IPS français."
+    },
+    {
+      "id" : "FRCDAMaterialPharm.sdtcExpirationTime",
+      "path" : "FRCDAMaterialPharm.sdtcExpirationTime",
+      "max" : "0"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.expirationTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.expirationTime",
+      "short" : "Date d'expiration du produit",
+      "definition" : "Date d'expiration du produit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL_TS",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent",
+      "short" : "Présentation / conditionnement",
+      "definition" : "Description du conditionnement du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la relation contenu",
+      "definition" : "Classe de la relation contenu",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine",
+      "short" : "Conditionnement primaire",
+      "definition" : "Description du conditionnement primaire du produit.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du conditionnement",
+      "definition" : "Classe du conditionnement",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Type du conditionnement",
+      "definition" : "Type du conditionnement",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "INSTANCE"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.code",
+      "short" : "Code du produit de santé prescrit",
+      "definition" : "Code du produit de santé prescrit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.name",
+      "short" : "Nom de marque du conditionnement",
+      "definition" : "Nom de marque du conditionnement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.formCode",
+      "short" : "Conditionnement",
+      "definition" : "Conditionnement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.capacityQuantity",
+      "short" : "Capacité du conditionnement primaire",
+      "definition" : "Capacité du conditionnement primaire",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent",
+      "short" : "Conditionnement supérieur",
+      "definition" : "Conditionnement supérieur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine",
+      "short" : "Conditionnement supérieur",
+      "definition" : "Conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du conditionnement supérieur",
+      "definition" : "Classe du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "CONT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Type du conditionnement supérieur",
+      "definition" : "Type du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "INSTANCE"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asContent.containerPackagedMedicine.asSuperContent.containerPackagedMedicine.capacityQuantity",
+      "short" : "Capacité du conditionnement supérieur",
+      "definition" : "Capacité du conditionnement supérieur",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PQ"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.formCode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.formCode",
+      "short" : "Forme pharmaceutique",
+      "definition" : "Code représentant la forme pharmaceutique du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind",
+      "short" : "Classification du produit",
+      "definition" : "Relation entre le produit de santé et une classe générique ou thérapeutique.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.classCode",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la relation",
+      "definition" : "Code indiquant qu'il s'agit d'une relation vers une classe générique ou thérapeutique.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "GRIC"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass",
+      "short" : "Classe générique du médicament",
+      "definition" : "Classe générique ou thérapeutique à laquelle appartient le produit de santé.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode",
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe du matériau",
+      "definition" : "Code indiquant que la classe représente un matériau pharmaceutique.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "MMAT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.code",
+      "short" : "Code de classification",
+      "definition" : "Code représentant la classe générique ou thérapeutique du produit de santé selon le système de codage utilisé.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.asSpecializedKind.generalizedMedicineClass.name",
+      "short" : "Nom de la classification",
+      "definition" : "Nom de la classe générique ou thérapeutique du produit de santé.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient",
+      "short" : "Ingrédient actif",
+      "definition" : "Ingrédient actif entrant dans la composition du produit de santé.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.classCode",
+      "path" : "FRCDAMaterialPharm.ingredient.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de l'ingrédient",
+      "definition" : "Code indiquant qu'il s'agit d'un ingrédient actif.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "ACTI"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.quantity",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.quantity",
+      "short" : "Dosage de l'ingrédient",
+      "definition" : "Ratio représentant la quantité ou la concentration de l'ingrédient actif.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RTO_PQ_PQ",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient",
+      "short" : "Substance active",
+      "definition" : "Substance pharmaceutique jouant le rôle d'ingrédient actif.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.classCode",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.classCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Classe de la substance",
+      "definition" : "Code indiquant que la substance est un matériau pharmaceutique.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "MMAT"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.determinerCode",
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.determinerCode",
+      "representation" : ["xmlAttr"],
+      "short" : "Déterminant de la substance",
+      "definition" : "Code indiquant que l'élément représente un type de substance.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "patternCode" : "KIND"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code",
+      "short" : "Code de la substance",
+      "definition" : "Code identifiant la substance active.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText"
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.code.originalText.reference",
+      "short" : "Référence du texte original",
+      "definition" : "Référence (ancre) vers le texte original décrivant la substance active.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/TEL"
+      }]
+    },
+    {
+      "id" : "FRCDAMaterialPharm.ingredient.ingredient.name",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:ihe:pharm:medication"
+      }],
+      "path" : "FRCDAMaterialPharm.ingredient.ingredient.name",
+      "short" : "Nom de la substance",
+      "definition" : "Nom de la substance active.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    }]
+  }
+}

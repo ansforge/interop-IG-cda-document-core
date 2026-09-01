@@ -1,0 +1,233 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"Act","Act","","","",1,1,"","","","null {[]} {[]}
+","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"Act.nullFlavor","Act.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.realmCode","Act.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Act.typeId","Act.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Act.typeId.nullFlavor","Act.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.typeId.assigningAuthorityName","Act.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Act.typeId.displayable","Act.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Act.typeId.root","Act.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Act.typeId.extension","Act.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Act.templateId","Act.templateId","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"","value:root}
+","",,"open","InfrastructureRoot.templateId",0,*,"",""
+"Act.templateId:frTransportDuProfessionnel","Act.templateId","frTransportDuProfessionnel","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","Conformité FR-Transport-du-professionnel (CI-SIS)","Conformité FR-Transport-du-professionnel (CI-SIS)","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Act.templateId:frTransportDuProfessionnel.nullFlavor","Act.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.templateId:frTransportDuProfessionnel.assigningAuthorityName","Act.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Act.templateId:frTransportDuProfessionnel.displayable","Act.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Act.templateId:frTransportDuProfessionnel.root","Act.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.3.216""/>","","","",,,,,"",,,,"II.root",0,1,"",""
+"Act.templateId:frTransportDuProfessionnel.extension","Act.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Act.classCode","Act.classCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ACT""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActClassDocumentEntryAct|2.0.0","",,,,"Act.classCode",1,1,"",""
+"Act.moodCode","Act.moodCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","Si le transport est à faire : moodCode='INT'. Si le transport a déjà été effectué : moodCode='EVN'.","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xDocumentActMood|2.0.0","",,,,"Act.moodCode",1,1,"",""
+"Act.negationInd","Act.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.negationInd",0,1,"",""
+"Act.id","Act.id","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","Identifiant de l'entrée","Identifiant de l'entrée","","","","","","","","","",,,,,"",,,,"Act.id",0,*,"",""
+"Act.code","Act.code","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","Mode de transport (Ambulance publique, Taxi, VSL, …)","Mode de transport","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-mode-de-transport-cisis|20260716085853","",,,,"Act.code",1,1,"",""
+"Act.code.nullFlavor","Act.code.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.code.code","Act.code.code","","","Code",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","The plain code symbol defined by the code system. For example, ""784.0"" is the code symbol of the ICD-9 code ""784.0"" for headache.","","","","","","","","","",,,,,"",,,,"CD.code",0,1,"",""
+"Act.code.codeSystem","Act.code.codeSystem","","","Code System",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Specifies the code system that defines the code.","","","","","","","","","",,,,,"",,,,"CD.codeSystem",0,1,"",""
+"Act.code.codeSystemName","Act.code.codeSystemName","","","Code System Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The common name of the coding system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemName",0,1,"",""
+"Act.code.codeSystemVersion","Act.code.codeSystemVersion","","","Code System Version",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
+"Act.code.displayName","Act.code.displayName","","","Display Name",0,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","","","","",,,,,"",,,,"CD.displayName",0,1,"",""
+"Act.code.sdtcValueSet","Act.code.sdtcValueSet","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd]]} {[]}
+","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""
+"Act.code.sdtcValueSetVersion","Act.code.sdtcValueSetVersion","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.sdtcValueSetVersion",0,1,"",""
+"Act.code.originalText","Act.code.originalText","","","Original Text",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","The text or phrase used as the basis for the coding.","","","","","","","","","",,,,,"",,,,"CD.originalText",0,1,"",""
+"Act.code.qualifier","Act.code.qualifier","","","Qualifier",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
+","Type de motorisation","Type de motorisation","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
+"Act.code.qualifier.nullFlavor","Act.code.qualifier.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.code.qualifier.inverted","Act.code.qualifier.inverted","","","Inversion Indicator",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bn|2.0.3-sd]]} {[]}
+","","Indicates if the sense of the role name is inverted. This can be used in cases where the underlying code system defines inversion but does not provide reciprocal pairs of role names. By default, inverted is false.","","","","","","","","","",,,,,"",,,,"CR.inverted",0,1,"",""
+"Act.code.qualifier.name","Act.code.qualifier.name","","","Name",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CV {[]} {[]}
+","","Specifies the manner in which the concept role value contributes to the meaning of a code phrase. For example, if SNOMED RT defines a concept ""leg"", a role relation ""has-laterality"", and another concept ""left"", the concept role relation allows to add the qualifier ""has-laterality: left"" to a primary code ""leg"" to construct the meaning ""left leg"". In this example ""has-laterality"" is the CR.name.","","","","","","","","","",,,,,"",,,,"CR.name",0,1,"",""
+"Act.code.qualifier.name.nullFlavor","Act.code.qualifier.name.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.code.qualifier.name.code","Act.code.qualifier.name.code","","","Code",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","The plain code symbol defined by the code system. For example, ""784.0"" is the code symbol of the ICD-9 code ""784.0"" for headache.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""GEN-346""/>","","","",,,,,"",,,,"CD.code",0,1,"",""
+"Act.code.qualifier.name.codeSystem","Act.code.qualifier.name.codeSystem","","","Code System",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Specifies the code system that defines the code.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.4.322""/>","","","",,,,,"",,,,"CD.codeSystem",0,1,"",""
+"Act.code.qualifier.name.codeSystemName","Act.code.qualifier.name.codeSystemName","","","Code System Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The common name of the coding system.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""TerminologieCISIS""/>","","","",,,,,"",,,,"CD.codeSystemName",0,1,"",""
+"Act.code.qualifier.name.codeSystemVersion","Act.code.qualifier.name.codeSystemVersion","","","Code System Version",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
+"Act.code.qualifier.name.displayName","Act.code.qualifier.name.displayName","","","Display Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Type de motorisation""/>","","","",,,,,"",,,,"CD.displayName",0,1,"",""
+"Act.code.qualifier.name.sdtcValueSet","Act.code.qualifier.name.sdtcValueSet","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd]]} {[]}
+","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""
+"Act.code.qualifier.name.sdtcValueSetVersion","Act.code.qualifier.name.sdtcValueSetVersion","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.sdtcValueSetVersion",0,1,"",""
+"Act.code.qualifier.name.originalText","Act.code.qualifier.name.originalText","","","Original Text",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","The text or phrase used as the basis for the coding.","","","","","","","","","",,,,,"",,,,"CD.originalText",0,1,"",""
+"Act.code.qualifier.name.qualifier","Act.code.qualifier.name.qualifier","","","Qualifier",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
+","","Specifies additional codes that increase the specificity of the the primary code.","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
+"Act.code.qualifier.name.translation","Act.code.qualifier.name.translation","","","Translation",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
+"Act.code.qualifier.value","Act.code.qualifier.value","","","Value",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","Type de motorisation : 
+Valeur issue du JDV_TypeMotorisation_CISIS (1.2.250.1.213.1.1.5.801)","Type de motorisation","","","","","","","","","",,,,,"",,,,"CR.value",0,1,"",""
+"Act.code.qualifier.value.nullFlavor","Act.code.qualifier.value.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.code.qualifier.value.code","Act.code.qualifier.value.code","","","Code",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","The plain code symbol defined by the code system. For example, ""784.0"" is the code symbol of the ICD-9 code ""784.0"" for headache.","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-type-motorisation-cisis|20260716085852","",,,,"CD.code",0,1,"",""
+"Act.code.qualifier.value.codeSystem","Act.code.qualifier.value.codeSystem","","","Code System",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Specifies the code system that defines the code.","","","","","","","","","",,,,,"",,,,"CD.codeSystem",0,1,"",""
+"Act.code.qualifier.value.codeSystemName","Act.code.qualifier.value.codeSystemName","","","Code System Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The common name of the coding system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemName",0,1,"",""
+"Act.code.qualifier.value.codeSystemVersion","Act.code.qualifier.value.codeSystemVersion","","","Code System Version",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
+"Act.code.qualifier.value.displayName","Act.code.qualifier.value.displayName","","","Display Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","","","","",,,,,"",,,,"CD.displayName",0,1,"",""
+"Act.code.qualifier.value.sdtcValueSet","Act.code.qualifier.value.sdtcValueSet","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd]]} {[]}
+","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""
+"Act.code.qualifier.value.sdtcValueSetVersion","Act.code.qualifier.value.sdtcValueSetVersion","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.sdtcValueSetVersion",0,1,"",""
+"Act.code.qualifier.value.originalText","Act.code.qualifier.value.originalText","","","Original Text",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","The text or phrase used as the basis for the coding.","","","","","","","","","",,,,,"",,,,"CD.originalText",0,1,"",""
+"Act.code.qualifier.value.qualifier","Act.code.qualifier.value.qualifier","","","Qualifier",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
+","","Specifies additional codes that increase the specificity of the the primary code.","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
+"Act.code.qualifier.value.translation","Act.code.qualifier.value.translation","","","Translation",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
+"Act.code.translation","Act.code.translation","","","Translation",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
+"Act.text","Act.text","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","Texte décrivant le transport","Texte décrivant le transport","","","","","","","","","",,,,,"",,,,"Act.text",0,1,"",""
+"Act.text.nullFlavor","Act.text.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.text.compression","Act.text.compression","","","Compression",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","Indicates whether the raw byte data is compressed, and what compression algorithm was used.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDACompressionAlgorithm|2.0.3-sd","",,,,"ED.compression",0,1,"",""
+"Act.text.integrityCheck","Act.text.integrityCheck","","","Integrity Check",0,1,"","","","base64Binary {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bin|2.0.3-sd]]} {[]}
+","","The integrity check is a short binary value representing a cryptographically strong checksum that is calculated over the binary data. The purpose of this property, when communicated with a reference is for anyone to validate later whether the reference still resolved to the same data that the reference resolved to when the encapsulated data value with reference was created.","","","","","","","","","",,,,,"",,,,"ED.integrityCheck",0,1,"",""
+"Act.text.integrityCheckAlgorithm","Act.text.integrityCheckAlgorithm","","","Integrity Check Algorithm",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage.","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm|2.0.0","",,,,"ED.integrityCheckAlgorithm",0,1,"",""
+"Act.text.language","Act.text.language","","","Language",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","For character based information the language property specifies the human language of the text.","","","","","","","","","",,,,,"",,,,"ED.language",0,1,"",""
+"Act.text.mediaType","Act.text.mediaType","","","Media Type",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","Identifies the type of the encapsulated data and identifies a method to interpret or render the data.","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-MediaType|3.0.0","",,,,"ED.mediaType",0,1,"",""
+"Act.text.representation","Act.text.representation","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/BinaryDataEncoding|2.0.3-sd","",,,,"ED.representation",0,1,"",""
+"Act.text.xmlText","Act.text.xmlText","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","Allows for mixed text content. If @representation='B64', this SHALL be a base64binary string.","Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)","This element is represented in XML as textual content. The actual name ""xmlText"" will not appear in a CDA instance.","","","","","","","","",,,,,"",,,,"ED.xmlText",0,1,"",""
+"Act.text.reference","Act.text.reference","","","Reference",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
+","Référence vers la partie narrative de la section","A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data.","","","","","","","","","",,,,,"",,,,"ED.reference",0,1,"",""
+"Act.text.thumbnail","Act.text.thumbnail","","","Thumbnail",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.","","","","","","","","","",,,,,"",,,,"ED.thumbnail",0,1,"","ED-1:Thumbnails cannot contain their own thumbnails {thumbnail.empty()}
+"
+"Act.statusCode","Act.statusCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActStatus|3.0.0","",,,,"Act.statusCode",0,1,"",""
+"Act.effectiveTime","Act.effectiveTime","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}
+","Date du transport","Date du transport","","","","","","","","","",,,,,"",,,,"Act.effectiveTime",0,1,"",""
+"Act.priorityCode","Act.priorityCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Act.priorityCode",0,1,"",""
+"Act.languageCode","Act.languageCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/all-languages|5.0.0","",,,,"Act.languageCode",0,1,"",""
+"Act.subject","Act.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.subject",0,1,"",""
+"Act.specimen","Act.specimen","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Specimen {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.specimen",0,*,"",""
+"Act.performer","Act.performer","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Performer2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0]]} {[]}
+","Transporteur : 
+
+Les attributs de cet élément prennent les valeurs suivantes : @typeCode= «PRF» ;
+Les attributs de l'élément assignedEntity prennent les valeurs suivantes :@classCode= « ASSIGNED »","Transporteur","","","","","","","","","",,,,,"",,,,"Act.performer",0,*,"",""
+"Act.author","Act.author","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Author {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.author",0,*,"",""
+"Act.informant","Act.informant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.informant",0,*,"",""
+"Act.participant","Act.participant","","","",1,3,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0]]} {[]}
+","Lieu de départ / Destination / Professionnel concerné : 
+
+- Les attributs de cet élément prennent les valeurs suivantes :
+@typeCode = « ORG » pour le Lieu de départ ;
+@typeCode = « DST » pour la Destination ;
+@typeCode = « RCV » pour le Professionnel concerné ;
+- Les attributs du sous-élément participantRole prennent les valeurs suivantes :
+Si @typeCode de l'élément parent participant à « ORG » | « DST » alors @classCode= « SDLOC » ;
+Si @typeCode de l'élément parent participant à « RCV » alors @classCode= « ROL »","Lieu de départ / Destination / Professionnel concerné","","","","","","","","","",,,,,"",,,,"Act.participant",0,*,"",""
+"Act.entryRelationship","Act.entryRelationship","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","Autres précision sur le trajet ou le transport du professionnel","Autres précision sur le trajet ou le transport du professionnel","","","","","","","","","",,,,,"",,,,"Act.entryRelationship",0,*,"",""
+"Act.entryRelationship.nullFlavor","Act.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.entryRelationship.realmCode","Act.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Act.entryRelationship.typeId","Act.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Act.entryRelationship.typeId.nullFlavor","Act.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.entryRelationship.typeId.assigningAuthorityName","Act.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Act.entryRelationship.typeId.displayable","Act.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Act.entryRelationship.typeId.root","Act.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Act.entryRelationship.typeId.extension","Act.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Act.entryRelationship.templateId","Act.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Act.entryRelationship.typeCode","Act.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0","",,,,"EntryRelationship.typeCode",1,1,"",""
+"Act.entryRelationship.inversionInd","Act.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""false""/>","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
+"Act.entryRelationship.contextConductionInd","Act.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
+"Act.entryRelationship.negationInd","Act.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
+"Act.entryRelationship.sequenceNumber","Act.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
+"Act.entryRelationship.seperatableInd","Act.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
+"Act.entryRelationship.act","Act.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
+"Act.entryRelationship.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
+"Act.entryRelationship.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0]]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
+"Act.entryRelationship.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
+"Act.entryRelationship.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
+"Act.entryRelationship.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
+"Act.entryRelationship.regionOfInterest","Act.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
+"Act.entryRelationship.substanceAdministration","Act.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
+"Act.entryRelationship.supply","Act.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
+"Act.reference","Act.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.reference",0,*,"",""
+"Act.precondition","Act.precondition","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Precondition {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.precondition",0,*,"",""
+"Act.sdtcPrecondition2","Act.sdtcPrecondition2","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Precondition2 {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.sdtcPrecondition2",0,*,"",""
+"Act.sdtcInFulfillmentOf1","Act.sdtcInFulfillmentOf1","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1 {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Act.sdtcInFulfillmentOf1",0,*,"",""

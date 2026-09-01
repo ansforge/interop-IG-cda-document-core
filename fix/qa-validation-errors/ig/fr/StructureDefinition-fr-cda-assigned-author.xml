@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="fr-cda-assigned-author"/>
+  <language value="fr"/>
+  <text>
+    <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : StructureDefinition fr-cda-assigned-author</b></p><a name="fr-cda-assigned-author"> </a><a name="hcfr-cda-assigned-author"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor">AssignedAuthor</a><a name="AssignedAuthor"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-AssignedAuthor.html">AssignedAuthor(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">Espace de noms (namespace) XML: </span>urn:hl7-org:v3<br/><span style="font-weight:bold">Les instances de ce type sont validées par templateId</span><br/><span style="font-weight:bold" title="La classe racine qui contient les instances de cette classe">Conteneur logique: </span><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html">ClinicalDocument (CDA Class)</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.nullFlavor">@nullFlavor</a><a name="AssignedAuthor.nullFlavor"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.typeId">typeId</a><a name="AssignedAuthor.typeId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.typeId.nullFlavor">@nullFlavor</a><a name="AssignedAuthor.typeId.nullFlavor"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.typeId.assigningAuthorityName">@assigningAuthorityName</a><a name="AssignedAuthor.typeId.assigningAuthorityName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.typeId.displayable">@displayable</a><a name="AssignedAuthor.typeId.displayable"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.id">id</a><a name="AssignedAuthor.id"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifiant de l’auteur : 
+- Obligatoire pour un professionnel 
+- Obligatoire pour le patient/usager 
+- Obligatoire pour un système de structure 
+- Obligatoire pour un SNR 
+- Obligatoire pour le DP</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.id.nullFlavor">@nullFlavor</a><a name="AssignedAuthor.id.nullFlavor"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.id.assigningAuthorityName">@assigningAuthorityName</a><a name="AssignedAuthor.id.assigningAuthorityName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.id.displayable">@displayable</a><a name="AssignedAuthor.id.displayable"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.id.root">@root</a><a name="AssignedAuthor.id.root"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html" title="string">oid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html" title="string">uuid(2.0.3-sd)</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html" title="string">ruid(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">- Pour un professionnel : '1.2.250.1.71.4.2.1'
+- Pour le patient/usager : OID de l'autorité d'affectation de l'INS
+- Pour un système de structure : '1.2.250.1.71.4.2.1' 
+- Pour un SNR : OID de l'éditeur 
+- Pour le DP : '1.2.250.1.71.4.2.1'</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Extension simple" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.id.extension">@extension</a><a name="AssignedAuthor.id.extension"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html" title="string">st(2.0.3-sd)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l’identifiant</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a style="text-decoration:line-through; text-decoration:line-through" href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.sdtcIdentifiedBy">sdtcIdentifiedBy</a><a name="AssignedAuthor.sdtcIdentifiedBy"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.code">code</a><a name="AssignedAuthor.code"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Profession / savoir-faire ou rôle : 
+- Obligatoire pour un professionnel 
+- Ne pas utiliser pour le patient/usager 
+- Obligatoire pour un système de structure 
+- Obligatoire pour un SNR 
+- Obligatoire pour le DP<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-JDV-J01-XdsAuthorSpecialty-CISIS.html" title="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS" class="binding">JDV_J01_XdsAuthorSpecialty_CISIS (20260730120000)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.addr">addr</a><a name="AssignedAuthor.addr"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-AD.html">AD</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse géopostale de l’auteur</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.telecom">telecom</a><a name="AssignedAuthor.telecom"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-TEL.html">TEL</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Coordonnées télécom de l’auteur</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.assignedPerson">assignedPerson</a><a name="AssignedAuthor.assignedPerson"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-assigned-person.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Person">FRCDAAssignedPerson(0.1.0)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identité de l’auteur :  
+- Obligatoire pour un professionnel 
+- Obligatoire pour le patient/usager 
+- Ne pas utiliser pour un système de structure 
+- Ne pas utiliser pour un SNR 
+- Ne pas utiliser pour le DP</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.assignedAuthoringDevice">assignedAuthoringDevice</a><a name="AssignedAuthor.assignedAuthoringDevice"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-authoring-device.html" title="http://hl7.org/cda/stds/core/StructureDefinition/AuthoringDevice">FRCDAAuthoringDevice(0.1.0)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Informations complémentaires si l’auteur est un système :
+- Ne pas utiliser pour un professionnel 
+- Ne pas utiliser pour le patient/usager 
+- Obligatoire pour un système de structure 
+- Obligatoire pour un SNR 
+- Obligatoire pour le DP</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-fr-cda-assigned-author-definitions.html#AssignedAuthor.representedOrganization">representedOrganization</a><a name="AssignedAuthor.representedOrganization"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-represented-organization.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Organization">FRCDARepresentedOrganization(0.1.0)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Structure correspondante : 
+- Obligatoire pour un professionnel 
+- Ne pas utiliser pour le patient/usager 
+- Obligatoire pour un système de structure 
+- Obligatoire pour un SNR 
+- Obligatoire pour le DP</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+    <valueString value="assignedAuthor"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-container">
+    <valueUri value="http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/type-profile-style">
+    <valueCode value="cda"/>
+  </extension>
+  <url value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-author"/>
+  <version value="0.1.0"/>
+  <name value="FRCDAAssignedAuthor"/>
+  <title value="CDA - assignedAuthor"/>
+  <status value="draft"/>
+  <date value="2026-09-01T12:39:31+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="L'élément de l'en-tête du CDA assignedAuthor contient les éléments permettant de décrire l’auteur."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor|2.0.3-sd"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="2.0.3-sd"/>
+    </extension>
+    <element id="AssignedAuthor">
+      <path value="AssignedAuthor"/>
+      <short value="Base for all types and resources"/>
+      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="assigned-author-choice"/>
+        <severity value="error"/>
+        <human value="assignedPerson and assignedAuthoringDevice are mutually exclusive"/>
+        <expression value="(assignedPerson | assignedAuthoringDevice).count() &lt;= 1"/>
+        <source value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor|2.0.3-sd"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="AssignedAuthor.nullFlavor">
+      <path value="AssignedAuthor.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="AssignedAuthor.realmCode">
+      <path value="AssignedAuthor.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="InfrastructureRoot.realmCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.typeId">
+      <path value="AssignedAuthor.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="InfrastructureRoot.typeId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+      <constraint>
+        <key value="II-1"/>
+        <severity value="error"/>
+        <human value="An II instance must have either a root or an nullFlavor."/>
+        <expression value="root.exists() or nullFlavor.exists()"/>
+        <source value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"/>
+      </constraint>
+    </element>
+    <element id="AssignedAuthor.typeId.nullFlavor">
+      <path value="AssignedAuthor.typeId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="AssignedAuthor.typeId.assigningAuthorityName">
+      <path value="AssignedAuthor.typeId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.typeId.displayable">
+      <path value="AssignedAuthor.typeId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.typeId.root">
+      <path value="AssignedAuthor.typeId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="Identifies the type as an HL7 Registered model"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+      <fixedString value="2.16.840.1.113883.1.3"/>
+    </element>
+    <element id="AssignedAuthor.typeId.extension">
+      <path value="AssignedAuthor.typeId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.templateId">
+      <path value="AssignedAuthor.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="InfrastructureRoot.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.classCode">
+      <path value="AssignedAuthor.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="AssignedAuthor.classCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <fixedCode value="ASSIGNED"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassAssignedEntity|3.0.0"/>
+      </binding>
+    </element>
+    <element id="AssignedAuthor.id">
+      <path value="AssignedAuthor.id"/>
+      <short value="Identifiant de l’auteur : &#xA;- Obligatoire pour un professionnel &#xA;- Obligatoire pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="AssignedAuthor.id"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.id.nullFlavor">
+      <path value="AssignedAuthor.id.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="AssignedAuthor.id.assigningAuthorityName">
+      <path value="AssignedAuthor.id.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.id.displayable">
+      <path value="AssignedAuthor.id.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.id.root">
+      <path value="AssignedAuthor.id.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <short value="- Pour un professionnel : '1.2.250.1.71.4.2.1'&#xA;- Pour le patient/usager : OID de l'autorité d'affectation de l'INS&#xA;- Pour un système de structure : '1.2.250.1.71.4.2.1' &#xA;- Pour un SNR : OID de l'éditeur &#xA;- Pour le DP : '1.2.250.1.71.4.2.1'"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.id.extension">
+      <path value="AssignedAuthor.id.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <short value="Valeur de l’identifiant"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.sdtcIdentifiedBy">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="identifiedBy"/>
+      </extension>
+      <path value="AssignedAuthor.sdtcIdentifiedBy"/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="AssignedAuthor.sdtcIdentifiedBy"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.code">
+      <path value="AssignedAuthor.code"/>
+      <short value="Profession / savoir-faire ou rôle : &#xA;- Obligatoire pour un professionnel &#xA;- Ne pas utiliser pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="AssignedAuthor.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260730120000"/>
+      </binding>
+    </element>
+    <element id="AssignedAuthor.sdtcSpecialty">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/xml-name">
+        <valueString value="specialty"/>
+      </extension>
+      <path value="AssignedAuthor.sdtcSpecialty"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="AssignedAuthor.sdtcSpecialty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.addr">
+      <path value="AssignedAuthor.addr"/>
+      <short value="Adresse géopostale de l’auteur"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="AssignedAuthor.addr"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.telecom">
+      <path value="AssignedAuthor.telecom"/>
+      <short value="Coordonnées télécom de l’auteur"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="AssignedAuthor.telecom"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.assignedPerson">
+      <path value="AssignedAuthor.assignedPerson"/>
+      <short value="Identité de l’auteur :  &#xA;- Obligatoire pour un professionnel &#xA;- Obligatoire pour le patient/usager &#xA;- Ne pas utiliser pour un système de structure &#xA;- Ne pas utiliser pour un SNR &#xA;- Ne pas utiliser pour le DP"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="AssignedAuthor.assignedPerson"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Person"/>
+        <profile value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-person|0.1.0"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.assignedAuthoringDevice">
+      <path value="AssignedAuthor.assignedAuthoringDevice"/>
+      <short value="Informations complémentaires si l’auteur est un système :&#xA;- Ne pas utiliser pour un professionnel &#xA;- Ne pas utiliser pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="AssignedAuthor.assignedAuthoringDevice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AuthoringDevice"/>
+        <profile value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authoring-device|0.1.0"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.representedOrganization">
+      <path value="AssignedAuthor.representedOrganization"/>
+      <short value="Structure correspondante : &#xA;- Obligatoire pour un professionnel &#xA;- Ne pas utiliser pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="AssignedAuthor.representedOrganization"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
+        <profile value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-represented-organization|0.1.0"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="AssignedAuthor.nullFlavor">
+      <path value="AssignedAuthor.nullFlavor"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.typeId.nullFlavor">
+      <path value="AssignedAuthor.typeId.nullFlavor"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.typeId.assigningAuthorityName">
+      <path value="AssignedAuthor.typeId.assigningAuthorityName"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.typeId.displayable">
+      <path value="AssignedAuthor.typeId.displayable"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.id">
+      <path value="AssignedAuthor.id"/>
+      <short value="Identifiant de l’auteur : &#xA;- Obligatoire pour un professionnel &#xA;- Obligatoire pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+    </element>
+    <element id="AssignedAuthor.id.nullFlavor">
+      <path value="AssignedAuthor.id.nullFlavor"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.id.assigningAuthorityName">
+      <path value="AssignedAuthor.id.assigningAuthorityName"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.id.displayable">
+      <path value="AssignedAuthor.id.displayable"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.id.root">
+      <path value="AssignedAuthor.id.root"/>
+      <short value="- Pour un professionnel : '1.2.250.1.71.4.2.1'&#xA;- Pour le patient/usager : OID de l'autorité d'affectation de l'INS&#xA;- Pour un système de structure : '1.2.250.1.71.4.2.1' &#xA;- Pour un SNR : OID de l'éditeur &#xA;- Pour le DP : '1.2.250.1.71.4.2.1'"/>
+      <min value="1"/>
+    </element>
+    <element id="AssignedAuthor.id.extension">
+      <path value="AssignedAuthor.id.extension"/>
+      <short value="Valeur de l’identifiant"/>
+      <min value="1"/>
+    </element>
+    <element id="AssignedAuthor.sdtcIdentifiedBy">
+      <path value="AssignedAuthor.sdtcIdentifiedBy"/>
+      <max value="0"/>
+    </element>
+    <element id="AssignedAuthor.code">
+      <path value="AssignedAuthor.code"/>
+      <short value="Profession / savoir-faire ou rôle : &#xA;- Obligatoire pour un professionnel &#xA;- Ne pas utiliser pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260730120000"/>
+      </binding>
+    </element>
+    <element id="AssignedAuthor.addr">
+      <path value="AssignedAuthor.addr"/>
+      <short value="Adresse géopostale de l’auteur"/>
+    </element>
+    <element id="AssignedAuthor.telecom">
+      <path value="AssignedAuthor.telecom"/>
+      <short value="Coordonnées télécom de l’auteur"/>
+    </element>
+    <element id="AssignedAuthor.assignedPerson">
+      <path value="AssignedAuthor.assignedPerson"/>
+      <short value="Identité de l’auteur :  &#xA;- Obligatoire pour un professionnel &#xA;- Obligatoire pour le patient/usager &#xA;- Ne pas utiliser pour un système de structure &#xA;- Ne pas utiliser pour un SNR &#xA;- Ne pas utiliser pour le DP"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Person"/>
+        <profile value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-person|0.1.0"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.assignedAuthoringDevice">
+      <path value="AssignedAuthor.assignedAuthoringDevice"/>
+      <short value="Informations complémentaires si l’auteur est un système :&#xA;- Ne pas utiliser pour un professionnel &#xA;- Ne pas utiliser pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AuthoringDevice"/>
+        <profile value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authoring-device|0.1.0"/>
+      </type>
+    </element>
+    <element id="AssignedAuthor.representedOrganization">
+      <path value="AssignedAuthor.representedOrganization"/>
+      <short value="Structure correspondante : &#xA;- Obligatoire pour un professionnel &#xA;- Ne pas utiliser pour le patient/usager &#xA;- Obligatoire pour un système de structure &#xA;- Obligatoire pour un SNR &#xA;- Obligatoire pour le DP"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
+        <profile value="https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-represented-organization|0.1.0"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

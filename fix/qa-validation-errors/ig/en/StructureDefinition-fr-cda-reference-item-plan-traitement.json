@@ -1,0 +1,2775 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-cda-reference-item-plan-traitement",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition fr-cda-reference-item-plan-traitement</b></p><a name=\"en-fr-cda-reference-item-plan-traitement\"> </a><a name=\"en-hcfr-cda-reference-item-plan-traitement\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration\">SubstanceAdministration</a><a name=\"en-SubstanceAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html\">SubstanceAdministration(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">XML Namespace: </span>urn:hl7-org:v3<br/><span style=\"font-weight:bold\">Instance of this type are validated by templateId</span><br/><span style=\"font-weight:bold\" title=\"The root class that contains instances of this class\">Logical Container: </span><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.templateId\">Slices for templateId</a><a name=\"en-SubstanceAdministration.templateId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">2</span><span style=\"font-style: italic\">..</span><span style=\"font-style: italic\">2</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by value:root</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for templateId<a name=\"en-SubstanceAdministration.templateId.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem\" title=\"Slice iheReferenceToMedicationTreatmentPlanItem: Conformité Reference to Medication Treatment Plan Item (IHE PHARM PRE)\">templateId:iheReferenceToMedicationTreatmentPlanItem</a><a name=\"en-SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Conformité Reference to Medication Treatment Plan Item (IHE PHARM PRE)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.root\">@root</a><a name=\"en-SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.root\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">1.3.6.1.4.1.19376.1.9.1.3.10</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for templateId<a name=\"en-SubstanceAdministration.templateId.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.templateId:frReferenceItemPlanTraitement\" title=\"Slice frReferenceItemPlanTraitement: Conformité FR-reference-item-plan-traitement (CI-SIS)\">templateId:frReferenceItemPlanTraitement</a><a name=\"en-SubstanceAdministration.templateId:frReferenceItemPlanTraitement\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Conformité FR-reference-item-plan-traitement (CI-SIS)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.templateId:frReferenceItemPlanTraitement.root\">@root</a><a name=\"en-SubstanceAdministration.templateId:frReferenceItemPlanTraitement.root\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">1.2.250.1.213.1.1.3.85</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.classCode\">@classCode</a><a name=\"en-SubstanceAdministration.classCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.moodCode\">@moodCode</a><a name=\"en-SubstanceAdministration.moodCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">SBADM</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.id\" title=\"Identifiant de l'entrée\">id</a><a name=\"en-SubstanceAdministration.id\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifiant de l'entrée</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.code\" title=\"Code de l’entrée\">code</a><a name=\"en-SubstanceAdministration.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CD.html\">CD</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code de l’entrée. Code indiquant que la référence est une ligne de traitement dans un plan de traitement.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.code.code\">@code</a><a name=\"en-SubstanceAdministration.code.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">MTPItem</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.code.codeSystem\">@codeSystem</a><a name=\"en-SubstanceAdministration.code.codeSystem\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-oid.html\" title=\"string\">oid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-uuid.html\" title=\"string\">uuid(2.0.3-sd)</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ruid.html\" title=\"string\">ruid(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">1.3.6.1.4.1.19376.1.9.2.2</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.code.codeSystemName\">@codeSystemName</a><a name=\"en-SubstanceAdministration.code.codeSystemName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html\" title=\"string\">st(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">IHE Pharmacy Item Type List</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.code.displayName\">@displayName</a><a name=\"en-SubstanceAdministration.code.displayName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-st-simple.html\" title=\"string\">st(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">Ligne dans un plan de traitement</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.consumable\">consumable</a><a name=\"en-SubstanceAdministration.consumable\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InfrastructureRoot.html\">InfrastructureRoot</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.consumable.manufacturedProduct\">manufacturedProduct</a><a name=\"en-SubstanceAdministration.consumable.manufacturedProduct\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ManufacturedProduct.html\">ManufacturedProduct</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial\">manufacturedMaterial</a><a name=\"en-SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html\">Material</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor\">@nullFlavor</a><a name=\"en-SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">NA</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.author\" title=\"Auteur de la ligne de traitement\">author</a><a name=\"en-SubstanceAdministration.author\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-author.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Author\">FRCDAAuthor(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Auteur de la ligne de traitement</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.entryRelationship\" title=\"Item d'un plan de traitement\">entryRelationship</a><a name=\"en-SubstanceAdministration.entryRelationship\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-EntryRelationship.html\">EntryRelationship</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Item d'un plan de traitement. Copie non modifiée de la ligne de traitement référencée.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.entryRelationship.typeCode\">@typeCode</a><a name=\"en-SubstanceAdministration.entryRelationship.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">REFR</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.entryRelationship.substanceAdministration\">substanceAdministration</a><a name=\"en-SubstanceAdministration.entryRelationship.substanceAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-item-plan-traitement.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration\">FRCDAItemPlanTraitement(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.reference\" title=\"Identifiant du plan de traitement\">reference</a><a name=\"en-SubstanceAdministration.reference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Reference.html\">Reference</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifiant du plan de traitement. Cet identifiant peut faciliter la recherche du plan de traitement d'origine si nécessaire.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.reference.typeCode\">@typeCode</a><a name=\"en-SubstanceAdministration.reference.typeCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html\" title=\"code\">cs(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">XCRPT</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-reference-item-plan-traitement-definitions.html#SubstanceAdministration.reference.externalDocument\">externalDocument</a><a name=\"en-SubstanceAdministration.reference.externalDocument\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ExternalDocument.html\">ExternalDocument</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "not-applicable"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri" : "urn:hl7-org:v3"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString" : "substanceAdministration"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueCode" : "cda"
+  }],
+  "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-item-plan-traitement",
+  "version" : "0.1.0",
+  "name" : "FRCDAReferenceItemPlanTraitement",
+  "title" : "CDA - FR Reference item plan traitement",
+  "status" : "draft",
+  "date" : "2026-09-01T12:39:31+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Entrée FR-Reference-item-plan-traitement: IHE-Pharm - Cette entrée permet d’enregistrer une référence à un traitement dans un plan de traitement.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
+  "baseDefinition" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration|2.0.3-sd",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "2.0.3-sd"
+    }],
+    "element" : [{
+      "id" : "SubstanceAdministration",
+      "path" : "SubstanceAdministration",
+      "short" : "Base for all types and resources",
+      "definition" : "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.nullFlavor",
+      "path" : "SubstanceAdministration.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.realmCode",
+      "path" : "SubstanceAdministration.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.typeId",
+      "path" : "SubstanceAdministration.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.typeId.nullFlavor",
+      "path" : "SubstanceAdministration.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.typeId.assigningAuthorityName",
+      "path" : "SubstanceAdministration.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.typeId.displayable",
+      "path" : "SubstanceAdministration.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.typeId.root",
+      "path" : "SubstanceAdministration.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "SubstanceAdministration.typeId.extension",
+      "path" : "SubstanceAdministration.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId",
+      "path" : "SubstanceAdministration.templateId",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "root"
+        }],
+        "rules" : "open"
+      },
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 2,
+      "max" : "2",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem",
+      "path" : "SubstanceAdministration.templateId",
+      "sliceName" : "iheReferenceToMedicationTreatmentPlanItem",
+      "short" : "Conformité Reference to Medication Treatment Plan Item (IHE PHARM PRE)",
+      "definition" : "Conformité Reference to Medication Treatment Plan Item (IHE PHARM PRE)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.nullFlavor",
+      "path" : "SubstanceAdministration.templateId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.assigningAuthorityName",
+      "path" : "SubstanceAdministration.templateId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.displayable",
+      "path" : "SubstanceAdministration.templateId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.root",
+      "path" : "SubstanceAdministration.templateId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "patternString" : "1.3.6.1.4.1.19376.1.9.1.3.10"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.extension",
+      "path" : "SubstanceAdministration.templateId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement",
+      "path" : "SubstanceAdministration.templateId",
+      "sliceName" : "frReferenceItemPlanTraitement",
+      "short" : "Conformité FR-reference-item-plan-traitement (CI-SIS)",
+      "definition" : "Conformité FR-reference-item-plan-traitement (CI-SIS)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement.nullFlavor",
+      "path" : "SubstanceAdministration.templateId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement.assigningAuthorityName",
+      "path" : "SubstanceAdministration.templateId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement.displayable",
+      "path" : "SubstanceAdministration.templateId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement.root",
+      "path" : "SubstanceAdministration.templateId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "patternString" : "1.2.250.1.213.1.1.3.85"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement.extension",
+      "path" : "SubstanceAdministration.templateId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.classCode",
+      "path" : "SubstanceAdministration.classCode",
+      "representation" : ["xmlAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.classCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "SBADM",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAActClass|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.moodCode",
+      "path" : "SubstanceAdministration.moodCode",
+      "representation" : ["xmlAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.moodCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "SBADM",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-xDocumentSubstanceMood|2.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.id",
+      "path" : "SubstanceAdministration.id",
+      "short" : "Identifiant de l'entrée",
+      "definition" : "Identifiant de l'entrée",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.id",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code",
+      "path" : "SubstanceAdministration.code",
+      "short" : "Code de l’entrée. Code indiquant que la référence est une ligne de traitement dans un plan de traitement.",
+      "definition" : "Code de l’entrée",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAActSubstanceAdministrationCode|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.code.nullFlavor",
+      "path" : "SubstanceAdministration.code.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.code.code",
+      "path" : "SubstanceAdministration.code.code",
+      "representation" : ["xmlAttr"],
+      "label" : "Code",
+      "definition" : "The plain code symbol defined by the code system. For example, \"784.0\" is the code symbol of the ICD-9 code \"784.0\" for headache.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "MTPItem",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystem",
+      "path" : "SubstanceAdministration.code.codeSystem",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System",
+      "definition" : "Specifies the code system that defines the code.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystem",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "patternString" : "1.3.6.1.4.1.19376.1.9.2.2",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystemName",
+      "path" : "SubstanceAdministration.code.codeSystemName",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Name",
+      "definition" : "The common name of the coding system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }],
+      "patternString" : "IHE Pharmacy Item Type List"
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystemVersion",
+      "path" : "SubstanceAdministration.code.codeSystemVersion",
+      "representation" : ["xmlAttr"],
+      "label" : "Code System Version",
+      "definition" : "If applicable, a version descriptor defined specifically for the given code system.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.codeSystemVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.code.displayName",
+      "path" : "SubstanceAdministration.code.displayName",
+      "representation" : ["xmlAttr"],
+      "label" : "Display Name",
+      "definition" : "A name or title for the code, under which the sending system shows the code value to its users.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.displayName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }],
+      "patternString" : "Ligne dans un plan de traitement",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.sdtcValueSet",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSet"
+      }],
+      "path" : "SubstanceAdministration.code.sdtcValueSet",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.valueSet",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.code.sdtcValueSetVersion",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "valueSetVersion"
+      }],
+      "path" : "SubstanceAdministration.code.sdtcValueSetVersion",
+      "representation" : ["xmlAttr"],
+      "definition" : "The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.sdtcValueSetVersion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.code.originalText",
+      "path" : "SubstanceAdministration.code.originalText",
+      "label" : "Original Text",
+      "definition" : "The text or phrase used as the basis for the coding.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CD.originalText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.code.qualifier",
+      "path" : "SubstanceAdministration.code.qualifier",
+      "label" : "Qualifier",
+      "definition" : "Specifies additional codes that increase the specificity of the the primary code.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CD.qualifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CR"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.code.translation",
+      "path" : "SubstanceAdministration.code.translation",
+      "representation" : ["typeAttr"],
+      "label" : "Translation",
+      "definition" : "A set of other concept descriptors that translate this concept descriptor into other code systems.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CD.translation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.negationInd",
+      "path" : "SubstanceAdministration.negationInd",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.negationInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.text",
+      "path" : "SubstanceAdministration.text",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ED"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.statusCode",
+      "path" : "SubstanceAdministration.statusCode",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.statusCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActStatus|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.effectiveTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype",
+        "valueCanonical" : "http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS|2.0.3-sd"
+      }],
+      "path" : "SubstanceAdministration.effectiveTime",
+      "representation" : ["typeAttr"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.effectiveTime",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"
+      },
+      {
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      },
+      {
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"
+      },
+      {
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"
+      },
+      {
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.priorityCode",
+      "path" : "SubstanceAdministration.priorityCode",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.priorityCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.repeatNumber",
+      "path" : "SubstanceAdministration.repeatNumber",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.repeatNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.routeCode",
+      "path" : "SubstanceAdministration.routeCode",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.routeCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-RouteOfAdministration|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.approachSiteCode",
+      "path" : "SubstanceAdministration.approachSiteCode",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.approachSiteCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActSite|1.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.doseQuantity",
+      "path" : "SubstanceAdministration.doseQuantity",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.doseQuantity",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.rateQuantity",
+      "path" : "SubstanceAdministration.rateQuantity",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.rateQuantity",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.maxDoseQuantity",
+      "path" : "SubstanceAdministration.maxDoseQuantity",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.maxDoseQuantity",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.administrationUnitCode",
+      "path" : "SubstanceAdministration.administrationUnitCode",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.administrationUnitCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable",
+      "path" : "SubstanceAdministration.consumable",
+      "definition" : "The consumable participation is used to bring in the LabeledDrug or Material entity that describes the administered substance. The LabeledDrug class, which is an Entity class playing the Role of Manufactured Product, identifies the drug that is consumed in the substance administration. The medication is identified by means of the LabeledDrug.code or the LabeledDrug.name. The Material entity is used to identify non-drug administered substances such as vaccines and blood products.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.consumable",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.realmCode",
+      "path" : "SubstanceAdministration.consumable.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeId",
+      "path" : "SubstanceAdministration.consumable.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeId.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeId.assigningAuthorityName",
+      "path" : "SubstanceAdministration.consumable.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeId.displayable",
+      "path" : "SubstanceAdministration.consumable.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeId.root",
+      "path" : "SubstanceAdministration.consumable.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeId.extension",
+      "path" : "SubstanceAdministration.consumable.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.templateId",
+      "path" : "SubstanceAdministration.consumable.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.typeCode",
+      "path" : "SubstanceAdministration.consumable.typeCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.consumable.typeCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "CSM",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.consumable.manufacturedProduct",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.realmCode",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.typeId",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.assigningAuthorityName",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.displayable",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.root",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.extension",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.templateId",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.classCode",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.classCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ManufacturedProduct.classCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "MANU",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-RoleClassManufacturedProduct|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.id",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.id",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ManufacturedProduct.id",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.sdtcIdentifiedBy",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "identifiedBy"
+      }],
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.sdtcIdentifiedBy",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ManufacturedProduct.sdtcIdentifiedBy",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedLabeledDrug",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedLabeledDrug",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ManufacturedProduct.manufacturedLabeledDrug",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/LabeledDrug"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ManufacturedProduct.manufacturedMaterial",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Material"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "NA",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.realmCode",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.assigningAuthorityName",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.displayable",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.root",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.extension",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.templateId",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.classCode",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.classCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.classCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "MMAT",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-EntityClassManufacturedMaterial|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.determinerCode",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.determinerCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.determinerCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "KIND",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-EntityDeterminerDetermined|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAMaterialEntityClassType|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.name",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.name",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.name",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EN"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.lotNumberText",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.lotNumberText",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.lotNumberText",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ST"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.sdtcExpirationTime",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "expirationTime"
+      }],
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.sdtcExpirationTime",
+      "definition" : "The date and time the manufacturer no longer ensures the safety, quality, and/or proper functioning of the material.",
+      "requirements" : "There is a need in many situations that the materials used are of a specific quality or potency or functional status. The ending date for this guarantee is specified by the manufacturer. After that date, while the material may still provide the same characteristics, the manufacturer no longer takes responsibility that the product will perform as specified and denies responsibility for failure of the material after that date.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Material.sdtcExpirationTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturerOrganization",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturerOrganization",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ManufacturedProduct.manufacturerOrganization",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organization"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.subject",
+      "path" : "SubstanceAdministration.subject",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.subject",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Subject"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.specimen",
+      "path" : "SubstanceAdministration.specimen",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.specimen",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Specimen"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.performer",
+      "path" : "SubstanceAdministration.performer",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.performer",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Performer2"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.author",
+      "path" : "SubstanceAdministration.author",
+      "short" : "Auteur de la ligne de traitement",
+      "definition" : "Auteur de la ligne de traitement",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.author",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.informant",
+      "path" : "SubstanceAdministration.informant",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.informant",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.participant",
+      "path" : "SubstanceAdministration.participant",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.participant",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship",
+      "path" : "SubstanceAdministration.entryRelationship",
+      "short" : "Item d'un plan de traitement. Copie non modifiée de la ligne de traitement référencée.",
+      "definition" : "Item d'un plan de traitement",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.entryRelationship",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.nullFlavor",
+      "path" : "SubstanceAdministration.entryRelationship.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.realmCode",
+      "path" : "SubstanceAdministration.entryRelationship.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeId",
+      "path" : "SubstanceAdministration.entryRelationship.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeId.nullFlavor",
+      "path" : "SubstanceAdministration.entryRelationship.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeId.assigningAuthorityName",
+      "path" : "SubstanceAdministration.entryRelationship.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeId.displayable",
+      "path" : "SubstanceAdministration.entryRelationship.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeId.root",
+      "path" : "SubstanceAdministration.entryRelationship.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeId.extension",
+      "path" : "SubstanceAdministration.entryRelationship.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.templateId",
+      "path" : "SubstanceAdministration.entryRelationship.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeCode",
+      "path" : "SubstanceAdministration.entryRelationship.typeCode",
+      "representation" : ["xmlAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.typeCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "REFR",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.inversionInd",
+      "path" : "SubstanceAdministration.entryRelationship.inversionInd",
+      "representation" : ["xmlAttr"],
+      "definition" : "The entryRelationship.inversionInd can be set to \"true\" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.inversionInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.contextConductionInd",
+      "path" : "SubstanceAdministration.entryRelationship.contextConductionInd",
+      "representation" : ["xmlAttr"],
+      "definition" : "The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at \"true\", whereas here the value is defaulted to \"true\", and can be changed to \"false\" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.contextConductionInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }],
+      "defaultValueBoolean" : true
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.negationInd",
+      "path" : "SubstanceAdministration.entryRelationship.negationInd",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.negationInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.sequenceNumber",
+      "path" : "SubstanceAdministration.entryRelationship.sequenceNumber",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.sequenceNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.seperatableInd",
+      "path" : "SubstanceAdministration.entryRelationship.seperatableInd",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.seperatableInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.act",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.encounter",
+      "path" : "SubstanceAdministration.entryRelationship.encounter",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.encounter",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Encounter"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.observation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.observationMedia",
+      "path" : "SubstanceAdministration.entryRelationship.observationMedia",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.observationMedia",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.organizer",
+      "path" : "SubstanceAdministration.entryRelationship.organizer",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.organizer",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.procedure",
+      "path" : "SubstanceAdministration.entryRelationship.procedure",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.procedure",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.regionOfInterest",
+      "path" : "SubstanceAdministration.entryRelationship.regionOfInterest",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.regionOfInterest",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.substanceAdministration",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EntryRelationship.supply",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Supply"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference",
+      "path" : "SubstanceAdministration.reference",
+      "short" : "Identifiant du plan de traitement. Cet identifiant peut faciliter la recherche du plan de traitement d'origine si nécessaire.",
+      "definition" : "Identifiant du plan de traitement",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "SubstanceAdministration.reference",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Reference"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.reference.nullFlavor",
+      "path" : "SubstanceAdministration.reference.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.reference.realmCode",
+      "path" : "SubstanceAdministration.reference.realmCode",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeId",
+      "path" : "SubstanceAdministration.reference.typeId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "InfrastructureRoot.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeId.nullFlavor",
+      "path" : "SubstanceAdministration.reference.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeId.assigningAuthorityName",
+      "path" : "SubstanceAdministration.reference.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeId.displayable",
+      "path" : "SubstanceAdministration.reference.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeId.root",
+      "path" : "SubstanceAdministration.reference.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeId.extension",
+      "path" : "SubstanceAdministration.reference.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.templateId",
+      "path" : "SubstanceAdministration.reference.templateId",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "InfrastructureRoot.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeCode",
+      "path" : "SubstanceAdministration.reference.typeCode",
+      "representation" : ["xmlAttr"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Reference.typeCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "patternCode" : "XCRPT",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-xActRelationshipExternalReference|3.0.0"
+      }
+    },
+    {
+      "id" : "SubstanceAdministration.reference.seperatableInd",
+      "path" : "SubstanceAdministration.reference.seperatableInd",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Reference.seperatableInd",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/BL"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.externalAct",
+      "path" : "SubstanceAdministration.reference.externalAct",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Reference.externalAct",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.externalObservation",
+      "path" : "SubstanceAdministration.reference.externalObservation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Reference.externalObservation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.externalProcedure",
+      "path" : "SubstanceAdministration.reference.externalProcedure",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Reference.externalProcedure",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference.externalDocument",
+      "path" : "SubstanceAdministration.reference.externalDocument",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Reference.externalDocument",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.precondition",
+      "path" : "SubstanceAdministration.precondition",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.precondition",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Precondition"
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.sdtcInFulfillmentOf1",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "inFulfillmentOf1"
+      }],
+      "path" : "SubstanceAdministration.sdtcInFulfillmentOf1",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "SubstanceAdministration.sdtcInFulfillmentOf1",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf1"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "SubstanceAdministration.templateId",
+      "path" : "SubstanceAdministration.templateId",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "root"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem",
+      "path" : "SubstanceAdministration.templateId",
+      "sliceName" : "iheReferenceToMedicationTreatmentPlanItem",
+      "short" : "Conformité Reference to Medication Treatment Plan Item (IHE PHARM PRE)",
+      "definition" : "Conformité Reference to Medication Treatment Plan Item (IHE PHARM PRE)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:iheReferenceToMedicationTreatmentPlanItem.root",
+      "path" : "SubstanceAdministration.templateId.root",
+      "min" : 1,
+      "patternString" : "1.3.6.1.4.1.19376.1.9.1.3.10"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement",
+      "path" : "SubstanceAdministration.templateId",
+      "sliceName" : "frReferenceItemPlanTraitement",
+      "short" : "Conformité FR-reference-item-plan-traitement (CI-SIS)",
+      "definition" : "Conformité FR-reference-item-plan-traitement (CI-SIS)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "SubstanceAdministration.templateId:frReferenceItemPlanTraitement.root",
+      "path" : "SubstanceAdministration.templateId.root",
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.3.85"
+    },
+    {
+      "id" : "SubstanceAdministration.classCode",
+      "path" : "SubstanceAdministration.classCode",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.moodCode",
+      "path" : "SubstanceAdministration.moodCode",
+      "patternCode" : "SBADM",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.id",
+      "path" : "SubstanceAdministration.id",
+      "short" : "Identifiant de l'entrée",
+      "definition" : "Identifiant de l'entrée",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code",
+      "path" : "SubstanceAdministration.code",
+      "short" : "Code de l’entrée. Code indiquant que la référence est une ligne de traitement dans un plan de traitement.",
+      "definition" : "Code de l’entrée",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.code",
+      "path" : "SubstanceAdministration.code.code",
+      "min" : 1,
+      "patternCode" : "MTPItem",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystem",
+      "path" : "SubstanceAdministration.code.codeSystem",
+      "min" : 1,
+      "patternString" : "1.3.6.1.4.1.19376.1.9.2.2",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystemName",
+      "path" : "SubstanceAdministration.code.codeSystemName",
+      "patternString" : "IHE Pharmacy Item Type List"
+    },
+    {
+      "id" : "SubstanceAdministration.code.displayName",
+      "path" : "SubstanceAdministration.code.displayName",
+      "patternString" : "Ligne dans un plan de traitement",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable",
+      "path" : "SubstanceAdministration.consumable",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial",
+      "min" : 1
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor",
+      "min" : 1,
+      "patternCode" : "NA",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.author",
+      "path" : "SubstanceAdministration.author",
+      "short" : "Auteur de la ligne de traitement",
+      "definition" : "Auteur de la ligne de traitement",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship",
+      "path" : "SubstanceAdministration.entryRelationship",
+      "short" : "Item d'un plan de traitement. Copie non modifiée de la ligne de traitement référencée.",
+      "definition" : "Item d'un plan de traitement",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.typeCode",
+      "path" : "SubstanceAdministration.entryRelationship.typeCode",
+      "patternCode" : "REFR"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"]
+      }]
+    },
+    {
+      "id" : "SubstanceAdministration.reference",
+      "path" : "SubstanceAdministration.reference",
+      "short" : "Identifiant du plan de traitement. Cet identifiant peut faciliter la recherche du plan de traitement d'origine si nécessaire.",
+      "definition" : "Identifiant du plan de traitement",
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.reference.typeCode",
+      "path" : "SubstanceAdministration.reference.typeCode",
+      "patternCode" : "XCRPT"
+    },
+    {
+      "id" : "SubstanceAdministration.reference.externalDocument",
+      "path" : "SubstanceAdministration.reference.externalDocument",
+      "min" : 1,
+      "mustSupport" : true
+    }]
+  }
+}

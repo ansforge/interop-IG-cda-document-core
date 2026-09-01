@@ -1,0 +1,982 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-cda-clinical-document",
+  "language" : "fr",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : StructureDefinition fr-cda-clinical-document</b></p><a name=\"fr-cda-clinical-document\"> </a><a name=\"hcfr-cda-clinical-document\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument\">ClinicalDocument</a><a name=\"ClinicalDocument\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R5/conformance-rules.html#constraints\" title=\"Cet élément a ou est affecté par des contraintes ( FRCDAPerformerRequire )\">C</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument(2.0.3-sd)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-weight:bold\">Espace de noms (namespace) XML: </span>urn:hl7-org:v3<br/><span style=\"opacity: 0.5\">Base for all types and resources</span><br/><span style=\"font-weight:bold\">Les instances de ce type sont validées par templateId</span><br/><span style=\"font-weight:bold\" title=\"La classe racine qui contient les instances de cette classe\">Conteneur logique: </span><a href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html\">ClinicalDocument (CDA Class)</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.realmCode\">realmCode</a><a name=\"ClinicalDocument.realmCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html\">CS</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type de consentement Périmètre d’utilisation : France.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.typeId\">typeId</a><a name=\"ClinicalDocument.typeId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Référence au standard CDA R2.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.templateId\">templateId</a><a name=\"ClinicalDocument.templateId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Déclarations de conformité.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.id\">id</a><a name=\"ClinicalDocument.id\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifiant unique du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.code\">code</a><a name=\"ClinicalDocument.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type de document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.title\">title</a><a name=\"ClinicalDocument.title\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ST.html\">ST</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Titre du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.effectiveTime\">effectiveTime</a><a name=\"ClinicalDocument.effectiveTime\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-TS.html\">TS</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date et heure de création du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.confidentialityCode\">confidentialityCode</a><a name=\"ClinicalDocument.confidentialityCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html\">CE</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Niveau de confidentialité du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.languageCode\">languageCode</a><a name=\"ClinicalDocument.languageCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CS.html\">CS</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Langue principale du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.setId\">setId</a><a name=\"ClinicalDocument.setId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-II.html\">II</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifiant du lot de versions du même document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.versionNumber\">versionNumber</a><a name=\"ClinicalDocument.versionNumber\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-INT.html\">INT</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Numéro de version du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a style=\"text-decoration:line-through; text-decoration:line-through\" href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.copyTime\">copyTime</a><a name=\"ClinicalDocument.copyTime\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\">Deprecated - use is discouraged</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.recordTarget\">recordTarget</a><a name=\"ClinicalDocument.recordTarget\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-record-target.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/RecordTarget\">FRCDARecordTarget(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient/Usager concerné par le document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.author\">author</a><a name=\"ClinicalDocument.author\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-author.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Author\">FRCDAAuthor(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Professionnel ou patient/usager ou système, auteur du document incluant la structure de rattachement de l'auteur.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.dataEnterer\">dataEnterer</a><a name=\"ClinicalDocument.dataEnterer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-data-enterer.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/DataEnterer\">FRCDADataEnterer(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Opérateur de saisie.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.informant\">informant</a><a name=\"ClinicalDocument.informant\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-informant.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Informant\">FRCDAInformant(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informateur (informant), ayant fourni des informations utiles aux actes en rapport avec la production du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.custodian\">custodian</a><a name=\"ClinicalDocument.custodian\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-custodian.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Custodian\">FRCDACustodian(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Structure conservant le document et garantissant son cycle de vie.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.informationRecipient\">informationRecipient</a><a name=\"ClinicalDocument.informationRecipient\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-information-recipient.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/InformationRecipient\">FRCDAInformationRecipient(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Destinataire prévu du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.legalAuthenticator\">legalAuthenticator</a><a name=\"ClinicalDocument.legalAuthenticator\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-legal-authenticator.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/LegalAuthenticator\">FRCDALegalAuthenticator(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Professionnel ou patient/usager ou système responsable du document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.authenticator\">authenticator</a><a name=\"ClinicalDocument.authenticator\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-authenticator.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Authenticator\">FRCDAAuthenticator(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Professionnel attestant la validité du document</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.participant\">participant</a><a name=\"ClinicalDocument.participant\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-participant-entete.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Participant1\">FRCDAParticipantEntete(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.inFulfillmentOf\">inFulfillmentOf</a><a name=\"ClinicalDocument.inFulfillmentOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-inFulfillment-of.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf\">FRCDAInFulfillmentOf(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Prescription</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.documentationOf\">documentationOf</a><a name=\"ClinicalDocument.documentationOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-documentation-of.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/DocumentationOf\">FRCDADocumentationOf(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Evènement documenté et notamment le cadre d'exercice.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.relatedDocument\">relatedDocument</a><a name=\"ClinicalDocument.relatedDocument\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-related-document.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/RelatedDocument\">FRCDARelatedDocument(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Document de référence (à remplacer, transformé, …).</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.authorization\">authorization</a><a name=\"ClinicalDocument.authorization\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-fr-cda-authorization.html\" title=\"http://hl7.org/cda/stds/core/StructureDefinition/Authorization\">FRCDAAuthorization(0.1.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Consentement associé au document.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-cda-clinical-document-definitions.html#ClinicalDocument.componentOf\">componentOf</a><a name=\"ClinicalDocument.componentOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ComponentOf.html\">ComponentOf</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Prise en charge du patient/usager et notamment la date et le secteur d'activité.</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+    "_valueBoolean" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "not-applicable"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+    "valueUri" : "urn:hl7-org:v3"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+    "valueString" : "ClinicalDocument"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/type-profile-style",
+    "valueCode" : "cda"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-container",
+    "valueUri" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"
+  }],
+  "url" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document",
+  "version" : "0.1.0",
+  "name" : "FRCDAClinicalDocument",
+  "title" : "CDA - clinicalDocument",
+  "status" : "draft",
+  "date" : "2026-09-01T12:39:31+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "L'élément de l'en-tête CDA 'ClinicalDocument' est l’élément racine d’un document médical.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument",
+  "baseDefinition" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument|2.0.3-sd",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "2.0.3-sd"
+    }],
+    "element" : [{
+      "id" : "ClinicalDocument",
+      "path" : "ClinicalDocument",
+      "short" : "Base for all types and resources",
+      "definition" : "Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "constraint" : [{
+        "key" : "FRCDAPerformerRequire",
+        "severity" : "error",
+        "human" : "performer est obligatoire et son attribut nullFlavor interdit pour l’évènement documenté principal",
+        "expression" : "documentationOf.serviceEvent.performer.count() >= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document|0.1.0"
+      }],
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.nullFlavor",
+      "path" : "ClinicalDocument.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.classCode",
+      "path" : "ClinicalDocument.classCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.classCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "DOCCLIN",
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAActClass|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.moodCode",
+      "path" : "ClinicalDocument.moodCode",
+      "representation" : ["xmlAttr"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.moodCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "fixedCode" : "EVN",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAActMood|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.realmCode",
+      "path" : "ClinicalDocument.realmCode",
+      "short" : "Type de consentement Périmètre d’utilisation : France.",
+      "definition" : "When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.realmCode",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.typeId",
+      "path" : "ClinicalDocument.typeId",
+      "short" : "Référence au standard CDA R2.",
+      "definition" : "ClinicalDocument.typeId is a technology-neutral explicit reference to this CDA, Release Two specification, and must be valued as follows: ClinicalDocument.typeId.root = \"2.16.840.1.113883.1.3\" (which is the OID for HL7 Registered models); ClinicalDocument.typeId.extension = \"POCD_HD000040\" (which is the unique identifier for the CDA, Release Two Hierarchical Description).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.typeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }],
+      "constraint" : [{
+        "key" : "II-1",
+        "severity" : "error",
+        "human" : "An II instance must have either a root or an nullFlavor.",
+        "expression" : "root.exists() or nullFlavor.exists()",
+        "source" : "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument|2.0.3-sd"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.typeId.nullFlavor",
+      "path" : "ClinicalDocument.typeId.nullFlavor",
+      "representation" : ["xmlAttr"],
+      "label" : "Exceptional Value Detail",
+      "definition" : "If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ANY.nullFlavor",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.typeId.assigningAuthorityName",
+      "path" : "ClinicalDocument.typeId.assigningAuthorityName",
+      "representation" : ["xmlAttr"],
+      "label" : "Assigning Authority Name",
+      "definition" : "A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.assigningAuthorityName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.typeId.displayable",
+      "path" : "ClinicalDocument.typeId.displayable",
+      "representation" : ["xmlAttr"],
+      "label" : "Displayable",
+      "definition" : "Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "II.displayable",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.typeId.root",
+      "path" : "ClinicalDocument.typeId.root",
+      "representation" : ["xmlAttr"],
+      "label" : "Root",
+      "definition" : "Identifies the type as an HL7 Registered model",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.root",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd",
+        "http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"]
+      }],
+      "fixedString" : "2.16.840.1.113883.1.3"
+    },
+    {
+      "id" : "ClinicalDocument.typeId.extension",
+      "path" : "ClinicalDocument.typeId.extension",
+      "representation" : ["xmlAttr"],
+      "label" : "Extension",
+      "definition" : "A character string as a unique identifier within the scope of the identifier root.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "II.extension",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string",
+        "profile" : ["http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"]
+      }],
+      "fixedString" : "POCD_HD000040"
+    },
+    {
+      "id" : "ClinicalDocument.templateId",
+      "path" : "ClinicalDocument.templateId",
+      "short" : "Déclarations de conformité.",
+      "definition" : "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+      "min" : 3,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.templateId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.id",
+      "path" : "ClinicalDocument.id",
+      "short" : "Identifiant unique du document.",
+      "definition" : "Represents the unique instance identifier of a clinical document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.id",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.sdtcCategory",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "category"
+      }],
+      "path" : "ClinicalDocument.sdtcCategory",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.sdtcCategory",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CD"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.code",
+      "path" : "ClinicalDocument.code",
+      "short" : "Type de document.",
+      "definition" : "The code specifying the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.code",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/doc-typecodes|5.0.0"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.title",
+      "path" : "ClinicalDocument.title",
+      "short" : "Titre du document.",
+      "comment" : "It's commonly the case that clinical documents do not have a title, and are collectively referred to by the display name of ClinicalDocument.code (e.g. a 'consultation' or 'progress note'). Where these display names are rendered to the clinician, or where the document has a unique title, the ClinicalDocument.title component should be used.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.title",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ST"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.sdtcStatusCode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace",
+        "valueUri" : "urn:hl7-org:sdtc"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "statusCode"
+      }],
+      "path" : "ClinicalDocument.sdtcStatusCode",
+      "definition" : "The statusCode extension attribute allows the implementer to identify a ClinicalDocument that is in other than the completed state. It was created to support the Structured Form Definition IG to identify that the document itself is an unfinished product currently being completed for a patient.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.sdtcStatusCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActStatus|3.0.0"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.effectiveTime",
+      "path" : "ClinicalDocument.effectiveTime",
+      "short" : "Date et heure de création du document.",
+      "definition" : "Signifies the document creation time, when the document first came into being.",
+      "comment" : "Where the CDA document is a transform from an original document in some other format, the ClinicalDocument.effectiveTime is the time the original document is created. The time when the transform occurred is not currently represented in CDA.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.effectiveTime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/TS"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.confidentialityCode",
+      "path" : "ClinicalDocument.confidentialityCode",
+      "short" : "Niveau de confidentialité du document.",
+      "comment" : "Confidentiality is a required contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.confidentialityCode",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CE"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.languageCode",
+      "path" : "ClinicalDocument.languageCode",
+      "short" : "Langue principale du document.",
+      "definition" : "Specifies the human language of character data (whether they be in contents or attribute values).",
+      "comment" : "Language is a contextual component of CDA, where the value expressed in the header holds true for the entire document, unless overridden by a nested value.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.languageCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/CS"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+      }
+    },
+    {
+      "id" : "ClinicalDocument.setId",
+      "path" : "ClinicalDocument.setId",
+      "short" : "Identifiant du lot de versions du même document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.setId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/II"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.versionNumber",
+      "path" : "ClinicalDocument.versionNumber",
+      "short" : "Numéro de version du document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.versionNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/INT"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.copyTime",
+      "path" : "ClinicalDocument.copyTime",
+      "short" : "Deprecated - use is discouraged",
+      "definition" : "Represents the time a document is released (i.e. copied or sent to a display device) from a document management system that maintains revision control over the document. Once valued, it cannot be changed. The intent is to give the viewer of the document some notion as to how long the document has been out of the safe context of its document management system.",
+      "requirements" : "Included for backwards compatibility with CDA, Release One. ClinicalDocument.copyTime has been deprecated because it is not part of the document at the time it is authenticated, but instead represents metadata about the document, applied at some variable time after authentication. Further use is discouraged.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "ClinicalDocument.copyTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/TS"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.recordTarget",
+      "path" : "ClinicalDocument.recordTarget",
+      "short" : "Patient/Usager concerné par le document.",
+      "comment" : "A clinical document typically has exactly one recordTarget participant. In the uncommon case where a clinical document (such as a group encounter note) is placed into more than one patient chart, more than one recordTarget participants can be stated.",
+      "requirements" : "The recordTarget(s) of a document are stated in the header and propagate to nested content, where they cannot be overridden.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.recordTarget",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RecordTarget",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-record-target|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.author",
+      "path" : "ClinicalDocument.author",
+      "short" : "Professionnel ou patient/usager ou système, auteur du document incluant la structure de rattachement de l'auteur.",
+      "comment" : "In some cases, the role or function of the author is inherent in the ClinicalDocument.code, such as where ClinicalDocument.code is 'Medical Student Progress Note'. The role of the author can also be recorded in the Author.functionCode or AssignedAuthor.code attribute. If either of these attributes is included, they should be equivalent to or further specialize the role inherent in the ClinicalDocument.code (such as where the ClinicalDocument.code is simply 'Physician Progress Note' and the value of Author.functionCode is 'rounding physician'), and shall not conflict with the role inherent in the ClinicalDocument.code, as such a conflict would constitute an ambiguous situation.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.author",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.dataEnterer",
+      "path" : "ClinicalDocument.dataEnterer",
+      "short" : "Opérateur de saisie.",
+      "alias" : ["Transcriptionist"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.dataEnterer",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/DataEnterer",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-data-enterer|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.informant",
+      "path" : "ClinicalDocument.informant",
+      "short" : "Informateur (informant), ayant fourni des informations utiles aux actes en rapport avec la production du document.",
+      "definition" : "An informant (or source of information) is a person that provides relevant information, such as the parent of a comatose patient who describes the patient's behavior prior to the onset of coma.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.informant",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.custodian",
+      "path" : "ClinicalDocument.custodian",
+      "short" : "Structure conservant le document et garantissant son cycle de vie.",
+      "definition" : "Represents the organization that is in charge of maintaining the document. The custodian is the steward that is entrusted with the care of the document. Every CDA document has exactly one custodian.",
+      "requirements" : "The custodian participation satisfies the CDA definition of Stewardship. Because CDA is an exchange standard and may not represent the original form of the authenticated document, the custodian represents the steward of the original source document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.custodian",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Custodian",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-custodian|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.informationRecipient",
+      "path" : "ClinicalDocument.informationRecipient",
+      "short" : "Destinataire prévu du document.",
+      "comment" : "The information recipient is an entity to whom a copy of a document is directed, at the time of document authorship. It is not the same as the cumulative set of persons to whom the document has subsequently been disclosed, over the life-time of the patient. Such a disclosure list would not be contained within the document, and it outside the scope of CDA.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.informationRecipient",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InformationRecipient",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-information-recipient|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.legalAuthenticator",
+      "path" : "ClinicalDocument.legalAuthenticator",
+      "short" : "Professionnel ou patient/usager ou système responsable du document.",
+      "comment" : "The CDA is a standard that specifies the structure of exchanged clinical documents. In the case where a local document is transformed into a CDA document for exchange, authentication occurs on the local document, and that fact is reflected in the exchanged CDA document. A CDA document can reflect the unauthenticated, authenticated, or legally authenticated state. The unauthenticated state exists when no authentication information has been recorded (i.e., it is the absence of being either authenticated or legally authenticated).",
+      "requirements" : "While electronic signatures are not captured in a CDA document, both authentication and legal authentication require that a document has been signed manually or electronically by the responsible individual. A legalAuthenticator has a required legalAuthenticator.time indicating the time of authentication, and a required legalAuthenticator.signatureCode, indicating that a signature has been obtained and is on file.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.legalAuthenticator",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/LegalAuthenticator",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-legal-authenticator|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.authenticator",
+      "path" : "ClinicalDocument.authenticator",
+      "short" : "Professionnel attestant la validité du document",
+      "definition" : "Represents a participant who has attested to the accuracy of the document, but who does not have privileges to legally authenticate the document. An example would be a resident physician who sees a patient and dictates a note, then later signs it.",
+      "comment" : "A clinical document can have zero to many authenticators. While electronic signatures are not captured in a CDA document, both authentication and legal authentication require that a document has been signed manually or electronically by the responsible individual. An authenticator has a required authenticator.time indicating the time of authentication, and a required authenticator.signatureCode, indicating that a signature has been obtained and is on file.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.authenticator",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Authenticator",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authenticator|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.participant",
+      "path" : "ClinicalDocument.participant",
+      "short" : "Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.",
+      "definition" : "Used to represent other participants not explicitly mentioned by other classes, that were somehow involved in the documented acts.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.participant",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant1",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-entete|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.inFulfillmentOf",
+      "path" : "ClinicalDocument.inFulfillmentOf",
+      "short" : "Prescription",
+      "comment" : "For instance, a provider orders an X-Ray. The X-Ray is performed. A radiologist reads the X-Ray and generates a report. The X-Ray order identifier is transmitted in the Order class, the performed X-Ray procedure is transmitted in the ServiceEvent class, and the ClinicalDocument.code would be valued with 'Diagnostic Imaging Report'.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.inFulfillmentOf",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-inFulfillment-of|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.documentationOf",
+      "path" : "ClinicalDocument.documentationOf",
+      "short" : "Evènement documenté et notamment le cadre d'exercice.",
+      "comment" : "In some cases, the ServiceEvent is inherent in the ClinicalDocument.code, such as where ClinicalDocument.code is 'History and Physical Report' and the procedure being documented is a 'History and Physical' act. A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the ClinicalDocument.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'. If ServiceEvent is included, it must be equivalent to or further specialize the value inherent in the ClinicalDocument.code, and shall not conflict with the value inherent in the ClinicalDocument.code, as such a conflict would constitute an ambiguous situation.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.documentationOf",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/DocumentationOf",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-documentation-of|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.relatedDocument",
+      "path" : "ClinicalDocument.relatedDocument",
+      "short" : "Document de référence (à remplacer, transformé, …).",
+      "requirements" : "A conformant CDA document can have a single relatedDocument with typeCode 'APND'; a single relatedDocument with typeCode 'RPLC'; a single relatedDocument with typeCode 'XFRM'; a combination of two relatedDocuments with typeCodes 'XFRM' and 'RPLC'; or a combination of two relatedDocuments with typeCodes 'XFRM' and 'APND'. No other combinations are allowed.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.relatedDocument",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RelatedDocument",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-related-document|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.authorization",
+      "path" : "ClinicalDocument.authorization",
+      "short" : "Consentement associé au document.",
+      "comment" : "The type of consent (e.g. a consent to perform the related ServiceEvent, a consent for the information contained in the document to be released to a third party) is conveyed in Consent.code. Consents referenced in the CDA Header have been finalized (Consent.statusCode must equal 'completed') and should be on file.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ClinicalDocument.authorization",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Authorization",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authorization|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.componentOf",
+      "path" : "ClinicalDocument.componentOf",
+      "short" : "Prise en charge du patient/usager et notamment la date et le secteur d'activité.",
+      "definition" : "This optional class represents the setting of the clinical encounter during which the documented act(s) or ServiceEvent occurred. Documents are not necessarily generated during an encounter, such as when a clinician, in response to an abnormal lab result, attempts to contact the patient but can't, and writes a Progress Note.",
+      "comment" : "In some cases, the setting of the encounter is inherent in the ClinicalDocument.code, such as where ClinicalDocument.code is 'Diabetes Clinic Progress Note'. The setting of an encounter can also be transmitted in the HealthCareFacility.code attribute. If HealthCareFacility.code is sent, it should be equivalent to or further specialize the value inherent in the ClinicalDocument.code (such as where the ClinicalDocument.code is simply 'Clinic Progress Note' and the value of HealthCareFacility.code is 'cardiology clinic'), and shall not conflict with the value inherent in the ClinicalDocument.code, as such a conflict would constitute an ambiguous situation.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.componentOf",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ComponentOf"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.component",
+      "path" : "ClinicalDocument.component",
+      "short" : "Body of the document",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ClinicalDocument.component",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Component"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "ClinicalDocument",
+      "path" : "ClinicalDocument",
+      "constraint" : [{
+        "key" : "FRCDAPerformerRequire",
+        "severity" : "error",
+        "human" : "performer est obligatoire et son attribut nullFlavor interdit pour l’évènement documenté principal",
+        "expression" : "documentationOf.serviceEvent.performer.count() >= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-clinical-document|0.1.0"
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.realmCode",
+      "path" : "ClinicalDocument.realmCode",
+      "short" : "Type de consentement Périmètre d’utilisation : France.",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "ClinicalDocument.typeId",
+      "path" : "ClinicalDocument.typeId",
+      "short" : "Référence au standard CDA R2.",
+      "min" : 1
+    },
+    {
+      "id" : "ClinicalDocument.templateId",
+      "path" : "ClinicalDocument.templateId",
+      "short" : "Déclarations de conformité.",
+      "min" : 3
+    },
+    {
+      "id" : "ClinicalDocument.id",
+      "path" : "ClinicalDocument.id",
+      "short" : "Identifiant unique du document."
+    },
+    {
+      "id" : "ClinicalDocument.code",
+      "path" : "ClinicalDocument.code",
+      "short" : "Type de document."
+    },
+    {
+      "id" : "ClinicalDocument.title",
+      "path" : "ClinicalDocument.title",
+      "short" : "Titre du document.",
+      "min" : 1
+    },
+    {
+      "id" : "ClinicalDocument.effectiveTime",
+      "path" : "ClinicalDocument.effectiveTime",
+      "short" : "Date et heure de création du document."
+    },
+    {
+      "id" : "ClinicalDocument.confidentialityCode",
+      "path" : "ClinicalDocument.confidentialityCode",
+      "short" : "Niveau de confidentialité du document."
+    },
+    {
+      "id" : "ClinicalDocument.languageCode",
+      "path" : "ClinicalDocument.languageCode",
+      "short" : "Langue principale du document.",
+      "min" : 1
+    },
+    {
+      "id" : "ClinicalDocument.setId",
+      "path" : "ClinicalDocument.setId",
+      "short" : "Identifiant du lot de versions du même document.",
+      "min" : 1
+    },
+    {
+      "id" : "ClinicalDocument.versionNumber",
+      "path" : "ClinicalDocument.versionNumber",
+      "short" : "Numéro de version du document.",
+      "min" : 1
+    },
+    {
+      "id" : "ClinicalDocument.copyTime",
+      "path" : "ClinicalDocument.copyTime",
+      "max" : "0"
+    },
+    {
+      "id" : "ClinicalDocument.recordTarget",
+      "path" : "ClinicalDocument.recordTarget",
+      "short" : "Patient/Usager concerné par le document.",
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RecordTarget",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-record-target|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.author",
+      "path" : "ClinicalDocument.author",
+      "short" : "Professionnel ou patient/usager ou système, auteur du document incluant la structure de rattachement de l'auteur.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.dataEnterer",
+      "path" : "ClinicalDocument.dataEnterer",
+      "short" : "Opérateur de saisie.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/DataEnterer",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-data-enterer|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.informant",
+      "path" : "ClinicalDocument.informant",
+      "short" : "Informateur (informant), ayant fourni des informations utiles aux actes en rapport avec la production du document.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.custodian",
+      "path" : "ClinicalDocument.custodian",
+      "short" : "Structure conservant le document et garantissant son cycle de vie.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Custodian",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-custodian|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.informationRecipient",
+      "path" : "ClinicalDocument.informationRecipient",
+      "short" : "Destinataire prévu du document.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InformationRecipient",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-information-recipient|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.legalAuthenticator",
+      "path" : "ClinicalDocument.legalAuthenticator",
+      "short" : "Professionnel ou patient/usager ou système responsable du document.",
+      "min" : 1,
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/LegalAuthenticator",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-legal-authenticator|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.authenticator",
+      "path" : "ClinicalDocument.authenticator",
+      "short" : "Professionnel attestant la validité du document",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Authenticator",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authenticator|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.participant",
+      "path" : "ClinicalDocument.participant",
+      "short" : "Participant, différent de l'auteur, du responsable, de l'opérateur de saisie, de l'informateur ou du destinataire.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant1",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-entete|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.inFulfillmentOf",
+      "path" : "ClinicalDocument.inFulfillmentOf",
+      "short" : "Prescription",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-inFulfillment-of|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.documentationOf",
+      "path" : "ClinicalDocument.documentationOf",
+      "short" : "Evènement documenté et notamment le cadre d'exercice.",
+      "min" : 1,
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/DocumentationOf",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-documentation-of|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.relatedDocument",
+      "path" : "ClinicalDocument.relatedDocument",
+      "short" : "Document de référence (à remplacer, transformé, …).",
+      "max" : "1",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/RelatedDocument",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-related-document|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.authorization",
+      "path" : "ClinicalDocument.authorization",
+      "short" : "Consentement associé au document.",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Authorization",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authorization|0.1.0"]
+      }]
+    },
+    {
+      "id" : "ClinicalDocument.componentOf",
+      "path" : "ClinicalDocument.componentOf",
+      "short" : "Prise en charge du patient/usager et notamment la date et le secteur d'activité.",
+      "min" : 1
+    }]
+  }
+}
