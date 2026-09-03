@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-participan
   "name" : "FRCDAParticipantCorps",
   "title" : "CDA - FR Participant corps",
   "status" : "draft",
-  "date" : "2026-09-01T12:39:31+00:00",
+  "date" : "2026-09-03T14:38:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -121,6 +121,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-participan
       "definition" : "Autre TemplateId",
       "min" : 0,
       "max" : "*"
+    },
+    {
+      "id" : "Participant2.templateId:templateId-other.root",
+      "path" : "Participant2.templateId.root",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Participant2.typeCode",

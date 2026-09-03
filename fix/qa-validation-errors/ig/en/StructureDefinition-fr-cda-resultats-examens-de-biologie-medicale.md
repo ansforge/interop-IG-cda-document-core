@@ -63,7 +63,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
   "name" : "FRCDAResultatsExamensDeBiologieMedicale",
   "title" : "CDA - FR Resultats examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-09-01T12:39:31+00:00",
+  "date" : "2026-09-03T14:38:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -203,7 +203,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
     {
       "id" : "Act.performer",
       "path" : "Act.performer",
-      "short" : "Laboratoire sous-traitant",
+      "short" : "Laboratoire sous-traitant. si différent du performer de l'en-tête.",
+      "definition" : "Laboratoire sous-traitant",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Performer2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0"]
@@ -248,8 +249,28 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
       "mustSupport" : true
     },
     {
-      "id" : "Act.participant:frParticipantValideurResultats.templateId.root",
+      "id" : "Act.participant:frParticipantValideurResultats.templateId",
+      "path" : "Act.participant.templateId",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "root"
+        }],
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateId-other",
+      "path" : "Act.participant.templateId",
+      "sliceName" : "templateId-other",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateId-other.root",
       "path" : "Act.participant.templateId.root",
+      "min" : 1,
       "patternString" : "1.3.6.1.4.1.19376.1.3.3.1.5"
     },
     {

@@ -30,8 +30,8 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 ** Résumé **
 
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 5 éléments
+Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
+ Must-Support : 6 éléments
 
 **Structures**
 
@@ -59,8 +59,8 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 ** Résumé **
 
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 5 éléments
+Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
+ Must-Support : 6 éléments
 
 **Structures**
 
@@ -116,7 +116,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
   "name" : "FRCDAParticipantCorps",
   "title" : "CDA - FR Participant corps",
   "status" : "draft",
-  "date" : "2026-09-01T12:39:31+00:00",
+  "date" : "2026-09-03T14:38:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -180,6 +180,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
       "definition" : "Autre TemplateId",
       "min" : 0,
       "max" : "*"
+    },
+    {
+      "id" : "Participant2.templateId:templateId-other.root",
+      "path" : "Participant2.templateId.root",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Participant2.typeCode",

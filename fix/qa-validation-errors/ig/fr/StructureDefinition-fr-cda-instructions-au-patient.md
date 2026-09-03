@@ -119,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-instruct
   "name" : "FRCDAInstructionsAuPatient",
   "title" : "CDA - FR Instructions au patient",
   "status" : "draft",
-  "date" : "2026-09-01T12:39:31+00:00",
+  "date" : "2026-09-03T14:38:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

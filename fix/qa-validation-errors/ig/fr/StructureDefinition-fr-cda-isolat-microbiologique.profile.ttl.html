@@ -307,7 +307,7 @@ Profil TTL
           
 
             à partir de 
-2026-09-01
+2026-09-03
 
           
         
@@ -386,7 +386,7 @@ Profil TTL
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;FRCDAIsolatMicrobiologique&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CDA - FR Isolat microbiologique&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-09-01T12:39:31+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-09-03T14:38:58+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.contact">fhir:contact</a> ( [
      <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris&quot; ] ;
@@ -2694,6 +2694,120 @@ Profil TTL
          <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/II&quot;^^xsd:anyURI ]
        ] )
      ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantResponsable.templateId:templateId-other.nullFlavor&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.nullFlavor&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Exceptional Value Detail&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ANY.nullFlavor&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd&gt;
+         ] )
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding">fhir:binding</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;required&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding.valueSet">fhir:valueSet</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd&gt;
+         ]
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantResponsable.templateId:templateId-other.assigningAuthorityName&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.assigningAuthorityName&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Assigning Authority Name&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.assigningAuthorityName&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;string&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&gt;
+         ] )
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantResponsable.templateId:templateId-other.displayable&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.displayable&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Displayable&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.displayable&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;boolean&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd&gt;
+         ] )
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantResponsable.templateId:templateId-other.root&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.root&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Root&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.root&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;string&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd&gt;
+         ] [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd&gt;
+         ] [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd&gt;
+         ] )
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantResponsable.templateId:templateId-other.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;A character string as a unique identifier within the scope of the identifier root.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.extension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;string&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&gt;
+         ] )
+       ] )
+     ] [
        <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantResponsable.typeCode&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.typeCode&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
@@ -3349,6 +3463,120 @@ Profil TTL
        ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
          <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/II&quot;^^xsd:anyURI ]
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantDispositif.templateId:templateId-other.nullFlavor&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.nullFlavor&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Exceptional Value Detail&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ANY.nullFlavor&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd&gt;
+         ] )
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding">fhir:binding</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;required&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding.valueSet">fhir:valueSet</a> [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd&gt;
+         ]
+       ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantDispositif.templateId:templateId-other.assigningAuthorityName&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.assigningAuthorityName&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Assigning Authority Name&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.assigningAuthorityName&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;string&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&gt;
+         ] )
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantDispositif.templateId:templateId-other.displayable&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.displayable&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Displayable&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.displayable&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;boolean&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd&gt;
+         ] )
+       ] )
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantDispositif.templateId:templateId-other.root&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.root&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Root&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.root&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;string&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd&gt;
+         ] [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd&gt;
+         ] [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd&gt;
+         ] )
+       ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ]
+     ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantDispositif.templateId:templateId-other.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organizer.participant.templateId.extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.representation">fhir:representation</a> ( [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;xmlAttr&quot; ] ) ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;A character string as a unique identifier within the scope of the identifier root.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;II.extension&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;string&quot;^^xsd:anyURI ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.profile">fhir:profile</a> ( [
+           <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&quot;^^xsd:anyURI ;
+           <a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd&gt;
+         ] )
        ] )
      ] [
        <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;Organizer.participant:frParticipantDispositif.typeCode&quot; ] ;
@@ -5863,8 +6091,8 @@ Profil TTL
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.cda.fr.document-core#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Date de génération : 
-  <span title="2026-09-01 12:39:00 +0000">
-    2026-09-01
+  <span title="2026-09-03 14:38:00 +0000">
+    2026-09-03
   </span>
 
           <br/>
