@@ -2,7 +2,7 @@ Profile: FRCDAQuantiteDeProduit
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/Supply
 Id: fr-cda-quantite-de-produit
 Title: "CDA - FR Quantite de produit"
-Description: "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (<consumable>)."
+Description: "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (`<consumable>`)."
 * classCode MS
 * moodCode MS
 * moodCode = #RQO
