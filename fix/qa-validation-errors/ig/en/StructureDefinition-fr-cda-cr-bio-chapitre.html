@@ -329,7 +329,7 @@ CDA - FR CR BIO Chapitre
           
 
             as of 
-2026-09-03
+2026-09-04
 
           
         
@@ -349,8 +349,8 @@ CDA - FR CR BIO Chapitre
 <p>IHE-PaLM - Laboratory Specialty Section</p>
 <ul>
   <li>Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :</li>
-  <li>soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément <text> (présentation du contenu pour le lecteur) et un unique élément <entry> (données codées pour les SIS dont procède le contenu de l'élément <text>)</text></entry></text></li>
-  <li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments <component> dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</component></li>
+  <li>soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> (présentation du contenu pour le lecteur) et un unique élément <code class="language-plaintext highlighter-rouge">&lt;entry&gt;</code> (données codées pour les SIS dont procède le contenu de l'élément <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code>)</li>
+  <li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments <code class="language-plaintext highlighter-rouge">&lt;component&gt;</code> dont chacun introduit une <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
 </ul>
 
 </p>
@@ -500,7 +500,7 @@ CDA - FR CR BIO Chapitre
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Section">FRCDASectionCRBIOSousChapitre(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f4788f0f-1a7e-41f1-a8ae-ad014cd47e8b
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d5169be5-e75a-4b20-baa4-2e6ddbf5b5d6
 document.getElementById('cbfr-cda-cr-bio-chapitreD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-cr-bio-chapitreD'), 'binding', document.getElementById('cbfr-cda-cr-bio-chapitreD-binding').checked, document.getElementById('ppfr-cda-cr-bio-chapitreD'));
 document.getElementById('cbfr-cda-cr-bio-chapitreD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -949,7 +949,7 @@ filterDesc(document.getElementById('fr-cda-cr-bio-chapitreD'), 'obligation', doc
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Section">FRCDASectionCRBIOSousChapitre(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f4788f0f-1a7e-41f1-a8ae-ad014cd47e8b
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d5169be5-e75a-4b20-baa4-2e6ddbf5b5d6
 document.getElementById('cbfr-cda-cr-bio-chapitreS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-cr-bio-chapitreS'), 'binding', document.getElementById('cbfr-cda-cr-bio-chapitreS-binding').checked, document.getElementById('ppfr-cda-cr-bio-chapitreS'));
 document.getElementById('cbfr-cda-cr-bio-chapitreS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1479,7 +1479,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Section">FRCDASectionCRBIOSousChapitre(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f4788f0f-1a7e-41f1-a8ae-ad014cd47e8b
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d5169be5-e75a-4b20-baa4-2e6ddbf5b5d6
 document.getElementById('cbfr-cda-cr-bio-chapitreDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-cr-bio-chapitreDA'), 'binding', document.getElementById('cbfr-cda-cr-bio-chapitreDA-binding').checked, document.getElementById('ppfr-cda-cr-bio-chapitreDA'));
 document.getElementById('cbfr-cda-cr-bio-chapitreDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1925,7 +1925,7 @@ filterDesc(document.getElementById('fr-cda-cr-bio-chapitreDA'), 'obligation', do
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Section">FRCDASectionCRBIOSousChapitre(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f4788f0f-1a7e-41f1-a8ae-ad014cd47e8b
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d5169be5-e75a-4b20-baa4-2e6ddbf5b5d6
 document.getElementById('cbfr-cda-cr-bio-chapitreSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-cr-bio-chapitreSA'), 'binding', document.getElementById('cbfr-cda-cr-bio-chapitreSA-binding').checked, document.getElementById('ppfr-cda-cr-bio-chapitreSA'));
 document.getElementById('cbfr-cda-cr-bio-chapitreSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2416,8 +2416,8 @@ Summary
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.cda.fr.document-core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-09-03 14:38:00 +0000">
-    2026-09-03
+  <span title="2026-09-04 10:07:00 +0000">
+    2026-09-04
   </span>
 
           <br/>

@@ -3,7 +3,7 @@
 ## Logical Model: CDA - FR Quantite de produit 
 
  
-Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (). 
+Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (`<consumable>`). 
 
 **Usages:**
 
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-quantite-d
   "name" : "FRCDAQuantiteDeProduit",
   "title" : "CDA - FR Quantite de produit",
   "status" : "draft",
-  "date" : "2026-09-03T14:38:58+00:00",
+  "date" : "2026-09-04T10:07:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-quantite-d
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (<consumable>).",
+  "description" : "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (`<consumable>`).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

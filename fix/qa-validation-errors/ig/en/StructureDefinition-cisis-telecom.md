@@ -4,8 +4,8 @@
 
  
 Coordonnées télécom : 
-* Exemples :
-    
+* Exemples : `<telecom value='tel:0147150000' use='H'/>` `<telecom value='mailto:adam.homme@fournisseur.fr'/>` `<telecom value='ftp://serveur/dossierdesante/exemple/'/>`
+ 
 
 **Usages:**
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-cisis-telecom.csv
   "name" : "CISISTelecom",
   "title" : "CDA - FR CISIS Telecom",
   "status" : "draft",
-  "date" : "2026-09-03T14:38:58+00:00",
+  "date" : "2026-09-04T10:07:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](../StructureDefinition-cisis-telecom.csv
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Coordonnées télécom : \n - Exemples :\n<telecom value='tel:0147150000' use='H'/>\n<telecom value='mailto:adam.homme@fournisseur.fr'/>\n<telecom value='ftp://serveur/dossierdesante/exemple/'/>",
+  "description" : "Coordonnées télécom :\n - Exemples :\n`<telecom value='tel:0147150000' use='H'/>`\n`<telecom value='mailto:adam.homme@fournisseur.fr'/>`\n`<telecom value='ftp://serveur/dossierdesante/exemple/'/>`",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

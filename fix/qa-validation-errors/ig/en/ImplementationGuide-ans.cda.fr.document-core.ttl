@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "CDAFRDocumentCore"] ; # 
   fhir:title [ fhir:v "FR Document Core (CDA)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-03T14:38:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-04T10:07:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -572,7 +572,7 @@
          fhir:reference [ fhir:v "StructureDefinition/cisis-telecom" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR CISIS Telecom" ] ;
-       fhir:description [ fhir:v "Coordonnées télécom : \n - Exemples :\n<telecom value='tel:0147150000' use='H'/>\n<telecom value='mailto:adam.homme@fournisseur.fr'/>\n<telecom value='ftp://serveur/dossierdesante/exemple/'/>" ] ;
+       fhir:description [ fhir:v "Coordonnées télécom :\n - Exemples :\n`<telecom value='tel:0147150000' use='H'/>`\n`<telecom value='mailto:adam.homme@fournisseur.fr'/>`\n`<telecom value='ftp://serveur/dossierdesante/exemple/'/>`" ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
      ] [
@@ -636,7 +636,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-cr-bio-chapitre" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR CR BIO Chapitre" ] ;
-       fhir:description [ fhir:v "IHE-PaLM - Laboratory Specialty Section\n - Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :\n  - soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément <text> (présentation du contenu pour le lecteur) et un unique élément <entry> (données codées pour les SIS dont procède le contenu de l'élément <text>)\n  - soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments <component> dont chacun introduit une <section> de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire." ] ;
+       fhir:description [ fhir:v "IHE-PaLM - Laboratory Specialty Section\n - Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :\n  - soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément `<text>` (présentation du contenu pour le lecteur) et un unique élément `<entry>` (données codées pour les SIS dont procède le contenu de l'élément `<text>`)\n  - soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments `<component>` dont chacun introduit une `<section>` de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-corps-sections" ]
      ] [
@@ -2219,7 +2219,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-cda-quantite-de-produit" ]
        ] ;
        fhir:name [ fhir:v "CDA - FR Quantite de produit" ] ;
-       fhir:description [ fhir:v "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (<consumable>)." ] ;
+       fhir:description [ fhir:v "Entrée FR-Quantite-de-produit: IHE-PRE - Amount of units of the consumable. Cette entrée permet de décrire la quantité de produit (`<consumable>`)." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "ressources-cda-corps-composants-elementaires" ]
      ] [

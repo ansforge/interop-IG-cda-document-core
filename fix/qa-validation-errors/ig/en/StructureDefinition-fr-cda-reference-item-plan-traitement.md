@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-reference-
   "name" : "FRCDAReferenceItemPlanTraitement",
   "title" : "CDA - FR Reference item plan traitement",
   "status" : "draft",
-  "date" : "2026-09-03T14:38:58+00:00",
+  "date" : "2026-09-04T10:07:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
