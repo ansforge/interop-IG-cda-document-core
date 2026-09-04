@@ -8,7 +8,9 @@ Description: "L'élément de l'en-tête du CDA encounterParticipant permet de re
 * typeId.assigningAuthorityName 0..0
 * typeId.displayable 0..0
 * typeCode ^short = "Code issu du JDV_J140_EncounterParticipationType_CISIS (1.2.250.1.213.1.1.5.528)."
-* typeCode from https://mos.esante.gouv.fr/NOS/JDV_J140-EncounterParticipationType-CISIS/FHIR/JDV-J140-EncounterParticipationType-CISIS
+* typeCode ^binding.additional[+].purpose = #required
+* typeCode ^binding.additional[=].valueSet = "https://mos.esante.gouv.fr/NOS/JDV_J140-EncounterParticipationType-CISIS/FHIR/JDV-J140-EncounterParticipationType-CISIS"
+* typeCode ^binding.additional[=].documentation = "Value set CI-SIS (JDV_J140_EncounterParticipationType_CISIS), complémentaire au binding required hérité de CDA."
 * time ^short = "Date de début et/ou de fin de la participation"
 * assignedEntity 1..1
 * assignedEntity ^short = "Professionnel impliqué"

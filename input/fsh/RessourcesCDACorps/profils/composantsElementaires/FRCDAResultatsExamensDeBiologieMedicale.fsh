@@ -51,7 +51,7 @@ Fixé: @code = aborted"
 * subject only FRCDASujetNonHumain or FRCDAPatientAvecSujetNonHumain
 * performer MS
 * performer ^short = "Laboratoire sous-traitant. si différent du performer de l'en-tête."
-* performer ^short = "Laboratoire sous-traitant"
+* performer ^definition = "Laboratoire sous-traitant"
 * performer only FRCDALaboratoireExecutant
 * author MS
 * author ^short = "Auteur"
@@ -67,8 +67,12 @@ frParticipantValideurResultats 0..1 MS and frParticipantResponsableExamen 0..1 M
 * participant[frParticipantValideurResultats] ^short = "Valideur de ces résultats"
 * participant[frParticipantValideurResultats] ^definition = "Valideur de ces résultats"
 * participant[frParticipantValideurResultats].typeCode = #AUTHEN
-* participant[frParticipantValideurResultats].templateId.root = "1.3.6.1.4.1.19376.1.3.3.1.5"
 * participant[frParticipantValideurResultats] only FRCDAParticipantCorps
+* participant[frParticipantValideurResultats].templateId ^slicing.discriminator.type = #value
+* participant[frParticipantValideurResultats].templateId ^slicing.discriminator.path = "root"
+* participant[frParticipantValideurResultats].templateId ^slicing.rules = #open
+* participant[frParticipantValideurResultats].templateId contains templateId-other 1..1
+* participant[frParticipantValideurResultats].templateId[templateId-other].root = "1.3.6.1.4.1.19376.1.3.3.1.5"
 * participant[frParticipantResponsableExamen] ^short = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen] ^definition = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen].typeCode = #RESP
