@@ -1,0 +1,115 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"Performer1","Performer1","","","",1,1,"","","","null {[]} {[]}
+","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"Performer1.nullFlavor","Performer1.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Performer1.realmCode","Performer1.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Performer1.typeId","Performer1.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Performer1.typeId.nullFlavor","Performer1.typeId.nullFlavor","","","Exceptional Value Detail",0,0,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Performer1.typeId.assigningAuthorityName","Performer1.typeId.assigningAuthorityName","","","Assigning Authority Name",0,0,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Performer1.typeId.displayable","Performer1.typeId.displayable","","","Displayable",0,0,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Performer1.typeId.root","Performer1.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Performer1.typeId.extension","Performer1.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Performer1.templateId","Performer1.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Performer1.typeCode","Performer1.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","PRF pour performer (Exécutant)","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xServiceEventPerformer|3.0.0","",,,,"Performer1.typeCode",1,1,"",""
+"Performer1.functionCode","Performer1.functionCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","Rôle fonctionnel","","","","","","","","","","",,,,,"",,,,"Performer1.functionCode",0,1,"",""
+"Performer1.time","Performer1.time","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}
+","Date et heure de participation","","","","","","","","","","",,,,,"",,,,"Performer1.time",0,1,"",""
+"Performer1.assignedEntity","Performer1.assignedEntity","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-entity|0.1.0]]} {[]}
+","Exécutant","","","","","","","","","","",,,,,"",,,,"Performer1.assignedEntity",1,1,"",""
+"Performer1.assignedEntity.nullFlavor","Performer1.assignedEntity.nullFlavor","","","Exceptional Value Detail",0,0,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Performer1.assignedEntity.realmCode","Performer1.assignedEntity.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
+"Performer1.assignedEntity.typeId","Performer1.assignedEntity.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
+"
+"Performer1.assignedEntity.typeId.nullFlavor","Performer1.assignedEntity.typeId.nullFlavor","","","Exceptional Value Detail",0,0,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Performer1.assignedEntity.typeId.assigningAuthorityName","Performer1.assignedEntity.typeId.assigningAuthorityName","","","Assigning Authority Name",0,0,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Performer1.assignedEntity.typeId.displayable","Performer1.assignedEntity.typeId.displayable","","","Displayable",0,0,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Performer1.assignedEntity.typeId.root","Performer1.assignedEntity.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Performer1.assignedEntity.typeId.extension","Performer1.assignedEntity.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Performer1.assignedEntity.templateId","Performer1.assignedEntity.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Performer1.assignedEntity.classCode","Performer1.assignedEntity.classCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ASSIGNED""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-RoleClassAssignedEntity|3.0.0","",,,,"AssignedEntity.classCode",0,1,"",""
+"Performer1.assignedEntity.id","Performer1.assignedEntity.id","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","Identifiant du responsable","","","","","","","","","","",,,,,"",,,,"AssignedEntity.id",1,*,"",""
+"Performer1.assignedEntity.id.nullFlavor","Performer1.assignedEntity.id.nullFlavor","","","Exceptional Value Detail",0,0,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Performer1.assignedEntity.id.assigningAuthorityName","Performer1.assignedEntity.id.assigningAuthorityName","","","Assigning Authority Name",0,0,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Performer1.assignedEntity.id.displayable","Performer1.assignedEntity.id.displayable","","","Displayable",0,0,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Performer1.assignedEntity.id.root","Performer1.assignedEntity.id.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","- Pour un professionnel : '1.2.250.1.71.4.2.1'
+- Pour le patient/usager : OID de l'autorité d'affectation de l'INS
+- Pour un système de structure : '1.2.250.1.71.4.2.1' 
+- Pour un SNR : OID de l'éditeur 
+- Pour le DP : '1.2.250.1.71.4.2.1'","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Performer1.assignedEntity.id.extension","Performer1.assignedEntity.id.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","Valeur de l’identifiant.
+- Pour le PS, valeur de PS_IdNat (voir CI-SIS_ANX_SOURCES-DONNEES-PERSONNES-STRUCTURES).
+- Pour le patient/usager, valeur de l'INS du patient/usager.","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
+"Performer1.assignedEntity.sdtcIdentifiedBy","Performer1.assignedEntity.sdtcIdentifiedBy","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcIdentifiedBy",0,*,"",""
+"Performer1.assignedEntity.code","Performer1.assignedEntity.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","Profession ou rôle du responsable","","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260730120000","",,,,"AssignedEntity.code",0,1,"",""
+"Performer1.assignedEntity.code.nullFlavor","Performer1.assignedEntity.code.nullFlavor","","","Exceptional Value Detail",0,0,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Performer1.assignedEntity.code.code","Performer1.assignedEntity.code.code","","","Code",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","The plain code symbol defined by the code system. For example, ""784.0"" is the code symbol of the ICD-9 code ""784.0"" for headache.","","","","","","","","","",,,,,"",,,,"CD.code",0,1,"",""
+"Performer1.assignedEntity.code.codeSystem","Performer1.assignedEntity.code.codeSystem","","","Code System",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","Specifies the code system that defines the code.","","","","","","","","","",,,,,"",,,,"CD.codeSystem",0,1,"",""
+"Performer1.assignedEntity.code.codeSystemName","Performer1.assignedEntity.code.codeSystemName","","","Code System Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The common name of the coding system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemName",0,1,"",""
+"Performer1.assignedEntity.code.codeSystemVersion","Performer1.assignedEntity.code.codeSystemVersion","","","Code System Version",0,0,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
+"Performer1.assignedEntity.code.displayName","Performer1.assignedEntity.code.displayName","","","Display Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","","","","",,,,,"",,,,"CD.displayName",0,1,"",""
+"Performer1.assignedEntity.code.sdtcValueSet","Performer1.assignedEntity.code.sdtcValueSet","","","",0,0,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd]]} {[]}
+","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""
+"Performer1.assignedEntity.code.sdtcValueSetVersion","Performer1.assignedEntity.code.sdtcValueSetVersion","","","",0,0,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.sdtcValueSetVersion",0,1,"",""
+"Performer1.assignedEntity.code.originalText","Performer1.assignedEntity.code.originalText","","","Original Text",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ED {[]} {[]}
+","","The text or phrase used as the basis for the coding.","","","","","","","","","",,,,,"",,,,"CD.originalText",0,1,"",""
+"Performer1.assignedEntity.code.qualifier","Performer1.assignedEntity.code.qualifier","","","Qualifier",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CR {[]} {[]}
+","","Specifies additional codes that increase the specificity of the the primary code.","","","","","","","","","",,,,,"",,,,"CD.qualifier",0,*,"",""
+"Performer1.assignedEntity.code.translation","Performer1.assignedEntity.code.translation","","","Translation",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
+","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
+"Performer1.assignedEntity.sdtcSpecialty","Performer1.assignedEntity.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcSpecialty",0,*,"",""
+"Performer1.assignedEntity.addr","Performer1.assignedEntity.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
+","Adresse géopostale","","","","","","","","","","",,,,,"",,,,"AssignedEntity.addr",0,*,"",""
+"Performer1.assignedEntity.telecom","Performer1.assignedEntity.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
+","Coordonnées télécom","","","","","","","","","","",,,,,"",,,,"AssignedEntity.telecom",0,*,"",""
+"Performer1.assignedEntity.assignedPerson","Performer1.assignedEntity.assignedPerson","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Person {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-person|0.1.0]]} {[]}
+","Personne physique : 
+- Obligatoire pour un professionnel 
+- Obligatoire pour un patient/usager 
+- Non utilisé pour un SNR 
+- Non utilisé pour le DP","","","","","","","","","","",,,,,"",,,,"AssignedEntity.assignedPerson",0,1,"",""
+"Performer1.assignedEntity.representedOrganization","Performer1.assignedEntity.representedOrganization","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-represented-organization|0.1.0]]} {[]}
+","Structure de rattachement :
+- Pour un PS : Organisation pour le compte de laquelle intervient le PS.
+- Pour un patient : seul l'élément standardIndustryClassCode est renseigné (cas particulier des documents d'expression personnelle du patient).","","","","","","","","","","",,,,,"",,,,"AssignedEntity.representedOrganization",0,1,"",""
+"Performer1.assignedEntity.sdtcPatient","Performer1.assignedEntity.sdtcPatient","","","",0,0,"","","","http://hl7.org/fhir/StructureDefinition/Base {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcPatient",0,1,"",""
+"Performer1.assignedEntity.sdtcPatient.id","Performer1.assignedEntity.sdtcPatient.id","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"AssignedEntity.sdtcPatient.id",1,1,"",""
