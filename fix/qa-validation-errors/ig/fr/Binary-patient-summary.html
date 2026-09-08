@@ -859,7 +859,8 @@
                   &lt;/td&gt;
                   &lt;td&gt;
                     &lt;content ID=&quot;probleme-04-reference&quot;&gt;
-                      &lt;linkHtml&gt;Fiche Orphanet Urgences - Angiœdème bradykinique&lt;/linkHtml&gt;
+                      &lt;linkHtml
+                                referencedObject=&quot;https://www.orpha.net/pdfs/data/patho/Emg/Int/fr/AngioedemeBradykinique_FR_fr_EMG_ORPHA658.pdf&quot;&gt;Fiche Orphanet Urgences - Angiœdème bradykinique&lt;/linkHtml&gt;
                     &lt;/content&gt;
                   &lt;/td&gt;
                 &lt;/tr&gt;
@@ -4763,6 +4764,10 @@
                   &lt;<a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html#Observation.statusCode">statusCode</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a>=&quot;completed&quot;/&gt;
                   &lt;<a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html#Observation.effectiveTime">effectiveTime</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;20240402&quot;/&gt;
                   &lt;<a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html#Observation.value">value</a> <a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html#Observation.effectiveTime">xsi:type</a>=&quot;PQ&quot; <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>=&quot;1.60&quot; <a href="http://hl7.org/fhir/R5/datatypes.html#code">unit</a>=&quot;m&quot;/&gt;
+                  &lt;!-- Test : Interprétation : valeur issue du jdv-hl7-ObservationInterpretation-cisis (2.16.840.1.113883.1.11.78) --&gt;
+                  &lt;<a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html#Observation.interpretationCode">interpretationCode</a>
+                                      <a href="http://hl7.org/fhir/R5/datatypes.html#string">displayName</a>=&quot;Porteur d'une forme altérée d'un gène&quot; <a href="http://hl7.org/fhir/R5/datatypes.html#string">codeSystem</a>=&quot;2.16.840.1.113883.5.83&quot;
+                                      <a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a>=&quot;CAR&quot;/&gt;
                   &lt;!-- Entrée FR-Commentaire-ER --&gt;
                   &lt;<a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html#Observation.entryRelationship">entryRelationship</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">typeCode</a>=&quot;SUBJ&quot; <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">inversionInd</a>=&quot;true&quot;&gt;
                     &lt;<a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-EntryRelationship.html#EntryRelationship.act">act</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">moodCode</a>=&quot;EVN&quot; <a href="http://hl7.org/fhir/R5/datatypes.html#code">classCode</a>=&quot;ACT&quot;&gt;
@@ -7304,8 +7309,8 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.cda.fr.document-core#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Date de génération : 
-  <span title="2026-09-04 10:07:00 +0000">
-    2026-09-04
+  <span title="2026-09-08 08:30:00 +0000">
+    2026-09-08
   </span>
 
           <br/>

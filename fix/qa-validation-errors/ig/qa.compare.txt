@@ -1,7 +1,7 @@
 CDAFRDocumentCore : Validation Results
 =========================================
 
-err = 22, warn = 1712, info = 1134
+err = 23, warn = 1712, info = 1134
 $--
 Generated $--. FHIR version $-- for ans.cda.fr.document-core#$-- (canonical = https://interop.esante.gouv.fr/ig/cda/document-core)
  Build Errors : 2 / 4 / 0
@@ -211,7 +211,7 @@ Generated $--. FHIR version $-- for ans.cda.fr.document-core#$-- (canonical = ht
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/ValueSet-fr-valueset-status-code : 0 / 2 / 3
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme : 0 / 2 / 4
  /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/fsh-generated/resources/ValueSet-fr-valueset-type-vaccination : 0 / 2 / 4
- /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/input/resources/Binary-patient-summary : 20 / 35 / 717
+ /__w/interop-IG-cda-document-core/interop-IG-cda-document-core/igSource/input/resources/Binary-patient-summary : 21 / 35 / 717
 </table>
 == n/a ==
 ERROR: ImplementationGuide/ans.cda.fr.document-core: This IG is version 5.0.0, while the IG 'ans.fr.terminologies' is from version 4.0.1
@@ -3002,6 +3002,7 @@ INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.c
 INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[0].observation: The CDA Template 1.3.6.1.4.1.19376.1.5.3.1.4.13 is not known
 INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[0].observation: The CDA Template 1.3.6.1.4.1.19376.1.5.3.1.4.13.2 is not known
 INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[0].observation: The CDA Template 1.2.250.1.213.1.1.3.50 is not known
+ERROR: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[1].observation.interpretationCode[0]: None of the codings provided are in the value set 'CDAObservationInterpretation' (http://hl7.org/cda/stds/core/ValueSet/CDAObservationInterpretation|2.0.3-sd), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#CAR)
 INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[1].observation.entryRelationship[0].act: The CDA Template 2.16.840.1.113883.10.20.1.40 is not known
 INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[1].observation.entryRelationship[0].act: The CDA Template 1.3.6.1.4.1.19376.1.5.3.1.4.2 is not known
 INFORMATION: Binary/patient-summary: ClinicalDocument.component.structuredBody.component[9].section.entry[0].organizer.component[1].observation.entryRelationship[0].act: The CDA Template 1.2.250.1.213.1.1.3.32 is not known
