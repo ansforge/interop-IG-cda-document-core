@@ -14,6 +14,7 @@ Description: "FR-Participant: CDA - participant. Participant du corps"
 * templateId[templateId] ^short = "TemplateId avec root égal à 1.2.250.1.213.1.1.3.109"
 * templateId[templateId] ^definition = "TemplateId avec root égal à 1.2.250.1.213.1.1.3.109"
 
+* templateId[templateId-other].root 1..1 MS
 * templateId[templateId-other] ^short = "Autre TemplateId"
 * templateId[templateId-other] ^definition = "Autre TemplateId"
 

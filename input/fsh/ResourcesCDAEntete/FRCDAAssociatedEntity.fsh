@@ -9,7 +9,9 @@ Description: "L'élément de l'en-tête du CDA associatedEntity permet de repré
 * typeId.assigningAuthorityName 0..0
 * typeId.displayable 0..0
 * sdtcIdentifiedBy 0..0
-* classCode from https://mos.esante.gouv.fr/NOS/JDV_J141-RoleClass-CISIS/FHIR/JDV-J141-RoleClass-CISIS (required)
+* classCode ^binding.additional[+].purpose = #required
+* classCode ^binding.additional[=].valueSet = "https://mos.esante.gouv.fr/NOS/JDV_J141-RoleClass-CISIS/FHIR/JDV-J141-RoleClass-CISIS"
+* classCode ^binding.additional[=].documentation = "Value set CI-SIS (JDV_J141_RoleClass_CISIS), complémentaire au binding required hérité de CDA."
 * classCode ^short = "PS / Non PS La valeur doit être issue du JDV_J141_RoleClass_CISIS (1.2.250.1.213.1.1.5.588)."
 * id ^short = "Identifiant du participant Obligatoire pour les professionnels"
 * id.root ^short = "- Pour les professionnels : '1.2.250.1.71.4.2.1' 

@@ -49,7 +49,9 @@ and dicomQuantityMeasurement 1..1
 * interpretationCode 0..1
 * interpretationCode ^short = "Interprétation code"
 * interpretationCode ^definition = "Interprétation code"
-* interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis
+* interpretationCode ^binding.additional[+].purpose = #required
+* interpretationCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis"
+* interpretationCode ^binding.additional[=].documentation = "Value set CI-SIS (jdv-hl7-v3-ObservationInterpretation-cisis), complémentaire au binding required hérité de CDA."
 * methodCode MS
 * methodCode 0..1
 * methodCode ^short = "Méthode code"
