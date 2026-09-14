@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
   "name" : "FRCDASectionAntecedentsFamiliaux",
   "title" : "CDA - FR Section Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-08-28T09:43:11+00:00",
+  "date" : "2026-09-14T07:43:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-encounter-
   "name" : "FRCDAEncounterParticipant",
   "title" : "CDA - encounterParticipant",
   "status" : "draft",
-  "date" : "2026-08-28T09:43:11+00:00",
+  "date" : "2026-09-14T07:43:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -107,7 +107,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-encounter-
       "short" : "Code issu du JDV_J140_EncounterParticipationType_CISIS (1.2.250.1.213.1.1.5.528).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J140-EncounterParticipationType-CISIS/FHIR/JDV-J140-EncounterParticipationType-CISIS|20210326120000"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-xEncounterParticipant|2.0.0",
+        "additional" : [{
+          "purpose" : "required",
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J140-EncounterParticipationType-CISIS/FHIR/JDV-J140-EncounterParticipationType-CISIS|20210326120000",
+          "documentation" : "Value set CI-SIS (JDV_J140_EncounterParticipationType_CISIS), complémentaire au binding required hérité de CDA."
+        }]
       }
     },
     {

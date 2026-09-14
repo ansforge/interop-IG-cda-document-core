@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-associated
   "name" : "FRCDAAssociatedEntity",
   "title" : "CDA - associatedEntity",
   "status" : "draft",
-  "date" : "2026-08-28T09:43:11+00:00",
+  "date" : "2026-09-14T07:43:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -116,7 +116,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-associated
       "short" : "PS / Non PS La valeur doit être issue du JDV_J141_RoleClass_CISIS (1.2.250.1.213.1.1.5.588).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J141-RoleClass-CISIS/FHIR/JDV-J141-RoleClass-CISIS|20210326120000"
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDARoleClassAssociative|2.0.3-sd",
+        "additional" : [{
+          "purpose" : "required",
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J141-RoleClass-CISIS/FHIR/JDV-J141-RoleClass-CISIS|20210326120000",
+          "documentation" : "Value set CI-SIS (JDV_J141_RoleClass_CISIS), complémentaire au binding required hérité de CDA."
+        }]
       }
     },
     {

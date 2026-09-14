@@ -130,7 +130,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rencontr
   "name" : "FRCDARencontre",
   "title" : "CDA - FR Rencontre",
   "status" : "draft",
-  "date" : "2026-08-28T09:43:11+00:00",
+  "date" : "2026-09-14T07:43:38+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -244,7 +244,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rencontr
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260716085852"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-xDocumentEncounterMood|2.0.0",
+        "additional" : [{
+          "purpose" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActMood-cisis|20260716085852",
+          "documentation" : "Value set CI-SIS (jdv-hl7-v3-ActMood-cisis), complémentaire au binding required hérité de CDA."
+        }]
       }
     },
     {
