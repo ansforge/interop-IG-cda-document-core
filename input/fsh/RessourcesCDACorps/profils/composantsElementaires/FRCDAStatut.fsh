@@ -71,7 +71,9 @@ and frStatut 1..1
 * interpretationCode 0..1
 * interpretationCode ^short = "Interprétation :interpretationCode provient du JDV_HL7_ObservationInterpretation_CISIS (2.16.840.1.113883.1.11.78)"
 * interpretationCode ^definition = "Interprétation"
-* interpretationCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis (required)
+* interpretationCode ^binding.additional[+].purpose = #required
+* interpretationCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis"
+* interpretationCode ^binding.additional[=].documentation = "Value set CI-SIS (jdv-hl7-v3-ObservationInterpretation-cisis), complémentaire au binding required hérité de CDA."
 * author 0..1
 * author only FRCDAAuthor
 * author ^short = """Auteur de l'observation : \r\n

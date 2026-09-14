@@ -2,11 +2,11 @@ Profile: CISISTelecom
 Parent: http://hl7.org/cda/stds/core/StructureDefinition/TEL
 Id: cisis-telecom
 Title: "CDA - FR CISIS Telecom"
-Description: "Coordonnées télécom : 
+Description: "Coordonnées télécom :
  - Exemples :
-<telecom value='tel:0147150000' use='H'/>
-<telecom value='mailto:adam.homme@fournisseur.fr'/>
-<telecom value='ftp://serveur/dossierdesante/exemple/'/>"
+`<telecom value='tel:0147150000' use='H'/>`
+`<telecom value='mailto:adam.homme@fournisseur.fr'/>`
+`<telecom value='ftp://serveur/dossierdesante/exemple/'/>`"
 
 * use 0..1 MS
 * use ^short = """Code d'usage formé d'un à plusieurs codes séparés les uns des autres par un espace. \r\n
