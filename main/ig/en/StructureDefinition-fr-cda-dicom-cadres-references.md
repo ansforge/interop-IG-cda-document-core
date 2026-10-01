@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-cadr
   "name" : "FRCDADICOMCadresReferences",
   "title" : "CDA - FR DICOM Cadres de références",
   "status" : "draft",
-  "date" : "2026-09-14T07:43:38+00:00",
+  "date" : "2026-10-01T07:35:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-cadr
       "path" : "Observation.moodCode",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-xActMoodDocumentObservation|20260716085852"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-xActMoodDocumentObservation|20260916095455"
       }
     },
     {

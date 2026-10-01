@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-legal-auth
   "name" : "FRCDALegalAuthenticator",
   "title" : "CDA - legalAuthenticator",
   "status" : "draft",
-  "date" : "2026-09-14T07:43:38+00:00",
+  "date" : "2026-10-01T07:35:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -155,7 +155,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-legal-auth
       "path" : "LegalAuthenticator.assignedEntity.code",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260730120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260928120000"
       }
     }]
   }

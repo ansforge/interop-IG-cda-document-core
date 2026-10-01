@@ -32,7 +32,7 @@ Jeu de valeurs regroupant les codes de statut du problème et des allergies/into
   "name" : "FRValueSetStatutDuProbleme",
   "title" : "ValueSet - FR ValueSet Statut du problème",
   "status" : "draft",
-  "date" : "2026-09-14T07:43:38+00:00",
+  "date" : "2026-10-01T07:35:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -51,10 +51,10 @@ Jeu de valeurs regroupant les codes de statut du problème et des allergies/into
   }],
   "compose" : {
     "include" : [{
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis|20260716085851"]
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis|20260916095453"]
     },
     {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis|20260716085852"]
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-condition-clinical-cisis|20260916095455"]
     }]
   }
 }

@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-signe-vita
   "name" : "FRCDASigneVitalObserve",
   "title" : "CDA - FR Signe vital observe",
   "status" : "draft",
-  "date" : "2026-09-14T07:43:38+00:00",
+  "date" : "2026-10-01T07:35:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -176,7 +176,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-signe-vita
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis|20260716085853"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-signe-vital-cisis|20260916095457"
       }
     },
     {
@@ -255,7 +255,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-signe-vita
         "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAObservationInterpretation|2.0.3-sd",
         "additional" : [{
           "purpose" : "required",
-          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260716085852",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis|20260916095455",
           "documentation" : "Value set CI-SIS (jdv-hl7-v3-ObservationInterpretation-cisis), complémentaire au binding required hérité de CDA."
         }]
       }

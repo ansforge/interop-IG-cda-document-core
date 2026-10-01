@@ -146,7 +146,7 @@
         <a target="_blank" href="https://smt.esante.gouv.fr/fhir">Serveur Multi-terminologies / FHIR</a>
       </li>
       <li>
-        <a target="_blank" href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html">IG terminologies et jeux de valeurs du CI-SIS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/terminologies/index.html">IG terminologies et jeux de valeurs du CI-SIS</a>
       </li>
       <li>
         <a target="_blank" href="https://interop.esante.gouv.fr/">Espace de tests du CI-SIS</a>
@@ -176,7 +176,7 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+    <div><img class="flag" alt="flag English" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
@@ -329,7 +329,7 @@ CDA - FR Acte
           
 
             as of 
-2026-09-14
+2026-10-01
 
           
         
@@ -523,7 +523,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
 - Si l'acte a été réalisé : le statut prend la valeur 'completed'. 
 - Si l'acte a été arrêté avant sa fin : le statut prend la valeur 'aborted'. 
 - Si l'acte a été annulé avant sa réalisation : le statut prend la valeur 'cancelled'. 
-- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260916095454)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.effectiveTime" title="Date de l'acte" data-no-external="true">effectiveTime</a><a name="Procedure.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -723,7 +723,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-simple-observation.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Observation">FRCDASimpleObservation(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ae12018c-1318-41ec-81b3-b8bbfd091e7a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ed4c2f7-3196-4e76-af11-07a6903440d4
 document.getElementById('cbfr-cda-acteD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-acteD'), 'binding', document.getElementById('cbfr-cda-acteD-binding').checked, document.getElementById('ppfr-cda-acteD'));
 document.getElementById('cbfr-cda-acteD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -765,12 +765,12 @@ filterDesc(document.getElementById('fr-cda-acteD'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260916095454" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
+    <td title="Version is explicitly stated to be 20260916095454">&#x1F4CD;20260916095454</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.13.0">Terminologies  de Santé v1.13</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.14.0">Terminologies  de Santé v1.14</a>
     </td>
   </tr>
 </table>
@@ -961,7 +961,7 @@ filterDesc(document.getElementById('fr-cda-acteD'), 'obligation', document.getEl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActClassProcedure.html" title="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure" class="binding">ActClassProcedure (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Fixed Value: </span><span style="color: darkgreen">PROC</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassProcedure.html" title="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure" class="binding">ActClassProcedure (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Fixed Value: </span><span style="color: darkgreen">PROC</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a5." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.moodCode" data-no-external="true">@moodCode</a><a name="s-Procedure.moodCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -969,7 +969,7 @@ filterDesc(document.getElementById('fr-cda-acteD'), 'obligation', document.getEl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">- Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) 
  - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
      - si l'acte n'a pas eu lieu : negationInd='false' 
-     - si l'acte a eu lieu (valeur par défaut)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xDocumentProcedureMood.html" title="http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood" class="binding">XDocumentProcedureMood (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+     - si l'acte a eu lieu (valeur par défaut)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xDocumentProcedureMood.html" title="http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood" class="binding">XDocumentProcedureMood (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a6." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.id" title="Identifiant de l'entrée" data-no-external="true">id</a><a name="s-Procedure.id"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
@@ -1084,7 +1084,7 @@ ou jdv-absent-or-unknown-procedure-cisis (1.2.250.1.213.1.1.5.665) pour les acte
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-MediaType.html" title="http://terminology.hl7.org/ValueSet/v3-MediaType" class="binding">MediaType (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-MediaType.html" title="http://terminology.hl7.org/ValueSet/v3-MediaType" class="binding">MediaType (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a10.g" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.text.representation" data-no-external="true">@representation</a><a name="s-Procedure.text.representation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1115,7 +1115,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
 - Si l'acte a été réalisé : le statut prend la valeur 'completed'. 
 - Si l'acte a été arrêté avant sa fin : le statut prend la valeur 'aborted'. 
 - Si l'acte a été annulé avant sa réalisation : le statut prend la valeur 'cancelled'. 
-- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260916095454)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a12." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.effectiveTime" title="Date de l'acte" data-no-external="true">effectiveTime</a><a name="s-Procedure.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1131,7 +1131,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Priorité :&nbsp;
  
-utiliser le jdv-hl7-v3-ActPriority-cisis (2.16.840.1.113883.1.11.16866) ou autre.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
+utiliser le jdv-hl7-v3-ActPriority-cisis (2.16.840.1.113883.1.11.16866) ou autre.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a14." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.languageCode" data-no-external="true">languageCode</a><a name="s-Procedure.languageCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1419,7 +1419,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a24.af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frReferenceInterneCirconstances.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="s-Procedure.entryRelationship:frReferenceInterneCirconstances.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1544,7 +1544,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">RSON</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">RSON</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a24.bf" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frReferenceInterneMotifActe.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="s-Procedure.entryRelationship:frReferenceInterneMotifActe.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1669,7 +1669,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">REFR</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">REFR</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a24.cf" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frReferenceInterneDM.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="s-Procedure.entryRelationship:frReferenceInterneDM.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1794,7 +1794,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a24.df" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frSimpleObservationDifficulte.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="s-Procedure.entryRelationship:frSimpleObservationDifficulte.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1919,7 +1919,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a24.ef" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frSimpleObservationScores.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="s-Procedure.entryRelationship:frSimpleObservationScores.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -2010,7 +2010,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">XML Namespace: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ae12018c-1318-41ec-81b3-b8bbfd091e7a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ed4c2f7-3196-4e76-af11-07a6903440d4
 document.getElementById('cbfr-cda-acteS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-acteS'), 'binding', document.getElementById('cbfr-cda-acteS-binding').checked, document.getElementById('ppfr-cda-acteS'));
 document.getElementById('cbfr-cda-acteS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2141,12 +2141,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActClassProcedure.html">ActClassProcedure</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassProcedure.html">ActClassProcedure</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2156,12 +2156,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xDocumentProcedureMood.html">x_DocumentProcedureMood</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xDocumentProcedureMood.html">x_DocumentProcedureMood</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2231,12 +2231,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-MediaType.html">MediaType</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-MediaType.html">MediaType</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-MediaType|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2261,12 +2261,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260916095454" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
+    <td title="Version is explicitly stated to be 20260916095454">&#x1F4CD;20260916095454</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.13.0">Terminologies  de Santé v1.13</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.14.0">Terminologies  de Santé v1.14</a>
     </td>
   </tr>
   <tr>
@@ -2276,12 +2276,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPriority.html">ActPriority</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActPriority.html">ActPriority</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2396,12 +2396,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2441,12 +2441,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2486,12 +2486,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2531,12 +2531,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -2576,12 +2576,12 @@ filterDesc(document.getElementById('fr-cda-acteS'), 'obligation', document.getEl
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
 </table>
@@ -3123,7 +3123,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
 - Si l'acte a été réalisé : le statut prend la valeur 'completed'. 
 - Si l'acte a été arrêté avant sa fin : le statut prend la valeur 'aborted'. 
 - Si l'acte a été annulé avant sa réalisation : le statut prend la valeur 'cancelled'. 
-- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260916095454)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.effectiveTime" title="Date de l'acte" data-no-external="true">effectiveTime</a><a name="a-Procedure.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -3323,7 +3323,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-cda-simple-observation.html" title="http://hl7.org/cda/stds/core/StructureDefinition/Observation">FRCDASimpleObservation(0.1.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ae12018c-1318-41ec-81b3-b8bbfd091e7a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ed4c2f7-3196-4e76-af11-07a6903440d4
 document.getElementById('cbfr-cda-acteDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-acteDA'), 'binding', document.getElementById('cbfr-cda-acteDA-binding').checked, document.getElementById('ppfr-cda-acteDA'));
 document.getElementById('cbfr-cda-acteDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3362,12 +3362,12 @@ filterDesc(document.getElementById('fr-cda-acteDA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260916095454" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
+    <td title="Version is explicitly stated to be 20260916095454">&#x1F4CD;20260916095454</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.13.0">Terminologies  de Santé v1.13</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.14.0">Terminologies  de Santé v1.14</a>
     </td>
   </tr>
 </table>
@@ -3558,7 +3558,7 @@ filterDesc(document.getElementById('fr-cda-acteDA'), 'obligation', document.getE
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActClassProcedure.html" title="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure" class="binding">ActClassProcedure (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Fixed Value: </span><span style="color: darkgreen">PROC</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassProcedure.html" title="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure" class="binding">ActClassProcedure (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Fixed Value: </span><span style="color: darkgreen">PROC</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a5." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.moodCode" data-no-external="true">@moodCode</a><a name="sa-Procedure.moodCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -3566,7 +3566,7 @@ filterDesc(document.getElementById('fr-cda-acteDA'), 'obligation', document.getE
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">- Si acte prévu : moodCode='INT' ; negationInd='false' (valeur par défaut) 
  - Si acte réalisé : moodCode='EVN' ; negationInd='true' 
      - si l'acte n'a pas eu lieu : negationInd='false' 
-     - si l'acte a eu lieu (valeur par défaut)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xDocumentProcedureMood.html" title="http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood" class="binding">XDocumentProcedureMood (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+     - si l'acte a eu lieu (valeur par défaut)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xDocumentProcedureMood.html" title="http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood" class="binding">XDocumentProcedureMood (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a6." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.id" title="Identifiant de l'entrée" data-no-external="true">id</a><a name="sa-Procedure.id"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
@@ -3681,7 +3681,7 @@ ou jdv-absent-or-unknown-procedure-cisis (1.2.250.1.213.1.1.5.665) pour les acte
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-MediaType.html" title="http://terminology.hl7.org/ValueSet/v3-MediaType" class="binding">MediaType (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-MediaType.html" title="http://terminology.hl7.org/ValueSet/v3-MediaType" class="binding">MediaType (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a10.g" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.text.representation" data-no-external="true">@representation</a><a name="sa-Procedure.text.representation"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -3712,7 +3712,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
 - Si l'acte a été réalisé : le statut prend la valeur 'completed'. 
 - Si l'acte a été arrêté avant sa fin : le statut prend la valeur 'aborted'. 
 - Si l'acte a été annulé avant sa réalisation : le statut prend la valeur 'cancelled'. 
-- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260716085852)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+- Si l'acte est en cours ou à venir : le statut prend la valeur 'active'.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis" class="binding">ActStatus (20260916095454)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a12." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.effectiveTime" title="Date de l'acte" data-no-external="true">effectiveTime</a><a name="sa-Procedure.effectiveTime"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -3728,7 +3728,7 @@ utiliser le jdv-hl7-v3-ActStatus-cisis (2.16.840.1.113883.1.11.15933 )
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-CE.html">CE</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Priorité :&nbsp;
  
-utiliser le jdv-hl7-v3-ActPriority-cisis (2.16.840.1.113883.1.11.16866) ou autre.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
+utiliser le jdv-hl7-v3-ActPriority-cisis (2.16.840.1.113883.1.11.16866) ou autre.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a14." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.languageCode" data-no-external="true">languageCode</a><a name="sa-Procedure.languageCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -4016,7 +4016,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a24.af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frReferenceInterneCirconstances.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="sa-Procedure.entryRelationship:frReferenceInterneCirconstances.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -4141,7 +4141,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">RSON</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">RSON</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a24.bf" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frReferenceInterneMotifActe.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="sa-Procedure.entryRelationship:frReferenceInterneMotifActe.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -4266,7 +4266,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">REFR</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">REFR</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a24.cf" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frReferenceInterneDM.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="sa-Procedure.entryRelationship:frReferenceInterneDM.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -4391,7 +4391,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a24.df" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frSimpleObservationDifficulte.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="sa-Procedure.entryRelationship:frSimpleObservationDifficulte.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -4516,7 +4516,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-cs-simple.html" title="code">cs(2.0.3-sd)</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html" title="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship" class="binding">XActRelationshipEntryRelationship (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">COMP</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a24.ef" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-cda-acte-definitions.html#Procedure.entryRelationship:frSimpleObservationScores.inversionInd" title="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed." data-no-external="true">@inversionInd</a><a name="sa-Procedure.entryRelationship:frSimpleObservationScores.inversionInd"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -4607,7 +4607,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)<br/></td></tr
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-InFulfillmentOf1.html">InFulfillmentOf1</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold">XML Namespace: </span>urn:hl7-org:sdtc<br/><span style="font-weight:bold">XML: </span>inFulfillmentOf1 (urn:hl7-org:sdtc)<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ae12018c-1318-41ec-81b3-b8bbfd091e7a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ed4c2f7-3196-4e76-af11-07a6903440d4
 document.getElementById('cbfr-cda-acteSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-cda-acteSA'), 'binding', document.getElementById('cbfr-cda-acteSA-binding').checked, document.getElementById('ppfr-cda-acteSA'));
 document.getElementById('cbfr-cda-acteSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4736,12 +4736,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActClassProcedure.html">ActClassProcedure</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActClassProcedure.html">ActClassProcedure</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -4751,12 +4751,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xDocumentProcedureMood.html">x_DocumentProcedureMood</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xDocumentProcedureMood.html">x_DocumentProcedureMood</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xDocumentProcedureMood|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -4826,12 +4826,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-MediaType.html">MediaType</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-MediaType.html">MediaType</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-MediaType|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -4856,12 +4856,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.13.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260716085852" title="Click to copy URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-hl7-v3-ActStatus-cisis.html">ActStatus</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis|20260916095454" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is explicitly stated to be 20260716085852">&#x1F4CD;20260716085852</td>
+    <td title="Version is explicitly stated to be 20260916095454">&#x1F4CD;20260916095454</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.13.0">Terminologies  de Santé v1.13</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.14.0">Terminologies  de Santé v1.14</a>
     </td>
   </tr>
   <tr>
@@ -4871,12 +4871,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPriority.html">ActPriority</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-ActPriority.html">ActPriority</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -4991,12 +4991,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -5036,12 +5036,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -5081,12 +5081,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -5126,12 +5126,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
   <tr>
@@ -5171,12 +5171,12 @@ filterDesc(document.getElementById('fr-cda-acteSA'), 'obligation', document.getE
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.3.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.4.0/ValueSet-v3-xActRelationshipEntryRelationship.html">x_ActRelationshipEntryRelationship</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.3.0">THO v7.3</a>
+      <a href="http://terminology.hl7.org/7.4.0">THO v7.4</a>
     </td>
   </tr>
 </table>
@@ -5562,7 +5562,6 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)</span>
 
       <div id="all-summ">
         <p></p>
-        </p>
         <div id="all-summ-inner">
           <a name="a-summary"> </a>
 <p><b>
@@ -5653,8 +5652,8 @@ Summary
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.cda.fr.document-core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-09-14 07:43:00 +0000">
-    2026-09-14
+  <span title="2026-10-01 07:35:00 +0000">
+    2026-10-01
   </span>
 
           <br/>
