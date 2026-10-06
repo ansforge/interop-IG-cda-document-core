@@ -104,38 +104,46 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)"""
 * participant 1..1
 * participant only FRCDAParticipantCorps
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #value
+* entryRelationship ^slicing.discriminator[0].path = "typeCode"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "act"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "observation"
 * entryRelationship ^slicing.rules = #open
-* entryRelationship contains 
+* entryRelationship contains
 frReferenceInterneCirconstances 0..* and frReferenceInterneMotifActe 0..* and frReferenceInterneDM 0..*
- and frSimpleObservationDifficulte 0..1 and frSimpleObservationScores 0..*
+ and frSimpleObservation 0..*
+* obeys fr-acte-difficulte
 * entryRelationship[frReferenceInterneCirconstances].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterneCirconstances].observation 0..0
 * entryRelationship[frReferenceInterneCirconstances].typeCode = #COMP
 * entryRelationship[frReferenceInterneCirconstances].inversionInd = true
 * entryRelationship[frReferenceInterneCirconstances] ^short = "Circonstances ayant décidé de l'acte"
 * entryRelationship[frReferenceInterneCirconstances] ^definition = "Circonstances ayant décidé de l'acte"
 
 * entryRelationship[frReferenceInterneMotifActe].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterneMotifActe].observation 0..0
 * entryRelationship[frReferenceInterneMotifActe].typeCode = #RSON
 * entryRelationship[frReferenceInterneMotifActe].inversionInd = false
 * entryRelationship[frReferenceInterneMotifActe] ^short = "Motif de l'acte"
 * entryRelationship[frReferenceInterneMotifActe] ^definition = "Motif de l'acte"
 
 * entryRelationship[frReferenceInterneDM].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterneDM].observation 0..0
 * entryRelationship[frReferenceInterneDM].typeCode = #REFR
 * entryRelationship[frReferenceInterneDM].inversionInd = false
 * entryRelationship[frReferenceInterneDM] ^short = "Référence interne à un DM"
 * entryRelationship[frReferenceInterneDM] ^definition = "Référence interne à un DM"
 
-* entryRelationship[frSimpleObservationDifficulte].observation only FRCDASimpleObservation
-* entryRelationship[frSimpleObservationDifficulte].typeCode = #COMP
-* entryRelationship[frSimpleObservationDifficulte].inversionInd = false
-* entryRelationship[frSimpleObservationDifficulte] ^short = "Difficulté de l'acte"
-* entryRelationship[frSimpleObservationDifficulte] ^definition = "Difficulté de l'acte"
+* entryRelationship[frSimpleObservation].observation only FRCDASimpleObservation
+* entryRelationship[frSimpleObservation].act 0..0
+* entryRelationship[frSimpleObservation].typeCode = #COMP
+* entryRelationship[frSimpleObservation].inversionInd = false
+* entryRelationship[frSimpleObservation] ^short = "Difficulté de l'acte (observation de code GEN-023) [0..1] et/ou scores [0..*]"
+* entryRelationship[frSimpleObservation] ^definition = "Difficulté de l'acte (observation de code GEN-023) et scores"
 
-* entryRelationship[frSimpleObservationScores].observation only FRCDASimpleObservation
-* entryRelationship[frSimpleObservationScores].typeCode = #COMP
-* entryRelationship[frSimpleObservationScores].inversionInd = false
-* entryRelationship[frSimpleObservationScores] ^short = "Scores"
-* entryRelationship[frSimpleObservationScores] ^definition = "Scores"
+Invariant: fr-acte-difficulte
+Description: "Au plus une entrée Difficulté de l'acte (observation de code GEN-023)."
+Expression: "entryRelationship.where(observation.code.code = 'GEN-023').count() <= 1"
+Severity: #error

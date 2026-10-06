@@ -173,8 +173,12 @@ Permet de décrire les conditions préalables à l'utilisation du médicament.  
   * criterion MS
   * criterion.text 1..1
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "supply"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frPrescription 0..*
@@ -182,10 +186,14 @@ frPrescription 0..*
  and frInstructionsAuPatient 0..1
  and frReferenceInterne 0..*
 * entryRelationship[frPrescription].supply only FRCDAPrescription
+* entryRelationship[frPrescription].substanceAdministration 0..0
+* entryRelationship[frPrescription].act 0..0
 * entryRelationship[frPrescription] ^short = "Prescription"
 * entryRelationship[frPrescription] ^definition = "Prescription"
 * entryRelationship[frPrescription].typeCode = #REFR
 * entryRelationship[frTraitementSubordonne].substanceAdministration only FRCDATraitementSubordonne
+* entryRelationship[frTraitementSubordonne].supply 0..0
+* entryRelationship[frTraitementSubordonne].act 0..0
 * entryRelationship[frTraitementSubordonne].substanceAdministration ^short = """Traitement subordonné : \r\n
 Une entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées 'Traitement' subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
 L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre."""
@@ -193,12 +201,16 @@ L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas e
 * entryRelationship[frTraitementSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementSubordonne].sequenceNumber MS
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
+* entryRelationship[frInstructionsAuPatient].supply 0..0
+* entryRelationship[frInstructionsAuPatient].substanceAdministration 0..0
 * entryRelationship[frInstructionsAuPatient].act ^short = """Instruction au patient : \r\n
 Les instructions au patient peuvent être transmises, sous forme textuelle, dans une entrée Instructions au patient (Patient Medication Instructions – 1.3.6.1.4.1.19376.1.5.3.1.4.3) portée par un élément "entryRelationship"."""
 * entryRelationship[frInstructionsAuPatient].act ^definition = "Instructions au patient"
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient].inversionInd = true
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].supply 0..0
+* entryRelationship[frReferenceInterne].substanceAdministration 0..0
 * entryRelationship[frReferenceInterne].act ^short = """Motif du traitement : \r\n
 Le motif du traitement (ou raison de l'administration) peut être indiqué en faisant référence à autre entrée du document CDA constituant ce motif (par exemple une entrée Problème).
 Dans l'élément 'act' de l'entryRelationship :

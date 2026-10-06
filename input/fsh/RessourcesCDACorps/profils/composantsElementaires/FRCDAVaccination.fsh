@@ -78,8 +78,14 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 * author ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
 * author only FRCDAAuthor
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "supply"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "observation"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "act"
+* entryRelationship ^slicing.discriminator[3].type = #profile
+* entryRelationship ^slicing.discriminator[3].path = "substanceAdministration"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frPrescription 0..1
@@ -88,10 +94,16 @@ frPrescription 0..1
  and frCommentaireER 0..1
  and frDoseAntigene 0..*
 * entryRelationship[frPrescription].supply only FRCDAPrescription
+* entryRelationship[frPrescription].observation 0..0
+* entryRelationship[frPrescription].act 0..0
+* entryRelationship[frPrescription].substanceAdministration 0..0
 * entryRelationship[frPrescription].typeCode = #REFR
 * entryRelationship[frPrescription] ^short = "Prescription"
 
 * entryRelationship[frRangDeLaVaccination].observation only FRCDARangDeLaVaccination
+* entryRelationship[frRangDeLaVaccination].supply 0..0
+* entryRelationship[frRangDeLaVaccination].act 0..0
+* entryRelationship[frRangDeLaVaccination].substanceAdministration 0..0
 * entryRelationship[frRangDeLaVaccination].typeCode = #SUBJ
 * entryRelationship[frRangDeLaVaccination] ^short = """Rang de la vaccination : \r\n
 Le rang de vaccination permet d'indiquer de quelle injection il s'agit.
@@ -101,6 +113,9 @@ Par exemple, pour le vaccin contre la coqueluche qui se fait en 2 doses (à 2 mo
 - Type de vaccination='BOOSTER' pour le ‘Rappel' et rang de la dose='3' pour la 3ème injection"""
 
 * entryRelationship[frProbleme].observation only FRCDAProbleme
+* entryRelationship[frProbleme].supply 0..0
+* entryRelationship[frProbleme].act 0..0
+* entryRelationship[frProbleme].substanceAdministration 0..0
 * entryRelationship[frProbleme].typeCode = #CAUS
 * entryRelationship[frProbleme].inversionInd = false
 * entryRelationship[frProbleme] ^short = """Réaction observée suite au vaccin : \r\n
@@ -109,10 +124,16 @@ L'attribut @code de l'élément 'code' prend la valeur 'Symptôme' dont la valeu
 La réaction observée est codée dans l'élément 'value'."""
 
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].supply 0..0
+* entryRelationship[frCommentaireER].observation 0..0
+* entryRelationship[frCommentaireER].substanceAdministration 0..0
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER] ^short = "Commentaire"
 
 * entryRelationship[frDoseAntigene].substanceAdministration only FRCDADoseAntigene
+* entryRelationship[frDoseAntigene].supply 0..0
+* entryRelationship[frDoseAntigene].observation 0..0
+* entryRelationship[frDoseAntigene].act 0..0
 * entryRelationship[frDoseAntigene].typeCode = #COMP
 * entryRelationship[frDoseAntigene] ^short = """Dose d'antigène : \r\n
 Un des cas d'utilisation est la vaccination de sujets hypersensibles [https ://professionnels.vaccination-info-service.fr/Aspects-pratiques/Allergies-et-autres-contre-indications/Personnes-allergiques]"""

@@ -67,21 +67,31 @@ and frVaccinRecommande 1..1
 * consumable ^short = "Vaccin"
 * consumable ^definition = "Vaccin"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "supply"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "observation"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frPrescription 0..1
  and frRangDeLaVaccination 0..1
  and frCommentaireER 0..1
 * entryRelationship[frPrescription].supply only FRCDAPrescription
+* entryRelationship[frPrescription].observation 0..0
+* entryRelationship[frPrescription].act 0..0
 * entryRelationship[frPrescription].typeCode = #REFR
 * entryRelationship[frPrescription] ^short = "Prescription"
 
 * entryRelationship[frRangDeLaVaccination].observation only FRCDARangDeLaVaccination
+* entryRelationship[frRangDeLaVaccination].supply 0..0
+* entryRelationship[frRangDeLaVaccination].act 0..0
 * entryRelationship[frRangDeLaVaccination].typeCode = #SUBJ
 * entryRelationship[frRangDeLaVaccination] ^short = "Rang de la vaccination"
 
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].supply 0..0
+* entryRelationship[frCommentaireER].observation 0..0
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER] ^short = "Commentaire"

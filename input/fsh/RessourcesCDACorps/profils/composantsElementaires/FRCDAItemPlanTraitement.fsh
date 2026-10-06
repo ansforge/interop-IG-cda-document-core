@@ -84,19 +84,16 @@ Les unités sont exprimées selon le système de codage UCUM."
 * consumable ^definition = "Produit de santé"
 * consumable only FRCDAProduitDeSante
 * author MS
-* author ^slicing.discriminator.type = #value
-* author ^slicing.discriminator.path = "$this"
-* author ^slicing.rules = #open
-* author contains frAuteurDuTraitement 0..* and frAuteurDuPlanDeTraitement 0..1
-* author[frAuteurDuTraitement] ^short = "Auteur du traitement"
-* author[frAuteurDuTraitement] ^definition = "Auteur du traitement"
-* author[frAuteurDuTraitement] only FRCDAAuthor
-* author[frAuteurDuPlanDeTraitement] ^short = "Auteur du Plan de traitement"
-* author[frAuteurDuPlanDeTraitement] ^definition = "Auteur du Plan de traitement"
-* author[frAuteurDuPlanDeTraitement] only FRCDAAuthor
+* author only FRCDAAuthor
+* author ^short = "Auteur du traitement [0..*] et/ou auteur du plan de traitement [0..1]"
+* author ^definition = "Auteur du traitement et/ou auteur du plan de traitement"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "act"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "supply"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frReferenceInterne 0..*
@@ -108,23 +105,35 @@ frReferenceInterne 0..*
 * entryRelationship[frReferenceInterne] ^short = "Entrée Motif du traitement (Référence interne)"
 * entryRelationship[frReferenceInterne].typeCode = #RSON
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].substanceAdministration 0..0
+* entryRelationship[frReferenceInterne].supply 0..0
 * entryRelationship[frTraitementPrescritSubordonne] ^short = "Entrée Traitement subordonné"
 * entryRelationship[frTraitementPrescritSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementPrescritSubordonne].substanceAdministration only FRCDATraitementPrescritSubordonne
+* entryRelationship[frTraitementPrescritSubordonne].act 0..0
+* entryRelationship[frTraitementPrescritSubordonne].supply 0..0
 * entryRelationship[frInstructionsAuPatient] ^short = "Entrée Instructions au patient"
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient].inversionInd = true
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
+* entryRelationship[frInstructionsAuPatient].substanceAdministration 0..0
+* entryRelationship[frInstructionsAuPatient].supply 0..0
 * entryRelationship[frInstructionsAuDispensateur] ^short = "Entrée Instructions au dispensateur"
 * entryRelationship[frInstructionsAuDispensateur].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuDispensateur].inversionInd = true
 * entryRelationship[frInstructionsAuDispensateur].act only FRCDAInstructionsAuDispensateur
+* entryRelationship[frInstructionsAuDispensateur].substanceAdministration 0..0
+* entryRelationship[frInstructionsAuDispensateur].supply 0..0
 * entryRelationship[frQuantiteDeProduit] ^short = "Entrée Quantité à dispenser"
 * entryRelationship[frQuantiteDeProduit].typeCode = #COMP
 * entryRelationship[frQuantiteDeProduit].supply only FRCDAQuantiteDeProduit
+* entryRelationship[frQuantiteDeProduit].act 0..0
+* entryRelationship[frQuantiteDeProduit].substanceAdministration 0..0
 * entryRelationship[frAutorisationSubstitution] ^short = "Entrée Autorisation de substitution"
 * entryRelationship[frAutorisationSubstitution].typeCode = #COMP
 * entryRelationship[frAutorisationSubstitution].act only FRCDAAutorisationSubstitution
+* entryRelationship[frAutorisationSubstitution].substanceAdministration 0..0
+* entryRelationship[frAutorisationSubstitution].supply 0..0
 * precondition MS
 * precondition 0..1
 * precondition ^short = "Précondition à l'utilisation du médicament. Permet de décrire les conditions préalables à l'utilisation du médicament. L'attribut @value de l'élément 'reference' est une URI qui pointe vers la partie narrative du document CDA décrivant ces conditions préalables."
