@@ -118,18 +118,8 @@ Dans ce cas, ne pas utiliser de  subordonné."
 * statusCode.code = #completed
 
 * effectiveTime MS
-* effectiveTime ^slicing.discriminator.type = #pattern
-* effectiveTime ^slicing.discriminator.path = "operator"
-* effectiveTime ^slicing.rules = #open
-* effectiveTime contains effectiveTimeDuree 0..1 and effectiveTimeFrequence 0..*
-
-* effectiveTime[effectiveTimeDuree] obeys fr-operator-not-a-prescrit
-* effectiveTime[effectiveTimeDuree] ^short = "Durée de traitement"
-* effectiveTime[effectiveTimeDuree] obeys fr-effectiveTime-duree-type-prescrit
-
-* effectiveTime[effectiveTimeFrequence] obeys fr-operator-a-prescrit
-* effectiveTime[effectiveTimeFrequence] ^short = "Fréquence d'administration"
-* effectiveTime[effectiveTimeFrequence] obeys fr-effectiveTime-frequence-types-prescrit
+* effectiveTime ^short = "Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]"
+* obeys fr-effectiveTime-prescrit
 
 * repeatNumber 1..1 MS
 * repeatNumber ^short = "Nombre de renouvellement(s) possible(s): \r\n
@@ -193,20 +183,11 @@ Les unités sont exprimées selon le système de codage UCUM."""
 * consumable only FRCDAProduitDeSante
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
-* author 1..1
-* author ^slicing.discriminator.type = #value
-* author ^slicing.discriminator.path = "$this"
-* author ^slicing.rules = #open
-* author contains 
-prescripteur 0..1 and auteurDuPrescription 0..1
-* author[prescripteur] ^short = "Prescripteur : \r\n
+* author 0..2
+* author only FRCDAAuthor
+* author ^short = "Prescripteur [0..1] et/ou auteur du document Prescription [0..1] : \r\n
 Dans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.
-Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer le prescripteur du traitement."
-* author[prescripteur] only FRCDAAuthor
-* author[auteurDuPrescription] ^short = "Auteur du document Prescription : \r\n
-Dans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.
-Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription."
-* author[auteurDuPrescription] only FRCDAAuthor
+Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer le prescripteur du traitement et/ou l'auteur du document Prescription."
 * precondition MS
 * precondition 0..1
 * precondition ^short = "Précondition à l'utilisation du médicament : \r\n
@@ -216,8 +197,14 @@ Dans le cas où cette entrée Traitement prescrit est utilisée dans un autre do
   * criterion MS
   * criterion.text 1..1
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "act"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "supply"
+* entryRelationship ^slicing.discriminator[3].type = #profile
+* entryRelationship ^slicing.discriminator[3].path = "observation"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frReferenceInterne 0..*
@@ -234,6 +221,9 @@ frReferenceInterne 0..*
  and frNonRemboursable 1..1
  and frHorsAMM 1..1
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].substanceAdministration 0..0
+* entryRelationship[frReferenceInterne].supply 0..0
+* entryRelationship[frReferenceInterne].observation 0..0
 * entryRelationship[frReferenceInterne].typeCode = #REFR
 * entryRelationship[frReferenceInterne] ^short = """Entrée Motif du traitement (Référence interne): \r\n
 Le motif du traitement (ou raison de l'administration) peut être indiqué en faisant référence à une autre entrée du document CDA constituant ce motif (par exemple une entrée Problème).
@@ -244,53 +234,89 @@ Dans l'élément 'act' de l'entryRelationship :
 - L'élément 'code' doit concorder avec celui utilisé par l'élément de référence."""
 
 * entryRelationship[frTraitementPrescritSubordonne].substanceAdministration only FRCDATraitementPrescritSubordonne
+* entryRelationship[frTraitementPrescritSubordonne].act 0..0
+* entryRelationship[frTraitementPrescritSubordonne].supply 0..0
+* entryRelationship[frTraitementPrescritSubordonne].observation 0..0
 * entryRelationship[frTraitementPrescritSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementPrescritSubordonne] ^short = """Entrée Traitement prescrit subordonné : \r\n
 Une entrée FR-Traitement-prescrit de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-prescrit-subordonnee pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
 L'utilisation de sous-entrées FR-Traitement-prescrit-subordonnee pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement-prescrit de premier niveau sous forme de texte libre."""
 
 * entryRelationship[frReferenceItemPlanTraitement].substanceAdministration only FRCDAReferenceItemPlanTraitement
+* entryRelationship[frReferenceItemPlanTraitement].act 0..0
+* entryRelationship[frReferenceItemPlanTraitement].supply 0..0
+* entryRelationship[frReferenceItemPlanTraitement].observation 0..0
 * entryRelationship[frReferenceItemPlanTraitement].typeCode = #REFR
 * entryRelationship[frReferenceItemPlanTraitement] ^short = """Entrée Référence à un item du plan de traitement : \r\n
 Si la ligne de prescription est liée à un item d'un plan de traitement, la référence à celui-ci doit être présent si connu."""
 
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
+* entryRelationship[frInstructionsAuPatient].substanceAdministration 0..0
+* entryRelationship[frInstructionsAuPatient].supply 0..0
+* entryRelationship[frInstructionsAuPatient].observation 0..0
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient] ^short = "Entrée Instructions au patient"
 
 * entryRelationship[frInstructionsAuDispensateur].act only FRCDAInstructionsAuDispensateur
+* entryRelationship[frInstructionsAuDispensateur].substanceAdministration 0..0
+* entryRelationship[frInstructionsAuDispensateur].supply 0..0
+* entryRelationship[frInstructionsAuDispensateur].observation 0..0
 * entryRelationship[frInstructionsAuDispensateur].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuDispensateur] ^short = "Entrée Instructions au dispensateur"
 
 * entryRelationship[frQuantiteDeProduit].supply only FRCDAQuantiteDeProduit
+* entryRelationship[frQuantiteDeProduit].act 0..0
+* entryRelationship[frQuantiteDeProduit].substanceAdministration 0..0
+* entryRelationship[frQuantiteDeProduit].observation 0..0
 * entryRelationship[frQuantiteDeProduit].typeCode = #COMP
 * entryRelationship[frQuantiteDeProduit] ^short = "Entrée Quantité à dispenser"
 
 * entryRelationship[frAutorisationSubstitution].act only FRCDAAutorisationSubstitution
+* entryRelationship[frAutorisationSubstitution].substanceAdministration 0..0
+* entryRelationship[frAutorisationSubstitution].supply 0..0
+* entryRelationship[frAutorisationSubstitution].observation 0..0
 * entryRelationship[frAutorisationSubstitution].typeCode = #COMP
 * entryRelationship[frAutorisationSubstitution] ^short = "Entrée Autorisation de substitution"
 
 * entryRelationship[frPeriodeDeRenouvellement].supply only FRCDAPeriodeDeRenouvellement
+* entryRelationship[frPeriodeDeRenouvellement].act 0..0
+* entryRelationship[frPeriodeDeRenouvellement].substanceAdministration 0..0
+* entryRelationship[frPeriodeDeRenouvellement].observation 0..0
 * entryRelationship[frPeriodeDeRenouvellement].typeCode = #COMP
 * entryRelationship[frPeriodeDeRenouvellement] ^short = "Entrée Période de renouvellement"
 
 * entryRelationship[frEnRapportAvecALD].observation only FRCDAEnRapportAvecALD
+* entryRelationship[frEnRapportAvecALD].act 0..0
+* entryRelationship[frEnRapportAvecALD].substanceAdministration 0..0
+* entryRelationship[frEnRapportAvecALD].supply 0..0
 * entryRelationship[frEnRapportAvecALD].typeCode = #COMP
 * entryRelationship[frEnRapportAvecALD] ^short = "Entrée En rapport avec une Affection Longue Durée (ALD)"
 
 * entryRelationship[frEnRapportAvecAccidentTravail].observation only FRCDAEnRapportAvecAccidentTravail
+* entryRelationship[frEnRapportAvecAccidentTravail].act 0..0
+* entryRelationship[frEnRapportAvecAccidentTravail].substanceAdministration 0..0
+* entryRelationship[frEnRapportAvecAccidentTravail].supply 0..0
 * entryRelationship[frEnRapportAvecAccidentTravail].typeCode = #COMP
 * entryRelationship[frEnRapportAvecAccidentTravail] ^short = "Entrée En rapport avec un accident du travail"
 
 * entryRelationship[frEnRapportAvecLaPrevention].observation only FRCDAEnRapportAvecLaPrevention
+* entryRelationship[frEnRapportAvecLaPrevention].act 0..0
+* entryRelationship[frEnRapportAvecLaPrevention].substanceAdministration 0..0
+* entryRelationship[frEnRapportAvecLaPrevention].supply 0..0
 * entryRelationship[frEnRapportAvecLaPrevention].typeCode = #COMP
 * entryRelationship[frEnRapportAvecLaPrevention] ^short = "Entrée En rapport avec la prévention"
 
 * entryRelationship[frNonRemboursable].observation only FRCDANonRemboursable
+* entryRelationship[frNonRemboursable].act 0..0
+* entryRelationship[frNonRemboursable].substanceAdministration 0..0
+* entryRelationship[frNonRemboursable].supply 0..0
 * entryRelationship[frNonRemboursable].typeCode = #COMP
 * entryRelationship[frNonRemboursable] ^short = "Entrée Non remboursable"
 
 * entryRelationship[frHorsAMM].observation only FRCDAHorsAMM
+* entryRelationship[frHorsAMM].act 0..0
+* entryRelationship[frHorsAMM].substanceAdministration 0..0
+* entryRelationship[frHorsAMM].supply 0..0
 * entryRelationship[frHorsAMM].typeCode = #COMP
 * entryRelationship[frHorsAMM] ^short = "Entrée Hors AMM"
 
@@ -303,23 +329,7 @@ Si la ligne de prescription est liée à un item d'un plan de traitement, la ré
 Non utilisé dans une prescription."
   * externalDocument.id 1..* MS
 
-Invariant: fr-operator-a-prescrit
-Description: "operator doit être A"
-Expression: "operator = 'A'"
+Invariant: fr-effectiveTime-prescrit
+Description: "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'."
+Expression: "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))"
 Severity: #error
-
-Invariant: fr-operator-not-a-prescrit
-Description: "operator doit être différent de A"
-Expression: "operator != 'A'"
-Severity: #error
-
-Invariant: fr-effectiveTime-frequence-types-prescrit
-Description: "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS"
-Expression: "is(TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)"
-Severity: #error
-
-Invariant: fr-effectiveTime-duree-type-prescrit
-Description: "La durée doit être IVL-TS"
-Expression: "is(IVL_TS)"
-Severity: #error
-

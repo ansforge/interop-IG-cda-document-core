@@ -82,8 +82,8 @@ and frAllergieOuHypersensibilite 1..1
       * name 0..1
       * name ^short = "Nom de l'agent responsable"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frProbleme 0..*
