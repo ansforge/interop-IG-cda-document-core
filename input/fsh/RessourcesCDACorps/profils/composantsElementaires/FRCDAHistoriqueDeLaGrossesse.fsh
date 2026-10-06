@@ -46,17 +46,11 @@ and frHistoriqueDeLaGrossesse 1..1
 * effectiveTime ^definition = "Période de la grossesse"
 * component MS
 * component 1..1
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-  frNaissance 0..1 and
-  frObservationSurLaGrossesse 0..1
-* component[frNaissance].typeCode = #COMP
-* component[frNaissance].organizer ^short = "Informations relatives aux naissances. Chaque entrée FR-Naissance, de type Organizer, rassemble les observations concernant l'issue de la grossesse relative à un fœtus. Cette structuration est rendue nécessaire pour prendre en compte les grossesses multiples, mais peut cependant être utilisée pour une naissance unique."
-* component[frNaissance].organizer ^definition = "Informations relatives aux naissances"
-* component[frNaissance].organizer only FRCDANaissance
-* component[frNaissance].typeCode = #COMP
-* component[frNaissance].observation ^short = "Informations relatives à la grossesse. Chaque entrée FR-Observation-sur-la-grossesse permet  de fournir une observation relative à une grossesse."
-* component[frNaissance].observation ^definition = "Informations relatives à la grossesse"
-* component[frNaissance].observation only FRCDAObservationSurLaGrossesse
+* component ^short = "Naissance (organizer) ou observation sur la grossesse (observation)"
+* component.typeCode = #COMP
+* component.organizer ^short = "Informations relatives aux naissances. Chaque entrée FR-Naissance, de type Organizer, rassemble les observations concernant l'issue de la grossesse relative à un fœtus. Cette structuration est rendue nécessaire pour prendre en compte les grossesses multiples, mais peut cependant être utilisée pour une naissance unique."
+* component.organizer ^definition = "Informations relatives aux naissances"
+* component.organizer only FRCDANaissance
+* component.observation ^short = "Informations relatives à la grossesse. Chaque entrée FR-Observation-sur-la-grossesse permet  de fournir une observation relative à une grossesse."
+* component.observation ^definition = "Informations relatives à la grossesse"
+* component.observation only FRCDAObservationSurLaGrossesse

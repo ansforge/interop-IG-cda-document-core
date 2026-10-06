@@ -34,13 +34,8 @@ and frSectionFonctionsPhysiques 0..1
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * entry MS
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
-* entry ^slicing.rules = #open
-* entry contains
-frGroupeDeQuestionnairesDevaluation 0..* and
-frEvaluation 0..*
-* entry[frGroupeDeQuestionnairesDevaluation].organizer only FRCDAGroupeDeQuestionnairesDEvaluation
-* entry[frGroupeDeQuestionnairesDevaluation].organizer ^short = "EntrÃ©e Groupe de questionnaires d'Ã©valutation"
-* entry[frEvaluation].observation only FRCDAEvaluation
-* entry[frEvaluation].observation ^short = "EntrÃ©e Evalutation"
+* entry ^short = "Entrées Groupe de questionnaires d'évaluation (organizer) et/ou Évaluation (observation)"
+* entry.organizer only FRCDAGroupeDeQuestionnairesDEvaluation
+* entry.organizer ^short = "Entrée Groupe de questionnaires d'évaluation"
+* entry.observation only FRCDAEvaluation
+* entry.observation ^short = "Entrée Évaluation"
