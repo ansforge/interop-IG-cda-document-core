@@ -4,7 +4,8 @@ window.artifactsTableData = {
       "type":        "Type",
       "category":    "Category",
       "useGrouping": "Use grouping",
-      "clearAll":    "Clear all"
+      "clearAll":      "Clear all",
+      "linkToSection": "Link to this section"
     },
     "groupDescriptions": {
       "-str-logicalmodel": "<p>Ils définissent des modèles de données qui représentent le domaine couvert par ce guide d'implémentation.</p>\n"
@@ -225,7 +226,8 @@ window.artifactsTableData = {
       "type":        "Type",
       "category":    "Category",
       "useGrouping": "Use grouping",
-      "clearAll":    "Clear all"
+      "clearAll":      "Clear all",
+      "linkToSection": "Link to this section"
     },
     "groupDescriptions": {
       "-str-logicalmodel": "<p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>\n"
