@@ -79,8 +79,8 @@ and frDispositifMedical 1..1
 * author MS
 * author only FRCDAAuthor
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator[0].type = #value
-* entryRelationship ^slicing.discriminator[0].path = "observation.code.code"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frEnRapportAvecALD 0..1
