@@ -180,7 +180,7 @@ Les sous-éléments 'numerator' et 'denominator' permettent de fournir :
 Les unités sont exprimées selon le système de codage UCUM."""
   * numerator 1..1 MS
   * denominator 1..1 MS
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
 * author 0..2

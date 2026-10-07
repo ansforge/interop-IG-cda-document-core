@@ -68,7 +68,7 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 * doseQuantity MS
 * doseQuantity ^short = "Dose administrée"
 * doseQuantity ^definition = "Dose administrée"
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Vaccin"
 * consumable ^definition = "Vaccin"
 * performer 0..1 MS

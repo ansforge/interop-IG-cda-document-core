@@ -82,7 +82,7 @@ Les unités sont exprimées selon le système de codage UCUM."
 * consumable MS
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * author MS
 * author only FRCDAAuthor
 * author ^short = "Auteur du traitement [0..*] et/ou auteur du plan de traitement [0..1]"

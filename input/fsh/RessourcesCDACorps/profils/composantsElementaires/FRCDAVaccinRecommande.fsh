@@ -63,7 +63,7 @@ and frVaccinRecommande 1..1
 * doseQuantity MS
 * doseQuantity ^short = "Dose administrée"
 * doseQuantity ^definition = "Dose administrée"
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Vaccin"
 * consumable ^definition = "Vaccin"
 * entryRelationship MS

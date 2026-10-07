@@ -162,7 +162,7 @@ Les unités sont exprimées selon le système de codage UCUM."""
   * denominator 1..1 MS
     * unit MS
     * value MS
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Médicament"
 * consumable ^definition = "Médicament"
 * precondition MS

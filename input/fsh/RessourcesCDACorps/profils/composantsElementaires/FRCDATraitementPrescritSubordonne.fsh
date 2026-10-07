@@ -55,7 +55,7 @@ Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre
 """
   * low 1..1 MS
   * high 1..1 MS
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
 
