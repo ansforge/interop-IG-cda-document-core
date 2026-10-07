@@ -127,7 +127,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
   "name" : "FRCDAVaccinRecommande",
   "title" : "CDA - FR Vaccin recommande",
   "status" : "draft",
-  "date" : "2026-10-07T08:37:44+00:00",
+  "date" : "2026-10-07T09:51:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -332,7 +332,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
       "id" : "SubstanceAdministration.consumable",
       "path" : "SubstanceAdministration.consumable",
       "short" : "Vaccin",
-      "definition" : "Vaccin",
+      "definition" : "Vaccin"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]

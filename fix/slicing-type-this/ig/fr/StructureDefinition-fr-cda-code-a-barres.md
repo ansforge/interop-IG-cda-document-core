@@ -27,7 +27,7 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 ** Résumé **
 
-Obligatoire : 9 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 9 éléments
  Must-Support : 6 éléments
 
 **Structures**
@@ -56,7 +56,7 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 ** Résumé **
 
-Obligatoire : 9 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 9 éléments
  Must-Support : 6 éléments
 
 **Structures**
@@ -113,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-code-a-b
   "name" : "FRCDASectionCodeABarres",
   "title" : "CDA - FR Code a barres",
   "status" : "draft",
-  "date" : "2026-10-07T08:37:44+00:00",
+  "date" : "2026-10-07T09:51:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -236,7 +236,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-code-a-b
     {
       "id" : "Section.entry.typeCode",
       "path" : "Section.entry.typeCode",
-      "min" : 1,
       "patternCode" : "COMP",
       "mustSupport" : true
     },
