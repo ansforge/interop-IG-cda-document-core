@@ -117,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
   "name" : "FRCDAParticipantCorps",
   "title" : "CDA - FR Participant corps",
   "status" : "draft",
-  "date" : "2026-10-08T08:06:17+00:00",
+  "date" : "2026-10-08T10:07:19+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -180,10 +180,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
     {
       "id" : "Participant2.typeCode",
       "path" : "Participant2.typeCode",
+      "short" : "Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901).",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis|20260916095457"
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd",
+        "additional" : [{
+          "purpose" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis|20260916095457",
+          "documentation" : "Value set CI-SIS (JDV_HL7_v3_ParticipationType_CISIS), complémentaire au binding required hérité de CDA."
+        }]
       }
     },
     {
