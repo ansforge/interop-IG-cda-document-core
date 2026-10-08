@@ -17,14 +17,18 @@ Une à plusieurs des valeurs suivantes, séparées par un espace :
 'HV' pour domicile de vacances
 'WP' pour lieu de travail
 'TMP' pour adresse temporaire"
+* obeys fr-addr-use
 
 // SLICING SUR ITEM - Différenciation des types d'adresses
-* item ^slicing.discriminator.type = #type
-* item ^slicing.discriminator.path = "$this"
+* item ^slicing.discriminator.type = #exists
+* item ^slicing.discriminator.path = "streetAddressLine"
 * item ^slicing.rules = #open
 * item MS
 
-* item contains notStreetAddressLine 0..1 and streetAddressLine 0..1
+* item contains notStreetAddressLine 0..* and streetAddressLine 0..7
+* item[notStreetAddressLine].streetAddressLine 0..0
+* item[streetAddressLine].streetAddressLine 1..1
+* obeys fr-addr-composants-max-1
 
 // ADRESSE STRUCTURÉE (non streetAddressLine)
 * item[notStreetAddressLine] ^short = "Structure formée des composants élémentaires de l'adresse géopostale"
@@ -119,3 +123,13 @@ Quatrième ligne : regroupe le numéro, l'extension, le type et le nom de la voi
 Cinquième ligne : regroupe la mention de distribution (BP, poste restante) et le libellé de la localité dans le cas où celle-ci est différente du libellé cedex, lieu-dit ou hameau (postBox + precinct + city), 
 Sixième ligne : Regroupe le code postal et la localité de destination ou le code cedex et le libellé du bureau cedex (postalCode + city), 
 Septième ligne : regroupe la division territoriale et le nom du pays (state + country)"
+
+Invariant: fr-addr-composants-max-1
+Description: "Adresse formée de composants élémentaires : chaque composant est présent au plus une fois."
+Severity: #error
+Expression: "item.streetAddressLine.empty() implies (item.country.count() <= 1 and item.state.count() <= 1 and item.city.count() <= 1 and item.postalCode.count() <= 1 and item.county.count() <= 1 and item.houseNumber.count() <= 1 and item.houseNumberNumeric.count() <= 1 and item.streetName.count() <= 1 and item.streetNameType.count() <= 1 and item.additionalLocator.count() <= 1 and item.unitID.count() <= 1 and item.postBox.count() <= 1 and item.precinct.count() <= 1)"
+
+Invariant: fr-addr-use
+Description: "Code d'usage de l'adresse : H (domicile), HP (domicile principal), HV (domicile de vacances), WP (lieu de travail) ou TMP (adresse temporaire)."
+Severity: #error
+Expression: "use.all($this in ('H' | 'HP' | 'HV' | 'WP' | 'TMP'))"
