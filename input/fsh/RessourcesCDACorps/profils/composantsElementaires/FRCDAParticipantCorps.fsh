@@ -8,17 +8,15 @@ Description: "FR-Participant: CDA - participant. Participant du corps"
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId ^short = "templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide"
-* templateId contains templateId 0..1 and templateId-other 0..*
+* templateId contains templateId 0..1
+* templateId.root 1..1
 
 * templateId[templateId].root = "1.2.250.1.213.1.1.3.109"
 * templateId[templateId] ^short = "TemplateId avec root égal à 1.2.250.1.213.1.1.3.109"
 * templateId[templateId] ^definition = "TemplateId avec root égal à 1.2.250.1.213.1.1.3.109"
 
-* templateId[templateId-other].root 1..1 MS
-* templateId[templateId-other] ^short = "Autre TemplateId"
-* templateId[templateId-other] ^definition = "Autre TemplateId"
-
-* typeCode MS
+* typeCode 1..1 MS
+* typeCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis (required)
 * time MS
 * time ^short = "Date et heure de la participation"
 * time ^definition = "Date et heure de la participation"

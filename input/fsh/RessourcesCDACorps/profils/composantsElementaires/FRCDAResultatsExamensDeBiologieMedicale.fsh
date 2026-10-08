@@ -71,8 +71,8 @@ frParticipantValideurResultats 0..1 MS and frParticipantResponsableExamen 0..1 M
 * participant[frParticipantValideurResultats].templateId ^slicing.discriminator.type = #value
 * participant[frParticipantValideurResultats].templateId ^slicing.discriminator.path = "root"
 * participant[frParticipantValideurResultats].templateId ^slicing.rules = #open
-* participant[frParticipantValideurResultats].templateId contains templateId-other 1..1
-* participant[frParticipantValideurResultats].templateId[templateId-other].root = "1.3.6.1.4.1.19376.1.3.3.1.5"
+* participant[frParticipantValideurResultats].templateId contains templateIdIHEValideur 1..1
+* participant[frParticipantValideurResultats].templateId[templateIdIHEValideur].root = "1.3.6.1.4.1.19376.1.3.3.1.5"
 * participant[frParticipantResponsableExamen] ^short = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen] ^definition = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen].typeCode = #RESP
