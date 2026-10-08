@@ -16,7 +16,10 @@ Description: "FR-Participant: CDA - participant. Participant du corps"
 * templateId[templateId] ^definition = "TemplateId avec root égal à 1.2.250.1.213.1.1.3.109"
 
 * typeCode 1..1 MS
-* typeCode from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis (required)
+* typeCode ^short = "Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901)."
+* typeCode ^binding.additional[+].purpose = #required
+* typeCode ^binding.additional[=].valueSet = "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis"
+* typeCode ^binding.additional[=].documentation = "Value set CI-SIS (JDV_HL7_v3_ParticipationType_CISIS), complémentaire au binding required hérité de CDA."
 * time MS
 * time ^short = "Date et heure de la participation"
 * time ^definition = "Date et heure de la participation"
