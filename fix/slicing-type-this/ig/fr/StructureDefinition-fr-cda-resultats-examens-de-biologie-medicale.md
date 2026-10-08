@@ -145,7 +145,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDAResultatsExamensDeBiologieMedicale",
   "title" : "CDA - FR Resultats examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-10-07T09:51:04+00:00",
+  "date" : "2026-10-08T08:06:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -343,14 +343,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "min" : 1
     },
     {
-      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateId-other",
+      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur",
       "path" : "Act.participant.templateId",
-      "sliceName" : "templateId-other",
+      "sliceName" : "templateIdIHEValideur",
       "min" : 1,
       "max" : "1"
     },
     {
-      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateId-other.root",
+      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.root",
       "path" : "Act.participant.templateId.root",
       "min" : 1,
       "patternString" : "1.3.6.1.4.1.19376.1.3.3.1.5"

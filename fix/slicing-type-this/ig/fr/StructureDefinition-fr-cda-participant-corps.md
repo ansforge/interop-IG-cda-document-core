@@ -19,6 +19,8 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
 
+#### Bindings terminologiques (différentiel)
+
 #### Bindings terminologiques
 
 #### Contraintes
@@ -27,8 +29,8 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 ** Résumé **
 
-Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 6 éléments
+Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 5 éléments
 
 **Structures**
 
@@ -46,6 +48,8 @@ Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slic
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
 
+#### Bindings terminologiques (différentiel)
+
  **Vue d'ensembleView** 
 
 #### Bindings terminologiques
@@ -56,8 +60,8 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 ** Résumé **
 
-Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 6 éléments
+Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 5 éléments
 
 **Structures**
 
@@ -113,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
   "name" : "FRCDAParticipantCorps",
   "title" : "CDA - FR Participant corps",
   "status" : "draft",
-  "date" : "2026-10-07T09:51:04+00:00",
+  "date" : "2026-10-08T08:06:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -155,6 +159,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
       "short" : "templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide"
     },
     {
+      "id" : "Participant2.templateId.root",
+      "path" : "Participant2.templateId.root",
+      "min" : 1
+    },
+    {
       "id" : "Participant2.templateId:templateId",
       "path" : "Participant2.templateId",
       "sliceName" : "templateId",
@@ -166,28 +175,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
     {
       "id" : "Participant2.templateId:templateId.root",
       "path" : "Participant2.templateId.root",
-      "min" : 1,
       "patternString" : "1.2.250.1.213.1.1.3.109"
-    },
-    {
-      "id" : "Participant2.templateId:templateId-other",
-      "path" : "Participant2.templateId",
-      "sliceName" : "templateId-other",
-      "short" : "Autre TemplateId",
-      "definition" : "Autre TemplateId",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Participant2.templateId:templateId-other.root",
-      "path" : "Participant2.templateId.root",
-      "min" : 1,
-      "mustSupport" : true
     },
     {
       "id" : "Participant2.typeCode",
       "path" : "Participant2.typeCode",
-      "mustSupport" : true
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis|20260916095457"
+      }
     },
     {
       "id" : "Participant2.time",

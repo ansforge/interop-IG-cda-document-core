@@ -29,8 +29,8 @@ Cette structure est dérivée de [Encounter](http://hl7.org/cda/stds/core/2.0.3-
 
 ** Résumé **
 
-Obligatoire : 8 éléments(4 éléments obligatoire(s) imbriqué(s))
- Must-Support : 23 éléments
+Obligatoire : 8 éléments(5 éléments obligatoire(s) imbriqué(s))
+ Must-Support : 17 éléments
 
 **Structures**
 
@@ -46,7 +46,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Encounter.templateId
-* The element 1 is sliced based on the value of Encounter.participant
+* The element 2 is sliced based on the values of Encounter.participant
 
  **Vue différentielle** 
 
@@ -64,8 +64,8 @@ Cette structure est dérivée de [Encounter](http://hl7.org/cda/stds/core/2.0.3-
 
 ** Résumé **
 
-Obligatoire : 8 éléments(4 éléments obligatoire(s) imbriqué(s))
- Must-Support : 23 éléments
+Obligatoire : 8 éléments(5 éléments obligatoire(s) imbriqué(s))
+ Must-Support : 17 éléments
 
 **Structures**
 
@@ -81,7 +81,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Encounter.templateId
-* The element 1 is sliced based on the value of Encounter.participant
+* The element 2 is sliced based on the values of Encounter.participant
 
  
 
@@ -125,7 +125,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rencontr
   "name" : "FRCDARencontre",
   "title" : "CDA - FR Rencontre",
   "status" : "draft",
-  "date" : "2026-10-07T09:51:04+00:00",
+  "date" : "2026-10-08T08:06:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -365,9 +365,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rencontr
         "discriminator" : [{
           "type" : "value",
           "path" : "typeCode"
+        },
+        {
+          "type" : "value",
+          "path" : "participantRole.classCode"
         }],
         "rules" : "open"
-      }
+      },
+      "short" : "Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]",
+      "definition" : "Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]
+      }]
     },
     {
       "id" : "Encounter.participant:lieuExecution",
@@ -385,40 +395,28 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rencontr
       "patternCode" : "LOC"
     },
     {
-      "id" : "Encounter.participant:lieuExecution.participantRole",
-      "path" : "Encounter.participant.participantRole",
-      "mustSupport" : true
-    },
-    {
       "id" : "Encounter.participant:lieuExecution.participantRole.classCode",
       "path" : "Encounter.participant.participantRole.classCode",
+      "min" : 1,
       "patternCode" : "SDLOC"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.id",
       "path" : "Encounter.participant.participantRole.id",
       "short" : "Identifiant de l'établissement",
-      "definition" : "Identifiant de l'établissement",
-      "mustSupport" : true
+      "definition" : "Identifiant de l'établissement"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.addr",
       "path" : "Encounter.participant.participantRole.addr",
       "short" : "Adresse",
-      "definition" : "Adresse",
-      "mustSupport" : true
+      "definition" : "Adresse"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.telecom",
       "path" : "Encounter.participant.participantRole.telecom",
       "short" : "Coordonnées télécom",
-      "definition" : "Coordonnées télécom",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Encounter.participant:lieuExecution.participantRole.playingEntity",
-      "path" : "Encounter.participant.participantRole.playingEntity",
-      "mustSupport" : true
+      "definition" : "Coordonnées télécom"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.playingEntity.classCode",
@@ -432,18 +430,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-rencontr
       "definition" : "Nom de l'établissement",
       "min" : 1,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Encounter.participant:autresParticipants",
-      "path" : "Encounter.participant",
-      "sliceName" : "autresParticipants",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]
-      }],
       "mustSupport" : true
     }]
   }

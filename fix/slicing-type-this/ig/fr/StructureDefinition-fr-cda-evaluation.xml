@@ -80,7 +80,7 @@
   <name value="FRCDAEvaluation"/>
   <title value="CDA - FR Evaluation"/>
   <status value="draft"/>
-  <date value="2026-10-07T09:51:04+00:00"/>
+  <date value="2026-10-08T08:06:17+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -1873,6 +1873,97 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
+    <element id="Observation.participant.templateId.nullFlavor">
+      <path value="Observation.participant.templateId.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
+      </binding>
+    </element>
+    <element id="Observation.participant.templateId.assigningAuthorityName">
+      <path value="Observation.participant.templateId.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.assigningAuthorityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.participant.templateId.displayable">
+      <path value="Observation.participant.templateId.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.displayable"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.participant.templateId.root">
+      <path value="Observation.participant.templateId.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
+      </type>
+    </element>
+    <element id="Observation.participant.templateId.extension">
+      <path value="Observation.participant.templateId.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
+      </type>
+    </element>
     <element id="Observation.participant.templateId:templateId">
       <path value="Observation.participant.templateId"/>
       <sliceName value="templateId"/>
@@ -1981,114 +2072,6 @@
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
       </type>
     </element>
-    <element id="Observation.participant.templateId:templateId-other">
-      <path value="Observation.participant.templateId"/>
-      <sliceName value="templateId-other"/>
-      <short value="Autre TemplateId"/>
-      <definition value="Autre TemplateId"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="InfrastructureRoot.templateId"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="Observation.participant.templateId:templateId-other.nullFlavor">
-      <path value="Observation.participant.templateId.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd"/>
-      </binding>
-    </element>
-    <element id="Observation.participant.templateId:templateId-other.assigningAuthorityName">
-      <path value="Observation.participant.templateId.assigningAuthorityName"/>
-      <representation value="xmlAttr"/>
-      <label value="Assigning Authority Name"/>
-      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="II.assigningAuthorityName"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
-      </type>
-    </element>
-    <element id="Observation.participant.templateId:templateId-other.displayable">
-      <path value="Observation.participant.templateId.displayable"/>
-      <representation value="xmlAttr"/>
-      <label value="Displayable"/>
-      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="II.displayable"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="boolean"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd"/>
-      </type>
-    </element>
-    <element id="Observation.participant.templateId:templateId-other.root">
-      <path value="Observation.participant.templateId.root"/>
-      <representation value="xmlAttr"/>
-      <label value="Root"/>
-      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="II.root"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.participant.templateId:templateId-other.extension">
-      <path value="Observation.participant.templateId.extension"/>
-      <representation value="xmlAttr"/>
-      <label value="Extension"/>
-      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="II.extension"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd"/>
-      </type>
-    </element>
     <element id="Observation.participant.typeCode">
       <path value="Observation.participant.typeCode"/>
       <representation value="xmlAttr"/>
@@ -2107,7 +2090,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis|20260916095457"/>
       </binding>
     </element>
     <element id="Observation.participant.contextControlCode">
