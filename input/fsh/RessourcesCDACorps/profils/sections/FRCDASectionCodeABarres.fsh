@@ -31,7 +31,7 @@ Description: "Cette section permet d'enregistrer des codes à barres"
 * text ^short = "Bloc narratif de la section"
 * text ^definition = "Bloc narratif de la section"
 * entry MS
-* entry.typeCode 1..1 MS
+* entry.typeCode 0..1 MS
 * entry.typeCode = #COMP
 * entry.observationMedia only FRCDAImageIllustrative
 * entry ^short = "Code à barres"

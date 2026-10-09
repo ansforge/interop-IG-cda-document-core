@@ -38,12 +38,12 @@ and frSectionResultatsEvenements 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "observation"
 * entry ^slicing.rules = #open
 * entry contains
 frSimpleObservation 1..* and
-frTransfertDuPatient 0..* and
+//frTransfertDuPatient 0..* and
 frProbleme 0..*
 * entry[frSimpleObservation].observation only FRCDASimpleObservation
 * entry[frSimpleObservation].observation ^short = "Entrée Simple observation"

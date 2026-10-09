@@ -39,9 +39,9 @@ and dicomClinicalInformationSection 1..1
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * component MS
-* component 1..2
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
+* component 2..2
+* component ^slicing.discriminator.type = #profile
+* component ^slicing.discriminator.path = "section"
 * component ^slicing.rules = #open
 * component contains
 frSectionDicomDemandeExamen 1..1 and

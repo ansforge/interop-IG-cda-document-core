@@ -34,20 +34,19 @@ Description: "Entrée FR-Document-attache: L'entrée Document Attaché est une e
 * effectiveTime MS
 * effectiveTime ^short = "Date de l'entrée"
 * effectiveTime ^definition = "Date de l'entrée"
+* obeys fr-document-attache-components
+
 * component MS
-* component 1..2
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-frTypeDocumentAttache 1..1 and
-frObservationMedia  1..1 
-* component[frTypeDocumentAttache].observation 0..1 
-* component[frTypeDocumentAttache].observation only FRCDATypeDocumentAttache
-* component[frTypeDocumentAttache] ^short = "Type de document attaché"
-* component[frObservationMedia] ^short = "Document attaché"
-* component[frObservationMedia].observationMedia 1..1
-* component[frObservationMedia].observationMedia 
+* component 2..2
+* component ^short = "Type de document attaché (observation) et document attaché (observationMedia)"
+
+// Type de document attaché
+* component.observation only FRCDATypeDocumentAttache
+* component.observation ^short = "Type de document attaché"
+
+// Document attaché
+* component.observationMedia ^short = "Document attaché"
+* component.observationMedia
   * classCode MS
   * moodCode MS
   * id 0..1
@@ -55,8 +54,14 @@ frObservationMedia  1..1
   * id ^definition = "Identifiant de l'observationMedia"
   * value MS
   * value 1..1
-  * value ^short = "Document encodé en Base 64.  Le charset utilisé par défaut est iso-8859-1"
-    * representation MS
-    * representation ^short = "B64"
-    * mediaType MS
-    * mediaType ^short = "Valeurs les plus utilisées : 'image/gif' ou 'image/jpeg' ou 'image/png' ou 'image/bm'ou 'image/tiff' ou 'text/rtf' ou 'text/plain' ou 'application/pdf'ou ou 'application/xml. D’autres valeurs peuvent être utilisées."
+  * value ^short = "Document encodé en Base 64. Le charset utilisé par défaut est iso-8859-1"
+  * value.representation MS
+  * value.representation = #B64
+  * value.mediaType MS
+  * value.mediaType ^short = "Type MIME du document attaché"
+  * value.mediaType ^comment = "Valeurs les plus utilisées : 'image/gif', 'image/jpeg', 'image/png', 'image/bmp', 'image/tiff', 'text/rtf', 'text/plain', 'application/pdf' ou 'application/xml'. D'autres valeurs peuvent être utilisées."
+
+Invariant: fr-document-attache-components
+Description: "Un component porte le type de document attaché (observation) et un component porte le document attaché (observationMedia)."
+Expression: "component.where(observation.exists()).count() = 1 and component.where(observationMedia.exists()).count() = 1 and component.all(observation.exists() xor observationMedia.exists())"
+Severity: #error

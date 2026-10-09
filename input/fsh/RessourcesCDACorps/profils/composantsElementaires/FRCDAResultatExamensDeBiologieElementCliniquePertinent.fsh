@@ -83,7 +83,7 @@ and frResultatExamensDeBiologieElementCliniquePertinent 1..1
 * participant only FRCDAParticipantCorps
 * entryRelationship MS
 * entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator.path = "typeCode"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frCommentaireER 0..*

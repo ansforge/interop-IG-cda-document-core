@@ -78,13 +78,17 @@ Sinon, l'élément  n'est pas fourni."
 * informant ^short = "Informateur"
 * informant ^definition = "Informateur"
 * informant only FRCDAInformant
-* participant ^slicing.discriminator.type = #value
-* participant ^slicing.discriminator.path = "typeCode"
+// Participants : lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]
+* participant only FRCDAParticipantCorps
+* participant ^short = "Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]"
+* participant ^definition = "Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]"
+* participant ^slicing.discriminator[0].type = #value
+* participant ^slicing.discriminator[0].path = "typeCode"
+* participant ^slicing.discriminator[1].type = #value
+* participant ^slicing.discriminator[1].path = "participantRole.classCode"
 * participant ^slicing.rules = #open
 
-* participant contains
-    lieuExecution 0..1 MS and
-    autresParticipants 0..* MS
+* participant contains lieuExecution 0..1 MS
 // Lieu d'exécution
 * participant[lieuExecution].typeCode = #LOC
 * participant[lieuExecution] ^short = "Lieu d'exécution"
@@ -105,5 +109,3 @@ Sinon, l'élément  n'est pas fourni."
 * participant[lieuExecution].participantRole.playingEntity.name 1..1 MS
 * participant[lieuExecution].participantRole.playingEntity.name ^short = "Nom de l'établissement"
 * participant[lieuExecution].participantRole.playingEntity.name ^definition = "Nom de l'établissement"
-//autres participants
-* participant[autresParticipants] only FRCDAParticipantCorps

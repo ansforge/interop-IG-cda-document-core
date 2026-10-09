@@ -30,16 +30,17 @@ Description: "Liste de documents ajoutés"
 * text 1..1 MS
 * text ^short = "Bloc narratif de la section"
 * text ^definition = "Bloc narratif de la section"
+* obeys fr-documents-ajoutes-entries
 * entry MS
 * entry 1..*
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
-* entry ^slicing.rules = #open
-* entry contains
-frSimpleObservation 0..1 and
-frDocumentAttache 1..*
-* entry[frSimpleObservation].observation only FRCDASimpleObservation
-* entry[frSimpleObservation].observation ^short = "Entrée Simple observation Permet d'indiquer la nature des documents ajoutés"
-* entry[frSimpleObservation].observation ^definition = "Entrée Simple observation"
-* entry[frDocumentAttache].organizer only FRCDADocumentAttache
-* entry[frDocumentAttache].organizer ^short = "Entrée Document attaché"
+* entry ^short = "Entrée Simple observation (observation, 0..1) et entrées Document attaché (organizer, 1..*)"
+* entry.observation only FRCDASimpleObservation
+* entry.observation ^short = "Entrée Simple observation Permet d'indiquer la nature des documents ajoutés"
+* entry.observation ^definition = "Entrée Simple observation"
+* entry.organizer only FRCDADocumentAttache
+* entry.organizer ^short = "Entrée Document attaché"
+
+Invariant: fr-documents-ajoutes-entries
+Description: "La section contient au moins une entrée Document attaché (organizer) et au plus une entrée Simple observation (observation)."
+Expression: "entry.where(organizer.exists()).count() >= 1 and entry.where(observation.exists()).count() <= 1"
+Severity: #error

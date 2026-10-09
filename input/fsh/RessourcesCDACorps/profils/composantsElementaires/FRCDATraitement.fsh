@@ -106,18 +106,8 @@ Dans le cas d'un mélange préparé, la description du mélange doit être fourn
 * statusCode.code = #completed
 
 * effectiveTime MS
-* effectiveTime ^slicing.discriminator.type = #pattern
-* effectiveTime ^slicing.discriminator.path = "operator"
-* effectiveTime ^slicing.rules = #open
-* effectiveTime contains effectiveTimeDuree 0..1 and effectiveTimeFrequence 0..*
-
-* effectiveTime[effectiveTimeDuree] obeys fr-operator-not-a
-* effectiveTime[effectiveTimeDuree] ^short = "Durée de traitement"
-* effectiveTime[effectiveTimeDuree] obeys fr-effectiveTime-duree-type
-
-* effectiveTime[effectiveTimeFrequence] obeys fr-operator-a
-* effectiveTime[effectiveTimeFrequence] ^short = "Fréquence d'administration"
-* effectiveTime[effectiveTimeFrequence] obeys fr-effectiveTime-frequence-types
+* effectiveTime ^short = "Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]"
+* obeys fr-effectiveTime-traitement
 
 * routeCode MS
 * routeCode ^short = "Voie d'administration : Si la voie d'administration est connue, elle doit être indiquée (code et displayName). Si elle n'est pas connue, la raison pour laquelle elle est inconnue peut être décrite en utilisant l'attribut nullFlavor.Terminologie utilisée :  EDQM - Standard terms / classe ROA (Voie d'administration)"
@@ -172,7 +162,7 @@ Les unités sont exprimées selon le système de codage UCUM."""
   * denominator 1..1 MS
     * unit MS
     * value MS
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Médicament"
 * consumable ^definition = "Médicament"
 * precondition MS
@@ -183,8 +173,12 @@ Permet de décrire les conditions préalables à l'utilisation du médicament.  
   * criterion MS
   * criterion.text 1..1
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "supply"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frPrescription 0..*
@@ -192,10 +186,14 @@ frPrescription 0..*
  and frInstructionsAuPatient 0..1
  and frReferenceInterne 0..*
 * entryRelationship[frPrescription].supply only FRCDAPrescription
+* entryRelationship[frPrescription].substanceAdministration 0..0
+* entryRelationship[frPrescription].act 0..0
 * entryRelationship[frPrescription] ^short = "Prescription"
 * entryRelationship[frPrescription] ^definition = "Prescription"
 * entryRelationship[frPrescription].typeCode = #REFR
 * entryRelationship[frTraitementSubordonne].substanceAdministration only FRCDATraitementSubordonne
+* entryRelationship[frTraitementSubordonne].supply 0..0
+* entryRelationship[frTraitementSubordonne].act 0..0
 * entryRelationship[frTraitementSubordonne].substanceAdministration ^short = """Traitement subordonné : \r\n
 Une entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées 'Traitement' subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
 L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre."""
@@ -203,12 +201,16 @@ L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas e
 * entryRelationship[frTraitementSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementSubordonne].sequenceNumber MS
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
+* entryRelationship[frInstructionsAuPatient].supply 0..0
+* entryRelationship[frInstructionsAuPatient].substanceAdministration 0..0
 * entryRelationship[frInstructionsAuPatient].act ^short = """Instruction au patient : \r\n
 Les instructions au patient peuvent être transmises, sous forme textuelle, dans une entrée Instructions au patient (Patient Medication Instructions – 1.3.6.1.4.1.19376.1.5.3.1.4.3) portée par un élément "entryRelationship"."""
 * entryRelationship[frInstructionsAuPatient].act ^definition = "Instructions au patient"
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient].inversionInd = true
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].supply 0..0
+* entryRelationship[frReferenceInterne].substanceAdministration 0..0
 * entryRelationship[frReferenceInterne].act ^short = """Motif du traitement : \r\n
 Le motif du traitement (ou raison de l'administration) peut être indiqué en faisant référence à autre entrée du document CDA constituant ce motif (par exemple une entrée Problème).
 Dans l'élément 'act' de l'entryRelationship :
@@ -219,22 +221,7 @@ Dans l'élément 'act' de l'entryRelationship :
 * entryRelationship[frReferenceInterne].act ^definition = "Motif du traitement"
 * entryRelationship[frReferenceInterne].typeCode = #RSON
 
-Invariant: fr-operator-a
-Description: "operator doit être A"
-Expression: "operator = 'A'"
-Severity: #error
-
-Invariant: fr-operator-not-a
-Description: "operator doit être différent de A"
-Expression: "operator != 'A'"
-Severity: #error
-
-Invariant: fr-effectiveTime-frequence-types
-Description: "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS"
-Expression: "is(SXCM_TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)"
-Severity: #error
-
-Invariant: fr-effectiveTime-duree-type
-Description: "La durée doit être IVL-TS"
-Expression: "is(IVL_TS)"
+Invariant: fr-effectiveTime-traitement
+Description: "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'."
+Expression: "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))"
 Severity: #error

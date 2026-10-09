@@ -71,8 +71,8 @@ frParticipantValideurResultats 0..1 MS and frParticipantResponsableExamen 0..1 M
 * participant[frParticipantValideurResultats].templateId ^slicing.discriminator.type = #value
 * participant[frParticipantValideurResultats].templateId ^slicing.discriminator.path = "root"
 * participant[frParticipantValideurResultats].templateId ^slicing.rules = #open
-* participant[frParticipantValideurResultats].templateId contains templateId-other 1..1
-* participant[frParticipantValideurResultats].templateId[templateId-other].root = "1.3.6.1.4.1.19376.1.3.3.1.5"
+* participant[frParticipantValideurResultats].templateId contains templateIdIHEValideur 1..1
+* participant[frParticipantValideurResultats].templateId[templateIdIHEValideur].root = "1.3.6.1.4.1.19376.1.3.3.1.5"
 * participant[frParticipantResponsableExamen] ^short = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen] ^definition = "Responsable de cet examen"
 * participant[frParticipantResponsableExamen].typeCode = #RESP
@@ -82,8 +82,16 @@ frParticipantValideurResultats 0..1 MS and frParticipantResponsableExamen 0..1 M
 * participant[frParticipantDispositifAutomatique].typeCode = #DEV
 * participant[frParticipantDispositifAutomatique] only FRCDAParticipantCorps
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "procedure"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "organizer"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "observation"
+* entryRelationship ^slicing.discriminator[3].type = #profile
+* entryRelationship ^slicing.discriminator[3].path = "act"
+* entryRelationship ^slicing.discriminator[4].type = #profile
+* entryRelationship ^slicing.discriminator[4].path = "observationMedia"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frPrelevement 0..*
@@ -94,13 +102,37 @@ frPrelevement 0..*
  and frImageIllustrative 0..*
 * entryRelationship[frPrelevement].typeCode = #COMP
 * entryRelationship[frPrelevement].procedure only FRCDAPrelevement
+* entryRelationship[frPrelevement].organizer 0..0
+* entryRelationship[frPrelevement].observation 0..0
+* entryRelationship[frPrelevement].act 0..0
+* entryRelationship[frPrelevement].observationMedia 0..0
 * entryRelationship[frBatterieExamensDeBiologieMedicale].typeCode = #COMP
 * entryRelationship[frBatterieExamensDeBiologieMedicale].organizer only FRCDABatterieExamensDeBiologieMedicale
+* entryRelationship[frBatterieExamensDeBiologieMedicale].procedure 0..0
+* entryRelationship[frBatterieExamensDeBiologieMedicale].observation 0..0
+* entryRelationship[frBatterieExamensDeBiologieMedicale].act 0..0
+* entryRelationship[frBatterieExamensDeBiologieMedicale].observationMedia 0..0
 * entryRelationship[frIsolatMicrobiologique].typeCode = #COMP
 * entryRelationship[frIsolatMicrobiologique].organizer only FRCDAIsolatMicrobiologique
+* entryRelationship[frIsolatMicrobiologique].procedure 0..0
+* entryRelationship[frIsolatMicrobiologique].observation 0..0
+* entryRelationship[frIsolatMicrobiologique].act 0..0
+* entryRelationship[frIsolatMicrobiologique].observationMedia 0..0
 * entryRelationship[frResultatExamensDeBiologieElementCliniquePertinent].typeCode = #COMP
 * entryRelationship[frResultatExamensDeBiologieElementCliniquePertinent].observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
+* entryRelationship[frResultatExamensDeBiologieElementCliniquePertinent].procedure 0..0
+* entryRelationship[frResultatExamensDeBiologieElementCliniquePertinent].organizer 0..0
+* entryRelationship[frResultatExamensDeBiologieElementCliniquePertinent].act 0..0
+* entryRelationship[frResultatExamensDeBiologieElementCliniquePertinent].observationMedia 0..0
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].procedure 0..0
+* entryRelationship[frCommentaireER].organizer 0..0
+* entryRelationship[frCommentaireER].observation 0..0
+* entryRelationship[frCommentaireER].observationMedia 0..0
 * entryRelationship[frImageIllustrative].typeCode = #COMP
 * entryRelationship[frImageIllustrative].observationMedia only FRCDAImageIllustrative
+* entryRelationship[frImageIllustrative].procedure 0..0
+* entryRelationship[frImageIllustrative].organizer 0..0
+* entryRelationship[frImageIllustrative].observation 0..0
+* entryRelationship[frImageIllustrative].act 0..0
