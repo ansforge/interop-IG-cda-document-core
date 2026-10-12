@@ -96,12 +96,9 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)"""
     * value ^short = "Valeur de la topographie"
     * value ^definition = "Valeur de la topographie"
     * value only CD
-* performer 1..1
 * performer only FRCDAPerformerCorps
 * author only FRCDAAuthor
-* informant 1..1
 * informant only FRCDAInformant
-* participant 1..1
 * participant only FRCDAParticipantCorps
 * entryRelationship MS
 * entryRelationship ^slicing.discriminator[0].type = #value
