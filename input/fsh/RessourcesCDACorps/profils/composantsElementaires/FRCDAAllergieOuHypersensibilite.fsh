@@ -65,7 +65,7 @@ and frAllergieOuHypersensibilite 1..1
 * value.originalText MS
 * value.originalText.reference 1..1
 * value ^short = "L'élément <value> sera utilisé pour indiquer qu'il n'y a pas d'allergie/hypersensibilité ou que l'on ne sait pas à partir du jdv-absent-or-unknown-allergy-cisis (1.2.250.1.213.1.1.5.661)."
-* value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-allergy-cisis
+* value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-allergy-cisis (preferred)
 * participant 0..1 MS
 * participant ^short = "Agent responsable"
 * participant ^definition = "Agent responsable"

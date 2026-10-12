@@ -139,11 +139,12 @@ L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information."""
 * rateQuantity MS
-  * low 1..1 MS
+* rateQuantity obeys fr-rateQuantity-traitement
+  * low MS
   * low.translation 0..1 MS
   * low.translation.originalText 1..1 MS
   * low.translation.originalText.reference 1..1 MS
-  * high 1..1 MS
+  * high MS
   * high.translation 0..1 MS
   * high.translation.originalText 1..1 MS
   * high.translation.originalText.reference 1..1 MS
@@ -224,4 +225,9 @@ Dans l'élément 'act' de l'entryRelationship :
 Invariant: fr-effectiveTime-traitement
 Description: "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'."
 Expression: "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))"
+Severity: #error
+
+Invariant: fr-rateQuantity-traitement
+Description: "Le rythme d'administration porte soit un nullFlavor, soit les sous-éléments low et high."
+Expression: "nullFlavor.exists() or (low.exists() and high.exists())"
 Severity: #error
