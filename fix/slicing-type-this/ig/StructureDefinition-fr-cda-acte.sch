@@ -16,12 +16,6 @@
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
       <sch:assert test="count(f:statusCode) &gt;= 1">statusCode: minimum cardinality of 'statusCode' is 1</sch:assert>
-      <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
-      <sch:assert test="count(f:performer) &lt;= 1">performer: maximum cardinality of 'performer' is 1</sch:assert>
-      <sch:assert test="count(f:informant) &gt;= 1">informant: minimum cardinality of 'informant' is 1</sch:assert>
-      <sch:assert test="count(f:informant) &lt;= 1">informant: maximum cardinality of 'informant' is 1</sch:assert>
-      <sch:assert test="count(f:participant) &gt;= 1">participant: minimum cardinality of 'participant' is 1</sch:assert>
-      <sch:assert test="count(f:participant) &lt;= 1">participant: maximum cardinality of 'participant' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

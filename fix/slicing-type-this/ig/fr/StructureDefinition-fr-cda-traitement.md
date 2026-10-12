@@ -31,7 +31,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 ** Résumé **
 
-Obligatoire : 10 éléments(25 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 10 éléments(23 éléments obligatoire(s) imbriqué(s))
  Must-Support : 44 éléments
  Interdit : 8 éléments
 
@@ -70,7 +70,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 ** Résumé **
 
-Obligatoire : 10 éléments(25 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 10 éléments(23 éléments obligatoire(s) imbriqué(s))
  Must-Support : 44 éléments
  Interdit : 8 éléments
 
@@ -133,7 +133,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "name" : "FRCDATraitement",
   "title" : "CDA - FR Traitement",
   "status" : "draft",
-  "date" : "2026-10-08T14:58:47+00:00",
+  "date" : "2026-10-12T13:25:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -531,6 +531,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.rateQuantity",
       "path" : "SubstanceAdministration.rateQuantity",
       "short" : "Rythme d'administration : \r\n\nLe rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.\nLes sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et maximal de l'administration. Dans le cas où le rythme est fixe, ces deux sous-éléments prendront les mêmes valeurs.\nL'argument @value permet d'indiquer la quantité de produit à administrer.\nL'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.\nDans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.",
+      "constraint" : [{
+        "key" : "fr-rateQuantity-traitement",
+        "severity" : "error",
+        "human" : "Le rythme d'administration porte soit un nullFlavor, soit les sous-éléments low et high.",
+        "expression" : "nullFlavor.exists() or (low.exists() and high.exists())",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
+      }],
       "mustSupport" : true
     },
     {
@@ -541,7 +548,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.rateQuantity.low",
       "path" : "SubstanceAdministration.rateQuantity.low",
-      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -565,7 +571,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.rateQuantity.high",
       "path" : "SubstanceAdministration.rateQuantity.high",
-      "min" : 1,
       "mustSupport" : true
     },
     {

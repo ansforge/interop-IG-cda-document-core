@@ -31,7 +31,7 @@ Cette structure est dérivée de [Procedure](http://hl7.org/cda/stds/core/2.0.3-
 
 ** Résumé **
 
-Obligatoire : 14 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 17 éléments
  Interdit : 4 éléments
 
@@ -71,7 +71,7 @@ Cette structure est dérivée de [Procedure](http://hl7.org/cda/stds/core/2.0.3-
 
 ** Résumé **
 
-Obligatoire : 14 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 17 éléments
  Interdit : 4 éléments
 
@@ -135,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-10-08T14:58:47+00:00",
+  "date" : "2026-10-12T13:25:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -400,8 +400,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
     {
       "id" : "Procedure.performer",
       "path" : "Procedure.performer",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Performer2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0"]
@@ -418,8 +416,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
     {
       "id" : "Procedure.informant",
       "path" : "Procedure.informant",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0"]
@@ -428,8 +424,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
     {
       "id" : "Procedure.participant",
       "path" : "Procedure.participant",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]

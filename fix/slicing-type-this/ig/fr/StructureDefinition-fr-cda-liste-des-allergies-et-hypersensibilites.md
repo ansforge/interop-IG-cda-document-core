@@ -29,7 +29,7 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 ** Résumé **
 
-Obligatoire : 15 éléments
+Obligatoire : 14 éléments
  Must-Support : 7 éléments
 
 **Structures**
@@ -61,7 +61,7 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 ** Résumé **
 
-Obligatoire : 15 éléments
+Obligatoire : 14 éléments
  Must-Support : 7 éléments
 
 **Structures**
@@ -119,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-liste-de
   "name" : "FRCDAListeDesAllergiesEtHypersensibilites",
   "title" : "CDA - FR Liste des allergies et hypersensibilites",
   "status" : "draft",
-  "date" : "2026-10-08T14:58:47+00:00",
+  "date" : "2026-10-12T13:25:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -279,11 +279,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-liste-de
       "path" : "Act.effectiveTime.low",
       "short" : "Date du début",
       "definition" : "Date du début",
-      "min" : 1
-    },
-    {
-      "id" : "Act.effectiveTime.high",
-      "path" : "Act.effectiveTime.high",
       "min" : 1
     },
     {

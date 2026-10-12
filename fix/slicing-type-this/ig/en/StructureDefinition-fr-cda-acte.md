@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-10-08T14:58:47+00:00",
+  "date" : "2026-10-12T13:25:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -319,8 +319,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
     {
       "id" : "Procedure.performer",
       "path" : "Procedure.performer",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Performer2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0"]
@@ -337,8 +335,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
     {
       "id" : "Procedure.informant",
       "path" : "Procedure.informant",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0"]
@@ -347,8 +343,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-acte.csv),
     {
       "id" : "Procedure.participant",
       "path" : "Procedure.participant",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]
