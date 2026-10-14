@@ -156,7 +156,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.maxDoseQuantity",0,1,"",""
 "SubstanceAdministration.administrationUnitCode","SubstanceAdministration.administrationUnitCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm|3.0.0","",,,,"SubstanceAdministration.administrationUnitCode",0,1,"",""
-"SubstanceAdministration.consumable","SubstanceAdministration.consumable","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0]]} {[]}
+"SubstanceAdministration.consumable","SubstanceAdministration.consumable","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot {[]} {[]}
 ","Vaccin","Vaccin","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable",1,1,"",""
 "SubstanceAdministration.consumable.nullFlavor","SubstanceAdministration.consumable.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -179,7 +179,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "SubstanceAdministration.consumable.typeCode","SubstanceAdministration.consumable.typeCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""CSM""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"SubstanceAdministration.consumable.typeCode",0,1,"",""
-"SubstanceAdministration.consumable.manufacturedProduct","SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[]} {[]}
+"SubstanceAdministration.consumable.manufacturedProduct","SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable.manufacturedProduct",1,1,"",""
 "SubstanceAdministration.subject","SubstanceAdministration.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.subject",0,1,"",""
@@ -194,8 +194,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 "SubstanceAdministration.participant","SubstanceAdministration.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.participant",0,*,"",""
 "SubstanceAdministration.entryRelationship","SubstanceAdministration.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","SubstanceAdministration.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:supply}
+profile:observation}profile:act}","",,"open","SubstanceAdministration.entryRelationship",0,*,"",""
 "SubstanceAdministration.entryRelationship:frPrescription","SubstanceAdministration.entryRelationship","frPrescription","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Prescription","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.nullFlavor","SubstanceAdministration.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -229,11 +229,11 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.observation","SubstanceAdministration.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.observation","SubstanceAdministration.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.observationMedia","SubstanceAdministration.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -280,7 +280,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -296,7 +296,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
 "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER","SubstanceAdministration.entryRelationship","frCommentaireER","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Commentaire","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
@@ -335,7 +335,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"SubstanceAdministration.entryRelationship:frCommentaireER.observation","SubstanceAdministration.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"SubstanceAdministration.entryRelationship:frCommentaireER.observation","SubstanceAdministration.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER.observationMedia","SubstanceAdministration.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -347,7 +347,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frCommentaireER.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frCommentaireER.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.reference","SubstanceAdministration.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference",0,*,"",""

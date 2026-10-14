@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR DICOM Examen comparatif 
 
- 
-DICOM Part 20 - Comparison Study Section 
-* Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur.
- 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -106,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ex
   "name" : "FRCDASectionDICOMExamenComparatif",
   "title" : "CDA - FR DICOM Examen comparatif",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

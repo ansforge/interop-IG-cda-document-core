@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Prescription 
 
- 
-Entrée FR-Prescription: IHE-PCC - Supply - Cette entrée permet de décrire l’acte de prescription lié à un élément substanceAdministration par l’intermédiaire d’un élément entryRelationship dans les entrées suivantes : FR-Traitement, FR-Traitement-maladie-rare, FR-Vaccination, FR-Vaccin-recommande, FR-Fluide-intraveineux 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Traitement](StructureDefinition-fr-cda-traitement.md), [CDA - FR Vaccin recommande](StructureDefinition-fr-cda-vaccin-recommande.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-prescripti
   "name" : "FRCDAPrescription",
   "title" : "CDA - FR Prescription",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

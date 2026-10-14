@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - Matériau pharmaceutique enrichi 
 
- 
-Modèle logique dérivé du Material CDA officiel et enrichi avec les éléments pharmaceutiques utilisés dans les documents CDA IPS français. 
-
 **Usages:**
 
 * Use this Logical Model: [CDA - FR Produit de sante](StructureDefinition-fr-cda-produit-de-sante.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-FRCDAMaterialPhar
   "name" : "FRCDAMaterialPharm",
   "title" : "CDA - Matériau pharmaceutique enrichi",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

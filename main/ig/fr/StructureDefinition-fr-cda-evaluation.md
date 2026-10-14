@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Evaluation 
 
- 
-Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Evaluation permet de rapporter un résultat (score) répondant à une question faisant partie d'une évaluation (questionnaire d'enquête par exemple).Cette entrée est basée sur l’entrée FR-Simple-Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) and [CDA - FR Groupe de questionnaires d evaluation](StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.md)
@@ -32,6 +29,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 16 éléments
  Must-Support : 13 éléments
+ Interdit : 4 éléments
 
 **Structures**
 
@@ -50,7 +48,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  **Vue différentielle** 
 
@@ -68,6 +66,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 16 éléments
  Must-Support : 13 éléments
+ Interdit : 4 éléments
 
 **Structures**
 
@@ -86,7 +85,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  
 
@@ -130,7 +129,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
   "name" : "FRCDAEvaluation",
   "title" : "CDA - FR Evaluation",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -383,8 +382,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -406,6 +409,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       "id" : "Observation.entryRelationship:frEvaluationComposant.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Observation.entryRelationship:frEvaluationComposant.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frEvaluationComposant.observation",
@@ -432,6 +440,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       "id" : "Observation.entryRelationship:frStatut.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Observation.entryRelationship:frStatut.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frStatut.observation",
@@ -468,6 +481,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       }]
     },
     {
+      "id" : "Observation.entryRelationship:frCommentaireER.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frReferenceInterne",
       "path" : "Observation.entryRelationship",
       "sliceName" : "frReferenceInterne",
@@ -492,6 +510,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frReferenceInterne.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     }]
   }
 }

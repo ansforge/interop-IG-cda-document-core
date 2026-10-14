@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Evolution effet indesirable 
 
- 
-Entrée FR-Evolution-effet-indesirable: Cette entrée permet de préciser l'évolution d'un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evolution-
   "name" : "FRCDAEvolutionEffetIndesirable",
   "title" : "CDA - FR Evolution effet indesirable",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

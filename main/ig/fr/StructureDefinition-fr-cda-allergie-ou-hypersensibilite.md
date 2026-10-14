@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Allergie ou hypersensibilite 
 
- 
-Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intolerance Cette entrée permet de décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie, en précisant :Le type : allergie médicamenteuse, hypersensibilité non allergique alimentaire, etc.La date de début et de finL'agent responsable : médicament, agent environnemental, …Le statut clinique : Actif, Inactif, RésoluLa criticité : Bas, Elevé, Impossible à évaluerLa certitude : Confirmé, Non confirmé, RéfutéLa (les) réaction(s) observée(s) : urticaire, nausée, … etLa sévérité de la réaction : Potentiellement mortel, Elevé, Modéré, Bas, …un commentaire sur la réactionCette entrée est basée sur l'entrée Problème (1.3.6.1.4.1.19376.1.5.3.1.4.5) qu'elle spécialise. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Liste des allergies et hypersensibilites](StructureDefinition-fr-cda-liste-des-allergies-et-hypersensibilites.md)
@@ -128,7 +125,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-allergie
   "name" : "FRCDAAllergieOuHypersensibilite",
   "title" : "CDA - FR Allergie ou hypersensibilite",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -336,7 +333,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-allergie
       }],
       "mustSupport" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-allergy-cisis|20260916095454"
       }
     },
@@ -411,8 +408,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-allergie
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },

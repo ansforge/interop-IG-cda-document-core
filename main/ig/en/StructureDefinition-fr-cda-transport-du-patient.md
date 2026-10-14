@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Transport du patient 
 
- 
-Entrée FR-Transport-du-patient: IHE-PCC - Transport. Cette entrée de type act permet de décrire le transport d'un patient/usager lors d'un déplacement (entrée ou sortie d'hôpital, …) 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-transport-
   "name" : "FRCDATransportDuPatient",
   "title" : "CDA - FR Transport du patient",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

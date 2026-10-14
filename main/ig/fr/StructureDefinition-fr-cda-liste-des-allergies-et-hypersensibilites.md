@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR Liste des allergies et hypersensibilites 
 
- 
-Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - Allergy-And-Intolerance-Concern. 
-* L'entrée Liste des allergies et hypersensibilités est une entrée qui permet de regrouper des informations relatives aux pathologies allergiques du patient. Cette entrée est basée sur l'élément Etat clinique (Concern Entry - 1.3.6.1.4.1.19376.1.5.3.1.4.5.1) qu'elle spécialise. Elle regroupe des entrées Allergie ou hypersensibilité (1.3.6.1.4.1.19376.1.5.3.1.4.6) qui décrivent chacune une allergie ou une hypersensibilité.
- 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergies et hypersensibilites](StructureDefinition-fr-cda-allergies-et-hypersensibilites.md)
@@ -34,7 +29,7 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 ** Résumé **
 
-Obligatoire : 15 éléments
+Obligatoire : 14 éléments
  Must-Support : 7 éléments
 
 **Structures**
@@ -66,7 +61,7 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 ** Résumé **
 
-Obligatoire : 15 éléments
+Obligatoire : 14 éléments
  Must-Support : 7 éléments
 
 **Structures**
@@ -124,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-liste-de
   "name" : "FRCDAListeDesAllergiesEtHypersensibilites",
   "title" : "CDA - FR Liste des allergies et hypersensibilites",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -287,17 +282,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-liste-de
       "min" : 1
     },
     {
-      "id" : "Act.effectiveTime.high",
-      "path" : "Act.effectiveTime.high",
-      "min" : 1
-    },
-    {
       "id" : "Act.entryRelationship",
       "path" : "Act.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "value",
+          "path" : "typeCode"
         }],
         "rules" : "open"
       },

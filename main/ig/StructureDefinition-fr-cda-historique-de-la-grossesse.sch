@@ -16,6 +16,8 @@
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:effectiveTime) &gt;= 1">effectiveTime: minimum cardinality of 'effectiveTime' is 1</sch:assert>
+      <sch:assert test="count(f:component) &gt;= 1">component: minimum cardinality of 'component' is 1</sch:assert>
+      <sch:assert test="count(f:component) &lt;= 1">component: maximum cardinality of 'component' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Acte 
 
- 
-Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une entrée de type 'procedure' décrivant un acte planifié ou réalisé. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) and [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md)
@@ -24,6 +21,8 @@ Cette structure est dérivée de [Procedure](http://hl7.org/cda/stds/core/2.0.3-
 
 #### Bindings terminologiques (différentiel)
 
+#### Contraintes
+
 #### Bindings terminologiques
 
 #### Contraintes
@@ -32,8 +31,9 @@ Cette structure est dérivée de [Procedure](http://hl7.org/cda/stds/core/2.0.3-
 
 ** Résumé **
 
-Obligatoire : 14 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 17 éléments
+ Interdit : 4 éléments
 
 **Structures**
 
@@ -51,13 +51,15 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Procedure.templateId
-* The element 1 is sliced based on the value of Procedure.entryRelationship
+* The element 3 is sliced based on the values of Procedure.entryRelationship
 
  **Vue différentielle** 
 
 Cette structure est dérivée de [Procedure](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Procedure.html) 
 
 #### Bindings terminologiques (différentiel)
+
+#### Contraintes
 
  **Vue d'ensembleView** 
 
@@ -69,8 +71,9 @@ Cette structure est dérivée de [Procedure](http://hl7.org/cda/stds/core/2.0.3-
 
 ** Résumé **
 
-Obligatoire : 14 éléments(4 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 11 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 17 éléments
+ Interdit : 4 éléments
 
 **Structures**
 
@@ -88,7 +91,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Procedure.templateId
-* The element 1 is sliced based on the value of Procedure.entryRelationship
+* The element 3 is sliced based on the values of Procedure.entryRelationship
 
  
 
@@ -132,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -163,7 +166,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
   "differential" : {
     "element" : [{
       "id" : "Procedure",
-      "path" : "Procedure"
+      "path" : "Procedure",
+      "constraint" : [{
+        "key" : "fr-acte-difficulte",
+        "severity" : "error",
+        "human" : "Au plus une entrée Difficulté de l'acte (observation de code GEN-023).",
+        "expression" : "entryRelationship.where(observation.code.code = 'GEN-023').count() <= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"
+      }]
     },
     {
       "id" : "Procedure.templateId",
@@ -390,8 +400,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
     {
       "id" : "Procedure.performer",
       "path" : "Procedure.performer",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Performer2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0"]
@@ -408,8 +416,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
     {
       "id" : "Procedure.informant",
       "path" : "Procedure.informant",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Informant",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0"]
@@ -418,8 +424,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
     {
       "id" : "Procedure.participant",
       "path" : "Procedure.participant",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]
@@ -431,7 +435,15 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
       "slicing" : {
         "discriminator" : [{
           "type" : "value",
-          "path" : "$this"
+          "path" : "typeCode"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },
@@ -465,6 +477,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
       }]
     },
     {
+      "id" : "Procedure.entryRelationship:frReferenceInterneCirconstances.observation",
+      "path" : "Procedure.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Procedure.entryRelationship:frReferenceInterneMotifActe",
       "path" : "Procedure.entryRelationship",
       "sliceName" : "frReferenceInterneMotifActe",
@@ -490,6 +507,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0"]
       }]
+    },
+    {
+      "id" : "Procedure.entryRelationship:frReferenceInterneMotifActe.observation",
+      "path" : "Procedure.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Procedure.entryRelationship:frReferenceInterneDM",
@@ -519,53 +541,36 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-acte.csv
       }]
     },
     {
-      "id" : "Procedure.entryRelationship:frSimpleObservationDifficulte",
-      "path" : "Procedure.entryRelationship",
-      "sliceName" : "frSimpleObservationDifficulte",
-      "short" : "Difficulté de l'acte",
-      "definition" : "Difficulté de l'acte",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Procedure.entryRelationship:frSimpleObservationDifficulte.typeCode",
-      "path" : "Procedure.entryRelationship.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Procedure.entryRelationship:frSimpleObservationDifficulte.inversionInd",
-      "path" : "Procedure.entryRelationship.inversionInd",
-      "patternBoolean" : false
-    },
-    {
-      "id" : "Procedure.entryRelationship:frSimpleObservationDifficulte.observation",
+      "id" : "Procedure.entryRelationship:frReferenceInterneDM.observation",
       "path" : "Procedure.entryRelationship.observation",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0"]
-      }]
+      "max" : "0"
     },
     {
-      "id" : "Procedure.entryRelationship:frSimpleObservationScores",
+      "id" : "Procedure.entryRelationship:frSimpleObservation",
       "path" : "Procedure.entryRelationship",
-      "sliceName" : "frSimpleObservationScores",
-      "short" : "Scores",
-      "definition" : "Scores",
+      "sliceName" : "frSimpleObservation",
+      "short" : "Difficulté de l'acte (observation de code GEN-023) [0..1] et/ou scores [0..*]",
+      "definition" : "Difficulté de l'acte (observation de code GEN-023) et scores",
       "min" : 0,
       "max" : "*"
     },
     {
-      "id" : "Procedure.entryRelationship:frSimpleObservationScores.typeCode",
+      "id" : "Procedure.entryRelationship:frSimpleObservation.typeCode",
       "path" : "Procedure.entryRelationship.typeCode",
       "patternCode" : "COMP"
     },
     {
-      "id" : "Procedure.entryRelationship:frSimpleObservationScores.inversionInd",
+      "id" : "Procedure.entryRelationship:frSimpleObservation.inversionInd",
       "path" : "Procedure.entryRelationship.inversionInd",
       "patternBoolean" : false
     },
     {
-      "id" : "Procedure.entryRelationship:frSimpleObservationScores.observation",
+      "id" : "Procedure.entryRelationship:frSimpleObservation.act",
+      "path" : "Procedure.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "Procedure.entryRelationship:frSimpleObservation.observation",
       "path" : "Procedure.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",

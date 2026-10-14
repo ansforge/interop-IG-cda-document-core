@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Participant APSR 
 
- 
-FR-Participant-APSR: IHE-APSR - AdditionalParticipantAPSR. Cet élément est un élément de type 'participant' utilisable dans les entrées du corps du document et pas dans l'entête. Il permet de décrire un participant à l'élaboration du contenu du document produit par un laboratoire ou par une structure d'anatomopathologie. Le rôle du participant (valideur, responsable, automate ou système, transcripteur) est précisé. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-participan
   "name" : "FRCDAParticipantAPSR",
   "title" : "CDA - FR Participant APSR",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

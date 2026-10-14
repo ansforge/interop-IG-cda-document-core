@@ -212,8 +212,8 @@
 "Observation.participant","Observation.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Observation.participant",0,*,"",""
 "Observation.entryRelationship","Observation.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Observation.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:observation}
+profile:act}","",,"open","Observation.entryRelationship",0,*,"",""
 "Observation.entryRelationship:frEvaluationComposantN2","Observation.entryRelationship","frEvaluationComposantN2","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Sous-composant de l'évaluation","","","","","","","","","","",,,,,"",,,,"Observation.entryRelationship",0,*,"",""
 "Observation.entryRelationship:frEvaluationComposantN2.nullFlavor","Observation.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -247,7 +247,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Observation.entryRelationship:frEvaluationComposantN2.seperatableInd","Observation.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Observation.entryRelationship:frEvaluationComposantN2.act","Observation.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Observation.entryRelationship:frEvaluationComposantN2.act","Observation.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frEvaluationComposantN2.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -302,7 +302,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frCommentaireER.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Observation.entryRelationship:frCommentaireER.observation","Observation.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Observation.entryRelationship:frCommentaireER.observation","Observation.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Observation.entryRelationship:frCommentaireER.observationMedia","Observation.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""

@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR CISIS Telecom 
 
- 
-Coordonnées télécom : 
-* Exemples : `<telecom value='tel:0147150000' use='H'/>` `<telecom value='mailto:adam.homme@fournisseur.fr'/>` `<telecom value='ftp://serveur/dossierdesante/exemple/'/>`
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Participant APSR](StructureDefinition-fr-cda-participant-apsr.md), [CDA - FR participantRole](StructureDefinition-fr-cda-participant-role.md) and [CDA - FR Sujet](StructureDefinition-fr-cda-sujet.md)
@@ -51,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-cisis-telecom.csv
   "name" : "CISISTelecom",
   "title" : "CDA - FR CISIS Telecom",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

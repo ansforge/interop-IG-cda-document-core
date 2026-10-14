@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Informant APSR 
 
- 
-FR-Informant-APSR : IHE-PCC Informant. Il permet de fournir le nom et les coordonnées : d'une personne ayant fourni des informations concernant le document (rôle d'informateur); ce peut être un PS/un ES/le patient lui-même/une autre personne non PS ; d'une personne de confiance désignée par le patient ; d'une personne à prévenir en cas d'urgence ; du ou des aidant(s) du patient ;de la ou des personne(s) aidée(s) 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -118,7 +115,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-informan
   "name" : "FRCDAInformantAPSR",
   "title" : "CDA - FR Informant APSR",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

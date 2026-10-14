@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Statut du document 
 
- 
-Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-statut-du-
   "name" : "FRCDASectionStatutDuDocument",
   "title" : "CDA - FR Statut du document",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Batterie examens de biologie medicale 
 
- 
-Entrée FR-Batterie-examens-de-biologie-medicale: IHE-PCC - Laboratory Battery Organizer. L'entrée Batterie d'examens de biologie médicale est une entrée de type 'organizer' qui permet de décrire des examens de biologie médicale comprenant un ou plusieurs éléments porteurs de résultats et d'éventuels commentaires interprétant cet ensemble de résultats. L'examen de biologie médicale peut préciser des participants qui lui sont propres (validateur, auteur, responsable, laboratoire sous-traitant, automate …) et peut aussi décrire son échantillon biologique. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md) and [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md)
@@ -23,6 +20,8 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
 
 #### Bindings terminologiques (différentiel)
+
+#### Contraintes
 
 #### Bindings terminologiques
 
@@ -44,23 +43,24 @@ Cette structure fait référence à ces autres structures:
 * [CDA - FR Laboratoire executant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0)](StructureDefinition-fr-cda-laboratoire-executant.md)
 * [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
 * [CDA - FR Participant corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0)](StructureDefinition-fr-cda-participant-corps.md)
-* [CDA - FR Prelevement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0)](StructureDefinition-fr-cda-prelevement.md)
+* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
 * [CDA - FR Resultat examens de biologie element clinique pertinent (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0)](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md)
 * [CDA - FR Image illustrative (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0)](StructureDefinition-fr-cda-image-illustrative.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
+* [CDA - FR Prelevement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0)](StructureDefinition-fr-cda-prelevement.md)
 
 **Slices**
 
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Organizer.templateId
-* The element 1 is sliced based on the value of Organizer.component
 
  **Vue différentielle** 
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
 
 #### Bindings terminologiques (différentiel)
+
+#### Contraintes
 
  **Vue d'ensembleView** 
 
@@ -84,17 +84,16 @@ Cette structure fait référence à ces autres structures:
 * [CDA - FR Laboratoire executant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0)](StructureDefinition-fr-cda-laboratoire-executant.md)
 * [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
 * [CDA - FR Participant corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0)](StructureDefinition-fr-cda-participant-corps.md)
-* [CDA - FR Prelevement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0)](StructureDefinition-fr-cda-prelevement.md)
+* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
 * [CDA - FR Resultat examens de biologie element clinique pertinent (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0)](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md)
 * [CDA - FR Image illustrative (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0)](StructureDefinition-fr-cda-image-illustrative.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
+* [CDA - FR Prelevement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0)](StructureDefinition-fr-cda-prelevement.md)
 
 **Slices**
 
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Organizer.templateId
-* The element 1 is sliced based on the value of Organizer.component
 
  
 
@@ -138,7 +137,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-batterie
   "name" : "FRCDABatterieExamensDeBiologieMedicale",
   "title" : "CDA - FR Batterie examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -169,7 +168,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-batterie
   "differential" : {
     "element" : [{
       "id" : "Organizer",
-      "path" : "Organizer"
+      "path" : "Organizer",
+      "constraint" : [{
+        "key" : "fr-batterie-examens-component-typecode",
+        "severity" : "error",
+        "human" : "typeCode vaut COMP pour un prélèvement, un résultat ou une image illustrative, et SUBJ pour un commentaire.",
+        "expression" : "component.where((procedure.exists() or observation.exists() or observationMedia.exists()) and typeCode.exists()).all(typeCode = 'COMP') and component.where(act.exists() and typeCode.exists()).all(typeCode = 'SUBJ')",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale|0.1.0"
+      }]
     },
     {
       "id" : "Organizer.templateId",
@@ -338,97 +344,43 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-batterie
     {
       "id" : "Organizer.component",
       "path" : "Organizer.component",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Prélèvement (procedure), résultat d'examen de biologie / élément clinique pertinent (observation), image illustrative (observationMedia) et/ou commentaire (act)",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frPrelevement",
-      "path" : "Organizer.component",
-      "sliceName" : "frPrelevement",
-      "short" : "Prélèvement",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frPrelevement.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Organizer.component:frPrelevement.procedure",
-      "path" : "Organizer.component.procedure",
+      "id" : "Organizer.component.act",
+      "path" : "Organizer.component.act",
+      "short" : "Commentaire",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frResultatExamensDeBiologieElementCliniquePertinent",
-      "path" : "Organizer.component",
-      "sliceName" : "frResultatExamensDeBiologieElementCliniquePertinent",
-      "short" : "Résultat d'examen de biologie / élément clinique pertinent",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frResultatExamensDeBiologieElementCliniquePertinent.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Organizer.component:frResultatExamensDeBiologieElementCliniquePertinent.observation",
+      "id" : "Organizer.component.observation",
       "path" : "Organizer.component.observation",
+      "short" : "Résultat d'examen de biologie / élément clinique pertinent",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frImageIllustrative",
-      "path" : "Organizer.component",
-      "sliceName" : "frImageIllustrative",
-      "short" : "Image illustrative",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frImageIllustrative.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Organizer.component:frImageIllustrative.observationMedia",
+      "id" : "Organizer.component.observationMedia",
       "path" : "Organizer.component.observationMedia",
+      "short" : "Image illustrative",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frCommentaireER",
-      "path" : "Organizer.component",
-      "sliceName" : "frCommentaireER",
-      "short" : "Commentaire",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frCommentaireER.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "SUBJ"
-    },
-    {
-      "id" : "Organizer.component:frCommentaireER.act",
-      "path" : "Organizer.component.act",
+      "id" : "Organizer.component.procedure",
+      "path" : "Organizer.component.procedure",
+      "short" : "Prélèvement",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0"]
       }]
     }]
   }

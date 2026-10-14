@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR Naissance 
 
- 
-Entrée FR-Naissance: IHE-PCC - Birth event organizer. 
-* Cette entrée rassemble les observations relatives à une naissance. Elle peut-être utilisée comme 'component'; d'une entrée FR-Historique-de-la-grossesse (1.3.6.1.4.1.19376.1.5.3.1.4.13.5.1).
- 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Historique de la grossesse](StructureDefinition-fr-cda-historique-de-la-grossesse.md)
@@ -120,7 +115,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-naissanc
   "name" : "FRCDANaissance",
   "title" : "CDA - FR Naissance",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

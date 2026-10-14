@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR En rapport avec la prevention 
 
- 
-Entrée FR-En-rapport-avec-la-prevention: Cette observation permet d'indiquer si l'élément auquel elle est associée est en rapport avec une prévention. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Dispositif medical](StructureDefinition-fr-cda-dispositif-medical.md) and [CDA - FR Traitement prescrit](StructureDefinition-fr-cda-traitement-prescrit.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-en-rapport
   "name" : "FRCDAEnRapportAvecLaPrevention",
   "title" : "CDA - FR En rapport avec la prevention",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

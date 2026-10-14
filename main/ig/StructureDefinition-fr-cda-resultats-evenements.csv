@@ -104,7 +104,7 @@
 "Section.informant","Section.informant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[]} {[]}
 ","","","","The informant participant can be ascribed to a CDA section where it overrides the value(s) propagated from the CDA header.","","","","","","","",,,,,"",,,,"Section.informant",0,*,"",""
 "Section.entry","Section.entry","","","",1,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Entry {[]} {[]}
-","","","","","","","","","","","",,,,,"","type:$this}
+","","","","","","","","","","","",,,,,"","profile:observation}
 ","",,"open","Section.entry",0,*,"",""
 "Section.entry:frSimpleObservation","Section.entry","frSimpleObservation","","",1,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Entry {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Section.entry",0,*,"",""
@@ -149,8 +149,6 @@
 ","","","","","","","","","","","",,,,,"",,,,"Entry.substanceAdministration",0,1,"",""
 "Section.entry:frSimpleObservation.supply","Section.entry.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Entry.supply",0,1,"",""
-"Section.entry:frTransfertDuPatient","Section.entry","frTransfertDuPatient","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Entry {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"Section.entry",0,*,"",""
 "Section.entry:frProbleme","Section.entry","frProbleme","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Entry {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Section.entry",0,*,"",""
 "Section.entry:frProbleme.nullFlavor","Section.entry.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}

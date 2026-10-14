@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Resultats evenements 
 
- 
-IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDASectionResultatsEvenements",
   "title" : "CDA - FR Resultats evenements",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -269,8 +266,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "path" : "Section.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },
@@ -292,13 +289,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0"]
       }]
-    },
-    {
-      "id" : "Section.entry:frTransfertDuPatient",
-      "path" : "Section.entry",
-      "sliceName" : "frTransfertDuPatient",
-      "min" : 0,
-      "max" : "*"
     },
     {
       "id" : "Section.entry:frProbleme",

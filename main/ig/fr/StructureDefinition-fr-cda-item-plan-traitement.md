@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Item plan traitement 
 
- 
-Entrée FR-Item-plan-traitement: IHE-MTP Medication Treatment Plan Item. Cette entrée permet de fournir une copie du plan de traitement médicamenteux. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Reference item plan traitement](StructureDefinition-fr-cda-reference-item-plan-traitement.md)
@@ -36,6 +33,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Obligatoire : 11 éléments(5 éléments obligatoire(s) imbriqué(s))
  Must-Support : 23 éléments
+ Interdit : 12 éléments
 
 **Structures**
 
@@ -55,9 +53,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.effectiveTime
-* The element 1 is sliced based on the value of SubstanceAdministration.author
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  **Vue différentielle** 
 
@@ -79,6 +75,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Obligatoire : 11 éléments(5 éléments obligatoire(s) imbriqué(s))
  Must-Support : 23 éléments
+ Interdit : 12 éléments
 
 **Structures**
 
@@ -98,9 +95,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.effectiveTime
-* The element 1 is sliced based on the value of SubstanceAdministration.author
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -144,7 +139,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
   "name" : "FRCDAItemPlanTraitement",
   "title" : "CDA - FR Item plan traitement",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,6 +169,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "SubstanceAdministration",
+      "path" : "SubstanceAdministration",
+      "constraint" : [{
+        "key" : "fr-effectiveTime-item-plan-traitement",
+        "severity" : "error",
+        "human" : "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'.",
+        "expression" : "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"
+      }]
+    },
+    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -321,56 +327,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
     {
       "id" : "SubstanceAdministration.effectiveTime",
       "path" : "SubstanceAdministration.effectiveTime",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "operator"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]",
       "mustSupport" : true
-    },
-    {
-      "id" : "SubstanceAdministration.effectiveTime:frEffectiveTimeDuree",
-      "path" : "SubstanceAdministration.effectiveTime",
-      "sliceName" : "frEffectiveTimeDuree",
-      "min" : 0,
-      "max" : "1",
-      "constraint" : [{
-        "key" : "fr-operator-not-a-item-plan-traitement",
-        "severity" : "error",
-        "human" : "operator doit être différent de A",
-        "expression" : "operator != 'A'",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"
-      },
-      {
-        "key" : "fr-effectiveTime-duree-type-item-plan-traitement",
-        "severity" : "error",
-        "human" : "La durée doit être IVL-TS",
-        "expression" : "is(IVL_TS)",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"
-      }]
-    },
-    {
-      "id" : "SubstanceAdministration.effectiveTime:frEffectiveTimeFrequence",
-      "path" : "SubstanceAdministration.effectiveTime",
-      "sliceName" : "frEffectiveTimeFrequence",
-      "min" : 0,
-      "max" : "*",
-      "constraint" : [{
-        "key" : "fr-operator-a-item-plan-traitement",
-        "severity" : "error",
-        "human" : "operator doit être A",
-        "expression" : "operator = 'A'",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"
-      },
-      {
-        "key" : "fr-effectiveTime-frequence-types-item-plan-traitement",
-        "severity" : "error",
-        "human" : "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS",
-        "expression" : "is(SXCM_TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0"
-      }]
     },
     {
       "id" : "SubstanceAdministration.routeCode",
@@ -432,57 +390,42 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
       "path" : "SubstanceAdministration.consumable",
       "short" : "Produit de santé",
       "definition" : "Produit de santé",
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]
-      }],
-      "mustSupport" : true
+      }]
     },
     {
       "id" : "SubstanceAdministration.author",
       "path" : "SubstanceAdministration.author",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Auteur du traitement [0..*] et/ou auteur du plan de traitement [0..1]",
+      "definition" : "Auteur du traitement et/ou auteur du plan de traitement",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
+      }],
       "mustSupport" : true
-    },
-    {
-      "id" : "SubstanceAdministration.author:frAuteurDuTraitement",
-      "path" : "SubstanceAdministration.author",
-      "sliceName" : "frAuteurDuTraitement",
-      "short" : "Auteur du traitement",
-      "definition" : "Auteur du traitement",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
-      }]
-    },
-    {
-      "id" : "SubstanceAdministration.author:frAuteurDuPlanDeTraitement",
-      "path" : "SubstanceAdministration.author",
-      "sliceName" : "frAuteurDuPlanDeTraitement",
-      "short" : "Auteur du Plan de traitement",
-      "definition" : "Auteur du Plan de traitement",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
-      }]
     },
     {
       "id" : "SubstanceAdministration.entryRelationship",
       "path" : "SubstanceAdministration.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "act"
+        },
+        {
+          "type" : "profile",
+          "path" : "substanceAdministration"
+        },
+        {
+          "type" : "profile",
+          "path" : "supply"
         }],
         "rules" : "open"
       },
@@ -510,6 +453,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frTraitementPrescritSubordonne",
@@ -523,12 +476,22 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.substanceAdministration",
       "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit-subordonne|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient",
@@ -557,6 +520,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frInstructionsAuDispensateur",
@@ -583,6 +556,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frQuantiteDeProduit",
@@ -594,6 +577,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
       "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.typeCode",
       "path" : "SubstanceAdministration.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.supply",
@@ -623,6 +616,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-autorisation-substitution|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frAutorisationSubstitution.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frAutorisationSubstitution.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.precondition",

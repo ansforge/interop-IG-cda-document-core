@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Antecedent familial observe 
 
- 
-Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15). 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Entrée Antecedents familiaux](StructureDefinition-fr-cda-antecedents-familiaux.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-antecedent
   "name" : "FRCDAAntecedentFamilialObserve",
   "title" : "CDA - FR Antecedent familial observe",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Entrée Signes vitaux 
 
- 
-Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L'entrée Signes vitaux est une entrée de type 'organizer' qui permet de regrouper des informations relatives aux mesures cliniques du patient. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Section Signes vitaux](StructureDefinition-fr-cda-section-signes-vitaux.md)
@@ -118,7 +115,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-signes-v
   "name" : "FRCDASignesVitaux",
   "title" : "CDA - FR Entrée Signes vitaux",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

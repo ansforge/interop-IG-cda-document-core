@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - encompassingEncounter 
 
- 
-L'élément de l'en-tête du CDA encompassingEncounter permet de décrire la prise en charge du patient/usager par un professionnel ou par une structure. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - componentOf](StructureDefinition-fr-cda-component-of.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-encompassi
   "name" : "FRCDAEncompassingEncounter",
   "title" : "CDA - encompassingEncounter",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

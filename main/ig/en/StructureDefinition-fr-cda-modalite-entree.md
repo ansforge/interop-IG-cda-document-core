@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Modalite entree 
 
- 
-Entrée FR-Modalite-entree: Cette entrée permet d'indiquer la modalité d'entrée d'un patient en ES (urgence, programmée, etc…). 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-modalite-e
   "name" : "FRCDAModaliteEntree",
   "title" : "CDA - FR Modalite entree",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

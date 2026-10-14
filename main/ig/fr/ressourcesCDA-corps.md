@@ -58,8 +58,8 @@ Cette page contient la liste des profils CDA définis dans le guide **ANS IG Doc
 | [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md) | IHE-PCC - Patient Education Section* Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.
  |
 | [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md) | Liste des effets indésirables prévisibles liés aux médicaments. |
-| [CDA - FR Facteurs de risque professionnels non code](StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.md) | IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e). |
-| [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) | IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient. |
+| [CDA - FR Facteurs de risque professionnels non code](StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.md) | IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée). |
+| [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) | IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient. |
 | [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md) | IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes. |
 | [CDA - FR Historique des grossesses](StructureDefinition-fr-cda-historique-des-grossesses.md) | IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente. |
 | [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) | IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient. |
@@ -77,8 +77,8 @@ Cette page contient la liste des profils CDA définis dans le guide **ANS IG Doc
  |
 | [CDA - FR Directives anticipees](StructureDefinition-fr-cda-section-directives-anticipees.md) | IHE-PCC - Coded-Advance-Directives-Section* Cette section permet de décrire les directives anticipées du patient.
  |
-| [CDA - FR Habitus mode de vie](StructureDefinition-fr-cda-section-habitus-mode-de-vie.md) | IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient. |
-| [CDA - FR Resultats](StructureDefinition-fr-cda-section-resultats.md) | Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...) |
+| [CDA - FR Habitus mode de vie](StructureDefinition-fr-cda-section-habitus-mode-de-vie.md) | IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient. |
+| [CDA - FR Resultats](StructureDefinition-fr-cda-section-resultats.md) | Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...) |
 | [CDA - FR Section Signes vitaux](StructureDefinition-fr-cda-section-signes-vitaux.md) | IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux. |
 | [CDA - FR Statut du document](StructureDefinition-fr-cda-statut-du-document.md) | Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal. |
 | [CDA - FR Statut fonctionnel](StructureDefinition-fr-cda-statut-fonctionnel.md) | Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient. |

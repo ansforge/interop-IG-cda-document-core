@@ -160,8 +160,8 @@
 "Observation.participant","Observation.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Observation.participant",0,*,"",""
 "Observation.entryRelationship","Observation.entryRelationship","","","",2,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Observation.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:substanceAdministration}
+profile:observation}","",,"open","Observation.entryRelationship",0,*,"",""
 "Observation.entryRelationship:frTraitement","Observation.entryRelationship","frTraitement","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Médicament, substance incriminée, posologie","","","","","","","","","","",,,,,"",,,,"Observation.entryRelationship",0,*,"",""
 "Observation.entryRelationship:frTraitement.nullFlavor","Observation.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -199,7 +199,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frTraitement.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Observation.entryRelationship:frTraitement.observation","Observation.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Observation.entryRelationship:frTraitement.observation","Observation.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Observation.entryRelationship:frTraitement.observationMedia","Observation.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -260,7 +260,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Observation.entryRelationship:frProbleme.regionOfInterest","Observation.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Observation.entryRelationship:frProbleme.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Observation.entryRelationship:frProbleme.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Observation.entryRelationship:frProbleme.supply","Observation.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -311,7 +311,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Observation.entryRelationship:frImputabiliteEffetIndesirable.regionOfInterest","Observation.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Observation.entryRelationship:frImputabiliteEffetIndesirable.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Observation.entryRelationship:frImputabiliteEffetIndesirable.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Observation.entryRelationship:frImputabiliteEffetIndesirable.supply","Observation.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -362,7 +362,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Observation.entryRelationship:frGraviteEffetIndesirable.regionOfInterest","Observation.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Observation.entryRelationship:frGraviteEffetIndesirable.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Observation.entryRelationship:frGraviteEffetIndesirable.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Observation.entryRelationship:frGraviteEffetIndesirable.supply","Observation.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -413,7 +413,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Observation.entryRelationship:frEvolutionEffetIndesirable.regionOfInterest","Observation.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Observation.entryRelationship:frEvolutionEffetIndesirable.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Observation.entryRelationship:frEvolutionEffetIndesirable.substanceAdministration","Observation.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Observation.entryRelationship:frEvolutionEffetIndesirable.supply","Observation.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""

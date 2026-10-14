@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Traitement prescrit 
 
- 
-Entrée FR-Traitement-prescrit: IHE-PRE Prescription Item. Cette entrée de type substanceAdministration permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d'administration. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Prescription medicaments](StructureDefinition-fr-cda-prescription-medicaments.md) and [CDA - FR Reference item prescription](StructureDefinition-fr-cda-reference-item-prescription.md)
@@ -34,8 +31,9 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 ** Résumé **
 
-Obligatoire : 20 éléments(29 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 19 éléments(29 éléments obligatoire(s) imbriqué(s))
  Must-Support : 43 éléments
+ Interdit : 39 éléments
 
 **Structures**
 
@@ -62,9 +60,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.effectiveTime
-* The element 1 is sliced based on the value of SubstanceAdministration.author
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 4 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  **Vue différentielle** 
 
@@ -84,8 +80,9 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 ** Résumé **
 
-Obligatoire : 20 éléments(29 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 19 éléments(29 éléments obligatoire(s) imbriqué(s))
  Must-Support : 43 éléments
+ Interdit : 39 éléments
 
 **Structures**
 
@@ -112,9 +109,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.effectiveTime
-* The element 1 is sliced based on the value of SubstanceAdministration.author
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 4 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -158,7 +153,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "name" : "FRCDATraitementPrescrit",
   "title" : "CDA - FR Traitement prescrit",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -188,6 +183,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "SubstanceAdministration",
+      "path" : "SubstanceAdministration",
+      "constraint" : [{
+        "key" : "fr-effectiveTime-prescrit",
+        "severity" : "error",
+        "human" : "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'.",
+        "expression" : "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit|0.1.0"
+      }]
+    },
+    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -445,58 +451,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.effectiveTime",
       "path" : "SubstanceAdministration.effectiveTime",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "operator"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]",
       "mustSupport" : true
-    },
-    {
-      "id" : "SubstanceAdministration.effectiveTime:effectiveTimeDuree",
-      "path" : "SubstanceAdministration.effectiveTime",
-      "sliceName" : "effectiveTimeDuree",
-      "short" : "Durée de traitement",
-      "min" : 0,
-      "max" : "1",
-      "constraint" : [{
-        "key" : "fr-operator-not-a-prescrit",
-        "severity" : "error",
-        "human" : "operator doit être différent de A",
-        "expression" : "operator != 'A'",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit|0.1.0"
-      },
-      {
-        "key" : "fr-effectiveTime-duree-type-prescrit",
-        "severity" : "error",
-        "human" : "La durée doit être IVL-TS",
-        "expression" : "is(IVL_TS)",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit|0.1.0"
-      }]
-    },
-    {
-      "id" : "SubstanceAdministration.effectiveTime:effectiveTimeFrequence",
-      "path" : "SubstanceAdministration.effectiveTime",
-      "sliceName" : "effectiveTimeFrequence",
-      "short" : "Fréquence d'administration",
-      "min" : 0,
-      "max" : "*",
-      "constraint" : [{
-        "key" : "fr-operator-a-prescrit",
-        "severity" : "error",
-        "human" : "operator doit être A",
-        "expression" : "operator = 'A'",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit|0.1.0"
-      },
-      {
-        "key" : "fr-effectiveTime-frequence-types-prescrit",
-        "severity" : "error",
-        "human" : "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS",
-        "expression" : "is(TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit|0.1.0"
-      }]
     },
     {
       "id" : "SubstanceAdministration.repeatNumber",
@@ -676,7 +632,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.consumable",
       "path" : "SubstanceAdministration.consumable",
       "short" : "Produit de santé",
-      "definition" : "Produit de santé",
+      "definition" : "Produit de santé"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]
@@ -685,35 +645,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.author",
       "path" : "SubstanceAdministration.author",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "SubstanceAdministration.author:prescripteur",
-      "path" : "SubstanceAdministration.author",
-      "sliceName" : "prescripteur",
-      "short" : "Prescripteur : \r\n\nDans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.\nDans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer le prescripteur du traitement.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
-      }]
-    },
-    {
-      "id" : "SubstanceAdministration.author:auteurDuPrescription",
-      "path" : "SubstanceAdministration.author",
-      "sliceName" : "auteurDuPrescription",
-      "short" : "Auteur du document Prescription : \r\n\nDans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.\nDans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer l'auteur du document Prescription.",
-      "min" : 0,
-      "max" : "1",
+      "short" : "Prescripteur [0..1] et/ou auteur du document Prescription [0..1] : \r\n\nDans le cas où cette entrée Traitement prescrit est utilisée dans un document Prescription, cet élément ne doit pas être présent.\nDans le cas où cette entrée Traitement prescrit est utilisée dans un autre document, cet élément permet d'indiquer le prescripteur du traitement et/ou l'auteur du document Prescription.",
+      "max" : "2",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Author",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0"]
@@ -724,8 +657,20 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "path" : "SubstanceAdministration.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "act"
+        },
+        {
+          "type" : "profile",
+          "path" : "substanceAdministration"
+        },
+        {
+          "type" : "profile",
+          "path" : "supply"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },
@@ -754,6 +699,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frTraitementPrescritSubordonne",
@@ -767,12 +727,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.substanceAdministration",
       "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit-subordonne|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementPrescritSubordonne.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frReferenceItemPlanTraitement",
@@ -788,12 +763,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "REFR"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceItemPlanTraitement.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceItemPlanTraitement.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frReferenceItemPlanTraitement.substanceAdministration",
       "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-item-plan-traitement|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceItemPlanTraitement.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient",
@@ -817,6 +807,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frInstructionsAuDispensateur",
@@ -838,6 +843,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuDispensateur.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frQuantiteDeProduit",
@@ -849,6 +869,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.typeCode",
       "path" : "SubstanceAdministration.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frQuantiteDeProduit.supply",
@@ -880,6 +915,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frAutorisationSubstitution.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frAutorisationSubstitution.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frAutorisationSubstitution.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frPeriodeDeRenouvellement",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frPeriodeDeRenouvellement",
@@ -891,6 +941,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.entryRelationship:frPeriodeDeRenouvellement.typeCode",
       "path" : "SubstanceAdministration.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPeriodeDeRenouvellement.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPeriodeDeRenouvellement.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPeriodeDeRenouvellement.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frPeriodeDeRenouvellement.supply",
@@ -914,12 +979,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecALD.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecALD.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-ald|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecALD.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecALD.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecAccidentTravail",
@@ -935,12 +1015,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecAccidentTravail.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecAccidentTravail.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-accident-travail|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecAccidentTravail.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecAccidentTravail.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecLaPrevention",
@@ -956,12 +1051,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecLaPrevention.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecLaPrevention.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-la-prevention|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecLaPrevention.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frEnRapportAvecLaPrevention.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frNonRemboursable",
@@ -977,12 +1087,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frNonRemboursable.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frNonRemboursable.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-non-remboursable|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frNonRemboursable.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frNonRemboursable.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frHorsAMM",
@@ -998,12 +1123,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frHorsAMM.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frHorsAMM.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-hors-amm|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frHorsAMM.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frHorsAMM.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.reference",

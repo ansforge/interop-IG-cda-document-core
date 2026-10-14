@@ -2,14 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Administration produit de sante 
 
- 
-Entrée FR-DICOM-Administration-produit-de-sante: DICOM Part 20 - Procedural Medication. Cette entrée permet d'enregistrer l’administration de produits (hors radiopharmaceutiques) : 
-* produit administré
-* dose administréevoie d’administration
-* numéro de lot
-* autres informations liées à l’administration d’un produit
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Acte imagerie](StructureDefinition-fr-cda-dicom-acte-imagerie.md)
@@ -62,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-admi
   "name" : "FRCDADICOMAdministrationProduitDeSante",
   "title" : "CDA - FR DICOM Administration produit de sante",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

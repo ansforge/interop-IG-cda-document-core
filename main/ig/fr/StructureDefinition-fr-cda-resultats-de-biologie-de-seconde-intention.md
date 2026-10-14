@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Resultats de biologie de seconde intention 
 
- 
-Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -22,6 +19,8 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
 
+#### Contraintes
+
 #### Bindings terminologiques
 
 #### Contraintes
@@ -30,7 +29,7 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 ** Résumé **
 
-Obligatoire : 10 éléments
+Obligatoire : 9 éléments
  Must-Support : 8 éléments
 
 **Structures**
@@ -45,11 +44,12 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 
  **Vue différentielle** 
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
+
+#### Contraintes
 
  **Vue d'ensembleView** 
 
@@ -61,7 +61,7 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 ** Résumé **
 
-Obligatoire : 10 éléments
+Obligatoire : 9 éléments
  Must-Support : 8 éléments
 
 **Structures**
@@ -76,7 +76,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 
  
 
@@ -120,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDASectionResultatsDeBiologieDeSecondeIntention",
   "title" : "CDA - FR Resultats de biologie de seconde intention",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -151,7 +150,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "differential" : {
     "element" : [{
       "id" : "Section",
-      "path" : "Section"
+      "path" : "Section",
+      "constraint" : [{
+        "key" : "fr-resultats-biologie-seconde-intention-entries",
+        "severity" : "error",
+        "human" : "La section contient au moins une entrée Document attaché (organizer) et au plus une entrée Simple observation (observation).",
+        "expression" : "entry.where(organizer.exists()).count() >= 1 and entry.where(observation.exists()).count() <= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention|0.1.0"
+      }]
     },
     {
       "id" : "Section.templateId",
@@ -239,25 +245,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrée Simple observation (observation, 0..1) et entrées Document attaché (organizer, 1..*)",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frSimpleObservation",
-      "path" : "Section.entry",
-      "sliceName" : "frSimpleObservation",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frSimpleObservation.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Simple observation",
       "type" : [{
@@ -266,14 +259,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       }]
     },
     {
-      "id" : "Section.entry:frDocumentAttache",
-      "path" : "Section.entry",
-      "sliceName" : "frDocumentAttache",
-      "min" : 1,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frDocumentAttache.organizer",
+      "id" : "Section.entry.organizer",
       "path" : "Section.entry.organizer",
       "short" : "Entrée Document attaché",
       "type" : [{

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Rang de la vaccination 
 
- 
-Entrée FR-Rang-de-la-vaccination: CDA - Medication series number observation. Cette entrée permet de préciser le rang de la vaccination dans une série d'injections vaccinantes. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Vaccin recommande](StructureDefinition-fr-cda-vaccin-recommande.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-rang-de-la
   "name" : "FRCDARangDeLaVaccination",
   "title" : "CDA - FR Rang de la vaccination",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

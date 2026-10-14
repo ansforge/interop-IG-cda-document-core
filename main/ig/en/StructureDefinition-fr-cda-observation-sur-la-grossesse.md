@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Observation sur la grossesse 
 
- 
-Entrée FR-Observation-sur-la-grossesse: IHE-PCC - Pregnancy Observation. Cette entrée permet d'apporter des informations relatives aux grossesses actuelle ou passées. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Historique de la grossesse](StructureDefinition-fr-cda-historique-de-la-grossesse.md), [CDA - FR Historique des grossesses](StructureDefinition-fr-cda-historique-des-grossesses.md) and [CDA - FR Naissance](StructureDefinition-fr-cda-naissance.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-observatio
   "name" : "FRCDAObservationSurLaGrossesse",
   "title" : "CDA - FR Observation sur la grossesse",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - assignedPerson 
 
- 
-L'élément de l'en-tête du CDA assignedPerson permet de décrire une personne physique. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md), [CDA - assignedEntity](StructureDefinition-fr-cda-assigned-entity.md), [CDA - associatedEntity](StructureDefinition-fr-cda-associated-entity.md), [CDA - intendedRecipient](StructureDefinition-fr-cda-intended-recipient.md) and [CDA - relatedEntity](StructureDefinition-fr-cda-related-entity.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-assigned-p
   "name" : "FRCDAAssignedPerson",
   "title" : "CDA - assignedPerson",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

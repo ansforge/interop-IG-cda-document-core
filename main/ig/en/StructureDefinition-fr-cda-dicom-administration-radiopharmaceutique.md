@@ -2,15 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Administration radiopharmaceutique 
 
- 
-Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée permet d'enregistrer l’administration de produits radiopharmaceutiques : 
-* produit administré
-* dose administrée
-* voie d’administration
-* numéro de lot
-* autres informations liées à l’administration d’un produit
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md)
@@ -63,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-admi
   "name" : "FRCDADICOMAdministrationRadiopharmaceutique",
   "title" : "CDA - FR DICOM Administration radiopharmaceutique",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

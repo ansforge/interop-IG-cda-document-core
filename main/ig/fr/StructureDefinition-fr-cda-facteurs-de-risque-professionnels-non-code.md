@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Facteurs de risque professionnels non code 
 
- 
-IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e). 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -104,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-facteurs
   "name" : "FRCDASectionFacteursDeRisqueProfessionnelsNonCode",
   "title" : "CDA - FR Facteurs de risque professionnels non code",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -113,7 +110,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-facteurs
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).",
+  "description" : "IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codée).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -154,7 +151,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-facteurs
       "id" : "Section.templateId:iheSectionHazardousWorkingConditions",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionHazardousWorkingConditions",
-      "short" : "ConformitÃ© IHE-PCC Hazardous-Working-Conditions-Section (IHE-PCC)",
+      "short" : "Conformité IHE-PCC Hazardous-Working-Conditions-Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -168,7 +165,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-facteurs
       "id" : "Section.templateId:frSectionFacteursDeRisqueProfessionnelsNonCode",
       "path" : "Section.templateId",
       "sliceName" : "frSectionFacteursDeRisqueProfessionnelsNonCode",
-      "short" : "ConformitÃ© FR-Facteurs-de-risque-professionnels-non-code (CI-SIS)",
+      "short" : "Conformité FR-Facteurs-de-risque-professionnels-non-code (CI-SIS)",
       "min" : 0,
       "max" : "1"
     },

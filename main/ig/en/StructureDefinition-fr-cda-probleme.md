@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Probleme 
 
- 
-Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant : Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Allergie ou hypersensibilite](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md), [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md), [CDA - FR Liste des problemes](StructureDefinition-fr-cda-liste-des-problemes.md), [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md)... Show 2 more, [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
   "name" : "FRCDAProbleme",
   "title" : "CDA - FR Probleme",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -278,8 +275,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -302,6 +303,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
       "id" : "Observation.entryRelationship:frSeverite.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : true
+    },
+    {
+      "id" : "Observation.entryRelationship:frSeverite.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frSeverite.observation",
@@ -330,6 +336,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
       "patternBoolean" : false
     },
     {
+      "id" : "Observation.entryRelationship:frStatutDuProbleme.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frStatutDuProbleme.observation",
       "path" : "Observation.entryRelationship.observation",
       "type" : [{
@@ -356,6 +367,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
       "patternBoolean" : false
     },
     {
+      "id" : "Observation.entryRelationship:frStatutCliniqueDuPatient.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frStatutCliniqueDuPatient.observation",
       "path" : "Observation.entryRelationship.observation",
       "type" : [{
@@ -380,6 +396,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
       "id" : "Observation.entryRelationship:frCertitude.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : true
+    },
+    {
+      "id" : "Observation.entryRelationship:frCertitude.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frCertitude.observation",
@@ -414,6 +435,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-probleme.c
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frCommentaireER.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Observation.reference",

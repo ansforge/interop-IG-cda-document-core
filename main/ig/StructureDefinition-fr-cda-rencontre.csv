@@ -176,9 +176,9 @@ Sinon, l'élément  n'est pas fourni.","Confirmation attendue","","","","","",""
 ","Auteur","Auteur","","","","","","","","","",,,,,"",,,,"Encounter.author",0,*,"",""
 "Encounter.informant","Encounter.informant","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0]]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"Encounter.informant",0,*,"",""
-"Encounter.participant","Encounter.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:typeCode}
-","",,"open","Encounter.participant",0,*,"",""
+"Encounter.participant","Encounter.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0]]} {[]}
+","Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]","Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]","","","","","","","","","",,,,,"","value:typeCode}
+value:participantRole.classCode}","",,"open","Encounter.participant",0,*,"",""
 "Encounter.participant:lieuExecution","Encounter.participant","lieuExecution","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","Lieu d'exécution","Lieu d'exécution","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"",""
 "Encounter.participant:lieuExecution.nullFlavor","Encounter.participant.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -210,7 +210,7 @@ Sinon, l'élément  n'est pas fourni.","Confirmation attendue","","","","","",""
 ","","","","","","","","","","","",,,,,"",,,,"Participant2.time",0,1,"",""
 "Encounter.participant:lieuExecution.awarenessCode","Encounter.participant.awarenessCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Participant2.awarenessCode",0,1,"",""
-"Encounter.participant:lieuExecution.participantRole","Encounter.participant.participantRole","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole {[]} {[]}
+"Encounter.participant:lieuExecution.participantRole","Encounter.participant.participantRole","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Participant2.participantRole",1,1,"",""
 "Encounter.participant:lieuExecution.participantRole.nullFlavor","Encounter.participant.participantRole.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -231,9 +231,9 @@ Sinon, l'élément  n'est pas fourni.","Confirmation attendue","","","","","",""
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Encounter.participant:lieuExecution.participantRole.templateId","Encounter.participant.participantRole.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Encounter.participant:lieuExecution.participantRole.classCode","Encounter.participant.participantRole.classCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Encounter.participant:lieuExecution.participantRole.classCode","Encounter.participant.participantRole.classCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ROL""/>","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SDLOC""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDARoleClassRoot|2.0.3-sd","",,,,"ParticipantRole.classCode",0,1,"",""
-"Encounter.participant:lieuExecution.participantRole.id","Encounter.participant.participantRole.id","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+"Encounter.participant:lieuExecution.participantRole.id","Encounter.participant.participantRole.id","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant de l'établissement","Identifiant de l'établissement","","","","","","","","","",,,,,"",,,,"ParticipantRole.id",0,*,"",""
 "Encounter.participant:lieuExecution.participantRole.sdtcIdentifiedBy","Encounter.participant.participantRole.sdtcIdentifiedBy","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcIdentifiedBy",0,*,"",""
@@ -241,13 +241,13 @@ Sinon, l'élément  n'est pas fourni.","Confirmation attendue","","","","","",""
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDARoleCode|2.0.3-sd","",,,,"ParticipantRole.code",0,1,"",""
 "Encounter.participant:lieuExecution.participantRole.sdtcSpecialty","Encounter.participant.participantRole.sdtcSpecialty","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.sdtcSpecialty",0,*,"",""
-"Encounter.participant:lieuExecution.participantRole.addr","Encounter.participant.participantRole.addr","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
+"Encounter.participant:lieuExecution.participantRole.addr","Encounter.participant.participantRole.addr","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/AD {[]} {[]}
 ","Adresse","Adresse","","","","","","","","","",,,,,"",,,,"ParticipantRole.addr",0,*,"",""
-"Encounter.participant:lieuExecution.participantRole.telecom","Encounter.participant.participantRole.telecom","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
+"Encounter.participant:lieuExecution.participantRole.telecom","Encounter.participant.participantRole.telecom","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/TEL {[]} {[]}
 ","Coordonnées télécom","Coordonnées télécom","","","","","","","","","",,,,,"",,,,"ParticipantRole.telecom",0,*,"",""
 "Encounter.participant:lieuExecution.participantRole.playingDevice","Encounter.participant.participantRole.playingDevice","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Device {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.playingDevice",0,1,"",""
-"Encounter.participant:lieuExecution.participantRole.playingEntity","Encounter.participant.participantRole.playingEntity","","","",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity {[]} {[]}
+"Encounter.participant:lieuExecution.participantRole.playingEntity","Encounter.participant.participantRole.playingEntity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.playingEntity",0,1,"",""
 "Encounter.participant:lieuExecution.participantRole.playingEntity.nullFlavor","Encounter.participant.participantRole.playingEntity.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -284,8 +284,6 @@ Sinon, l'élément  n'est pas fourni.","Confirmation attendue","","","","","",""
 ","","","","","","","","","","","",,,,,"",,,,"PlayingEntity.desc",0,1,"",""
 "Encounter.participant:lieuExecution.participantRole.scopingEntity","Encounter.participant.participantRole.scopingEntity","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Entity {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ParticipantRole.scopingEntity",0,1,"",""
-"Encounter.participant:autresParticipants","Encounter.participant","autresParticipants","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0]]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"",""
 "Encounter.entryRelationship","Encounter.entryRelationship","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Encounter.entryRelationship",0,*,"",""
 "Encounter.reference","Encounter.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}

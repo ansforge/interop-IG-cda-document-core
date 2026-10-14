@@ -2,15 +2,6 @@
 
 ## Modèle logique: CDA - FR DICOM Informations cliniques 
 
- 
-DICOM Part 20 - Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que : 
-* Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]
-* Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1]
-* Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]
-* Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]
-* Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]
- 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -126,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-in
   "name" : "FRCDASectionDICOMInformationsCliniques",
   "title" : "CDA - FR DICOM Informations cliniques",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -260,8 +251,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-in
       "path" : "Section.component",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "section"
         }],
         "rules" : "open"
       },

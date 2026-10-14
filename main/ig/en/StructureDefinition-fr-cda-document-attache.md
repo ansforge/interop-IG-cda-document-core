@@ -2,12 +2,6 @@
 
 ## Logical Model: CDA - FR Document attache 
 
- 
-Entrée FR-Document-attache: L'entrée Document Attaché est une entrée de type organiser qui permet de regrouper dans une même entrée les éléments qui contiennent : 
-* un élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant la nature du document attaché,
-* un élément de type ObservationMedia acceptant tout type d'objets prévus par CDA et qui porte le document attaché. Son contenu est un élément codé en Base 64. Le charset par défaut est le charset ISO-8859-1. L'avantage de cette entrée est qu'elle permet de porter pratiquement tous types de média (pdf, image, etc…), contrairement à l'élément Image illustrative qui ne peut porter que des images au format gif, jpeg, png ou bm.
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Document PDF copie](StructureDefinition-fr-cda-document-pdf-copie.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md) and [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md)
@@ -60,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-document-a
   "name" : "FRCDADocumentAttache",
   "title" : "CDA - FR Document attache",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -91,7 +85,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-document-a
   "differential" : {
     "element" : [{
       "id" : "Organizer",
-      "path" : "Organizer"
+      "path" : "Organizer",
+      "constraint" : [{
+        "key" : "fr-document-attache-components",
+        "severity" : "error",
+        "human" : "Un component porte le type de document attaché (observation) et un component porte le document attaché (observationMedia).",
+        "expression" : "component.where(observation.exists()).count() = 1 and component.where(observationMedia.exists()).count() = 1 and component.all(observation.exists() xor observationMedia.exists())",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-document-attache|0.1.0"
+      }]
     },
     {
       "id" : "Organizer.templateId",
@@ -181,79 +182,59 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-document-a
     {
       "id" : "Organizer.component",
       "path" : "Organizer.component",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Type de document attaché (observation) et document attaché (observationMedia)",
       "min" : 2,
       "max" : "2",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frTypeDocumentAttache",
-      "path" : "Organizer.component",
-      "sliceName" : "frTypeDocumentAttache",
-      "short" : "Type de document attaché",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Organizer.component:frTypeDocumentAttache.observation",
+      "id" : "Organizer.component.observation",
       "path" : "Organizer.component.observation",
+      "short" : "Type de document attaché",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-type-document-attache|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frObservationMedia",
-      "path" : "Organizer.component",
-      "sliceName" : "frObservationMedia",
-      "short" : "Document attaché",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Organizer.component:frObservationMedia.observationMedia",
+      "id" : "Organizer.component.observationMedia",
       "path" : "Organizer.component.observationMedia",
-      "min" : 1
+      "short" : "Document attaché"
     },
     {
-      "id" : "Organizer.component:frObservationMedia.observationMedia.classCode",
+      "id" : "Organizer.component.observationMedia.classCode",
       "path" : "Organizer.component.observationMedia.classCode",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frObservationMedia.observationMedia.moodCode",
+      "id" : "Organizer.component.observationMedia.moodCode",
       "path" : "Organizer.component.observationMedia.moodCode",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frObservationMedia.observationMedia.id",
+      "id" : "Organizer.component.observationMedia.id",
       "path" : "Organizer.component.observationMedia.id",
       "short" : "Identifiant de l'observationMedia",
       "definition" : "Identifiant de l'observationMedia",
       "max" : "1"
     },
     {
-      "id" : "Organizer.component:frObservationMedia.observationMedia.value",
+      "id" : "Organizer.component.observationMedia.value",
       "path" : "Organizer.component.observationMedia.value",
-      "short" : "Document encodé en Base 64.  Le charset utilisé par défaut est iso-8859-1",
+      "short" : "Document encodé en Base 64. Le charset utilisé par défaut est iso-8859-1",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frObservationMedia.observationMedia.value.mediaType",
+      "id" : "Organizer.component.observationMedia.value.mediaType",
       "path" : "Organizer.component.observationMedia.value.mediaType",
-      "short" : "Valeurs les plus utilisées : 'image/gif' ou 'image/jpeg' ou 'image/png' ou 'image/bm'ou 'image/tiff' ou 'text/rtf' ou 'text/plain' ou 'application/pdf'ou ou 'application/xml. D’autres valeurs peuvent être utilisées.",
+      "short" : "Type MIME du document attaché",
+      "comment" : "Valeurs les plus utilisées : 'image/gif', 'image/jpeg', 'image/png', 'image/bmp', 'image/tiff', 'text/rtf', 'text/plain', 'application/pdf' ou 'application/xml'. D'autres valeurs peuvent être utilisées.",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frObservationMedia.observationMedia.value.representation",
+      "id" : "Organizer.component.observationMedia.value.representation",
       "path" : "Organizer.component.observationMedia.value.representation",
-      "short" : "B64",
+      "patternCode" : "B64",
       "mustSupport" : true
     }]
   }

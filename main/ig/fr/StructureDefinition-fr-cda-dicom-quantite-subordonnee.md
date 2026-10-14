@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR DICOM Quantite subordonnee 
 
- 
-Entrée FR-DICOM-Quantite-subordonnee: Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie,  La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -108,7 +105,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-qu
   "name" : "FRCDADICOMQuantiteSubordonnee",
   "title" : "CDA - FR DICOM Quantite subordonnee",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

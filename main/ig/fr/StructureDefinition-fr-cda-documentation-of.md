@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - documentationOf 
 
- 
-L'élément de l'en-tête du CDA documentationOf permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. Il y a au minimum une occurrence de cet élément pour décrire l'évènement principal avec obligatoirement une date de début et un exécutant. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - clinicalDocument](StructureDefinition-fr-cda-clinical-document.md)
@@ -102,7 +99,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-document
   "name" : "FRCDADocumentationOf",
   "title" : "CDA - documentationOf",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

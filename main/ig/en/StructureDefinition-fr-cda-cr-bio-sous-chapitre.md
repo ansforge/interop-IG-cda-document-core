@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR CR BIO Sous Chapitre 
 
- 
-IHE-PaLM - Laboratory Report Item Section 
-* Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale. Elle est comporte un élément 'text' qui porte les résultats présentés et interprétés pour le lecteur et d'une entrée contenant les données codées dont procède le contenu de l'élément 'text'.
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR CR BIO Chapitre](StructureDefinition-fr-cda-cr-bio-chapitre.md)
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-cr-bio-sou
   "name" : "FRCDASectionCRBIOSousChapitre",
   "title" : "CDA - FR CR BIO Sous Chapitre",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

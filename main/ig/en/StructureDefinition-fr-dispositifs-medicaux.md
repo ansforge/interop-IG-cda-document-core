@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Dispositifs medicaux 
 
- 
-IHE-PCC - Medical Devices SectionCette section 'Dispositifs médicaux' contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-dispositifs-me
   "name" : "FRCDASectionDispositifsMedicaux",
   "title" : "CDA - FR Dispositifs medicaux",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

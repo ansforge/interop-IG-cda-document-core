@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - serviceEvent 
 
- 
-L'élément de l'en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. L'occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l'attribut nullFlavor. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - documentationOf](StructureDefinition-fr-cda-documentation-of.md)
@@ -104,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-service-
   "name" : "FRCDAServiceEvent",
   "title" : "CDA - serviceEvent",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

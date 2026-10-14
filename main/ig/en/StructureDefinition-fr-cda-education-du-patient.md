@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR Education du patient 
 
- 
-IHE-PCC - Patient Education Section 
-* Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.
- 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-education-
   "name" : "FRCDASectionEducationDuPatient",
   "title" : "CDA - FR Education du patient",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -203,40 +198,20 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-education-
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrées Acte (procedure), Simple observation (observation) et/ou Références externes (act)",
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frActe",
-      "path" : "Section.entry",
-      "sliceName" : "frActe",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frActe.procedure",
-      "path" : "Section.entry.procedure",
-      "short" : "Entrée Acte",
+      "id" : "Section.entry.act",
+      "path" : "Section.entry.act",
+      "short" : "Entrée référence Externe",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-references-externes|0.1.0"]
       }]
     },
     {
-      "id" : "Section.entry:frSimpleObservation",
-      "path" : "Section.entry",
-      "sliceName" : "frSimpleObservation",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frSimpleObservation.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Simple observation",
       "type" : [{
@@ -245,19 +220,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-education-
       }]
     },
     {
-      "id" : "Section.entry:frReferencesExternes",
-      "path" : "Section.entry",
-      "sliceName" : "frReferencesExternes",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frReferencesExternes.act",
-      "path" : "Section.entry.act",
-      "short" : "Entrée référence interne",
+      "id" : "Section.entry.procedure",
+      "path" : "Section.entry.procedure",
+      "short" : "Entrée Acte",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-references-externes|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"]
       }]
     }]
   }

@@ -174,8 +174,8 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 "Supply.participant","Supply.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Supply.participant",0,*,"",""
 "Supply.entryRelationship","Supply.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Supply.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:substanceAdministration}
+profile:act}","",,"open","Supply.entryRelationship",0,*,"",""
 "Supply.entryRelationship:frReferenceItemPrescription","Supply.entryRelationship","frReferenceItemPrescription","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Référence de la prescription","Référence de la prescription","","","","","","","","","",,,,,"",,,,"Supply.entryRelationship",0,*,"",""
 "Supply.entryRelationship:frReferenceItemPrescription.nullFlavor","Supply.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -209,7 +209,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Supply.entryRelationship:frReferenceItemPrescription.seperatableInd","Supply.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Supply.entryRelationship:frReferenceItemPrescription.act","Supply.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Supply.entryRelationship:frReferenceItemPrescription.act","Supply.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Supply.entryRelationship:frReferenceItemPrescription.encounter","Supply.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -260,7 +260,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Supply.entryRelationship:frTraitement.seperatableInd","Supply.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Supply.entryRelationship:frTraitement.act","Supply.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Supply.entryRelationship:frTraitement.act","Supply.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Supply.entryRelationship:frTraitement.encounter","Supply.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -325,7 +325,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Supply.entryRelationship:frInstructionsAuPatient.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Supply.entryRelationship:frInstructionsAuPatient.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Supply.entryRelationship:frInstructionsAuPatient.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Supply.entryRelationship:frInstructionsAuPatient.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -376,7 +376,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Supply.entryRelationship:frNotesDuDispensateur.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Supply.entryRelationship:frNotesDuDispensateur.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Supply.entryRelationship:frNotesDuDispensateur.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Supply.entryRelationship:frNotesDuDispensateur.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -427,7 +427,7 @@ http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Supply.entryRelationship:frActeSubstitution.regionOfInterest","Supply.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Supply.entryRelationship:frActeSubstitution.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Supply.entryRelationship:frActeSubstitution.substanceAdministration","Supply.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Supply.entryRelationship:frActeSubstitution.supply","Supply.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""

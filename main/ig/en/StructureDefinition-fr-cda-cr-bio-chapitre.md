@@ -2,13 +2,6 @@
 
 ## Logical Model: CDA - FR CR BIO Chapitre 
 
- 
-IHE-PaLM - Laboratory Specialty Section 
-* Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :
-* soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément `<text>` (présentation du contenu pour le lecteur) et un unique élément `<entry>` (données codées pour les SIS dont procède le contenu de l'élément `<text>`)
-* soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments `<component>` dont chacun introduit une `<section>` de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.
- 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -61,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-cr-bio-cha
   "name" : "FRCDASectionCRBIOChapitre",
   "title" : "CDA - FR CR BIO Chapitre",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Serie imagerie 
 
- 
-Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Examen imagerie](StructureDefinition-fr-cda-dicom-examen-imagerie.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-seri
   "name" : "FRCDADICOMSerieImagerie",
   "title" : "CDA - FR DICOM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

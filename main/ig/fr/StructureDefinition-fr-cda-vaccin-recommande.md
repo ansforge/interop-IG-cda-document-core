@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Vaccin recommande 
 
- 
-Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique).  Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée 'Immunization' (1.3.6.1.4.1.19376.1.5.3.1.4.12). 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
@@ -34,6 +31,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Obligatoire : 14 éléments
  Must-Support : 15 éléments
+ Interdit : 6 éléments
 
 **Structures**
 
@@ -49,7 +47,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  **Vue différentielle** 
 
@@ -69,6 +67,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Obligatoire : 14 éléments
  Must-Support : 15 éléments
+ Interdit : 6 éléments
 
 **Structures**
 
@@ -84,7 +83,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -128,7 +127,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
   "name" : "FRCDAVaccinRecommande",
   "title" : "CDA - FR Vaccin recommande",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -333,7 +332,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
       "id" : "SubstanceAdministration.consumable",
       "path" : "SubstanceAdministration.consumable",
       "short" : "Vaccin",
-      "definition" : "Vaccin",
+      "definition" : "Vaccin"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]
@@ -344,8 +347,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
       "path" : "SubstanceAdministration.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "supply"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -363,6 +374,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
       "id" : "SubstanceAdministration.entryRelationship:frPrescription.typeCode",
       "path" : "SubstanceAdministration.entryRelationship.typeCode",
       "patternCode" : "REFR"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frPrescription.supply",
@@ -386,12 +407,22 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
       "patternCode" : "SUBJ"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-rang-de-la-vaccination|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frCommentaireER",
@@ -413,6 +444,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccin-r
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frCommentaireER.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frCommentaireER.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     }]
   }
 }

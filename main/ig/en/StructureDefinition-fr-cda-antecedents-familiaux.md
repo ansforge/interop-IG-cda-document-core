@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Entrée Antecedents familiaux 
 
- 
-Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3). 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Section Antecedents familiaux](StructureDefinition-fr-cda-section-antecedents-familiaux.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-antecedent
   "name" : "FRCDAAntecedentsFamiliaux",
   "title" : "CDA - FR Entrée Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

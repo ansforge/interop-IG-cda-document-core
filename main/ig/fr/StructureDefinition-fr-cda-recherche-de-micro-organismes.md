@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Recherche de micro organismes 
 
- 
-Entrée FR-Recherche-de-micro-organismes: IHE PCC – Simple Observation. Cette entrée permet d'indiquer si une recherche de micro-organismes multirésistants ou émergents a été effectuée ou pas. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -116,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-recherch
   "name" : "FRCDARechercheDeMicroOrganismes",
   "title" : "CDA - FR Recherche de micro organismes",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

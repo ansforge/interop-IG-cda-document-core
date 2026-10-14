@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Conclusion 
 
- 
-DICOM Part 20 - Impression Section 
-* Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.
- 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-conc
   "name" : "FRCDASectionDICOMConclusion",
   "title" : "CDA - FR DICOM Conclusion",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

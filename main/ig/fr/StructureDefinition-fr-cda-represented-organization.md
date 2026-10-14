@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - representedOrganization 
 
- 
-L'élément de l'en-tête du CDA representedOrganization permet de représenter la structure pour le compte de laquelle intervient le professionnel. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md), [CDA - assignedEntity](StructureDefinition-fr-cda-assigned-entity.md), [CDA - associatedEntity](StructureDefinition-fr-cda-associated-entity.md) and [CDA - intendedRecipient](StructureDefinition-fr-cda-intended-recipient.md)
@@ -94,7 +91,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-represen
   "name" : "FRCDARepresentedOrganization",
   "title" : "CDA - representedOrganization",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

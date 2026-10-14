@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Sujet 
 
- 
-Entrée FR-Sujet: IHE-PCC - Subject participation. Cet élément peut être utilisé lorsqu'il est nécessaire de distinguer qu'une section ou une entrée s'applique à une personne autre que le patient concerné par le document. Par exemple, cet élément est utilisé pour identifier les membres de la famille dans les antécédents familiaux, les nouveaux-nés dans l'historique d'une grossesse. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Entrée Antecedents familiaux](StructureDefinition-fr-cda-antecedents-familiaux.md) and [CDA - FR Naissance](StructureDefinition-fr-cda-naissance.md)
@@ -124,7 +121,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-sujet.cs
   "name" : "FRCDASujet",
   "title" : "CDA - FR Sujet",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

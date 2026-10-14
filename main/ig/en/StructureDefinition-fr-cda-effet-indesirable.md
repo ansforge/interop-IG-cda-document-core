@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Effet indesirable 
 
- 
-Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésirable prévisible lié à un médicament. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
   "name" : "FRCDAEffetIndesirable",
   "title" : "CDA - FR Effet indesirable",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -254,8 +251,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "substanceAdministration"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },
@@ -274,6 +275,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
       "id" : "Observation.entryRelationship:frTraitement.typeCode",
       "path" : "Observation.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "Observation.entryRelationship:frTraitement.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frTraitement.substanceAdministration",
@@ -305,6 +311,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
       }]
     },
     {
+      "id" : "Observation.entryRelationship:frProbleme.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frImputabiliteEffetIndesirable",
       "path" : "Observation.entryRelationship",
       "sliceName" : "frImputabiliteEffetIndesirable",
@@ -329,6 +340,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-imputabilite-effet-indesirable|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frImputabiliteEffetIndesirable.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frGraviteEffetIndesirable",
@@ -357,6 +373,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
       }]
     },
     {
+      "id" : "Observation.entryRelationship:frGraviteEffetIndesirable.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frEvolutionEffetIndesirable",
       "path" : "Observation.entryRelationship",
       "sliceName" : "frEvolutionEffetIndesirable",
@@ -381,6 +402,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-effet-inde
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evolution-effet-indesirable|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frEvolutionEffetIndesirable.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
     }]
   }
 }

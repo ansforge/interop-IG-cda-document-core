@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Fonctions physiques 
 
- 
-IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -37,15 +34,14 @@ Obligatoire : 8 éléments(1 élément obligatoire(s) imbriqué(s))
 
 Cette structure fait référence à ces autres structures:
 
-* [CDA - FR Groupe de questionnaires d evaluation (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation|0.1.0)](StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.md)
 * [CDA - FR Evaluation (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation|0.1.0)](StructureDefinition-fr-cda-evaluation.md)
+* [CDA - FR Groupe de questionnaires d evaluation (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation|0.1.0)](StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.md)
 
 **Slices**
 
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 
  **Vue différentielle** 
 
@@ -68,15 +64,14 @@ Obligatoire : 8 éléments(1 élément obligatoire(s) imbriqué(s))
 
 Cette structure fait référence à ces autres structures:
 
-* [CDA - FR Groupe de questionnaires d evaluation (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation|0.1.0)](StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.md)
 * [CDA - FR Evaluation (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation|0.1.0)](StructureDefinition-fr-cda-evaluation.md)
+* [CDA - FR Groupe de questionnaires d evaluation (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation|0.1.0)](StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.md)
 
 **Slices**
 
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 
  
 
@@ -120,7 +115,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-fonction
   "name" : "FRCDASectionFonctionsPhysiques",
   "title" : "CDA - FR Fonctions physiques",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -129,7 +124,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-fonction
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.",
+  "description" : "IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problèmes physiques fonctionnels et structurels qui concernent le patient.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -170,7 +165,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-fonction
       "id" : "Section.templateId:iheSectionPhysicalFunction",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionPhysicalFunction",
-      "short" : "ConformitÃ© Physical Function Section (IHE-PCC)",
+      "short" : "Conformité Physical Function Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -184,7 +179,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-fonction
       "id" : "Section.templateId:frSectionFonctionsPhysiques",
       "path" : "Section.templateId",
       "sliceName" : "frSectionFonctionsPhysiques",
-      "short" : "ConformitÃ©Â FR-Fonctions-physiques (CI-SIS)",
+      "short" : "Conformité FR-Fonctions-physiques (CI-SIS)",
       "min" : 0,
       "max" : "1"
     },
@@ -232,7 +227,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-fonction
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
       "min" : 1,
-      "patternString" : "ProblÃ¨mes physiques fonctionnels et structurels",
+      "patternString" : "Problèmes physiques fonctionnels et structurels",
       "mustSupport" : true
     },
     {
@@ -253,45 +248,25 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-fonction
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrées Groupe de questionnaires d'évaluation (organizer) et/ou Évaluation (observation)",
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frGroupeDeQuestionnairesDevaluation",
-      "path" : "Section.entry",
-      "sliceName" : "frGroupeDeQuestionnairesDevaluation",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frGroupeDeQuestionnairesDevaluation.organizer",
-      "path" : "Section.entry.organizer",
-      "short" : "EntrÃ©e Groupe de questionnaires d'Ã©valutation",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation|0.1.0"]
-      }]
-    },
-    {
-      "id" : "Section.entry:frEvaluation",
-      "path" : "Section.entry",
-      "sliceName" : "frEvaluation",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frEvaluation.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
-      "short" : "EntrÃ©e Evalutation",
+      "short" : "Entrée Évaluation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Section.entry.organizer",
+      "path" : "Section.entry.organizer",
+      "short" : "Entrée Groupe de questionnaires d'évaluation",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation|0.1.0"]
       }]
     }]
   }

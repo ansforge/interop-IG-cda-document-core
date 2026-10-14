@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR Historique de la grossesse 
 
- 
-Entrée FR-Historique-de-la-grossesse: IHE-PCC - Pregnancy History Organizer. 
-* Cette entrée permet de regrouper les observations relatives à un épisode de grossesse.
- 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Historique des grossesses](StructureDefinition-fr-cda-historique-des-grossesses.md)
@@ -47,7 +42,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Organizer.templateId
-* The element 1 is sliced based on the value of Organizer.component
 
  **Vue différentielle** 
 
@@ -78,7 +72,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Organizer.templateId
-* The element 1 is sliced based on the value of Organizer.component
 
  
 
@@ -122,7 +115,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
   "name" : "FRCDAHistoriqueDeLaGrossesse",
   "title" : "CDA - FR Historique de la grossesse",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -274,31 +267,18 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
     {
       "id" : "Organizer.component",
       "path" : "Organizer.component",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Naissance (organizer) ou observation sur la grossesse (observation)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frNaissance",
-      "path" : "Organizer.component",
-      "sliceName" : "frNaissance",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Organizer.component:frNaissance.typeCode",
+      "id" : "Organizer.component.typeCode",
       "path" : "Organizer.component.typeCode",
       "patternCode" : "COMP"
     },
     {
-      "id" : "Organizer.component:frNaissance.observation",
+      "id" : "Organizer.component.observation",
       "path" : "Organizer.component.observation",
       "short" : "Informations relatives à la grossesse. Chaque entrée FR-Observation-sur-la-grossesse permet  de fournir une observation relative à une grossesse.",
       "definition" : "Informations relatives à la grossesse",
@@ -308,7 +288,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
       }]
     },
     {
-      "id" : "Organizer.component:frNaissance.organizer",
+      "id" : "Organizer.component.organizer",
       "path" : "Organizer.component.organizer",
       "short" : "Informations relatives aux naissances. Chaque entrée FR-Naissance, de type Organizer, rassemble les observations concernant l'issue de la grossesse relative à un fœtus. Cette structuration est rendue nécessaire pour prendre en compte les grossesses multiples, mais peut cependant être utilisée pour une naissance unique.",
       "definition" : "Informations relatives aux naissances",
@@ -316,13 +296,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-naissance|0.1.0"]
       }]
-    },
-    {
-      "id" : "Organizer.component:frObservationSurLaGrossesse",
-      "path" : "Organizer.component",
-      "sliceName" : "frObservationSurLaGrossesse",
-      "min" : 0,
-      "max" : "1"
     }]
   }
 }

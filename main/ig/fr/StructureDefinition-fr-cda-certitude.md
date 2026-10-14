@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Certitude 
 
- 
-Entrée FR-Certitude: Cette entrée permet de fournir la certitude d'une observation (problème ou allergie/hypersensibilité). Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergie ou hypersensibilite](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md) and [CDA - FR Probleme](StructureDefinition-fr-cda-probleme.md)
@@ -108,7 +105,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-certitud
   "name" : "FRCDACertitude",
   "title" : "CDA - FR Certitude",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

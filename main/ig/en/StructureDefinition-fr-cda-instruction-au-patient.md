@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Instruction au patient 
 
- 
-Entrée FR-Instruction-au-patient: IHE-PCC - Simple-Observation. Cette entrée permet d’enregistrer une instruction au patient sous forme codée (c’est notamment le cas pour les prescriptions d’examens de biologie médicale). 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Instructions au patient](StructureDefinition-fr-cda-instructions-au-patient.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-instructio
   "name" : "FRCDAInstructionAuPatient",
   "title" : "CDA - FR Instruction au patient",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Produit de sante 
 
- 
-Entrée FR-Produit-de-sante: IHE-PCC - Product-Entry. L'entrée Produit de santé permet de décrire un médicament ou un vaccin. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Dose antigene](StructureDefinition-fr-cda-dose-antigene.md), [CDA - FR Item plan traitement](StructureDefinition-fr-cda-item-plan-traitement.md), [CDA - FR Traitement dispense](StructureDefinition-fr-cda-traitement-dispense.md), [CDA - FR Traitement prescrit subordonne](StructureDefinition-fr-cda-traitement-prescrit-subordonne.md)... Show 5 more, [CDA - FR Traitement prescrit](StructureDefinition-fr-cda-traitement-prescrit.md), [CDA - FR Traitement subordonne](StructureDefinition-fr-cda-traitement-subordonne.md), [CDA - FR Traitement](StructureDefinition-fr-cda-traitement.md), [CDA - FR Vaccin recommande](StructureDefinition-fr-cda-vaccin-recommande.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -104,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-produit-
   "name" : "FRCDAProduitDeSante",
   "title" : "CDA - FR Produit de sante",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

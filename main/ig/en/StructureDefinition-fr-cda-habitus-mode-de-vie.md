@@ -2,12 +2,6 @@
 
 ## Logical Model: CDA - FR Habitus Mode de vie 
 
- 
-Entrée FR-Habitus-Mode-de-vie: IHE-PCC - Social History Observation 
-* L'entrée Habitus, Mode de vie permet de décrire des éléments sociaux du patient
-* Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Habitus mode de vie](StructureDefinition-fr-cda-section-habitus-mode-de-vie.md)
@@ -60,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-habitus-mo
   "name" : "FRCDAHabitusModeDeVie",
   "title" : "CDA - FR Habitus Mode de vie",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

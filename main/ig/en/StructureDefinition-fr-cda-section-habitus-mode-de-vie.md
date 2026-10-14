@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Habitus mode de vie 
 
- 
-IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
   "name" : "FRCDASectionHabitusModeDeVie",
   "title" : "CDA - FR Habitus mode de vie",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +63,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.",
+  "description" : "IHE-PCC - Coded Social History Section. Liste codée des informations relatives aux habitus et au mode de vie du patient.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -107,7 +104,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
       "id" : "Section.templateId:ccdSectionCodedSocialHistory",
       "path" : "Section.templateId",
       "sliceName" : "ccdSectionCodedSocialHistory",
-      "short" : "ConformitÃ© Social History Section (CCD)",
+      "short" : "Conformité Social History Section (CCD)",
       "min" : 1,
       "max" : "1"
     },
@@ -121,7 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
       "id" : "Section.templateId:iheSectionCodedSocialHistory",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionCodedSocialHistory",
-      "short" : "ConformitÃ© Social History Section (IHE-PCC)",
+      "short" : "Conformité Social History Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -135,7 +132,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
       "id" : "Section.templateId:frSectionHabitusModeDeVie",
       "path" : "Section.templateId",
       "sliceName" : "frSectionHabitusModeDeVie",
-      "short" : "ConformitÃ© FR-Habitus-Mode-de-Vie (CI-SIS)",
+      "short" : "Conformité FR-Habitus-Mode-de-Vie (CI-SIS)",
       "min" : 1,
       "max" : "1"
     },
@@ -149,7 +146,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
       "id" : "Section.templateId:iheSectionSocialHistory",
       "path" : "Section.templateId",
       "sliceName" : "iheSectionSocialHistory",
-      "short" : "ConformitÃ© Social History Section (IHE-PCC)",
+      "short" : "Conformité Social History Section (IHE-PCC)",
       "min" : 1,
       "max" : "1"
     },
@@ -219,7 +216,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-section-ha
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "short" : "EntrÃ©e Habitus, Mode de vie",
+      "short" : "Entrée Habitus, Mode de vie",
       "min" : 1,
       "mustSupport" : true
     },

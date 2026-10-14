@@ -2,9 +2,6 @@
 
 ## ValueSet: ValueSet - FR ValueSet Reference externe 
 
- 
-Jeu de valeurs regroupant les typeCode du document référencé 
-
  **References** 
 
 * [CDA - FR References externes](StructureDefinition-fr-cda-references-externes.md)
@@ -32,7 +29,7 @@ Jeu de valeurs regroupant les typeCode du document référencé
   "name" : "FRValueSetReferenceExterne",
   "title" : "ValueSet - FR ValueSet Reference externe",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

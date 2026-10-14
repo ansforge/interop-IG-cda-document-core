@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Reference item plan traitement 
 
- 
-Entrée FR-Reference-item-plan-traitement: IHE-Pharm - Cette entrée permet d’enregistrer une référence à un traitement dans un plan de traitement. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Traitement prescrit](StructureDefinition-fr-cda-traitement-prescrit.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-reference-
   "name" : "FRCDAReferenceItemPlanTraitement",
   "title" : "CDA - FR Reference item plan traitement",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

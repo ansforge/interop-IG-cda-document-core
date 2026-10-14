@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Dispositif medical 
 
- 
-Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Prescription dispositifs medicaux](StructureDefinition-fr-cda-prescription-dispositifs-medicaux.md) and [CDA - FR Dispositifs medicaux](StructureDefinition-fr-dispositifs-medicaux.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dispositif
   "name" : "FRCDADispositifMedical",
   "title" : "CDA - FR Dispositif medical",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -304,8 +301,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dispositif
       "path" : "Supply.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },

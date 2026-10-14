@@ -1,6 +1,7 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
 "Procedure","Procedure","","","",1,1,"","","","null {[]} {[]}
-","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","fr-acte-difficulte:Au plus une entrée Difficulté de l'acte (observation de code GEN-023). {entryRelationship.where(observation.code.code = 'GEN-023').count() <= 1}
+","n/a"
 "Procedure.nullFlavor","Procedure.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "Procedure.realmCode","Procedure.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
@@ -241,17 +242,17 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)","Voie d’ab
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.subject",0,1,"",""
 "Procedure.specimen","Procedure.specimen","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Specimen {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.specimen",0,*,"",""
-"Procedure.performer","Procedure.performer","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Performer2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0]]} {[]}
+"Procedure.performer","Procedure.performer","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Performer2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.performer",0,*,"",""
 "Procedure.author","Procedure.author","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Author {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.author",0,*,"",""
-"Procedure.informant","Procedure.informant","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0]]} {[]}
+"Procedure.informant","Procedure.informant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.informant",0,*,"",""
-"Procedure.participant","Procedure.participant","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0]]} {[]}
+"Procedure.participant","Procedure.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.participant",0,*,"",""
 "Procedure.entryRelationship","Procedure.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Procedure.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","value:typeCode}
+profile:act}profile:observation}","",,"open","Procedure.entryRelationship",0,*,"",""
 "Procedure.entryRelationship:frReferenceInterneCirconstances","Procedure.entryRelationship","frReferenceInterneCirconstances","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Circonstances ayant décidé de l'acte","Circonstances ayant décidé de l'acte","","","","","","","","","",,,,,"",,,,"Procedure.entryRelationship",0,*,"",""
 "Procedure.entryRelationship:frReferenceInterneCirconstances.nullFlavor","Procedure.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -289,7 +290,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)","Voie d’ab
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneCirconstances.encounter","Procedure.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Procedure.entryRelationship:frReferenceInterneCirconstances.observation","Procedure.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Procedure.entryRelationship:frReferenceInterneCirconstances.observation","Procedure.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneCirconstances.observationMedia","Procedure.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -340,7 +341,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)","Voie d’ab
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneMotifActe.encounter","Procedure.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Procedure.entryRelationship:frReferenceInterneMotifActe.observation","Procedure.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Procedure.entryRelationship:frReferenceInterneMotifActe.observation","Procedure.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneMotifActe.observationMedia","Procedure.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -391,7 +392,7 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)","Voie d’ab
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneDM.encounter","Procedure.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Procedure.entryRelationship:frReferenceInterneDM.observation","Procedure.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Procedure.entryRelationship:frReferenceInterneDM.observation","Procedure.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneDM.observationMedia","Procedure.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -405,107 +406,56 @@ Sinon, utiliser la codification SNOMED CT (2.16.840.1.113883.6.96)","Voie d’ab
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "Procedure.entryRelationship:frReferenceInterneDM.supply","Procedure.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte","Procedure.entryRelationship","frSimpleObservationDifficulte","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","Difficulté de l'acte","Difficulté de l'acte","","","","","","","","","",,,,,"",,,,"Procedure.entryRelationship",0,*,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.nullFlavor","Procedure.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation","Procedure.entryRelationship","frSimpleObservation","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
+","Difficulté de l'acte (observation de code GEN-023) [0..1] et/ou scores [0..*]","Difficulté de l'acte (observation de code GEN-023) et scores","","","","","","","","","",,,,,"",,,,"Procedure.entryRelationship",0,*,"",""
+"Procedure.entryRelationship:frSimpleObservation.nullFlavor","Procedure.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.realmCode","Procedure.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.realmCode","Procedure.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeId","Procedure.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeId","Procedure.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
 "
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeId.nullFlavor","Procedure.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeId.nullFlavor","Procedure.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeId.assigningAuthorityName","Procedure.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeId.assigningAuthorityName","Procedure.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeId.displayable","Procedure.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeId.displayable","Procedure.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeId.root","Procedure.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeId.root","Procedure.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
 ","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeId.extension","Procedure.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeId.extension","Procedure.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.templateId","Procedure.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.templateId","Procedure.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.typeCode","Procedure.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.typeCode","Procedure.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0","",,,,"EntryRelationship.typeCode",1,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.inversionInd","Procedure.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.inversionInd","Procedure.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""false""/>","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.contextConductionInd","Procedure.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.contextConductionInd","Procedure.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.negationInd","Procedure.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.negationInd","Procedure.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.sequenceNumber","Procedure.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.sequenceNumber","Procedure.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.seperatableInd","Procedure.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.seperatableInd","Procedure.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.act","Procedure.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.act","Procedure.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.encounter","Procedure.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.encounter","Procedure.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.observation","Procedure.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0]]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.observation","Procedure.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.observationMedia","Procedure.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.observationMedia","Procedure.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.organizer","Procedure.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.organizer","Procedure.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.procedure","Procedure.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.procedure","Procedure.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.regionOfInterest","Procedure.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.regionOfInterest","Procedure.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.substanceAdministration","Procedure.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.substanceAdministration","Procedure.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationDifficulte.supply","Procedure.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores","Procedure.entryRelationship","frSimpleObservationScores","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","Scores","Scores","","","","","","","","","",,,,,"",,,,"Procedure.entryRelationship",0,*,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.nullFlavor","Procedure.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.realmCode","Procedure.entryRelationship.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
-","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.typeId","Procedure.entryRelationship.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
-"
-"Procedure.entryRelationship:frSimpleObservationScores.typeId.nullFlavor","Procedure.entryRelationship.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.typeId.assigningAuthorityName","Procedure.entryRelationship.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.typeId.displayable","Procedure.entryRelationship.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.typeId.root","Procedure.entryRelationship.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
-","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.typeId.extension","Procedure.entryRelationship.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.templateId","Procedure.entryRelationship.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.typeCode","Procedure.entryRelationship.typeCode","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntryRelationship|3.0.0","",,,,"EntryRelationship.typeCode",1,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.inversionInd","Procedure.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","The entryRelationship.inversionInd can be set to ""true"" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.","","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""false""/>","","","",,,,,"",,,,"EntryRelationship.inversionInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.contextConductionInd","Procedure.entryRelationship.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at ""true"", whereas here the value is defaulted to ""true"", and can be changed to ""false"" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"EntryRelationship.contextConductionInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.negationInd","Procedure.entryRelationship.negationInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.negationInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.sequenceNumber","Procedure.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.seperatableInd","Procedure.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.act","Procedure.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.encounter","Procedure.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.observation","Procedure.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0]]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.observationMedia","Procedure.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.organizer","Procedure.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.procedure","Procedure.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.regionOfInterest","Procedure.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.substanceAdministration","Procedure.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"Procedure.entryRelationship:frSimpleObservationScores.supply","Procedure.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"Procedure.entryRelationship:frSimpleObservation.supply","Procedure.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "Procedure.reference","Procedure.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Procedure.reference",0,*,"",""

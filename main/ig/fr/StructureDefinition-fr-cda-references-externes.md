@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR References externes 
 
- 
-Entrée FR-References-externes: IHE-PCC - External-References. Cette entrée de type act permet de relier un élément à un (ou des) document(s) externe(s) par l’intermédiaire d’une adresse URL. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md) and [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md)
@@ -108,7 +105,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-referenc
   "name" : "FRCDAReferencesExternes",
   "title" : "CDA - FR References externes",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

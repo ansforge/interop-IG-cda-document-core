@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - authoringDevice 
 
- 
-L'élément de l'en-tête du CDA authoringDevice contient les informations complémentaires si l’auteur est un système. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - assignedAuthor](StructureDefinition-fr-cda-assigned-author.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-authoring-
   "name" : "FRCDAAuthoringDevice",
   "title" : "CDA - authoringDevice",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

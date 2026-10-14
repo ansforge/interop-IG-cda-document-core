@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - componentOf 
 
- 
-L'élément de l'en-tête du CDA componentOf permet d'associer le document à une prise en charge du patient/usager. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -102,7 +99,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-componen
   "name" : "FRCDAComponentOf",
   "title" : "CDA - componentOf",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

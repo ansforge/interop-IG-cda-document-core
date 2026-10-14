@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Evaluation 
 
- 
-Entrée FR-Evaluation: IHE-PCC - Survey Observation - L'entrée Evaluation permet de rapporter un résultat (score) répondant à une question faisant partie d'une évaluation (questionnaire d'enquête par exemple).Cette entrée est basée sur l’entrée FR-Simple-Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) and [CDA - FR Groupe de questionnaires d evaluation](StructureDefinition-fr-cda-groupe-de-questionnaires-d-evaluation.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
   "name" : "FRCDAEvaluation",
   "title" : "CDA - FR Evaluation",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -310,8 +307,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -333,6 +334,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
       "id" : "Observation.entryRelationship:frEvaluationComposant.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Observation.entryRelationship:frEvaluationComposant.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frEvaluationComposant.observation",
@@ -359,6 +365,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
       "id" : "Observation.entryRelationship:frStatut.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Observation.entryRelationship:frStatut.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frStatut.observation",
@@ -395,6 +406,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
       }]
     },
     {
+      "id" : "Observation.entryRelationship:frCommentaireER.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frReferenceInterne",
       "path" : "Observation.entryRelationship",
       "sliceName" : "frReferenceInterne",
@@ -419,6 +435,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frReferenceInterne.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     }]
   }
 }

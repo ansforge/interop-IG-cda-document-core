@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - relatedDocument 
 
- 
-L'élément de l'en-tête du CDA relatedDocument permet de référencer un document existant (à remplacer ou transformé). 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - clinicalDocument](StructureDefinition-fr-cda-clinical-document.md)
@@ -102,7 +99,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-related-
   "name" : "FRCDARelatedDocument",
   "title" : "CDA - relatedDocument",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

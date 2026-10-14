@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Statut document 
 
- 
-Entrée FR-Statut-document: Cette entrée permet d'indiquer le statut du document (son état d'avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal (élément 'legalAuthenticator' de l'en-tête) ainsi que la date de ce statut. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Statut du document](StructureDefinition-fr-cda-statut-du-document.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-statut-doc
   "name" : "FRCDAStatutDocument",
   "title" : "CDA - FR Statut document",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

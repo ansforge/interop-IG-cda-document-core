@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Traitement 
 
- 
-Entrée FR-Traitement: IHE-PCC - Medications. L'entrée 'Traitement' est une entrée de type 'substanceAdministration' décrivant les modalités d'administration d'un médicament au patient. Elle permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md), [CDA - FR Traitement dispense](StructureDefinition-fr-cda-traitement-dispense.md), [CDA - FR Traitements à la sortie](StructureDefinition-fr-cda-traitements-a-la-sortie.md)... Show 2 more, [CDA - FR Traitements administres](StructureDefinition-fr-cda-traitements-administres.md) and [CDA - FR Traitements](StructureDefinition-fr-cda-traitements.md)
@@ -34,8 +31,9 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 ** Résumé **
 
-Obligatoire : 10 éléments(25 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 10 éléments(23 éléments obligatoire(s) imbriqué(s))
  Must-Support : 44 éléments
+ Interdit : 8 éléments
 
 **Structures**
 
@@ -52,8 +50,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.effectiveTime
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  **Vue différentielle** 
 
@@ -73,8 +70,9 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 ** Résumé **
 
-Obligatoire : 10 éléments(25 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 10 éléments(23 éléments obligatoire(s) imbriqué(s))
  Must-Support : 44 éléments
+ Interdit : 8 éléments
 
 **Structures**
 
@@ -91,8 +89,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.effectiveTime
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -136,7 +133,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "name" : "FRCDATraitement",
   "title" : "CDA - FR Traitement",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -166,6 +163,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "SubstanceAdministration",
+      "path" : "SubstanceAdministration",
+      "constraint" : [{
+        "key" : "fr-effectiveTime-traitement",
+        "severity" : "error",
+        "human" : "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'.",
+        "expression" : "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
+      }]
+    },
+    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -435,58 +443,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.effectiveTime",
       "path" : "SubstanceAdministration.effectiveTime",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "operator"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]",
       "mustSupport" : true
-    },
-    {
-      "id" : "SubstanceAdministration.effectiveTime:effectiveTimeDuree",
-      "path" : "SubstanceAdministration.effectiveTime",
-      "sliceName" : "effectiveTimeDuree",
-      "short" : "Durée de traitement",
-      "min" : 0,
-      "max" : "1",
-      "constraint" : [{
-        "key" : "fr-operator-not-a",
-        "severity" : "error",
-        "human" : "operator doit être différent de A",
-        "expression" : "operator != 'A'",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
-      },
-      {
-        "key" : "fr-effectiveTime-duree-type",
-        "severity" : "error",
-        "human" : "La durée doit être IVL-TS",
-        "expression" : "is(IVL_TS)",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
-      }]
-    },
-    {
-      "id" : "SubstanceAdministration.effectiveTime:effectiveTimeFrequence",
-      "path" : "SubstanceAdministration.effectiveTime",
-      "sliceName" : "effectiveTimeFrequence",
-      "short" : "Fréquence d'administration",
-      "min" : 0,
-      "max" : "*",
-      "constraint" : [{
-        "key" : "fr-operator-a",
-        "severity" : "error",
-        "human" : "operator doit être A",
-        "expression" : "operator = 'A'",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
-      },
-      {
-        "key" : "fr-effectiveTime-frequence-types",
-        "severity" : "error",
-        "human" : "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS",
-        "expression" : "is(SXCM_TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)",
-        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
-      }]
     },
     {
       "id" : "SubstanceAdministration.routeCode",
@@ -573,6 +531,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.rateQuantity",
       "path" : "SubstanceAdministration.rateQuantity",
       "short" : "Rythme d'administration : \r\n\nLe rythme d'administration permet d'indiquer la quantité de produit à administrer par unité de temps.\nLes sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et maximal de l'administration. Dans le cas où le rythme est fixe, ces deux sous-éléments prendront les mêmes valeurs.\nL'argument @value permet d'indiquer la quantité de produit à administrer.\nL'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.\nDans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.",
+      "constraint" : [{
+        "key" : "fr-rateQuantity-traitement",
+        "severity" : "error",
+        "human" : "Le rythme d'administration porte soit un nullFlavor, soit les sous-éléments low et high.",
+        "expression" : "nullFlavor.exists() or (low.exists() and high.exists())",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"
+      }],
       "mustSupport" : true
     },
     {
@@ -583,7 +548,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.rateQuantity.low",
       "path" : "SubstanceAdministration.rateQuantity.low",
-      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -607,7 +571,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
     {
       "id" : "SubstanceAdministration.rateQuantity.high",
       "path" : "SubstanceAdministration.rateQuantity.high",
-      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -670,7 +633,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.consumable",
       "path" : "SubstanceAdministration.consumable",
       "short" : "Médicament",
-      "definition" : "Médicament",
+      "definition" : "Médicament"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]
@@ -681,8 +648,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "path" : "SubstanceAdministration.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "supply"
+        },
+        {
+          "type" : "profile",
+          "path" : "substanceAdministration"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -701,6 +676,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.entryRelationship:frPrescription.typeCode",
       "path" : "SubstanceAdministration.entryRelationship.typeCode",
       "patternCode" : "REFR"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frPrescription.supply",
@@ -728,6 +713,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "mustSupport" : true
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementSubordonne.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frTraitementSubordonne.substanceAdministration",
       "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
       "short" : "Traitement subordonné : \r\n\nUne entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées 'Traitement' subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.\nL'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre.",
@@ -736,6 +726,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-subordonne|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frTraitementSubordonne.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient",
@@ -765,6 +760,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frReferenceInterne",
@@ -785,6 +790,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frReferenceInterne.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.precondition",

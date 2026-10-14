@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - performer 
 
- 
-L'élément de l'en-tête du CDA performer permet de représenter l'exécutant de l’évènement documenté. Il est obligatoire et son attribut nullFlavor interdit pour l’évènement documenté principal. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - serviceEvent](StructureDefinition-fr-cda-service-event.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-performer.
   "name" : "FRCDAPerformer",
   "title" : "CDA - performer",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

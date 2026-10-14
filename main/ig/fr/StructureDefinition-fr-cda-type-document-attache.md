@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Type document attache 
 
- 
-Entrée FR-Type-document-attache: Élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant le type de document attaché. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Document attache](StructureDefinition-fr-cda-document-attache.md)
@@ -104,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-type-doc
   "name" : "FRCDATypeDocumentAttache",
   "title" : "CDA - FR Type document attache",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

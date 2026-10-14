@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR Sujet non humain 
 
- 
-Entrée FR-Sujet-non-humain: IHE-PCC - Non-Human Subject 
-* Cet élément doit être présent lorsque le sujet des observations du compte rendu est un échantillon provenant d'un sujet non humain (animal ou autre élément environnemental) analysé par un laboratoire de biologie médicale dans le cadre d'une investigation sur un patient. Le sujet non humain doit aussi être décrit dans l'en-tête du document.
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Batterie examens de biologie medicale](StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.md), [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md), [CDA - FR Resultat examens de biologie element clinique pertinent](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md) and [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md)
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-sujet-non-
   "name" : "FRCDASujetNonHumain",
   "title" : "CDA - FR Sujet non humain",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

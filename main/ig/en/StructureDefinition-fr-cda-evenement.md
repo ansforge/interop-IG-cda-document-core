@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Evenement 
 
- 
-Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type 'encounter' permettant de conserver les données d’activités liées à un patient / usager. Il peut s'agir d'un évènement passé ou à venir. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -295,8 +292,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       "path" : "Encounter.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -319,6 +320,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       "id" : "Encounter.entryRelationship:frSimpleObservation.inversionInd",
       "path" : "Encounter.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Encounter.entryRelationship:frSimpleObservation.act",
+      "path" : "Encounter.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Encounter.entryRelationship:frSimpleObservation.observation",
@@ -355,6 +361,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       }]
     },
     {
+      "id" : "Encounter.entryRelationship:frCommentaireER.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Encounter.entryRelationship:frReferenceInterne",
       "path" : "Encounter.entryRelationship",
       "sliceName" : "frReferenceInterne",
@@ -379,6 +390,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0"]
       }]
+    },
+    {
+      "id" : "Encounter.entryRelationship:frReferenceInterne.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Encounter.entryRelationship:frTransportDuPatient",
@@ -407,6 +423,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       }]
     },
     {
+      "id" : "Encounter.entryRelationship:frTransportDuPatient.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Encounter.entryRelationship:frStatut",
       "path" : "Encounter.entryRelationship",
       "sliceName" : "frStatut",
@@ -423,6 +444,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
       "id" : "Encounter.entryRelationship:frStatut.inversionInd",
       "path" : "Encounter.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Encounter.entryRelationship:frStatut.act",
+      "path" : "Encounter.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Encounter.entryRelationship:frStatut.observation",
@@ -457,6 +483,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement.
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-transport-du-professionnel|0.1.0"]
       }]
+    },
+    {
+      "id" : "Encounter.entryRelationship:frTransportDuProfessionnel.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
     }]
   }
 }

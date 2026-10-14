@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Resultats examens 
 
- 
-IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
   "name" : "FRCDASectionResultatsExamens",
   "title" : "CDA - FR Resultats examens",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,7 +85,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
   "differential" : {
     "element" : [{
       "id" : "Section",
-      "path" : "Section"
+      "path" : "Section",
+      "constraint" : [{
+        "key" : "fr-resultats-examens-entries",
+        "severity" : "error",
+        "human" : "La section contient au moins une entrée Acte (procedure).",
+        "expression" : "entry.where(procedure.exists()).count() >= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultats-examens|0.1.0"
+      }]
     },
     {
       "id" : "Section.templateId",
@@ -204,41 +208,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrées Acte (procedure, 1..*), Références externes (act, 0..*) et Simple observation (observation, 0..*)",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frActe",
-      "path" : "Section.entry",
-      "sliceName" : "frActe",
-      "min" : 1,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frActe.procedure",
-      "path" : "Section.entry.procedure",
-      "short" : "Entrée Acte",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"]
-      }]
-    },
-    {
-      "id" : "Section.entry:frReferencesExternes",
-      "path" : "Section.entry",
-      "sliceName" : "frReferencesExternes",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frReferencesExternes.act",
+      "id" : "Section.entry.act",
       "path" : "Section.entry.act",
       "short" : "Entrée Références externes",
       "type" : [{
@@ -247,19 +222,21 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-resultats-
       }]
     },
     {
-      "id" : "Section.entry:frSimpleObservation",
-      "path" : "Section.entry",
-      "sliceName" : "frSimpleObservation",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frSimpleObservation.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Simple observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-simple-observation|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Section.entry.procedure",
+      "path" : "Section.entry.procedure",
+      "short" : "Entrée Acte",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"]
       }]
     }]
   }

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Performer corps 
 
- 
-FR-Performer. Élément performer utilisable dans les entrées du corps d'un document. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Evaluation](StructureDefinition-fr-cda-evaluation.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md), [CDA - FR Prelevement](StructureDefinition-fr-cda-prelevement.md)... Show 3 more, [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md), [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-performer-
   "name" : "FRCDAPerformerCorps",
   "title" : "CDA - FR Performer corps",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

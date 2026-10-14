@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Evaluation Composant 
 
- 
-Entrée FR-Evaluation-Composant: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Evaluation](StructureDefinition-fr-cda-evaluation.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
   "name" : "FRCDAEvaluationComposant",
   "title" : "CDA - FR Evaluation Composant",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -261,8 +258,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -285,6 +286,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
       "id" : "Observation.entryRelationship:frEvaluationComposantN2.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Observation.entryRelationship:frEvaluationComposantN2.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frEvaluationComposantN2.observation",
@@ -319,6 +325,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frCommentaireER.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     }]
   }
 }

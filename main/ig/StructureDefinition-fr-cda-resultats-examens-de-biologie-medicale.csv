@@ -139,20 +139,20 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.3.109""/>","","","",,,,,"",,,,"II.root",0,1,"",""
 "Act.participant:frParticipantValideurResultats.templateId:templateId.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Act.participant:frParticipantValideurResultats.templateId:templateId-other","Act.participant.templateId","templateId-other","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Autre TemplateId","Autre TemplateId","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Act.participant:frParticipantValideurResultats.templateId:templateId-other.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur","Act.participant.templateId","templateIdIHEValideur","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+","templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+"Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Act.participant:frParticipantValideurResultats.templateId:templateId-other.assigningAuthorityName","Act.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+"Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.assigningAuthorityName","Act.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Act.participant:frParticipantValideurResultats.templateId:templateId-other.displayable","Act.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.displayable","Act.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Act.participant:frParticipantValideurResultats.templateId:templateId-other.root","Act.participant.templateId.root","","","Root",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+"Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.root","Act.participant.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
 ","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.3.6.1.4.1.19376.1.3.3.1.5""/>","","","",,,,,"",,,,"II.root",0,1,"",""
-"Act.participant:frParticipantValideurResultats.templateId:templateId-other.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+"Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Act.participant:frParticipantValideurResultats.typeCode","Act.participant.typeCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""AUTHEN""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
+","Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901).","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""AUTHEN""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
 "Act.participant:frParticipantValideurResultats.contextControlCode","Act.participant.contextControlCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAContextControl|2.0.3-sd","",,,,"Participant2.contextControlCode",0,1,"",""
 "Act.participant:frParticipantValideurResultats.sdtcFunctionCode","Act.participant.sdtcFunctionCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
@@ -199,6 +199,16 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 "Act.participant:frParticipantResponsableExamen.templateId","Act.participant.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"","value:root}
 ","",,"open","InfrastructureRoot.templateId",0,*,"",""
+"Act.participant:frParticipantResponsableExamen.templateId.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.participant:frParticipantResponsableExamen.templateId.assigningAuthorityName","Act.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Act.participant:frParticipantResponsableExamen.templateId.displayable","Act.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Act.participant:frParticipantResponsableExamen.templateId.root","Act.participant.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Act.participant:frParticipantResponsableExamen.templateId.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Act.participant:frParticipantResponsableExamen.templateId:templateId","Act.participant.templateId","templateId","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","TemplateId avec root égal à 1.2.250.1.213.1.1.3.109","TemplateId avec root égal à 1.2.250.1.213.1.1.3.109","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "Act.participant:frParticipantResponsableExamen.templateId:templateId.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -211,20 +221,8 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.3.109""/>","","","",,,,,"",,,,"II.root",0,1,"",""
 "Act.participant:frParticipantResponsableExamen.templateId:templateId.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Act.participant:frParticipantResponsableExamen.templateId:templateId-other","Act.participant.templateId","templateId-other","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Autre TemplateId","Autre TemplateId","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Act.participant:frParticipantResponsableExamen.templateId:templateId-other.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Act.participant:frParticipantResponsableExamen.templateId:templateId-other.assigningAuthorityName","Act.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Act.participant:frParticipantResponsableExamen.templateId:templateId-other.displayable","Act.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Act.participant:frParticipantResponsableExamen.templateId:templateId-other.root","Act.participant.templateId.root","","","Root",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
-","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
-"Act.participant:frParticipantResponsableExamen.templateId:templateId-other.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Act.participant:frParticipantResponsableExamen.typeCode","Act.participant.typeCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""RESP""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
+","Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901).","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""RESP""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
 "Act.participant:frParticipantResponsableExamen.contextControlCode","Act.participant.contextControlCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAContextControl|2.0.3-sd","",,,,"Participant2.contextControlCode",0,1,"",""
 "Act.participant:frParticipantResponsableExamen.sdtcFunctionCode","Act.participant.sdtcFunctionCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
@@ -271,6 +269,16 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 "Act.participant:frParticipantDispositifAutomatique.templateId","Act.participant.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"","value:root}
 ","",,"open","InfrastructureRoot.templateId",0,*,"",""
+"Act.participant:frParticipantDispositifAutomatique.templateId.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Act.participant:frParticipantDispositifAutomatique.templateId.assigningAuthorityName","Act.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Act.participant:frParticipantDispositifAutomatique.templateId.displayable","Act.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Act.participant:frParticipantDispositifAutomatique.templateId.root","Act.participant.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Act.participant:frParticipantDispositifAutomatique.templateId.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Act.participant:frParticipantDispositifAutomatique.templateId:templateId","Act.participant.templateId","templateId","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","TemplateId avec root égal à 1.2.250.1.213.1.1.3.109","TemplateId avec root égal à 1.2.250.1.213.1.1.3.109","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "Act.participant:frParticipantDispositifAutomatique.templateId:templateId.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -283,20 +291,8 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.3.109""/>","","","",,,,,"",,,,"II.root",0,1,"",""
 "Act.participant:frParticipantDispositifAutomatique.templateId:templateId.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Act.participant:frParticipantDispositifAutomatique.templateId:templateId-other","Act.participant.templateId","templateId-other","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Autre TemplateId","Autre TemplateId","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Act.participant:frParticipantDispositifAutomatique.templateId:templateId-other.nullFlavor","Act.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Act.participant:frParticipantDispositifAutomatique.templateId:templateId-other.assigningAuthorityName","Act.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Act.participant:frParticipantDispositifAutomatique.templateId:templateId-other.displayable","Act.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Act.participant:frParticipantDispositifAutomatique.templateId:templateId-other.root","Act.participant.templateId.root","","","Root",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
-","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
-"Act.participant:frParticipantDispositifAutomatique.templateId:templateId-other.extension","Act.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Act.participant:frParticipantDispositifAutomatique.typeCode","Act.participant.typeCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DEV""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
+","Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901).","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DEV""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
 "Act.participant:frParticipantDispositifAutomatique.contextControlCode","Act.participant.contextControlCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAContextControl|2.0.3-sd","",,,,"Participant2.contextControlCode",0,1,"",""
 "Act.participant:frParticipantDispositifAutomatique.sdtcFunctionCode","Act.participant.sdtcFunctionCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
@@ -322,8 +318,8 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 "Act.participant:frParticipantDispositifAutomatique.participantRole","Act.participant.participantRole","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-role|0.1.0]]} {[]}
 ","Rôle du participant dans l'acte","Rôle du participant dans l'acte","","","","","","","","","",,,,,"",,,,"Participant2.participantRole",1,1,"",""
 "Act.entryRelationship","Act.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Act.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:procedure}
+profile:organizer}profile:observation}profile:act}profile:observationMedia}","",,"open","Act.entryRelationship",0,*,"",""
 "Act.entryRelationship:frPrelevement","Act.entryRelationship","frPrelevement","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Act.entryRelationship",0,*,"",""
 "Act.entryRelationship:frPrelevement.nullFlavor","Act.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -357,15 +353,15 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Act.entryRelationship:frPrelevement.seperatableInd","Act.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Act.entryRelationship:frPrelevement.act","Act.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Act.entryRelationship:frPrelevement.act","Act.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Act.entryRelationship:frPrelevement.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Act.entryRelationship:frPrelevement.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Act.entryRelationship:frPrelevement.observation","Act.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Act.entryRelationship:frPrelevement.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Act.entryRelationship:frPrelevement.observationMedia","Act.entryRelationship.observationMedia","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
-"Act.entryRelationship:frPrelevement.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+"Act.entryRelationship:frPrelevement.organizer","Act.entryRelationship.organizer","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
 "Act.entryRelationship:frPrelevement.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
@@ -408,17 +404,17 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.seperatableInd","Act.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.act","Act.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.act","Act.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.observation","Act.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.observationMedia","Act.entryRelationship.observationMedia","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
 "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Act.entryRelationship:frBatterieExamensDeBiologieMedicale.procedure","Act.entryRelationship.procedure","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.regionOfInterest","Act.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
@@ -459,17 +455,17 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Act.entryRelationship:frIsolatMicrobiologique.seperatableInd","Act.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Act.entryRelationship:frIsolatMicrobiologique.act","Act.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Act.entryRelationship:frIsolatMicrobiologique.act","Act.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Act.entryRelationship:frIsolatMicrobiologique.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Act.entryRelationship:frIsolatMicrobiologique.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Act.entryRelationship:frIsolatMicrobiologique.observation","Act.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Act.entryRelationship:frIsolatMicrobiologique.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Act.entryRelationship:frIsolatMicrobiologique.observationMedia","Act.entryRelationship.observationMedia","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
 "Act.entryRelationship:frIsolatMicrobiologique.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-isolat-microbiologique|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Act.entryRelationship:frIsolatMicrobiologique.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Act.entryRelationship:frIsolatMicrobiologique.procedure","Act.entryRelationship.procedure","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Act.entryRelationship:frIsolatMicrobiologique.regionOfInterest","Act.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
@@ -510,17 +506,17 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.seperatableInd","Act.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.act","Act.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.act","Act.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
 "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.observationMedia","Act.entryRelationship.observationMedia","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
-"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.organizer","Act.entryRelationship.organizer","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.procedure","Act.entryRelationship.procedure","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.regionOfInterest","Act.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
@@ -565,13 +561,13 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Act.entryRelationship:frCommentaireER.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Act.entryRelationship:frCommentaireER.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Act.entryRelationship:frCommentaireER.observation","Act.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
-"Act.entryRelationship:frCommentaireER.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Act.entryRelationship:frCommentaireER.observationMedia","Act.entryRelationship.observationMedia","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
-"Act.entryRelationship:frCommentaireER.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+"Act.entryRelationship:frCommentaireER.organizer","Act.entryRelationship.organizer","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Act.entryRelationship:frCommentaireER.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Act.entryRelationship:frCommentaireER.procedure","Act.entryRelationship.procedure","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Act.entryRelationship:frCommentaireER.regionOfInterest","Act.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
@@ -612,17 +608,17 @@ Fixé: @code = aborted","Niveau de complétude","","","","","","","","","",,"req
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Act.entryRelationship:frImageIllustrative.seperatableInd","Act.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Act.entryRelationship:frImageIllustrative.act","Act.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Act.entryRelationship:frImageIllustrative.act","Act.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Act.entryRelationship:frImageIllustrative.encounter","Act.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Act.entryRelationship:frImageIllustrative.observation","Act.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Act.entryRelationship:frImageIllustrative.observation","Act.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Act.entryRelationship:frImageIllustrative.observationMedia","Act.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
-"Act.entryRelationship:frImageIllustrative.organizer","Act.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
+"Act.entryRelationship:frImageIllustrative.organizer","Act.entryRelationship.organizer","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.organizer",0,1,"",""
-"Act.entryRelationship:frImageIllustrative.procedure","Act.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Act.entryRelationship:frImageIllustrative.procedure","Act.entryRelationship.procedure","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "Act.entryRelationship:frImageIllustrative.regionOfInterest","Act.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""

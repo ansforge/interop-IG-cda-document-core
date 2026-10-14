@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Document PDF copie 
 
- 
-Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-document-p
   "name" : "FRCDASectionDocumentPDFCopie",
   "title" : "CDA - FR Document PDF copie",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Commentaire ER 
 
- 
-Entrée FR-Commentaire-ER: IHE-PCC - Comments L’entrée FR-Commentaire-ER est un élément qui permet de joindre un commentaire à une entrée ou à une section. Note : IHE PCC a limité l’utilisation de l’élément « Comments » (1.3.6.1.4.1.19376.1.5.3.1.4.2) aux entrées de type observation et organizer. Ce n’est pas le cas dans CDD pour l’élément « Comment » (2.16.840.1.113883.10.20.1.40). Dans le CI-SIS, le choix a été fait de ne pas limiter l’utilisation de l’entrée FR-Commentaire-ER (1.3.6.1.4.1.19376.1.5.3.1.4.2) comme dans CCD. Lorsque l’entrée FR-Commentaire-ER est utilisée dans une entrée : de type organizer : l’utiliser dans un élément component avec l’attribut type-Code='COMP'.de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode='SUBJ' et inversionInd='true'. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Batterie examens de biologie medicale](StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.md), [CDA - FR Evaluation Composant N2](StructureDefinition-fr-cda-evaluation-composant-n2.md), [CDA - FR Evaluation Composant](StructureDefinition-fr-cda-evaluation-composant.md), [CDA - FR Evaluation](StructureDefinition-fr-cda-evaluation.md)... Show 8 more, [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md), [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md), [CDA - FR Probleme](StructureDefinition-fr-cda-probleme.md), [CDA - FR Resultat examens de biologie element clinique pertinent](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md), [CDA - FR Resultat](StructureDefinition-fr-cda-resultat.md), [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md), [CDA - FR Vaccin recommande](StructureDefinition-fr-cda-vaccin-recommande.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-commentair
   "name" : "FRCDACommentaireER",
   "title" : "CDA - FR Commentaire ER",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

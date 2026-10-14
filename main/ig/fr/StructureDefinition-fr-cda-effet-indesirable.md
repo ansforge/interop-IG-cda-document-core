@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Effet indesirable 
 
- 
-Entrée FR-Effet-indesirable: Cette entrée permet de décrire un effet indésirable prévisible lié à un médicament. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md)
@@ -34,6 +31,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 17 éléments
  Must-Support : 12 éléments
+ Interdit : 5 éléments
 
 **Structures**
 
@@ -50,7 +48,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  **Vue différentielle** 
 
@@ -70,6 +68,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 17 éléments
  Must-Support : 12 éléments
+ Interdit : 5 éléments
 
 **Structures**
 
@@ -86,7 +85,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  
 
@@ -130,7 +129,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
   "name" : "FRCDAEffetIndesirable",
   "title" : "CDA - FR Effet indesirable",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -327,8 +326,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "substanceAdministration"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },
@@ -347,6 +350,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
       "id" : "Observation.entryRelationship:frTraitement.typeCode",
       "path" : "Observation.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "Observation.entryRelationship:frTraitement.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frTraitement.substanceAdministration",
@@ -378,6 +386,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
       }]
     },
     {
+      "id" : "Observation.entryRelationship:frProbleme.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frImputabiliteEffetIndesirable",
       "path" : "Observation.entryRelationship",
       "sliceName" : "frImputabiliteEffetIndesirable",
@@ -402,6 +415,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-imputabilite-effet-indesirable|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frImputabiliteEffetIndesirable.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frGraviteEffetIndesirable",
@@ -430,6 +448,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
       }]
     },
     {
+      "id" : "Observation.entryRelationship:frGraviteEffetIndesirable.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frEvolutionEffetIndesirable",
       "path" : "Observation.entryRelationship",
       "sliceName" : "frEvolutionEffetIndesirable",
@@ -454,6 +477,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-effet-in
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evolution-effet-indesirable|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frEvolutionEffetIndesirable.substanceAdministration",
+      "path" : "Observation.entryRelationship.substanceAdministration",
+      "max" : "0"
     }]
   }
 }

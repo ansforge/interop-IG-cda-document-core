@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Plan de soins 
 
- 
-IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-plan-de-so
   "name" : "FRCDASectionPlanDeSoins",
   "title" : "CDA - FR Plan de soins",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -205,40 +202,20 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-plan-de-so
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrées Acte (procedure), Demande d'examen ou de suivi (observation), Traitement ou Vaccin recommandé (substanceAdministration) et/ou Rencontre (encounter)",
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frActe",
-      "path" : "Section.entry",
-      "sliceName" : "frActe",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frActe.procedure",
-      "path" : "Section.entry.procedure",
-      "short" : "Entrée Acte",
+      "id" : "Section.entry.encounter",
+      "path" : "Section.entry.encounter",
+      "short" : "Entrée Rencontre",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Encounter",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-rencontre|0.1.0"]
       }]
     },
     {
-      "id" : "Section.entry:frDemandeDexamenOuDeSuivi",
-      "path" : "Section.entry",
-      "sliceName" : "frDemandeDexamenOuDeSuivi",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frDemandeDexamenOuDeSuivi.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Demande d'examen ou de suivi",
       "type" : [{
@@ -247,51 +224,22 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-plan-de-so
       }]
     },
     {
-      "id" : "Section.entry:frTraitement",
-      "path" : "Section.entry",
-      "sliceName" : "frTraitement",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frTraitement.substanceAdministration",
-      "path" : "Section.entry.substanceAdministration",
-      "short" : "Entrée Traitement",
+      "id" : "Section.entry.procedure",
+      "path" : "Section.entry.procedure",
+      "short" : "Entrée Acte",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Procedure",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte|0.1.0"]
       }]
     },
     {
-      "id" : "Section.entry:frVaccinRecommande",
-      "path" : "Section.entry",
-      "sliceName" : "frVaccinRecommande",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frVaccinRecommande.substanceAdministration",
+      "id" : "Section.entry.substanceAdministration",
       "path" : "Section.entry.substanceAdministration",
-      "short" : "Entrée Vaccin recommandé",
+      "short" : "Entrée Traitement ou Entrée Vaccin recommandé",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-vaccin-recommande|0.1.0"]
-      }]
-    },
-    {
-      "id" : "Section.entry:frRencontre",
-      "path" : "Section.entry",
-      "sliceName" : "frRencontre",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frRencontre.encounter",
-      "path" : "Section.entry.encounter",
-      "short" : "Entrée Rencontre",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Encounter",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-rencontre|0.1.0"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0",
+        "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-vaccin-recommande|0.1.0"]
       }]
     }]
   }

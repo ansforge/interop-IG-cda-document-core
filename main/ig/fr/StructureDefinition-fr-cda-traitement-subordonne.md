@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Traitement subordonne 
 
- 
-Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément 'precondition' pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Traitement](StructureDefinition-fr-cda-traitement.md)
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "name" : "FRCDATraitementSubordonne",
   "title" : "CDA - FR Traitement subordonne",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -299,7 +296,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
       "id" : "SubstanceAdministration.consumable",
       "path" : "SubstanceAdministration.consumable",
       "short" : "Médicament: \r\n\nPour les doses progressives, fractionnées ou conditionnelles, utilser un nullFlavor='NA'.\nPour les combinaisons de médicaments, chaque entrée <substanceAdministration> subordonnée permet d'indiquer le produit entrant dans la combinaison.",
-      "definition" : "Médicament",
+      "definition" : "Médicament"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Probleme 
 
- 
-Entrée FR-Probleme: IHE-PCC - Problem-Entry. Cette entrée permet de décrire un problème du patient (une pathologie par exemple) en précisant : Le type de problème observé : problème, plainte, symptôme, diagnostic, etc. Le problème observé (en général, la pathologie observée), La sévérité, Le statut du problème (sauf pour une réaction à une allergie/hypersensibilité), Le statut clinique du patient (sauf pour une réaction à une allergie/hypersensibilité), Un commentaire. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergie ou hypersensibilite](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md), [CDA - FR Effet indesirable](StructureDefinition-fr-cda-effet-indesirable.md), [CDA - FR Liste des problemes](StructureDefinition-fr-cda-liste-des-problemes.md), [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md)... Show 2 more, [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md) and [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
@@ -34,6 +31,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 14 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 17 éléments
+ Interdit : 5 éléments
 
 **Structures**
 
@@ -50,7 +48,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  **Vue différentielle** 
 
@@ -70,6 +68,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 14 éléments(4 éléments obligatoire(s) imbriqué(s))
  Must-Support : 17 éléments
+ Interdit : 5 éléments
 
 **Structures**
 
@@ -86,7 +85,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  
 
@@ -130,7 +129,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
   "name" : "FRCDAProbleme",
   "title" : "CDA - FR Probleme",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -351,8 +350,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -375,6 +378,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
       "id" : "Observation.entryRelationship:frSeverite.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : true
+    },
+    {
+      "id" : "Observation.entryRelationship:frSeverite.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frSeverite.observation",
@@ -403,6 +411,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
       "patternBoolean" : false
     },
     {
+      "id" : "Observation.entryRelationship:frStatutDuProbleme.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frStatutDuProbleme.observation",
       "path" : "Observation.entryRelationship.observation",
       "type" : [{
@@ -429,6 +442,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
       "patternBoolean" : false
     },
     {
+      "id" : "Observation.entryRelationship:frStatutCliniqueDuPatient.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "Observation.entryRelationship:frStatutCliniqueDuPatient.observation",
       "path" : "Observation.entryRelationship.observation",
       "type" : [{
@@ -453,6 +471,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
       "id" : "Observation.entryRelationship:frCertitude.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : true
+    },
+    {
+      "id" : "Observation.entryRelationship:frCertitude.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frCertitude.observation",
@@ -487,6 +510,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-probleme
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frCommentaireER.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Observation.reference",

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM SOP instance observation subordonnee 
 
- 
-Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM SOP instance observation](StructureDefinition-fr-cda-dicom-sop-instance-observation.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-sop-
   "name" : "FRCDADICOMSOPInstanceObservationSubordonnee",
   "title" : "CDA - FR DICOM SOP instance observation subordonnee",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -212,8 +209,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-sop-
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },

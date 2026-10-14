@@ -119,7 +119,7 @@
 ","","The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values.","","","","","","","","","",,,,,"",,,,"IVL_TS.center",0,1,"",""
 "Act.effectiveTime.width","Act.effectiveTime.width","","","Width",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PQ {[]} {[]}
 ","","The difference between high and low boundary. The purpose of distinguishing a width property is to handle all cases of incomplete information symmetrically. In any interval representation only two of the three properties high, low, and width need to be stated and the third can be derived.","","","","","","","","","",,,,,"",,,,"IVL_TS.width",0,1,"",""
-"Act.effectiveTime.high","Act.effectiveTime.high","","","High Boundary",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVXB-TS {[]} {[]}
+"Act.effectiveTime.high","Act.effectiveTime.high","","","High Boundary",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVXB-TS {[]} {[]}
 ","","This is the high limit of the interval.","","","","","","","","","",,,,,"",,,,"IVL_TS.high",0,1,"",""
 "Act.priorityCode","Act.priorityCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Act.priorityCode",0,1,"",""
@@ -138,7 +138,7 @@
 "Act.participant","Act.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Act.participant",0,*,"",""
 "Act.entryRelationship","Act.entryRelationship","","","",1,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","type:$this}
+","","","","","","","","","","","",,,,,"","value:typeCode}
 ","",,"open","Act.entryRelationship",0,*,"",""
 "Act.entryRelationship:frAllergieOuHypersensibilite","Act.entryRelationship","frAllergieOuHypersensibilite","","",1,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Act.entryRelationship",0,*,"",""

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - informant 
 
- 
-L'élément de l'en-tête du CDA informant permet d'identifier un informateur, une personne de confiance, une personne à prévenir en cas d’urgence, un aidant ou une personne aidée. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - clinicalDocument](StructureDefinition-fr-cda-clinical-document.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md), [CDA - FR Rencontre](StructureDefinition-fr-cda-rencontre.md) and [CDA - FR Statut fonctionnel](StructureDefinition-fr-cda-statut-fonctionnel.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-informant.
   "name" : "FRCDAInformant",
   "title" : "CDA - informant",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

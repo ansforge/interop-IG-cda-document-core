@@ -135,6 +135,7 @@
     <sch:rule context="f:Encounter/f:participant/f:participantRole">
       <sch:assert test="count(f:nullFlavor) &lt;= 1">nullFlavor: maximum cardinality of 'nullFlavor' is 1</sch:assert>
       <sch:assert test="count(f:typeId) &lt;= 1">typeId: maximum cardinality of 'typeId' is 1</sch:assert>
+      <sch:assert test="count(f:classCode) &gt;= 1">classCode: minimum cardinality of 'classCode' is 1</sch:assert>
       <sch:assert test="count(f:classCode) &lt;= 1">classCode: maximum cardinality of 'classCode' is 1</sch:assert>
       <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:playingDevice) &lt;= 1">playingDevice: maximum cardinality of 'playingDevice' is 1</sch:assert>

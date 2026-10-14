@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Observation 
 
- 
-Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. Cette entrée permet d’enregistrer une observation avec une valeur codée ou textuelle. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md) and [CDA - FR DICOM Historique medical](StructureDefinition-fr-cda-dicom-historique-medical.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-obse
   "name" : "FRCDADICOMObservation",
   "title" : "CDA - FR DICOM Observation",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -306,8 +303,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-obse
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },

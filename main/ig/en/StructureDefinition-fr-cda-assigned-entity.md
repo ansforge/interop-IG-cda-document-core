@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - assignedEntity 
 
- 
-L'élément de l'en-tête du CDA assignedEntity est utilisé dans les éléments suivants : dataEnterer, informant, legalAuthenticator, authenticator, performer, responsibleParty et encounterParticipant. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - authenticator](StructureDefinition-fr-cda-authenticator.md), [CDA - dataEnterer](StructureDefinition-fr-cda-data-enterer.md), [CDA - FR Dispositif medical](StructureDefinition-fr-cda-dispositif-medical.md), [CDA - FR Informant APSR](StructureDefinition-fr-cda-informant-apsr.md)... Show 6 more, [CDA - informant](StructureDefinition-fr-cda-informant.md), [CDA - FR Laboratoire executant](StructureDefinition-fr-cda-laboratoire-executant.md), [CDA - legalAuthenticator](StructureDefinition-fr-cda-legal-authenticator.md), [CDA - FR Performer corps](StructureDefinition-fr-cda-performer-corps.md), [CDA - performer](StructureDefinition-fr-cda-performer.md) and [CDA - FR Rencontre](StructureDefinition-fr-cda-rencontre.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-assigned-e
   "name" : "FRCDAAssignedEntity",
   "title" : "CDA - assignedEntity",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,15 +2,6 @@
 
 ## Modèle logique: CDA - FR Resultats examens de biologie medicale 
 
- 
-Entrée FR-Resultats-examens-de-biologie-medicale: IHE-PCC - Laboratory Report Data Processing. 
-* Le modèle de l'entrée Résultats d'examens de biologie médicale est identique quelle que soit la discipline de biologie. Cette entrée de type act peut comporter une liste d'éléments fils entryRelationship de typeCode='COMP'. Les éléments ci-dessous ne sont utilisables que dans l'entrée Résultats d'examens de biologie médicale :
-* Prélèvement (Specimen Collection – 1.3.6.1.4.1.19376.1.3.1.2)
-* Batterie d'examens de biologie médicale (Laboratory Battery Organizer – 1.3.6.1.4.1.19376.1.3.1.4)
-* Isolats microbiologiques (Laboratory Isolate Organizer – 1.3.6.1.4.1.19376.1.3.1.5)
-* Résultat d'examen / élément clinique pertinent (Laboratory Observation – 1.3.6.1.4.1.19376.1.3.1.6)
- 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR CR BIO Chapitre](StructureDefinition-fr-cda-cr-bio-chapitre.md) and [CDA - FR CR BIO Sous Chapitre](StructureDefinition-fr-cda-cr-bio-sous-chapitre.md)
@@ -40,6 +31,7 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 Obligatoire : 7 éléments(3 éléments obligatoire(s) imbriqué(s))
  Must-Support : 15 éléments
+ Interdit : 24 éléments
 
 **Structures**
 
@@ -64,7 +56,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slic
 * The element 1 is sliced based on the value of Act.templateId
 * The element 1 is sliced based on the value of Act.participant
 * The element 1 is sliced based on the value of Act.participant.templateId
-* The element 1 is sliced based on the value of Act.entryRelationship
+* The element 5 is sliced based on the values of Act.entryRelationship
 
  **Vue différentielle** 
 
@@ -84,6 +76,7 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 Obligatoire : 7 éléments(3 éléments obligatoire(s) imbriqué(s))
  Must-Support : 15 éléments
+ Interdit : 24 éléments
 
 **Structures**
 
@@ -108,7 +101,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slic
 * The element 1 is sliced based on the value of Act.templateId
 * The element 1 is sliced based on the value of Act.participant
 * The element 1 is sliced based on the value of Act.participant.templateId
-* The element 1 is sliced based on the value of Act.entryRelationship
+* The element 5 is sliced based on the values of Act.entryRelationship
 
  
 
@@ -152,7 +145,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDAResultatsExamensDeBiologieMedicale",
   "title" : "CDA - FR Resultats examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -350,14 +343,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "min" : 1
     },
     {
-      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateId-other",
+      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur",
       "path" : "Act.participant.templateId",
-      "sliceName" : "templateId-other",
+      "sliceName" : "templateIdIHEValideur",
       "min" : 1,
       "max" : "1"
     },
     {
-      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateId-other.root",
+      "id" : "Act.participant:frParticipantValideurResultats.templateId:templateIdIHEValideur.root",
       "path" : "Act.participant.templateId.root",
       "min" : 1,
       "patternString" : "1.3.6.1.4.1.19376.1.3.3.1.5"
@@ -409,8 +402,24 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "path" : "Act.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "procedure"
+        },
+        {
+          "type" : "profile",
+          "path" : "organizer"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
+        },
+        {
+          "type" : "profile",
+          "path" : "observationMedia"
         }],
         "rules" : "open"
       },
@@ -427,6 +436,26 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "id" : "Act.entryRelationship:frPrelevement.typeCode",
       "path" : "Act.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "Act.entryRelationship:frPrelevement.act",
+      "path" : "Act.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frPrelevement.observation",
+      "path" : "Act.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frPrelevement.observationMedia",
+      "path" : "Act.entryRelationship.observationMedia",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frPrelevement.organizer",
+      "path" : "Act.entryRelationship.organizer",
+      "max" : "0"
     },
     {
       "id" : "Act.entryRelationship:frPrelevement.procedure",
@@ -449,12 +478,32 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "patternCode" : "COMP"
     },
     {
+      "id" : "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.act",
+      "path" : "Act.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.observation",
+      "path" : "Act.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.observationMedia",
+      "path" : "Act.entryRelationship.observationMedia",
+      "max" : "0"
+    },
+    {
       "id" : "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.organizer",
       "path" : "Act.entryRelationship.organizer",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale|0.1.0"]
       }]
+    },
+    {
+      "id" : "Act.entryRelationship:frBatterieExamensDeBiologieMedicale.procedure",
+      "path" : "Act.entryRelationship.procedure",
+      "max" : "0"
     },
     {
       "id" : "Act.entryRelationship:frIsolatMicrobiologique",
@@ -469,12 +518,32 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "patternCode" : "COMP"
     },
     {
+      "id" : "Act.entryRelationship:frIsolatMicrobiologique.act",
+      "path" : "Act.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frIsolatMicrobiologique.observation",
+      "path" : "Act.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frIsolatMicrobiologique.observationMedia",
+      "path" : "Act.entryRelationship.observationMedia",
+      "max" : "0"
+    },
+    {
       "id" : "Act.entryRelationship:frIsolatMicrobiologique.organizer",
       "path" : "Act.entryRelationship.organizer",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-isolat-microbiologique|0.1.0"]
       }]
+    },
+    {
+      "id" : "Act.entryRelationship:frIsolatMicrobiologique.procedure",
+      "path" : "Act.entryRelationship.procedure",
+      "max" : "0"
     },
     {
       "id" : "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent",
@@ -489,12 +558,32 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "patternCode" : "COMP"
     },
     {
+      "id" : "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.act",
+      "path" : "Act.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.observation",
       "path" : "Act.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0"]
       }]
+    },
+    {
+      "id" : "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.observationMedia",
+      "path" : "Act.entryRelationship.observationMedia",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.organizer",
+      "path" : "Act.entryRelationship.organizer",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frResultatExamensDeBiologieElementCliniquePertinent.procedure",
+      "path" : "Act.entryRelationship.procedure",
+      "max" : "0"
     },
     {
       "id" : "Act.entryRelationship:frCommentaireER",
@@ -517,6 +606,26 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       }]
     },
     {
+      "id" : "Act.entryRelationship:frCommentaireER.observation",
+      "path" : "Act.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frCommentaireER.observationMedia",
+      "path" : "Act.entryRelationship.observationMedia",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frCommentaireER.organizer",
+      "path" : "Act.entryRelationship.organizer",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frCommentaireER.procedure",
+      "path" : "Act.entryRelationship.procedure",
+      "max" : "0"
+    },
+    {
       "id" : "Act.entryRelationship:frImageIllustrative",
       "path" : "Act.entryRelationship",
       "sliceName" : "frImageIllustrative",
@@ -529,12 +638,32 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "patternCode" : "COMP"
     },
     {
+      "id" : "Act.entryRelationship:frImageIllustrative.act",
+      "path" : "Act.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frImageIllustrative.observation",
+      "path" : "Act.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Act.entryRelationship:frImageIllustrative.observationMedia",
       "path" : "Act.entryRelationship.observationMedia",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0"]
       }]
+    },
+    {
+      "id" : "Act.entryRelationship:frImageIllustrative.organizer",
+      "path" : "Act.entryRelationship.organizer",
+      "max" : "0"
+    },
+    {
+      "id" : "Act.entryRelationship:frImageIllustrative.procedure",
+      "path" : "Act.entryRelationship.procedure",
+      "max" : "0"
     }]
   }
 }

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Raison de la recommandation 
 
- 
-IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-raison-d
   "name" : "FRCDASectionRaisonDeLaRecommandation",
   "title" : "CDA - FR Raison de la recommandation",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -269,8 +266,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-raison-d
       "path" : "Section.entry",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },

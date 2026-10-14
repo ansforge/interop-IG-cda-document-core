@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Demande d examen ou de suivi 
 
- 
-Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L'entrée Demande d'examen / de suivi est une observation qui permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins. Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-demande-
   "name" : "FRCDADemandeDExamenOuDeSuivi",
   "title" : "CDA - FR Demande d examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

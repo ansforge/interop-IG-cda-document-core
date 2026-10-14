@@ -160,8 +160,8 @@
 "Encounter.participant","Encounter.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0]]} {[]}
 ","Lieu d'exécution / Entité juridique responsable de l'événement / Autres participants - Les attributs de cet élément prennent les valeurs suivantes : @typeCode='LOC' pour un Lieu d'éxécution - @typeCode='RESP' pour une Entité juridique - Les attributs du sous-élément participantRole prennent les valeurs suivantes : @classCode='SDLOC' pour un Lieu d'éxécution - Les attributs du sous-élément playingEntity prennent les valeurs suivantes : @classCode='PLC' pour un Lieu d'éxécution - @classCode='ENT' pour une Entité juridique @determinerCode='INSTANCE' pour un Lieu d'éxécution ou une Entité Juridique","","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"",""
 "Encounter.entryRelationship","Encounter.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Encounter.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:observation}
+profile:act}","",,"open","Encounter.entryRelationship",0,*,"",""
 "Encounter.entryRelationship:frSimpleObservation","Encounter.entryRelationship","frSimpleObservation","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Caractéristique de l'évènement","","","","","","","","","","",,,,,"",,,,"Encounter.entryRelationship",0,*,"",""
 "Encounter.entryRelationship:frSimpleObservation.nullFlavor","Encounter.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -195,7 +195,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Encounter.entryRelationship:frSimpleObservation.seperatableInd","Encounter.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Encounter.entryRelationship:frSimpleObservation.act","Encounter.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Encounter.entryRelationship:frSimpleObservation.act","Encounter.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Encounter.entryRelationship:frSimpleObservation.encounter","Encounter.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -250,7 +250,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Encounter.entryRelationship:frCommentaireER.encounter","Encounter.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Encounter.entryRelationship:frCommentaireER.observation","Encounter.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Encounter.entryRelationship:frCommentaireER.observation","Encounter.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Encounter.entryRelationship:frCommentaireER.observationMedia","Encounter.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -301,7 +301,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Encounter.entryRelationship:frReferenceInterne.encounter","Encounter.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Encounter.entryRelationship:frReferenceInterne.observation","Encounter.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Encounter.entryRelationship:frReferenceInterne.observation","Encounter.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Encounter.entryRelationship:frReferenceInterne.observationMedia","Encounter.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -352,7 +352,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Encounter.entryRelationship:frTransportDuPatient.encounter","Encounter.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Encounter.entryRelationship:frTransportDuPatient.observation","Encounter.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Encounter.entryRelationship:frTransportDuPatient.observation","Encounter.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Encounter.entryRelationship:frTransportDuPatient.observationMedia","Encounter.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -399,7 +399,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Encounter.entryRelationship:frStatut.seperatableInd","Encounter.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Encounter.entryRelationship:frStatut.act","Encounter.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Encounter.entryRelationship:frStatut.act","Encounter.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Encounter.entryRelationship:frStatut.encounter","Encounter.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -454,7 +454,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Encounter.entryRelationship:frTransportDuProfessionnel.encounter","Encounter.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Encounter.entryRelationship:frTransportDuProfessionnel.observation","Encounter.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Encounter.entryRelationship:frTransportDuProfessionnel.observation","Encounter.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Encounter.entryRelationship:frTransportDuProfessionnel.observationMedia","Encounter.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""

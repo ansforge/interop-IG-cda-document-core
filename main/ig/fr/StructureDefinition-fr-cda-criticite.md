@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Criticite 
 
- 
-Entrée FR-Criticite: Cette entrée permet de fournir la criticité d'une l’allergie ou hypersensibilité. Elle est utilisée exclusivement dans un lien entryRelationship grâce auquel elle est liée à l’élément qu’elle qualifie. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergie ou hypersensibilite](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md)
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-criticit
   "name" : "FRCDACriticite",
   "title" : "CDA - FR Criticite",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

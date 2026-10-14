@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR resultats 
 
- 
-Entrée FR-resultats: L'entrée 'FR-Resultats' est une entrée de type 'organizer' regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…). 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Resultats](StructureDefinition-fr-cda-section-resultats.md)
@@ -48,7 +45,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Organizer.templateId
-* The element 1 is sliced based on the value of Organizer.component
 
  **Vue différentielle** 
 
@@ -82,7 +78,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Organizer.templateId
-* The element 1 is sliced based on the value of Organizer.component
 
  
 
@@ -126,7 +121,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDAResultats",
   "title" : "CDA - FR resultats",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -259,29 +254,15 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
     {
       "id" : "Organizer.component",
       "path" : "Organizer.component",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
       "min" : 1,
-      "max" : "1",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frResultat",
-      "path" : "Organizer.component",
-      "sliceName" : "frResultat",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Organizer.component:frResultat.observation",
+      "id" : "Organizer.component.observation",
       "path" : "Organizer.component.observation",
       "short" : "Entrée FR-Resultat",
       "definition" : "Entrée FR-Resultat",
+      "min" : 1,
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat|0.1.0"]

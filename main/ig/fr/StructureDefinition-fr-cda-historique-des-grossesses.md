@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Historique des grossesses 
 
- 
-IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -45,7 +42,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 
  **Vue différentielle** 
 
@@ -76,7 +72,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 
  
 
@@ -120,7 +115,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
   "name" : "FRCDASectionHistoriqueDesGrossesses",
   "title" : "CDA - FR Historique des grossesses",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -254,25 +249,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrées Observation sur la grossesse (observation) et/ou Historique des grossesses (organizer)",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frObservationSurLaGrossesse",
-      "path" : "Section.entry",
-      "sliceName" : "frObservationSurLaGrossesse",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frObservationSurLaGrossesse.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Observation sur la grossesse",
       "type" : [{
@@ -281,14 +263,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-historiq
       }]
     },
     {
-      "id" : "Section.entry:frHistoriqueDeLaGrossesse",
-      "path" : "Section.entry",
-      "sliceName" : "frHistoriqueDeLaGrossesse",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frHistoriqueDeLaGrossesse.organizer",
+      "id" : "Section.entry.organizer",
       "path" : "Section.entry.organizer",
       "short" : "Entrée Historique des grossesses",
       "type" : [{

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Documents ajoutes 
 
- 
-Liste de documents ajoutés 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-documents-
   "name" : "FRCDASectionDocumentsAjoutes",
   "title" : "CDA - FR Documents ajoutes",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,7 +85,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-documents-
   "differential" : {
     "element" : [{
       "id" : "Section",
-      "path" : "Section"
+      "path" : "Section",
+      "constraint" : [{
+        "key" : "fr-documents-ajoutes-entries",
+        "severity" : "error",
+        "human" : "La section contient au moins une entrée Document attaché (organizer) et au plus une entrée Simple observation (observation).",
+        "expression" : "entry.where(organizer.exists()).count() >= 1 and entry.where(observation.exists()).count() <= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-documents-ajoutes|0.1.0"
+      }]
     },
     {
       "id" : "Section.templateId",
@@ -173,25 +177,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-documents-
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrée Simple observation (observation, 0..1) et entrées Document attaché (organizer, 1..*)",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frSimpleObservation",
-      "path" : "Section.entry",
-      "sliceName" : "frSimpleObservation",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frSimpleObservation.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Simple observation Permet d'indiquer la nature des documents ajoutés",
       "definition" : "Entrée Simple observation",
@@ -201,14 +192,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-documents-
       }]
     },
     {
-      "id" : "Section.entry:frDocumentAttache",
-      "path" : "Section.entry",
-      "sliceName" : "frDocumentAttache",
-      "min" : 1,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frDocumentAttache.organizer",
+      "id" : "Section.entry.organizer",
       "path" : "Section.entry.organizer",
       "short" : "Entrée Document attaché",
       "type" : [{

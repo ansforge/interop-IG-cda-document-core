@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Simple Observation 
 
- 
-Entrée FR-Simple-Observation: IHE-PCC - Simple-Observation. Cette entrée est une entrée de base très peu contrainte sur lequel des contraintes spécifiques peuvent être appliquées sur les éléments ou les vocabulaires pour constituer d'autres types d'observations. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md), [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md)... Show 6 more, [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md), [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md), [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md), [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md), [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md) and [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md)
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-simple-o
   "name" : "FRCDASimpleObservation",
   "title" : "CDA - FR Simple Observation",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

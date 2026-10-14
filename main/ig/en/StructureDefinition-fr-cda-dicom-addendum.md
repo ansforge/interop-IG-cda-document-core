@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Addendum 
 
- 
-DICOM Part 20 - Addendum Section 
-* La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.
- 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-adde
   "name" : "FRCDASectionDICOMAddendum",
   "title" : "CDA - FR DICOM Addendum",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Evaluation Composant 
 
- 
-Entrée FR-Evaluation-Composant: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Evaluation](StructureDefinition-fr-cda-evaluation.md)
@@ -32,6 +29,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 14 éléments(1 élément obligatoire(s) imbriqué(s))
  Must-Support : 14 éléments
+ Interdit : 2 éléments
 
 **Structures**
 
@@ -45,7 +43,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  **Vue différentielle** 
 
@@ -63,6 +61,7 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Obligatoire : 14 éléments(1 élément obligatoire(s) imbriqué(s))
  Must-Support : 14 éléments
+ Interdit : 2 éléments
 
 **Structures**
 
@@ -76,7 +75,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
+* The element 2 is sliced based on the values of Observation.entryRelationship
 
  
 
@@ -120,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
   "name" : "FRCDAEvaluationComposant",
   "title" : "CDA - FR Evaluation Composant",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -324,8 +323,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -348,6 +351,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
       "id" : "Observation.entryRelationship:frEvaluationComposantN2.inversionInd",
       "path" : "Observation.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Observation.entryRelationship:frEvaluationComposantN2.act",
+      "path" : "Observation.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Observation.entryRelationship:frEvaluationComposantN2.observation",
@@ -382,6 +390,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
+    },
+    {
+      "id" : "Observation.entryRelationship:frCommentaireER.observation",
+      "path" : "Observation.entryRelationship.observation",
+      "max" : "0"
     }]
   }
 }

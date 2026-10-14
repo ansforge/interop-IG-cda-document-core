@@ -2,12 +2,6 @@
 
 ## Logical Model: CDA - FR Isolat microbiologique 
 
- 
-Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate organizer. 
-* L'entrée Isolat microbiologique est une entrée de type 'organizer' qui est utilisée pour les comptes rendus comprenant des résultats de microbiologie.
-* Elle décrit un isolat (milieu de culture sur lequel a poussé un microorganisme) et les résultats d'examens obtenus sur cet isolat (antibiogramme, antifongigramme, sérotype, génotype …).
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md)
@@ -60,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-isolat-mic
   "name" : "FRCDAIsolatMicrobiologique",
   "title" : "CDA - FR Isolat microbiologique",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -309,97 +303,48 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-isolat-mic
     {
       "id" : "Organizer.component",
       "path" : "Organizer.component",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Batterie d'examens (organizer), résultat d'examen / élément clinique pertinent (observation), image ou graphe (observationMedia) et/ou commentaire (act)",
       "mustSupport" : true
     },
     {
-      "id" : "Organizer.component:frBatterieExamensDeBiologieMedicale",
-      "path" : "Organizer.component",
-      "sliceName" : "frBatterieExamensDeBiologieMedicale",
-      "short" : "Batterie d'examens de biologie médicale",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frBatterieExamensDeBiologieMedicale.typeCode",
+      "id" : "Organizer.component.typeCode",
       "path" : "Organizer.component.typeCode",
       "patternCode" : "COMP"
     },
     {
-      "id" : "Organizer.component:frBatterieExamensDeBiologieMedicale.organizer",
-      "path" : "Organizer.component.organizer",
+      "id" : "Organizer.component.act",
+      "path" : "Organizer.component.act",
+      "short" : "Commentaire de section interprétant l'ensemble des résultats",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frResultatExamensDeBiologieElementCliniquePertinent",
-      "path" : "Organizer.component",
-      "sliceName" : "frResultatExamensDeBiologieElementCliniquePertinent",
-      "short" : "Résultat d'examen / élément clinique pertinent",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frResultatExamensDeBiologieElementCliniquePertinent.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Organizer.component:frResultatExamensDeBiologieElementCliniquePertinent.observation",
+      "id" : "Organizer.component.observation",
       "path" : "Organizer.component.observation",
+      "short" : "Résultat d'examen / élément clinique pertinent",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frImageIllustrative",
-      "path" : "Organizer.component",
-      "sliceName" : "frImageIllustrative",
-      "short" : "Image ou graphe",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frImageIllustrative.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Organizer.component:frImageIllustrative.observationMedia",
+      "id" : "Organizer.component.observationMedia",
       "path" : "Organizer.component.observationMedia",
+      "short" : "Image ou graphe",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0"]
       }]
     },
     {
-      "id" : "Organizer.component:frCommentaireER",
-      "path" : "Organizer.component",
-      "sliceName" : "frCommentaireER",
-      "short" : "Commentaire de section interprétant l'ensemble des résultats",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Organizer.component:frCommentaireER.typeCode",
-      "path" : "Organizer.component.typeCode",
-      "patternCode" : "COMP"
-    },
-    {
-      "id" : "Organizer.component:frCommentaireER.act",
-      "path" : "Organizer.component.act",
+      "id" : "Organizer.component.organizer",
+      "path" : "Organizer.component.organizer",
+      "short" : "Batterie d'examens de biologie médicale",
       "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0"]
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Organizer",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale|0.1.0"]
       }]
     }]
   }

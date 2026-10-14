@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Traitement dispense 
 
- 
-Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry. Cette entrée de type supply permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Dispensation medicaments](StructureDefinition-fr-cda-dispensation-medicaments.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
   "name" : "FRCDATraitementDispense",
   "title" : "CDA - FR Traitement dispense",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -246,8 +243,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "path" : "Supply.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "substanceAdministration"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -273,6 +274,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "patternBoolean" : false
     },
     {
+      "id" : "Supply.entryRelationship:frReferenceItemPrescription.act",
+      "path" : "Supply.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "Supply.entryRelationship:frReferenceItemPrescription.substanceAdministration",
       "path" : "Supply.entryRelationship.substanceAdministration",
       "type" : [{
@@ -293,6 +299,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       "id" : "Supply.entryRelationship:frTraitement.typeCode",
       "path" : "Supply.entryRelationship.typeCode",
       "patternCode" : "COMP"
+    },
+    {
+      "id" : "Supply.entryRelationship:frTraitement.act",
+      "path" : "Supply.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Supply.entryRelationship:frTraitement.substanceAdministration",
@@ -330,6 +341,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       }]
     },
     {
+      "id" : "Supply.entryRelationship:frInstructionsAuPatient.substanceAdministration",
+      "path" : "Supply.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
       "id" : "Supply.entryRelationship:frNotesDuDispensateur",
       "path" : "Supply.entryRelationship",
       "sliceName" : "frNotesDuDispensateur",
@@ -357,6 +373,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
       }]
     },
     {
+      "id" : "Supply.entryRelationship:frNotesDuDispensateur.substanceAdministration",
+      "path" : "Supply.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
       "id" : "Supply.entryRelationship:frActeSubstitution",
       "path" : "Supply.entryRelationship",
       "sliceName" : "frActeSubstitution",
@@ -377,6 +398,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-traitement
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte-substitution|0.1.0"]
       }]
+    },
+    {
+      "id" : "Supply.entryRelationship:frActeSubstitution.substanceAdministration",
+      "path" : "Supply.entryRelationship.substanceAdministration",
+      "max" : "0"
     }]
   }
 }

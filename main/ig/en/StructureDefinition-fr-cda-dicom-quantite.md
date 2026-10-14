@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Quantite 
 
- 
-Entrée FR-DICOM-Quantite: DICOM Part 20 - Quantity Measurement. Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie, La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md) and [CDA - FR DICOM Observation](StructureDefinition-fr-cda-dicom-observation.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-quan
   "name" : "FRCDADICOMQuantite",
   "title" : "CDA - FR DICOM Quantite",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

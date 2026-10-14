@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Non remboursable 
 
- 
-Entrée FR-Non-remboursable: Cette observation permet d'indiquer si le traitement auquel elle est associée est non remboursable. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Dispositif medical](StructureDefinition-fr-cda-dispositif-medical.md) and [CDA - FR Traitement prescrit](StructureDefinition-fr-cda-traitement-prescrit.md)
@@ -116,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-non-remb
   "name" : "FRCDANonRemboursable",
   "title" : "CDA - FR Non remboursable",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

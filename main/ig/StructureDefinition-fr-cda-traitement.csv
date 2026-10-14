@@ -1,6 +1,7 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
 "SubstanceAdministration","SubstanceAdministration","","","",1,1,"","","","null {[]} {[]}
-","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+","Base for all types and resources","Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","fr-effectiveTime-traitement:Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'. {effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))}
+","n/a"
 "SubstanceAdministration.nullFlavor","SubstanceAdministration.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "SubstanceAdministration.realmCode","SubstanceAdministration.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
@@ -259,14 +260,7 @@ Si le traitement est en attente d'administration : moodCode='INT'","Si le traite
 "SubstanceAdministration.statusCode.translation","SubstanceAdministration.statusCode.translation","","","Translation",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","A set of other concept descriptors that translate this concept descriptor into other code systems.","","","","","","","","","",,,,,"",,,,"CD.translation",0,*,"",""
 "SubstanceAdministration.effectiveTime","SubstanceAdministration.effectiveTime","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS {[]} {[]}
-http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS {[]} {[]}","","","","","","","","","","","",,,,,"","pattern:operator}
-","",,"open","SubstanceAdministration.effectiveTime",0,*,"",""
-"SubstanceAdministration.effectiveTime:effectiveTimeDuree","SubstanceAdministration.effectiveTime","effectiveTimeDuree","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS {[]} {[]}
-http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS {[]} {[]}","Durée de traitement","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.effectiveTime",0,*,"","fr-operator-not-a:operator doit être différent de A {operator != 'A'}
-fr-effectiveTime-duree-type:La durée doit être IVL-TS {is(IVL_TS)}"
-"SubstanceAdministration.effectiveTime:effectiveTimeFrequence","SubstanceAdministration.effectiveTime","effectiveTimeFrequence","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS {[]} {[]}
-http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS {[]} {[]}","Fréquence d'administration","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.effectiveTime",0,*,"","fr-operator-a:operator doit être A {operator = 'A'}
-fr-effectiveTime-frequence-types:La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS {is(SXCM_TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)}"
+http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS {[]} {[]}","Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.effectiveTime",0,*,"",""
 "SubstanceAdministration.priorityCode","SubstanceAdministration.priorityCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"SubstanceAdministration.priorityCode",0,1,"",""
 "SubstanceAdministration.repeatNumber","SubstanceAdministration.repeatNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT {[]} {[]}
@@ -460,7 +454,8 @@ Le rythme d'administration permet d'indiquer la quantité de produit à administ
 Les sous-éléments 'low' et 'high' permettent de fournir le rythme minimal et maximal de l'administration. Dans le cas où le rythme est fixe, ces deux sous-éléments prendront les mêmes valeurs.
 L'argument @value permet d'indiquer la quantité de produit à administrer.
 L'argument @unit permet d'indiquer le rythme d'administration en combinant l'unité de quantité et l'unité de temps (séparés par le caractère ‘/'). Les unités sont exprimées selon le système de codage UCUM.
-Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.rateQuantity",0,1,"",""
+Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information.","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.rateQuantity",0,1,"","fr-rateQuantity-traitement:Le rythme d'administration porte soit un nullFlavor, soit les sous-éléments low et high. {nullFlavor.exists() or (low.exists() and high.exists())}
+"
 "SubstanceAdministration.rateQuantity.nullFlavor","SubstanceAdministration.rateQuantity.nullFlavor","","","Exceptional Value Detail",0,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "SubstanceAdministration.rateQuantity.unit","SubstanceAdministration.rateQuantity.unit","","","Unit of Measure",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -471,7 +466,7 @@ Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre
 ","","An alternative representation of the same physical quantity expressed in a different unit, of a different unit code system and possibly with a different value.","","","","","","","","","",,,,,"",,,,"PQ.translation",0,*,"",""
 "SubstanceAdministration.rateQuantity.operator","SubstanceAdministration.rateQuantity.operator","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point.","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""I""/>","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDASetOperator|2.0.3-sd","",,,,"IVL_PQ.operator",0,1,"",""
-"SubstanceAdministration.rateQuantity.low","SubstanceAdministration.rateQuantity.low","","","Low Boundary",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ {[]} {[]}
+"SubstanceAdministration.rateQuantity.low","SubstanceAdministration.rateQuantity.low","","","Low Boundary",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ {[]} {[]}
 ","","This is the low limit of the interval.","","","","","","","","","",,,,,"",,,,"IVL_PQ.low",0,1,"",""
 "SubstanceAdministration.rateQuantity.low.nullFlavor","SubstanceAdministration.rateQuantity.low.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -532,7 +527,7 @@ Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre
 ","","The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values.","","","","","","","","","",,,,,"",,,,"IVL_PQ.center",0,1,"",""
 "SubstanceAdministration.rateQuantity.width","SubstanceAdministration.rateQuantity.width","","","Width",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/PQ {[]} {[]}
 ","","The difference between high and low boundary. The purpose of distinguishing a width property is to handle all cases of incomplete information symmetrically. In any interval representation only two of the three properties high, low, and width need to be stated and the third can be derived.","","","","","","","","","",,,,,"",,,,"IVL_PQ.width",0,1,"",""
-"SubstanceAdministration.rateQuantity.high","SubstanceAdministration.rateQuantity.high","","","High Boundary",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ {[]} {[]}
+"SubstanceAdministration.rateQuantity.high","SubstanceAdministration.rateQuantity.high","","","High Boundary",0,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ {[]} {[]}
 ","","This is the high limit of the interval.","","","","","","","","","",,,,,"",,,,"IVL_PQ.high",0,1,"",""
 "SubstanceAdministration.rateQuantity.high.nullFlavor","SubstanceAdministration.rateQuantity.high.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -622,7 +617,7 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 ","","An alternative representation of the same physical quantity expressed in a different unit, of a different unit code system and possibly with a different value.","","","","","","","","","",,,,,"",,,,"PQ.translation",0,*,"",""
 "SubstanceAdministration.administrationUnitCode","SubstanceAdministration.administrationUnitCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm|3.0.0","",,,,"SubstanceAdministration.administrationUnitCode",0,1,"",""
-"SubstanceAdministration.consumable","SubstanceAdministration.consumable","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0]]} {[]}
+"SubstanceAdministration.consumable","SubstanceAdministration.consumable","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot {[]} {[]}
 ","Médicament","Médicament","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable",1,1,"",""
 "SubstanceAdministration.consumable.nullFlavor","SubstanceAdministration.consumable.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -645,7 +640,7 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "SubstanceAdministration.consumable.typeCode","SubstanceAdministration.consumable.typeCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""CSM""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"SubstanceAdministration.consumable.typeCode",0,1,"",""
-"SubstanceAdministration.consumable.manufacturedProduct","SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[]} {[]}
+"SubstanceAdministration.consumable.manufacturedProduct","SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable.manufacturedProduct",1,1,"",""
 "SubstanceAdministration.subject","SubstanceAdministration.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.subject",0,1,"",""
@@ -660,8 +655,8 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 "SubstanceAdministration.participant","SubstanceAdministration.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.participant",0,*,"",""
 "SubstanceAdministration.entryRelationship","SubstanceAdministration.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","SubstanceAdministration.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:supply}
+profile:substanceAdministration}profile:act}","",,"open","SubstanceAdministration.entryRelationship",0,*,"",""
 "SubstanceAdministration.entryRelationship:frPrescription","SubstanceAdministration.entryRelationship","frPrescription","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Prescription","Prescription","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.nullFlavor","SubstanceAdministration.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -695,7 +690,7 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -709,7 +704,7 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prescription|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -746,7 +741,7 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frTraitementSubordonne.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frTraitementSubordonne.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frTraitementSubordonne.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frTraitementSubordonne.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -765,7 +760,7 @@ Les unités sont exprimées selon le système de codage UCUM.","","","","","",""
 
 Une entrée Traitement de premier niveau peut contenir une ou plusieurs sous-entrées 'Traitement' subordonnées pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments.
 L'utilisation de sous-entrées 'Traitement' subordonnées pour traiter ces cas est facultative. Dans ce cas, l'information doit être fournie dans la partie narrative de l'entrée 'Traitement' de premier niveau sous forme de texte libre.","Traitement subordonné","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frTraitementSubordonne.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frTraitementSubordonne.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.entryRelationship:frInstructionsAuPatient","SubstanceAdministration.entryRelationship","frInstructionsAuPatient","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
@@ -816,9 +811,9 @@ Les instructions au patient peuvent être transmises, sous forme textuelle, dans
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frInstructionsAuPatient.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frInstructionsAuPatient.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frInstructionsAuPatient.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frInstructionsAuPatient.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frInstructionsAuPatient.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.entryRelationship:frReferenceInterne","SubstanceAdministration.entryRelationship","frReferenceInterne","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
@@ -874,9 +869,9 @@ Dans l'élément 'act' de l'entryRelationship :
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frReferenceInterne.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frReferenceInterne.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frReferenceInterne.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frReferenceInterne.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frReferenceInterne.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.reference","SubstanceAdministration.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference",0,*,"",""

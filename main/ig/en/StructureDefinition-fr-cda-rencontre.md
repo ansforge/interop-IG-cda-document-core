@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR Rencontre 
 
- 
-Entrée FR-Rencontre: IHE-PCC - Encounter. 
-* L'entrée 'Rencontre' est un élément de type 'encounter' permettant de conserver les modalités d'une rencontre du patient. Il peut s'agir d'une rencontre passée ou à venir.
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md)
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-rencontre.
   "name" : "FRCDARencontre",
   "title" : "CDA - FR Rencontre",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -299,9 +294,19 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-rencontre.
         "discriminator" : [{
           "type" : "value",
           "path" : "typeCode"
+        },
+        {
+          "type" : "value",
+          "path" : "participantRole.classCode"
         }],
         "rules" : "open"
-      }
+      },
+      "short" : "Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]",
+      "definition" : "Lieu d'exécution [0..1] et autres participants (FR-Participant) [0..*]",
+      "type" : [{
+        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]
+      }]
     },
     {
       "id" : "Encounter.participant:lieuExecution",
@@ -319,40 +324,28 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-rencontre.
       "patternCode" : "LOC"
     },
     {
-      "id" : "Encounter.participant:lieuExecution.participantRole",
-      "path" : "Encounter.participant.participantRole",
-      "mustSupport" : true
-    },
-    {
       "id" : "Encounter.participant:lieuExecution.participantRole.classCode",
       "path" : "Encounter.participant.participantRole.classCode",
+      "min" : 1,
       "patternCode" : "SDLOC"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.id",
       "path" : "Encounter.participant.participantRole.id",
       "short" : "Identifiant de l'établissement",
-      "definition" : "Identifiant de l'établissement",
-      "mustSupport" : true
+      "definition" : "Identifiant de l'établissement"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.addr",
       "path" : "Encounter.participant.participantRole.addr",
       "short" : "Adresse",
-      "definition" : "Adresse",
-      "mustSupport" : true
+      "definition" : "Adresse"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.telecom",
       "path" : "Encounter.participant.participantRole.telecom",
       "short" : "Coordonnées télécom",
-      "definition" : "Coordonnées télécom",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Encounter.participant:lieuExecution.participantRole.playingEntity",
-      "path" : "Encounter.participant.participantRole.playingEntity",
-      "mustSupport" : true
+      "definition" : "Coordonnées télécom"
     },
     {
       "id" : "Encounter.participant:lieuExecution.participantRole.playingEntity.classCode",
@@ -366,18 +359,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-rencontre.
       "definition" : "Nom de l'établissement",
       "min" : 1,
       "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Encounter.participant:autresParticipants",
-      "path" : "Encounter.participant",
-      "sliceName" : "autresParticipants",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Participant2",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0"]
-      }],
       "mustSupport" : true
     }]
   }

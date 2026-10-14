@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Liste des problemes 
 
- 
-Entrée FR-Liste-des-problemes: IHE-PCC - Problem-Concern. Cette entrée permet de regrouper des informations relatives aux pathologies non-allergiques du patient. Elle regroupe des entrées FR-Probleme qui décrivent chacun une pathologie. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Antecedents medicaux](StructureDefinition-fr-cda-antecedents-medicaux.md) and [CDA - FR Problemes actifs](StructureDefinition-fr-cda-problemes-actifs.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-liste-des-
   "name" : "FRCDAListeDesProblemes",
   "title" : "CDA - FR Liste des problemes",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

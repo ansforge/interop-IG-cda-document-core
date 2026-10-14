@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Resultats 
 
- 
-Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…) 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -116,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
   "name" : "FRCDASectionResultats",
   "title" : "CDA - FR Resultats",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -125,7 +122,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)",
+  "description" : "Cette section regroupe les résultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, génétique humaine...)",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -166,7 +163,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
       "id" : "Section.templateId:frSectionResultats",
       "path" : "Section.templateId",
       "sliceName" : "frSectionResultats",
-      "short" : "ConformitÃ© de la section aux spÃ©cifications CI-SIS",
+      "short" : "Conformité de la section aux spécifications CI-SIS",
       "min" : 1,
       "max" : "1"
     },
@@ -215,7 +212,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
       "id" : "Section.code.displayName",
       "path" : "Section.code.displayName",
       "min" : 1,
-      "patternString" : "RÃ©sultats dâ€™examens",
+      "patternString" : "Résultats d’examens",
       "mustSupport" : true
     },
     {
@@ -237,7 +234,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "short" : "EntrÃ©e FR-Resultats",
+      "short" : "Entrée FR-Resultats",
       "mustSupport" : true
     },
     {

@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR Resultat examens de biologie element clinique pertinent 
 
- 
-Entrée FR-Resultat-examens-de-biologie-element-clinique-pertinent: IHE-PALM - Laboratory Observation. 
-* L'entrée Résultat d'examen / élément clinique pertinent est une entrée de type 'observation' qui permet de décrire un résultat d'un élément d'un examen de biologie médicale ou un élément clinique pertinent fourni par le prescripteur ou le préleveur dans le contexte clinique de la demande d'examens biologiques.
- 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Batterie examens de biologie medicale](StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.md), [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md) and [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md)
@@ -136,7 +131,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDAResultatExamensDeBiologieElementCliniquePertinent",
   "title" : "CDA - FR Resultat examens de biologie element clinique pertinent",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -380,7 +375,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
       "slicing" : {
         "discriminator" : [{
           "type" : "value",
-          "path" : "$this"
+          "path" : "typeCode"
         }],
         "rules" : "open"
       },

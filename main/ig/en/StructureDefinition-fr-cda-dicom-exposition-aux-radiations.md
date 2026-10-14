@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Exposition aux radiations 
 
- 
-DICOM Part 20 - Radiation Exposure and Protection Information  
-* Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Acte imagerie](StructureDefinition-fr-cda-dicom-acte-imagerie.md)
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-expo
   "name" : "FRCDASectionDICOMExpositionAuxRadiations",
   "title" : "CDA - FR DICOM Exposition aux radiations",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -89,6 +84,24 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-expo
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Section",
+      "path" : "Section",
+      "constraint" : [{
+        "key" : "fr-dicom-exposition-radiations-entries",
+        "severity" : "error",
+        "human" : "La section contient exactement une entrée Exposition aux rayonnements (procedure) et au plus une entrée Administration des produits radiopharmaceutiques (substanceAdministration).",
+        "expression" : "entry.where(procedure.exists()).count() = 1 and entry.where(substanceAdministration.exists()).count() <= 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-exposition-aux-radiations|0.1.0"
+      },
+      {
+        "key" : "fr-dicom-exposition-radiations-observations",
+        "severity" : "error",
+        "human" : "La section contient exactement une entrée Observation Grossesse (FR-DICOM-Observation de code SNOMED-CT 364320009 'statut de grossesse') et au plus une autre FR-DICOM-Observation (Observation Indication).",
+        "expression" : "entry.where(observation.templateId.where(root = '1.2.250.1.213.1.1.3.150').exists() and observation.code.code = '364320009' and observation.code.codeSystem = '2.16.840.1.113883.6.96').count() = 1 and entry.where(observation.templateId.where(root = '1.2.250.1.213.1.1.3.150').exists()).count() <= 2",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-exposition-aux-radiations|0.1.0"
+      }]
+    },
+    {
       "id" : "Section.templateId",
       "path" : "Section.templateId",
       "slicing" : {
@@ -186,41 +199,24 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-expo
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2,
+      "short" : "Entrées Exposition aux rayonnements (procedure, 1..1), Observation Grossesse (observation, 1..1), Observation Indication (observation, 0..1), SOP instance Observation (observation, 0..*), Quantité (observation, 0..*) et Administration des produits radiopharmaceutiques (substanceAdministration, 0..1)",
+      "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frDicomSOPInstanceObservation",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomSOPInstanceObservation",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frDicomSOPInstanceObservation.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
-      "short" : "Entrée SOP instance Observation",
+      "short" : "Entrée SOP instance Observation, Observation Grossesse, Observation Indication ou Quantité",
+      "comment" : "L'entrée Observation Grossesse est une FR-DICOM-Observation dont le code est fixé à : code=\"364320009\", displayName=\"statut de grossesse\", codeSystem=\"2.16.840.1.113883.6.96\", codeSystemName=\"SNOMED-CT\".",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-sop-instance-observation|0.1.0"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-sop-instance-observation|0.1.0",
+        "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-observation|0.1.0",
+        "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-quantite|0.1.0"]
       }]
     },
     {
-      "id" : "Section.entry:frDicomExpositionPatient",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomExpositionPatient",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frDicomExpositionPatient.procedure",
+      "id" : "Section.entry.procedure",
       "path" : "Section.entry.procedure",
       "short" : "Entrée Exposition aux rayonnements ionisants",
       "type" : [{
@@ -229,62 +225,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-expo
       }]
     },
     {
-      "id" : "Section.entry:frDicomObservationIndication",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomObservationIndication",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frDicomObservationIndication.observation",
-      "path" : "Section.entry.observation",
-      "short" : "Entrée Observation Indication",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-observation|0.1.0"]
-      }]
-    },
-    {
-      "id" : "Section.entry:frDicomObservationGrossesse",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomObservationGrossesse",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frDicomObservationGrossesse.observation",
-      "path" : "Section.entry.observation",
-      "short" : "Entrée Observation Grossesse",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-observation|0.1.0"]
-      }]
-    },
-    {
-      "id" : "Section.entry:frDicomQuantite",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomQuantite",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frDicomQuantite.observation",
-      "path" : "Section.entry.observation",
-      "short" : "Entrée Quantité",
-      "type" : [{
-        "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
-        "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-quantite|0.1.0"]
-      }]
-    },
-    {
-      "id" : "Section.entry:frDicomAdministrationRadiopharmaceutique",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomAdministrationRadiopharmaceutique",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frDicomAdministrationRadiopharmaceutique.substanceAdministration",
+      "id" : "Section.entry.substanceAdministration",
       "path" : "Section.entry.substanceAdministration",
       "short" : "Entrée Administration des produits radiopharmaceutiques",
       "type" : [{

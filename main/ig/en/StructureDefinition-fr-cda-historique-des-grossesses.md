@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Historique des grossesses 
 
- 
-IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-historique
   "name" : "FRCDASectionHistoriqueDesGrossesses",
   "title" : "CDA - FR Historique des grossesses",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -191,25 +188,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-historique
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrées Observation sur la grossesse (observation) et/ou Historique des grossesses (organizer)",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frObservationSurLaGrossesse",
-      "path" : "Section.entry",
-      "sliceName" : "frObservationSurLaGrossesse",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frObservationSurLaGrossesse.observation",
+      "id" : "Section.entry.observation",
       "path" : "Section.entry.observation",
       "short" : "Entrée Observation sur la grossesse",
       "type" : [{
@@ -218,14 +202,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-historique
       }]
     },
     {
-      "id" : "Section.entry:frHistoriqueDeLaGrossesse",
-      "path" : "Section.entry",
-      "sliceName" : "frHistoriqueDeLaGrossesse",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frHistoriqueDeLaGrossesse.organizer",
+      "id" : "Section.entry.organizer",
       "path" : "Section.entry.organizer",
       "short" : "Entrée Historique des grossesses",
       "type" : [{

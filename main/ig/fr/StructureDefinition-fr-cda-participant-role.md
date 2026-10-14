@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR participantRole 
 
- 
-Le participantRole permet de représenter le rôle d’un participant dans un acte clinique. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Participant corps](StructureDefinition-fr-cda-participant-corps.md)
@@ -104,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
   "name" : "FRCDAParticipantRole",
   "title" : "CDA - FR participantRole",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR DICOM SOP instance observation 
 
- 
-Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md), [CDA - FR DICOM Observation](StructureDefinition-fr-cda-dicom-observation.md) and [CDA - FR DICOM Serie imagerie](StructureDefinition-fr-cda-dicom-serie-imagerie.md)
@@ -126,7 +123,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
   "name" : "FRCDADICOMSOPInstanceObservation",
   "title" : "CDA - FR DICOM SOP instance observation",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -277,8 +274,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-so
       "path" : "Observation.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
         }],
         "rules" : "open"
       },

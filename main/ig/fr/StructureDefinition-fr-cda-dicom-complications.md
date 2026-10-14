@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR DICOM Complications 
 
- 
-DICOM Part 20 - Complications 
-* Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle.
- 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Acte imagerie](StructureDefinition-fr-cda-dicom-acte-imagerie.md)
@@ -106,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-co
   "name" : "FRCDASectionDICOMComplications",
   "title" : "CDA - FR DICOM Complications",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,11 +2,6 @@
 
 ## Modèle logique: CDA - FR DICOM Acte imagerie 
 
- 
-DICOM Part 20 - Imaging Procedure Description Section 
-* Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.
- 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -24,6 +19,8 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
 
+#### Contraintes
+
 #### Bindings terminologiques
 
 #### Contraintes
@@ -32,7 +29,7 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 ** Résumé **
 
-Obligatoire : 15 éléments
+Obligatoire : 14 éléments
  Must-Support : 6 éléments
 
 **Structures**
@@ -50,12 +47,13 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 * The element 1 is sliced based on the value of Section.component
 
  **Vue différentielle** 
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
+
+#### Contraintes
 
  **Vue d'ensembleView** 
 
@@ -67,7 +65,7 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 ** Résumé **
 
-Obligatoire : 15 éléments
+Obligatoire : 14 éléments
  Must-Support : 6 éléments
 
 **Structures**
@@ -85,7 +83,6 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Section.templateId
-* The element 1 is sliced based on the value of Section.entry
 * The element 1 is sliced based on the value of Section.component
 
  
@@ -130,7 +127,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ac
   "name" : "FRCDASectionDICOMActeImagerie",
   "title" : "CDA - FR DICOM Acte imagerie",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -161,7 +158,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ac
   "differential" : {
     "element" : [{
       "id" : "Section",
-      "path" : "Section"
+      "path" : "Section",
+      "constraint" : [{
+        "key" : "fr-dicom-acte-imagerie-entries",
+        "severity" : "error",
+        "human" : "La section contient exactement une entrée Technique d'imagerie (procedure).",
+        "expression" : "entry.where(procedure.exists()).count() = 1",
+        "source" : "https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dicom-acte-imagerie|0.1.0"
+      }]
     },
     {
       "id" : "Section.templateId",
@@ -262,25 +266,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ac
     {
       "id" : "Section.entry",
       "path" : "Section.entry",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
+      "short" : "Entrée Technique d'imagerie (procedure, 1..1) et entrées Administration de produits (substanceAdministration, 0..*)",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Section.entry:frDicomTechniqueImagerie",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomTechniqueImagerie",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Section.entry:frDicomTechniqueImagerie.procedure",
+      "id" : "Section.entry.procedure",
       "path" : "Section.entry.procedure",
       "short" : "Entrée technique d'imagerie",
       "type" : [{
@@ -289,14 +280,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ac
       }]
     },
     {
-      "id" : "Section.entry:frDicomAdministrationProduitDeSante",
-      "path" : "Section.entry",
-      "sliceName" : "frDicomAdministrationProduitDeSante",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Section.entry:frDicomAdministrationProduitDeSante.substanceAdministration",
+      "id" : "Section.entry.substanceAdministration",
       "path" : "Section.entry.substanceAdministration",
       "short" : "Entrée Administration de produits",
       "type" : [{
@@ -309,8 +293,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ac
       "path" : "Section.component",
       "slicing" : {
         "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "section"
         }],
         "rules" : "open"
       },

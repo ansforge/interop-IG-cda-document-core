@@ -2,13 +2,6 @@
 
 ## ValueSet: ValueSet - FR ValueSet StatusCode 
 
- 
-Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné). 
-* 'completed' : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.
-* 'active' : Rendu partiel. Certains résultats sont encore à venir pour cet examen.
-* 'aborted' : L'examen est abandonné. Quelques résultats peuvent apparaître.
- 
-
  **References** 
 
 * [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md)
@@ -37,7 +30,7 @@ Jeu de valeurs permet d'indique le niveau de complétude des résultats d’un e
   "name" : "FRValueSetStatusCode",
   "title" : "ValueSet - FR ValueSet StatusCode",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

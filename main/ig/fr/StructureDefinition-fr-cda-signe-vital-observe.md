@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Signe vital observe 
 
- 
-Entrée FR-Signe-vital-observe: IHE-PCC - Vital Signs Observation. Cette entrée permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique. Cette entrée est utilisée dans un élément component d'un élément Signes vitaux (1.3.6.1.4.1.19376.1.5.3.1.4.13.1). Cette entrée est basée sur l'élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Entrée Signes vitaux](StructureDefinition-fr-cda-signes-vitaux.md)
@@ -120,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-signe-vi
   "name" : "FRCDASigneVitalObserve",
   "title" : "CDA - FR Signe vital observe",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

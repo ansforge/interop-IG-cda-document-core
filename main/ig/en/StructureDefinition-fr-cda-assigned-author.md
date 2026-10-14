@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - assignedAuthor 
 
- 
-L'élément de l'en-tête du CDA assignedAuthor contient les éléments permettant de décrire l’auteur. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - author](StructureDefinition-fr-cda-author.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-assigned-a
   "name" : "FRCDAAssignedAuthor",
   "title" : "CDA - assignedAuthor",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

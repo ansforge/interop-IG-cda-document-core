@@ -2,11 +2,6 @@
 
 ## Logical Model: CDA - FR Severite 
 
- 
-Entrée FR-Severite: IHE-PCC - Severity. 
-* Cette entrée permet de donner le niveau de sévérité d’un problème : bas, modéré, élevé, etc… Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie.
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Probleme](StructureDefinition-fr-cda-probleme.md)
@@ -59,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-severite.c
   "name" : "FRCDASeverite",
   "title" : "CDA - FR Severite",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

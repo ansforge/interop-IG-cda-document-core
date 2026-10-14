@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Evaluation Composant N2 
 
- 
-Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR Evaluation Composant](StructureDefinition-fr-cda-evaluation-composant.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evaluation
   "name" : "FRCDAEvaluationComposantN2",
   "title" : "CDA - FR Evaluation Composant N2",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR Evenement indesirable suite administration derives sang 
 
- 
-Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l'administration de dérivés du sang. 
-
 **Usages:**
 
 * This Logical Model Profile is not used by any profiles in this Specification
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-evenement-
   "name" : "FRCDAEvenementIndesirableSuiteAdministrationDerivesSang",
   "title" : "CDA - FR Evenement indesirable suite administration derives sang",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

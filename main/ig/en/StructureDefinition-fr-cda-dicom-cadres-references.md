@@ -2,9 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Cadres de références 
 
- 
-Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observation d’images référencées contient une liste de valeurs de type entiers pour les images référencées d’une instance SOP d’images. 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM SOP instance observation subordonnee](StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.md) and [CDA - FR DICOM SOP instance observation](StructureDefinition-fr-cda-dicom-sop-instance-observation.md)
@@ -57,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-cadr
   "name" : "FRCDADICOMCadresReferences",
   "title" : "CDA - FR DICOM Cadres de références",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - healthCareFacility 
 
- 
-L'élément de l'en-tête du CDA healthCareFacility permet de représenter la structure de prise en charge (cabinet du médecin, hôpital ou clinique, etc.). 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - encompassingEncounter](StructureDefinition-fr-cda-encompassing-encounter.md)
@@ -96,7 +93,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-health-c
   "name" : "FRCDAHealthCareFacility",
   "title" : "CDA - healthCareFacility",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Vaccination 
 
- 
-Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccination est une entrée de type 'substanceAdministration' pour décrire l'administration d'un vaccin. Elle permet également de décrire pourquoi un vaccin n'a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Vaccinations](StructureDefinition-fr-cda-vaccinations.md)
@@ -34,6 +31,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Obligatoire : 14 éléments
  Must-Support : 17 éléments
+ Interdit : 15 éléments
 
 **Structures**
 
@@ -53,7 +51,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 4 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  **Vue différentielle** 
 
@@ -73,6 +71,7 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Obligatoire : 14 éléments
  Must-Support : 17 éléments
+ Interdit : 15 éléments
 
 **Structures**
 
@@ -92,7 +91,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 1 is sliced based on the value of SubstanceAdministration.entryRelationship
+* The element 4 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -136,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
   "name" : "FRCDAVaccination",
   "title" : "CDA - FR Vaccination",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -344,7 +343,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       "id" : "SubstanceAdministration.consumable",
       "path" : "SubstanceAdministration.consumable",
       "short" : "Vaccin",
-      "definition" : "Vaccin",
+      "definition" : "Vaccin"
+    },
+    {
+      "id" : "SubstanceAdministration.consumable.manufacturedProduct",
+      "path" : "SubstanceAdministration.consumable.manufacturedProduct",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0"]
@@ -377,8 +380,20 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       "path" : "SubstanceAdministration.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "supply"
+        },
+        {
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
+        },
+        {
+          "type" : "profile",
+          "path" : "substanceAdministration"
         }],
         "rules" : "open"
       },
@@ -396,6 +411,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       "id" : "SubstanceAdministration.entryRelationship:frPrescription.typeCode",
       "path" : "SubstanceAdministration.entryRelationship.typeCode",
       "patternCode" : "REFR"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frPrescription.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frPrescription.supply",
@@ -419,12 +449,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       "patternCode" : "SUBJ"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-rang-de-la-vaccination|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frProbleme",
@@ -445,12 +490,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       "patternBoolean" : false
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frProbleme.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frProbleme.observation",
       "path" : "SubstanceAdministration.entryRelationship.observation",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Observation",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-probleme|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frProbleme.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frProbleme.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     },
     {
       "id" : "SubstanceAdministration.entryRelationship:frCommentaireER",
@@ -474,6 +534,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       }]
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frCommentaireER.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frCommentaireER.substanceAdministration",
+      "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frCommentaireER.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frDoseAntigene",
       "path" : "SubstanceAdministration.entryRelationship",
       "sliceName" : "frDoseAntigene",
@@ -487,12 +562,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-vaccinat
       "patternCode" : "COMP"
     },
     {
+      "id" : "SubstanceAdministration.entryRelationship:frDoseAntigene.act",
+      "path" : "SubstanceAdministration.entryRelationship.act",
+      "max" : "0"
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frDoseAntigene.observation",
+      "path" : "SubstanceAdministration.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "SubstanceAdministration.entryRelationship:frDoseAntigene.substanceAdministration",
       "path" : "SubstanceAdministration.entryRelationship.substanceAdministration",
       "type" : [{
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dose-antigene|0.1.0"]
       }]
+    },
+    {
+      "id" : "SubstanceAdministration.entryRelationship:frDoseAntigene.supply",
+      "path" : "SubstanceAdministration.entryRelationship.supply",
+      "max" : "0"
     }]
   }
 }

@@ -2,13 +2,6 @@
 
 ## Logical Model: CDA - FR DICOM Object Catalog 
 
- 
-DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante : 
-* [0..*] Examen
-* [1..*] Série (avec la modalité d'acquisition)
-* [1..*] Objet référencé (avec la classe d'objet)
- 
-
 **Usages:**
 
 * Use this Logical Model Profile: [CDA - FR DICOM Acte imagerie](StructureDefinition-fr-cda-dicom-acte-imagerie.md)
@@ -61,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-cda-dicom-obje
   "name" : "FRCDASectionDICOMObjectCatalog",
   "title" : "CDA - FR DICOM Object Catalog",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

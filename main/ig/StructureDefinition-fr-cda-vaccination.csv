@@ -164,7 +164,7 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.maxDoseQuantity",0,1,"",""
 "SubstanceAdministration.administrationUnitCode","SubstanceAdministration.administrationUnitCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm|3.0.0","",,,,"SubstanceAdministration.administrationUnitCode",0,1,"",""
-"SubstanceAdministration.consumable","SubstanceAdministration.consumable","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0]]} {[]}
+"SubstanceAdministration.consumable","SubstanceAdministration.consumable","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot {[]} {[]}
 ","Vaccin","Vaccin","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable",1,1,"",""
 "SubstanceAdministration.consumable.nullFlavor","SubstanceAdministration.consumable.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
@@ -187,7 +187,7 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "SubstanceAdministration.consumable.typeCode","SubstanceAdministration.consumable.typeCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""CSM""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"SubstanceAdministration.consumable.typeCode",0,1,"",""
-"SubstanceAdministration.consumable.manufacturedProduct","SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[]} {[]}
+"SubstanceAdministration.consumable.manufacturedProduct","SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable.manufacturedProduct",1,1,"",""
 "SubstanceAdministration.subject","SubstanceAdministration.subject","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Subject {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.subject",0,1,"",""
@@ -202,8 +202,8 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 "SubstanceAdministration.participant","SubstanceAdministration.participant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Participant2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.participant",0,*,"",""
 "SubstanceAdministration.entryRelationship","SubstanceAdministration.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","SubstanceAdministration.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:supply}
+profile:observation}profile:act}profile:substanceAdministration}","",,"open","SubstanceAdministration.entryRelationship",0,*,"",""
 "SubstanceAdministration.entryRelationship:frPrescription","SubstanceAdministration.entryRelationship","frPrescription","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Prescription","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.nullFlavor","SubstanceAdministration.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -237,11 +237,11 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.observation","SubstanceAdministration.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.observation","SubstanceAdministration.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.observationMedia","SubstanceAdministration.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -251,7 +251,7 @@ Si la date de la vaccination est inconnue, utiliser une valeur nullFlavor préci
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frPrescription.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frPrescription.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
 "SubstanceAdministration.entryRelationship:frPrescription.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prescription|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
@@ -294,7 +294,7 @@ Par exemple, pour le vaccin contre la coqueluche qui se fait en 2 doses (à 2 mo
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -308,9 +308,9 @@ Par exemple, pour le vaccin contre la coqueluche qui se fait en 2 doses (à 2 mo
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frRangDeLaVaccination.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frRangDeLaVaccination.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.entryRelationship:frProbleme","SubstanceAdministration.entryRelationship","frProbleme","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Réaction observée suite au vaccin : 
@@ -349,7 +349,7 @@ La réaction observée est codée dans l'élément 'value'.","","","","","","","
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frProbleme.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frProbleme.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frProbleme.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frProbleme.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -363,9 +363,9 @@ La réaction observée est codée dans l'élément 'value'.","","","","","","","
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frProbleme.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frProbleme.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frProbleme.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frProbleme.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frProbleme.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER","SubstanceAdministration.entryRelationship","frCommentaireER","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Commentaire","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
@@ -404,7 +404,7 @@ La réaction observée est codée dans l'élément 'value'.","","","","","","","
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"SubstanceAdministration.entryRelationship:frCommentaireER.observation","SubstanceAdministration.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"SubstanceAdministration.entryRelationship:frCommentaireER.observation","SubstanceAdministration.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER.observationMedia","SubstanceAdministration.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -414,9 +414,9 @@ La réaction observée est codée dans l'élément 'value'.","","","","","","","
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.procedure",0,1,"",""
 "SubstanceAdministration.entryRelationship:frCommentaireER.regionOfInterest","SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
-"SubstanceAdministration.entryRelationship:frCommentaireER.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"SubstanceAdministration.entryRelationship:frCommentaireER.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frCommentaireER.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frCommentaireER.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.entryRelationship:frDoseAntigene","SubstanceAdministration.entryRelationship","frDoseAntigene","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","Dose d'antigène : 
@@ -453,11 +453,11 @@ Un des cas d'utilisation est la vaccination de sujets hypersensibles [https ://p
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "SubstanceAdministration.entryRelationship:frDoseAntigene.seperatableInd","SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"SubstanceAdministration.entryRelationship:frDoseAntigene.act","SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"SubstanceAdministration.entryRelationship:frDoseAntigene.act","SubstanceAdministration.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "SubstanceAdministration.entryRelationship:frDoseAntigene.encounter","SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"SubstanceAdministration.entryRelationship:frDoseAntigene.observation","SubstanceAdministration.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"SubstanceAdministration.entryRelationship:frDoseAntigene.observation","SubstanceAdministration.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "SubstanceAdministration.entryRelationship:frDoseAntigene.observationMedia","SubstanceAdministration.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -469,7 +469,7 @@ Un des cas d'utilisation est la vaccination de sujets hypersensibles [https ://p
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.regionOfInterest",0,1,"",""
 "SubstanceAdministration.entryRelationship:frDoseAntigene.substanceAdministration","SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-dose-antigene|0.1.0]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.substanceAdministration",0,1,"",""
-"SubstanceAdministration.entryRelationship:frDoseAntigene.supply","SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"SubstanceAdministration.entryRelationship:frDoseAntigene.supply","SubstanceAdministration.entryRelationship.supply","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.supply",0,1,"",""
 "SubstanceAdministration.reference","SubstanceAdministration.reference","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Reference {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference",0,*,"",""

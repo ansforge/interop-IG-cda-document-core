@@ -200,6 +200,16 @@
 "Observation.participant.templateId","Observation.participant.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"","value:root}
 ","",,"open","InfrastructureRoot.templateId",0,*,"",""
+"Observation.participant.templateId.nullFlavor","Observation.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
+"Observation.participant.templateId.assigningAuthorityName","Observation.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
+"Observation.participant.templateId.displayable","Observation.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
+"Observation.participant.templateId.root","Observation.participant.templateId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
+"Observation.participant.templateId.extension","Observation.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Observation.participant.templateId:templateId","Observation.participant.templateId","templateId","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","TemplateId avec root égal à 1.2.250.1.213.1.1.3.109","TemplateId avec root égal à 1.2.250.1.213.1.1.3.109","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "Observation.participant.templateId:templateId.nullFlavor","Observation.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -212,20 +222,8 @@
 ","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.213.1.1.3.109""/>","","","",,,,,"",,,,"II.root",0,1,"",""
 "Observation.participant.templateId:templateId.extension","Observation.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Observation.participant.templateId:templateId-other","Observation.participant.templateId","templateId-other","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","Autre TemplateId","Autre TemplateId","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Observation.participant.templateId:templateId-other.nullFlavor","Observation.participant.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Observation.participant.templateId:templateId-other.assigningAuthorityName","Observation.participant.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Observation.participant.templateId:templateId-other.displayable","Observation.participant.templateId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
-","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Observation.participant.templateId:templateId-other.root","Observation.participant.templateId.root","","","Root",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
-","","A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier.","","","","","","","","","",,,,,"",,,,"II.root",0,1,"",""
-"Observation.participant.templateId:templateId-other.extension","Observation.participant.templateId.extension","","","Extension",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
 "Observation.participant.typeCode","Observation.participant.typeCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
-","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""RESP""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
+","Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901).","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""RESP""/>","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd","",,,,"Participant2.typeCode",1,1,"",""
 "Observation.participant.contextControlCode","Observation.participant.contextControlCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAContextControl|2.0.3-sd","",,,,"Participant2.contextControlCode",0,1,"",""
 "Observation.participant.sdtcFunctionCode","Observation.participant.sdtcFunctionCode","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CE {[]} {[]}
@@ -251,8 +249,8 @@
 "Observation.participant.participantRole","Observation.participant.participantRole","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-role|0.1.0]]} {[]}
 ","Rôle du participant dans l'acte","Rôle du participant dans l'acte","","","","","","","","","",,,,,"",,,,"Participant2.participantRole",1,1,"",""
 "Observation.entryRelationship","Observation.entryRelationship","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
-","","","","","","","","","","","",,,,,"","value:$this}
-","",,"open","Observation.entryRelationship",0,*,"",""
+","","","","","","","","","","","",,,,,"","profile:observation}
+profile:act}","",,"open","Observation.entryRelationship",0,*,"",""
 "Observation.entryRelationship:frEvaluationComposant","Observation.entryRelationship","frEvaluationComposant","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Observation.entryRelationship",0,*,"",""
 "Observation.entryRelationship:frEvaluationComposant.nullFlavor","Observation.entryRelationship.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
@@ -286,7 +284,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Observation.entryRelationship:frEvaluationComposant.seperatableInd","Observation.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Observation.entryRelationship:frEvaluationComposant.act","Observation.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Observation.entryRelationship:frEvaluationComposant.act","Observation.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frEvaluationComposant.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -337,7 +335,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.sequenceNumber",0,1,"",""
 "Observation.entryRelationship:frStatut.seperatableInd","Observation.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.seperatableInd",0,1,"",""
-"Observation.entryRelationship:frStatut.act","Observation.entryRelationship.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Observation.entryRelationship:frStatut.act","Observation.entryRelationship.act","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frStatut.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
@@ -392,7 +390,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frCommentaireER.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Observation.entryRelationship:frCommentaireER.observation","Observation.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Observation.entryRelationship:frCommentaireER.observation","Observation.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Observation.entryRelationship:frCommentaireER.observationMedia","Observation.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""
@@ -443,7 +441,7 @@
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.act",0,1,"",""
 "Observation.entryRelationship:frReferenceInterne.encounter","Observation.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.encounter",0,1,"",""
-"Observation.entryRelationship:frReferenceInterne.observation","Observation.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
+"Observation.entryRelationship:frReferenceInterne.observation","Observation.entryRelationship.observation","","","",0,0,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observation",0,1,"",""
 "Observation.entryRelationship:frReferenceInterne.observationMedia","Observation.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"EntryRelationship.observationMedia",0,1,"",""

@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - encounterParticipant 
 
- 
-L'élément de l'en-tête du CDA encounterParticipant permet de représenter la personne impliquée dans la prise en charge du patient/usager, comme par exemple, le professionnel co-responsable, le professionnel ayant fait l'admission ou encore le professionnel ayant donné son avis quant à la prise en charge. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - encompassingEncounter](StructureDefinition-fr-cda-encompassing-encounter.md)
@@ -96,7 +93,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-encounte
   "name" : "FRCDAEncounterParticipant",
   "title" : "CDA - encounterParticipant",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

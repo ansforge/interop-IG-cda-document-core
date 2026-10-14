@@ -124,56 +124,51 @@
 "Organizer.sdtcPrecondition2","Organizer.sdtcPrecondition2","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Precondition2 {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Organizer.sdtcPrecondition2",0,*,"",""
 "Organizer.component","Organizer.component","","","",1,1,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent {[]} {[]}
-","","","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Organizer.component",0,*,"",""
-"Organizer.component:frNaissance","Organizer.component","frNaissance","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"Organizer.component",0,*,"",""
-"Organizer.component:frNaissance.nullFlavor","Organizer.component.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+","Naissance (organizer) ou observation sur la grossesse (observation)","","","","","","","","","","",,,,,"",,,,"Organizer.component",0,*,"",""
+"Organizer.component.nullFlavor","Organizer.component.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Organizer.component:frNaissance.realmCode","Organizer.component.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
+"Organizer.component.realmCode","Organizer.component.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.realmCode",0,*,"",""
-"Organizer.component:frNaissance.typeId","Organizer.component.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+"Organizer.component.typeId","Organizer.component.typeId","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question.","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.typeId",0,1,"","II-1:An II instance must have either a root or an nullFlavor. {root.exists() or nullFlavor.exists()}
 "
-"Organizer.component:frNaissance.typeId.nullFlavor","Organizer.component.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Organizer.component.typeId.nullFlavor","Organizer.component.typeId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
-"Organizer.component:frNaissance.typeId.assigningAuthorityName","Organizer.component.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+"Organizer.component.typeId.assigningAuthorityName","Organizer.component.typeId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form.","","","","","","","","","",,,,,"",,,,"II.assigningAuthorityName",0,1,"",""
-"Organizer.component:frNaissance.typeId.displayable","Organizer.component.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Organizer.component.typeId.displayable","Organizer.component.typeId.displayable","","","Displayable",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false).","","","","","","","","","",,,,,"",,,,"II.displayable",0,1,"",""
-"Organizer.component:frNaissance.typeId.root","Organizer.component.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
+"Organizer.component.typeId.root","Organizer.component.typeId.root","","","Root",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/uuid|2.0.3-sd], CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/ruid|2.0.3-sd]]} {[]}
 ","","Identifies the type as an HL7 Registered model","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""2.16.840.1.113883.1.3""/>","","","","",,,,,"",,,,"II.root",0,1,"",""
-"Organizer.component:frNaissance.typeId.extension","Organizer.component.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
+"Organizer.component.typeId.extension","Organizer.component.typeId.extension","","","Extension",1,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","A character string as a unique identifier within the scope of the identifier root.","","","","","","","","","",,,,,"",,,,"II.extension",0,1,"",""
-"Organizer.component:frNaissance.templateId","Organizer.component.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+"Organizer.component.templateId","Organizer.component.templateId","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
-"Organizer.component:frNaissance.typeCode","Organizer.component.typeCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
+"Organizer.component.typeCode","Organizer.component.typeCode","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActRelationshipHasComponent|3.0.0","",,,,"OrganizerComponent.typeCode",0,1,"",""
-"Organizer.component:frNaissance.contextConductionInd","Organizer.component.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
+"Organizer.component.contextConductionInd","Organizer.component.contextConductionInd","","","",0,1,"","","","boolean {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/bl-simple|2.0.3-sd]]} {[]}
 ","","","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","",,,,,"",,,,"OrganizerComponent.contextConductionInd",0,1,"",""
-"Organizer.component:frNaissance.sequenceNumber","Organizer.component.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+"Organizer.component.sequenceNumber","Organizer.component.sequenceNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.sequenceNumber",0,1,"",""
-"Organizer.component:frNaissance.sdtcPriorityNumber","Organizer.component.sdtcPriorityNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
+"Organizer.component.sdtcPriorityNumber","Organizer.component.sdtcPriorityNumber","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/INT {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.sdtcPriorityNumber",0,1,"",""
-"Organizer.component:frNaissance.seperatableInd","Organizer.component.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
+"Organizer.component.seperatableInd","Organizer.component.seperatableInd","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/BL {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.seperatableInd",0,1,"",""
-"Organizer.component:frNaissance.act","Organizer.component.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
+"Organizer.component.act","Organizer.component.act","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Act {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.act",0,1,"",""
-"Organizer.component:frNaissance.encounter","Organizer.component.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
+"Organizer.component.encounter","Organizer.component.encounter","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Encounter {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.encounter",0,1,"",""
-"Organizer.component:frNaissance.observation","Organizer.component.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-observation-sur-la-grossesse|0.1.0]]} {[]}
+"Organizer.component.observation","Organizer.component.observation","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Observation {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-observation-sur-la-grossesse|0.1.0]]} {[]}
 ","Informations relatives à la grossesse. Chaque entrée FR-Observation-sur-la-grossesse permet  de fournir une observation relative à une grossesse.","Informations relatives à la grossesse","","","","","","","","","",,,,,"",,,,"OrganizerComponent.observation",0,1,"",""
-"Organizer.component:frNaissance.observationMedia","Organizer.component.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
+"Organizer.component.observationMedia","Organizer.component.observationMedia","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.observationMedia",0,1,"",""
-"Organizer.component:frNaissance.organizer","Organizer.component.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-naissance|0.1.0]]} {[]}
+"Organizer.component.organizer","Organizer.component.organizer","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Organizer {[CanonicalType[https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-naissance|0.1.0]]} {[]}
 ","Informations relatives aux naissances. Chaque entrée FR-Naissance, de type Organizer, rassemble les observations concernant l'issue de la grossesse relative à un fœtus. Cette structuration est rendue nécessaire pour prendre en compte les grossesses multiples, mais peut cependant être utilisée pour une naissance unique.","Informations relatives aux naissances","","","","","","","","","",,,,,"",,,,"OrganizerComponent.organizer",0,1,"",""
-"Organizer.component:frNaissance.procedure","Organizer.component.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
+"Organizer.component.procedure","Organizer.component.procedure","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Procedure {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.procedure",0,1,"",""
-"Organizer.component:frNaissance.regionOfInterest","Organizer.component.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
+"Organizer.component.regionOfInterest","Organizer.component.regionOfInterest","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.regionOfInterest",0,1,"",""
-"Organizer.component:frNaissance.substanceAdministration","Organizer.component.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
+"Organizer.component.substanceAdministration","Organizer.component.substanceAdministration","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.substanceAdministration",0,1,"",""
-"Organizer.component:frNaissance.supply","Organizer.component.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
+"Organizer.component.supply","Organizer.component.supply","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Supply {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"OrganizerComponent.supply",0,1,"",""
-"Organizer.component:frObservationSurLaGrossesse","Organizer.component","frObservationSurLaGrossesse","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"Organizer.component",0,*,"",""

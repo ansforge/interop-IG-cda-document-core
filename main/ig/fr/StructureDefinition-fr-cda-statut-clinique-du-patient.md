@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Statut clinique du patient 
 
- 
-Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Observation. L'entrée Statut clinique du patient permet de donner une évaluation de l'état clinique du patient. L'entrée Statut clinique du patient est un élément observation qui est inséré dans un autre élément à l'aide d'un lien entryRelationship. 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Probleme](StructureDefinition-fr-cda-probleme.md)
@@ -108,7 +105,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-statut-c
   "name" : "FRCDAStatutCliniqueDuPatient",
   "title" : "CDA - FR Statut clinique du patient",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

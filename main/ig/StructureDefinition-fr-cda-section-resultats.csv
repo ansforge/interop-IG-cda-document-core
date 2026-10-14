@@ -22,7 +22,7 @@
 ","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"","value:root}
 ","",,"open","InfrastructureRoot.templateId",0,*,"",""
 "Section.templateId:frSectionResultats","Section.templateId","frSectionResultats","","",1,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
-","ConformitÃ© de la section aux spÃ©cifications CI-SIS","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
+","Conformité de la section aux spécifications CI-SIS","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"InfrastructureRoot.templateId",0,*,"",""
 "Section.templateId:frSectionResultats.nullFlavor","Section.templateId.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "Section.templateId:frSectionResultats.assigningAuthorityName","Section.templateId.assigningAuthorityName","","","Assigning Authority Name",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
@@ -54,7 +54,7 @@
 "Section.code.codeSystemVersion","Section.code.codeSystemVersion","","","Code System Version",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
 ","","If applicable, a version descriptor defined specifically for the given code system.","","","","","","","","","",,,,,"",,,,"CD.codeSystemVersion",0,1,"",""
 "Section.code.displayName","Section.code.displayName","","","Display Name",1,1,"Y","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
-","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""RÃ©sultats dâ€™examens""/>","","","",,,,,"",,,,"CD.displayName",0,1,"",""
+","","A name or title for the code, under which the sending system shows the code value to its users.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Résultats d’examens""/>","","","",,,,,"",,,,"CD.displayName",0,1,"",""
 "Section.code.sdtcValueSet","Section.code.sdtcValueSet","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/oid|2.0.3-sd]]} {[]}
 ","","The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept.","","","","","","","","","",,,,,"",,,,"CD.valueSet",0,1,"",""
 "Section.code.sdtcValueSetVersion","Section.code.sdtcValueSetVersion","","","",0,1,"","","","string {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/st-simple|2.0.3-sd]]} {[]}
@@ -80,7 +80,7 @@
 "Section.informant","Section.informant","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/Informant {[]} {[]}
 ","","","","The informant participant can be ascribed to a CDA section where it overrides the value(s) propagated from the CDA header.","","","","","","","",,,,,"",,,,"Section.informant",0,*,"",""
 "Section.entry","Section.entry","","","",0,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/Entry {[]} {[]}
-","EntrÃ©e FR-Resultats","","","","","","","","","","",,,,,"",,,,"Section.entry",0,*,"",""
+","Entrée FR-Resultats","","","","","","","","","","",,,,,"",,,,"Section.entry",0,*,"",""
 "Section.entry.nullFlavor","Section.entry.nullFlavor","","","Exceptional Value Detail",0,1,"","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple|2.0.3-sd]]} {[]}
 ","","If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing.","","","","","","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDANullFlavor|2.0.3-sd","",,,,"ANY.nullFlavor",0,1,"",""
 "Section.entry.realmCode","Section.entry.realmCode","","","",0,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CS {[]} {[]}

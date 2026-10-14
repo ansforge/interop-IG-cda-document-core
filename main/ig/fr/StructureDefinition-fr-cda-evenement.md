@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Evenement 
 
- 
-Entrée FR-Evenement: FR-EvenementCette entrée est un élément de type 'encounter' permettant de conserver les données d’activités liées à un patient / usager. Il peut s'agir d'un évènement passé ou à venir. 
-
 **Utilisations:**
 
 * Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
@@ -34,6 +31,7 @@ Cette structure est dérivée de [Encounter](http://hl7.org/cda/stds/core/2.0.3-
 
 Obligatoire : 7 éléments(5 éléments obligatoire(s) imbriqué(s))
  Must-Support : 12 éléments
+ Interdit : 6 éléments
 
 **Structures**
 
@@ -55,7 +53,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Encounter.templateId
-* The element 1 is sliced based on the value of Encounter.entryRelationship
+* The element 2 is sliced based on the values of Encounter.entryRelationship
 
  **Vue différentielle** 
 
@@ -75,6 +73,7 @@ Cette structure est dérivée de [Encounter](http://hl7.org/cda/stds/core/2.0.3-
 
 Obligatoire : 7 éléments(5 éléments obligatoire(s) imbriqué(s))
  Must-Support : 12 éléments
+ Interdit : 6 éléments
 
 **Structures**
 
@@ -96,7 +95,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of Encounter.templateId
-* The element 1 is sliced based on the value of Encounter.entryRelationship
+* The element 2 is sliced based on the values of Encounter.entryRelationship
 
  
 
@@ -140,7 +139,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
   "name" : "FRCDAEvenement",
   "title" : "CDA - FR Evenement",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -378,8 +377,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       "path" : "Encounter.entryRelationship",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
-          "path" : "$this"
+          "type" : "profile",
+          "path" : "observation"
+        },
+        {
+          "type" : "profile",
+          "path" : "act"
         }],
         "rules" : "open"
       },
@@ -402,6 +405,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       "id" : "Encounter.entryRelationship:frSimpleObservation.inversionInd",
       "path" : "Encounter.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Encounter.entryRelationship:frSimpleObservation.act",
+      "path" : "Encounter.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Encounter.entryRelationship:frSimpleObservation.observation",
@@ -438,6 +446,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       }]
     },
     {
+      "id" : "Encounter.entryRelationship:frCommentaireER.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Encounter.entryRelationship:frReferenceInterne",
       "path" : "Encounter.entryRelationship",
       "sliceName" : "frReferenceInterne",
@@ -462,6 +475,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0"]
       }]
+    },
+    {
+      "id" : "Encounter.entryRelationship:frReferenceInterne.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
     },
     {
       "id" : "Encounter.entryRelationship:frTransportDuPatient",
@@ -490,6 +508,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       }]
     },
     {
+      "id" : "Encounter.entryRelationship:frTransportDuPatient.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
+    },
+    {
       "id" : "Encounter.entryRelationship:frStatut",
       "path" : "Encounter.entryRelationship",
       "sliceName" : "frStatut",
@@ -506,6 +529,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
       "id" : "Encounter.entryRelationship:frStatut.inversionInd",
       "path" : "Encounter.entryRelationship.inversionInd",
       "patternBoolean" : false
+    },
+    {
+      "id" : "Encounter.entryRelationship:frStatut.act",
+      "path" : "Encounter.entryRelationship.act",
+      "max" : "0"
     },
     {
       "id" : "Encounter.entryRelationship:frStatut.observation",
@@ -540,6 +568,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evenemen
         "code" : "http://hl7.org/cda/stds/core/StructureDefinition/Act",
         "profile" : ["https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-transport-du-professionnel|0.1.0"]
       }]
+    },
+    {
+      "id" : "Encounter.entryRelationship:frTransportDuProfessionnel.observation",
+      "path" : "Encounter.entryRelationship.observation",
+      "max" : "0"
     }]
   }
 }

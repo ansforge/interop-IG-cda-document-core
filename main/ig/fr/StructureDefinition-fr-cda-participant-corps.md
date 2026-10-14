@@ -2,9 +2,6 @@
 
 ## Modèle logique: CDA - FR Participant corps 
 
- 
-FR-Participant: CDA - participant. Participant du corps 
-
 **Utilisations:**
 
 * Utilise ce/t/te Profil de modèle logique: [CDA - FR Acte](StructureDefinition-fr-cda-acte.md), [CDA - FR Batterie examens de biologie medicale](StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.md), [CDA - FR DICOM Exposition patient](StructureDefinition-fr-cda-dicom-exposition-patient.md), [CDA - FR DICOM Technique imagerie](StructureDefinition-fr-cda-dicom-technique-imagerie.md)... Show 8 more, [CDA - FR Evaluation](StructureDefinition-fr-cda-evaluation.md), [CDA - FR Evenement](StructureDefinition-fr-cda-evenement.md), [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md), [CDA - FR Rencontre](StructureDefinition-fr-cda-rencontre.md), [CDA - FR Resultat examens de biologie element clinique pertinent](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md), [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md), [CDA - FR Transport du patient](StructureDefinition-fr-cda-transport-du-patient.md) and [CDA - FR Transport du professionnel](StructureDefinition-fr-cda-transport-du-professionnel.md)
@@ -22,6 +19,8 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
 
+#### Bindings terminologiques (différentiel)
+
 #### Bindings terminologiques
 
 #### Contraintes
@@ -30,8 +29,8 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 ** Résumé **
 
-Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 6 éléments
+Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 5 éléments
 
 **Structures**
 
@@ -49,6 +48,8 @@ Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slic
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
 
+#### Bindings terminologiques (différentiel)
+
  **Vue d'ensembleView** 
 
 #### Bindings terminologiques
@@ -59,8 +60,8 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 ** Résumé **
 
-Obligatoire : 0 élément(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 6 éléments
+Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ Must-Support : 5 éléments
 
 **Structures**
 
@@ -116,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
   "name" : "FRCDAParticipantCorps",
   "title" : "CDA - FR Participant corps",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -158,6 +159,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
       "short" : "templateId est optionnel. S'il est présent, son root peut être 1.2.250.1.213.1.1.3.109 et/ou une autre OID valide"
     },
     {
+      "id" : "Participant2.templateId.root",
+      "path" : "Participant2.templateId.root",
+      "min" : 1
+    },
+    {
       "id" : "Participant2.templateId:templateId",
       "path" : "Participant2.templateId",
       "sliceName" : "templateId",
@@ -169,28 +175,22 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
     {
       "id" : "Participant2.templateId:templateId.root",
       "path" : "Participant2.templateId.root",
-      "min" : 1,
       "patternString" : "1.2.250.1.213.1.1.3.109"
-    },
-    {
-      "id" : "Participant2.templateId:templateId-other",
-      "path" : "Participant2.templateId",
-      "sliceName" : "templateId-other",
-      "short" : "Autre TemplateId",
-      "definition" : "Autre TemplateId",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Participant2.templateId:templateId-other.root",
-      "path" : "Participant2.templateId.root",
-      "min" : 1,
-      "mustSupport" : true
     },
     {
       "id" : "Participant2.typeCode",
       "path" : "Participant2.typeCode",
-      "mustSupport" : true
+      "short" : "Code issu du JDV_HL7_v3_ParticipationType_CISIS (2.16.840.1.113883.1.11.10901).",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/cda/stds/core/ValueSet/CDAParticipationType|2.0.3-sd",
+        "additional" : [{
+          "purpose" : "required",
+          "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ParticipationType-cisis|20260916095457",
+          "documentation" : "Value set CI-SIS (JDV_HL7_v3_ParticipationType_CISIS), complémentaire au binding required hérité de CDA."
+        }]
+      }
     },
     {
       "id" : "Participant2.time",

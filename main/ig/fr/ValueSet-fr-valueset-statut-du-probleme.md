@@ -2,9 +2,6 @@
 
 ## ValueSet: ValueSet - FR ValueSet Statut du problème 
 
- 
-Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances 
-
  **References** 
 
 * [CDA - FR Statut du probleme](StructureDefinition-fr-cda-statut-du-probleme.md)
@@ -32,7 +29,7 @@ Jeu de valeurs regroupant les codes de statut du problème et des allergies/into
   "name" : "FRValueSetStatutDuProbleme",
   "title" : "ValueSet - FR ValueSet Statut du problème",
   "status" : "draft",
-  "date" : "2026-10-01T07:35:36+00:00",
+  "date" : "2026-10-14T13:15:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
