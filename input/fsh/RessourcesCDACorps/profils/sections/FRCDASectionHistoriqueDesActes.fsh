@@ -39,15 +39,16 @@ and frSectionHistoriqueDesActes 1..1
 * text 1..1 MS
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
+* obeys fr-historique-des-actes-entries
 * entry MS
 * entry 1..*
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
-* entry ^slicing.rules = #open
-* entry contains
-frActe 1..* and
-frReferencesExternes 0..* 
-* entry[frActe].procedure only FRCDAActe
-* entry[frActe].procedure ^short = "Entrée Acte"
-* entry[frReferencesExternes].act only FRCDAReferencesExternes
-* entry[frReferencesExternes].act ^short = "Entrée Références externes"
+* entry ^short = "Entrées Acte (procedure, 1..*) et Références externes (act, 0..*)"
+* entry.procedure only FRCDAActe
+* entry.procedure ^short = "Entrée Acte"
+* entry.act only FRCDAReferencesExternes
+* entry.act ^short = "Entrée Références externes"
+
+Invariant: fr-historique-des-actes-entries
+Description: "La section contient au moins une entrée Acte (procedure)."
+Expression: "entry.where(procedure.exists()).count() >= 1"
+Severity: #error

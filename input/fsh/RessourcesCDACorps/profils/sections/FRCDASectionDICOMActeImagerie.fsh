@@ -36,8 +36,8 @@ and dicomModalityPerformedProcedureStep 1..1
 * text ^definition = "Bloc narratif"
 * component MS
 * component 1..3
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
+* component ^slicing.discriminator.type = #profile
+* component ^slicing.discriminator.path = "section"
 * component ^slicing.rules = #open
 * component contains
 frSectionDicomComplications 0..1 and
@@ -49,14 +49,15 @@ frSectionDicomObjectCatalog 1..1
 * component[frSectionDicomExpositionAuxRadiations].section ^short = "Section Expositions aux radiations"
 * component[frSectionDicomObjectCatalog].section only FRCDASectionDICOMObjectCatalog
 * component[frSectionDicomObjectCatalog].section ^short = "Section Catalogue d'objects"
+* obeys fr-dicom-acte-imagerie-entries
 * entry 1..* MS
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
-* entry ^slicing.rules = #open
-* entry contains
-frDicomTechniqueImagerie 1..1 and
-frDicomAdministrationProduitDeSante 0..* 
-* entry[frDicomTechniqueImagerie].procedure only FRCDADICOMTechniqueImagerie
-* entry[frDicomTechniqueImagerie].procedure ^short = "Entrée technique d'imagerie"
-* entry[frDicomAdministrationProduitDeSante].substanceAdministration only FRCDADICOMAdministrationProduitDeSante
-* entry[frDicomAdministrationProduitDeSante].substanceAdministration ^short = "Entrée Administration de produits"
+* entry ^short = "Entrée Technique d'imagerie (procedure, 1..1) et entrées Administration de produits (substanceAdministration, 0..*)"
+* entry.procedure only FRCDADICOMTechniqueImagerie
+* entry.procedure ^short = "Entrée technique d'imagerie"
+* entry.substanceAdministration only FRCDADICOMAdministrationProduitDeSante
+* entry.substanceAdministration ^short = "Entrée Administration de produits"
+
+Invariant: fr-dicom-acte-imagerie-entries
+Description: "La section contient exactement une entrée Technique d'imagerie (procedure)."
+Expression: "entry.where(procedure.exists()).count() = 1"
+Severity: #error

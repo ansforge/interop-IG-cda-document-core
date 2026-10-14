@@ -59,7 +59,7 @@ L'argument @unit permet d'indiquer le rythme d'administration en combinant l'uni
 Dans chaque élément 'low' et 'high', un élément 'translation' peut permettre de pointer sur l'élément de la partie narrative relative à cette information."""
   * low 1..1 MS
   * high 1..1 MS
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = """Médicament: \r\n
 Pour les doses progressives, fractionnées ou conditionnelles, utilser un nullFlavor='NA'.
 Pour les combinaisons de médicaments, chaque entrée <substanceAdministration> subordonnée permet d'indiquer le produit entrant dans la combinaison."""

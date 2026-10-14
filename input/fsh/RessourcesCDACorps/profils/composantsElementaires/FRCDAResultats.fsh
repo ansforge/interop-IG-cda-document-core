@@ -46,13 +46,8 @@ Type de résultat :
 * author ^definition = "Auteur"
 * author only FRCDAAuthor
 * component MS
-* component 1..1
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-frResultat 1..1 
-* component[frResultat].observation 0..1 
-* component[frResultat].observation only FRCDAResultat
-* component[frResultat].observation ^short = "Entrée FR-Resultat"
-* component[frResultat].observation ^definition = "Entrée FR-Resultat"
+* component 1..*
+* component.observation 1..1
+* component.observation only FRCDAResultat
+* component.observation ^short = "Entrée FR-Resultat"
+* component.observation ^definition = "Entrée FR-Resultat"

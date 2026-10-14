@@ -57,8 +57,10 @@ and iheProblemEntry 1..1
 * value 1..1
 * value only CD
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "observation"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frTraitement 1..1
@@ -67,20 +69,25 @@ frTraitement 1..1
  and frGraviteEffetIndesirable 1..1
  and frEvolutionEffetIndesirable 0..1
 * entryRelationship[frTraitement].substanceAdministration only FRCDATraitement
+* entryRelationship[frTraitement].observation 0..0
 * entryRelationship[frTraitement] ^short = "Médicament, substance incriminée, posologie"
 * entryRelationship[frTraitement].typeCode = #COMP
 * entryRelationship[frProbleme].observation only FRCDAProbleme
+* entryRelationship[frProbleme].substanceAdministration 0..0
 * entryRelationship[frProbleme] ^short = "Réaction observée"
 * entryRelationship[frProbleme].typeCode = #MFST
 * entryRelationship[frImputabiliteEffetIndesirable].observation only FRCDAImputabiliteEffetIndesirable
+* entryRelationship[frImputabiliteEffetIndesirable].substanceAdministration 0..0
 * entryRelationship[frImputabiliteEffetIndesirable] ^short = "Imputabilité"
 * entryRelationship[frImputabiliteEffetIndesirable].typeCode = #SUBJ
 * entryRelationship[frImputabiliteEffetIndesirable].inversionInd = true
 * entryRelationship[frGraviteEffetIndesirable].observation only FRCDAGraviteEffetIndesirable
+* entryRelationship[frGraviteEffetIndesirable].substanceAdministration 0..0
 * entryRelationship[frGraviteEffetIndesirable] ^short = "Gravité"
 * entryRelationship[frGraviteEffetIndesirable].typeCode = #SUBJ
 * entryRelationship[frGraviteEffetIndesirable].inversionInd = true
 * entryRelationship[frEvolutionEffetIndesirable].observation only FRCDAEvolutionEffetIndesirable
+* entryRelationship[frEvolutionEffetIndesirable].substanceAdministration 0..0
 * entryRelationship[frEvolutionEffetIndesirable] ^short = "Evolution"
 * entryRelationship[frEvolutionEffetIndesirable].typeCode = #SUBJ
 * entryRelationship[frEvolutionEffetIndesirable].inversionInd = true

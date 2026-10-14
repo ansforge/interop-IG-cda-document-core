@@ -52,15 +52,8 @@ and frItemPlanTraitement 1..1
 * statusCode ^definition = "Statut de l’entrée"
 * statusCode.code = #completed
 * effectiveTime MS
-* effectiveTime MS
-* effectiveTime ^slicing.discriminator.type = #pattern
-* effectiveTime ^slicing.discriminator.path = "operator"
-* effectiveTime ^slicing.rules = #open
-* effectiveTime contains frEffectiveTimeDuree 0..1 and frEffectiveTimeFrequence 0..*
-* effectiveTime[frEffectiveTimeDuree] obeys fr-operator-not-a-item-plan-traitement
-* effectiveTime[frEffectiveTimeDuree] obeys fr-effectiveTime-duree-type-item-plan-traitement
-* effectiveTime[frEffectiveTimeFrequence] obeys fr-operator-a-item-plan-traitement
-* effectiveTime[frEffectiveTimeFrequence] obeys fr-effectiveTime-frequence-types-item-plan-traitement
+* effectiveTime ^short = "Durée de traitement (IVL_TS, operator absent ou différent de A) [0..1] et fréquence(s) d'administration (operator='A') [0..*]"
+* obeys fr-effectiveTime-item-plan-traitement
 * routeCode MS
 * routeCode ^short = "Voie d'administration - Si la voie d'administration est connue, elle doit être indiquée (code et displayName).  - Si elle n'est pas connue, la raison pour laquelle elle est inconnue peut être décrite en utilisant l'attribut nullFlavor."
 * routeCode ^definition = "Voie d'administration"
@@ -89,21 +82,18 @@ Les unités sont exprimées selon le système de codage UCUM."
 * consumable MS
 * consumable ^short = "Produit de santé"
 * consumable ^definition = "Produit de santé"
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * author MS
-* author ^slicing.discriminator.type = #value
-* author ^slicing.discriminator.path = "$this"
-* author ^slicing.rules = #open
-* author contains frAuteurDuTraitement 0..* and frAuteurDuPlanDeTraitement 0..1
-* author[frAuteurDuTraitement] ^short = "Auteur du traitement"
-* author[frAuteurDuTraitement] ^definition = "Auteur du traitement"
-* author[frAuteurDuTraitement] only FRCDAAuthor
-* author[frAuteurDuPlanDeTraitement] ^short = "Auteur du Plan de traitement"
-* author[frAuteurDuPlanDeTraitement] ^definition = "Auteur du Plan de traitement"
-* author[frAuteurDuPlanDeTraitement] only FRCDAAuthor
+* author only FRCDAAuthor
+* author ^short = "Auteur du traitement [0..*] et/ou auteur du plan de traitement [0..1]"
+* author ^definition = "Auteur du traitement et/ou auteur du plan de traitement"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "act"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[2].type = #profile
+* entryRelationship ^slicing.discriminator[2].path = "supply"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frReferenceInterne 0..*
@@ -115,23 +105,35 @@ frReferenceInterne 0..*
 * entryRelationship[frReferenceInterne] ^short = "Entrée Motif du traitement (Référence interne)"
 * entryRelationship[frReferenceInterne].typeCode = #RSON
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].substanceAdministration 0..0
+* entryRelationship[frReferenceInterne].supply 0..0
 * entryRelationship[frTraitementPrescritSubordonne] ^short = "Entrée Traitement subordonné"
 * entryRelationship[frTraitementPrescritSubordonne].typeCode = #COMP
 * entryRelationship[frTraitementPrescritSubordonne].substanceAdministration only FRCDATraitementPrescritSubordonne
+* entryRelationship[frTraitementPrescritSubordonne].act 0..0
+* entryRelationship[frTraitementPrescritSubordonne].supply 0..0
 * entryRelationship[frInstructionsAuPatient] ^short = "Entrée Instructions au patient"
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient].inversionInd = true
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
+* entryRelationship[frInstructionsAuPatient].substanceAdministration 0..0
+* entryRelationship[frInstructionsAuPatient].supply 0..0
 * entryRelationship[frInstructionsAuDispensateur] ^short = "Entrée Instructions au dispensateur"
 * entryRelationship[frInstructionsAuDispensateur].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuDispensateur].inversionInd = true
 * entryRelationship[frInstructionsAuDispensateur].act only FRCDAInstructionsAuDispensateur
+* entryRelationship[frInstructionsAuDispensateur].substanceAdministration 0..0
+* entryRelationship[frInstructionsAuDispensateur].supply 0..0
 * entryRelationship[frQuantiteDeProduit] ^short = "Entrée Quantité à dispenser"
 * entryRelationship[frQuantiteDeProduit].typeCode = #COMP
 * entryRelationship[frQuantiteDeProduit].supply only FRCDAQuantiteDeProduit
+* entryRelationship[frQuantiteDeProduit].act 0..0
+* entryRelationship[frQuantiteDeProduit].substanceAdministration 0..0
 * entryRelationship[frAutorisationSubstitution] ^short = "Entrée Autorisation de substitution"
 * entryRelationship[frAutorisationSubstitution].typeCode = #COMP
 * entryRelationship[frAutorisationSubstitution].act only FRCDAAutorisationSubstitution
+* entryRelationship[frAutorisationSubstitution].substanceAdministration 0..0
+* entryRelationship[frAutorisationSubstitution].supply 0..0
 * precondition MS
 * precondition 0..1
 * precondition ^short = "Précondition à l'utilisation du médicament. Permet de décrire les conditions préalables à l'utilisation du médicament. L'attribut @value de l'élément 'reference' est une URI qui pointe vers la partie narrative du document CDA décrivant ces conditions préalables."
@@ -139,22 +141,7 @@ frReferenceInterne 0..*
   * criterion MS
   * criterion.text 1..1 MS
 
-Invariant: fr-operator-a-item-plan-traitement
-Description: "operator doit être A"
-Expression: "operator = 'A'"
-Severity: #error
- 
-Invariant: fr-operator-not-a-item-plan-traitement
-Description: "operator doit être différent de A"
-Expression: "operator != 'A'"
-Severity: #error
- 
-Invariant: fr-effectiveTime-frequence-types-item-plan-traitement
-Description: "La fréquence doit être SXCM-TS, PIVL-TS, EIVL-TS ou SXPR-TS"
-Expression: "is(SXCM_TS) or is(PIVL_TS) or is(EIVL_TS) or is(SXPR_TS)"
-Severity: #error
- 
-Invariant: fr-effectiveTime-duree-type-item-plan-traitement
-Description: "La durée doit être IVL-TS"
-Expression: "is(IVL_TS)"
+Invariant: fr-effectiveTime-item-plan-traitement
+Description: "Au plus une durée de traitement : un effectiveTime sans operator='A' doit être un IVL_TS, et il ne peut y en avoir qu'un. Les fréquences d'administration portent operator='A'."
+Expression: "effectiveTime.where(operator.empty() or operator != 'A').count() <= 1 and effectiveTime.where(operator.empty() or operator != 'A').all(is(IVL_TS))"
 Severity: #error

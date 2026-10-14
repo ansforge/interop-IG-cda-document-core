@@ -53,8 +53,10 @@ and iheSupplyEntry 1..1
 * product ^definition = "Médicament délivré"
 * product only FRCDAProduitDeSante
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "substanceAdministration"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frReferenceItemPrescription 0..1
@@ -63,29 +65,34 @@ frReferenceItemPrescription 0..1
  and frNotesDuDispensateur 0..1
  and frActeSubstitution 0..1
 * entryRelationship[frReferenceItemPrescription].substanceAdministration only FRCDAReferenceItemPrescription
+* entryRelationship[frReferenceItemPrescription].act 0..0
 * entryRelationship[frReferenceItemPrescription] ^short = "Référence de la prescription"
 * entryRelationship[frReferenceItemPrescription] ^definition = "Référence de la prescription"
 * entryRelationship[frReferenceItemPrescription].typeCode = #REFR
 * entryRelationship[frReferenceItemPrescription].inversionInd = false
 
 * entryRelationship[frTraitement].substanceAdministration only FRCDATraitement
+* entryRelationship[frTraitement].act 0..0
 * entryRelationship[frTraitement] ^short = "Posologie"
 * entryRelationship[frTraitement] ^definition = "Posologie"
 * entryRelationship[frTraitement].typeCode = #COMP
 
 * entryRelationship[frInstructionsAuPatient].act only FRCDAInstructionsAuPatient
+* entryRelationship[frInstructionsAuPatient].substanceAdministration 0..0
 * entryRelationship[frInstructionsAuPatient] ^short = "Instructions au patient"
 * entryRelationship[frInstructionsAuPatient] ^definition = "Instructions au patient"
 * entryRelationship[frInstructionsAuPatient].typeCode = #SUBJ
 * entryRelationship[frInstructionsAuPatient].inversionInd = true
 
 * entryRelationship[frNotesDuDispensateur].act only FRCDANotesDuDispensateur
+* entryRelationship[frNotesDuDispensateur].substanceAdministration 0..0
 * entryRelationship[frNotesDuDispensateur] ^short = "Notes du dispensateur"
 * entryRelationship[frNotesDuDispensateur] ^definition = "Notes du dispensateur"
 * entryRelationship[frNotesDuDispensateur].typeCode = #SUBJ
 * entryRelationship[frNotesDuDispensateur].inversionInd = true
 
 * entryRelationship[frActeSubstitution].act only FRCDAActeSubstitution
+* entryRelationship[frActeSubstitution].substanceAdministration 0..0
 * entryRelationship[frActeSubstitution] ^short = "Substitution"
 * entryRelationship[frActeSubstitution] ^definition = "Substitution"
 * entryRelationship[frActeSubstitution].typeCode = #COMP

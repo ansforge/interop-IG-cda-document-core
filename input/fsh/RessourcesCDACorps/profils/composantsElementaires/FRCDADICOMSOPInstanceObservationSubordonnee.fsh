@@ -43,8 +43,8 @@ and dicomSOPInstanceObservation 1..1
 * effectiveTime ^short = "Date de l'observation"
 * effectiveTime ^definition = "Date de l'observation"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains
 frDicomObjectifsDeReference 0..1

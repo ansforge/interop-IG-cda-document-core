@@ -56,25 +56,19 @@ and frBatterieExamensDeBiologieMedicale 1..1
 * participant ^definition = "Participant"
 * author only FRCDAAuthor
 * author ^short = "Auteur - Apparaît à ce niveau si le rendu de ce  résultat procède de cet auteur spécifique, différent de celui déclaré aux niveaux supérieurs. Constraint @typeCode='AUT'"
+* obeys fr-batterie-examens-component-typecode
 * component MS
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-frPrelevement 0..* and
-frResultatExamensDeBiologieElementCliniquePertinent 0..* and
-frImageIllustrative 0..* and
-frCommentaireER 0..*
-* component[frPrelevement].procedure
-* component[frPrelevement].procedure only FRCDAPrelevement
-* component[frPrelevement] ^short = "Prélèvement"
-* component[frPrelevement].typeCode = #COMP
-* component[frResultatExamensDeBiologieElementCliniquePertinent] ^short = "Résultat d'examen de biologie / élément clinique pertinent"
-* component[frResultatExamensDeBiologieElementCliniquePertinent].typeCode = #COMP
-* component[frResultatExamensDeBiologieElementCliniquePertinent].observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
-* component[frImageIllustrative] ^short = "Image illustrative"
-* component[frImageIllustrative].typeCode = #COMP
-* component[frImageIllustrative].observationMedia only FRCDAImageIllustrative
-* component[frCommentaireER] ^short = "Commentaire"
-* component[frCommentaireER].act only FRCDACommentaireER
-* component[frCommentaireER].typeCode = #SUBJ
+* component ^short = "Prélèvement (procedure), résultat d'examen de biologie / élément clinique pertinent (observation), image illustrative (observationMedia) et/ou commentaire (act)"
+* component.procedure only FRCDAPrelevement
+* component.procedure ^short = "Prélèvement"
+* component.observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
+* component.observation ^short = "Résultat d'examen de biologie / élément clinique pertinent"
+* component.observationMedia only FRCDAImageIllustrative
+* component.observationMedia ^short = "Image illustrative"
+* component.act only FRCDACommentaireER
+* component.act ^short = "Commentaire"
+
+Invariant: fr-batterie-examens-component-typecode
+Description: "typeCode vaut COMP pour un prélèvement, un résultat ou une image illustrative, et SUBJ pour un commentaire."
+Expression: "component.where((procedure.exists() or observation.exists() or observationMedia.exists()) and typeCode.exists()).all(typeCode = 'COMP') and component.where(act.exists() and typeCode.exists()).all(typeCode = 'SUBJ')"
+Severity: #error

@@ -51,12 +51,11 @@ and frListeDesAllergiesEtHypersensibilites 1..1
 * effectiveTime.low 1..1
 * effectiveTime.low ^short = "Date du début"
 * effectiveTime.low ^definition = "Date du début"
-* effectiveTime.high 1..1
 * effectiveTime ^short = "Date de fin. Le sous-élément 'high' est obligatoire dans les cas ou le problème est dans un statut 'completed' ou aborted' et n’est pas présent dans les autres cas."
 * effectiveTime ^definition = "Date de fin"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #type
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator.type = #value
+* entryRelationship ^slicing.discriminator.path = "typeCode"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frAllergieOuHypersensibilite 1..*

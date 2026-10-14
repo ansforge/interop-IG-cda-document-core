@@ -37,22 +37,12 @@ and frSectionPlanDeSoins 1..1
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * entry MS
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
-* entry ^slicing.rules = #open
-* entry contains
-frActe 0..* and
-frDemandeDexamenOuDeSuivi 0..* and
-frTraitement 0..* and
-frVaccinRecommande 0..* and
-frRencontre 0..* 
-* entry[frActe].procedure only FRCDAActe
-* entry[frActe].procedure ^short = "Entrée Acte"
-* entry[frDemandeDexamenOuDeSuivi].observation only FRCDADemandeDExamenOuDeSuivi
-* entry[frDemandeDexamenOuDeSuivi].observation ^short = "Entrée Demande d'examen ou de suivi"
-* entry[frTraitement].substanceAdministration only FRCDATraitement
-* entry[frTraitement].substanceAdministration ^short = "Entrée Traitement"
-* entry[frVaccinRecommande].substanceAdministration only FRCDAVaccinRecommande
-* entry[frVaccinRecommande].substanceAdministration ^short = "Entrée Vaccin recommandé"
-* entry[frRencontre].encounter only FRCDARencontre
-* entry[frRencontre].encounter ^short = "Entrée Rencontre"
+* entry ^short = "Entrées Acte (procedure), Demande d'examen ou de suivi (observation), Traitement ou Vaccin recommandé (substanceAdministration) et/ou Rencontre (encounter)"
+* entry.procedure only FRCDAActe
+* entry.procedure ^short = "Entrée Acte"
+* entry.observation only FRCDADemandeDExamenOuDeSuivi
+* entry.observation ^short = "Entrée Demande d'examen ou de suivi"
+* entry.substanceAdministration only FRCDATraitement or FRCDAVaccinRecommande
+* entry.substanceAdministration ^short = "Entrée Traitement ou Entrée Vaccin recommandé"
+* entry.encounter only FRCDARencontre
+* entry.encounter ^short = "Entrée Rencontre"

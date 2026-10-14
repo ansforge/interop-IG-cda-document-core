@@ -29,5 +29,5 @@ and frDoseAntigene 1..1
   * value 1..1
   * unit 1..1
 * consumable 1..1
-* consumable only FRCDAProduitDeSante
+* consumable.manufacturedProduct only FRCDAProduitDeSante
 * consumable ^short = "Antigène"

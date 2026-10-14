@@ -64,8 +64,10 @@ and frProbleme 1..1
   * qualifier MS
 * entryRelationship MS
 * entryRelationship 0..*
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frSeverite 0..1
@@ -74,22 +76,27 @@ frSeverite 0..1
  and frCertitude 0..1
  and frCommentaireER 0..1
 * entryRelationship[frSeverite].observation only FRCDASeverite
+* entryRelationship[frSeverite].act 0..0
 * entryRelationship[frSeverite] ^short = "Sévérité"
 * entryRelationship[frSeverite].typeCode = #SUBJ
 * entryRelationship[frSeverite].inversionInd = true
 * entryRelationship[frStatutDuProbleme].observation only FRCDAStatutDuProbleme
+* entryRelationship[frStatutDuProbleme].act 0..0
 * entryRelationship[frStatutDuProbleme] ^short = "Statut du problème"
 * entryRelationship[frStatutDuProbleme].typeCode = #REFR
 * entryRelationship[frStatutDuProbleme].inversionInd = false
 * entryRelationship[frStatutCliniqueDuPatient].observation only FRCDAStatutCliniqueDuPatient
+* entryRelationship[frStatutCliniqueDuPatient].act 0..0
 * entryRelationship[frStatutCliniqueDuPatient] ^short = "Statut clinique du patient"
 * entryRelationship[frStatutCliniqueDuPatient].typeCode = #REFR
 * entryRelationship[frStatutCliniqueDuPatient].inversionInd = false
 * entryRelationship[frCertitude].observation only FRCDACertitude
+* entryRelationship[frCertitude].act 0..0
 * entryRelationship[frCertitude] ^short = "certitude"
 * entryRelationship[frCertitude].typeCode = #SUBJ
 * entryRelationship[frCertitude].inversionInd = true
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].observation 0..0
 * entryRelationship[frCommentaireER] ^short = "Commentaire"
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER].inversionInd = true

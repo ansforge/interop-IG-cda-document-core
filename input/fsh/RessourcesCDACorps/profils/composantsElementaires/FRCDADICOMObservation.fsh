@@ -76,8 +76,8 @@ and dicomCodedObservation 1..1
     * value only CD
     * value from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis (required)
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frDicomSOPInstanceObservation 0..*

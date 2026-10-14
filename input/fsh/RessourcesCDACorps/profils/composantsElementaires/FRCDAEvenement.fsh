@@ -71,8 +71,10 @@ and frEvenement 1..1
 * participant only FRCDAParticipantCorps
 * participant ^short = "Lieu d'exécution / Entité juridique responsable de l'événement / Autres participants - Les attributs de cet élément prennent les valeurs suivantes : @typeCode='LOC' pour un Lieu d'éxécution - @typeCode='RESP' pour une Entité juridique - Les attributs du sous-élément participantRole prennent les valeurs suivantes : @classCode='SDLOC' pour un Lieu d'éxécution - Les attributs du sous-élément playingEntity prennent les valeurs suivantes : @classCode='PLC' pour un Lieu d'éxécution - @classCode='ENT' pour une Entité juridique @determinerCode='INSTANCE' pour un Lieu d'éxécution ou une Entité Juridique"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frSimpleObservation 0..*
@@ -82,26 +84,32 @@ frSimpleObservation 0..*
  and frStatut 0..*
  and frTransportDuProfessionnel 0..*
 * entryRelationship[frSimpleObservation].observation only FRCDASimpleObservation
+* entryRelationship[frSimpleObservation].act 0..0
 * entryRelationship[frSimpleObservation] ^short = "Caractéristique de l'évènement"
 * entryRelationship[frSimpleObservation].typeCode = #COMP
 * entryRelationship[frSimpleObservation].inversionInd = false
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].observation 0..0
 * entryRelationship[frCommentaireER] ^short = "Commentaire"
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER].inversionInd = true
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].observation 0..0
 * entryRelationship[frReferenceInterne] ^short = "Pièces jointes (ex : CR de l'évènement)"
 * entryRelationship[frReferenceInterne].typeCode = #REFR
 * entryRelationship[frReferenceInterne].inversionInd = false
 * entryRelationship[frTransportDuPatient].act only FRCDATransportDuPatient
+* entryRelationship[frTransportDuPatient].observation 0..0
 * entryRelationship[frTransportDuPatient] ^short = "Transport du patient/usager - (aller ou retour)"
 * entryRelationship[frTransportDuPatient].typeCode = #COMP
 * entryRelationship[frTransportDuPatient].inversionInd = false
 * entryRelationship[frStatut].observation only FRCDAStatut
+* entryRelationship[frStatut].act 0..0
 * entryRelationship[frStatut] ^short = "Statut métier de l’évènement"
 * entryRelationship[frStatut].typeCode = #COMP
 * entryRelationship[frStatut].inversionInd = false
 * entryRelationship[frTransportDuProfessionnel].act only FRCDATransportDuProfessionnel
+* entryRelationship[frTransportDuProfessionnel].observation 0..0
 * entryRelationship[frTransportDuProfessionnel] ^short = "Transport d’un professionnel ayant participé à l’évènement"
 * entryRelationship[frTransportDuProfessionnel].typeCode = #COMP
 * entryRelationship[frTransportDuProfessionnel].inversionInd = false

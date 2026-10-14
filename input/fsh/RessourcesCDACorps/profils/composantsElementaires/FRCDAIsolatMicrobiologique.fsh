@@ -73,23 +73,13 @@ frParticipantResponsable 0..1 and frParticipantDispositif 0..*
 * participant[frParticipantDispositif] only FRCDAParticipantCorps
 * participant[frParticipantDispositif].typeCode = #DEV
 * component MS
-* component ^slicing.discriminator.type = #type
-* component ^slicing.discriminator.path = "$this"
-* component ^slicing.rules = #open
-* component contains
-frBatterieExamensDeBiologieMedicale 0..* and
-frResultatExamensDeBiologieElementCliniquePertinent 0..* and
-frImageIllustrative 0..* and
-frCommentaireER 0..* 
-* component[frBatterieExamensDeBiologieMedicale] ^short = "Batterie d'examens de biologie médicale"
-* component[frBatterieExamensDeBiologieMedicale].typeCode = #COMP
-* component[frBatterieExamensDeBiologieMedicale].organizer only FRCDABatterieExamensDeBiologieMedicale
-* component[frResultatExamensDeBiologieElementCliniquePertinent] ^short = "Résultat d'examen / élément clinique pertinent"
-* component[frResultatExamensDeBiologieElementCliniquePertinent].typeCode = #COMP
-* component[frResultatExamensDeBiologieElementCliniquePertinent].observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
-* component[frImageIllustrative] ^short = "Image ou graphe"
-* component[frImageIllustrative].typeCode = #COMP
-* component[frImageIllustrative].observationMedia only FRCDAImageIllustrative
-* component[frCommentaireER] ^short = "Commentaire de section interprétant l'ensemble des résultats"
-* component[frCommentaireER].typeCode = #COMP
-* component[frCommentaireER].act only FRCDACommentaireER
+* component ^short = "Batterie d'examens (organizer), résultat d'examen / élément clinique pertinent (observation), image ou graphe (observationMedia) et/ou commentaire (act)"
+* component.typeCode = #COMP
+* component.organizer only FRCDABatterieExamensDeBiologieMedicale
+* component.organizer ^short = "Batterie d'examens de biologie médicale"
+* component.observation only FRCDAResultatExamensDeBiologieElementCliniquePertinent
+* component.observation ^short = "Résultat d'examen / élément clinique pertinent"
+* component.observationMedia only FRCDAImageIllustrative
+* component.observationMedia ^short = "Image ou graphe"
+* component.act only FRCDACommentaireER
+* component.act ^short = "Commentaire de section interprétant l'ensemble des résultats"

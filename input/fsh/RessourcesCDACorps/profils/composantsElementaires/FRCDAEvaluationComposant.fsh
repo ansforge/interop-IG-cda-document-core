@@ -60,17 +60,21 @@ and frEvaluationComposant 1..1
 * interpretationCode ^short = "Interprétation"
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frEvaluationComposantN2 0..*
  and frCommentaireER 0..*
 * entryRelationship[frEvaluationComposantN2].observation only FRCDAEvaluationComposantN2
+* entryRelationship[frEvaluationComposantN2].act 0..0
 * entryRelationship[frEvaluationComposantN2] ^short = "Sous-composant de l'évaluation"
 * entryRelationship[frEvaluationComposantN2].typeCode = #COMP
 * entryRelationship[frEvaluationComposantN2].inversionInd = false
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].observation 0..0
 * entryRelationship[frCommentaireER] ^short = "Commentaire"
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER].inversionInd = true

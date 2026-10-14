@@ -30,15 +30,16 @@ Description: "Cette section, optionnelle, est utilisée uniquement dans le cas d
 * text 1..1 MS
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
+* obeys fr-resultats-biologie-seconde-intention-entries
 * entry MS
 * entry 1..*
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "$this"
-* entry ^slicing.rules = #open
-* entry contains
-frSimpleObservation 0..1 and
-frDocumentAttache 1..*
-* entry[frSimpleObservation].observation only FRCDASimpleObservation
-* entry[frSimpleObservation].observation ^short = "Entrée Simple observation"
-* entry[frDocumentAttache].organizer only FRCDADocumentAttache
-* entry[frDocumentAttache].organizer ^short = "Entrée Document attaché"
+* entry ^short = "Entrée Simple observation (observation, 0..1) et entrées Document attaché (organizer, 1..*)"
+* entry.observation only FRCDASimpleObservation
+* entry.observation ^short = "Entrée Simple observation"
+* entry.organizer only FRCDADocumentAttache
+* entry.organizer ^short = "Entrée Document attaché"
+
+Invariant: fr-resultats-biologie-seconde-intention-entries
+Description: "La section contient au moins une entrée Document attaché (organizer) et au plus une entrée Simple observation (observation)."
+Expression: "entry.where(organizer.exists()).count() >= 1 and entry.where(observation.exists()).count() <= 1"
+Severity: #error

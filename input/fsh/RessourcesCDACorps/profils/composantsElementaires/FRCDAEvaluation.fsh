@@ -78,8 +78,10 @@ and frEvaluation 1..1
 * participant ^definition = "Responsable de l'évaluation"
 * participant.typeCode = #RESP
 * entryRelationship MS
-* entryRelationship ^slicing.discriminator.type = #value
-* entryRelationship ^slicing.discriminator.path = "$this"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.discriminator[1].type = #profile
+* entryRelationship ^slicing.discriminator[1].path = "act"
 * entryRelationship ^slicing.rules = #open
 * entryRelationship contains 
 frEvaluationComposant 0..*
@@ -87,17 +89,21 @@ frEvaluationComposant 0..*
  and frCommentaireER 0..*
  and frReferenceInterne 0..*
 * entryRelationship[frEvaluationComposant].observation only FRCDAEvaluationComposant
+* entryRelationship[frEvaluationComposant].act 0..0
 * entryRelationship[frEvaluationComposant].typeCode = #COMP
 * entryRelationship[frEvaluationComposant].inversionInd = false
 * entryRelationship[frStatut].observation only FRCDAStatut
+* entryRelationship[frStatut].act 0..0
 * entryRelationship[frStatut] ^short = "Statut de l’évaluation"
 * entryRelationship[frStatut].typeCode = #COMP
 * entryRelationship[frStatut].inversionInd = false
 * entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].observation 0..0
 * entryRelationship[frCommentaireER] ^short = "Commentaire"
 * entryRelationship[frCommentaireER].typeCode = #SUBJ
 * entryRelationship[frCommentaireER].inversionInd = true
 * entryRelationship[frReferenceInterne].act only FRCDAReferenceInterne
+* entryRelationship[frReferenceInterne].observation 0..0
 * entryRelationship[frReferenceInterne] ^short = "référence interne"
 * entryRelationship[frReferenceInterne].typeCode = #REFR
 * entryRelationship[frReferenceInterne].inversionInd = false
