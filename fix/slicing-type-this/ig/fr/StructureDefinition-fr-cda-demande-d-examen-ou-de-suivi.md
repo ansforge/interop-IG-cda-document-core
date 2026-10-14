@@ -117,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-demande-
   "name" : "FRCDADemandeDExamenOuDeSuivi",
   "title" : "CDA - FR Demande d examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-10-12T13:25:25+00:00",
+  "date" : "2026-10-14T12:53:34+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
