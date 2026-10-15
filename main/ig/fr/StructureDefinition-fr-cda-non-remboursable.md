@@ -113,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-non-remb
   "name" : "FRCDANonRemboursable",
   "title" : "CDA - FR Non remboursable",
   "status" : "draft",
-  "date" : "2026-10-14T13:15:36+00:00",
+  "date" : "2026-10-15T09:41:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
