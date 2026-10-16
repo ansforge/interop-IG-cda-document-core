@@ -101,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ca
   "name" : "FRCDADICOMCadresAAfficher",
   "title" : "CDA - FR DICOM Cadres à afficher",
   "status" : "draft",
-  "date" : "2026-10-15T15:46:20+00:00",
+  "date" : "2026-10-16T07:40:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
