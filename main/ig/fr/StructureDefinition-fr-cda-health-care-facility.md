@@ -27,11 +27,6 @@ Cette structure est dérivée de [HealthCareFacility](http://hl7.org/cda/stds/co
 
 Cette structure est dérivée de [HealthCareFacility](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-HealthCareFacility.html) 
 
-** Résumé **
-
-Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
- Interdit : 14 éléments
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [HealthCareFacility](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-HealthCareFacility.html) 
@@ -45,11 +40,6 @@ Cette structure est dérivée de [HealthCareFacility](http://hl7.org/cda/stds/co
 #### Contraintes
 
 Cette structure est dérivée de [HealthCareFacility](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-HealthCareFacility.html) 
-
-** Résumé **
-
-Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
- Interdit : 14 éléments
 
  
 
@@ -93,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-health-c
   "name" : "FRCDAHealthCareFacility",
   "title" : "CDA - healthCareFacility",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

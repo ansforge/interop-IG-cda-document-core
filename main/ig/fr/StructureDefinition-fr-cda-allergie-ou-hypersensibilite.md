@@ -27,27 +27,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
 
-** Résumé **
-
-Obligatoire : 17 éléments(5 éléments obligatoire(s) imbriqué(s))
- Must-Support : 15 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Probleme (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-probleme|0.1.0)](StructureDefinition-fr-cda-probleme.md)
-* [CDA - FR Statut du probleme (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-statut-du-probleme|0.1.0)](StructureDefinition-fr-cda-statut-du-probleme.md)
-* [CDA - FR Criticite (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-criticite|0.1.0)](StructureDefinition-fr-cda-criticite.md)
-* [CDA - FR Certitude (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-certitude|0.1.0)](StructureDefinition-fr-cda-certitude.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
@@ -61,27 +40,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 #### Contraintes
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
-
-** Résumé **
-
-Obligatoire : 17 éléments(5 éléments obligatoire(s) imbriqué(s))
- Must-Support : 15 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Probleme (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-probleme|0.1.0)](StructureDefinition-fr-cda-probleme.md)
-* [CDA - FR Statut du probleme (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-statut-du-probleme|0.1.0)](StructureDefinition-fr-cda-statut-du-probleme.md)
-* [CDA - FR Criticite (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-criticite|0.1.0)](StructureDefinition-fr-cda-criticite.md)
-* [CDA - FR Certitude (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-certitude|0.1.0)](StructureDefinition-fr-cda-certitude.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-* The element 1 is sliced based on the value of Observation.entryRelationship
 
  
 
@@ -125,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-allergie
   "name" : "FRCDAAllergieOuHypersensibilite",
   "title" : "CDA - FR Allergie ou hypersensibilite",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

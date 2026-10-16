@@ -4,7 +4,7 @@
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Ce/t/te Profil de modèle logique n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-observation-sur-echelle-douleur)
 
@@ -27,17 +27,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
 
-** Résumé **
-
-Obligatoire : 14 éléments(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 16 éléments
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
@@ -51,17 +40,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 #### Contraintes
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
-
-** Résumé **
-
-Obligatoire : 14 éléments(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 16 éléments
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
 
  
 
@@ -105,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-observat
   "name" : "FRCDAObservationSurEchelleDouleur",
   "title" : "CDA - FR Observation sur echelle douleur",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

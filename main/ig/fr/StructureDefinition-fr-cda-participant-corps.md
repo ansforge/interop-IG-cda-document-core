@@ -27,23 +27,6 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
 
-** Résumé **
-
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR participantRole (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-role|0.1.0)](StructureDefinition-fr-cda-participant-role.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Participant2.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
@@ -57,23 +40,6 @@ Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0
 #### Contraintes
 
 Cette structure est dérivée de [Participant2](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Participant2.html) 
-
-** Résumé **
-
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR participantRole (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-role|0.1.0)](StructureDefinition-fr-cda-participant-role.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Participant2.templateId
 
  
 
@@ -117,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-particip
   "name" : "FRCDAParticipantCorps",
   "title" : "CDA - FR Participant corps",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

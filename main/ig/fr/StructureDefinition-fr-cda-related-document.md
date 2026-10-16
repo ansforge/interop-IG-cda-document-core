@@ -25,16 +25,6 @@ Cette structure est dérivée de [RelatedDocument](http://hl7.org/cda/stds/core/
 
 Cette structure est dérivée de [RelatedDocument](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RelatedDocument.html) 
 
-** Résumé **
-
-Interdit : 3 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - parentDocument (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-parent-document|0.1.0)](StructureDefinition-fr-cda-parent-document.md)
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [RelatedDocument](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RelatedDocument.html) 
@@ -46,16 +36,6 @@ Cette structure est dérivée de [RelatedDocument](http://hl7.org/cda/stds/core/
 #### Contraintes
 
 Cette structure est dérivée de [RelatedDocument](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RelatedDocument.html) 
-
-** Résumé **
-
-Interdit : 3 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - parentDocument (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-parent-document|0.1.0)](StructureDefinition-fr-cda-parent-document.md)
 
  
 
@@ -99,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-related-
   "name" : "FRCDARelatedDocument",
   "title" : "CDA - relatedDocument",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

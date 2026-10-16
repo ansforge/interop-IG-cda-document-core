@@ -4,7 +4,7 @@
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Ce/t/te Profil de modèle logique n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-organisme-assurance-maladie)
 
@@ -27,18 +27,6 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Act.html) 
 
-** Résumé **
-
-Obligatoire : 16 éléments(8 éléments obligatoire(s) imbriqué(s))
- Must-Support : 31 éléments
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Act.templateId
-* The element 1 is sliced based on the value of Act.participant
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Act.html) 
@@ -52,18 +40,6 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 #### Contraintes
 
 Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Act.html) 
-
-** Résumé **
-
-Obligatoire : 16 éléments(8 éléments obligatoire(s) imbriqué(s))
- Must-Support : 31 éléments
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Act.templateId
-* The element 1 is sliced based on the value of Act.participant
 
  
 
@@ -107,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-organism
   "name" : "FRCDAOrganismeAssuranceMaladie",
   "title" : "CDA - FR Organisme assurance maladie",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -29,32 +29,6 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
 
-** Résumé **
-
-Obligatoire : 11 éléments(5 éléments obligatoire(s) imbriqué(s))
- Must-Support : 23 éléments
- Interdit : 12 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Produit de sante (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0)](StructureDefinition-fr-cda-produit-de-sante.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Reference interne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0)](StructureDefinition-fr-cda-reference-interne.md)
-* [CDA - FR Traitement prescrit subordonne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit-subordonne|0.1.0)](StructureDefinition-fr-cda-traitement-prescrit-subordonne.md)
-* [CDA - FR Instructions au patient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-patient|0.1.0)](StructureDefinition-fr-cda-instructions-au-patient.md)
-* [CDA - FR Instructions au dispensateur (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-dispensateur|0.1.0)](StructureDefinition-fr-cda-instructions-au-dispensateur.md)
-* [CDA - FR Quantite de produit (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-quantite-de-produit|0.1.0)](StructureDefinition-fr-cda-quantite-de-produit.md)
-* [CDA - FR Autorisation Substitution (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-autorisation-substitution|0.1.0)](StructureDefinition-fr-cda-autorisation-substitution.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
@@ -70,32 +44,6 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 #### Contraintes
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
-
-** Résumé **
-
-Obligatoire : 11 éléments(5 éléments obligatoire(s) imbriqué(s))
- Must-Support : 23 éléments
- Interdit : 12 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Produit de sante (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0)](StructureDefinition-fr-cda-produit-de-sante.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Reference interne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0)](StructureDefinition-fr-cda-reference-interne.md)
-* [CDA - FR Traitement prescrit subordonne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-prescrit-subordonne|0.1.0)](StructureDefinition-fr-cda-traitement-prescrit-subordonne.md)
-* [CDA - FR Instructions au patient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-patient|0.1.0)](StructureDefinition-fr-cda-instructions-au-patient.md)
-* [CDA - FR Instructions au dispensateur (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-dispensateur|0.1.0)](StructureDefinition-fr-cda-instructions-au-dispensateur.md)
-* [CDA - FR Quantite de produit (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-quantite-de-produit|0.1.0)](StructureDefinition-fr-cda-quantite-de-produit.md)
-* [CDA - FR Autorisation Substitution (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-autorisation-substitution|0.1.0)](StructureDefinition-fr-cda-autorisation-substitution.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -139,7 +87,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-item-pla
   "name" : "FRCDAItemPlanTraitement",
   "title" : "CDA - FR Item plan traitement",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

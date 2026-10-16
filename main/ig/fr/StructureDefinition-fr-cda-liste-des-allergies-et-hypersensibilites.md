@@ -27,24 +27,6 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 
 Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Act.html) 
 
-** Résumé **
-
-Obligatoire : 14 éléments
- Must-Support : 7 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Allergie ou hypersensibilite (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite|0.1.0)](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Act.templateId
-* The element 1 is sliced based on the value of Act.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Act.html) 
@@ -58,24 +40,6 @@ Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/Str
 #### Contraintes
 
 Cette structure est dérivée de [Act](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Act.html) 
-
-** Résumé **
-
-Obligatoire : 14 éléments
- Must-Support : 7 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Allergie ou hypersensibilite (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-allergie-ou-hypersensibilite|0.1.0)](StructureDefinition-fr-cda-allergie-ou-hypersensibilite.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Act.templateId
-* The element 1 is sliced based on the value of Act.entryRelationship
 
  
 
@@ -119,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-liste-de
   "name" : "FRCDAListeDesAllergiesEtHypersensibilites",
   "title" : "CDA - FR Liste des allergies et hypersensibilites",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

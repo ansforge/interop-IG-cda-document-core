@@ -25,11 +25,6 @@ Cette structure est dérivée de [Order](http://hl7.org/cda/stds/core/2.0.3-sd/S
 
 Cette structure est dérivée de [Order](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Order.html) 
 
-** Résumé **
-
-Obligatoire : 1 élément
- Interdit : 9 éléments
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Order](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Order.html) 
@@ -41,11 +36,6 @@ Cette structure est dérivée de [Order](http://hl7.org/cda/stds/core/2.0.3-sd/S
 #### Contraintes
 
 Cette structure est dérivée de [Order](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Order.html) 
-
-** Résumé **
-
-Obligatoire : 1 élément
- Interdit : 9 éléments
 
  
 
@@ -89,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-order.cs
   "name" : "FRCDAOrder",
   "title" : "CDA - order",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

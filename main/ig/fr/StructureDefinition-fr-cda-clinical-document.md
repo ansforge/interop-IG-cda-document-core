@@ -4,7 +4,7 @@
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Ce/t/te Profil de modèle logique n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-clinical-document)
 
@@ -27,29 +27,6 @@ Cette structure est dérivée de [ClinicalDocument](http://hl7.org/cda/stds/core
 
 Cette structure est dérivée de [ClinicalDocument](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html) 
 
-** Résumé **
-
-Obligatoire : 9 éléments
- Interdit : 1 élément
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - recordTarget (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-record-target|0.1.0)](StructureDefinition-fr-cda-record-target.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - dataEnterer (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-data-enterer|0.1.0)](StructureDefinition-fr-cda-data-enterer.md)
-* [CDA - informant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0)](StructureDefinition-fr-cda-informant.md)
-* [CDA - custodian (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-custodian|0.1.0)](StructureDefinition-fr-cda-custodian.md)
-* [CDA - informationRecipient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-information-recipient|0.1.0)](StructureDefinition-fr-cda-information-recipient.md)
-* [CDA - legalAuthenticator (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-legal-authenticator|0.1.0)](StructureDefinition-fr-cda-legal-authenticator.md)
-* [CDA - authenticator (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authenticator|0.1.0)](StructureDefinition-fr-cda-authenticator.md)
-* [CDA - participant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-entete|0.1.0)](StructureDefinition-fr-cda-participant-entete.md)
-* [CDA - inFulfillmentOf (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-inFulfillment-of|0.1.0)](StructureDefinition-fr-cda-inFulfillment-of.md)
-* [CDA - documentationOf (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-documentation-of|0.1.0)](StructureDefinition-fr-cda-documentation-of.md)
-* [CDA - relatedDocument (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-related-document|0.1.0)](StructureDefinition-fr-cda-related-document.md)
-* [CDA - authorization (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authorization|0.1.0)](StructureDefinition-fr-cda-authorization.md)
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [ClinicalDocument](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html) 
@@ -63,29 +40,6 @@ Cette structure est dérivée de [ClinicalDocument](http://hl7.org/cda/stds/core
 #### Contraintes
 
 Cette structure est dérivée de [ClinicalDocument](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-ClinicalDocument.html) 
-
-** Résumé **
-
-Obligatoire : 9 éléments
- Interdit : 1 élément
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - recordTarget (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-record-target|0.1.0)](StructureDefinition-fr-cda-record-target.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - dataEnterer (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-data-enterer|0.1.0)](StructureDefinition-fr-cda-data-enterer.md)
-* [CDA - informant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-informant|0.1.0)](StructureDefinition-fr-cda-informant.md)
-* [CDA - custodian (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-custodian|0.1.0)](StructureDefinition-fr-cda-custodian.md)
-* [CDA - informationRecipient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-information-recipient|0.1.0)](StructureDefinition-fr-cda-information-recipient.md)
-* [CDA - legalAuthenticator (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-legal-authenticator|0.1.0)](StructureDefinition-fr-cda-legal-authenticator.md)
-* [CDA - authenticator (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authenticator|0.1.0)](StructureDefinition-fr-cda-authenticator.md)
-* [CDA - participant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-entete|0.1.0)](StructureDefinition-fr-cda-participant-entete.md)
-* [CDA - inFulfillmentOf (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-inFulfillment-of|0.1.0)](StructureDefinition-fr-cda-inFulfillment-of.md)
-* [CDA - documentationOf (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-documentation-of|0.1.0)](StructureDefinition-fr-cda-documentation-of.md)
-* [CDA - relatedDocument (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-related-document|0.1.0)](StructureDefinition-fr-cda-related-document.md)
-* [CDA - authorization (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-authorization|0.1.0)](StructureDefinition-fr-cda-authorization.md)
 
  
 
@@ -129,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-clinical
   "name" : "FRCDAClinicalDocument",
   "title" : "CDA - clinicalDocument",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

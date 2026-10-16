@@ -27,29 +27,6 @@ Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
 
-** Résumé **
-
-Obligatoire : 9 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 21 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - assignedEntity (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-entity|0.1.0)](StructureDefinition-fr-cda-assigned-entity.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR En rapport avec ALD (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-ald|0.1.0)](StructureDefinition-fr-cda-en-rapport-avec-ald.md)
-* [CDA - FR En rapport avec accident travail (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-accident-travail|0.1.0)](StructureDefinition-fr-cda-en-rapport-avec-accident-travail.md)
-* [CDA - FR En rapport avec la prevention (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-la-prevention|0.1.0)](StructureDefinition-fr-cda-en-rapport-avec-la-prevention.md)
-* [CDA - FR Non remboursable (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-non-remboursable|0.1.0)](StructureDefinition-fr-cda-non-remboursable.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Supply.templateId
-* The element 1 is sliced based on the value of Supply.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
@@ -63,29 +40,6 @@ Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/
 #### Contraintes
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
-
-** Résumé **
-
-Obligatoire : 9 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 21 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - assignedEntity (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-assigned-entity|0.1.0)](StructureDefinition-fr-cda-assigned-entity.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR En rapport avec ALD (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-ald|0.1.0)](StructureDefinition-fr-cda-en-rapport-avec-ald.md)
-* [CDA - FR En rapport avec accident travail (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-accident-travail|0.1.0)](StructureDefinition-fr-cda-en-rapport-avec-accident-travail.md)
-* [CDA - FR En rapport avec la prevention (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-en-rapport-avec-la-prevention|0.1.0)](StructureDefinition-fr-cda-en-rapport-avec-la-prevention.md)
-* [CDA - FR Non remboursable (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-non-remboursable|0.1.0)](StructureDefinition-fr-cda-non-remboursable.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Supply.templateId
-* The element 1 is sliced based on the value of Supply.entryRelationship
 
  
 
@@ -129,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-disposit
   "name" : "FRCDADispositifMedical",
   "title" : "CDA - FR Dispositif medical",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

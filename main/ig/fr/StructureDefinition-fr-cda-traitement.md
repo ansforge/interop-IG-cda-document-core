@@ -29,29 +29,6 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
 
-** Résumé **
-
-Obligatoire : 10 éléments(23 éléments obligatoire(s) imbriqué(s))
- Must-Support : 44 éléments
- Interdit : 8 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Produit de sante (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0)](StructureDefinition-fr-cda-produit-de-sante.md)
-* [CDA - FR Prescription (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prescription|0.1.0)](StructureDefinition-fr-cda-prescription.md)
-* [CDA - FR Traitement subordonne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-subordonne|0.1.0)](StructureDefinition-fr-cda-traitement-subordonne.md)
-* [CDA - FR Instructions au patient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-patient|0.1.0)](StructureDefinition-fr-cda-instructions-au-patient.md)
-* [CDA - FR Reference interne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0)](StructureDefinition-fr-cda-reference-interne.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
@@ -67,29 +44,6 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 #### Contraintes
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
-
-** Résumé **
-
-Obligatoire : 10 éléments(23 éléments obligatoire(s) imbriqué(s))
- Must-Support : 44 éléments
- Interdit : 8 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Produit de sante (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0)](StructureDefinition-fr-cda-produit-de-sante.md)
-* [CDA - FR Prescription (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prescription|0.1.0)](StructureDefinition-fr-cda-prescription.md)
-* [CDA - FR Traitement subordonne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement-subordonne|0.1.0)](StructureDefinition-fr-cda-traitement-subordonne.md)
-* [CDA - FR Instructions au patient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-patient|0.1.0)](StructureDefinition-fr-cda-instructions-au-patient.md)
-* [CDA - FR Reference interne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0)](StructureDefinition-fr-cda-reference-interne.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of SubstanceAdministration.templateId
-* The element 3 is sliced based on the values of SubstanceAdministration.entryRelationship
 
  
 
@@ -133,7 +87,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "name" : "FRCDATraitement",
   "title" : "CDA - FR Traitement",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

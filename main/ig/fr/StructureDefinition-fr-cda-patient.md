@@ -27,11 +27,6 @@ Cette structure est dérivée de [Patient](http://hl7.org/cda/stds/core/2.0.3-sd
 
 Cette structure est dérivée de [Patient](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Patient.html) 
 
-** Résumé **
-
-Obligatoire : 3 éléments
- Interdit : 13 éléments
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Patient](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Patient.html) 
@@ -45,11 +40,6 @@ Cette structure est dérivée de [Patient](http://hl7.org/cda/stds/core/2.0.3-sd
 #### Contraintes
 
 Cette structure est dérivée de [Patient](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Patient.html) 
-
-** Résumé **
-
-Obligatoire : 3 éléments
- Interdit : 13 éléments
 
  
 
@@ -93,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-patient.
   "name" : "FRCDAPatient",
   "title" : "CDA - patient",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

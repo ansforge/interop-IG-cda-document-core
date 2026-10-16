@@ -27,25 +27,6 @@ Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
 
-** Résumé **
-
-Obligatoire : 9 éléments
- Must-Support : 6 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Laboratoire executant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0)](StructureDefinition-fr-cda-laboratoire-executant.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Resultat (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat|0.1.0)](StructureDefinition-fr-cda-resultat.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Organizer.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
@@ -59,25 +40,6 @@ Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-
 #### Contraintes
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
-
-** Résumé **
-
-Obligatoire : 9 éléments
- Must-Support : 6 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Laboratoire executant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0)](StructureDefinition-fr-cda-laboratoire-executant.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Resultat (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat|0.1.0)](StructureDefinition-fr-cda-resultat.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Organizer.templateId
 
  
 
@@ -121,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-resultat
   "name" : "FRCDAResultats",
   "title" : "CDA - FR resultats",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

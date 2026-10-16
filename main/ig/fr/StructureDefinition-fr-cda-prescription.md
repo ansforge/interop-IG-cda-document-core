@@ -25,24 +25,6 @@ Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
 
-** Résumé **
-
-Obligatoire : 7 éléments(3 éléments obligatoire(s) imbriqué(s))
- Must-Support : 7 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Instructions au dispensateur (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-dispensateur|0.1.0)](StructureDefinition-fr-cda-instructions-au-dispensateur.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Supply.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
@@ -54,24 +36,6 @@ Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/
 #### Contraintes
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
-
-** Résumé **
-
-Obligatoire : 7 éléments(3 éléments obligatoire(s) imbriqué(s))
- Must-Support : 7 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Instructions au dispensateur (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-dispensateur|0.1.0)](StructureDefinition-fr-cda-instructions-au-dispensateur.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Supply.templateId
 
  
 
@@ -115,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-prescrip
   "name" : "FRCDAPrescription",
   "title" : "CDA - FR Prescription",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

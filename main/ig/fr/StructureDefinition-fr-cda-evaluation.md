@@ -25,31 +25,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
 
-** Résumé **
-
-Obligatoire : 16 éléments
- Must-Support : 13 éléments
- Interdit : 4 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Performer corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0)](StructureDefinition-fr-cda-performer-corps.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Participant corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0)](StructureDefinition-fr-cda-participant-corps.md)
-* [CDA - FR Evaluation Composant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation-composant|0.1.0)](StructureDefinition-fr-cda-evaluation-composant.md)
-* [CDA - FR Statut (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-statut|0.1.0)](StructureDefinition-fr-cda-statut.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
-* [CDA - FR Reference interne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0)](StructureDefinition-fr-cda-reference-interne.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-* The element 2 is sliced based on the values of Observation.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
@@ -61,31 +36,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 #### Contraintes
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
-
-** Résumé **
-
-Obligatoire : 16 éléments
- Must-Support : 13 éléments
- Interdit : 4 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Performer corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-performer-corps|0.1.0)](StructureDefinition-fr-cda-performer-corps.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Participant corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0)](StructureDefinition-fr-cda-participant-corps.md)
-* [CDA - FR Evaluation Composant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation-composant|0.1.0)](StructureDefinition-fr-cda-evaluation-composant.md)
-* [CDA - FR Statut (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-statut|0.1.0)](StructureDefinition-fr-cda-statut.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
-* [CDA - FR Reference interne (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-interne|0.1.0)](StructureDefinition-fr-cda-reference-interne.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-* The element 2 is sliced based on the values of Observation.entryRelationship
 
  
 
@@ -129,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
   "name" : "FRCDAEvaluation",
   "title" : "CDA - FR Evaluation",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

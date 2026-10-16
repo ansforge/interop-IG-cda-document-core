@@ -27,17 +27,6 @@ Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
 
-** Résumé **
-
-Obligatoire : 5 éléments
- Must-Support : 15 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Type document attache (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-type-document-attache|0.1.0)](StructureDefinition-fr-cda-type-document-attache.md)
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
@@ -51,17 +40,6 @@ Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-
 #### Contraintes
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
-
-** Résumé **
-
-Obligatoire : 5 éléments
- Must-Support : 15 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Type document attache (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-type-document-attache|0.1.0)](StructureDefinition-fr-cda-type-document-attache.md)
 
  
 
@@ -105,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-document
   "name" : "FRCDADocumentAttache",
   "title" : "CDA - FR Document attache",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

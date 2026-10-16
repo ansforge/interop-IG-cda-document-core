@@ -25,16 +25,6 @@ Cette structure est dérivée de [RecordTarget](http://hl7.org/cda/stds/core/2.0
 
 Cette structure est dérivée de [RecordTarget](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RecordTarget.html) 
 
-** Résumé **
-
-Interdit : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - patientRole (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-patient-role|0.1.0)](StructureDefinition-fr-cda-patient-role.md)
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [RecordTarget](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RecordTarget.html) 
@@ -46,16 +36,6 @@ Cette structure est dérivée de [RecordTarget](http://hl7.org/cda/stds/core/2.0
 #### Contraintes
 
 Cette structure est dérivée de [RecordTarget](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RecordTarget.html) 
-
-** Résumé **
-
-Interdit : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - patientRole (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-patient-role|0.1.0)](StructureDefinition-fr-cda-patient-role.md)
 
  
 
@@ -99,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-record-t
   "name" : "FRCDARecordTarget",
   "title" : "CDA - recordTarget",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

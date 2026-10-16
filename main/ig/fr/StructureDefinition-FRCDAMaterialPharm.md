@@ -25,18 +25,6 @@ Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-s
 
 Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html) 
 
-** Résumé **
-
-Obligatoire : 0 élément(18 éléments obligatoire(s) imbriqué(s))
- Interdit : 1 élément
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [IVL_TS: Interval (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-IVL-TS.html)
-* [RTO_PQ_PQ: Ratio (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RTO-PQ-PQ.html)
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html) 
@@ -48,18 +36,6 @@ Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-s
 #### Contraintes
 
 Cette structure est dérivée de [Material](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Material.html) 
-
-** Résumé **
-
-Obligatoire : 0 élément(18 éléments obligatoire(s) imbriqué(s))
- Interdit : 1 élément
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [IVL_TS: Interval (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-IVL-TS.html)
-* [RTO_PQ_PQ: Ratio (V3 Data Type) (http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ|2.0.3-sd)](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-RTO-PQ-PQ.html)
 
  
 
@@ -103,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-FRCDAMaterialPh
   "name" : "FRCDAMaterialPharm",
   "title" : "CDA - Matériau pharmaceutique enrichi",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

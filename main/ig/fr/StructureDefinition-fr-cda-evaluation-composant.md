@@ -25,26 +25,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
 
-** Résumé **
-
-Obligatoire : 14 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 14 éléments
- Interdit : 2 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Evaluation Composant N2 (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation-composant-n2|0.1.0)](StructureDefinition-fr-cda-evaluation-composant-n2.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-* The element 2 is sliced based on the values of Observation.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
@@ -56,26 +36,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 #### Contraintes
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
-
-** Résumé **
-
-Obligatoire : 14 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 14 éléments
- Interdit : 2 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Evaluation Composant N2 (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-evaluation-composant-n2|0.1.0)](StructureDefinition-fr-cda-evaluation-composant-n2.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-* The element 2 is sliced based on the values of Observation.entryRelationship
 
  
 
@@ -119,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-evaluati
   "name" : "FRCDAEvaluationComposant",
   "title" : "CDA - FR Evaluation Composant",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

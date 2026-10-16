@@ -25,17 +25,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
 
-** Résumé **
-
-Obligatoire : 6 éléments
- Must-Support : 5 éléments
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
@@ -47,17 +36,6 @@ Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.
 #### Contraintes
 
 Cette structure est dérivée de [Observation](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Observation.html) 
-
-** Résumé **
-
-Obligatoire : 6 éléments
- Must-Support : 5 éléments
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Observation.templateId
 
  
 
@@ -101,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-dicom-ca
   "name" : "FRCDADICOMCadresAAfficher",
   "title" : "CDA - FR DICOM Cadres à afficher",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

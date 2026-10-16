@@ -27,30 +27,6 @@ Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
 
-** Résumé **
-
-Obligatoire : 13 éléments(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 12 éléments
- Interdit : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Produit de sante (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0)](StructureDefinition-fr-cda-produit-de-sante.md)
-* [CDA - FR Reference item prescription (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-item-prescription|0.1.0)](StructureDefinition-fr-cda-reference-item-prescription.md)
-* [CDA - FR Traitement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0)](StructureDefinition-fr-cda-traitement.md)
-* [CDA - FR Instructions au patient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-patient|0.1.0)](StructureDefinition-fr-cda-instructions-au-patient.md)
-* [CDA - FR Notes du dispensateur (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-notes-du-dispensateur|0.1.0)](StructureDefinition-fr-cda-notes-du-dispensateur.md)
-* [CDA - FR Acte substitution (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte-substitution|0.1.0)](StructureDefinition-fr-cda-acte-substitution.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Supply.templateId
-* The element 2 is sliced based on the values of Supply.entryRelationship
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
@@ -64,30 +40,6 @@ Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/
 #### Contraintes
 
 Cette structure est dérivée de [Supply](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Supply.html) 
-
-** Résumé **
-
-Obligatoire : 13 éléments(2 éléments obligatoire(s) imbriqué(s))
- Must-Support : 12 éléments
- Interdit : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Produit de sante (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-produit-de-sante|0.1.0)](StructureDefinition-fr-cda-produit-de-sante.md)
-* [CDA - FR Reference item prescription (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-reference-item-prescription|0.1.0)](StructureDefinition-fr-cda-reference-item-prescription.md)
-* [CDA - FR Traitement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-traitement|0.1.0)](StructureDefinition-fr-cda-traitement.md)
-* [CDA - FR Instructions au patient (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-instructions-au-patient|0.1.0)](StructureDefinition-fr-cda-instructions-au-patient.md)
-* [CDA - FR Notes du dispensateur (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-notes-du-dispensateur|0.1.0)](StructureDefinition-fr-cda-notes-du-dispensateur.md)
-* [CDA - FR Acte substitution (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-acte-substitution|0.1.0)](StructureDefinition-fr-cda-acte-substitution.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Supply.templateId
-* The element 2 is sliced based on the values of Supply.entryRelationship
 
  
 
@@ -131,7 +83,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-traiteme
   "name" : "FRCDATraitementDispense",
   "title" : "CDA - FR Traitement dispense",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

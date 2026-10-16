@@ -4,7 +4,7 @@
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Ce/t/te Profil de modèle logique n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.cda.fr.document-core|current/StructureDefinition/fr-cda-section-antecedents-familiaux)
 
@@ -25,23 +25,6 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
 
-** Résumé **
-
-Obligatoire : 14 éléments
- Must-Support : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Entrée Antecedents familiaux (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux|0.1.0)](StructureDefinition-fr-cda-antecedents-familiaux.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Section.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
@@ -53,23 +36,6 @@ Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd
 #### Contraintes
 
 Cette structure est dérivée de [Section](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Section.html) 
-
-** Résumé **
-
-Obligatoire : 14 éléments
- Must-Support : 5 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Entrée Antecedents familiaux (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-antecedents-familiaux|0.1.0)](StructureDefinition-fr-cda-antecedents-familiaux.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Section.templateId
 
  
 
@@ -113,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-section-
   "name" : "FRCDASectionAntecedentsFamiliaux",
   "title" : "CDA - FR Section Antecedents familiaux",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

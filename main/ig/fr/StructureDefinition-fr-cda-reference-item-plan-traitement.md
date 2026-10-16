@@ -25,24 +25,6 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
 
-** Résumé **
-
-Obligatoire : 12 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 13 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Item plan traitement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0)](StructureDefinition-fr-cda-item-plan-traitement.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of SubstanceAdministration.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
@@ -54,24 +36,6 @@ Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/st
 #### Contraintes
 
 Cette structure est dérivée de [SubstanceAdministration](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-SubstanceAdministration.html) 
-
-** Résumé **
-
-Obligatoire : 12 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 13 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Item plan traitement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-item-plan-traitement|0.1.0)](StructureDefinition-fr-cda-item-plan-traitement.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of SubstanceAdministration.templateId
 
  
 
@@ -115,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-referenc
   "name" : "FRCDAReferenceItemPlanTraitement",
   "title" : "CDA - FR Reference item plan traitement",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

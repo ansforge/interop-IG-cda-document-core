@@ -29,31 +29,6 @@ Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
 
-** Résumé **
-
-Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
- Must-Support : 12 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Sujet non humain (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-sujet-non-humain|0.1.0)](StructureDefinition-fr-cda-sujet-non-humain.md)
-* [CDA - FR Patient avec sujet non humain (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-patient-avec-sujet-non-humain|0.1.0)](StructureDefinition-fr-cda-patient-avec-sujet-non-humain.md)
-* [CDA - FR Laboratoire executant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0)](StructureDefinition-fr-cda-laboratoire-executant.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Participant corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0)](StructureDefinition-fr-cda-participant-corps.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
-* [CDA - FR Resultat examens de biologie element clinique pertinent (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0)](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md)
-* [CDA - FR Image illustrative (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0)](StructureDefinition-fr-cda-image-illustrative.md)
-* [CDA - FR Prelevement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0)](StructureDefinition-fr-cda-prelevement.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Organizer.templateId
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
@@ -69,31 +44,6 @@ Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-
 #### Contraintes
 
 Cette structure est dérivée de [Organizer](http://hl7.org/cda/stds/core/2.0.3-sd/StructureDefinition-Organizer.html) 
-
-** Résumé **
-
-Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
- Must-Support : 12 éléments
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [CDA - FR Sujet non humain (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-sujet-non-humain|0.1.0)](StructureDefinition-fr-cda-sujet-non-humain.md)
-* [CDA - FR Patient avec sujet non humain (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-patient-avec-sujet-non-humain|0.1.0)](StructureDefinition-fr-cda-patient-avec-sujet-non-humain.md)
-* [CDA - FR Laboratoire executant (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-laboratoire-executant|0.1.0)](StructureDefinition-fr-cda-laboratoire-executant.md)
-* [CDA - author (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-author|0.1.0)](StructureDefinition-fr-cda-author.md)
-* [CDA - FR Participant corps (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-participant-corps|0.1.0)](StructureDefinition-fr-cda-participant-corps.md)
-* [CDA - FR Commentaire ER (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-commentaire-er|0.1.0)](StructureDefinition-fr-cda-commentaire-er.md)
-* [CDA - FR Resultat examens de biologie element clinique pertinent (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-resultat-examens-de-biologie-element-clinique-pertinent|0.1.0)](StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.md)
-* [CDA - FR Image illustrative (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-image-illustrative|0.1.0)](StructureDefinition-fr-cda-image-illustrative.md)
-* [CDA - FR Prelevement (https://interop.esante.gouv.fr/ig/cda/document-core/StructureDefinition/fr-cda-prelevement|0.1.0)](StructureDefinition-fr-cda-prelevement.md)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R5/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Organizer.templateId
 
  
 
@@ -137,7 +87,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-cda-batterie
   "name" : "FRCDABatterieExamensDeBiologieMedicale",
   "title" : "CDA - FR Batterie examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-10-16T07:40:35+00:00",
+  "date" : "2026-10-16T08:34:24+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
