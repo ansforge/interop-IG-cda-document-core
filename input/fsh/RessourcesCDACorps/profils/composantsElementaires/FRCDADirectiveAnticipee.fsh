@@ -73,17 +73,21 @@ and frDirectiveAnticipee 1..1
     * id ^definition = "Identifiant du document externe"
     * text ^short = "Lien vers le document externe"
       * reference 1..1
-* entryRelationship 0..1 MS
-  * typeCode = #COMP
-  * observationMedia 1..1
-  * observationMedia ^short = "observationMedia"
-  * observationMedia ^definition = "observationMedia"
-    * id 0..1
-    * id ^short = "Identifiant observationMedia"
-    * id ^definition = "Identifiant observationMedia"
-    * value MS
-    * value 1..1
-    * value ^short = "Document encapsulé encodée en Base64"
-      * mediaType from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis (required)
-      * representation 1..1
-      * representation ^short = "Fixed: B64"
+* entryRelationship MS
+* entryRelationship ^slicing.discriminator.type = #value
+* entryRelationship ^slicing.discriminator.path = "typeCode"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains documentB64 0..1
+* entryRelationship[documentB64].typeCode = #COMP
+* entryRelationship[documentB64].observationMedia 1..1
+* entryRelationship[documentB64].observationMedia ^short = "observationMedia"
+* entryRelationship[documentB64].observationMedia ^definition = "observationMedia"
+* entryRelationship[documentB64].observationMedia.id 0..1
+* entryRelationship[documentB64].observationMedia.id ^short = "Identifiant observationMedia"
+* entryRelationship[documentB64].observationMedia.id ^definition = "Identifiant observationMedia"
+* entryRelationship[documentB64].observationMedia.value MS
+* entryRelationship[documentB64].observationMedia.value 1..1
+* entryRelationship[documentB64].observationMedia.value ^short = "Document encapsulé encodée en Base64"
+* entryRelationship[documentB64].observationMedia.value.mediaType from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-MediaType-cisis (required)
+* entryRelationship[documentB64].observationMedia.value.representation 1..1
+* entryRelationship[documentB64].observationMedia.value.representation ^short = "Fixed: B64"

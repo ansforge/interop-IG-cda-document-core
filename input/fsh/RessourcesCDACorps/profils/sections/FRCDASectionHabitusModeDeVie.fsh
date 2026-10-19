@@ -17,7 +17,7 @@ and iheSectionSocialHistory 1..1
 * templateId[iheSectionCodedSocialHistory] ^short = "Conformité Social History Section (IHE-PCC)"
 * templateId[frSectionHabitusModeDeVie].root = "1.2.250.1.213.1.1.2.141"
 * templateId[frSectionHabitusModeDeVie] ^short = "Conformité FR-Habitus-Mode-de-Vie (CI-SIS)"
-* templateId[iheSectionSocialHistory].root = "1.3.6.1.4.1.19376.1.5.3.1.3.16.2"
+* templateId[iheSectionSocialHistory].root = "1.3.6.1.4.1.19376.1.5.3.1.3.16"
 * templateId[iheSectionSocialHistory] ^short = "Conformité Social History Section (IHE-PCC)"
 * id MS
 * id ^short = "Identifiant de la section"
