@@ -57,7 +57,6 @@ and frEvaluation 1..1
 * effectiveTime ^definition = "Date"
 * value MS
 * value 1..1
-* value only CD
 * value ^short = "Valeur de l'évaluation : Le type (code) et la valeur de la mesure (réponse) dépendent du volet utilisant cette entrée et sont spécifiquement précisés dans les volets de contenus."
 * value ^definition = "Valeur de l'évaluation"
 * interpretationCode MS
