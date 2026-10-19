@@ -51,12 +51,10 @@ and frIsolatMicrobiologique 1..1
 * specimen.specimenRole.specimenPlayingEntity.classCode = #MIC
 * specimen.specimenRole.specimenPlayingEntity.code 1..1 MS
 * performer MS
-* performer 1..1
 * performer ^short = "Laboratoire exécutant"
 * performer ^definition = "Laboratoire exécutant"
 * performer only FRCDALaboratoireExecutant
 * author MS
-* author 1..1
 * author ^short = "Participation d'un auteur au document"
 * author ^definition = "Participation d'un auteur au document"
 * author only FRCDAAuthor

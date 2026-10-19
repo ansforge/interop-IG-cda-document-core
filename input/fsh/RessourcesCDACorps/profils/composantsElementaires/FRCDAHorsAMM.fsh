@@ -58,7 +58,7 @@ value='true' : le traitement prescrit ne possède pas d'AMM.
 value='false' : le traitement prescrit possède une AMM"
 * value ^definition = "Résultat"
 * value only BL
-* author 1..1
+* author MS
 * author ^short = "Participation d'un auteur au document"
 * author ^definition = "Participation d'un auteur au document"
 * author only FRCDAAuthor
