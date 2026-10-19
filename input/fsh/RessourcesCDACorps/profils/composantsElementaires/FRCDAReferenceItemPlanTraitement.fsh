@@ -39,7 +39,7 @@ and frReferenceItemPlanTraitement 1..1
     * manufacturedMaterial 1..1
       * nullFlavor 1..1 MS
       * nullFlavor = #NA
-* author 1..1
+* author 0..1 MS
 * author ^short = "Auteur de la ligne de traitement"
 * author ^definition = "Auteur de la ligne de traitement"
 * author only FRCDAAuthor

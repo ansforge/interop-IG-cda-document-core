@@ -63,7 +63,7 @@ and frSimpleObservation 1..1
 * targetSiteCode 0..1 MS
 * targetSiteCode ^short = "Site de l'observation"
 * targetSiteCode ^definition = "Site de l'observation"
-* author 1..1
+* author MS
 * author ^short = "Auteur de l'observation"
 * author ^definition = "Auteur de l'observation"
 * author only FRCDAAuthor
