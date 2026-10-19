@@ -3,16 +3,19 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Section
 Id: fr-cda-statut-fonctionnel
 Title: "CDA - FR Statut fonctionnel"
 Description: "Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient."
-* templateId 1..2
+* templateId 1..3
 * templateId ^slicing.discriminator.type = #value
 * templateId ^slicing.discriminator.path = "root"
 * templateId ^slicing.rules = #open
 * templateId contains frSectionStatutFonctionnel 1..1
 and IPSSectionFunctionalStatus 1..1
+and ccdSectionFunctionalStatus 0..1
 * templateId[frSectionStatutFonctionnel].root = "1.2.250.1.213.1.1.2.246"
 * templateId[frSectionStatutFonctionnel] ^short = "Déclaration de conformité de la section aux spécifications (CI-SIS)"
 * templateId[IPSSectionFunctionalStatus].root = "2.16.840.1.113883.10.22.3.8"
 * templateId[IPSSectionFunctionalStatus] ^short = "Déclaration de conformité IPS Functional Status"
+* templateId[ccdSectionFunctionalStatus].root = "2.16.840.1.113883.10.20.1.5"
+* templateId[ccdSectionFunctionalStatus] ^short = "Déclaration de conformité Functional Status Section (CCD)"
 * id MS
 * id ^short = "Identifiant de la section"
 * id ^definition = "Identifiant de la section"
