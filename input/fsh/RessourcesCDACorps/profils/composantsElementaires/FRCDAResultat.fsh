@@ -71,7 +71,9 @@ and frSimpleObservation 1..1
 * referenceRange ^short = "Intervalles de référence"
 * referenceRange ^definition = "Intervalles de référence"
 * entryRelationship MS
-* entryRelationship ^short = "Entrée FR-Commentaire-ER"
-* entryRelationship ^definition = "Entrée FR-Commentaire-ER"
-* entryRelationship.typeCode = #COMP
-* entryRelationship.act only FRCDACommentaireER
+* entryRelationship ^short = "Commentaire (FR-Commentaire-ER) et éléments transversaux (références)"
+* entryRelationship ^definition = "Commentaire (FR-Commentaire-ER) et éléments transversaux (références)"
+* insert EntryRelationshipSlicing
+* insert FRCommentaireER(0..*, #COMP)
+* insert FRReferenceInterne(0..*)
+* insert FRReferencesExternes(0..*)
