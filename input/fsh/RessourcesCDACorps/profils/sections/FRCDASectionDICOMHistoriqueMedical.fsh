@@ -36,5 +36,10 @@ and dicomMedicalHistorySection 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry.observation only FRCDADICOMObservation
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frDICOMObservation 1..*
+* entry[frDICOMObservation].observation only FRCDADICOMObservation
 * entry ^short = "Entrée DICOM Observation"

@@ -40,5 +40,10 @@ and iheSectionSocialHistory 1..1
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * entry 1..* MS
-* entry.observation only FRCDAHabitusModeDeVie
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frHabitusModeDeVie 1..*
+* entry[frHabitusModeDeVie].observation only FRCDAHabitusModeDeVie
 * entry ^short = "Entrée Habitus, Mode de vie"

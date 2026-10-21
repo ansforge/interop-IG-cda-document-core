@@ -42,5 +42,10 @@ and ccdMedicationsection 1..1
 * author only FRCDAAuthor
 * entry MS
 * entry 1..*
-* entry.supply only FRCDATraitementDispense
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "supply"
+* entry ^slicing.rules = #open
+* entry contains
+frTraitementDispense 1..*
+* entry[frTraitementDispense].supply only FRCDATraitementDispense
 * entry ^short = "Entrée FR-Traitement-dispense"

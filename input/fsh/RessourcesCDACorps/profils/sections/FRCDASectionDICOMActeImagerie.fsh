@@ -52,10 +52,18 @@ frSectionDicomObjectCatalog 1..1
 * obeys fr-dicom-acte-imagerie-entries
 * entry 1..* MS
 * entry ^short = "Entrée Technique d'imagerie (procedure, 1..1) et entrées Administration de produits (substanceAdministration, 0..*)"
-* entry.procedure only FRCDADICOMTechniqueImagerie
-* entry.procedure ^short = "Entrée technique d'imagerie"
-* entry.substanceAdministration only FRCDADICOMAdministrationProduitDeSante
-* entry.substanceAdministration ^short = "Entrée Administration de produits"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "procedure"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "substanceAdministration"
+* entry ^slicing.rules = #open
+* entry contains
+frDICOMTechniqueImagerie 1..1
+and frDICOMAdministrationProduitDeSante 0..*
+* entry[frDICOMTechniqueImagerie].procedure only FRCDADICOMTechniqueImagerie
+* entry[frDICOMTechniqueImagerie].procedure ^short = "Entrée technique d'imagerie"
+* entry[frDICOMAdministrationProduitDeSante].substanceAdministration only FRCDADICOMAdministrationProduitDeSante
+* entry[frDICOMAdministrationProduitDeSante].substanceAdministration ^short = "Entrée Administration de produits"
 
 Invariant: fr-dicom-acte-imagerie-entries
 Description: "La section contient exactement une entrée Technique d'imagerie (procedure)."

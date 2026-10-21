@@ -45,6 +45,10 @@ Description: "Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter
 * interpretationCode ^short = "Interprétation"
 * interpretationCode ^definition = "Interprétation"
 * entryRelationship MS
-* entryRelationship.act only FRCDACommentaireER
-* entryRelationship.typeCode = #SUBJ
-* entryRelationship.inversionInd = true
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "act"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frCommentaireER 0..1
+* entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER].typeCode = #SUBJ
+* entryRelationship[frCommentaireER].inversionInd = true

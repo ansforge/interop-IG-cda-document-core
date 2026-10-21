@@ -34,10 +34,18 @@ Description: "Cette section, optionnelle, est utilisée uniquement dans le cas d
 * entry MS
 * entry 1..*
 * entry ^short = "Entrée Simple observation (observation, 0..1) et entrées Document attaché (organizer, 1..*)"
-* entry.observation only FRCDASimpleObservation
-* entry.observation ^short = "Entrée Simple observation"
-* entry.organizer only FRCDADocumentAttache
-* entry.organizer ^short = "Entrée Document attaché"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frSimpleObservation 0..1
+and frDocumentAttache 1..*
+* entry[frSimpleObservation].observation only FRCDASimpleObservation
+* entry[frSimpleObservation].observation ^short = "Entrée Simple observation"
+* entry[frDocumentAttache].organizer only FRCDADocumentAttache
+* entry[frDocumentAttache].organizer ^short = "Entrée Document attaché"
 
 Invariant: fr-resultats-biologie-seconde-intention-entries
 Description: "La section contient au moins une entrée Document attaché (organizer) et au plus une entrée Simple observation (observation)."

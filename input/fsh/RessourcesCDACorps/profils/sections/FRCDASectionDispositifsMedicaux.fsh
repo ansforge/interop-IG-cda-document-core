@@ -38,5 +38,10 @@ and frSectionDispositifsMedicaux 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry.supply only FRCDADispositifMedical
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "supply"
+* entry ^slicing.rules = #open
+* entry contains
+frDispositifMedical 1..*
+* entry[frDispositifMedical].supply only FRCDADispositifMedical
 * entry ^short = "Entrée Dispositif médical"

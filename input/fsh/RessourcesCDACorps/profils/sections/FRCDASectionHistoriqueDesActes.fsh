@@ -43,10 +43,18 @@ and frSectionHistoriqueDesActes 1..1
 * entry MS
 * entry 1..*
 * entry ^short = "Entrées Acte (procedure, 1..*) et Références externes (act, 0..*)"
-* entry.procedure only FRCDAActe
-* entry.procedure ^short = "Entrée Acte"
-* entry.act only FRCDAReferencesExternes
-* entry.act ^short = "Entrée Références externes"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "procedure"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frActe 1..*
+and frReferencesExternes 0..*
+* entry[frActe].procedure only FRCDAActe
+* entry[frActe].procedure ^short = "Entrée Acte"
+* entry[frReferencesExternes].act only FRCDAReferencesExternes
+* entry[frReferencesExternes].act ^short = "Entrée Références externes"
 
 Invariant: fr-historique-des-actes-entries
 Description: "La section contient au moins une entrée Acte (procedure)."

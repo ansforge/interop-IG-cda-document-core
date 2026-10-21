@@ -37,13 +37,30 @@ and dicomRadiationExposureAndProtectionInformation 1..1
 * obeys fr-dicom-exposition-radiations-entries and fr-dicom-exposition-radiations-observations
 * entry 1..* MS
 * entry ^short = "Entrées Exposition aux rayonnements (procedure, 1..1), Observation Grossesse (observation, 1..1), Observation Indication (observation, 0..1), SOP instance Observation (observation, 0..*), Quantité (observation, 0..*) et Administration des produits radiopharmaceutiques (substanceAdministration, 0..1)"
-* entry.procedure only FRCDADICOMExpositionPatient
-* entry.procedure ^short = "Entrée Exposition aux rayonnements ionisants"
-* entry.observation only FRCDADICOMSOPInstanceObservation or FRCDADICOMObservation or FRCDADICOMQuantite
-* entry.observation ^short = "Entrée SOP instance Observation, Observation Grossesse, Observation Indication ou Quantité"
-* entry.observation ^comment = "L'entrée Observation Grossesse est une FR-DICOM-Observation dont le code est fixé à : code=\"364320009\", displayName=\"statut de grossesse\", codeSystem=\"2.16.840.1.113883.6.96\", codeSystemName=\"SNOMED-CT\"."
-* entry.substanceAdministration only FRCDADICOMAdministrationRadiopharmaceutique
-* entry.substanceAdministration ^short = "Entrée Administration des produits radiopharmaceutiques"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "procedure"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "observation"
+* entry ^slicing.discriminator[2].type = #profile
+* entry ^slicing.discriminator[2].path = "substanceAdministration"
+* entry ^slicing.rules = #open
+* entry contains
+frDICOMExpositionPatient 1..1
+and frDICOMSOPInstanceObservation 0..*
+and frDICOMObservation 1..*
+and frDICOMQuantite 0..*
+and frDICOMAdministrationRadiopharmaceutique 0..1
+* entry[frDICOMExpositionPatient].procedure only FRCDADICOMExpositionPatient
+* entry[frDICOMExpositionPatient].procedure ^short = "Entrée Exposition aux rayonnements ionisants"
+* entry[frDICOMSOPInstanceObservation].observation only FRCDADICOMSOPInstanceObservation
+* entry[frDICOMObservation].observation only FRCDADICOMObservation
+* entry[frDICOMQuantite].observation only FRCDADICOMQuantite
+* entry[frDICOMSOPInstanceObservation].observation ^short = "Entrée SOP instance Observation"
+* entry[frDICOMObservation].observation ^short = "Entrée Observation Grossesse ou Observation Indication"
+* entry[frDICOMQuantite].observation ^short = "Entrée Quantité"
+* entry[frDICOMObservation].observation ^comment = "L'entrée Observation Grossesse est une FR-DICOM-Observation dont le code est fixé à : code=\"364320009\", displayName=\"statut de grossesse\", codeSystem=\"2.16.840.1.113883.6.96\", codeSystemName=\"SNOMED-CT\"."
+* entry[frDICOMAdministrationRadiopharmaceutique].substanceAdministration only FRCDADICOMAdministrationRadiopharmaceutique
+* entry[frDICOMAdministrationRadiopharmaceutique].substanceAdministration ^short = "Entrée Administration des produits radiopharmaceutiques"
 
 Invariant: fr-dicom-exposition-radiations-entries
 Description: "La section contient exactement une entrée Exposition aux rayonnements (procedure) et au plus une entrée Administration des produits radiopharmaceutiques (substanceAdministration)."

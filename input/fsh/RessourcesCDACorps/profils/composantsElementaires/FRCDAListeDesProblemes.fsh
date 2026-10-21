@@ -50,9 +50,13 @@ and frListeDesProblemes 1..1
 * effectiveTime.low 1..1
 * effectiveTime.low ^short = "Date du début"
 * effectiveTime.low ^definition = "Date du début"
-* entryRelationship  1..* MS
-* entryRelationship ^short = "Entrée Problème"
-* entryRelationship ^definition = "Entrée Problème"
-* entryRelationship.typeCode = #SUBJ
-* entryRelationship.inversionInd = false
-* entryRelationship.observation only FRCDAProbleme
+* entryRelationship MS
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "observation"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frCDAProbleme 1..*
+* entryRelationship[frCDAProbleme] ^short = "Entrée Problème"
+* entryRelationship[frCDAProbleme] ^definition = "Entrée Problème"
+* entryRelationship[frCDAProbleme].typeCode = #SUBJ
+* entryRelationship[frCDAProbleme].inversionInd = false
+* entryRelationship[frCDAProbleme].observation only FRCDAProbleme
