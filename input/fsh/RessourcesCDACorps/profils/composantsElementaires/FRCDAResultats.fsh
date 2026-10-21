@@ -37,11 +37,11 @@ Type de résultat :
 * effectiveTime 0..1
 * effectiveTime ^short = "Date"
 * effectiveTime ^definition = "Date"
-* performer 1..1
+* performer MS
 * performer ^short = "Exécutant"
 * performer ^definition = "Exécutant"
 * performer only FRCDALaboratoireExecutant
-* author 1..1
+* author MS
 * author ^short = "Auteur"
 * author ^definition = "Auteur"
 * author only FRCDAAuthor
