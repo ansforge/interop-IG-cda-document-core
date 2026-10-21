@@ -37,5 +37,10 @@ and dicomObjectCatalogSection 1..1
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * entry MS
-* entry.act only FRCDADICOMExamenImagerie
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frDICOMExamenImagerie 0..*
+* entry[frDICOMExamenImagerie].act only FRCDADICOMExamenImagerie
 * entry ^short = "Entrée DICOM Historique Examen imagerie"

@@ -101,7 +101,11 @@ ProduitUtilise 0..* MS
 * performer only FRCDAPerformerCorps
 * performer ^short = "Organisation prélevante"
 * performer ^definition = "Organisation prélevante"
-* entryRelationship
+* entryRelationship ^slicing.discriminator.type = #value
+* entryRelationship ^slicing.discriminator.path = "typeCode"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains specimen 0..1
+* entryRelationship[specimen]
   * typeCode = #COMP
   * act 1..1
     * classCode MS
@@ -114,6 +118,14 @@ ProduitUtilise 0..* MS
     * templateId ^slicing.rules = #open
     * templateId contains iheSpecimenReceived 1..1
     and frEchantillonDateReception 0..1
+    * templateId[iheSpecimenReceived].root 1..1
+    * templateId[iheSpecimenReceived].root = "1.3.6.1.4.1.19376.1.3.1.3"
+    * templateId[iheSpecimenReceived] ^short = "Conformité Specimen Received (IHE PCC)"
+    * templateId[iheSpecimenReceived] ^definition = "Conformité Specimen Received (IHE PCC)"
+    * templateId[frEchantillonDateReception].root 1..1
+    * templateId[frEchantillonDateReception].root = "1.2.250.1.213.1.1.3.107"
+    * templateId[frEchantillonDateReception] ^short = "Conformité FR-Echantillon-Date-Reception (CI-SIS)"
+    * templateId[frEchantillonDateReception] ^definition = "Conformité FR-Echantillon-Date-Reception (CI-SIS)"
     * code MS
     * code 1..1
     * code.code = #SPRECEIVE

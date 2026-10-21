@@ -55,6 +55,10 @@ and frPrescription 1..1
 * author 0..1
 * author only FRCDAAuthor
 * entryRelationship MS
-* entryRelationship.act only FRCDAInstructionsAuDispensateur
-* entryRelationship ^short = "Prescripteur -  Une prescription est en attente de dispensation (moodCode='INT'), peut comporter le prescripteur."
-* entryRelationship.typeCode = #SUBJ
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "act"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frInstructionsAuDispensateur 0..*
+* entryRelationship[frInstructionsAuDispensateur].act only FRCDAInstructionsAuDispensateur
+* entryRelationship[frInstructionsAuDispensateur] ^short = "Prescripteur -  Une prescription est en attente de dispensation (moodCode='INT'), peut comporter le prescripteur."
+* entryRelationship[frInstructionsAuDispensateur].typeCode = #SUBJ
