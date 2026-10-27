@@ -35,7 +35,15 @@ and frSectionFonctionsPhysiques 0..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry ^short = "Entrées Groupe de questionnaires d'évaluation (organizer) et/ou Évaluation (observation)"
-* entry.organizer only FRCDAGroupeDeQuestionnairesDEvaluation
-* entry.organizer ^short = "Entrée Groupe de questionnaires d'évaluation"
-* entry.observation only FRCDAEvaluation
-* entry.observation ^short = "Entrée Évaluation"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "organizer"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frGroupeDeQuestionnairesDEvaluation 0..*
+and frEvaluation 0..*
+* entry[frGroupeDeQuestionnairesDEvaluation].organizer only FRCDAGroupeDeQuestionnairesDEvaluation
+* entry[frGroupeDeQuestionnairesDEvaluation].organizer ^short = "Entrée Groupe de questionnaires d'évaluation"
+* entry[frEvaluation].observation only FRCDAEvaluation
+* entry[frEvaluation].observation ^short = "Entrée Évaluation"

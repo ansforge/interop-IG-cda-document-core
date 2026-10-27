@@ -40,5 +40,10 @@ and frSectionPrescriptionMedicaments 1..1
 * author only FRCDAAuthor
 * entry MS
 * entry 1..*
-* entry.substanceAdministration only FRCDATraitementPrescrit
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "substanceAdministration"
+* entry ^slicing.rules = #open
+* entry contains
+frTraitementPrescrit 1..*
+* entry[frTraitementPrescrit].substanceAdministration only FRCDATraitementPrescrit
 * entry ^short = "Traitement prescrit"

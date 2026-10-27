@@ -25,7 +25,11 @@ Description: "Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observatio
 * code.codeSystem 1..1 MS
 
 * entryRelationship MS
-* entryRelationship.observation only FRCDADICOMCadresAAfficher
-* entryRelationship.typeCode = #COMP
-* entryRelationship ^short = "Cadres à afficher pour les images référencées"
-* entryRelationship ^definition = "Cadres à afficher pour les images référencées"
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frDicomCadresAAfficher 1..1
+* entryRelationship[frDicomCadresAAfficher].observation only FRCDADICOMCadresAAfficher
+* entryRelationship[frDicomCadresAAfficher].typeCode = #COMP
+* entryRelationship[frDicomCadresAAfficher] ^short = "Cadres à afficher pour les images référencées"
+* entryRelationship[frDicomCadresAAfficher] ^definition = "Cadres à afficher pour les images référencées"

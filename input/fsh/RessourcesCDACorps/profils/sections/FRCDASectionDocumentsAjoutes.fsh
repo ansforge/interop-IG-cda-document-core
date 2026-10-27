@@ -34,11 +34,19 @@ Description: "Liste de documents ajoutés"
 * entry MS
 * entry 1..*
 * entry ^short = "Entrée Simple observation (observation, 0..1) et entrées Document attaché (organizer, 1..*)"
-* entry.observation only FRCDASimpleObservation
-* entry.observation ^short = "Entrée Simple observation Permet d'indiquer la nature des documents ajoutés"
-* entry.observation ^definition = "Entrée Simple observation"
-* entry.organizer only FRCDADocumentAttache
-* entry.organizer ^short = "Entrée Document attaché"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frSimpleObservation 0..1
+and frDocumentAttache 1..*
+* entry[frSimpleObservation].observation only FRCDASimpleObservation
+* entry[frSimpleObservation].observation ^short = "Entrée Simple observation Permet d'indiquer la nature des documents ajoutés"
+* entry[frSimpleObservation].observation ^definition = "Entrée Simple observation"
+* entry[frDocumentAttache].organizer only FRCDADocumentAttache
+* entry[frDocumentAttache].organizer ^short = "Entrée Document attaché"
 
 Invariant: fr-documents-ajoutes-entries
 Description: "La section contient au moins une entrée Document attaché (organizer) et au plus une entrée Simple observation (observation)."

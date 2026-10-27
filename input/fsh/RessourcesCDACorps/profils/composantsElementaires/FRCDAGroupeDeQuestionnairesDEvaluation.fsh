@@ -32,9 +32,10 @@ and frGroupeDeQuestionnairesDevaluation 1..1
 * code MS
 * code ^short = "Code de l'entrée"
 * code ^definition = "Code de l'entrée"
-* code.code 1..1 MS
+* code obeys fr-groupe-questionnaires-code-nullflavor
+* code.code 0..1 MS
 * code.displayName MS
-* code.codeSystem 1..1 MS
+* code.codeSystem 0..1 MS
 * statusCode MS
 * statusCode 1..1
 * statusCode ^short = "Statut de l'organizer"
@@ -48,3 +49,8 @@ and frGroupeDeQuestionnairesDevaluation 1..1
 * component.typeCode = #COMP
 * component.observation ^short = "Évaluation"
 * component.observation only FRCDAEvaluation
+
+Invariant: fr-groupe-questionnaires-code-nullflavor
+Description: "Le code du groupe porte soit un nullFlavor, soit les attributs code et codeSystem."
+Expression: "nullFlavor.exists() or (code.exists() and codeSystem.exists())"
+Severity: #error

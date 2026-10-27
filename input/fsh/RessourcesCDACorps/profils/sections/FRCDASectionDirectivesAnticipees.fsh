@@ -40,5 +40,10 @@ and frSectionDirectivesAnticipees 1..1
 * text ^short = "Bloc narratif"
 * text ^definition = "Bloc narratif"
 * entry MS
-* entry.observation only FRCDADirectiveAnticipee
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frDirectiveAnticipee 0..*
+* entry[frDirectiveAnticipee].observation only FRCDADirectiveAnticipee
 * entry ^short = "Entrée Directive anticipée"

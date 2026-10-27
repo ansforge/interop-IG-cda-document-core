@@ -37,5 +37,10 @@ Description: "IHE-PRE - Prescription. Cette section regroupe les lignes de presc
 * author only FRCDAAuthor
 * entry MS
 * entry 1..*
-* entry.supply only FRCDADispositifMedical
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "supply"
+* entry ^slicing.rules = #open
+* entry contains
+frDispositifMedical 1..*
+* entry[frDispositifMedical].supply only FRCDADispositifMedical
 * entry ^short = "Dispositif médical prescrit"

@@ -105,8 +105,13 @@ frParticipantAssure 0..1 MS
     * playingEntity.name 1..1 MS
     * playingEntity.name ^short = "Nom de l'assuré"
 * entryRelationship MS
-* entryRelationship ^short = "Informations sur le plan de soins"
-* entryRelationship ^definition = "Informations sur le plan de soins"
+* entryRelationship ^slicing.discriminator.type = #value
+* entryRelationship ^slicing.discriminator.path = "typeCode"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frPlanDeSoins 0..*
+* entryRelationship[frPlanDeSoins] ^short = "Informations sur le plan de soins"
+* entryRelationship[frPlanDeSoins] ^definition = "Informations sur le plan de soins"
+* entryRelationship[frPlanDeSoins]
   * typeCode = #REFR
   * act 1..1
     * classCode MS
