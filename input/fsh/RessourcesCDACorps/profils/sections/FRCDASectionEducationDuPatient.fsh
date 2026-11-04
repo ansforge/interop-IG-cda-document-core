@@ -39,9 +39,20 @@ and frSectionEducationDuPatient 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry ^short = "Entrées Acte (procedure), Simple observation (observation) et/ou Références externes (act)"
-* entry.procedure only FRCDAActe
-* entry.procedure ^short = "Entrée Acte"
-* entry.observation only FRCDASimpleObservation
-* entry.observation ^short = "Entrée Simple observation"
-* entry.act only FRCDAReferencesExternes
-* entry.act ^short = "Entrée référence Externe"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "procedure"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "observation"
+* entry ^slicing.discriminator[2].type = #profile
+* entry ^slicing.discriminator[2].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frActe 0..*
+and frSimpleObservation 0..*
+and frReferencesExternes 0..*
+* entry[frActe].procedure only FRCDAActe
+* entry[frActe].procedure ^short = "Entrée Acte"
+* entry[frSimpleObservation].observation only FRCDASimpleObservation
+* entry[frSimpleObservation].observation ^short = "Entrée Simple observation"
+* entry[frReferencesExternes].act only FRCDAReferencesExternes
+* entry[frReferencesExternes].act ^short = "Entrée référence Externe"

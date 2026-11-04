@@ -1,5 +1,5 @@
 Profile: FRCDAProduitDeSante
-Parent: http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct
+Parent: FRCDAManufacturedProductPharm
 Id: fr-cda-produit-de-sante
 Title: "CDA - FR Produit de sante"
 Description: "Entrée FR-Produit-de-sante: IHE-PCC - Product-Entry. L'entrée Produit de santé permet de décrire un médicament ou un vaccin."
@@ -19,8 +19,8 @@ and ccdProductEntry 1..1
 * manufacturedMaterial obeys fr-manufacturedMaterial-code-nom-ou-nullFlavor
   * templateId 0..1
   * templateId.root = "1.3.6.1.4.1.19376.1.9.1.3.1"
-  * code MS
-  * code.originalText.reference 1..1
+  * code 1..1
+  * code obeys fr-produit-de-sante-code-originaltext
   * code.translation ^short = "Autre codification - CIP : Code Identifiant de Présentation (1.2.250.1.213.2.3.2) de l'ANSM (13 chiffres) - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) du Club Inter Pharmaceutique - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)  - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase (MV+ 8 chiffres)"
   * code.nullFlavor 0..1
   * name MS
@@ -30,4 +30,9 @@ and ccdProductEntry 1..1
 Invariant: fr-manufacturedMaterial-code-nom-ou-nullFlavor
 Description: "Le médicament porte soit un nullFlavor (NA : produit non applicable, par exemple l'entrée FR-Traitement d'une substitution dans FR-Traitement-dispense), soit un code et un nom."
 Expression: "nullFlavor.exists() or (code.exists() and name.exists())"
+Severity: #error
+
+Invariant: fr-produit-de-sante-code-originaltext
+Description: "Le code du produit de santé porte soit un nullFlavor, soit une référence originalText vers le texte narratif."
+Expression: "nullFlavor.exists() or originalText.reference.exists()"
 Severity: #error

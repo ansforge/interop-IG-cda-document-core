@@ -39,12 +39,23 @@ and frSectionResultatsExamens 1..1
 * obeys fr-resultats-examens-entries
 * entry 1..* MS
 * entry ^short = "Entrées Acte (procedure, 1..*), Références externes (act, 0..*) et Simple observation (observation, 0..*)"
-* entry.procedure only FRCDAActe
-* entry.procedure ^short = "Entrée Acte"
-* entry.act only FRCDAReferencesExternes
-* entry.act ^short = "Entrée Références externes"
-* entry.observation only FRCDASimpleObservation
-* entry.observation ^short = "Entrée Simple observation"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "procedure"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "act"
+* entry ^slicing.discriminator[2].type = #profile
+* entry ^slicing.discriminator[2].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frActe 1..*
+and frReferencesExternes 0..*
+and frSimpleObservation 0..*
+* entry[frActe].procedure only FRCDAActe
+* entry[frActe].procedure ^short = "Entrée Acte"
+* entry[frReferencesExternes].act only FRCDAReferencesExternes
+* entry[frReferencesExternes].act ^short = "Entrée Références externes"
+* entry[frSimpleObservation].observation only FRCDASimpleObservation
+* entry[frSimpleObservation].observation ^short = "Entrée Simple observation"
 
 Invariant: fr-resultats-examens-entries
 Description: "La section contient au moins une entrée Acte (procedure)."

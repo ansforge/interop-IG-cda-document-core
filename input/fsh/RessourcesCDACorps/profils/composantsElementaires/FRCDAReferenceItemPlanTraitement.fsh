@@ -43,11 +43,15 @@ and frReferenceItemPlanTraitement 1..1
 * author ^short = "Auteur de la ligne de traitement"
 * author ^definition = "Auteur de la ligne de traitement"
 * author only FRCDAAuthor
-* entryRelationship 1..1 MS
-* entryRelationship ^short = "Item d'un plan de traitement. Copie non modifiée de la ligne de traitement référencée."
-* entryRelationship ^definition = "Item d'un plan de traitement"
-* entryRelationship.typeCode = #REFR
-* entryRelationship.substanceAdministration only FRCDAItemPlanTraitement
+* entryRelationship MS
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "substanceAdministration"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frItemPlanTraitement 1..1
+* entryRelationship[frItemPlanTraitement].substanceAdministration only FRCDAItemPlanTraitement
+* entryRelationship[frItemPlanTraitement] ^short = "Item d'un plan de traitement. Copie non modifiée de la ligne de traitement référencée."
+* entryRelationship[frItemPlanTraitement] ^definition = "Item d'un plan de traitement"
+* entryRelationship[frItemPlanTraitement].typeCode = #REFR
 * reference 0..1 MS
 * reference ^short = "Identifiant du plan de traitement. Cet identifiant peut faciliter la recherche du plan de traitement d'origine si nécessaire."
 * reference ^definition = "Identifiant du plan de traitement"

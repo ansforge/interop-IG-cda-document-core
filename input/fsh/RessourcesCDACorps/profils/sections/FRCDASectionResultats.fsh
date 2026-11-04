@@ -31,5 +31,10 @@ Description: "Cette section regroupe les résultats d'examens (biologie polyvale
 * text ^short = "Bloc narratif de la section"
 * text ^definition = "Bloc narratif de la section"
 * entry MS
-* entry.organizer only FRCDAResultats
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frResultats 0..*
+* entry[frResultats].organizer only FRCDAResultats
 * entry ^short = "Entrée FR-Resultats"

@@ -42,5 +42,10 @@ and frSectionAntecedentsFamiliaux 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry.organizer only FRCDAAntecedentsFamiliaux
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frAntecedentsFamiliaux 1..*
+* entry[frAntecedentsFamiliaux].organizer only FRCDAAntecedentsFamiliaux
 * entry ^short = "Entrée Antécédents familiaux"

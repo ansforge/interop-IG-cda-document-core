@@ -57,8 +57,12 @@ Les attributs de l'élément participantRole prennent les valeurs suivantes : @c
 * participant ^definition = "Lieu de départ / Destination"
 * participant only FRCDAParticipantCorps
 * entryRelationship MS
-* entryRelationship.observation only FRCDASimpleObservation
-* entryRelationship.typeCode = #COMP
-* entryRelationship.inversionInd = false
-* entryRelationship ^short = "Autres précision sur le trajet ou le transport du patient"
-* entryRelationship ^definition = "Autres précision sur le trajet ou le transport du patient"
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "observation"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frSimpleObservation 0..1
+* entryRelationship[frSimpleObservation].observation only FRCDASimpleObservation
+* entryRelationship[frSimpleObservation].typeCode = #COMP
+* entryRelationship[frSimpleObservation].inversionInd = false
+* entryRelationship[frSimpleObservation] ^short = "Autres précision sur le trajet ou le transport du patient"
+* entryRelationship[frSimpleObservation] ^definition = "Autres précision sur le trajet ou le transport du patient"

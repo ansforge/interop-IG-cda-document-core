@@ -71,7 +71,11 @@ and frSimpleObservation 1..1
 * referenceRange ^short = "Intervalles de référence"
 * referenceRange ^definition = "Intervalles de référence"
 * entryRelationship MS
-* entryRelationship ^short = "Entrée FR-Commentaire-ER"
-* entryRelationship ^definition = "Entrée FR-Commentaire-ER"
-* entryRelationship.typeCode = #COMP
-* entryRelationship.act only FRCDACommentaireER
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "act"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frCommentaireER 0..1
+* entryRelationship[frCommentaireER].act only FRCDACommentaireER
+* entryRelationship[frCommentaireER] ^short = "Entrée FR-Commentaire-ER"
+* entryRelationship[frCommentaireER] ^definition = "Entrée FR-Commentaire-ER"
+* entryRelationship[frCommentaireER].typeCode = #COMP

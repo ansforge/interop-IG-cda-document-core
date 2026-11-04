@@ -32,5 +32,10 @@ Description: "Cette section ne contient qu’une et une seule entrée FR-Documen
 * text ^definition = "Bloc narratif de la section"
 * entry MS
 * entry 1..1
-* entry.organizer only FRCDADocumentAttache
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frDocumentAttache 1..1
+* entry[frDocumentAttache].organizer only FRCDADocumentAttache
 * entry ^short = "Entrée FR-Document-attache"

@@ -34,8 +34,13 @@ and frSectionCrBioSousChapitre 1..1
 * languageCode ^short = "Langue spécifique de cette sous-section"
 * entry MS
 * entry 1..1
-* entry.typeCode 1..1 MS
-* entry.typeCode = #DRIV
-* entry.act only FRCDAResultatsExamensDeBiologieMedicale
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frResultatsExamensDeBiologieMedicale 1..1
+* entry[frResultatsExamensDeBiologieMedicale].typeCode 1..1 MS
+* entry[frResultatsExamensDeBiologieMedicale].typeCode = #DRIV
+* entry[frResultatsExamensDeBiologieMedicale].act only FRCDAResultatsExamensDeBiologieMedicale
 * entry ^short = "Entrée Résultats d'examens de biologie médicale"
 * entry ^definition = "Entrée Résultats d'examens de biologie médicale"

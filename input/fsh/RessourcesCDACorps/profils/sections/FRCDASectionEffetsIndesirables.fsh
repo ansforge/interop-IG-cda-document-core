@@ -32,5 +32,10 @@ Description: "Liste des effets indésirables prévisibles liés aux médicaments
 * text ^definition = "Bloc narratif de la section"
 * entry MS
 * entry 1..*
-* entry.observation only FRCDAEffetIndesirable
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frEffetIndesirable 1..*
+* entry[frEffetIndesirable].observation only FRCDAEffetIndesirable
 * entry ^short = "Entrée FR-Effet-indesirabl"

@@ -32,5 +32,10 @@ Description: "Cette section permet d’indiquer le statut du document (son état
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..1
-* entry.observation only FRCDAStatutDocument
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.rules = #open
+* entry contains
+frStatutDocument 1..1
+* entry[frStatutDocument].observation only FRCDAStatutDocument
 * entry ^short = "Entrée Statut du document"

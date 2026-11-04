@@ -48,8 +48,12 @@ and dicomSeriesAct 1..1
 * effectiveTime MS
 * effectiveTime ^short = "Date de la série d'actes"
 * effectiveTime ^definition = "Date de la série d'actes"
-* entryRelationship 1..1 MS
-* entryRelationship.observation only FRCDADICOMSOPInstanceObservation
-* entryRelationship.typeCode = #COMP
-* entryRelationship ^short = "SOP Instance Observation de la série d'images médicales"
-* entryRelationship ^definition = "SOP Instance Observation de la série d'images médicales"
+* entryRelationship MS
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frDicomSOPInstanceObservation 1..1
+* entryRelationship[frDicomSOPInstanceObservation].observation only FRCDADICOMSOPInstanceObservation
+* entryRelationship[frDicomSOPInstanceObservation].typeCode = #COMP
+* entryRelationship[frDicomSOPInstanceObservation] ^short = "SOP Instance Observation de la série d'images médicales"
+* entryRelationship[frDicomSOPInstanceObservation] ^definition = "SOP Instance Observation de la série d'images médicales"

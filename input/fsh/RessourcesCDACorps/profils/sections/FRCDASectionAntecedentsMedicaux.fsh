@@ -36,5 +36,10 @@ and frSectionAntecedentsMedicaux 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry.act only FRCDAListeDesProblemes
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frListeDesProblemes 1..*
+* entry[frListeDesProblemes].act only FRCDAListeDesProblemes
 * entry ^short = "Entrée Liste des problèmes"

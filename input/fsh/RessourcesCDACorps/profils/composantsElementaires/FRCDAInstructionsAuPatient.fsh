@@ -46,7 +46,10 @@ and frInstructionsAuPatient 1..1
 * statusCode ^definition = "Statut de l’entrée"
 * statusCode.code = #completed
 * entryRelationship MS
-* entryRelationship ^short = "Instruction au patient sous forme codée. typeCode='COMP'"
-* entryRelationship.observation ^definition = "Instruction au patient sous forme codée"
-* entryRelationship.typeCode = #COMP
-* entryRelationship.observation only FRCDAInstructionAuPatient
+* entryRelationship ^slicing.discriminator[0].type = #profile
+* entryRelationship ^slicing.discriminator[0].path = "observation"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frInstructionAuPatient 0..1
+* entryRelationship[frInstructionAuPatient] ^short = "Instruction au patient sous forme codée. typeCode='COMP'"
+* entryRelationship[frInstructionAuPatient].typeCode = #COMP
+* entryRelationship[frInstructionAuPatient].observation only FRCDAInstructionAuPatient

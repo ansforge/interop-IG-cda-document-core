@@ -49,5 +49,10 @@ Plusieurs occurrences d'informant peuvent être utilisées et chaque occurrence 
 * informant only FRCDAInformant
 * entry MS
 * entry 0..*
-* entry.organizer only FRCDAGroupeDeQuestionnairesDEvaluation
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frGroupeDeQuestionnairesDEvaluation 0..*
+* entry[frGroupeDeQuestionnairesDEvaluation].organizer only FRCDAGroupeDeQuestionnairesDEvaluation
 * entry ^short = "Entrée FR-Groupe-de-questionnaires-d-evaluation"

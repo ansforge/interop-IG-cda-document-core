@@ -33,8 +33,18 @@ and frSectionCrBioChapitre 1..1
 * text ^short = "Résultats présentés et interprétés pour le lecteur Présentation textuelle et/ou graphique pour le lecteur, des résultats des examens de biologie médicale du chapitre, accompagnés de leur interprétation."
 * text ^definition = "Résultats présentés et interprétés pour le lecteur"
 * entry 0..1 
-* entry.act only FRCDAResultatsExamensDeBiologieMedicale 
-* component.section only FRCDASectionCRBIOSousChapitre 
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frResultatsExamensDeBiologieMedicale 0..1
+* entry[frResultatsExamensDeBiologieMedicale].act only FRCDAResultatsExamensDeBiologieMedicale
+* component ^slicing.discriminator.type = #profile
+* component ^slicing.discriminator.path = "section"
+* component ^slicing.rules = #open
+* component contains
+frSectionCRBIOSousChapitre 0..*
+* component[frSectionCRBIOSousChapitre].section only FRCDASectionCRBIOSousChapitre
 * obeys entry-or-component
 
 Invariant: entry-or-component

@@ -35,7 +35,15 @@ and frSectionHistoriqueDesGrossesses 1..1
 * text ^definition = "Bloc narratif"
 * entry 1..* MS
 * entry ^short = "Entrées Observation sur la grossesse (observation) et/ou Historique des grossesses (organizer)"
-* entry.observation only FRCDAObservationSurLaGrossesse
-* entry.observation ^short = "Entrée Observation sur la grossesse"
-* entry.organizer only FRCDAHistoriqueDeLaGrossesse
-* entry.organizer ^short = "Entrée Historique des grossesses"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "observation"
+* entry ^slicing.discriminator[1].type = #profile
+* entry ^slicing.discriminator[1].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frObservationSurLaGrossesse 0..*
+and frHistoriqueDeLaGrossesse 0..*
+* entry[frObservationSurLaGrossesse].observation only FRCDAObservationSurLaGrossesse
+* entry[frObservationSurLaGrossesse].observation ^short = "Entrée Observation sur la grossesse"
+* entry[frHistoriqueDeLaGrossesse].organizer only FRCDAHistoriqueDeLaGrossesse
+* entry[frHistoriqueDeLaGrossesse].organizer ^short = "Entrée Historique des grossesses"

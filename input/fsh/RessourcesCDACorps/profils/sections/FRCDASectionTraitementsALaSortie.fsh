@@ -35,5 +35,10 @@ and frSectionTraitementsALaSortie 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry.substanceAdministration only FRCDATraitement
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "substanceAdministration"
+* entry ^slicing.rules = #open
+* entry contains
+frTraitement 1..*
+* entry[frTraitement].substanceAdministration only FRCDATraitement
 * entry ^short = "Entrée Traitement"

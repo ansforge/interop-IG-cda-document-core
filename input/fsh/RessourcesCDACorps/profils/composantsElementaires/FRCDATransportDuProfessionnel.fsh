@@ -66,8 +66,12 @@ Si @typeCode de l'élément parent participant à « ORG » | « DST » alors @c
 Si @typeCode de l'élément parent participant à « RCV » alors @classCode= « ROL »"
 * participant ^definition = "Lieu de départ / Destination / Professionnel concerné"
 * participant only FRCDAParticipantCorps
-* entryRelationship.observation only FRCDASimpleObservation
-* entryRelationship.typeCode = #COMP
-* entryRelationship.inversionInd = false
-* entryRelationship ^short = "Autres précision sur le trajet ou le transport du professionnel"
-* entryRelationship ^definition = "Autres précision sur le trajet ou le transport du professionnel"
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "observation"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frSimpleObservation 0..1
+* entryRelationship[frSimpleObservation].observation only FRCDASimpleObservation
+* entryRelationship[frSimpleObservation].typeCode = #COMP
+* entryRelationship[frSimpleObservation].inversionInd = false
+* entryRelationship[frSimpleObservation] ^short = "Autres précision sur le trajet ou le transport du professionnel"
+* entryRelationship[frSimpleObservation] ^definition = "Autres précision sur le trajet ou le transport du professionnel"

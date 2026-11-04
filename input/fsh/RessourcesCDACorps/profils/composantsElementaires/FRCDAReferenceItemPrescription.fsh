@@ -46,11 +46,15 @@ and frReferenceItemPrescription 1..1
 * author ^short = "Auteur"
 * author ^definition = "Auteur"
 * author only FRCDAAuthor
-* entryRelationship 0..1 MS
-* entryRelationship ^short = "Traitement prescrit"
-* entryRelationship ^definition = "Traitement prescrit"
-* entryRelationship.typeCode = #REFR
-* entryRelationship.substanceAdministration only FRCDATraitementPrescrit
+* entryRelationship MS
+* entryRelationship ^slicing.discriminator.type = #profile
+* entryRelationship ^slicing.discriminator.path = "substanceAdministration"
+* entryRelationship ^slicing.rules = #open
+* entryRelationship contains frTraitementPrescrit 0..1
+* entryRelationship[frTraitementPrescrit].substanceAdministration only FRCDATraitementPrescrit
+* entryRelationship[frTraitementPrescrit] ^short = "Traitement prescrit"
+* entryRelationship[frTraitementPrescrit] ^definition = "Traitement prescrit"
+* entryRelationship[frTraitementPrescrit].typeCode = #REFR
 * reference 0..1 MS
 * reference ^short = "ID of parent container of referenced item"
 * reference ^definition = "ID of parent container of referenced item"

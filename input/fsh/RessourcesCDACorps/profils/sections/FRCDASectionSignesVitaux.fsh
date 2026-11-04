@@ -41,5 +41,10 @@ and frSectionSignesVitaux 1..1
 * text ^definition = "Bloc narratif de la section"
 * entry MS
 * entry 1..*
-* entry.organizer only FRCDASignesVitaux
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "organizer"
+* entry ^slicing.rules = #open
+* entry contains
+frSignesVitaux 1..*
+* entry[frSignesVitaux].organizer only FRCDASignesVitaux
 * entry ^short = "Entrée Signes vitaux"

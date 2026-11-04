@@ -39,5 +39,10 @@ and frSectionAllergiesEtHypersensibilites 1..1
 * text ^definition = "Bloc narratif"
 * entry MS
 * entry 1..*
-* entry.act only FRCDAListeDesAllergiesEtHypersensibilites
-* entry ^short = "Entrée Liste des allergies et hypersensibilités"
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "act"
+* entry ^slicing.rules = #open
+* entry contains
+frListeDesAllergiesEtHypersensibilites 1..*
+* entry[frListeDesAllergiesEtHypersensibilites].act only FRCDAListeDesAllergiesEtHypersensibilites
+* entry[frListeDesAllergiesEtHypersensibilites] ^short = "Entrée Liste des allergies et hypersensibilités"
