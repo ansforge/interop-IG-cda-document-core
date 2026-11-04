@@ -55,6 +55,7 @@ and frDirectiveAnticipee 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de la directive anticipée"
 * effectiveTime ^definition = "Date de la directive anticipée"
+* effectiveTime.high ^short = "Date de fin - Si la date de fin n'est pas connue, mettre nullFlavor='NA'."
 * value MS
 * value 0..1
 * value only BL

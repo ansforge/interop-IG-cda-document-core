@@ -28,6 +28,7 @@ Description: "L'élément de l'en-tête CDA 'ClinicalDocument' est l’élément
   * ^short = "Patient/Usager concerné par le document."
 * author only fr-cda-author
   * ^short = "Professionnel ou patient/usager ou système, auteur du document incluant la structure de rattachement de l'auteur."
+* author.time.value 1..1
 * dataEnterer only fr-cda-data-enterer
   * ^short = "Opérateur de saisie."
 * informant only FRCDAInformant 

@@ -18,6 +18,6 @@ Description: "L'élément de l'en-tête du CDA author permet d’enregistrer un 
 * functionCode.sdtcValueSetVersion 0..0
 * functionCode.originalText ^short = "Description du rôle fonctionnel de l'auteur."
 * time ^short = "Horodatage de la participation de l’auteur"
-* time.value 1..1
+* time obeys fr-time-value-ou-unk
 * assignedAuthor ^short = "Identification de l’auteur"
 * assignedAuthor only fr-cda-assigned-author
