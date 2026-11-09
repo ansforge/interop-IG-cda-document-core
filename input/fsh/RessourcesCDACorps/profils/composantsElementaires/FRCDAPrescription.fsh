@@ -39,7 +39,7 @@ and frPrescription 1..1
   * time 1..1
   * time ^short = "Date de la dispensation"
   * time ^definition = "Date de la dispensation"
-  * time.nullFlavor = #UNK
+  * time obeys fr-time-value-ou-unk
   * assignedEntity 1..1
   * assignedEntity ^short = "Dispensateur"
   * assignedEntity ^definition = "Dispensateur"

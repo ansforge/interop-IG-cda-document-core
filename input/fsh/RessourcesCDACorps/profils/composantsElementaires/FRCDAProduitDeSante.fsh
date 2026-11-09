@@ -15,6 +15,8 @@ and ccdProductEntry 1..1
 * templateId[ccdProductEntry].root = "2.16.840.1.113883.10.20.1.53"
 * manufacturedMaterial MS
 * manufacturedMaterial 1..1
+* manufacturedMaterial only FRCDAMaterialPharm
+* manufacturedMaterial obeys fr-manufacturedMaterial-code-nom-ou-nullFlavor
   * templateId 0..1
   * templateId.root = "1.3.6.1.4.1.19376.1.9.1.3.1"
   * code 1..1
@@ -22,9 +24,13 @@ and ccdProductEntry 1..1
   * code.translation ^short = "Autre codification - CIP : Code Identifiant de Présentation (1.2.250.1.213.2.3.2) de l'ANSM (13 chiffres) - UCD : Unités Communes de Dispensation (1.2.250.1.213.2.61) du Club Inter Pharmaceutique - ATC : Classification anatomique, thérapeutique et chimique (2.16.840.1.113883.6.73)  - MV : Médicament Virtuel (1.2.250.1.213.2.59) de Medicabase (MV+ 8 chiffres)"
   * code.nullFlavor 0..1
   * name MS
-  * name 1..1
   * name ^short = "Nom de marque du produit"
   * lotNumberText ^short = "Numéro de lot"
+
+Invariant: fr-manufacturedMaterial-code-nom-ou-nullFlavor
+Description: "Le médicament porte soit un nullFlavor (NA : produit non applicable, par exemple l'entrée FR-Traitement d'une substitution dans FR-Traitement-dispense), soit un code et un nom."
+Expression: "nullFlavor.exists() or (code.exists() and name.exists())"
+Severity: #error
 
 Invariant: fr-produit-de-sante-code-originaltext
 Description: "Le code du produit de santé porte soit un nullFlavor, soit une référence originalText vers le texte narratif."
