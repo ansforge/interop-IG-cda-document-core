@@ -3,6 +3,7 @@ Parent: http://hl7.org/cda/stds/core/StructureDefinition/Supply
 Id: fr-cda-traitement-dispense
 Title: "CDA - FR Traitement dispense"
 Description: "Entrée FR-Traitement-dispense: IHE PHARM DIS - DispenseItemEntry. Cette entrée de type supply permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
+* obeys fr-traitement-dispense-posologie-substitution
 * classCode MS
 * moodCode MS
 * moodCode = #EVN
@@ -72,6 +73,9 @@ frReferenceItemPrescription 0..1
 * entryRelationship[frReferenceItemPrescription].inversionInd = false
 
 * entryRelationship[frTraitement].substanceAdministration only FRCDATraitement
+* entryRelationship[frTraitement].substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor 1..1 MS
+* entryRelationship[frTraitement].substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor ^short = "Fixé: NA (posologie modifiée en cas de substitution)"
+* entryRelationship[frTraitement].substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.nullFlavor = #NA
 * entryRelationship[frTraitement].act 0..0
 * entryRelationship[frTraitement] ^short = "Posologie"
 * entryRelationship[frTraitement] ^definition = "Posologie"
@@ -96,3 +100,8 @@ frReferenceItemPrescription 0..1
 * entryRelationship[frActeSubstitution] ^short = "Substitution"
 * entryRelationship[frActeSubstitution] ^definition = "Substitution"
 * entryRelationship[frActeSubstitution].typeCode = #COMP
+
+Invariant: fr-traitement-dispense-posologie-substitution
+Description: "Une posologie modifiée (entrée FR-Traitement) n'est possible qu'en cas de substitution : une entrée FR-Acte-substitution doit alors être présente."
+Expression: "entryRelationship.substanceAdministration.templateId.where(root = '1.2.250.1.213.1.1.3.42').exists() implies entryRelationship.act.templateId.where(root = '1.2.250.1.213.1.1.3.206').exists()"
+Severity: #error

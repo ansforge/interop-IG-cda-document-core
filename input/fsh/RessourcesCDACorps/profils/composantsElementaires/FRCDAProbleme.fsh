@@ -55,6 +55,10 @@ and frProbleme 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Dates de début et de fin du problème"
 * effectiveTime ^definition = "Dates de début et de fin du problème"
+* effectiveTime.low 1..1
+* effectiveTime.low obeys fr-time-value-ou-unk
+* effectiveTime.low ^short = "Date de début du problème - S'il n'est pas possible de donner une date, même approximative (l'année par exemple), mettre nullFlavor='UNK'."
+* effectiveTime.low ^definition = "Date de début du problème"
 * value MS
 * value 1..1
 * value only CD

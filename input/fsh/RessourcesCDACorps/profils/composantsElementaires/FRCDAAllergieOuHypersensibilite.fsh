@@ -58,6 +58,10 @@ and frAllergieOuHypersensibilite 1..1
 * effectiveTime 1..1
 * effectiveTime ^short = "Date de début et de fin"
 * effectiveTime ^definition = "Date de début et de fin"
+* effectiveTime.low 1..1
+* effectiveTime.low obeys fr-time-value-ou-unk
+* effectiveTime.low ^short = "Date de début - S'il n'est pas possible de donner une date, même approximative (l'année par exemple), mettre nullFlavor='UNK'."
+* effectiveTime.low ^definition = "Date de début"
 * value MS
 * value 1..1
 * value only CD
