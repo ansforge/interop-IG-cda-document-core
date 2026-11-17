@@ -3,6 +3,16 @@
 CDA implementation guide of dematerialized health and medico-social documents produced in France.
 </p>
 
+{% if site.data.info.releaselabel == 'ci-build' %}
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b>
+  <br>
+ La version de l'Implementation Guide que vous êtes en train de consulter est en intégration continue et n'est pas à utiliser car soumise à des changements réguliers. La version à utiliser est accessible ici : https://interop.esante.gouv.fr/ig/cda/document-core.
+</p>
+</blockquote>
+{% endif %}
+
 {% if site.data.info.releaselabel == 'ballot' %}
 <div style="width: 65%">
 <blockquote class="stu-note">
