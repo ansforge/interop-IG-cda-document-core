@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+  <sch:ns prefix="f" uri="http://hl7.org/fhir"/>
+  <sch:ns prefix="h" uri="http://www.w3.org/1999/xhtml"/>
+  <!-- 
+    This file contains just the constraints for the profile AuthoringDevice
+    It includes the base constraints for the resource as well.
+    Because of the way that schematrons and containment work, 
+    you may need to use this schematron fragment to build a, 
+    single schematron that validates contained resources (if you have any) 
+  -->
+  <sch:pattern>
+    <sch:title>f:AuthoringDevice</sch:title>
+    <sch:rule context="f:AuthoringDevice">
+      <sch:assert test="count(f:determinerCode) &lt;= 0">determinerCode: maximum cardinality of 'determinerCode' is 0</sch:assert>
+      <sch:assert test="count(f:manufacturerModelName) &gt;= 1">manufacturerModelName: minimum cardinality of 'manufacturerModelName' is 1</sch:assert>
+      <sch:assert test="count(f:softwareName) &gt;= 1">softwareName: minimum cardinality of 'softwareName' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:AuthoringDevice/f:typeId</sch:title>
+    <sch:rule context="f:AuthoringDevice/f:typeId">
+      <sch:assert test="count(f:nullFlavor) &lt;= 0">nullFlavor: maximum cardinality of 'nullFlavor' is 0</sch:assert>
+      <sch:assert test="count(f:assigningAuthorityName) &lt;= 0">assigningAuthorityName: maximum cardinality of 'assigningAuthorityName' is 0</sch:assert>
+      <sch:assert test="count(f:displayable) &lt;= 0">displayable: maximum cardinality of 'displayable' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+</sch:schema>
