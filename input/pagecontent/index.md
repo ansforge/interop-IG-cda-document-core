@@ -4,19 +4,24 @@ CDA implementation guide of dematerialized health and medico-social documents pr
 </p>
 
 {% if site.data.info.releaselabel == 'ci-build' %}
-<div style="width: 65%">
-    <blockquote class="stu-note">
-    <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version courante sera accessible via l'URL canonique suite à la première release : https://interop.esante.gouv.fr/ig/cda/document-core
-    </p>
-    </blockquote>
-</div>
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b>
+  <br>
+ La version de l'Implementation Guide que vous êtes en train de consulter est en intégration continue et n'est pas à utiliser car soumise à des changements réguliers. La version à utiliser est accessible ici : https://interop.esante.gouv.fr/ig/cda/document-core.
+</p>
+</blockquote>
 {% endif %}
 
-<div style="width: 65%; background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 8px 12px; margin-bottom: 16px;">
-    <b>⚠️ Version de test</b><br>
-    Cette publication est une version de test. Elle ne doit pas être utilisée en production.
+{% if site.data.info.releaselabel == 'ballot' %}
+<div style="width: 65%">
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b> Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse <a href="https://interop.esante.gouv.fr/ig/cda/document-core">https://interop.esante.gouv.fr/ig/cda/document-core</a>.
+</p>
+</blockquote>
 </div>
+{% endif %}
 
 <div class="figure">
     <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
